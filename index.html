@@ -1300,18 +1300,16 @@
       <p style="font-size:12px;color:var(--ink3)">Trailer links pending — add official YouTube/Netflix links here once Marketing shares the cleared asset kit.</p>
     </div>
 
-    <!-- Show images -->
+    <!-- Show images — real production stills from Billy's cleared Netflix/DF Studio assets (LEMA-8461) -->
     <div class="sec-header">
       <div class="sec-header-left">
         <p class="sec-eyebrow">Show Imagery</p>
         <h2 class="sec-h2">Visuals for social</h2>
         <hr class="sec-rule">
       </div>
-      <p class="sec-caption">Pending Billy's cleared key art / stills (see build comment on this ticket).</p>
+      <p class="sec-caption">Click to open full-size. Right-click → Save to download. No per-image cast/scene captions are confirmed, so none are claimed below.</p>
     </div>
-    <div class="card" style="padding:22px;margin-bottom:40px">
-      <p style="font-size:12px;color:var(--ink3)">No cleared stills loaded yet — the private Netflix/DF Studio asset-share links on this ticket need an authenticated download, which this build did not have access to.</p>
-    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-bottom:40px" id="show-imagery-grid"></div>
 
     <!-- Cast Activation -->
     <div class="sec-header">
@@ -1354,9 +1352,13 @@
 
 <!-- ─── PAGE: SHOW UNIVERSE ─── -->
 <section id="page-show" class="page">
-  <!-- Show key art banner — placeholder; real key art pending Billy's cleared assets -->
+  <!-- Show key art banner — real key art from Billy's cleared Netflix/DF Studio assets (LEMA-8461) -->
   <div style="position:relative;height:220px;overflow:hidden;background:var(--hero-bg)">
-    <div style="position:absolute;inset:0;background:linear-gradient(135deg, rgba(140,31,43,0.35) 0%, rgba(20,6,10,0.95) 100%)"></div>
+    <img src="images/key-art.jpg"
+         alt="El Círculo — key art"
+         style="width:100%;height:100%;object-fit:cover;object-position:center 20%;opacity:0.65;display:block"
+         onerror="this.style.display='none'" />
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg, rgba(140,31,43,0.35) 0%, rgba(20,6,10,0.9) 100%)"></div>
     <div style="position:absolute;bottom:0;left:0;right:0;padding:28px 40px">
       <p style="font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--poster-blue2);margin-bottom:6px">Netflix · Lemon Studios</p>
       <h1 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:#fff;line-height:1;letter-spacing:-.01em">El <em style="color:var(--poster-blue2);font-style:italic">Círculo</em></h1>
@@ -1441,11 +1443,14 @@
         <h2 class="sec-h2">Official assets kit</h2>
         <hr class="sec-rule">
       </div>
-      <p class="sec-caption">Pending — no official Netflix press/social assets kit has been shared with this dashboard yet.</p>
+      <p class="sec-caption">Key art and production stills are real (Billy's cleared Netflix/DF Studio downloads) — see the full gallery on the Social tab. No official trailer or posting-guidelines kit has been shared yet.</p>
     </div>
 
-    <div class="card" style="padding:24px;margin-bottom:16px">
-      <p style="font-size:13px;color:var(--ink2);line-height:1.6">Request the official trailer, key art, and posting guidelines from Netflix marketing / Billy, then drop the links here. No password-protected asset kit exists in this build — nothing has been fabricated.</p>
+    <div class="card" style="overflow:hidden;margin-bottom:16px">
+      <div style="display:flex;align-items:center;gap:16px;padding:20px 24px">
+        <img src="images/key-art.jpg" alt="El Círculo — key art" loading="lazy" style="width:72px;height:90px;object-fit:cover;flex-shrink:0;border:1px solid var(--bd)" onerror="this.style.display='none'" />
+        <p style="font-size:13px;color:var(--ink2);line-height:1.6">Key art and 14 production stills/episode frame-grabs are loaded (<button onclick="nav('social')" style="background:none;border:none;color:var(--poster-blue);font-weight:600;cursor:pointer;padding:0;font-family:inherit;font-size:inherit">see Show Imagery on the Social tab →</button>). Still need from Netflix marketing / Billy: official trailer link and posting guidelines. No password-protected asset kit exists in this build — nothing has been fabricated.</p>
+      </div>
     </div>
 
     <!-- Quick-post presets -->
@@ -1866,6 +1871,41 @@ buildHome();
       <td style="padding:11px 16px;color:var(--ink2)">${c.role}</td>
       <td style="padding:11px 16px;color:var(--ink3);font-size:11px">Pending</td>
     </tr>`).join('');
+})();
+
+/* ─── SHOW IMAGERY GRID (Social page) ─── */
+/* Real production stills from Billy's cleared Netflix/DF Studio downloads
+   (LEMA-8461). No per-image cast/scene identity is confirmed, so every
+   caption stays generic — never guess which actor appears in a still. */
+const SHOW_IMAGES = [
+  { file:'still-101-sc07a.jpg',    label:'Production still' },
+  { file:'still-103-sc34.jpg',     label:'Production still' },
+  { file:'still-108-sc84.jpg',     label:'Production still' },
+  { file:'still-105-sc22.jpg',     label:'Production still' },
+  { file:'still-101-sc12.jpg',     label:'Production still' },
+  { file:'still-106-sc10.jpg',     label:'Production still' },
+  { file:'still-108-sc12.jpg',     label:'Production still' },
+  { file:'still-102-sc52.jpg',     label:'Production still' },
+  { file:'still-102-sc53.jpg',     label:'Production still' },
+  { file:'still-103-sc06.jpg',     label:'Production still' },
+  { file:'still-102-sc55pt1.jpg',  label:'Production still' },
+  { file:'still-101-sc45.jpg',     label:'Production still' },
+  { file:'episode-s1e7.jpg',       label:'Episode still' },
+  { file:'episode-s1e8.jpg',       label:'Episode still' },
+];
+(function(){
+  const el = document.getElementById('show-imagery-grid');
+  if (!el) return;
+  el.innerHTML = SHOW_IMAGES.map(img => `
+    <a href="images/${img.file}" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+      <div style="aspect-ratio:1/1;border:1px solid var(--bd);overflow:hidden;position:relative" onmouseover="this.querySelector('.img-overlay').style.opacity='1'" onmouseout="this.querySelector('.img-overlay').style.opacity='0'">
+        <img src="images/${img.file}" alt="${img.label}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.parentElement.parentElement.style.display='none'" />
+        <div class="img-overlay" style="position:absolute;inset:0;background:rgba(20,6,10,0.65);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .18s">
+          <span style="font-size:10px;font-weight:700;color:#fff;letter-spacing:.06em;text-transform:uppercase">Open full-size ↗</span>
+        </div>
+      </div>
+      <p style="font-size:9px;color:var(--ink3);margin-top:3px">${img.label}</p>
+    </a>`).join('');
 })();
 
 /* ─── EPISODE LIST ─── */
