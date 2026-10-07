@@ -1,5 +1,82 @@
 [
   {
+    "outlet": "Sample Trade Press",
+    "headline": "El Círculo premiere coverage (placeholder row for layout testing)",
+    "url": "https://example.com/el-circulo-placeholder-1",
+    "date": "Sep 25, 2026",
+    "ts": 20260925,
+    "lang": "EN",
+    "market": "International",
+    "type": "Trade",
+    "excerpt": "Placeholder data for layout/KPI testing only, not a real article. Generic outlet name used on purpose so it cannot be mistaken for real press coverage."
+  },
+  {
+    "outlet": "Sample Entertainment Daily (Mexico)",
+    "headline": "El Círculo premiere coverage (placeholder row for layout testing)",
+    "url": "https://example.com/el-circulo-placeholder-2",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Placeholder data for layout/KPI testing only, not a real article. Generic outlet name used on purpose so it cannot be mistaken for real press coverage."
+  },
+  {
+    "outlet": "Sample Noticias de Espectaculos (Mexico)",
+    "headline": "El Círculo premiere coverage (placeholder row for layout testing)",
+    "url": "https://example.com/el-circulo-placeholder-3",
+    "date": "Oct 6, 2026",
+    "ts": 20261006,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Regional",
+    "excerpt": "Placeholder data for layout/KPI testing only, not a real article. Generic outlet name used on purpose so it cannot be mistaken for real press coverage."
+  },
+  {
+    "outlet": "Sample Streaming Tech News",
+    "headline": "El Círculo premiere coverage (placeholder row for layout testing)",
+    "url": "https://example.com/el-circulo-placeholder-4",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "EN",
+    "market": "International",
+    "type": "Tech",
+    "excerpt": "Placeholder data for layout/KPI testing only, not a real article. Generic outlet name used on purpose so it cannot be mistaken for real press coverage."
+  },
+  {
+    "outlet": "Sample Prensa LatAm",
+    "headline": "El Círculo premiere coverage (placeholder row for layout testing)",
+    "url": "https://example.com/el-circulo-placeholder-5",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Entertainment",
+    "excerpt": "Placeholder data for layout/KPI testing only, not a real article. Generic outlet name used on purpose so it cannot be mistaken for real press coverage."
+  },
+  {
+    "outlet": "Sample Espana Espectaculos",
+    "headline": "El Círculo premiere coverage (placeholder row for layout testing)",
+    "url": "https://example.com/el-circulo-placeholder-6",
+    "date": "Oct 6, 2026",
+    "ts": 20261006,
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Entertainment",
+    "excerpt": "Placeholder data for layout/KPI testing only, not a real article. Generic outlet name used on purpose so it cannot be mistaken for real press coverage."
+  },
+  {
+    "outlet": "Sample Review Outlet",
+    "headline": "El Círculo premiere coverage (placeholder row for layout testing)",
+    "url": "https://example.com/el-circulo-placeholder-7",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Placeholder data for layout/KPI testing only, not a real article or a real score. No rating is implied by this row; the Scores section stays in its own pending state regardless of this row's type."
+  },
+  {
     "outlet": "(System) Monitoring status",
     "headline": "Media sweep not yet started — El Círculo premiered today",
     "url": "https://www.netflix.com/",
@@ -8,6 +85,6 @@
     "lang": "ES",
     "market": "Mexico",
     "type": "Entertainment",
-    "excerpt": "This is a placeholder status row, not a real article. Research Specialist's automated media sweep will add real coverage rows here once it goes live; remove this row on the first real add."
+    "excerpt": "This is a placeholder status row, not a real article. All rows above are also layout-testing placeholders (see 'Sample' outlet names). Research Specialist's automated media sweep will add real coverage rows here once it goes live; remove every placeholder row above on the first real add."
   }
 ]
