@@ -5,16 +5,2631 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>El Círculo — Media Intelligence Room | Lemon Studios</title>
   <meta name="description" content="Media intelligence dashboard for El Círculo — Netflix. Lemon Studios." />
-  <link rel="manifest" href="manifest.json" />
+  <!-- PWA / Add to Home Screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="El Círculo" />
+  <meta name="theme-color" content="#14060a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: -apple-system, system-ui, sans-serif; background:#111; color:#eee; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; text-align:center; }
-    h1 { font-weight:600; }
+    /* ═══════════════════════════════════════════════════════
+       EL CÍRCULO DESIGN SYSTEM — provisional palette, pending
+       Billy's cleared key art / brand guide (see build comment)
+       Editorial base · Blackmail-noir crimson · Gold accents
+    ═══════════════════════════════════════════════════════ */
+    :root {
+      --cream:  #ede8e6;
+      --white:  #ffffff;
+      --smoke:  #f4efed;
+      --bd:     #d9cfcb;
+      --bd2:    #c5b6b0;
+      --ink1:   #191213;
+      --ink2:   #52403f;
+      --ink3:   #96807e;
+      --coral:  #c8422a;
+      --teal:   #2e7f58;
+      --gold:   #c49a28;
+      --gold2:  #e8c060;
+      --blue:   #7a4aa8;
+      --show-blue: #8c1f2b;
+      --poster-blue:  #8c1f2b;
+      --poster-blue2: #c23f4c;
+      --green:  #2a7a58;
+      --amber:  #c49a28;
+      --red:    #8c1f2b;
+      --nav-bg: #150a0c;
+      --hero-bg: #14060a;
+      --nav-h:  52px;
+      --databar-h: 28px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--cream);
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink1);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Top Nav ── */
+    #topnav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--nav-h);
+      background: var(--nav-bg);
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      padding: 0 28px;
+    }
+
+    .tnav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-right: 36px;
+      cursor: pointer;
+      flex-shrink: 0;
+      border: none;
+      background: none;
+      padding: 0;
+    }
+
+    .tnav-logo {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--poster-blue);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-weight: 800;
+      color: #fff;
+      letter-spacing: -.5px;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 1.5px rgba(91,195,232,0.7), 0 0 0 3.5px rgba(27,123,196,0.2), 0 0 14px rgba(27,123,196,0.35);
+    }
+
+    .tnav-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+
+    .tnav-links {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      flex: 1;
+    }
+
+    .tnav-link {
+      padding: 6px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      color: rgba(255,255,255,0.42);
+      cursor: pointer;
+      border: none;
+      background: none;
+      transition: color .12s;
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-family: inherit;
+    }
+
+    .tnav-link:hover { color: rgba(255,255,255,0.8); }
+    .tnav-link.active { color: #ffffff; }
+
+    .tnav-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    .tnav-date {
+      font-size: 10px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .v4-badge {
+      padding: 3px 8px;
+      border: 1px solid rgba(91,195,232,0.45);
+      font-size: 10px;
+      font-weight: 700;
+      color: rgba(91,195,232,0.8);
+      letter-spacing: .1em;
+    }
+
+    /* ── Data-as-of bar (sitewide, every tab) ── */
+    #databar {
+      position: fixed;
+      top: var(--nav-h);
+      left: 0; right: 0;
+      z-index: 39;
+      background: #0f2036;
+      border-bottom: 1px solid rgba(196,154,40,0.25);
+      padding: 6px 28px;
+    }
+    .databar-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 10px;
+      letter-spacing: .03em;
+    }
+    .databar-crit { color: rgba(196,154,40,0.95); font-weight: 600; }
+    .databar-crit strong { color: #fff; font-weight: 700; }
+    .databar-cov { color: rgba(255,255,255,0.45); display: flex; align-items: center; gap: 6px; }
+    .databar-sep { color: rgba(255,255,255,0.2); }
+
+    /* ── Bottom Nav (mobile) ── */
+    #bottomnav { display: none; }
+
+    @media (max-width: 767px) {
+      #bottomnav {
+        display: flex;
+        position: fixed; bottom: 0; left: 0; right: 0;
+        z-index: 40;
+        background: var(--nav-bg);
+        border-top: 1px solid rgba(255,255,255,0.06);
+        height: 56px;
+      }
+      .tnav-links { display: none; }
+      .tnav-date  { display: none; }
+      #databar { padding: 5px 20px; }
+      .databar-inner { gap: 6px; }
+      .databar-sep { display: none; }
+    }
+
+    .bnav-link {
+      flex: 1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 3px;
+      cursor: pointer;
+      color: rgba(255,255,255,0.3);
+      font-size: 9px; font-weight: 600;
+      transition: color .12s;
+      border: none; background: none;
+      padding: 0;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      font-family: inherit;
+    }
+    .bnav-link:hover { color: rgba(255,255,255,0.65); }
+    .bnav-link.active { color: #ffffff; }
+    .bnav-icon { width: 18px; height: 18px; }
+
+    /* ── Content ── */
+    #content {
+      padding-top: calc(var(--nav-h) + var(--databar-h));
+      min-height: 100vh;
+    }
+
+    @media (max-width: 767px) { #content { padding-bottom: 56px; padding-top: calc(var(--nav-h) + 44px); } }
+
+    /* ── Pages ── */
+    .page { display: none; }
+    .page.active { display: block; animation: fadeIn .18s ease; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(3px) } to { opacity:1; transform:none } }
+
+    /* ── Container ── */
+    .container {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    @media (max-width: 767px) { .container { padding: 0 20px; } }
+
+    /* ── Hero Panel — show poster cinematic blue-dark ── */
+    .hero {
+      background: linear-gradient(158deg, #070e1e 0%, #0c1a32 35%, #071228 70%, #060c1a 100%);
+      padding: 68px 0 56px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(27,123,196,0.28);
+    }
+    /* subtle scan-line grain — vintage film mood */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(0,0,0,0.018) 3px,
+        rgba(0,0,0,0.018) 4px
+      );
+      pointer-events: none;
+    }
+    /* blue-tinted vignette edge */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 50%, transparent 30%, rgba(6,12,22,0.60) 100%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (max-width: 767px) {
+      .hero-inner { grid-template-columns: 1fr; padding: 0 20px; gap: 28px; }
+      .hero { padding: 40px 0 32px; }
+    }
+
+    .hero-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--poster-blue2);
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    .hero-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+      font-weight: 900;
+      line-height: 1.0;
+      color: #f2f0ea;
+      margin-bottom: 18px;
+      letter-spacing: -.01em;
+    }
+
+    .hero-em {
+      color: var(--poster-blue2);
+      font-style: italic;
+      text-shadow: 0 0 48px rgba(91,195,232,0.45), 0 0 16px rgba(27,123,196,0.3);
+    }
+
+    /* show poster decorative rule: police blue to gold to coral */
+    .show-rule {
+      display: block;
+      height: 2px;
+      background: linear-gradient(90deg, var(--poster-blue) 0%, var(--poster-blue2) 30%, var(--gold) 65%, var(--coral) 100%);
+      border: none;
+      margin: 0 0 36px;
+      opacity: 0.8;
+    }
+
+    .hero-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.65;
+    }
+
+    .hero-thesis {
+      border-left: 2px solid rgba(27,123,196,0.5);
+      padding: 16px 20px;
+      background: rgba(27,123,196,0.06);
+    }
+
+    .hero-thesis-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(91,195,232,0.7);
+      margin-bottom: 8px;
+    }
+
+    .hero-thesis-body {
+      font-size: 13px;
+      color: rgba(255,255,255,0.68);
+      line-height: 1.65;
+    }
+
+    /* ── Mini Hero (inner pages) ── */
+    .mini-hero {
+      background: var(--nav-bg);
+      padding: 36px 0 28px;
+      border-bottom: 1px solid rgba(27,123,196,0.22);
+    }
+
+    /* ── Section Header (editorial) ── */
+    .sec-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+
+    .sec-header-left { flex: 1; }
+
+    .sec-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: var(--poster-blue);
+      margin-bottom: 6px;
+    }
+
+    .sec-h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--ink1);
+      line-height: 1.1;
+    }
+
+    .sec-rule {
+      border: none;
+      border-top: 1px solid var(--bd);
+      margin: 10px 0 0;
+    }
+
+    .sec-caption {
+      font-size: 12px;
+      color: var(--ink3);
+      line-height: 1.6;
+      max-width: 300px;
+      text-align: right;
+      padding-bottom: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .sec-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .sec-caption { text-align: left; max-width: 100%; }
+    }
+
+    /* ── Signal stack (vertical, full-width) ── */
+    .signal-strip {
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .signal-card {
+      width: 100%;
+      border: 1px solid var(--bd); background: var(--white);
+      padding: 20px 22px; position: relative; overflow: hidden;
+    }
+    .signal-card.sc-dark {
+      background: var(--nav-bg); border-color: rgba(91,195,232,0.2);
+      color: #fff;
+    }
+    .signal-card.sc-accent {
+      background: var(--poster-blue); border-color: var(--poster-blue);
+      color: #fff;
+    }
+    .sc-eyebrow {
+      font-size: 9px; font-weight: 800; letter-spacing: .15em;
+      text-transform: uppercase; margin-bottom: 10px;
+    }
+    .sc-dark .sc-eyebrow { color: rgba(91,195,232,0.7); }
+    .sc-accent .sc-eyebrow { color: rgba(255,255,255,0.7); }
+    .signal-card:not(.sc-dark):not(.sc-accent) .sc-eyebrow { color: var(--poster-blue); }
+    .sc-headline { font-size: 15px; font-weight: 800; line-height: 1.3; margin-bottom: 6px; }
+    .sc-dark .sc-headline, .sc-accent .sc-headline { color: #fff; }
+    .signal-card:not(.sc-dark):not(.sc-accent) .sc-headline { color: var(--ink1); }
+    .sc-body { font-size: 12px; line-height: 1.6; }
+    .sc-dark .sc-body { color: rgba(255,255,255,0.5); }
+    .sc-accent .sc-body { color: rgba(255,255,255,0.75); }
+    .signal-card:not(.sc-dark):not(.sc-accent) .sc-body { color: var(--ink3); }
+    .sc-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .signal-card:not(.sc-dark):not(.sc-accent) .sc-footer { border-color: var(--bd); }
+    .sc-action {
+      font-size: 11px; font-weight: 700; letter-spacing: .04em;
+      background: none; border: none; cursor: pointer; font-family: inherit;
+      padding: 0; text-decoration: none;
+    }
+    .sc-dark .sc-action, .sc-accent .sc-action { color: #fff; }
+    .signal-card:not(.sc-dark):not(.sc-accent) .sc-action { color: var(--poster-blue); }
+    .sc-score {
+      font-size: 22px; font-weight: 900; line-height: 1;
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .sc-dark .sc-score { color: var(--gold2); }
+
+    /* ── Briefing card ── */
+    .briefing-card {
+      background: var(--white); border: 1px solid var(--bd);
+      padding: 22px 24px; margin-bottom: 36px;
+      border-left: 3px solid var(--poster-blue);
+    }
+    .briefing-date {
+      font-size: 9px; font-weight: 800; letter-spacing: .15em;
+      text-transform: uppercase; color: var(--poster-blue); margin-bottom: 10px;
+    }
+    .briefing-body {
+      font-size: 14px; line-height: 1.75; color: var(--ink2);
+    }
+    .briefing-body strong { color: var(--ink1); font-weight: 700; }
+    .briefing-body .focus-item {
+      display: flex; gap: 8px; align-items: baseline;
+      margin-top: 6px; font-size: 13px;
+    }
+    .briefing-body .focus-bullet {
+      flex-shrink: 0; font-weight: 800; color: var(--poster-blue);
+    }
+
+    /* ── Home top-3 editorial feed ── */
+    .home-article {
+      display: flex; gap: 14px; align-items: flex-start;
+      padding: 16px 0; border-bottom: 1px solid var(--bd);
+      cursor: pointer; text-decoration: none;
+    }
+    .home-article:last-child { border-bottom: none; }
+    .home-art-num {
+      flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+      background: rgba(27,123,196,0.08); border: 1.5px solid rgba(27,123,196,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-weight: 800; color: var(--poster-blue); margin-top: 2px;
+    }
+    .home-art-body { flex: 1; min-width: 0; }
+    .home-art-outlet {
+      font-size: 9px; font-weight: 800; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--poster-blue); margin-bottom: 3px;
+    }
+    .home-art-hed {
+      font-size: 14px; font-weight: 700; color: var(--ink1);
+      line-height: 1.35; margin-bottom: 4px;
+    }
+    .home-art-meta {
+      display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+    }
+
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -.02em;
+      color: var(--ink1);
+    }
+
+    .stat-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--ink3);
+      margin-top: 7px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .stat-sub { font-size: 11px; color: var(--ink2); margin-top: 6px; }
+
+    /* ── Delta badges ── */
+    .delta {
+      display: inline-flex; align-items: center; gap: 2px;
+      font-size: .64rem; font-weight: 700;
+      padding: .1rem .42rem;
+      letter-spacing: .02em;
+    }
+    .delta-up  { background: rgba(61,150,136,0.1);  color: var(--teal); }
+    .delta-dn  { background: rgba(200,66,42,0.1);   color: var(--coral); }
+    .delta-neu { background: rgba(154,144,128,0.12); color: var(--ink3); }
+
+    /* ── Cards ── */
+    .card { background: var(--white); border: 1px solid var(--bd); }
+
+    /* ── Section label (small) ── */
+    .sec-label {
+      font-size: .67rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink3);
+    }
+
+    /* ── Live indicator ── */
+    .live-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+      flex-shrink: 0;
+    }
+    .live-dot.is-stale { background: var(--coral); }
+
+    /* ── Bar chart ── */
+    .bar-track {
+      background: rgba(0,0,0,0.07);
+      height: 20px; overflow: hidden; flex: 1;
+    }
+    .bar-fill {
+      height: 100%;
+      display: flex; align-items: center; justify-content: flex-end;
+      padding-right: 7px;
+      transition: width .6s cubic-bezier(.4,0,.2,1);
+    }
+    .chart-bar { cursor: pointer; }
+    .chart-bar:hover .bar-track { background: rgba(0,0,0,0.12); }
+
+    /* ── Coverage table ── */
+    .cov-table { width: 100%; border-collapse: collapse; }
+    .cov-table thead tr { background: var(--ink1); }
+    .cov-table thead th {
+      padding: 10px 14px;
+      font-size: 9px; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.6); text-align: left;
+      white-space: nowrap;
+    }
+    .cov-table tbody tr {
+      border-bottom: 1px solid var(--bd);
+      transition: background .1s;
+    }
+    .cov-table tbody tr:last-child { border-bottom: none; }
+    .cov-table tbody tr:hover { background: var(--smoke); }
+    .cov-table tbody td { padding: 11px 14px; vertical-align: top; }
+    .story-breadth {
+      display: inline-block; margin-left: 8px; padding: 1px 7px;
+      font-size: 9px; font-weight: 700; letter-spacing: .03em;
+      color: var(--poster-blue); background: rgba(27,123,196,0.08);
+      border: 1px solid rgba(27,123,196,0.25); border-radius: 10px;
+      cursor: pointer; white-space: nowrap; vertical-align: middle;
+    }
+    .story-breadth:hover { background: rgba(27,123,196,0.16); }
+    .story-sub-row td { background: rgba(0,0,0,0.015); }
+
+    /* Tablet: horizontal scroll is fine */
+    @media (min-width: 601px) and (max-width: 767px) {
+      .cov-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .cov-table { min-width: 560px; }
+    }
+    /* Mobile portrait: card layout — no horizontal scroll */
+    @media (max-width: 600px) {
+      .cov-table-wrap { overflow-x: visible; }
+      .cov-table { min-width: 0 !important; display: block; }
+      .cov-table thead { display: none; }
+      .cov-table tbody { display: block; }
+      .cov-table tbody tr {
+        display: block;
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--bd);
+      }
+      .cov-table tbody tr:last-child { border-bottom: none; }
+      .cov-table tbody td {
+        display: block;
+        padding: 0;
+        max-width: 100% !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        text-overflow: unset !important;
+      }
+      .cov-table tbody td:nth-child(1) {
+        font-size: 10px; font-weight: 700;
+        letter-spacing: .06em; text-transform: uppercase;
+        color: var(--poster-blue); margin-bottom: 4px;
+      }
+      .cov-table tbody td:nth-child(2) { margin-bottom: 8px; }
+      .cov-table tbody td:nth-child(3),
+      .cov-table tbody td:nth-child(4),
+      .cov-table tbody td:nth-child(5) {
+        display: inline-block; margin-right: 4px; margin-top: 2px;
+      }
+      .cov-table tbody td:nth-child(6) {
+        display: inline-block; margin-top: 4px; padding-left: 6px;
+      }
+    }
+
+    .cc-ok   { color: var(--ink3); }
+    .cc-warn { color: var(--gold); }
+    .cc-over { color: var(--coral); font-weight: 700; }
+
+    /* ── Toast ── */
+    .toast {
+      position: fixed; bottom: 5.5rem; left: 50%; transform: translateX(-50%);
+      background: var(--teal); color: #fff;
+      font-size: .78rem; font-weight: 600;
+      padding: .4rem 1rem; z-index: 99;
+      opacity: 1; transition: opacity .3s;
+      pointer-events: none; white-space: nowrap;
+    }
+
+    /* ── Field ── */
+    .field {
+      padding: 8px 11px; font-size: 13px;
+      background: var(--smoke); border: 1px solid var(--bd);
+      color: var(--ink1); font-family: inherit;
+    }
+    .field::placeholder { color: var(--ink3); }
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--coral) !important; outline: none;
+    }
+
+    /* ── URL row ── */
+    .url-row { display: flex; gap: 5px; align-items: stretch; }
+    .url-row input { flex: 1; min-width: 0; }
+    .url-btn {
+      flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px;
+      background: var(--smoke); border: 1px solid var(--bd);
+      color: var(--ink2); transition: background .12s, color .12s;
+      cursor: pointer; text-decoration: none;
+      font-size: 12px; font-weight: 600;
+    }
+    .url-btn:hover { background: var(--bd); color: var(--ink1); }
+
+    /* ── Platform buttons ── */
+    .plat-btn {
+      padding: 5px 12px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      border: 1px solid var(--bd);
+      background: var(--white);
+      color: var(--ink3);
+      cursor: pointer;
+      transition: all .1s;
+      white-space: nowrap;
+    }
+    .plat-btn.active {
+      background: var(--poster-blue);
+      color: #fff;
+      border-color: var(--poster-blue);
+    }
+
+    /* ── Quick-generate topic chips ── */
+    .quick-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid var(--bd);
+      background: var(--white);
+      color: var(--ink2);
+      cursor: pointer;
+      transition: all .1s;
+      font-family: inherit;
+    }
+    .quick-chip:hover {
+      border-color: var(--poster-blue);
+      color: var(--poster-blue);
+      background: rgba(27,123,196,0.04);
+    }
+    .quick-chip.active-chip {
+      background: var(--poster-blue);
+      color: #fff;
+      border-color: var(--poster-blue);
+    }
+
+    /* ── Image dimension guide ── */
+    .pb-img-guide {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      background: rgba(27,123,196,0.07);
+      border: 1px solid rgba(27,123,196,0.18);
+      font-size: 11px;
+      color: var(--poster-blue);
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+
+    /* ── Mobile responsive ── */
+    @media (max-width: 600px) {
+      #pb-columns { grid-template-columns: 1fr !important; }
+      .chart-3col { grid-template-columns: 1fr !important; }
+      .ep-cast-grid { grid-template-columns: 1fr !important; }
+      .quote-grid { grid-template-columns: 1fr !important; }
+      .show-syn-grid { grid-template-columns: 1fr !important; }
+      /* Platform tabs — horizontal scroll row, no wrap */
+      #pb-plat-btns { flex-wrap: nowrap !important; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 3px; scrollbar-width: none; }
+      #pb-plat-btns::-webkit-scrollbar { display: none; }
+      #pb-plat-btns .plat-btn { flex-shrink: 0; }
+      /* Quick chips scroll */
+      #pb-quick-chips { flex-wrap: nowrap !important; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+      #pb-quick-chips::-webkit-scrollbar { display: none; }
+      #pb-quick-chips .quick-chip { flex-shrink: 0; }
+      /* Copy buttons — full width + 44px tap target on mobile */
+      .pb-copy-btn { width: 100% !important; min-height: 44px; }
+    }
+    @media (max-width: 480px) {
+      .stat-grid { grid-template-columns: repeat(2,1fr) !important; }
+    }
+
+    /* ── In-app article reader (PWA back-navigation) ── */
+    #reader-overlay {
+      position: fixed; inset: 0; z-index: 9999;
+      display: flex; flex-direction: column;
+      background: #070e1e;
+      transform: translateY(100%);
+      transition: transform 0.28s cubic-bezier(.32,.72,0,1);
+      pointer-events: none;
+    }
+    #reader-overlay.open { transform: translateY(0); pointer-events: all; }
+    #reader-bar {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 14px 12px;
+      padding-top: max(env(safe-area-inset-top, 0px), 48px);
+      background: #081628;
+      border-bottom: 1px solid rgba(91,195,232,0.15);
+      flex-shrink: 0;
+    }
+    #reader-back {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 14px; font-weight: 700; color: #5BC3E8;
+      background: none; border: none; cursor: pointer;
+      padding: 6px 8px 6px 0; flex-shrink: 0; font-family: inherit;
+    }
+    #reader-domain {
+      flex: 1; font-size: 11px; color: rgba(255,255,255,0.38);
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0;
+    }
+    #reader-safari {
+      flex-shrink: 0; font-size: 11px; font-weight: 700; color: #5BC3E8;
+      text-decoration: none; padding: 7px 11px;
+      border: 1px solid rgba(91,195,232,0.3); white-space: nowrap;
+    }
+    #reader-frame { flex: 1; border: none; width: 100%; background: #fff; }
+    #reader-fallback {
+      display: none; flex: 1;
+      flex-direction: column; align-items: center; justify-content: center;
+      gap: 16px; padding: 40px 28px; text-align: center;
+    }
+    #reader-fallback p { font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.65; }
+    #reader-fallback a {
+      display: inline-block; padding: 13px 28px;
+      background: #1B7BC4; color: #fff; font-weight: 700;
+      font-size: 14px; text-decoration: none; font-family: inherit;
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--bd2); border-radius: 2px; }
+
+    /* ── Narrative accent ── */
+    #season-narrative { border-left: 3px solid var(--poster-blue); background: var(--smoke); }
+
+    .hidden { display: none !important; }
+
+    .yt-overlay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0); transition: background .15s;
+    }
+    .yt-overlay:hover { background: rgba(0,0,0,0.35); }
+    .yt-play-btn {
+      width: 40px; height: 40px;
+      background: rgba(200,66,42,0.9);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity .15s;
+    }
+    .yt-overlay:hover .yt-play-btn { opacity: 1; }
+
+    /* ── Article Share Modal ── */
+    #share-modal {
+      position: fixed; inset: 0; z-index: 200;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      pointer-events: none;
+    }
+    #share-modal.open { pointer-events: all; }
+    #share-modal-backdrop {
+      position: absolute; inset: 0;
+      background: rgba(5, 10, 22, 0.75);
+      opacity: 0; transition: opacity .28s;
+    }
+    #share-modal.open #share-modal-backdrop { opacity: 1; }
+    #share-modal-panel {
+      position: relative; z-index: 1;
+      background: #0a1628;
+      border-top: 1px solid rgba(91,195,232,0.18);
+      border-radius: 16px 16px 0 0;
+      max-height: 90vh;
+      overflow-y: auto;
+      transform: translateY(100%);
+      transition: transform .3s cubic-bezier(.32,.72,0,1);
+      -webkit-overflow-scrolling: touch;
+    }
+    #share-modal.open #share-modal-panel { transform: translateY(0); }
+    .sm-handle {
+      width: 36px; height: 4px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 2px;
+      margin: 10px auto 0;
+    }
+    .sm-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 20px 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .sm-title {
+      font-size: 11px; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+    }
+    .sm-close {
+      font-size: 22px; color: rgba(255,255,255,0.45); cursor: pointer;
+      background: none; border: none; line-height: 1; padding: 0;
+      font-family: inherit;
+    }
+    .sm-close:hover { color: #fff; }
+    .sm-article {
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .sm-pub {
+      font-size: 9px; font-weight: 800; letter-spacing: .14em;
+      text-transform: uppercase; color: rgba(91,195,232,0.75); margin-bottom: 6px;
+    }
+    .sm-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; font-weight: 800;
+      color: #f2f0ea; line-height: 1.3; margin-bottom: 6px;
+    }
+    .sm-excerpt {
+      font-size: 12px; color: rgba(255,255,255,0.45); line-height: 1.55; margin-bottom: 10px;
+    }
+    .sm-meta {
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    }
+    .sm-date { font-size: 10px; color: rgba(255,255,255,0.3); }
+    .sm-read-btn {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 11px; font-weight: 700; color: #5BC3E8;
+      text-decoration: none; letter-spacing: .03em;
+    }
+    .sm-read-btn:hover { color: #fff; }
+    .sm-ai-section { padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .sm-ai-label {
+      font-size: 9px; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 10px;
+    }
+    .sm-lang-toggle {
+      display: flex; gap: 4px; margin-bottom: 12px;
+    }
+    .sm-lang-btn {
+      padding: 5px 16px; font-size: 11px; font-weight: 700;
+      background: none; border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.4); cursor: pointer;
+      transition: all .1s; font-family: inherit; letter-spacing: .04em;
+    }
+    .sm-lang-btn.active {
+      background: #1B7BC4; border-color: #1B7BC4; color: #fff;
+    }
+    .sm-post-loader {
+      text-align: center; padding: 20px 0;
+      color: rgba(255,255,255,0.35); font-size: 12px;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .sm-spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(91,195,232,0.25);
+      border-top-color: #5BC3E8;
+      border-radius: 50%;
+      animation: sm-spin .7s linear infinite;
+      flex-shrink: 0;
+    }
+    @keyframes sm-spin { to { transform: rotate(360deg); } }
+    .sm-post-textarea {
+      width: 100%; min-height: 90px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #e8e4d8;
+      font-size: 13px; line-height: 1.6;
+      padding: 12px 14px;
+      resize: vertical;
+      font-family: inherit;
+    }
+    .sm-post-textarea:focus { outline: none; border-color: rgba(91,195,232,0.45); }
+    .sm-post-textarea::placeholder { color: rgba(255,255,255,0.18); }
+    .sm-error-msg {
+      font-size: 12px; color: rgba(200,100,80,0.9); padding: 8px 0; text-align: center;
+    }
+    .sm-share-section { padding: 14px 20px 24px; }
+    .sm-share-label {
+      font-size: 9px; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 10px;
+    }
+    .sm-share-btns {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+    }
+    .sm-share-btn {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 5px; padding: 10px 6px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.6);
+      cursor: pointer; font-family: inherit;
+      transition: all .12s;
+      font-size: 9px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+    }
+    .sm-share-btn:hover { background: rgba(255,255,255,0.09); color: #fff; }
+    .sm-share-btn.wa { background: rgba(37,211,102,0.08); border-color: rgba(37,211,102,0.25); color: #25d366; }
+    .sm-share-btn.wa:hover { background: rgba(37,211,102,0.16); }
+    .sm-share-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+    .sm-native-row { margin-top: 10px; }
+    .sm-native-btn {
+      width: 100%; padding: 12px;
+      background: #1B7BC4; color: #fff;
+      font-size: 13px; font-weight: 700;
+      border: none; cursor: pointer; font-family: inherit;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      transition: opacity .12s;
+    }
+    .sm-native-btn:hover { opacity: .85; }
+    @media (max-width: 480px) {
+      .sm-share-btns { grid-template-columns: repeat(2, 1fr); }
+    }
   </style>
 </head>
 <body>
-  <div>
-    <h1>El Círculo</h1>
-    <p>Dashboard build in progress.</p>
+
+<!-- ═══ TOP NAV ═══ -->
+<nav id="topnav">
+  <button class="tnav-brand" onclick="nav('home')">
+    <div class="tnav-logo">EC</div>
+    <span class="tnav-title">El Círculo</span>
+  </button>
+
+  <div class="tnav-links">
+    <button onclick="nav('home')"     class="tnav-link" id="nl-home">Command Center</button>
+    <button onclick="nav('coverage')" class="tnav-link" id="nl-coverage">Coverage</button>
+    <button onclick="nav('social')"   class="tnav-link" id="nl-social">Social</button>
+    <button onclick="nav('assets')"   class="tnav-link" id="nl-assets">Assets</button>
+    <button onclick="nav('show')"     class="tnav-link" id="nl-show">Show Universe</button>
+    <button onclick="nav('updates')"  class="tnav-link" id="nl-updates">Daily Updates</button>
   </div>
+
+  <div class="tnav-right">
+    <span class="tnav-date">Premiered Oct 7, 2026</span>
+    <span class="v4-badge">DEMO DATA</span>
+  </div>
+</nav>
+
+<!-- ═══ DATA-AS-OF BAR (sitewide, visible on every tab) ═══ -->
+<div id="databar">
+  <div class="databar-inner">
+    <span class="databar-crit">Critical reception: <strong id="databar-crit-date">not yet available</strong><span id="databar-crit-changed-wrap" style="display:none"> · unchanged since <strong id="databar-crit-changed-date"></strong></span></span>
+    <span class="databar-sep">·</span>
+    <span class="databar-cov"><span class="live-dot" id="databar-cov-dot"></span><span id="databar-cov-text">Coverage feed: auto-updating</span></span>
+  </div>
+</div>
+
+<!-- ═══ BOTTOM NAV (mobile) ═══ -->
+<nav id="bottomnav">
+  <button onclick="nav('home')"     class="bnav-link" id="bn-home">
+    <svg class="bnav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    Home
+  </button>
+  <button onclick="nav('coverage')" class="bnav-link" id="bn-coverage">
+    <svg class="bnav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+    Coverage
+  </button>
+  <button onclick="nav('social')"   class="bnav-link" id="bn-social">
+    <svg class="bnav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    Social
+  </button>
+  <button onclick="nav('assets')"   class="bnav-link" id="bn-assets">
+    <svg class="bnav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+    Assets
+  </button>
+  <button onclick="nav('show')"     class="bnav-link" id="bn-show">
+    <svg class="bnav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+    Show
+  </button>
+  <button onclick="nav('updates')"  class="bnav-link" id="bn-updates">
+    <svg class="bnav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+    Updates
+  </button>
+</nav>
+
+<!-- ═══ MAIN CONTENT ═══ -->
+<div id="content">
+
+<!-- ─── PAGE: COMMAND CENTER ─── -->
+<section id="page-home" class="page">
+
+  <!-- Hero — dynamic, date-aware -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="hero-eyebrow" id="home-eyebrow">Media Intelligence · El Círculo</p>
+        <h1 class="hero-headline">El <em class="hero-em">Círculo</em><br>on Netflix</h1>
+        <p class="hero-sub" id="home-sub">Loading…</p>
+      </div>
+      <div class="hero-thesis">
+        <p class="hero-thesis-label" id="home-signal-label">Today's Signal</p>
+        <p class="hero-thesis-body" id="home-signal-body">Loading coverage signal…</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats + body -->
+  <div class="container" style="padding-top:0;padding-bottom:48px">
+
+    <hr class="show-rule" style="margin-top:0">
+
+    <!-- Signal Cards (vertical stacked, full-width) -->
+    <div class="signal-strip" id="signal-strip" style="margin-bottom:32px"></div>
+
+    <!-- Morning Briefing (auto-generated from MEDIA data) -->
+    <div class="briefing-card" id="home-briefing"></div>
+
+    <!-- Charts -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Performance Breakdown</p>
+        <h2 class="sec-h2">By territory &amp; format</h2>
+        <hr class="sec-rule">
+      </div>
+      <p class="sec-caption">Click any bar to filter the coverage ledger to that segment.</p>
+    </div>
+
+    <div class="chart-3col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd);margin-bottom:48px">
+      <div style="background:var(--white);padding:22px">
+        <p class="sec-label" style="margin-bottom:14px">By Market</p>
+        <div id="chart-market"></div>
+      </div>
+      <div style="background:var(--white);padding:22px">
+        <p class="sec-label" style="margin-bottom:14px">By Type</p>
+        <div id="chart-type"></div>
+      </div>
+      <div style="background:var(--white);padding:22px">
+        <p class="sec-label" style="margin-bottom:14px">Language Split</p>
+        <div id="chart-lang"></div>
+      </div>
+    </div>
+
+    <!-- Latest Coverage — top 3 editorial -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Latest Coverage</p>
+        <h2 class="sec-h2" id="today-badge">Recent articles</h2>
+        <hr class="sec-rule">
+      </div>
+      <button onclick="nav('coverage')" style="font-size:11px;font-weight:700;color:var(--poster-blue);background:none;border:none;cursor:pointer;font-family:inherit;padding:0">See all →</button>
+    </div>
+    <div id="today-feed" style="margin-bottom:48px"></div>
+
+    <!-- Scores -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Critical Reception</p>
+        <h2 class="sec-h2">Scores &amp; reviews</h2>
+        <hr class="sec-rule">
+      </div>
+      <p class="sec-caption">Day-one release — no aggregator scores exist yet. This section activates automatically once Research Specialist's monitoring sweep finds the first scored reviews.</p>
+    </div>
+
+    <!-- Score tiles — pending, no fabricated numbers -->
+    <div class="chart-3col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd);margin-bottom:48px">
+      <div style="background:var(--white);padding:22px">
+        <p style="font-size:9px;font-weight:700;color:var(--ink3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px">Rotten Tomatoes</p>
+        <p style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:var(--ink3);margin-bottom:4px">Scores pending</p>
+        <p style="font-size:11px;color:var(--ink3)">Too early for a critic panel — premiered Oct 7, 2026</p>
+      </div>
+      <div style="background:var(--white);padding:22px">
+        <p style="font-size:9px;font-weight:700;color:var(--ink3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px">Metacritic</p>
+        <p style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:var(--ink3);margin-bottom:4px">Scores pending</p>
+        <p style="font-size:11px;color:var(--ink3)">No critic reviews filed yet</p>
+      </div>
+      <div style="background:var(--white);padding:22px">
+        <p style="font-size:9px;font-weight:700;color:var(--ink3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px">IMDb</p>
+        <p style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:var(--ink3);margin-bottom:4px">Scores pending</p>
+        <p style="font-size:11px;color:var(--ink3)">Rating not yet established</p>
+      </div>
+    </div>
+
+    <!-- Key Quotes — pending, nothing sourced yet -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Voice of the Show</p>
+        <h2 class="sec-h2">Key quotes</h2>
+        <hr class="sec-rule">
+      </div>
+      <p class="sec-caption">Cast, creator, and critic voices for social amplification — populates once the sweep sources a real, attributable quote.</p>
+    </div>
+    <div class="card" style="padding:28px;text-align:center;margin-bottom:40px">
+      <p style="font-size:13px;color:var(--ink3)">No sourced quotes yet. This dashboard will not display quotes attributed to cast or creative team members until they are verified against a real published interview.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PAGE: COVERAGE ─── -->
+<section id="page-coverage" class="page">
+  <div class="mini-hero">
+    <div class="container">
+      <p class="hero-eyebrow">Evidence Ledger</p>
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:800;color:#fff;line-height:1.05;margin-bottom:8px">Media coverage</h1>
+      <p style="font-size:13px;color:rgba(255,255,255,0.4)">All articles, reviews, and mentions tracked since launch. <span id="cov-count"></span></p>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:32px;padding-bottom:48px">
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px">
+      <input id="cov-search" type="search" placeholder="Search outlet, headline…" class="field" style="flex:1;min-width:140px" />
+      <select id="cov-market" class="field" style="width:auto"><option value="">All Markets</option><option>Mexico</option><option>Latin America</option><option>Spain</option><option>International</option></select>
+      <select id="cov-type"   class="field" style="width:auto"><option value="">All Types</option><option>Trade</option><option>Entertainment</option><option>Tech</option><option>Regional</option><option>Review</option></select>
+      <select id="cov-lang"   class="field" style="width:auto"><option value="">All Languages</option><option value="EN">English</option><option value="ES">Spanish</option></select>
+      <select id="cov-sort"   class="field" style="width:auto"><option value="newest">Newest First</option><option value="oldest">Oldest First</option></select>
+    </div>
+
+    <div class="card cov-table-wrap">
+      <table class="cov-table">
+        <thead>
+          <tr>
+            <th>Outlet</th>
+            <th>Headline / Excerpt</th>
+            <th>Market</th>
+            <th>Type</th>
+            <th>Lang</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="cov-feed"></tbody>
+      </table>
+    </div>
+    <div id="cov-empty" class="hidden" style="text-align:center;padding:64px 0;color:var(--ink3);font-size:14px">No articles match your filters.</div>
+  </div>
+</section>
+
+<!-- ─── PAGE: SOCIAL ─── -->
+<section id="page-social" class="page">
+  <div class="mini-hero" style="position:relative;overflow:hidden">
+    <div style="position:absolute;right:0;top:0;bottom:0;width:45%;background:url('https://img.youtube.com/vi/1lVJ96Oi9UY/hqdefault.jpg') center/cover no-repeat;mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 30%,rgba(0,0,0,0.35) 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 30%,rgba(0,0,0,0.35) 100%);pointer-events:none"></div>
+    <div class="container" style="position:relative">
+      <p class="hero-eyebrow">Social Media</p>
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:800;color:#fff;line-height:1.05;margin-bottom:8px">Post Generator</h1>
+      <p style="font-size:13px;color:rgba(255,255,255,0.4)">Pick a platform · tap a topic · get a bilingual post ready to copy &amp; paste. Demo data — social listening starts once the media sweep is live.</p>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:40px;padding-bottom:48px">
+
+    <!-- AI Post Generator V8 -->
+    <div class="card" style="overflow:hidden;margin-bottom:48px;border-left:3px solid var(--poster-blue)">
+
+      <!-- Platform + Image Guide -->
+      <div style="padding:22px 26px 16px;border-bottom:1px solid var(--bd)">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">
+          <div>
+            <p class="sec-label" style="margin-bottom:2px">AI Post Generator</p>
+            <p style="font-size:11px;color:var(--ink3)">Pick a topic — fully written bilingual posts, ready to copy &amp; paste</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px" id="pb-plat-btns">
+          <button onclick="selectPlatform('twitter')"   id="pb-btn-twitter"   class="plat-btn" style="font-family:inherit">Twitter / X</button>
+          <button onclick="selectPlatform('instagram')" id="pb-btn-instagram" class="plat-btn" style="font-family:inherit">Instagram</button>
+          <button onclick="selectPlatform('linkedin')"  id="pb-btn-linkedin"  class="plat-btn" style="font-family:inherit">LinkedIn</button>
+          <button onclick="selectPlatform('facebook')"  id="pb-btn-facebook"  class="plat-btn" style="font-family:inherit">Facebook</button>
+          <button onclick="selectPlatform('tiktok')"    id="pb-btn-tiktok"    class="plat-btn" style="font-family:inherit">TikTok</button>
+        </div>
+      </div>
+
+      <!-- Quick Generate — one tap, no typing -->
+      <div style="padding:18px 26px;border-bottom:1px solid var(--bd);background:var(--smoke)">
+        <p style="font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:10px">One-tap generate — no typing needed</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px" id="pb-quick-btns">
+          <button onclick="quickGenerate(0)" class="quick-chip" style="font-family:inherit">🎬 Premiere</button>
+          <button onclick="quickGenerate(1)" class="quick-chip" style="font-family:inherit">📰 Latest Article</button>
+        </div>
+      </div>
+
+      <!-- Custom topic (collapsed) -->
+      <div style="padding:14px 26px;border-bottom:1px solid var(--bd)">
+        <button onclick="togglePbCustom()" id="pb-custom-toggle"
+          style="font-size:11px;font-weight:600;color:var(--poster-blue);background:none;border:none;cursor:pointer;padding:0;font-family:inherit;display:flex;align-items:center;gap:5px">
+          <span id="pb-custom-arrow">+</span> Custom topic or article
+        </button>
+        <div id="pb-custom-wrap" style="display:none;margin-top:14px;display:none">
+          <div style="display:flex;flex-direction:column;gap:7px">
+            <input id="pb-headline" type="text" placeholder="Article headline or topic…" class="field" style="width:100%" />
+            <div style="display:flex;gap:6px">
+              <input id="pb-url" type="text" placeholder="Article URL (https://…)" class="field" style="flex:1" oninput="syncPbUrlLink()" />
+              <a id="pb-url-link" href="#" target="_blank" rel="noopener noreferrer" class="url-btn" title="Open URL">↗</a>
+            </div>
+            <div style="display:flex;gap:6px">
+              <input id="pb-outlet" type="text" placeholder="Outlet / publication…" class="field" style="flex:1" />
+              <button onclick="generatePost()" style="padding:8px 16px;background:var(--poster-blue);color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border:none;cursor:pointer;font-family:inherit;white-space:nowrap" onmouseover="this.style.opacity='.82'" onmouseout="this.style.opacity='1'">Generate ↗</button>
+            </div>
+            <textarea id="pb-excerpt" rows="2" placeholder="Key quote or excerpt (optional)…" class="field" style="width:100%;resize:vertical"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Output -->
+      <div style="padding:18px 26px">
+        <p id="pb-limit-note" style="font-size:10px;color:var(--ink3);margin-bottom:12px"></p>
+        <!-- Source verification badge — appears after every generation -->
+        <div id="pb-source-badge" style="display:none;align-items:center;gap:0;padding:7px 12px;background:rgba(61,150,136,0.07);border:1px solid rgba(61,150,136,0.28);margin-bottom:12px;font-family:inherit;overflow:hidden"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px" id="pb-columns">
+          <div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+              <p style="font-size:10px;font-weight:700;color:var(--poster-blue);letter-spacing:.1em;text-transform:uppercase">🇲🇽 Español</p>
+              <button onclick="copyPost('es')" style="font-size:10px;font-weight:600;padding:4px 10px;border:1px solid var(--poster-blue);color:var(--poster-blue);background:none;cursor:pointer;font-family:inherit" onmouseover="this.style.background='rgba(27,123,196,0.07)'" onmouseout="this.style.background='none'">Copiar</button>
+            </div>
+            <textarea id="pb-out-es" rows="8" class="field" style="width:100%;resize:vertical;line-height:1.6" oninput="updateCC('es')" placeholder="El post en español aparece aquí…"></textarea>
+            <p id="cc-es" style="font-size:10px;color:var(--ink3);text-align:right;margin-top:3px"></p>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+              <p style="font-size:10px;font-weight:700;color:var(--poster-blue);letter-spacing:.1em;text-transform:uppercase">🇺🇸 English</p>
+              <button onclick="copyPost('en')" style="font-size:10px;font-weight:600;padding:4px 10px;border:1px solid var(--poster-blue);color:var(--poster-blue);background:none;cursor:pointer;font-family:inherit" onmouseover="this.style.background='rgba(27,123,196,0.07)'" onmouseout="this.style.background='none'">Copy</button>
+            </div>
+            <textarea id="pb-out-en" rows="8" class="field" style="width:100%;resize:vertical;line-height:1.6" oninput="updateCC('en')" placeholder="The English post appears here…"></textarea>
+            <p id="cc-en" style="font-size:10px;color:var(--ink3);text-align:right;margin-top:3px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hashtag cloud -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Hashtag Performance</p>
+        <h2 class="sec-h2">Volume indicators</h2>
+        <hr class="sec-rule">
+      </div>
+      <p class="sec-caption">Pending — volume indicators populate once real social listening starts.</p>
+    </div>
+    <div class="card" style="padding:24px;margin-bottom:40px">
+      <div id="hashtag-cloud" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;line-height:1.5"></div>
+    </div>
+
+    <!-- Trailers -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Promotional Assets</p>
+        <h2 class="sec-h2">Official trailers</h2>
+        <hr class="sec-rule">
+      </div>
+    </div>
+    <div class="card" style="padding:22px;margin-bottom:40px">
+      <p style="font-size:12px;color:var(--ink3)">Trailer links pending — add official YouTube/Netflix links here once Marketing shares the cleared asset kit.</p>
+    </div>
+
+    <!-- Show images -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Show Imagery</p>
+        <h2 class="sec-h2">Visuals for social</h2>
+        <hr class="sec-rule">
+      </div>
+      <p class="sec-caption">Pending Billy's cleared key art / stills (see build comment on this ticket).</p>
+    </div>
+    <div class="card" style="padding:22px;margin-bottom:40px">
+      <p style="font-size:12px;color:var(--ink3)">No cleared stills loaded yet — the private Netflix/DF Studio asset-share links on this ticket need an authenticated download, which this build did not have access to.</p>
+    </div>
+
+    <!-- Cast Activation -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Cast Activation</p>
+        <h2 class="sec-h2">Social handles</h2>
+        <hr class="sec-rule">
+      </div>
+      <p class="sec-caption">Instagram handles/follower counts pending verification — not guessed.</p>
+    </div>
+    <div class="card" style="overflow:hidden;margin-bottom:40px">
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead>
+            <tr style="background:var(--smoke);border-bottom:1px solid var(--bd)">
+              <th style="padding:10px 16px;text-align:left;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)">Cast member</th>
+              <th style="padding:10px 16px;text-align:left;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)">Billing</th>
+              <th style="padding:10px 16px;text-align:left;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)">Social</th>
+            </tr>
+          </thead>
+          <tbody id="cast-activation-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Social mentions -->
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Social Listening</p>
+        <h2 class="sec-h2">Notable mentions</h2>
+        <hr class="sec-rule">
+      </div>
+    </div>
+    <div class="card" style="margin-bottom:40px;overflow:hidden">
+      <div id="social-mentions-feed"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── PAGE: SHOW UNIVERSE ─── -->
+<section id="page-show" class="page">
+  <!-- Show key art banner — placeholder; real key art pending Billy's cleared assets -->
+  <div style="position:relative;height:220px;overflow:hidden;background:var(--hero-bg)">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg, rgba(140,31,43,0.35) 0%, rgba(20,6,10,0.95) 100%)"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:28px 40px">
+      <p style="font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--poster-blue2);margin-bottom:6px">Netflix · Lemon Studios</p>
+      <h1 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:#fff;line-height:1;letter-spacing:-.01em">El <em style="color:var(--poster-blue2);font-style:italic">Círculo</em></h1>
+    </div>
+  </div>
+  <div style="border-bottom:1px solid rgba(140,31,43,0.22);background:var(--nav-bg);padding:10px 40px">
+    <p style="font-size:11px;color:rgba(255,255,255,0.35)">Based on "Los Corruptores" · Episodes · Cast · Creative team</p>
+  </div>
+
+  <div class="container" style="padding-top:40px;padding-bottom:48px">
+    <div class="card" style="padding:28px 32px;margin-bottom:24px;border-left:3px solid var(--coral)">
+      <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px">
+        <span style="font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;background:rgba(140,31,43,0.08);color:var(--poster-blue);border:1px solid rgba(140,31,43,0.22)">Netflix Original</span>
+        <span style="font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;background:rgba(61,150,136,0.08);color:var(--teal);border:1px solid rgba(61,150,136,0.22)">Streaming Now</span>
+      </div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;color:var(--ink1);margin-bottom:4px">El Círculo</h2>
+      <p style="font-size:15px;font-weight:600;color:var(--coral);margin-bottom:14px">Based on the novel "Los Corruptores" by Jorge Zepeda Patterson</p>
+      <p style="font-size:13px;color:var(--ink2);line-height:1.72;max-width:640px">A leaked video drags four lifelong friends into a network of blackmail and danger, exposing their secrets, ambitions, and fears — the closer the circle, the darker what it hides. Directed by <strong style="color:var(--ink1)">Alejandro Lozano ("Patas")</strong>, written by Simona Horcha, Fanie Soto, Fernando Rovzar and Fabián Archondo, produced by <strong style="color:var(--ink1)">Lemon Studios</strong>. Premiered globally on Netflix Oct 7, 2026, available in 190+ countries.</p>
+    </div>
+
+    <div class="ep-cast-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd);margin-bottom:24px">
+      <div style="background:var(--white);padding:24px">
+        <p class="sec-label" style="margin-bottom:14px">Episode Schedule</p>
+        <div id="episode-list" style="display:flex;flex-direction:column;gap:2px"></div>
+      </div>
+      <div style="background:var(--white);padding:24px">
+        <p class="sec-label" style="margin-bottom:14px">Lead Cast</p>
+        <div id="cast-list" style="display:flex;flex-direction:column;gap:12px"></div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:24px;margin-bottom:24px">
+      <p class="sec-label" style="margin-bottom:14px">Creative Team</p>
+      <div id="crew-list" style="display:flex;flex-direction:column;gap:1px;background:var(--bd)"></div>
+    </div>
+
+    <div class="card" style="padding:24px;margin-bottom:32px">
+      <p style="font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:10px">Netflix Significance</p>
+      <p style="font-size:13px;color:var(--ink2);line-height:1.68">Part of Netflix's 2026 slate of Mexican originals; available globally across 190+ countries from premiere day.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── PAGE: DAILY UPDATES ─── -->
+<section id="page-updates" class="page">
+  <div class="mini-hero">
+    <div class="container">
+      <p class="hero-eyebrow">Morning Intelligence</p>
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:800;color:#fff;line-height:1.05;margin-bottom:8px">Daily updates</h1>
+      <p style="font-size:13px;color:rgba(255,255,255,0.4)">Compiled by the Research Specialist routine · monitoring begins at premiere</p>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:40px;padding-bottom:48px">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+      <p style="font-size:12px;color:var(--ink3)">Last updated: <strong id="updates-last-date" style="color:var(--ink2)">not yet available</strong></p>
+    </div>
+
+    <div class="card" style="border-left:3px solid var(--teal);padding:28px 32px;margin-bottom:8px">
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:18px">
+        <span class="live-dot"></span>
+        <p style="font-size:9px;font-weight:700;color:var(--teal);letter-spacing:.12em;text-transform:uppercase">Oct 7, 2026 — Premiere Day</p>
+      </div>
+      <div style="font-size:13px;color:var(--ink2);line-height:1.75;display:flex;flex-direction:column;gap:10px">
+        <p>El Círculo launched globally on Netflix, available in 190+ countries. This dashboard shipped as a day-one build — demo/placeholder data only. Research Specialist's automated media sweep has not started yet; coverage, scores, and social listening below will populate once it goes live.</p>
+      </div>
+    </div>
+    <div class="card" style="padding:14px 24px;text-align:center;color:var(--ink3);font-size:12px">
+      <span id="next-check-stamp">Episode schedule not yet announced — no scheduled check can be computed.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PAGE: SOCIAL MEDIA ASSETS ─── -->
+<section id="page-assets" class="page">
+  <div class="page-inner">
+
+    <div class="sec-header">
+      <div class="sec-header-left">
+        <p class="sec-eyebrow">Netflix Assets</p>
+        <h2 class="sec-h2">Official assets kit</h2>
+        <hr class="sec-rule">
+      </div>
+      <p class="sec-caption">Pending — no official Netflix press/social assets kit has been shared with this dashboard yet.</p>
+    </div>
+
+    <div class="card" style="padding:24px;margin-bottom:16px">
+      <p style="font-size:13px;color:var(--ink2);line-height:1.6">Request the official trailer, key art, and posting guidelines from Netflix marketing / Billy, then drop the links here. No password-protected asset kit exists in this build — nothing has been fabricated.</p>
+    </div>
+
+    <!-- Quick-post presets -->
+    <div class="card" style="overflow:hidden;margin-bottom:16px">
+      <div style="padding:18px 24px;border-bottom:1px solid var(--bd)">
+        <p style="font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:4px">Quick-post presets</p>
+        <p style="font-size:12px;color:var(--ink2)">One tap — opens Social tab with post pre-loaded. Select platform, copy, post.</p>
+      </div>
+      <div style="padding:16px 24px;display:flex;flex-wrap:wrap;gap:8px">
+        <button onclick="nav('social');setTimeout(()=>quickGenerate(0),120)" style="font-size:12px;font-weight:600;padding:8px 14px;border:1px solid var(--bd);background:var(--smoke);color:var(--ink1);cursor:pointer;font-family:inherit" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--smoke)'">🎬 Premiere announce</button>
+        <button onclick="nav('social');setTimeout(()=>quickGenerate(1),120)" style="font-size:12px;font-weight:600;padding:8px 14px;border:1px solid var(--bd);background:var(--smoke);color:var(--ink1);cursor:pointer;font-family:inherit" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--smoke)'">📰 Latest article</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</div><!-- end #content -->
+
+<!-- ═══ JAVASCRIPT ═══ -->
+<script>
+/* ─── DATA ─── */
+let MEDIA = [
+  { outlet:'(System) Monitoring status', headline:'Media sweep not yet started — El Círculo premiered today', url:'https://www.netflix.com/', date:'Oct 7, 2026', ts:20261007, lang:'ES', market:'Mexico', type:'Entertainment', excerpt:'This is a placeholder status row, not a real article. Research Specialist\'s automated media sweep will add real coverage rows here once it goes live; remove this row on the first real add.' },
+];
+
+/* URLs from the original hardcoded set — used to mark sweep-added articles as NEW */
+const MEDIA_ORIGINAL_URLS = new Set(MEDIA.map(a => a.url));
+
+/* Rule D defense (LEMA-9885): a ts later than today is never a valid publish date,
+   so it must not win "newest/latest" derivation (home hero, Just In card, Post
+   Builder seed). Full Coverage table is intentionally left unfiltered so a
+   future-ts anomaly stays visible/auditable there instead of silently vanishing. */
+function excludeFutureTs(list) {
+  const cutoff = Number(new Date().toISOString().slice(0,10).replace(/-/g,''));
+  const valid = list.filter(a => a.ts <= cutoff);
+  if (valid.length < list.length) {
+    const n = list.length - valid.length;
+    console.warn(`[El Círculo] excluded ${n} future-ts entr${n===1?'y':'ies'} from newest/latest derivation (cutoff ${cutoff})`);
+  }
+  return valid.length ? valid : list;
+}
+
+/* Episode count/schedule is unconfirmed (per LEMA-12164/LEMA-12165) — do not
+   invent dates. Stays empty until production/marketing confirms a schedule. */
+const EPISODES = [];
+
+/* Next-check footer stamp: derived from EPISODES so it can never promise a
+   drop-week check that has already passed. With an empty EPISODES array
+   (schedule unconfirmed) this must say so plainly, not silently compute
+   nothing or fall back to a stale hardcoded date. */
+(function updateNextCheckStamp() {
+  const el = document.getElementById('next-check-stamp');
+  if (!el) return;
+  if (!EPISODES.length) {
+    el.textContent = 'Episode schedule not yet announced — no scheduled check can be computed.';
+    return;
+  }
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const next = EPISODES.find(e => e.iso >= todayIso);
+  el.textContent = next
+    ? `Next scheduled check: around the ${next.date} Episode ${next.ep} release.`
+    : 'No further episode drops are currently scheduled.';
+})();
+
+/* No confirmed character names, Instagram handles, or follower counts for
+   El Círculo cast as of this build — ig/igFollowers left null (hidden in UI)
+   rather than guessed. See build comment on LEMA-12165. */
+const CAST = [
+  { name:'Zuria Vega',          role:'Lead',       note:'',  ig:null, igFollowers:null, link:'', initials:'ZV' },
+  { name:'Michel Brown',        role:'Lead',       note:'',  ig:null, igFollowers:null, link:'', initials:'MB' },
+  { name:'Raúl Briones',        role:'Lead',       note:'',  ig:null, igFollowers:null, link:'', initials:'RB' },
+  { name:'Osvaldo Benavides',   role:'Lead',       note:'',  ig:null, igFollowers:null, link:'', initials:'OB' },
+  { name:'Saúl Lisazo',         role:'Supporting', note:'+ María Elisa Camargo, Pamela Cortes, Andrés Revo, Alejandro Porter', ig:null, igFollowers:null, link:'', initials:'+' },
+];
+
+const CREW = [
+  { role:'Director',           name:'Alejandro Lozano ("Patas")', note:'',                 link:'' },
+  { role:'Writer',             name:'Simona Horcha',    note:'',                           link:'' },
+  { role:'Writer',             name:'Fanie Soto',       note:'',                           link:'' },
+  { role:'Writer',             name:'Fernando Rovzar',  note:'International Emmy winner',  link:'https://www.imdb.com/name/nm1376403/' },
+  { role:'Writer',             name:'Fabián Archondo',  note:'',                           link:'' },
+  { role:'Novel / Consultant', name:'Jorge Zepeda Patterson', note:'Author, "Los Corruptores"', link:'' },
+  { role:'Executive Producer', name:'Billy Rovzar',     note:'Lemon Studios',              link:'https://www.imdb.com/name/nm4344131/' },
+  { role:'Production',         name:'Lemon Studios',    note:'Mexico City',                link:'https://www.lemon.la/' },
+];
+
+/* ─── SOURCE-VERIFICATION REGISTRY ─── */
+// Canonical verified credits derived from CREW + production data.
+// Any generated post claim about a person + guild role MUST match this registry.
+const VERIFIED_CREDITS = {
+  'Alejandro Lozano':      ['director'],
+  'Simona Horcha':         ['writer'],
+  'Fanie Soto':            ['writer'],
+  'Fernando Rovzar':       ['writer'],
+  'Fabián Archondo':       ['writer'],
+  'Billy Rovzar':          ['producer'],
+  'Lemon Studios':         ['producer'],
+};
+
+// Guild-role verbs (EN + ES) mapped to canonical role categories
+const GUILD_CLAIM_MAP = {
+  'wrote':        'writer',
+  'co-wrote':     'writer',
+  'scripted':     'writer',
+  'screenplay':   'writer',
+  'directed':     'director',
+  'produced':     'producer',
+  'created':      'creator',
+  'co-created':   'creator',
+  // Spanish forms
+  'escribió':     'writer',
+  'co-escribió':  'writer',
+  'guionista':    'writer',
+  'guión':        'writer',
+  'dirigió':      'director',
+  'producida por':'producer',
+  'producido por':'producer',
+  'creada por':   'creator',
+  'creado por':   'creator',
+};
+
+// Scan post text line-by-line; strip any line containing an unverified
+// guild-role claim about a named person. Returns cleaned text + stripped lines.
+function verifyClaims(text) {
+  if (!text) return { clean: text, stripped: [] };
+  const stripped = [];
+  const cleanLines = text.split('\n').map(line => {
+    const lower = line.toLowerCase();
+    const matchedVerb = Object.keys(GUILD_CLAIM_MAP).find(v => lower.includes(v));
+    if (!matchedVerb) return line;
+    const matchedPerson = Object.keys(VERIFIED_CREDITS).find(name =>
+      lower.includes(name.toLowerCase())
+    );
+    if (!matchedPerson) return line;
+    const claimedRole = GUILD_CLAIM_MAP[matchedVerb];
+    if ((VERIFIED_CREDITS[matchedPerson] || []).includes(claimedRole)) return line;
+    stripped.push(line.trim());
+    return null;
+  });
+  return { clean: cleanLines.filter(l => l !== null).join('\n'), stripped };
+}
+
+function showSourceBadge(sourceLabel, strippedLines) {
+  const el = document.getElementById('pb-source-badge');
+  if (!el) return;
+  if (!sourceLabel) { el.style.display = 'none'; return; }
+  const warnPart = strippedLines && strippedLines.length
+    ? `<span style="color:var(--coral);font-weight:700;margin-left:12px">⚠ ${strippedLines.length} unverified claim${strippedLines.length>1?'s':''} removed</span>`
+    : '';
+  el.style.display = 'flex';
+  el.innerHTML = `<span style="font-size:10px;font-weight:800;letter-spacing:.06em;color:#3d9688;text-transform:uppercase;white-space:nowrap">✓ Source verified</span><span style="font-size:11px;color:var(--ink2);margin-left:8px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Based on: ${sourceLabel}</span>${warnPart}`;
+}
+
+/* ─── ROUTER ─── */
+const PAGES = ['home','coverage','social','assets','show','updates'];
+
+function nav(page) {
+  if (!PAGES.includes(page)) page = 'home';
+  PAGES.forEach(p => {
+    const pg = document.getElementById('page-' + p);
+    const nl = document.getElementById('nl-' + p);
+    const bn = document.getElementById('bn-' + p);
+    if (pg) pg.classList.toggle('active', p === page);
+    if (nl) nl.classList.toggle('active', p === page);
+    if (bn) bn.classList.toggle('active', p === page);
+  });
+  window.location.hash = '/' + (page === 'home' ? '' : page);
+  window.scrollTo(0, 0);
+  if (page === 'coverage') {
+    if (window._covFilter) {
+      const {field, value} = window._covFilter;
+      const sel = {market:'cov-market',type:'cov-type',lang:'cov-lang'}[field];
+      if (sel) document.getElementById(sel).value = value;
+      delete window._covFilter;
+    }
+    renderCoverage();
+  }
+}
+
+function routeFromHash() {
+  const hash = window.location.hash.replace('#/', '').replace('#', '') || '';
+  const page = hash || 'home';
+  nav(PAGES.includes(page) ? page : 'home');
+}
+
+window.addEventListener('hashchange', routeFromHash);
+
+/* ─── BADGE HELPERS ─── */
+/* Mexico/LatAm/Spanish-language-weighted bucket set per Billy's note on
+   LEMA-12165 (do not copy Las Azules' US/Mexico/Spain/Other verbatim) —
+   PROPOSAL, pending Billy's confirmation once real coverage starts. */
+const MARKET_STYLE = {
+  Mexico:           'background:rgba(61,150,136,0.08);color:#3d9688;border:1px solid rgba(61,150,136,0.22)',
+  'Latin America':  'background:rgba(181,131,42,0.08);color:#b5832a;border:1px solid rgba(181,131,42,0.22)',
+  Spain:            'background:rgba(200,66,42,0.08);color:#c8422a;border:1px solid rgba(200,66,42,0.22)',
+  International:    'background:rgba(58,96,168,0.08);color:#3a60a8;border:1px solid rgba(58,96,168,0.22)',
+};
+const TYPE_STYLE = {
+  Trade:         'background:rgba(58,96,168,0.08);color:#3a60a8;border:1px solid rgba(58,96,168,0.2)',
+  Entertainment: 'background:rgba(200,66,42,0.08);color:#c8422a;border:1px solid rgba(200,66,42,0.2)',
+  Tech:          'background:rgba(61,150,136,0.08);color:#3d9688;border:1px solid rgba(61,150,136,0.2)',
+  Regional:      'background:rgba(181,131,42,0.08);color:#b5832a;border:1px solid rgba(181,131,42,0.2)',
+  Review:        'background:rgba(181,131,42,0.1);color:#b5832a;border:1px solid rgba(181,131,42,0.25)',
+};
+const LANG_STYLE = {
+  EN: 'background:rgba(58,96,168,0.07);color:#3a60a8;border:1px solid rgba(58,96,168,0.18)',
+  ES: 'background:rgba(61,150,136,0.07);color:#3d9688;border:1px solid rgba(61,150,136,0.18)',
+};
+
+function badge(text, style) {
+  return `<span style="display:inline-block;padding:1px 6px;font-size:9px;font-weight:700;letter-spacing:.04em;${style || 'background:rgba(154,144,128,0.1);color:#9a9080;border:1px solid rgba(154,144,128,0.2)'}">${text}</span>`;
+}
+
+/* stat-articles / stat-days elements removed in V8.6 — home is now fully dynamic */
+
+/* ─── CHARTS ─── */
+const MARKET_BAR = { Mexico:'#3d9688', 'Latin America':'#b5832a', Spain:'#c8422a', International:'#3a60a8' };
+const TYPE_BAR   = { Entertainment:'#c8422a', Tech:'#3d9688', Trade:'#3a60a8', Regional:'#b5832a', Review:'#b5832a' };
+const LANG_BAR   = { EN:'#3a60a8', ES:'#3d9688' };
+
+function tally(field) {
+  const m = {};
+  MEDIA.forEach(a => { m[a[field]] = (m[a[field]] || 0) + 1; });
+  return Object.entries(m).sort((a,b) => b[1]-a[1]).map(([k,v]) => ({k,v}));
+}
+
+function buildChart(containerId, data, colors, filterField) {
+  const max = Math.max(...data.map(d => d.v));
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = data.map(d => {
+    const color = colors[d.k] || '#3a60a8';
+    const pct = Math.max(10, (d.v / max) * 100);
+    return `<div class="chart-bar" onclick="navWithFilter('${filterField}','${d.k}')" style="margin-bottom:8px">
+      <div style="display:flex;align-items:center;gap:8px">
+        <span style="font-size:11px;color:var(--ink2);width:80px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${d.k}</span>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${pct}%;background:${color}">
+            <span style="font-size:10px;font-weight:700;color:#fff">${d.v}</span>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function navWithFilter(field, value) {
+  window._covFilter = { field, value };
+  nav('coverage');
+}
+
+function storyGroups(list) {
+  const map = new Map();
+  list.forEach(a => {
+    const key = a.storyGroup || a.url;
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(a);
+  });
+  return map;
+}
+
+function buildCharts() {
+  buildChart('chart-market', tally('market'), MARKET_BAR, 'market');
+  buildChart('chart-type',   tally('type'),   TYPE_BAR,   'type');
+  buildChart('chart-lang',   tally('lang'),   LANG_BAR,   'lang');
+}
+buildCharts();
+
+/* ─── HOME — dynamic editorial briefing ─── */
+function buildHome() {
+  const LAUNCH_TS = new Date('2026-10-07T00:00:00').getTime();
+  const now       = new Date();
+  const dayN      = Math.max(1, Math.ceil((now.getTime() - LAUNCH_TS) / 86400000));
+  const dateStr   = now.toLocaleDateString('en-US', {weekday:'long', month:'long', day:'numeric'});
+
+  /* Derived signals from MEDIA array */
+  const sorted     = excludeFutureTs(MEDIA).sort((a,b) => b.ts - a.ts);
+  const newest     = sorted[0];
+  const byMarket   = tally('market');
+  const byType     = tally('type');
+  const reviews    = MEDIA.filter(a => a.type === 'Review');
+  const bestReview = reviews[0];
+  const topMarket  = byMarket[0];
+  const markets    = new Set(MEDIA.map(a=>a.market));
+  const storyCount = storyGroups(MEDIA).size;
+
+  /* Hero */
+  document.getElementById('home-eyebrow').textContent =
+    `${dateStr} · Day ${dayN}`;
+  document.getElementById('home-sub').textContent =
+    `${storyCount} stories (${MEDIA.length} mentions) · ${markets.size} markets · Newest: ${newest.outlet}`;
+
+  /* Signal — best one-line summary */
+  const signalLines = [];
+  if (bestReview) signalLines.push(`${bestReview.outlet} gives ${dayN <= 3 ? 'the first major review' : 'a key review'}: ${bestReview.excerpt ? '"' + bestReview.excerpt.substring(0,90) + '…"' : bestReview.headline}.`);
+  signalLines.push(`${topMarket.k} leads coverage volume with ${topMarket.v} of ${MEDIA.length} articles.`);
+  document.getElementById('home-signal-label').textContent = `Day ${dayN} Signal`;
+  document.getElementById('home-signal-body').textContent = signalLines.join(' ');
+
+  /* ── Signal Cards strip ── */
+  const typeBreakdown = byType.slice(0,3).map(t=>`${t.v} ${t.k}`).join(' · ');
+  const cards = [
+    /* Card 1 — Best review */
+    bestReview ? `
+    <div class="signal-card sc-dark" onclick="openArticle('${bestReview.url}')" style="cursor:pointer">
+      <p class="sc-eyebrow">⭐ Best Review</p>
+      <p class="sc-score">${bestReview.outlet}</p>
+      <p class="sc-body" style="margin-top:8px">"${(bestReview.excerpt||bestReview.headline).substring(0,160)}…"</p>
+      <div class="sc-footer">
+        <span class="sc-action">Read review →</span>
+        <span style="font-size:11px;color:rgba(255,255,255,0.35)">${bestReview.date}</span>
+      </div>
+    </div>` : '',
+
+    /* Card 2 — Coverage snapshot */
+    `<div class="signal-card" style="">
+      <p class="sc-eyebrow">📰 Coverage · Day ${dayN}</p>
+      <p class="sc-headline">${storyCount} stories tracked</p>
+      <p class="sc-body">${MEDIA.length} mentions · ${typeBreakdown}<br>across ${markets.size} markets · ${MEDIA.filter(a=>a.lang==='ES').length} in Spanish · ${MEDIA.filter(a=>a.lang==='EN').length} in English</p>
+      <div class="sc-footer">
+        <button class="sc-action" onclick="nav('coverage')">Full coverage →</button>
+        <span style="font-size:10px;color:var(--ink3)">${topMarket.k} leading</span>
+      </div>
+    </div>`,
+
+    /* Card 3 — Newest article */
+    `<div class="signal-card" style="">
+      <p class="sc-eyebrow">🔴 Just In</p>
+      <p class="sc-headline">${newest.headline.substring(0,90)}${newest.headline.length>90?'…':''}</p>
+      <p class="sc-body" style="margin-top:6px">${newest.outlet} · ${newest.market} · ${newest.date}</p>
+      <div class="sc-footer">
+        <button class="sc-action" onclick="openArticle('${newest.url}')">Read →</button>
+        ${badge(newest.lang, LANG_STYLE[newest.lang])}
+      </div>
+    </div>`,
+
+    /* Card 4 — Netflix streaming */
+    `<div class="signal-card sc-accent" onclick="openArticle('https://www.netflix.com/')" style="cursor:pointer">
+      <p class="sc-eyebrow"> Now Streaming</p>
+      <p class="sc-headline">El Círculo is live on Netflix</p>
+      <p class="sc-body">Premiered Oct 7, 2026 · Available in 190+ countries<br>Episode schedule: TBD</p>
+      <div class="sc-footer">
+        <span class="sc-action">Watch on Netflix →</span>
+      </div>
+    </div>`,
+  ].filter(Boolean);
+  document.getElementById('signal-strip').innerHTML = cards.join('');
+
+  /* ── Morning Briefing ── */
+  const mktLines = byMarket.slice(0,3).map(m=>`
+    <div class="focus-item">
+      <span class="focus-bullet">→</span>
+      <span><strong>${m.k}</strong>: ${m.v} article${m.v!==1?'s':''} — ${MEDIA.filter(a=>a.market===m.k).map(a=>a.outlet).slice(0,2).join(', ')}${MEDIA.filter(a=>a.market===m.k).length>2?' +more':''}</span>
+    </div>`).join('');
+
+  document.getElementById('home-briefing').innerHTML = `
+    <p class="briefing-date">${dateStr} · Day ${dayN} · El Círculo Coverage Brief</p>
+    <div class="briefing-body">
+      <p>El Círculo has <strong>${storyCount} stories</strong> (${MEDIA.length} total mentions) across ${markets.size} markets after ${dayN} day${dayN!==1?'s':''}. ${byType[0] ? `<strong>${byType[0].k}</strong> is the leading coverage type (${byType[0].v} pieces).` : ''} ${reviews.length > 0 ? `Critical reception led by ${bestReview.outlet}.` : 'Critical reviews are incoming.'}</p>
+      ${mktLines}
+      </div>`;
+
+  /* ── Top 3 latest articles ── */
+  document.getElementById('today-badge').textContent = `${storyCount} stories tracked (${MEDIA.length} mentions) · newest first`;
+  document.getElementById('today-feed').innerHTML = sorted.slice(0,3).map((a,i) => `
+    <div class="home-article" onclick="openShareModal('${a.url}')">
+      <div class="home-art-num">${i+1}</div>
+      <div class="home-art-body">
+        <p class="home-art-outlet">${a.outlet}${!MEDIA_ORIGINAL_URLS.has(a.url)?` <span style="display:inline-block;font-size:8px;font-weight:800;letter-spacing:.06em;padding:1px 5px;background:#d44;color:#fff;vertical-align:middle;margin-left:4px">NEW</span>`:''}</p>
+        <p class="home-art-hed">${a.headline}</p>
+        <div class="home-art-meta">
+          ${badge(a.market, MARKET_STYLE[a.market])}
+          ${badge(a.lang, LANG_STYLE[a.lang])}
+          <span style="font-size:10px;color:var(--ink3)">${a.date}</span>
+        </div>
+      </div>
+      <span style="font-size:18px;color:var(--poster-blue);align-self:center;flex-shrink:0">›</span>
+    </div>`).join('');
+}
+buildHome();
+
+
+/* ─── HASHTAG CLOUD — pending real social listening, no fabricated volumes ─── */
+(function(){
+  document.getElementById('hashtag-cloud').innerHTML =
+    '<p style="font-size:13px;color:var(--ink3)">No hashtag volume data yet — populates once social listening starts.</p>';
+})();
+
+/* ─── SOCIAL MENTIONS — pending; never attribute invented quotes to real
+   handles for a day-one show with no sourced social coverage ─── */
+(function(){
+  document.getElementById('social-mentions-feed').innerHTML =
+    '<p style="font-size:13px;color:var(--ink3);padding:20px">No notable mentions tracked yet.</p>';
+})();
+
+/* ─── CAST ACTIVATION TABLE (Social page) ─── */
+(function(){
+  const el = document.getElementById('cast-activation-table');
+  if (!el) return;
+  el.innerHTML = CAST.map(c => `
+    <tr style="border-bottom:1px solid var(--bd)">
+      <td style="padding:11px 16px"><span style="font-weight:700;color:var(--ink1)">${c.name}</span></td>
+      <td style="padding:11px 16px;color:var(--ink2)">${c.role}</td>
+      <td style="padding:11px 16px;color:var(--ink3);font-size:11px">Pending</td>
+    </tr>`).join('');
+})();
+
+/* ─── EPISODE LIST ─── */
+(function(){
+  const today = new Date();
+  document.getElementById('episode-list').innerHTML = EPISODES.map(e => {
+    const d = new Date(e.iso);
+    const aired  = d <= today;
+    const isNext = !aired && EPISODES.find(ep => new Date(ep.iso) > today)?.ep === e.ep;
+    return `<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--bd)">
+      <span style="font-size:10px;font-weight:800;color:${aired?'var(--teal)':isNext?'var(--coral)':'var(--ink3)'};width:18px;flex-shrink:0">E${e.ep}</span>
+      <span style="font-size:12px;color:${aired?'var(--ink1)':'var(--ink3)'};flex:1;font-weight:${aired?'600':'400'}">${e.title}</span>
+      <span style="font-size:10px;color:var(--ink3);white-space:nowrap">${e.date.replace(' 2026','')}</span>
+      ${aired?'<span style="font-size:9px;color:var(--teal);font-weight:700">LIVE</span>':''}
+      ${isNext?'<span style="font-size:9px;color:var(--coral);font-weight:700">NEXT</span>':''}
+    </div>`;
+  }).join('');
+})();
+
+/* ─── CAST ─── */
+document.getElementById('cast-list').innerHTML = CAST.map(c => `
+  <a href="${c.link}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:12px;text-decoration:none" onmouseover="this.style.opacity='.7'" onmouseout="this.style.opacity='1'">
+    <div style="width:40px;height:40px;border-radius:50%;background:var(--bd);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--ink2);flex-shrink:0">${c.initials}</div>
+    <div style="min-width:0;flex:1">
+      <p style="font-size:13px;font-weight:700;color:var(--ink1);line-height:1.3">${c.name}</p>
+      <p style="font-size:11px;color:var(--coral);font-weight:600">${c.role}</p>
+      ${c.ig?`<p style="font-size:10px;color:var(--poster-blue);margin-top:2px">${c.ig} <span style="color:var(--ink3)">· ${c.igFollowers} followers</span></p>`:''}
+      ${c.note?`<p style="font-size:10px;color:var(--ink3);line-height:1.4;margin-top:1px">${c.note}</p>`:''}
+    </div>
+  </a>`).join('');
+
+/* ─── CREW ─── */
+document.getElementById('crew-list').innerHTML = CREW.map(c => `
+  <div style="display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--white)">
+    <div style="flex:0 0 140px;font-size:10px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:.04em">${c.role}</div>
+    <div style="flex:1;min-width:0">
+      ${c.link?`<a href="${c.link}" target="_blank" rel="noopener noreferrer" style="font-size:13px;font-weight:700;color:var(--ink1);text-decoration:none;border-bottom:1px solid var(--bd)">${c.name} ↗</a>`:`<span style="font-size:13px;font-weight:700;color:var(--ink1)">${c.name}</span>`}
+      ${c.note?`<span style="font-size:11px;color:var(--ink3);margin-left:8px">${c.note}</span>`:''}
+    </div>
+  </div>`).join('');
+
+/* ─── COVERAGE ─── */
+const expandedStories = new Set();
+let coverageGroupsCache = [];
+
+function toggleStoryExpand(i) {
+  const g = coverageGroupsCache[i];
+  if (!g) return;
+  if (expandedStories.has(g.key)) expandedStories.delete(g.key);
+  else expandedStories.add(g.key);
+  renderCoverage();
+}
+
+function renderCoverage() {
+  const q   = (document.getElementById('cov-search').value||'').toLowerCase();
+  const mkt = document.getElementById('cov-market').value||'';
+  const typ = document.getElementById('cov-type').value||'';
+  const lng = document.getElementById('cov-lang').value||'';
+  const srt = document.getElementById('cov-sort').value||'newest';
+
+  const matches = a =>
+    (!q   || a.outlet.toLowerCase().includes(q) || a.headline.toLowerCase().includes(q) || (a.excerpt||'').toLowerCase().includes(q)) &&
+    (!mkt || a.market === mkt) &&
+    (!typ || a.type   === typ) &&
+    (!lng || a.lang   === lng);
+
+  /* Group first, then keep whole groups where any member matches, since a
+     synthesized story key has no market/type/lang of its own. */
+  const matchingGroups = [];
+  storyGroups(MEDIA).forEach((members, key) => {
+    if (members.some(matches)) matchingGroups.push({ key, members: members.slice() });
+  });
+
+  /* Members always sort newest-first so the visible row uses the most
+     recent member (highest ts), independent of the selected sort order. */
+  matchingGroups.forEach(g => g.members.sort((a,b) => b.ts - a.ts));
+  matchingGroups.sort((a,b) => {
+    const aTs = srt==='newest' ? a.members[0].ts : a.members[a.members.length-1].ts;
+    const bTs = srt==='newest' ? b.members[0].ts : b.members[b.members.length-1].ts;
+    return srt==='newest' ? bTs-aTs : aTs-bTs;
+  });
+
+  const totalMentions    = matchingGroups.reduce((n,g) => n+g.members.length, 0);
+  const totalStoryCount  = storyGroups(MEDIA).size;
+  document.getElementById('cov-count').textContent =
+    `${matchingGroups.length} of ${totalStoryCount} stories (${totalMentions} mentions)`;
+
+  coverageGroupsCache = matchingGroups;
+  const tbody = document.getElementById('cov-feed');
+  const empty = document.getElementById('cov-empty');
+
+  if (!matchingGroups.length) {
+    tbody.innerHTML = '';
+    empty.classList.remove('hidden');
+    return;
+  }
+  empty.classList.add('hidden');
+  tbody.innerHTML = matchingGroups.map((g, i) => {
+    const a = g.members[0];
+    const isNew = !MEDIA_ORIGINAL_URLS.has(a.url);
+    const newPill = isNew ? `<span style="display:inline-block;font-size:8px;font-weight:800;letter-spacing:.06em;padding:1px 5px;background:#d44;color:#fff;vertical-align:middle;margin-left:4px">NEW</span>` : '';
+    const extra = g.members.length - 1;
+    const isOpen = expandedStories.has(g.key);
+    const breadthPill = extra > 0
+      ? `<span class="story-breadth" onclick="event.stopPropagation();toggleStoryExpand(${i})">${isOpen?'▾':'▸'} +${extra} more outlet${extra!==1?'s':''}</span>`
+      : '';
+    const subRows = (extra > 0 && isOpen) ? g.members.slice(1).map(m => `
+      <tr class="story-sub-row" onclick="openShareModal('${m.url}')" style="cursor:pointer">
+        <td style="font-size:11px;font-weight:600;color:var(--ink2);max-width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:26px">↳ ${m.outlet}</td>
+        <td style="max-width:340px"><p style="font-size:12px;color:var(--ink2);line-height:1.4">${m.headline}</p></td>
+        <td style="white-space:nowrap">${badge(m.market,MARKET_STYLE[m.market])}</td>
+        <td style="white-space:nowrap">${badge(m.type,TYPE_STYLE[m.type])}</td>
+        <td style="white-space:nowrap">${badge(m.lang,LANG_STYLE[m.lang])}</td>
+        <td style="font-size:11px;color:var(--ink3);white-space:nowrap">${m.date}</td>
+      </tr>`).join('') : '';
+    return `
+    <tr onclick="openShareModal('${a.url}')" style="cursor:pointer${isNew?';background:rgba(212,68,68,0.04)':''}">
+      <td style="font-size:12px;font-weight:700;color:var(--ink1);max-width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${a.outlet}${newPill}</td>
+      <td style="max-width:340px">
+        <p style="font-size:13px;color:var(--ink1);font-weight:500;line-height:1.4;margin-bottom:2px">${a.headline}${breadthPill}</p>
+        ${a.excerpt?`<p style="font-size:11px;color:var(--ink3);line-height:1.45">${a.excerpt.substring(0,100)}${a.excerpt.length>100?'…':''}</p>`:''}
+      </td>
+      <td style="white-space:nowrap">${badge(a.market,MARKET_STYLE[a.market])}</td>
+      <td style="white-space:nowrap">${badge(a.type,TYPE_STYLE[a.type])}</td>
+      <td style="white-space:nowrap">${badge(a.lang,LANG_STYLE[a.lang])}</td>
+      <td style="font-size:11px;color:var(--ink3);white-space:nowrap">${a.date}</td>
+    </tr>${subRows}`;
+  }).join('');
+}
+
+['cov-search','cov-market','cov-type','cov-lang','cov-sort'].forEach(id => {
+  document.getElementById(id).addEventListener('input', renderCoverage);
+  document.getElementById(id).addEventListener('change', renderCoverage);
+});
+
+/* ─── POST BUILDER V8 — Platform-smart AI generator ─── */
+const PLATFORM_GUIDE = {
+  twitter:   { limit: 280,  ratio: '16:9',  w: 48, h: 27, imgText: '1200 × 628 px (16:9) · link card auto-crops to 1.91:1 · also: 1080 × 1080 (square)' },
+  instagram: { limit: 2200, ratio: '1:1',   w: 36, h: 36, imgText: '1080 × 1080 px (square 1:1) · 1080 × 1350 (portrait 4:5) · Stories/Reels: 1080 × 1920 (9:16)' },
+  linkedin:  { limit: 3000, ratio: '1.91:1',w: 48, h: 25, imgText: '1200 × 627 px (1.91:1) · link share · or 1200 × 1200 for square' },
+  facebook:  { limit: 500,  ratio: '1.91:1',w: 48, h: 25, imgText: '1200 × 630 px (1.91:1) · link post · or 1080 × 1080 square' },
+  tiktok:    { limit: 2200, ratio: '9:16',  w: 20, h: 36, imgText: '1080 × 1920 px (9:16 vertical) · cover frame · also: 1080 × 1080 for square feed' },
+};
+
+/* Netflix posting defaults — link/handle pending official marketing kit; do
+   not guess a show-specific Netflix URL or handle. (Unused by PLAT_TMPL below,
+   same as upstream — kept for parity/future wiring.) */
+const NETFLIX_DEFAULTS = { hashtag: '#ElCirculo', handle: '', link: '' };
+
+/* Platform-specific smart templates — 6th param esExc, 7th param esHl for verified Spanish overrides */
+const PLAT_TMPL = {
+  twitter: (hl, url, exc, out, esExc, esHl) => {
+    const src    = out ? ` · ${out}` : '';
+    const enHook = exc ? `"${exc.substring(0,90)}…"` : hl.substring(0,120);
+    const esHook = esExc ? `"${esExc.substring(0,90)}…"` : (esHl || hl).substring(0,120);
+    return {
+      es: `🎬 ${esHook}${src}\n\n#ElCirculo @NetflixLAT${url?'\n'+url:''}`,
+      en: `🎬 ${enHook}${src}\n\n#ElCirculo @Netflix${url?'\n'+url:''}`
+    };
+  },
+  instagram: (hl, url, exc, out, esExc, esHl) => {
+    const enQ  = exc ? `\n\n"${exc.substring(0,200)}"\n\n` : '\n\n';
+    const esQ  = esExc ? `\n\n"${esExc.substring(0,200)}"\n\n` : '\n\n';
+    const src  = out ? `${out} · ` : '';
+    const esTitle = esHl || hl;
+    return {
+      es: `🎬 ${esTitle}${esQ}${src}#ElCirculo ya disponible en Netflix ✨\n\nUn video filtrado arrastra a cuatro amigos de toda la vida a una red de chantajes y peligro.\n\n.\n.\n.\n#ElCirculo #Netflix #LosCorruptores`,
+      en: `🎬 ${hl}${enQ}${src}El Círculo is now streaming on Netflix ✨\n\nA leaked video drags four lifelong friends into a network of blackmail and danger.\n\n.\n.\n.\n#ElCirculo #Netflix`
+    };
+  },
+  linkedin: (hl, url, exc, out, esExc, esHl) => {
+    const src  = out ? ` · ${out}` : '';
+    const enQ  = exc ? `\n\n"${exc.substring(0,250)}"` : '';
+    const esQ  = esExc ? `\n\n"${esExc.substring(0,250)}"` : (exc ? `\n\n"${exc.substring(0,250)}"` : '');
+    const esTitle = esHl || hl;
+    return {
+      es: `${esTitle}${src}${esQ}\n\nEl Círculo — basada en la novela "Los Corruptores" de Jorge Zepeda Patterson, ya disponible en Netflix.\n\nProducida por Lemon Studios.\n\n#ElCirculo #Netflix #CineLatino #ProduccionMexicana${url?'\n\n'+url:''}`,
+      en: `${hl}${src}${enQ}\n\nEl Círculo — based on the novel "Los Corruptores" by Jorge Zepeda Patterson, now streaming on Netflix.\n\nProduced by Lemon Studios.\n\n#ElCirculo #Netflix #MexicanDrama #LemonStudios${url?'\n\n'+url:''}`
+    };
+  },
+  facebook: (hl, url, exc, out, esExc, esHl) => {
+    const src  = out ? ` — ${out}` : '';
+    const enQ  = exc ? `\n\n"${exc.substring(0,180)}"\n\n` : '\n\n';
+    const esQ  = esExc ? `\n\n"${esExc.substring(0,180)}"\n\n` : '\n\n';
+    const esTitle = esHl || hl;
+    return {
+      es: `✨ ${esTitle}${src}${esQ}¿Ya viste El Círculo en Netflix? Comparte con quien debería verla 👇\n\n#ElCirculo${url?'\n\n'+url:''}`,
+      en: `✨ ${hl}${src}${enQ}Have you watched El Círculo on Netflix yet? Tag someone who needs to see it 👇\n\n#ElCirculo${url?'\n\n'+url:''}`
+    };
+  },
+  tiktok: (hl, url, exc, out, esExc, esHl) => {
+    const enHook = exc ? exc.substring(0,80) : hl.substring(0,70);
+    const esHook = esExc ? esExc.substring(0,80) : (esHl || hl).substring(0,70);
+    const src    = out ? `(${out}) ` : '';
+    return {
+      es: `¿Ya viste esto? 👀 ${src}\n\n${esHook}\n\nEl Círculo ya en Netflix 🎬\nchantaje + secretos + peligro\n\n#ElCirculo #SeriesMexicanas #fyp #parati`,
+      en: `Did you see this? 👀 ${src}\n\n${enHook}\n\nEl Círculo now on Netflix 🎬\nblackmail + secrets + danger\n\n#ElCirculo #fyp #foryou`
+    };
+  }
+};
+
+/* Quick-generate presets — trimmed to only what is actually confirmed;
+   no fabricated reviews or cast/creator quotes (see build comment). */
+const QUICK_TOPICS = [
+  {
+    label:'Premiere',
+    hl:"El Círculo — Now Streaming on Netflix",
+    esHl:"El Círculo — Ya disponible en Netflix",
+    url:'', out:'Netflix',
+    exc:"A leaked video drags four lifelong friends into a network of blackmail and danger.",
+    esExc:"Un video filtrado arrastra a cuatro amigos de toda la vida a una red de chantajes y peligro."
+  },
+  { label:'Latest Article', dynamic:'latest' }
+];
+
+let currentPlatform = 'twitter';
+let activeTopic = -1;
+
+function openPostBuilder(article) {
+  if (article) {
+    const hl = document.getElementById('pb-headline');
+    if (hl) {
+      hl.value = article.headline;
+      document.getElementById('pb-url').value    = article.url;
+      document.getElementById('pb-outlet').value = article.outlet;
+      document.getElementById('pb-excerpt').value = article.excerpt || '';
+      syncPbUrlLink();
+      showPbCustom(true);
+      generatePost();
+    }
+  }
+  nav('social');
+  setTimeout(() => {
+    const el = document.querySelector('#page-social .card');
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 80);
+}
+
+function closePostBuilder() {}
+
+function selectPlatform(p) {
+  currentPlatform = p;
+  document.querySelectorAll('.plat-btn').forEach(t => t.classList.toggle('active', t.id === 'pb-btn-' + p));
+  const guide = PLATFORM_GUIDE[p];
+  if (guide) {
+    document.getElementById('pb-limit-note').textContent = 'Character limit: ' + guide.limit;
+  }
+  updateCC('es'); updateCC('en');
+  if (activeTopic >= 0) _runGenerate(activeTopic);
+  else if (document.getElementById('pb-headline').value.trim()) generatePost();
+}
+
+function quickGenerate(idx) {
+  activeTopic = idx;
+  document.querySelectorAll('.quick-chip').forEach((b, i) => b.classList.toggle('active-chip', i === idx));
+
+  let topic = QUICK_TOPICS[idx];
+  if (topic.dynamic === 'latest') {
+    const latest = excludeFutureTs(MEDIA).sort((a,b)=>b.ts-a.ts)[0];
+    topic = { hl: latest.headline, url: latest.url, out: latest.outlet, exc: latest.excerpt||'' };
+  }
+  _runGenerate(idx, topic);
+}
+
+function _runGenerate(idx, overrideTopic) {
+  const topic = overrideTopic || (QUICK_TOPICS[idx].dynamic === 'latest'
+    ? (() => { const l=excludeFutureTs(MEDIA).sort((a,b)=>b.ts-a.ts)[0]; return {hl:l.headline,url:l.url,out:l.outlet,exc:l.excerpt||''}; })()
+    : QUICK_TOPICS[idx]);
+  const tmpl = PLAT_TMPL[currentPlatform];
+  if (!tmpl) return;
+  const raw = tmpl(topic.hl, topic.url, topic.exc, topic.out, topic.esExc, topic.esHl);
+  const esV = verifyClaims(raw.es);
+  const enV = verifyClaims(raw.en);
+  document.getElementById('pb-out-es').value = esV.clean;
+  document.getElementById('pb-out-en').value = enV.clean;
+  updateCC('es'); updateCC('en');
+  const allStripped = [...esV.stripped, ...enV.stripped];
+  showSourceBadge(topic.out || topic.hl || 'El Círculo', allStripped);
+}
+
+function generatePost() {
+  activeTopic = -1;
+  document.querySelectorAll('.quick-chip').forEach(b => b.classList.remove('active-chip'));
+  const hl  = document.getElementById('pb-headline').value.trim();
+  const url = document.getElementById('pb-url').value.trim();
+  const out = document.getElementById('pb-outlet').value.trim();
+  const exc = document.getElementById('pb-excerpt').value.trim();
+  const tmpl = PLAT_TMPL[currentPlatform];
+  if (!tmpl) return;
+  const raw = tmpl(hl||'El Círculo', url, exc, out);
+  const esV = verifyClaims(raw.es);
+  const enV = verifyClaims(raw.en);
+  document.getElementById('pb-out-es').value = esV.clean;
+  document.getElementById('pb-out-en').value = enV.clean;
+  updateCC('es'); updateCC('en');
+  const sourceLabel = out ? (hl ? `${out} — ${hl.substring(0,60)}` : out) : (hl || 'Custom input');
+  const allStripped = [...esV.stripped, ...enV.stripped];
+  showSourceBadge(sourceLabel, allStripped);
+}
+
+function generatePosts() { generatePost(); }
+
+function togglePbCustom() {
+  const wrap = document.getElementById('pb-custom-wrap');
+  const arrow = document.getElementById('pb-custom-arrow');
+  const open = wrap.style.display !== 'none';
+  showPbCustom(!open);
+}
+
+function showPbCustom(show) {
+  document.getElementById('pb-custom-wrap').style.display = show ? 'block' : 'none';
+  document.getElementById('pb-custom-arrow').textContent = show ? '−' : '+';
+}
+
+function updateCC(lang) {
+  const lim = (PLATFORM_GUIDE[currentPlatform]||{}).limit||280;
+  const ta  = document.getElementById('pb-out-'+lang);
+  const sp  = document.getElementById('cc-'+lang);
+  if (!ta||!sp) return;
+  const len = ta.value.length;
+  sp.textContent = len+' / '+lim;
+  sp.className = len>lim ? 'cc-over' : len>lim*.9 ? 'cc-warn' : 'cc-ok';
+}
+
+function copyPost(lang) {
+  const ta = document.getElementById('pb-out-'+lang);
+  if (!ta.value) return;
+  navigator.clipboard.writeText(ta.value).then(() => showToast('Copied ' + (lang==='es'?'Spanish':'English') + ' post — paste into your platform!'));
+}
+
+function copyPbUrl() {
+  const val = document.getElementById('pb-url').value;
+  if (!val) return;
+  navigator.clipboard.writeText(val).then(() => showToast('URL copied'));
+}
+
+function syncPbUrlLink() {
+  const val = document.getElementById('pb-url').value;
+  const lnk = document.getElementById('pb-url-link');
+  if (lnk) lnk.href = (val && val.startsWith('http')) ? val : '#';
+}
+
+function addHashtagToPost(tag) {
+  ['es','en'].forEach(lang => {
+    const ta = document.getElementById('pb-out-'+lang);
+    if (ta) { ta.value = (ta.value+' '+tag).trim(); updateCC(lang); }
+  });
+}
+
+function showToast(msg) {
+  let t = document.querySelector('.toast');
+  if (!t) { t=document.createElement('div'); t.className='toast'; document.body.appendChild(t); }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(t._tid);
+  t._tid = setTimeout(() => { t.style.opacity='0'; }, 1800);
+}
+
+/* ─── INIT ─── */
+selectPlatform('twitter');
+
+routeFromHash();
+
+/* ─── IN-APP ARTICLE READER (PWA back-navigation) ─── */
+function isPWA() {
+  return !!(window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches);
+}
+
+function openArticle(url) {
+  if (!url || url === '#' || url.startsWith('javascript')) return;
+  if (isPWA()) {
+    const overlay   = document.getElementById('reader-overlay');
+    const frame     = document.getElementById('reader-frame');
+    const fallback  = document.getElementById('reader-fallback');
+    const domainEl  = document.getElementById('reader-domain');
+    const safariBtn = document.getElementById('reader-safari');
+    const fbLink    = document.getElementById('reader-fallback-link');
+    try { domainEl.textContent = new URL(url).hostname.replace(/^www\./,''); } catch(e) {}
+    safariBtn.href = url;
+    fbLink.href    = url;
+    fallback.style.display = 'none';
+    frame.style.display = 'block';
+    frame.src = url;
+    /* Detect iframe block: cross-origin loads throw SecurityError on
+       contentWindow.location access; blocked/empty pages do not */
+    frame.onload = function() {
+      setTimeout(function() {
+        try {
+          const loc = frame.contentWindow.location.href;
+          if (!loc || loc === 'about:blank') {
+            frame.style.display = 'none';
+            fallback.style.display = 'flex';
+          }
+        } catch(e) { /* SecurityError = page loaded fine, cross-origin */ }
+      }, 300);
+    };
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  } else {
+    window.open(url, '_blank', 'noopener');
+  }
+}
+
+function closeReader() {
+  const overlay = document.getElementById('reader-overlay');
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(function() {
+    const frame = document.getElementById('reader-frame');
+    frame.src = '';
+    frame.style.display = 'block';
+    document.getElementById('reader-fallback').style.display = 'none';
+  }, 300);
+}
+
+/* Intercept all target="_blank" external link clicks in PWA mode */
+document.addEventListener('click', function(e) {
+  if (!isPWA()) return;
+  const a = e.target.closest('a[href]');
+  if (!a || a.getAttribute('target') !== '_blank') return;
+  const href = a.href;
+  if (!href) return;
+  try {
+    if (new URL(href).hostname === location.hostname) return;
+  } catch(ex) { return; }
+  e.preventDefault();
+  openArticle(href);
+}, true);
+
+/* Close reader on Escape */
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeReader();
+});
+
+/* ─── REMOTE DATA LOADER ─── */
+/* Fetches data.json (populated by sweep routine) and refreshes all dynamic sections.
+   The databar "Coverage feed" stamp reports the newest dated entry actually present
+   in the fetched feed (via excludeFutureTs, same guard the home/latest derivations
+   use) rather than a page-load clock, so a stalled/dead sweep is visible without
+   needing to check git history (LEMA-11806). A failed or malformed fetch surfaces
+   a visible warning instead of silently keeping the hardcoded August baseline. */
+const DATA_JSON_REQUIRED_KEYS = ['outlet', 'headline', 'url', 'date', 'ts', 'lang', 'market', 'type'];
+function isValidCoverageRow(r) {
+  return !!r && typeof r === 'object' && Number.isInteger(r.ts) &&
+    DATA_JSON_REQUIRED_KEYS.every(k => k in r);
+}
+(async function loadRemoteData() {
+  const dot = document.getElementById('databar-cov-dot');
+  const covText = document.getElementById('databar-cov-text');
+  function showFetchWarning(reason) {
+    console.error('[loadRemoteData] coverage feed refresh failed: ' + reason);
+    if (dot) dot.classList.add('is-stale');
+    if (covText) covText.textContent = `Coverage feed: refresh failed (${reason}) — showing last loaded snapshot`;
+  }
+  try {
+    const res = await fetch('./data.json?_=' + Date.now());
+    if (!res.ok) { showFetchWarning('HTTP ' + res.status); return; }
+    const remote = await res.json();
+    if (!Array.isArray(remote) || remote.length === 0 || !remote.every(isValidCoverageRow)) {
+      showFetchWarning('malformed data.json');
+      return;
+    }
+    MEDIA = remote;
+    buildCharts();
+    buildHome();
+    renderCoverage();
+    if (covText) {
+      const newest = excludeFutureTs(remote).reduce((a, b) => (b.ts > a.ts ? b : a));
+      const s = String(newest.ts);
+      const d = s.length === 8 ? new Date(Date.UTC(+s.slice(0,4), +s.slice(4,6) - 1, +s.slice(6,8))) : null;
+      const newestLabel = d && !isNaN(d.getTime())
+        ? d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+        : null;
+      const unit = remote.length === 1 ? 'article' : 'articles';
+      covText.textContent = newestLabel
+        ? `Coverage feed: ${remote.length} ${unit} · newest dated ${newestLabel}`
+        : `Coverage feed: ${remote.length} ${unit}`;
+    }
+  } catch(e) {
+    showFetchWarning(e && e.message ? e.message : 'fetch threw');
+  }
+})();
+
+/* Critical Reception + Updates timeline are hand-curated from the research-report
+   document, not the data.json sweep. content-meta.json is the single source of
+   truth for when that curated content was last touched — update it in the same
+   commit as any Critical Reception / Updates edit, both stamps read from here.
+   criticalReceptionChangedAt is a distinct, optional field: the last time a
+   headline critic figure actually moved, vs. criticalReceptionAsOf which is
+   the last time it was re-verified (may be unchanged run after run). */
+(async function loadContentMeta() {
+  try {
+    const res = await fetch('./content-meta.json?_=' + Date.now());
+    if (!res.ok) return;
+    const meta = await res.json();
+    const fmt = (iso) => {
+      const d = new Date(iso + 'T00:00:00Z');
+      if (isNaN(d.getTime())) return null;
+      return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+    };
+    if (meta.criticalReceptionAsOf) {
+      const text = fmt(meta.criticalReceptionAsOf);
+      const el = document.getElementById('databar-crit-date');
+      if (text && el) el.textContent = text;
+      const capEl = document.getElementById('sec-caption-crit-date');
+      if (text && capEl) capEl.textContent = text;
+      const tradeEl = document.getElementById('trade-outreach-crit-date');
+      if (text && tradeEl) tradeEl.textContent = text;
+    }
+    const changedWrap = document.getElementById('databar-crit-changed-wrap');
+    if (meta.criticalReceptionChangedAt) {
+      const changedText = fmt(meta.criticalReceptionChangedAt);
+      const changedEl = document.getElementById('databar-crit-changed-date');
+      if (changedText && changedEl) {
+        changedEl.textContent = changedText;
+      } else if (changedWrap) {
+        changedWrap.style.display = 'none';
+      }
+    } else if (changedWrap) {
+      changedWrap.style.display = 'none';
+    }
+    if (meta.updatesAsOf) {
+      const text = fmt(meta.updatesAsOf);
+      const el = document.getElementById('updates-last-date');
+      if (text && el) el.textContent = text;
+    }
+  } catch(e) { /* fail silently — hardcoded dates remain as fallback */ }
+})();
+
+/* ─── ARTICLE SHARE MODAL ─── */
+let _smArticle = null;
+let _smLang = 'es';
+let _smPostCache = {};
+
+function openShareModal(url) {
+  const art = MEDIA.find(a => a.url === url);
+  if (!art) {
+    window.open(url, '_blank', 'noopener');
+    return;
+  }
+  _smArticle = art;
+  _smLang = (art.lang || 'ES') === 'EN' ? 'en' : 'es';
+  _smPostCache = {};
+
+  document.getElementById('sm-pub').textContent = art.outlet || '';
+  document.getElementById('sm-headline').textContent = art.headline || '';
+
+  const excerptEl = document.getElementById('sm-excerpt');
+  excerptEl.textContent = art.excerpt || '';
+  excerptEl.style.display = art.excerpt ? '' : 'none';
+
+  document.getElementById('sm-date').textContent = art.date || '';
+  const readLink = document.getElementById('sm-read-link');
+  readLink.href = art.url || '#';
+
+  smSetLangUI(_smLang);
+
+  const nativeRow = document.getElementById('sm-native-row');
+  nativeRow.style.display = navigator.share ? '' : 'none';
+
+  document.getElementById('share-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  smGeneratePost();
+}
+
+function closeShareModal() {
+  document.getElementById('share-modal').classList.remove('open');
+  document.body.style.overflow = '';
+  _smArticle = null;
+  _smPostCache = {};
+}
+
+function smSetLang(lang) {
+  _smLang = lang;
+  smSetLangUI(lang);
+  if (_smPostCache[lang]) {
+    smShowPost(_smPostCache[lang]);
+  } else {
+    smGeneratePost();
+  }
+}
+
+function smSetLangUI(lang) {
+  document.getElementById('sm-btn-es').classList.toggle('active', lang === 'es');
+  document.getElementById('sm-btn-en').classList.toggle('active', lang === 'en');
+}
+
+async function smGeneratePost() {
+  if (!_smArticle) return;
+  const lang = _smLang;
+
+  document.getElementById('sm-loader').style.display = '';
+  document.getElementById('sm-post-text').style.display = 'none';
+  document.getElementById('sm-error').style.display = 'none';
+
+  try {
+    const res = await fetch('/api/generate-post', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        headline: _smArticle.headline || '',
+        excerpt:  _smArticle.excerpt  || '',
+        publication: _smArticle.outlet || '',
+        url:  _smArticle.url  || '',
+        language: lang,
+      }),
+    });
+    if (!res.ok) throw new Error('API ' + res.status);
+    const data = await res.json();
+    const post = data.post || '';
+    _smPostCache[lang] = post;
+    if (_smLang === lang) smShowPost(post);
+  } catch (err) {
+    if (_smLang === lang) smShowError();
+  }
+}
+
+function smShowPost(text) {
+  document.getElementById('sm-loader').style.display = 'none';
+  document.getElementById('sm-error').style.display = 'none';
+  const ta = document.getElementById('sm-post-text');
+  ta.value = text;
+  ta.style.display = '';
+}
+
+function smShowError() {
+  document.getElementById('sm-loader').style.display = 'none';
+  document.getElementById('sm-post-text').style.display = 'none';
+  const errEl = document.getElementById('sm-error');
+  errEl.textContent = 'Could not generate post. You can still share using the article link below.';
+  errEl.style.display = '';
+}
+
+function smGetShareText() {
+  const ta = document.getElementById('sm-post-text');
+  const post = (ta.style.display !== 'none' ? ta.value.trim() : '') || (_smArticle ? _smArticle.headline : '');
+  const url  = _smArticle ? _smArticle.url : '';
+  if (!post) return url;
+  if (url && !post.includes(url)) return post + '\n' + url;
+  return post;
+}
+
+function smShareWhatsApp() {
+  const text = smGetShareText();
+  if (!text) return;
+  window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
+}
+
+function smShareTwitter() {
+  const text = smGetShareText();
+  if (!text) return;
+  window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text), '_blank', 'noopener');
+}
+
+function smShareInstagram() {
+  const ta = document.getElementById('sm-post-text');
+  const text = (ta.style.display !== 'none' ? ta.value.trim() : '') || (_smArticle ? _smArticle.url : '');
+  if (!text) return;
+  navigator.clipboard.writeText(text)
+    .then(() => showToast('Copied! Paste in Instagram'))
+    .catch(() => showToast('Could not copy — select and copy manually'));
+}
+
+function smCopyText() {
+  const text = smGetShareText();
+  if (!text) return;
+  navigator.clipboard.writeText(text)
+    .then(() => showToast('Post text copied!'))
+    .catch(() => showToast('Could not copy'));
+}
+
+async function smNativeShare() {
+  if (!navigator.share || !_smArticle) return;
+  const ta = document.getElementById('sm-post-text');
+  const text = (ta.style.display !== 'none' ? ta.value.trim() : '') || _smArticle.headline;
+  try {
+    await navigator.share({
+      title: _smArticle.headline || 'El Círculo',
+      text,
+      url: _smArticle.url,
+    });
+  } catch (err) {
+    if (err.name !== 'AbortError') showToast('Could not open share sheet');
+  }
+}
+
+/* Close modal on Escape */
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && document.getElementById('share-modal').classList.contains('open')) {
+    closeShareModal();
+  }
+});
+</script>
+
+<!-- ═══ ARTICLE SHARE MODAL ═══ -->
+<div id="share-modal">
+  <div id="share-modal-backdrop" onclick="closeShareModal()"></div>
+  <div id="share-modal-panel">
+    <div class="sm-handle"></div>
+    <div class="sm-header">
+      <span class="sm-title">Share article</span>
+      <button class="sm-close" onclick="closeShareModal()">×</button>
+    </div>
+
+    <!-- Article preview -->
+    <div class="sm-article">
+      <p class="sm-pub" id="sm-pub"></p>
+      <h2 class="sm-headline" id="sm-headline"></h2>
+      <p class="sm-excerpt" id="sm-excerpt"></p>
+      <div class="sm-meta">
+        <span class="sm-date" id="sm-date"></span>
+        <a class="sm-read-btn" id="sm-read-link" href="#" target="_blank" rel="noopener noreferrer">Read full article →</a>
+      </div>
+    </div>
+
+    <!-- AI post section -->
+    <div class="sm-ai-section">
+      <p class="sm-ai-label">AI-generated post — edit before sharing</p>
+      <div class="sm-lang-toggle">
+        <button class="sm-lang-btn active" id="sm-btn-es" onclick="smSetLang('es')">🇲🇽 ES</button>
+        <button class="sm-lang-btn" id="sm-btn-en" onclick="smSetLang('en')">🇺🇸 EN</button>
+      </div>
+      <div id="sm-loader" class="sm-post-loader">
+        <div class="sm-spinner"></div>
+        Generating post…
+      </div>
+      <textarea class="sm-post-textarea" id="sm-post-text" placeholder="AI-generated post appears here…" style="display:none"></textarea>
+      <p class="sm-error-msg" id="sm-error" style="display:none"></p>
+    </div>
+
+    <!-- Share buttons -->
+    <div class="sm-share-section">
+      <p class="sm-share-label">Share</p>
+      <div class="sm-share-btns">
+        <button class="sm-share-btn wa" onclick="smShareWhatsApp()">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.126 1.529 5.857L0 24l6.305-1.654A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.935 0-3.753-.531-5.301-1.452l-.38-.226-3.937 1.033 1.051-3.838-.248-.394A9.771 9.771 0 012.182 12c0-5.419 4.399-9.818 9.818-9.818S21.818 6.581 21.818 12 17.419 21.818 12 21.818z"/></svg>
+          WhatsApp
+        </button>
+        <button class="sm-share-btn" onclick="smShareTwitter()">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Twitter/X
+        </button>
+        <button class="sm-share-btn" onclick="smShareInstagram()">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </button>
+        <button class="sm-share-btn" onclick="smCopyText()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="1"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          Copy
+        </button>
+      </div>
+      <div class="sm-native-row" id="sm-native-row" style="display:none">
+        <button class="sm-native-btn" onclick="smNativeShare()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+          Share via…
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- In-app article reader overlay -->
+<div id="reader-overlay">
+  <div id="reader-bar">
+    <button id="reader-back" onclick="closeReader()">
+      <svg viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1 L2 8 L8 15"/></svg>
+      El Círculo
+    </button>
+    <span id="reader-domain"></span>
+    <a id="reader-safari" href="#" target="_blank" rel="noopener">Safari ↗</a>
+  </div>
+  <iframe id="reader-frame" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+  <div id="reader-fallback">
+    <p>This site can't be shown in-app.<br>Tap below to open in Safari.</p>
+    <a id="reader-fallback-link" href="#" target="_blank" rel="noopener">Open in Safari ↗</a>
+  </div>
+</div>
+
 </body>
 </html>
