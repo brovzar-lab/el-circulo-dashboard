@@ -1,0 +1,689 @@
+#!/usr/bin/env node
+'use strict';
+
+// Media Sweep integrity tool (LEMA-9933). Ports the routine's mechanical,
+// no-judgment controls out of the ~44KB Media Sweep routine prompt and
+// into code: URL normalization, fetch-blocklist lookup, the Step 10 /
+// Step 11 post-write integrity assertions, and the evidence-line counts.
+//
+// Read-only on the repo's JSON artifacts by default. The only exception is
+// `assert-integrity --fix`, which auto-merges duplicate-key groups that
+// agree on disposition and writes the result back to the artifact file it
+// read from, printing exactly what changed. This tool never touches git or
+// the GitHub API: committing stays with the sweep routine (steps 8/9).
+//
+// See tools/README.md for the full command reference and the list of
+// ambiguities in the source prose that this port did not resolve on its
+// own (flagged instead, per the ticket's instructions).
+
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+
+const { normalizeUrl } = require('./lib/normalize');
+const { lookupAll } = require('./lib/ledger');
+const { assertLedgerIntegrity } = require('./lib/ledger');
+const { assertDatasetIntegrity } = require('./lib/dataset');
+const {
+  ledgerOverlapCheck,
+  deriveListingFamilies,
+  surfaceFamilyCheck,
+  queryVariantCheck,
+  runDateProxyCheck,
+  getFirstSeenDates,
+} = require('./lib/audit');
+const { computeReconciliation } = require('./lib/reconcile');
+
+const REPO_ROOT = path.join(__dirname, '..');
+const DEFAULT_LEDGER_PATH = path.join(REPO_ROOT, 'fetch-blocklist.json');
+const DEFAULT_DATA_PATH = path.join(REPO_ROOT, 'data.json');
+
+function readJson(filePath) {
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+// Same as readJson, but also returns the raw bytes so the caller can
+// fingerprint exactly what was on disk (LEMA-10448: readJson alone can't
+// tell two runs apart if the underlying file differed between them).
+//
+// LEMA-10597: a missing or unparseable file here used to escape as an
+// uncaught ENOENT/SyntaxError -- a raw stack trace, exit 1, before a
+// single line of output. That's not just noisy: it happens before the
+// `--strict` check even runs, so the Media Sweep routine's STOP-and-quote
+// escalation path (LEMA-10593) demands a `--strict guard failed` block
+// that was never printed. `description`/`urlHint` let each call site name
+// itself in the resulting message; `urlHint` is for the one call site
+// (the candidates argument) where a bare host/path string is plausibly a
+// URL missing its scheme.
+function readJsonWithRaw(filePath, description, { urlHint = false } = {}) {
+  let raw;
+  try {
+    raw = fs.readFileSync(filePath, 'utf8');
+  } catch (err) {
+    if (err.code === 'ENOENT') {
+      const hint = urlHint ? ' (if you meant a URL, include the https:// scheme)' : '';
+      console.error(`Error: ${description} not found: ${filePath}${hint}`);
+      process.exit(2);
+    }
+    throw err;
+  }
+  try {
+    return { raw, value: JSON.parse(raw) };
+  } catch {
+    console.error(`Error: ${description} is not valid JSON: ${filePath}`);
+    process.exit(2);
+  }
+}
+
+function sha256(text) {
+  return crypto.createHash('sha256').update(text, 'utf8').digest('hex');
+}
+
+function writeJson(filePath, value) {
+  fs.writeFileSync(filePath, JSON.stringify(value, null, 2) + '\n');
+}
+
+// LEMA-10596: `lookup`'s only documented positional form was always a
+// candidates-file path. The Media Sweep routine's prose (Rule C, Step 4a)
+// also calls `lookup` on a single bare URL with no candidates file in
+// hand, which does not exist as a form and used to crash with an uncaught
+// ENOENT from readJsonWithRaw before printing anything. This treats a
+// positional argument that parses as an http(s) URL as a synthesized
+// one-element candidate list instead of a file path.
+function isHttpUrl(value) {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
+function parseArgs(argv) {
+  const positional = [];
+  const flags = {};
+  for (let i = 0; i < argv.length; i++) {
+    const arg = argv[i];
+    if (arg.startsWith('--')) {
+      // LEMA-10595: `--name=value` is parsed as its own form rather than
+      // falling through to the space-separated branch below, which used to
+      // treat the whole `name=value` string as the flag *name* (so
+      // `--strict=true` silently became an unrecognized key nobody read,
+      // and `flags.strict` stayed undefined -- disarming the --strict
+      // guard without any error).
+      const eq = arg.indexOf('=');
+      if (eq !== -1) {
+        const name = arg.slice(2, eq);
+        flags[name] = arg.slice(eq + 1);
+        continue;
+      }
+      const name = arg.slice(2);
+      const next = argv[i + 1];
+      if (next === undefined || next.startsWith('--')) {
+        flags[name] = true;
+      } else {
+        flags[name] = next;
+        i++;
+      }
+    } else {
+      positional.push(arg);
+    }
+  }
+  return { positional, flags };
+}
+
+// LEMA-10595: every command gets an explicit allow-list of flag names.
+// Anything outside it (a typo like `--stict`, or a genuinely new flag no
+// command reads) is rejected loudly instead of being parsed, stored under
+// a key nobody reads, and silently dropped -- the same silent-fallback
+// shape that let `--strict=true` disarm the LEMA-10592 guard.
+const KNOWN_FLAGS = {
+  normalize: [],
+  lookup: ['fetch-blocklist', 'data', 'json', 'strict', 'allow-empty-ledger', 'allow-empty-data'],
+  'assert-integrity': ['fetch-blocklist', 'data', 'target', 'fix', 'json'],
+  evidence: ['candidates', 'fetch-blocklist', 'data', 'fix'],
+  audit: ['fetch-blocklist', 'data', 'repo', 'json'],
+  reconcile: ['candidates', 'data', 'added', 'removed', 'json'],
+};
+
+// Flags that gate an on/off code path rather than carry a path/enum value.
+// `--name=value` is supported for these too (e.g. `--strict=true`), so a
+// value has to be interpreted as a boolean rather than treated as always
+// truthy -- otherwise `--strict=false` would parse to the non-empty string
+// "false", which is JS-truthy, and silently re-arm the guard the caller
+// just asked to turn off. Only "false"/"0" (case-insensitive) count as off;
+// a bare `--strict` (value `true`) and any other value stay on.
+const BOOLEAN_FLAGS = new Set(['strict', 'fix', 'json', 'allow-empty-ledger', 'allow-empty-data']);
+
+function rejectUnknownFlags(command, flags) {
+  const allowed = KNOWN_FLAGS[command];
+  if (!allowed) return;
+  const allowedSet = new Set(allowed);
+  const unknown = Object.keys(flags).filter((name) => !allowedSet.has(name));
+  if (unknown.length > 0) {
+    console.error(
+      `Error: unrecognized flag(s) for '${command}': ${unknown.map((f) => `--${f}`).join(', ')}`
+    );
+    console.error(
+      `Allowed flags for '${command}': ${allowed.length ? allowed.map((f) => `--${f}`).join(', ') : '(none)'}`
+    );
+    process.exit(2);
+  }
+}
+
+function coerceBooleanFlags(flags) {
+  for (const name of Object.keys(flags)) {
+    if (!BOOLEAN_FLAGS.has(name)) continue;
+    const value = flags[name];
+    if (value === true) continue;
+    flags[name] = !/^(false|0)$/i.test(value);
+  }
+}
+
+function cmdNormalize(positional) {
+  const input = positional[0];
+  if (!input) {
+    console.error('Usage: sweep-integrity.js normalize <url>');
+    process.exit(2);
+  }
+  const { url, key } = normalizeUrl(input);
+  console.log(JSON.stringify({ input, url, key }, null, 2));
+}
+
+function cmdLookup(positional, flags) {
+  const candidatesArg = positional[0];
+  if (!candidatesArg) {
+    console.error('Usage: sweep-integrity.js lookup <candidates.json|url> [--fetch-blocklist path] [--data path] [--json] [--strict]');
+    process.exit(2);
+  }
+  const ledgerPath = flags['fetch-blocklist'] || DEFAULT_LEDGER_PATH;
+  const dataPath = flags.data || DEFAULT_DATA_PATH;
+
+  // A bare http(s) URL is synthesized into a one-element candidate list
+  // rather than read as a file path (LEMA-10596). candidatesRaw is
+  // synthesized too, so the stderr fingerprint line below still covers it.
+  let candidatesPath, candidatesRaw, candidates;
+  if (isHttpUrl(candidatesArg)) {
+    candidatesPath = candidatesArg;
+    candidates = [candidatesArg];
+    candidatesRaw = JSON.stringify(candidates);
+  } else {
+    candidatesPath = candidatesArg;
+    ({ raw: candidatesRaw, value: candidates } = readJsonWithRaw(
+      candidatesPath,
+      'candidates file',
+      { urlHint: true }
+    ));
+  }
+  const { raw: ledgerRaw, value: ledger } = readJsonWithRaw(ledgerPath, 'fetch-blocklist ledger');
+  const { raw: dataRaw, value: dataset } = readJsonWithRaw(dataPath, 'data.json');
+
+  // LEMA-10448: emit a mechanically-comparable fingerprint of both input
+  // files on every run, to stderr only (stdout's one-line-per-candidate
+  // contract is unchanged for existing consumers). Two runs claimed to be
+  // "against the same unmodified files" can now be diffed on this line
+  // instead of taken on faith -- the exact gap that made the original
+  // LEMA-10447 report undiagnosable after the fact (its candidates.json
+  // input wasn't preserved, so nobody could check).
+  const ledgerEntries = Array.isArray(ledger && ledger.entries) ? ledger.entries : null;
+  const candidateList = Array.isArray(candidates) ? candidates : null;
+  // LEMA-10591: same fingerprint discipline extended to data.json, since a
+  // pre-fetch dedup decision made against an un-fingerprinted file is the
+  // same un-auditable shape LEMA-10447/LEMA-10448 fixed for the ledger.
+  const datasetEntries = Array.isArray(dataset) ? dataset : null;
+  console.error(
+    `[lookup] ledger path=${ledgerPath} rows=${ledgerEntries ? ledgerEntries.length : 'INVALID'} sha256=${sha256(ledgerRaw)}`
+  );
+  console.error(
+    `[lookup] candidates path=${candidatesPath} count=${candidateList ? candidateList.length : 'INVALID'} sha256=${sha256(candidatesRaw)}`
+  );
+  console.error(
+    `[lookup] data.json path=${dataPath} rows=${datasetEntries ? datasetEntries.length : 'INVALID'} sha256=${sha256(dataRaw)}`
+  );
+  // LEMA-10595: additive fourth line only -- the three fingerprint lines
+  // above are quoted verbatim by the Media Sweep routine and stay
+  // byte-identical. On healthy inputs, stdout/stderr used to be identical
+  // whether or not --strict was passed, so a transcript couldn't prove the
+  // gate was actually armed. This line makes that state explicit on every
+  // run, pass or fail.
+  console.error(`[lookup] strict=${flags.strict ? 'on' : 'off'}`);
+  if (flags['allow-empty-ledger'] || flags['allow-empty-data']) {
+    console.error(
+      `[lookup] fresh-dataset overrides: allow-empty-ledger=${flags['allow-empty-ledger'] ? 'on' : 'off'} allow-empty-data=${flags['allow-empty-data'] ? 'on' : 'off'}`
+    );
+  }
+
+  if (flags.strict) {
+    const problems = [];
+    if (!ledgerEntries) problems.push('fetch-blocklist ledger has no "entries" array');
+    // LEMA-12167: an empty ledger guards against silent data loss on a
+    // MATURE dataset (one that should already have accumulated rows), but is
+    // the legitimate day-one state for a brand-new sweep target that has
+    // never run before. The tool can't tell those two cases apart from the
+    // file alone, so it stays conservative by default (empty still fails)
+    // and a caller who positively knows this ledger is a fresh seed opts in
+    // explicitly with --allow-empty-ledger, logged below for auditability --
+    // same shape as --strict itself: safe default, explicit named override.
+    else if (ledgerEntries.length === 0 && !flags['allow-empty-ledger']) {
+      problems.push('fetch-blocklist ledger "entries" array is empty (pass --allow-empty-ledger if this is a fresh/new sweep dataset)');
+    }
+    if (!candidateList) problems.push('candidates file is not a JSON array');
+    // LEMA-12040: a validly-empty candidates array is a sanctioned "0 new"
+    // sweep outcome, not an integrity failure -- unlike the ledger/data.json
+    // empty checks above (which guard states that should never legitimately
+    // occur on a mature dataset), so it must not share their exit-3 severity.
+    // LEMA-10592: without this, an unusable data.json silently degrades to
+    // `datasetEntries || []` below -- lookupAll then reports inDataJson=false
+    // for every candidate, including ones demonstrably present in the real
+    // file, and the process still exits 0. --strict exists to hard-fail on
+    // unusable inputs instead of proceeding on a wrong answer, same as the
+    // ledger/candidates checks above.
+    if (!datasetEntries) problems.push('data.json is not a JSON array');
+    // LEMA-12167: same fresh-dataset carve-out as the ledger check above,
+    // same opt-in shape (--allow-empty-data), same reasoning.
+    else if (datasetEntries.length === 0 && !flags['allow-empty-data']) {
+      problems.push('data.json array is empty (pass --allow-empty-data if this is a fresh/new sweep dataset)');
+    }
+    if (problems.length > 0) {
+      console.error(`[lookup] --strict guard failed:\n  - ${problems.join('\n  - ')}`);
+      process.exitCode = 3;
+      return;
+    }
+  }
+
+  const results = lookupAll(candidates, ledger, new Date(), datasetEntries || []);
+
+  if (flags.strict && results.length !== candidates.length) {
+    // Defense in depth: lookupAll is a straight .map() today so this can't
+    // actually happen, but a silent count mismatch is exactly the failure
+    // shape this guard exists to catch, so check it explicitly rather than
+    // trusting the invariant to hold forever.
+    console.error(`[lookup] --strict guard failed: produced ${results.length} results for ${candidates.length} candidates`);
+    process.exitCode = 3;
+    return;
+  }
+
+  if (flags.json) {
+    console.log(JSON.stringify(results, null, 2));
+    return;
+  }
+  for (const r of results) {
+    const extra = r.disposition === 'permanentSkip'
+      ? ` skipReason=${r.skipReason}`
+      : r.disposition === 'active-cooldown' || r.disposition === 'expired-cooldown-retry'
+        ? ` cooldownUntil=${r.cooldownUntil || 'null'} failCount=${r.failCount}`
+        : '';
+    const dataJsonExtra = r.inDataJson
+      ? ` inDataJson=true dataJsonTs=${r.dataJsonTs} dataJsonOutlet=${JSON.stringify(r.dataJsonOutlet)}`
+      : ' inDataJson=false';
+    // LEMA-11889: offline shape flag for a WordPress-style bare `?p=<id>`
+    // permalink -- true means "verify with curl -L before treating this as
+    // new," never a disposition change. See looksLikeUnresolvedIdPermalink
+    // in normalize.js.
+    const idPermalinkExtra = r.looksLikeUnresolvedIdPermalink ? ' looksLikeIdPermalink=true (verify redirect target before including)' : '';
+    console.log(`${r.url}\t${r.disposition}${extra}${dataJsonExtra}${idPermalinkExtra}`);
+  }
+}
+
+function formatLedgerGroupLine(prefix, group, autoMergedKeys) {
+  const merged = autoMergedKeys.has(group.key);
+  const status = merged ? 'auto-merged' : 'escalated (unresolved disagreement)';
+  const urls = (group.urls || group.rows || []).map((u) => (typeof u === 'string' ? u : u.entry.url)).join(', ');
+  return `  - ${prefix} group [${group.key}]: ${urls} -- ${status}`;
+}
+
+function runAssertIntegrity(flags) {
+  const ledgerPath = flags['fetch-blocklist'] || DEFAULT_LEDGER_PATH;
+  const dataPath = flags.data || DEFAULT_DATA_PATH;
+  const target = flags.target || 'both';
+  const fix = Boolean(flags.fix);
+
+  const result = { target, fix };
+
+  if (target === 'ledger' || target === 'both') {
+    const ledger = readJson(ledgerPath);
+    const ledgerResult = assertLedgerIntegrity(ledger, { fix });
+    result.ledger = ledgerResult;
+    if (fix && ledgerResult.autoMerged.length > 0) {
+      writeJson(ledgerPath, { ...ledger, entries: ledgerResult.entries });
+    }
+  }
+
+  if (target === 'data' || target === 'both') {
+    const dataset = readJson(dataPath);
+    const datasetResult = assertDatasetIntegrity(dataset, { fix });
+    result.dataset = datasetResult;
+    if (fix && datasetResult.autoMerged.length > 0) {
+      writeJson(dataPath, datasetResult.entries);
+    }
+  }
+
+  return result;
+}
+
+function cmdAssertIntegrity(flags) {
+  const result = runAssertIntegrity(flags);
+
+  if (flags.json) {
+    console.log(JSON.stringify(result, null, 2));
+  } else {
+    if (result.ledger) {
+      const l = result.ledger;
+      console.log(`- Ledger integrity: rows=${l.rows}, distinct normalized URLs=${l.distinctNormalizedUrls}, duplicate groups=${l.duplicateGroups}`);
+      for (const m of l.autoMerged) {
+        console.log(`  - auto-merged group [${m.key}]: ${m.before.join(', ')} -> ${m.after}`);
+      }
+      for (const p of l.pendingMerge) {
+        console.log(`  - pending-merge group [${p.key}]: ${p.urls.join(', ')} -- agrees on disposition, not yet merged (re-run with --fix)`);
+      }
+      for (const c of l.conflicts) {
+        console.log(`  - escalated group [${c.key}]: ${c.urls.join(', ')} -- dispositions differ, agent must resolve (Step 10 escalation path, including the search-existing-issues dedup check)`);
+      }
+    }
+    if (result.dataset) {
+      const d = result.dataset;
+      console.log(`- data.json integrity: rows=${d.rows}, distinct normalized URLs=${d.distinctNormalizedUrls}, duplicate groups=${d.duplicateGroups}`);
+      for (const m of d.autoMerged) {
+        console.log(`  - auto-merged group [${m.key}]: ${m.before.join(', ')} -> ${m.after}`);
+      }
+      for (const p of d.pendingMerge) {
+        console.log(`  - pending-merge group [${p.key}]: ${p.urls.join(', ')} -- agrees on date/ts/outlet/lang/market/type, not yet merged (re-run with --fix)`);
+      }
+      for (const c of d.conflicts) {
+        const defect = c.sharedStoryGroupDefect
+          ? ` [second defect: shared storyGroup="${c.sharedStoryGroupDefect}" across a field-disagreeing group]`
+          : '';
+        console.log(`  - escalated group [${c.key}]: ${c.urls.join(', ')} -- fields differ, agent must resolve (Step 11 escalation path)${defect}`);
+      }
+    }
+  }
+
+  const failed = (result.ledger && !result.ledger.passes) || (result.dataset && !result.dataset.passes);
+  // LEMA-10448: was process.exit(failed ? 1 : 0) here, which tears the
+  // process down as soon as this line runs -- if stdout is a pipe under
+  // backpressure (slow consumer, large --json output), Node can still have
+  // buffered console.log bytes that haven't reached the reader yet, and
+  // process.exit() drops them, truncating the output. Reproduced: piping
+  // a large --json run into a slow reader cut output at exactly 65536
+  // bytes (the default pipe buffer size) and left invalid JSON on the
+  // other end. Setting exitCode and returning lets Node drain stdout
+  // before the process actually exits.
+  process.exitCode = failed ? 1 : 0;
+}
+
+function cmdEvidence(flags) {
+  const candidatesPath = flags.candidates;
+  if (!candidatesPath) {
+    console.error('Usage: sweep-integrity.js evidence --candidates <candidates.json> [--fetch-blocklist path] [--data path] [--fix]');
+    process.exit(2);
+  }
+  const ledgerPath = flags['fetch-blocklist'] || DEFAULT_LEDGER_PATH;
+  const dataPath = flags.data || DEFAULT_DATA_PATH;
+
+  const candidates = readJson(candidatesPath);
+  const ledger = readJson(ledgerPath);
+  const dataset = readJson(dataPath);
+  const lookups = lookupAll(candidates, ledger, new Date(), dataset);
+
+  // LEMA-10591: alreadyInDataJson is deliberately not folded into `hits` --
+  // it's a separate axis from ledger disposition (a candidate can be
+  // not-found in the ledger and still already be in data.json), so mixing
+  // it into the ledger hit-rate count would misstate both numbers.
+  const counts = { permanentSkip: 0, activeCooldown: 0, expiredCooldownRetry: 0, notFound: 0, alreadyInDataJson: 0 };
+  for (const r of lookups) {
+    if (r.disposition === 'permanentSkip') counts.permanentSkip++;
+    else if (r.disposition === 'active-cooldown') counts.activeCooldown++;
+    else if (r.disposition === 'expired-cooldown-retry') counts.expiredCooldownRetry++;
+    else counts.notFound++;
+    if (r.inDataJson) counts.alreadyInDataJson++;
+  }
+  const hits = counts.permanentSkip + counts.activeCooldown + counts.expiredCooldownRetry;
+
+  console.log(`- Ledger check: candidates surfaced=${candidates.length}, ledger-checked=${lookups.length}, hits=${hits} (permanentSkip=${counts.permanentSkip}, active cooldown=${counts.activeCooldown}, expired cooldown retried=${counts.expiredCooldownRetry}), already in data.json=${counts.alreadyInDataJson}`);
+
+  const assertResult = runAssertIntegrity(flags);
+  const l = assertResult.ledger;
+  console.log(`- Ledger integrity: rows=${l.rows}, distinct normalized URLs=${l.distinctNormalizedUrls}, duplicate groups=${l.duplicateGroups}`);
+  for (const m of l.autoMerged) {
+    console.log(`  - auto-merged group [${m.key}]: ${m.before.join(', ')} -> ${m.after}`);
+  }
+  for (const p of l.pendingMerge) {
+    console.log(`  - pending-merge group [${p.key}]: ${p.urls.join(', ')} -- agrees on disposition, not yet merged (re-run with --fix)`);
+  }
+  for (const c of l.conflicts) {
+    console.log(`  - group [${c.key}]: ${c.urls.join(', ')} -- Step 10 escalation: [FILL IN by agent: opened LEMA-xxxx | re-observed on LEMA-xxxx | suppressed, same-day re-observation already posted]`);
+  }
+
+  const d = assertResult.dataset;
+  console.log(`- data.json integrity: rows=${d.rows}, distinct normalized URLs=${d.distinctNormalizedUrls}, duplicate groups=${d.duplicateGroups}`);
+  for (const m of d.autoMerged) {
+    console.log(`  - auto-merged group [${m.key}]: ${m.before.join(', ')} -> ${m.after}`);
+  }
+  for (const p of d.pendingMerge) {
+    console.log(`  - pending-merge group [${p.key}]: ${p.urls.join(', ')} -- agrees on date/ts/outlet/lang/market/type, not yet merged (re-run with --fix)`);
+  }
+  for (const c of d.conflicts) {
+    const defect = c.sharedStoryGroupDefect
+      ? ` [second defect: shared storyGroup="${c.sharedStoryGroupDefect}" across a field-disagreeing group]`
+      : '';
+    console.log(`  - group [${c.key}]: ${c.urls.join(', ')} -- Step 11 escalation: [FILL IN by agent: opened LEMA-xxxx | re-observed on LEMA-xxxx | suppressed, same-day re-observation already posted]${defect}`);
+  }
+}
+
+// LEMA-10625: re-checks every existing data.json row against the ledger's
+// exclusion rules, closing the gap where Rules D-I's retroactivity clauses
+// never fire because no pass in the Media Sweep routine performs a
+// full-feed check, and Step 4a2's pre-fetch dedup gate (LEMA-10590) means a
+// URL already in data.json is never re-fetched/re-classified by the normal
+// path either. Report-only: never edits data.json or the ledger, never
+// makes an editorial call. See tools/lib/audit.js for the three checks.
+function cmdAudit(flags) {
+  const ledgerPath = flags['fetch-blocklist'] || DEFAULT_LEDGER_PATH;
+  const dataPath = flags.data || DEFAULT_DATA_PATH;
+  const repoDir = flags.repo || path.dirname(dataPath);
+
+  const { raw: ledgerRaw, value: ledger } = readJsonWithRaw(ledgerPath, 'fetch-blocklist ledger');
+  const { raw: dataRaw, value: dataset } = readJsonWithRaw(dataPath, 'data.json');
+
+  const ledgerEntries = Array.isArray(ledger && ledger.entries) ? ledger.entries : [];
+  const datasetEntries = Array.isArray(dataset) ? dataset : [];
+
+  // Same stderr input fingerprints as `lookup` (LEMA-10448), so two audit
+  // runs claimed to be against the same files can be diffed mechanically.
+  console.error(`[audit] fetch-blocklist path=${ledgerPath} rows=${ledgerEntries.length} sha256=${sha256(ledgerRaw)}`);
+  console.error(`[audit] data.json path=${dataPath} rows=${datasetEntries.length} sha256=${sha256(dataRaw)}`);
+
+  const { assertable: ledgerOverlap, advisory: ledgerOverlapAdvisory } = ledgerOverlapCheck(datasetEntries, ledgerEntries);
+
+  const families = deriveListingFamilies(ledgerEntries);
+  const surfaceFamilyMatch = surfaceFamilyCheck(datasetEntries, families);
+
+  const queryVariantPairs = queryVariantCheck(datasetEntries, ledgerEntries);
+
+  const relDataPath = path.relative(repoDir, dataPath) || path.basename(dataPath);
+  const gitResult = getFirstSeenDates(repoDir, relDataPath);
+  const runDateProxySuspects = gitResult.skipped ? [] : runDateProxyCheck(datasetEntries, gitResult.firstSeenDates);
+  console.error(
+    gitResult.skipped
+      ? `[audit] run-date proxy check skipped: ${gitResult.reason}`
+      : `[audit] run-date proxy check: ${runDateProxySuspects.length} suspect(s) from ${datasetEntries.length} row(s)`
+  );
+
+  const familyMatchUrls = new Set(surfaceFamilyMatch.map((f) => f.url));
+  const intersection = runDateProxySuspects.filter((f) => familyMatchUrls.has(f.url));
+
+  const result = {
+    generatedAt: new Date().toISOString(),
+    rowsChecked: datasetEntries.length,
+    checks: {
+      ledgerOverlap: {
+        description:
+          'Assertable: data.json rows whose normalized key matches a permanentSkip ledger row, excluding skipReason=editorial_redundant_syndication (see ledgerOverlapAdvisory below). A row cannot legitimately be both live coverage and a permanent exclusion for any other skip reason.',
+        count: ledgerOverlap.length,
+        findings: ledgerOverlap,
+      },
+      ledgerOverlapAdvisory: {
+        description:
+          "Advisory, never gates: data.json rows whose normalized key matches a permanentSkip ledger row with skipReason=editorial_redundant_syndication. This is expected, not a conflict -- redundant_syndication means \"this is a second address (AMP page, m. subdomain, ref_=-tagged reprint, etc.) for a document that IS in data.json\", so overlap with the live canonical row is the defining property of the category. A redundant_syndication row whose key matches nothing live would be the actual anomaly (not currently checked here).",
+        count: ledgerOverlapAdvisory.length,
+        findings: ledgerOverlapAdvisory,
+      },
+      surfaceFamilyMatch: {
+        description:
+          'Advisory, high signal: data.json rows whose host+path shape match a family the ledger has already permanentSkipped (editorial_listing_or_database) at other locales/paths. Families are derived from the ledger, not hard-coded.',
+        familiesConsidered: families.length,
+        count: surfaceFamilyMatch.length,
+        findings: surfaceFamilyMatch,
+      },
+      queryVariantPairs: {
+        description:
+          "Advisory, never gates (LEMA-11733, provisional-entry gap closed LEMA-11736): host+path groups (drawn from data.json and fetch-blocklist.json combined) that share the same normalized path but produce two or more distinct normalized keys because their query strings differ, on a host with no DECIDED HOST_PARAM_ALLOWLIST entry yet in tools/lib/normalize.js -- either no entry at all, or an entry marked provisional:true (a keep/drop call made but explicitly not yet resolved). This is the detector half of the LEMA-11732 fix -- normalize()'s per-host table only ever covers a host once a human has looked at it, so a future host nobody has looked at yet (or a param deferred on a listed host) can still produce the same 'false not-found on a query-string variant' defect the reforma.com ?v=3 case did. A finding here means: look at the URLs and either add/resolve an explicit per-host allow-list entry (keep the identity param, or drop the tracking param) or confirm the variants are genuinely distinct documents.",
+        count: queryVariantPairs.length,
+        findings: queryVariantPairs,
+      },
+      runDateProxySuspects: {
+        description:
+          'Advisory only, never gates a run: rows whose ts equals the UTC date of the git commit that introduced them (the Rule A firstSeen-substitution proxy). Noisy on its own -- a daily sweep naturally picks up same-day news.',
+        skipped: gitResult.skipped,
+        reason: gitResult.reason,
+        count: runDateProxySuspects.length,
+        findings: runDateProxySuspects,
+      },
+      intersection: {
+        description:
+          'Advisory, nearly conclusive: rows flagged by BOTH surfaceFamilyMatch and runDateProxySuspects. This is the exact signal combination that made the ES/LU tv.apple.com call on LEMA-10623.',
+        count: intersection.length,
+        findings: intersection,
+      },
+    },
+  };
+
+  if (flags.json) {
+    console.log(JSON.stringify(result, null, 2));
+  } else {
+    console.log(`- Ledger overlap (assertable): ${ledgerOverlap.length} row(s)`);
+    for (const f of ledgerOverlap) {
+      console.log(`  - ${f.url} -- ledger: ${f.ledgerUrl} skipReason=${f.skipReason} reviewable=${f.reviewable}`);
+    }
+    console.log(`- Ledger overlap, redundant-syndication (advisory, never gates): ${ledgerOverlapAdvisory.length} row(s)`);
+    for (const f of ledgerOverlapAdvisory) {
+      console.log(`  - ${f.url} -- ledger: ${f.ledgerUrl} skipReason=${f.skipReason} reviewable=${f.reviewable}`);
+    }
+    console.log(
+      `- Surface-family match (advisory): ${surfaceFamilyMatch.length} row(s) against ${families.length} derived listing-page famil${families.length === 1 ? 'y' : 'ies'}`
+    );
+    for (const f of surfaceFamilyMatch) {
+      const fam = f.matchedFamilies.map((m) => `${m.host}/…/${m.keyword}/… (precedent=${m.precedentCount})`).join('; ');
+      console.log(`  - ${f.url} -- ${fam}`);
+    }
+    console.log(`- Query-variant pairs (advisory, never gates): ${queryVariantPairs.length} group(s)`);
+    for (const g of queryVariantPairs) {
+      console.log(`  - [${g.pathOnlyKey}] ${g.variantCount} distinct key(s):`);
+      for (const v of g.variants) {
+        const urls = v.urls.map((u) => `${u.url} (${u.source})`).join(', ');
+        console.log(`      - ${v.fullKey}: ${urls}`);
+      }
+    }
+    if (gitResult.skipped) {
+      console.log(`- Run-date proxy suspects (advisory): skipped -- ${gitResult.reason}`);
+    } else {
+      console.log(`- Run-date proxy suspects (advisory, never gates): ${runDateProxySuspects.length} row(s)`);
+      for (const f of runDateProxySuspects) {
+        console.log(`  - ${f.url} ts=${f.ts} firstSeenCommitDate=${f.firstSeenCommitDate}`);
+      }
+    }
+    console.log(`- Intersection (surface-family AND run-date proxy -- near-conclusive): ${intersection.length} row(s)`);
+    for (const f of intersection) {
+      console.log(`  - ${f.url}`);
+    }
+  }
+
+  // Only the assertable check (ledger overlap) affects exit code, same
+  // pass/fail contract as assert-integrity's structural checks. Advisory
+  // findings (checks 2/3, and their intersection) must never produce a
+  // failing exit on their own, per the ticket's explicit requirement.
+  process.exitCode = ledgerOverlap.length > 0 ? 1 : 0;
+}
+
+// LEMA-11956: computes this run's reconciliation terms A and R directly
+// from the normalized-key definition (LEMA-11952 ruling, shipped to the
+// routine as LEMA-11955), instead of by hand. Offline only: `--data` MUST
+// be the Pass-0-pinned data.json from BEFORE this run's step 8 writes, not
+// the post-write file -- this never reads data.json a second time after
+// writing it, and never re-runs `lookup` to obtain A/R (that prohibition,
+// and its fingerprint STOP, are untouched; see tools/README.md). `--added`
+// and `--removed` are JSON arrays of the full row objects this run's step 8
+// wrote into / removed from data.json, e.g. via `assert-integrity --fix`.
+function cmdReconcile(flags) {
+  const candidatesPath = flags.candidates;
+  if (!candidatesPath) {
+    console.error(
+      'Usage: sweep-integrity.js reconcile --candidates <candidates.json> --data <pre-write data.json> [--added <added-rows.json>] [--removed <removed-rows.json>] [--json]'
+    );
+    process.exit(2);
+  }
+  const dataPath = flags.data || DEFAULT_DATA_PATH;
+
+  const { raw: candidatesRaw, value: candidates } = readJsonWithRaw(candidatesPath, 'candidates file', {
+    urlHint: true,
+  });
+  const { raw: dataRaw, value: preWriteDataset } = readJsonWithRaw(dataPath, 'pre-write data.json');
+  const addedRows = flags.added ? readJson(flags.added) : [];
+  const removedRows = flags.removed ? readJson(flags.removed) : [];
+
+  // Same stderr fingerprint discipline as `lookup`/`audit` (LEMA-10448), so
+  // two reconcile runs claimed to be against the same pre-write snapshot
+  // can be diffed mechanically. Deliberately NOT named `[lookup] ...` --
+  // this is not the post-write `lookup` call the routine prohibits.
+  console.error(
+    `[reconcile] candidates path=${candidatesPath} count=${Array.isArray(candidates) ? candidates.length : 'INVALID'} sha256=${sha256(candidatesRaw)}`
+  );
+  console.error(
+    `[reconcile] pre-write data.json path=${dataPath} rows=${Array.isArray(preWriteDataset) ? preWriteDataset.length : 'INVALID'} sha256=${sha256(dataRaw)}`
+  );
+  console.error(
+    `[reconcile] added=${addedRows.length} removed=${removedRows.length}`
+  );
+
+  const result = computeReconciliation(candidates, preWriteDataset, addedRows, removedRows);
+
+  if (flags.json) {
+    console.log(JSON.stringify(result, null, 2));
+    return;
+  }
+  console.log(`A=${result.a} R=${result.r}`);
+  for (const m of result.addedMatches) {
+    console.log(`  - A: ${m.url} [${m.key}]`);
+  }
+  for (const m of result.removedMatches) {
+    console.log(`  - R: ${m.url} [${m.key}]`);
+  }
+}
+
+function main() {
+  const [, , command, ...rest] = process.argv;
+  const { positional, flags } = parseArgs(rest);
+
+  rejectUnknownFlags(command, flags);
+  coerceBooleanFlags(flags);
+
+  switch (command) {
+    case 'normalize':
+      return cmdNormalize(positional, flags);
+    case 'lookup':
+      return cmdLookup(positional, flags);
+    case 'assert-integrity':
+      return cmdAssertIntegrity(flags);
+    case 'evidence':
+      return cmdEvidence(flags);
+    case 'audit':
+      return cmdAudit(flags);
+    case 'reconcile':
+      return cmdReconcile(flags);
+    default:
+      console.error('Usage: sweep-integrity.js <normalize|lookup|assert-integrity|evidence|audit|reconcile> ...');
+      process.exit(2);
+  }
+}
+
+main();
