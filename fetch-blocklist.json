@@ -455,7 +455,69 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://www.imdb.com/es/news/ni66050390/",
+      "firstSeen": "2026-10-08T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news aggregator page re-posts/excerpts the Heaven of Horror review (already in data.json, Oct 7) with a link back; second address for an already-tracked document, not a distinct piece.",
+      "history": [
+        {
+          "attempt": "2026-10-08T18:00:00Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12190",
+          "note": "IMDb news aggregator page re-posts/excerpts the Heaven of Horror review (already in data.json, Oct 7) with a link back; second address for an already-tracked document, not a distinct piece."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/NetflixLatino/posts/1592303729603235/",
+      "firstSeen": "2026-10-08T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Official NetflixLatino promo post (cast reveal, in-scope under Rule B as first-party platform promotion) but no real publish date recoverable: WebFetch returned only a relative \"1d\" timestamp, Firecrawl declined to crawl facebook.com entirely. Genuine coverage omitted solely for lack of a date.",
+      "history": [
+        {
+          "attempt": "2026-10-08T18:00:00Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12190",
+          "note": "Relative timestamp only (\"1d\"); no article:published_time/JSON-LD/dateline recoverable; Firecrawl unsupported for facebook.com."
+        }
+      ]
+    },
+    {
+      "url": "https://www.threads.com/@diariounocomar/post/DeLpJlgDb2z/un-video-filtrado-puede-destruirlo-todo-el-circulo-es-la-nueva-serie-mexicana",
+      "firstSeen": "2026-10-08T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Diario UNO (verified Argentine outlet account, in-scope under Rule B as a publisher/editorial-brand account) promo post about the show, but no real publish date recoverable: WebFetch returned only a relative \"1d\" timestamp, Firecrawl declined to crawl threads.com entirely. Genuine coverage omitted solely for lack of a date.",
+      "history": [
+        {
+          "attempt": "2026-10-08T18:00:00Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12190",
+          "note": "Relative timestamp only (\"1d\"); no article:published_time/JSON-LD/dateline recoverable; Firecrawl unsupported for threads.com."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-08T14:13:40Z"
+  "lastUpdated": "2026-10-08T18:00:00Z"
 }
