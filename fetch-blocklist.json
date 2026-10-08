@@ -140,7 +140,204 @@
           "note": "Review of Netflix's unrelated reality-competition format 'The Circle' Season 2, not the Mexican thriller 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'The Circle' title collision documented in this routine's known-noise note."
         }
       ]
+    },
+    {
+      "url": "https://www.ecartelera.com/peliculas/el-circulo-2016/criticas/",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Listing/index page of critic reviews for the unrelated 2017 film 'El Círculo' (Emma Watson/Tom Hanks adaptation of Dave Eggers' novel), not the 2026 Netflix Mexican series. Surfaced only via the generic 'El Círculo' title collision; sibling individual review page at /criticas/18924/ already ledgered for the same reason.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12176",
+          "note": "Off-topic: unrelated 2017 film review listing, not El Círculo (2026 Netflix series)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.unotv.com/entretenimiento/joanna-vega-biestro-critica-actitud-de-osvaldo-benavides-y-ludwika-paleta/",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "About TV host Joanna Vega-Biestro publicly criticizing actors Osvaldo Benavides and Ludwika Paleta for conditioning their appearance on her show during unrelated film ('Noche de Bodas') promotion; no mention of El Círculo. Surfaced only via an Osvaldo Benavides cast-interview query.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12176",
+          "note": "Off-topic: Joanna Vega-Biestro/Osvaldo Benavides interview-access dispute, unrelated to El Círculo."
+        }
+      ]
+    },
+    {
+      "url": "https://www.publimetro.com.mx/entretenimiento/2024/03/06/joanna-vega-biestro-tiene-enemistad-con-ludwika-paleta-osvaldo-benavides/",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Same Joanna Vega-Biestro/Ludwika Paleta/Osvaldo Benavides interview-access dispute as the unotv.com row (dated 2024-03-06, predates El Círculo entirely); not about the show. Surfaced only via an Osvaldo Benavides cast-interview query.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12176",
+          "note": "Off-topic: same unrelated dispute as the unotv.com row, dated 2024."
+        }
+      ]
+    },
+    {
+      "url": "https://www.telediario.mx/espectaculos/joanna-vega-biestro-exhibe-ludwika-paleta-oswaldo-benavides",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Same Joanna Vega-Biestro/Ludwika Paleta/Osvaldo Benavides dispute over the 'Noche de Bodas' promotional interview; not about El Círculo. Surfaced only via an Osvaldo Benavides cast-interview query.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12176",
+          "note": "Off-topic: same unrelated dispute, third outlet covering it."
+        }
+      ]
+    },
+    {
+      "url": "https://www.telemundo.com/shows/al-rojo-vivo/famosos/video/michel-brown-explica-como-la-pandemia-le-provoco-momentos-de-ansiedad-tmvo10348901",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Michel Brown discussing pandemic-era anxiety and his 'Pasión de Gavilanes' character Franco Reyes, published 2022-02-04; no connection to El Círculo. Surfaced only via a Michel Brown cast-interview query.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12176",
+          "note": "Off-topic: 2022 video about an unrelated prior telenovela role."
+        }
+      ]
+    },
+    {
+      "url": "https://www.comicbasics.com/?p=194190",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; confirmed via redirect (curl -L) to https://www.comicbasics.com/meet-the-cast-of-netflixs-inside-the-circle-with-pictures/, already tracked in data.json. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12176",
+          "note": "Redirect-confirmed second address of an already-tracked data.json row."
+        }
+      ]
+    },
+    {
+      "url": "https://eagleeye.news/?p=21730",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Unresolved WordPress ?p= id-permalink for the same numeric post id (21730) as the already-ledgered https://eagleeye.news/21730/artsandleisure/review-netflix-series-the-circle-season-2-comes-to-an-end -- a review of Netflix's unrelated 'The Circle' Season 2 reality format, not El Círculo. Same page, second address; direct request 403'd (bot-block) but the shared numeric id confirms identity.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 403,
+          "issue": "LEMA-12176",
+          "note": "403 bot-block; classified by matching numeric post id to the already-ledgered sibling URL."
+        }
+      ]
+    },
+    {
+      "url": "https://fictionhorizon.com/?p=389142",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; headline (\"Netflix's 'Inside the Circle' Release Date, Trailer, Cast and Plot Explained\") matches the already-tracked data.json row at https://fictionhorizon.com/netflixs-inside-the-circle-release-date-trailer-cast-and-plot-explained/ exactly. Direct request 403'd (bot-block) but headline match confirms same document. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 403,
+          "issue": "LEMA-12176",
+          "note": "403 bot-block; classified by exact headline match to an already-tracked data.json row."
+        }
+      ]
+    },
+    {
+      "url": "https://1147.tcu.edu/?p=1446",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Confirmed via redirect (curl -L) to https://1147.tcu.edu/2020/03/25/the-circle-review/, a 2020 student-site review of the unrelated 2017 film 'The Circle' (Emma Watson/Tom Hanks), not El Círculo. Surfaced only via the generic title collision.",
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12176",
+          "note": "Off-topic: unrelated 2017 film review, confirmed via redirect."
+        }
+      ]
+    },
+    {
+      "url": "https://faits-marquants.inrae.fr/zuria-vega-parents-meet-gonzalo-vega-and.html",
+      "firstSeen": "2026-10-08T06:16:54Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-08T06:16:54Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-08T06:16:54Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12176",
+          "note": "WebFetch: connect ECONNREFUSED. Firecrawl MCP tool was not available this run (fallback chain not completable) -- flagged separately for tool-availability visibility, not treated as an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-08T02:18:06Z"
+  "lastUpdated": "2026-10-08T06:16:54Z"
 }
