@@ -337,7 +337,24 @@
           "note": "WebFetch: connect ECONNREFUSED. Firecrawl MCP tool was not available this run (fallback chain not completable) -- flagged separately for tool-availability visibility, not treated as an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://media.netflix.com/it/only-on-netflix/80217807",
+      "firstSeen": "2026-10-08T10:14:40Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-08T10:14:40Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-08T10:14:40Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12179",
+          "note": "WebFetch: HTTP 502 Bad Gateway (twice). Direct curl also connection-failed (code=000) after following the /it/->/en/ locale redirect. Firecrawl MCP tool not available this run (fallback chain not completable) -- flagged separately for tool-availability visibility, not treated as an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-08T06:16:54Z"
+  "lastUpdated": "2026-10-08T10:14:40Z"
 }
