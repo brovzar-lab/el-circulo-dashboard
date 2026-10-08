@@ -517,7 +517,188 @@
           "note": "Relative timestamp only (\"1d\"); no article:published_time/JSON-LD/dateline recoverable; Firecrawl unsupported for threads.com."
         }
       ]
+    },
+    {
+      "url": "https://www.espinof.com/criticas/the-circle-nuevo-exito-netflix-adictivo-reality-mascaras-redes-sociales/amp",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (social-media-profile dating/influencer show), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (social-media-profile dating/influencer show), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note."
+        }
+      ]
+    },
+    {
+      "url": "https://panamaamerica.com.pa/nytimesinternationalweekly/redes-sociales-distorsionan-un-reality-show-1154206",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' and its social-media/catfishing dynamics (NYT International Weekly syndicated piece), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' and its social-media/catfishing dynamics (NYT International Weekly syndicated piece), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note."
+        }
+      ]
+    },
+    {
+      "url": "https://www.genbeta.com/multimedia/the-circle-gran-hermano-netflix-donde-compiten-ser-influencer-solo-se-pueden-comunicar-mediante-app",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (described as a Gran Hermano-style influencer contest), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (described as a Gran Hermano-style influencer contest), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note."
+        }
+      ]
+    },
+    {
+      "url": "https://www.formulatv.com/noticias/the-circle-gh-netflix-era-influencer-98529/",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (Gran Hermano/influencer-era framing), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (Gran Hermano/influencer-era framing), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/franchise/the-circle/",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about the FlixPatrol franchise/ranking page for Netflix's reality-competition format 'The Circle' across its international adaptations, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "Off-topic false positive: about the FlixPatrol franchise/ranking page for Netflix's reality-competition format 'The Circle' across its international adaptations, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note."
+        }
+      ]
+    },
+    {
+      "url": "https://www.metropoles.com/entretenimento/televisao/the-circle-1o-reality-da-netflix-esta-no-top-10-da-plataforma",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' reaching the Brazilian Top 10, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' reaching the Brazilian Top 10, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note."
+        }
+      ]
+    },
+    {
+      "url": "https://knowyourmeme.com/memes/subcultures/the-circle",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about the 'The Circle' reality-TV subculture/meme entry (UK Channel 4 format and its international adaptations, including Netflix's US version premiered 2020-01-01), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "Off-topic false positive: about the 'The Circle' reality-TV subculture/meme entry (UK Channel 4 format and its international adaptations, including Netflix's US version premiered 2020-01-01), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note."
+        }
+      ]
+    },
+    {
+      "url": "https://amp.knowyourmeme.com/memes/subcultures/the-circle",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about the AMP mirror of the 'The Circle' reality-TV subculture/meme entry; second address for the knowyourmeme.com row already ledgered this run, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "Off-topic false positive: about the AMP mirror of the 'The Circle' reality-TV subculture/meme entry; second address for the knowyourmeme.com row already ledgered this run, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note."
+        }
+      ]
+    },
+    {
+      "url": "https://www.theviewersguide.com/tvbuzzdaily/netflix-reveals-trailer-for-drama-series-inside-the-circle-20260910",
+      "firstSeen": "2026-10-08T22:08:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T22:08:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "On-topic written feature (\"Netflix reveals trailer for drama series Inside The Circle\", byline Sarah Jenkins) -- plot details (leaked video, four childhood friends, murder investigation of a popular actress) confirm this is genuinely about our show despite the generic headline. No article:published_time meta, no JSON-LD datePublished, no visible byline date anywhere on the page (checked full HTML). Canonical/og:url both self-match. The only date-shaped signal is a flat \"20260910\" numeric suffix on the URL slug (not a /YYYY/MM/DD/ segmented path, the shape Rule A's amendment addresses) -- escalating on LEMA-12193 for a ruling on whether a flat YYYYMMDD slug suffix is a usable Rule A path-date source, rather than guessing either way. Not treated as a date in the meantime.",
+      "history": [
+        {
+          "attempt": "2026-10-08T22:08:02Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12193",
+          "note": "On-topic written feature (\"Netflix reveals trailer for drama series Inside The Circle\", byline Sarah Jenkins) -- plot details (leaked video, four childhood friends, murder investigation of a popular actress) confirm this is genuinely about our show despite the generic headline. No article:published_time meta, no JSON-LD datePublished, no visible byline date anywhere on the page (checked full HTML). Canonical/og:url both self-match. The only date-shaped signal is a flat \"20260910\" numeric suffix on the URL slug (not a /YYYY/MM/DD/ segmented path, the shape Rule A's amendment addresses) -- escalating on LEMA-12193 for a ruling on whether a flat YYYYMMDD slug suffix is a usable Rule A path-date source, rather than guessing either way. Not treated as a date in the meantime."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-10-08T18:00:00Z"
+  "lastUpdated": "2026-10-08T22:08:02Z"
 }
