@@ -354,7 +354,108 @@
           "note": "WebFetch: HTTP 502 Bad Gateway (twice). Direct curl also connection-failed (code=000) after following the /it/->/en/ locale redirect. Firecrawl MCP tool not available this run (fallback chain not completable) -- flagged separately for tool-availability visibility, not treated as an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://www.rottentomatoes.com/tv/inside_the_circle",
+      "firstSeen": "2026-10-08T14:13:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T14:13:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "RT show page: boilerplate one-line logline, cast list, and crew/network metadata only; Tomatometer/Popcornmeter both show 0 reviews (no aggregate score exists yet, consistent with show context). No critic excerpts, no episode list, no written analysis. Stripping the metadata table leaves nothing written about the show. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-08T14:13:40Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12187",
+          "note": "RT show page: boilerplate one-line logline, cast list, and crew/network metadata only; Tomatometer/Popcornmeter both show 0 reviews (no aggregate score exists yet, consistent with show context). No critic excerpts, no episode list, no written analysis. Stripping the metadata table leaves nothing written about the show. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.comicbasics.com/?p=194113",
+      "firstSeen": "2026-10-08T14:13:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T14:13:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; redirects to https://www.comicbasics.com/what-inside-the-circle-is-based-on-might-surprise-netflix-thriller-fans/, already tracked in data.json. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-08T14:13:40Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12187",
+          "note": "Unresolved WordPress ?p= id-permalink; redirects to https://www.comicbasics.com/what-inside-the-circle-is-based-on-might-surprise-netflix-thriller-fans/, already tracked in data.json. Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.comicbasics.com/?p=194114",
+      "firstSeen": "2026-10-08T14:13:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T14:13:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; redirects to https://www.comicbasics.com/where-was-inside-the-circle-filmed-what-we-know-about-netflixs-mexican-thriller/, already tracked in data.json. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-08T14:13:40Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12187",
+          "note": "Unresolved WordPress ?p= id-permalink; redirects to https://www.comicbasics.com/where-was-inside-the-circle-filmed-what-we-know-about-netflixs-mexican-thriller/, already tracked in data.json. Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://fictionhorizon.com/?p=389146",
+      "firstSeen": "2026-10-08T14:13:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T14:13:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; canonical/og:url both point at https://fictionhorizon.com/what-novel-inside-the-circle-on-netflix-is-based-on-and-how-the-series-changes-it/, already tracked in data.json. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-08T14:13:40Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12187",
+          "note": "Unresolved WordPress ?p= id-permalink; canonical/og:url both point at https://fictionhorizon.com/what-novel-inside-the-circle-on-netflix-is-based-on-and-how-the-series-changes-it/, already tracked in data.json. Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tonboriday.com/2026/10/inside-the-circle-true-story.html",
+      "firstSeen": "2026-10-08T14:13:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-08T14:13:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "On-topic written feature (\"Is Inside the Circle Based on a True Story?\"), real editorial content, but the page's own structured dates conflict and neither resolves to a single real publish date: JSON-LD datePublished=2026-07-31T10:14:00+09:00 (predates the show's own public trailer/announcement, so not credible for this content -- likely a stale templated field from an SEO listicle network) vs dateModified=2026-10-05T10:15:15+09:00 (consistent with the URL's /2026/10/ path and the content, but is a modification timestamp, not a publish timestamp). URL path has no day component (Rule A amendment) so it is not a usable source either. Canonical/og:url both self-match. No visible byline/dateline. Escalated on LEMA-12187 for a ruling on whether dateModified is usable as ts when datePublished is contradicted by content; not guessed in the meantime per Rule A.",
+      "history": [
+        {
+          "attempt": "2026-10-08T14:13:40Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12187",
+          "note": "Conflicting datePublished (2026-07-31, predates show's existence) vs dateModified (2026-10-05); no day in URL path; escalated for ruling rather than guessed. reviewable=true."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-10-08T10:14:40Z"
+  "lastUpdated": "2026-10-08T14:13:40Z"
 }
