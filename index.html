@@ -994,7 +994,7 @@
 
   <div class="tnav-right">
     <span class="tnav-date">Premiered Oct 7, 2026</span>
-    <span class="v4-badge">DEMO DATA</span>
+    <span class="v4-badge" id="demo-data-badge">DEMO DATA</span>
   </div>
 </nav>
 
@@ -2352,6 +2352,22 @@ function isValidCoverageRow(r) {
   return !!r && typeof r === 'object' && Number.isInteger(r.ts) &&
     DATA_JSON_REQUIRED_KEYS.every(k => k in r);
 }
+
+/* A row is a placeholder if it's one of the "Sample ..." layout-testing rows
+   (see 95fae5c) or the "(System) Monitoring status" marker row (see
+   fd93d20/build comment on LEMA-12165) -- neither is real coverage. The
+   top-nav "DEMO DATA" badge should disappear the moment any real row lands,
+   not stay hardcoded forever (LEMA-12165 reopen, 2026-10-08: Billy still saw
+   it after Research Specialist's first real rows shipped). */
+function isPlaceholderRow(a) {
+  return !!a && (a.outlet === '(System) Monitoring status' || /^Sample /.test(a.outlet || ''));
+}
+function updateDemoDataBadge(list) {
+  const badge = document.getElementById('demo-data-badge');
+  if (!badge) return;
+  const hasRealRow = Array.isArray(list) && list.some(a => !isPlaceholderRow(a));
+  badge.style.display = hasRealRow ? 'none' : '';
+}
 (async function loadRemoteData() {
   const dot = document.getElementById('databar-cov-dot');
   const covText = document.getElementById('databar-cov-text');
@@ -2369,6 +2385,7 @@ function isValidCoverageRow(r) {
       return;
     }
     MEDIA = remote;
+    updateDemoDataBadge(remote);
     buildCharts();
     buildHome();
     renderCoverage();
