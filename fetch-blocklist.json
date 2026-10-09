@@ -1023,9 +1023,9 @@
     {
       "url": "https://www.tiktok.com/@candresperedo/video/7694479656157842696",
       "firstSeen": "2026-10-09T06:00:00Z",
-      "failCount": 1,
+      "failCount": 2,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-09T06:00:00Z",
+      "lastAttempt": "2026-10-09T18:30:00Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -1034,32 +1034,30 @@
           "status": 0,
           "issue": "LEMA-12217",
           "note": "Tavily/WebFetch returned only the TikTok player shell (video content, no transcript/caption text extractable); cannot confirm or classify content from available tools this run. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        },
+        {
+          "attempt": "2026-10-09T18:30:00Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-12299",
+          "note": "Retry (cooldownUntil was null): WebFetch returned only the generic TikTok player shell again, no caption/date extractable. failCount now 2, still below 3-strike cooldown threshold."
         }
       ]
     },
     {
       "url": "https://www.facebook.com/candresperedo/posts/entrevist%C3%A9-al-elenco-de-el-c%C3%ADrculo-el-nuevo-thriller-de-netflix-zuria-vega-miche/1691701958984225",
       "firstSeen": "2026-10-09T06:00:00Z",
-      "failCount": 1,
-      "lastStatus": 0,
-      "lastAttempt": "2026-10-09T06:00:00Z",
-      "cooldownUntil": null,
-      "history": [
-        {
-          "attempt": "2026-10-09T06:00:00Z",
-          "method": "WebFetch/Tavily",
-          "status": 0,
-          "issue": "LEMA-12217",
-          "note": "Facebook repost pointer to the same candresperedo TikTok interview; fetch returned no extractable article/post text (login-walled). Likely Rule I second-address of the TikTok video once either is fetchable. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
-        }
-      ]
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook post by verified entertainment journalist Candrés Peredo -- full caption text now extracted via WebFetch (identical text to the /videos/ address for this account) but no visible posting date; Firecrawl does not support facebook.com. Superfluous fetch-failure tracking from LEMA-12217 replaced: content is confirmed fetchable, the blocker is dateability, not fetchability.",
+      "reviewable": true
     },
     {
       "url": "https://www.facebook.com/61556588083354/videos/zuria-vega-michel-brown-osvaldo-benavides-y-ra%C3%BAl-briones-nos-describen-a-sus-per/1902158610758272",
       "firstSeen": "2026-10-09T06:00:00Z",
-      "failCount": 1,
+      "failCount": 2,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-09T06:00:00Z",
+      "lastAttempt": "2026-10-09T18:30:00Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -1068,6 +1066,13 @@
           "status": 0,
           "issue": "LEMA-12217",
           "note": "Facebook video post (cast describing their characters); fetch returned no extractable transcript/caption text (login-walled). failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        },
+        {
+          "attempt": "2026-10-09T18:30:00Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-12299",
+          "note": "Retry (cooldownUntil was null): WebFetch again returned only the word 'Facebook', no extractable caption/date; Firecrawl does not support facebook.com. failCount now 2, still below 3-strike cooldown threshold."
         }
       ]
     },
@@ -1376,7 +1381,81 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://facebook.com/groups/1363603521551431/posts/1795843781660734",
+      "firstSeen": "2026-10-09T18:30:00Z",
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Public Facebook fan group 'Para Mirar Netflix Internacional' -- fan-repost/community group post recommending El Círculo, not an outlet or editorial-brand account. Rule B gate applies regardless of date.",
+      "reviewable": false
+    },
+    {
+      "url": "https://facebook.com/groups/netfliteando/posts/2834846390220429",
+      "firstSeen": "2026-10-09T18:30:00Z",
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Public Facebook fan group 'netfliteando' -- clickbait-style fan recommendation post, not an outlet or editorial-brand account. Rule B gate applies regardless of date.",
+      "reviewable": false
+    },
+    {
+      "url": "https://facebook.com/candresperedo/videos/entreviste-al-elenco-de-el-circulo-el-nuevo-thriller-de-netflix-zuria-vega-miche/1644983890317097",
+      "firstSeen": "2026-10-09T18:30:00Z",
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook video post by verified entertainment journalist Candrés Peredo (cast interview, editorial-brand account under Rule B's scope clarification, evaluated normally). Full caption text extracted via WebFetch but no visible posting date; Firecrawl does not support facebook.com (fallback chain exhausted). Same caption verbatim as the /posts/ address for this account -- same undateable outcome independently.",
+      "reviewable": true
+    },
+    {
+      "url": "https://custommapposter.com/article/top-3-new-shows-movies-to-stream-tonight-oct-7-netflix-prime-video-hulu-more/12426",
+      "firstSeen": "2026-10-09T18:30:00Z",
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Redirected from pmpublicidad.com (302); content-farm mirror listing El Círculo/Inside the Circle only as one title in a bare 'what to stream tonight' list with no written content about the show, fabricated 'Senior Streaming Writer at Tom's Guide' byline, and an internally inconsistent future metadata timestamp (2026-10-10). Strip the list and nothing about the show remains -- Rule F.",
+      "reviewable": false
+    },
+    {
+      "url": "https://imdb.com/es/news/ni66052141",
+      "firstSeen": "2026-10-09T18:30:00Z",
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news page carries no original written content -- it is a link/thumbnail wrapper around gazettely.com's 'Inside the Circle Review: Corruption Comes Between Old Friends' (Ayishah Ayat Toma, 2026-10-08), which is tracked separately in data.json as the distinct document. Same pattern as the existing imdb.com/news/ni66046252 entry.",
+      "reviewable": false
+    },
+    {
+      "url": "https://facebook.com/NetflixLatino/posts/se-les-avisa-que-la-serie-el-circulo-con-michel-brown-zuria-vega-osvaldo-benavid/1593403162826625",
+      "firstSeen": "2026-10-09T18:30:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-09T18:30:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-09T18:30:00Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-12299",
+          "note": "Official NetflixLatino account post about El Círculo cast. WebFetch returned only a truncated/unusable snippet (no full body, no date); Firecrawl does not support facebook.com. failCount=1, no cooldown yet."
+        }
+      ]
+    },
+    {
+      "url": "https://macobserver.com/entertainment/inside-the-circle-book-differences-how-netflix-changes-jorge-zepeda-pattersons-los-corruptores",
+      "firstSeen": "2026-10-09T18:30:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-09T18:30:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-09T18:30:00Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-12299",
+          "note": "WebFetch returned HTTP 410 Gone; Firecrawl scrape confirms 'This article has been removed and is no longer available.' Page genuinely gone, not a classification call. failCount=1, no cooldown yet."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-09T14:13:59Z"
+  "lastUpdated": "2026-10-09T18:30:00Z"
 }
