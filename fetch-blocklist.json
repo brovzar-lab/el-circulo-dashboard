@@ -698,7 +698,248 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://rottentomatoes.com/tv/inside_the_circle/s01",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "RT season page: Tomatometer shows '1 Reviews' but no percentage/consensus; one critic blurb (Karina Adelgaard, 3/5) is reflected but the page itself is cast/crew/episode metadata, same Rule F family as the already-ledgered bare show page. Original critic review not yet located by this run's queries -- worth targeting by name next sweep.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "RT season page, metadata + 1 reflected review blurb, no written analysis of its own. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.rottentomatoes.com/tv/inside_the_circle/s01/reviews",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "RT reviews-list page: no Tomatometer score, no critic excerpts rendered, same site family as already-ledgered show page. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "RT reviews index page, no score/excerpts. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/title/80217807",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix title/watch page: synopsis, cast, episode guide, technical/subscription metadata only -- no reviews, interviews, or written analysis. Strips to nothing but a catalog entry; same shape as the already-ruled Apple TV+ locale show pages. Rule F, not Rule C's press-release/BTS-video carve-out (no press release text present).",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Official platform watch page, bare metadata. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://media.netflix.com/en/only-on-netflix/80217807",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix Media Center page: logline/genre tags only, confirmed no press release, no cast/creative info, no downloadable press materials; links to two unrelated 'what to watch' roundups. Same Rule F family as the Netflix title page and the already-ruled Apple tv-pr/originals pages.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Press-center page, bare logline, no actual press release text. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/hi/news/ni66046084/",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news aggregator page republishes Fiction Horizon's 'Meet the Cast of Inside the Circle' piece (already in data.json, Oct 7) with a credit link back. Second address, not a distinct document. Same pattern as the already-ledgered imdb.com/es/news/ni66050390 (Heaven of Horror repost).",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Confirmed republished Fiction Horizon content via og:url + inline credit link."
+        }
+      ]
+    },
+    {
+      "url": "http://www.thefutoncritic.com/showatch/inside-the-circle/",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TheFutonCritic 'Shows A-Z' directory entry: pure site-navigation boilerplate, no written content about the show at all. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Bare directory listing page, no prose. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://ground.news/article/inside-the-circle-official-trailer-netflix_6dfb39",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Ground News aggregation page: compiles/paraphrases coverage from 4 other outlets (Hola News, RPP, Sopitas.com, thefutoncritic.com) with no original reporting of its own. Index/database shape, not a distinct document under Rule I.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Confirmed aggregator shape, no original text. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/news/top-10-reports/netflix-top-10-report-the-watcher-someone-borrowed-and-the-curse-of-bridge-hollow/",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Article is a 2022 Netflix Top 10 report covering The Watcher / The Curse of Bridge Hollow / Someone Borrowed -- entirely unrelated content. Surfaced only via a footer link to an unrelated review on the same site. Rule G.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Confirmed off-topic: 2022 article about different titles, no mention of El Círculo/Inside the Circle in body."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/LeisureByte/posts/1718324373628899",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Facebook teaser post from Leisurebyte's own page: 2-3 sentence excerpt of the review's plot/take, explicitly directs readers to 'Read our full review' at leisurebyte.com (added to data.json this run). Second address for that document, not a distinct piece.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Confirmed teaser/promo repost of leisurebyte.com's own review article."
+        }
+      ]
+    },
+    {
+      "url": "https://decider.com/show/inside-the-circle/",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Decider show-tag/archive hub page: surfaces the already-tracked decider.com/2026/10/07 review plus unrelated 'More From Decider' links. Explicitly named second-address shape under Rule I ('a tag or archive index surfacing an already-tracked post').",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Confirmed tag/archive index page surfacing the already-tracked review."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/us/tv-show/los-corruptores/season-1",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "JustWatch legal-availability guide (Rule E scope limit: these are 'coverage, evaluated normally', not a piracy-gate or Rule F exclusion). But the page is a continuously regenerated live snapshot ('checked for updates... Oct 8, 2026 at 05:18:53 PM', chart 'last updated 13:12, 10/08/2026') with no discrete publish date to source a real ts from. Evaluated normally under Rule A, it is undateable.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Live streaming-availability + ranking snapshot, no discrete publish date."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/title/inside-the-circle/",
+      "firstSeen": "2026-10-09T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol Top 10 ranking tracker: per-country chart table ('Last updated on October 8, 2026'), no written editorial content, not a legal-availability guide so the Rule E scope limit does not apply. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-09T02:20:00Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12214",
+          "note": "Confirmed pure ranking data table, no prose. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-08T22:08:02Z"
+  "lastUpdated": "2026-10-09T02:20:00Z"
 }
