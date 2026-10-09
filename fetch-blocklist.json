@@ -1135,7 +1135,248 @@
       "skipReason": "editorial_redundant_syndication",
       "skipNote": "Unresolved WordPress ?p= id-permalink; canonical is https://www.flickonclick.com/inside-the-circle-review/, already tracked in data.json (FlickOnClick review). Second address, not a distinct document.",
       "reviewable": false
+    },
+    {
+      "url": "https://rottentomatoes.com/tv/inside_the_circle/s01/e02/reviews/all-critics",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "RT episode-reviews page (S1E2): no Tomatometer score, no critic excerpts rendered (reviews gated behind an unloaded 'Load More'), same Rule F family as the already-ledgered show/season/reviews-index pages for this title.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "RT episode-reviews page (S1E2): no Tomatometer score, no critic excerpts rendered (reviews gated behind an unloaded 'Load More'), same Rule F family as the already-ledgered show/season/reviews-index pages for this title."
+        }
+      ]
+    },
+    {
+      "url": "https://excelsior.com.mx/espectaculos/primeras-reacciones-poder-red-altura-red-social-esto-dice-critica",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Article is about 'El poder de la red' (The Social Reckoning), an unrelated Aaron Sorkin film about Facebook/Frances Haugen, not El Círculo. Surfaced only because both titles contain the word 'red'/'círculo'-adjacent terms in a broad social-reactions query.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "Article is about 'El poder de la red' (The Social Reckoning), an unrelated Aaron Sorkin film about Facebook/Frances Haugen, not El Círculo. Surfaced only because both titles contain the word 'red'/'círculo'-adjacent terms in a broad social-reactions query."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/61577108768971/posts/122187677336903625",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Facebook post about a character named 'Cristian' and family member 'Barbara Hidalgo' -- not El Círculo's cast (Amelia/Tomas/Mario/Jaime). Different show/telenovela, surfaced via broad 'reacciones redes sociales' query match.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "Facebook post about a character named 'Cristian' and family member 'Barbara Hidalgo' -- not El Círculo's cast (Amelia/Tomas/Mario/Jaime). Different show/telenovela, surfaced via broad 'reacciones redes sociales' query match."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/TheHorrorUniverse/posts/1514590780701068",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Post is about an unrelated 'new R-rated Netflix thriller movie' per The Horror Universe's own linked article ('Netflix's New R-Rated Thriller Movie Instantly Takes The...'), not El Círculo. Surfaced only via broad 'Netflix Top 10' query match.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "Post is about an unrelated 'new R-rated Netflix thriller movie' per The Horror Universe's own linked article ('Netflix's New R-Rated Thriller Movie Instantly Takes The...'), not El Círculo. Surfaced only via broad 'Netflix Top 10' query match."
+        }
+      ]
+    },
+    {
+      "url": "https://qz.com/netflix-most-watched-shows-movies-2026",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Covers Netflix's H1 2026 (Jan-June) 'What We Watched' viewership report, a period entirely before El Círculo's Oct 7, 2026 premiere; the show is not mentioned. Surfaced only via broad 'Netflix Top 10/ranking' query match.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "Covers Netflix's H1 2026 (Jan-June) 'What We Watched' viewership report, a period entirely before El Círculo's Oct 7, 2026 premiere; the show is not mentioned. Surfaced only via broad 'Netflix Top 10/ranking' query match."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol Top 10 World ranking tracker: live chart table, no written editorial content (same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/ entry from LEMA-12214); not a legal-availability guide so the Rule E scope limit does not apply. Rule F, not Rule A -- matches established precedent for this page family rather than the JustWatch undateable-snapshot reasoning.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "FlixPatrol Top 10 World ranking tracker: live chart table, no written editorial content (same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/ entry from LEMA-12214); not a legal-availability guide so the Rule E scope limit does not apply. Rule F, not Rule A -- matches established precedent for this page family rather than the JustWatch undateable-snapshot reasoning."
+        }
+      ]
+    },
+    {
+      "url": "https://blogarama.com/arts-and-entertainment-blogs/1374488-dmt-digital-mafia-talkies-blog/81144754-ainside-circlea-netflix-review-intriguing-political-thriller-weighed-down-too-many-subplots",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Blog-aggregator repost explicitly attributed ('This post first appeared on DMT Digital Mafia Talkies, please read the original post') -- second address for the already-tracked dmtalkies.com review.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "Blog-aggregator repost explicitly attributed ('This post first appeared on DMT Digital Mafia Talkies, please read the original post') -- second address for the already-tracked dmtalkies.com review."
+        }
+      ]
+    },
+    {
+      "url": "https://urallnews.com/entertainment-buzz-inside-the-circle-netflix-review-a-tense-mexican-political-thriller-that-gets-tangled-in-its-own-web-what-happened",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Rewritten/reformatted copy of the already-tracked whats-on-netflix.com review, with an explicit source-attribution link back to whats-on-netflix.com at the bottom of the page. Second address, not a distinct editorial work.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "Rewritten/reformatted copy of the already-tracked whats-on-netflix.com review, with an explicit source-attribution link back to whats-on-netflix.com at the bottom of the page. Second address, not a distinct editorial work."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/news/ni66046252",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news-index republication of the already-tracked ComicBasics piece 'Meet the Cast of Netflix's Inside the Circle (with Pictures)' (by Hrvoje Milakovic, Oct 4, 2026); page itself links out with 'See full article at Comic Basics'. Second address.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "IMDb news-index republication of the already-tracked ComicBasics piece 'Meet the Cast of Netflix's Inside the Circle (with Pictures)' (by Hrvoje Milakovic, Oct 4, 2026); page itself links out with 'See full article at Comic Basics'. Second address."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/HumorVariedad/posts/1522474296571462",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "'HumorVariedad' is a generic humor/meme Facebook page (not a publisher/outlet/editorial brand), posting a faux-'critique... for ninth-grade students' novelty item rather than original reporting. Rule B account-type gate, relevance fails regardless of dateability.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "'HumorVariedad' is a generic humor/meme Facebook page (not a publisher/outlet/editorial brand), posting a faux-'critique... for ninth-grade students' novelty item rather than original reporting. Rule B account-type gate, relevance fails regardless of dateability."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/netfliteando/posts/1671227564619532",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "'Netfliteando' is a generic Netflix fan/recommendation account (no byline, no original reporting, pure engagement-bait synopsis + '¿Ya la viste?' prompt). Rule B fan-repost account, not media coverage; also carries only a relative Facebook timestamp ('14h'), no resolvable absolute date.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "'Netfliteando' is a generic Netflix fan/recommendation account (no byline, no original reporting, pure engagement-bait synopsis + '¿Ya la viste?' prompt). Rule B fan-repost account, not media coverage; also carries only a relative Facebook timestamp ('14h'), no resolvable absolute date."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/ActitudFEM/posts/1515843313910990",
+      "firstSeen": "2026-10-09T14:13:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T14:13:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "ActitudFEM is a legitimate Mexican entertainment-editorial brand (publisher account, Rule B evaluated normally) and the Saúl Lisazo interview teaser is genuine coverage, but no corresponding dated article exists on actitudfem.com (site search returns only unrelated 'Romper el círculo'/It Ends With Us results) and the Facebook post itself exposes no resolvable absolute publish date, only a relative timestamp. Rule A undateable.",
+      "history": [
+        {
+          "attempt": "2026-10-09T14:13:59Z",
+          "method": "WebFetch/Tavily/Exa",
+          "status": 200,
+          "issue": "LEMA-12295",
+          "note": "ActitudFEM is a legitimate Mexican entertainment-editorial brand (publisher account, Rule B evaluated normally) and the Saúl Lisazo interview teaser is genuine coverage, but no corresponding dated article exists on actitudfem.com (site search returns only unrelated 'Romper el círculo'/It Ends With Us results) and the Facebook post itself exposes no resolvable absolute publish date, only a relative timestamp. Rule A undateable."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-10-09T10:00:00Z"
+  "lastUpdated": "2026-10-09T14:13:59Z"
 }
