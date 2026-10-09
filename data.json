@@ -561,5 +561,77 @@
     "type": "Entertainment",
     "excerpt": "Cobertura del estreno mundial: un video prohibido vinculado al homicidio de la actriz Pamela Dosantos rompe el pacto de silencio de cuatro amigos de la infancia.",
     "storyGroup": "premiere-day-coverage-20261007"
+  },
+  {
+    "outlet": "EscribiendoCine",
+    "headline": "Crítica de \"El Círculo\": la serie de Alejandro Lozano con Zuria Vega y Michel Brown que expone la podredumbre del poder en México",
+    "url": "https://escribiendocine.com/noticias/2026/10/08/25818-critica-de-el-circulo-la-serie-de-alejandro-lozano-con-zuria-vega-y-michel-brown-que-expone-la-podredumbre-del-poder-en-mexico",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Review",
+    "excerpt": "Reseña de Juan Pablo Russo: pese a desniveles de ritmo por su estructura coral, la serie \"logra trascender el mero entretenimiento criminal para erigirse en un incómodo espejo social\".",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Leisurebyte",
+    "headline": "Inside the Circle Review: Netflix's Mexican Thriller Turns Friendship Into a Dangerous Game",
+    "url": "https://leisurebyte.com/inside-the-circle-review-netflix-2026-el-circulo",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Review by Archi Sengupta: praises the show for centering friendship dynamics and shared history among the four leads, making viewers invested as old loyalties come under threat.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "DL Gaming",
+    "headline": "El Círculo sur Netflix : avis sur le thriller mexicain adapté du roman Les Corrupteurs",
+    "url": "https://dlgaming.fr/el-circulo-sur-netflix-avis-sur-le-thriller-mexicain-adapte-du-roman-les-corrupteurs-idA5471.html",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "FR",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "French-language review/avis: covers the eight-episode Mexican thriller's themes of loyalty, corruption and political manipulation following four childhood friends after a leaked video.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "elReporteroMx",
+    "headline": "Jorge Zepeda Paterson y la adaptación de una de sus novelas llega a Netflix con 'El círculo'",
+    "url": "https://elreportero.mx/2026/10/02/jorge-zepeda-paterson-y-la-adaptacion-de-una-de-sus-novelas-llega-a-netflix-con-el-circulo",
+    "date": "Oct 2, 2026",
+    "ts": 20261002,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Pre-premiere coverage of the Netflix adaptation of 'Los corruptores': notes the TV version shifts focus from the novel's political intrigue to a friend group caught in scandal after a journalist's hasty story.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "El Universal",
+    "headline": "\"El círculo\": Zuria Vega, Osvaldo Benavides y Raúl Briones se enfrentan a la corrupción en la nueva serie de Netflix",
+    "url": "https://eluniversal.com.mx/espectaculos/el-circulo-un-thriller-de-dudas-y-lealtades",
+    "date": "Sep 2, 2026",
+    "ts": 20260902,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Pre-premiere feature by César Huerta Ortiz on the upcoming Netflix series adapted from Jorge Zepeda Patterson's novel, on a friend group whose loyalty is tested by a murder investigation spanning politics, journalism and business.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "The Review Geek",
+    "headline": "Inside The Circle Ultimate Guide: Every Episode Recap, Review & Ending Explained",
+    "url": "https://thereviewgeek.com/ultimateguide-insidethecircle",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Season hub page with original per-episode synopsis write-ups for all 8 episodes and links to individual recap/review articles as they publish (only Ep.1's recap is live so far).",
+    "storyGroup": null
   }
 ]
