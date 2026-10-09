@@ -939,7 +939,155 @@
           "note": "Confirmed pure ranking data table, no prose. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.netflix.com/cz-en/title/80217807",
+      "firstSeen": "2026-10-09T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix title-page, cz-en locale variant of the already-ledgered netflix.com/title/80217807 (Rule F listing/database family); same disposition by surface family, no new editorial content.",
+      "history": [
+        {
+          "attempt": "2026-10-09T06:00:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 200,
+          "issue": "LEMA-12217",
+          "note": "Official Netflix title-page, cz-en locale variant of the already-ledgered netflix.com/title/80217807 (Rule F listing/database family); same disposition by surface family, no new editorial content."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/articles/what-to-watch-on-netflix-october-2-2026",
+      "firstSeen": "2026-10-09T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix Tudum 'What to Watch' monthly roundup covering dozens of unrelated titles; El Círculo gets a generic 2-sentence synopsis blurb, same genus as other listing/calendar pages already classified Rule F, not a distinct piece about the show.",
+      "history": [
+        {
+          "attempt": "2026-10-09T06:00:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 200,
+          "issue": "LEMA-12217",
+          "note": "Netflix Tudum 'What to Watch' monthly roundup covering dozens of unrelated titles; El Círculo gets a generic 2-sentence synopsis blurb, same genus as other listing/calendar pages already classified Rule F, not a distinct piece about the show."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/it/news/ni66052649",
+      "firstSeen": "2026-10-09T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news-index page headlined identically to the already-tracked whats-on-netflix.com review ('A Tense Mexican Political Thriller That Gets Tangled in Its Own Web'); second address for an already-tracked document (same Rule I pattern as the /es/news/ni66050390 entry for the Heaven of Horror review), plus functions as a general news-index hub listing many unrelated titles.",
+      "history": [
+        {
+          "attempt": "2026-10-09T06:00:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 200,
+          "issue": "LEMA-12217",
+          "note": "IMDb news-index page headlined identically to the already-tracked whats-on-netflix.com review ('A Tense Mexican Political Thriller That Gets Tangled in Its Own Web'); second address for an already-tracked document (same Rule I pattern as the /es/news/ni66050390 entry for the Heaven of Horror review), plus functions as a general news-index hub listing many unrelated titles."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DeMBp-djPlB",
+      "firstSeen": "2026-10-09T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "zolo.noticias Instagram post is a thin paraphrase of an Excélsior cast interview, no original reporting or direct quotes beyond the paraphrase; second-address repost, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-09T06:00:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 200,
+          "issue": "LEMA-12217",
+          "note": "zolo.noticias Instagram post is a thin paraphrase of an Excélsior cast interview, no original reporting or direct quotes beyond the paraphrase; second-address repost, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@candresperedo/video/7694479656157842696",
+      "firstSeen": "2026-10-09T06:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-09T06:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-09T06:00:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 0,
+          "issue": "LEMA-12217",
+          "note": "Tavily/WebFetch returned only the TikTok player shell (video content, no transcript/caption text extractable); cannot confirm or classify content from available tools this run. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/candresperedo/posts/entrevist%C3%A9-al-elenco-de-el-c%C3%ADrculo-el-nuevo-thriller-de-netflix-zuria-vega-miche/1691701958984225",
+      "firstSeen": "2026-10-09T06:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-09T06:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-09T06:00:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 0,
+          "issue": "LEMA-12217",
+          "note": "Facebook repost pointer to the same candresperedo TikTok interview; fetch returned no extractable article/post text (login-walled). Likely Rule I second-address of the TikTok video once either is fetchable. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61556588083354/videos/zuria-vega-michel-brown-osvaldo-benavides-y-ra%C3%BAl-briones-nos-describen-a-sus-per/1902158610758272",
+      "firstSeen": "2026-10-09T06:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-09T06:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-09T06:00:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 0,
+          "issue": "LEMA-12217",
+          "note": "Facebook video post (cast describing their characters); fetch returned no extractable transcript/caption text (login-walled). failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/100093663771599/posts/-netflix-presents-the-thriller-el-c%C3%ADrculo-netflix-is-bringing-a-star-studded-mex/1016651014800348",
+      "firstSeen": "2026-10-09T06:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-09T06:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-09T06:00:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 0,
+          "issue": "LEMA-12217",
+          "note": "Facebook promotional post; fetch returned no extractable post text beyond the search snippet (login-walled), insufficient to classify or dateverify. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-09T02:20:00Z"
+  "lastUpdated": "2026-10-09T06:00:00Z"
 }
