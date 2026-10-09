@@ -633,5 +633,77 @@
     "type": "Feature",
     "excerpt": "Season hub page with original per-episode synopsis write-ups for all 8 episodes and links to individual recap/review articles as they publish (only Ep.1's recap is live so far).",
     "storyGroup": null
+  },
+  {
+    "outlet": "Midgard Times",
+    "headline": "'Inside The Circle' (2026) Netflix Series Review - When Friendship Becomes a Deadly Mystery",
+    "url": "https://moviesr.net/p-inside-the-circle-2026-netflix-series-review-when-friendship-becomes-a-deadly-mystery",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Final Score 7/10 (Neerja Ch). Praises the thriller's twists, compelling cast performances and character-driven narrative, noting pacing occasionally falters but stays well-suited to the genre.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "DMT (Digital Mind Talkies)",
+    "headline": "'Inside The Circle' Netflix Review: An Intriguing Political Thriller Weighed Down By Too Many Subplots",
+    "url": "https://dmtalkies.com/inside-the-circle-netflix-season-1-review-2026",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Review by Srijoni Rudra: finds the political-thriller mystery engaging but says the show juggles too many subplots (power struggles, personal dynamics, impersonation) to always cohere.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Quién",
+    "headline": "Captamos a Zuria Vega, Michel Brown y Raúl Briones 'vandalizando' las calles de la CDMX",
+    "url": "https://quien.com/espectaculos/2026/10/06/zuria-vega-michel-brown-raul-briones-el-circulo-netflix",
+    "date": "Oct 6, 2026",
+    "ts": 20261006,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Cast members were spotted 'intervening' urban advertisements across Mexico City as part of a street-art promotional campaign for El Círculo ahead of the premiere.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Publimetro México",
+    "headline": "'El círculo' demuestra que conocer a alguien de toda la vida no significa conocerlo de verdad",
+    "url": "https://publimetro.com.mx/entretenimiento/2026/10/06/el-circulo-demuestra-que-conocer-a-alguien-de-toda-la-vida-no-significa-conocerlo-de-verdad",
+    "date": "Oct 6, 2026",
+    "ts": 20261006,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Pre-premiere feature framing the series around trust, guilt and the consequences of long friendships fracturing once a leaked video draws four friends into a network of blackmail.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "El Heraldo de México",
+    "headline": "El círculo: Forjan estrecho vínculo actoral",
+    "url": "https://heraldodemexico.com.mx/edicion-impresa/2026/10/7/el-circulo-forjan-estrecho-vinculo-actoral-903112.html",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Interview by Gerardo Salvador Sánchez with Zuria Vega, Raúl Briones and Osvaldo Benavides on how the four leads built their on-screen friendship during the eight-episode shoot.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Rumana's Movie Blog (YouTube)",
+    "headline": "Inside the Circle series Review | Netflix Mexican el circulo series Review",
+    "url": "https://youtube.com/watch?v=UBqNuLgXx58",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Mixed video review: finds the political-thriller mystery and character setup engaging early on but calls the pacing a 'very slow burn' that becomes repetitive after the second episode.",
+    "storyGroup": null
   }
 ]
