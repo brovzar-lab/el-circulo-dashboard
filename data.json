@@ -705,5 +705,29 @@
     "type": "Review",
     "excerpt": "Mixed video review: finds the political-thriller mystery and character setup engaging early on but calls the pacing a 'very slow burn' that becomes repetitive after the second episode.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Emisoras Unidas",
+    "headline": "Imágenes de Zuria Vega y Michel Brown vandalizando publicidad en CDMX escandalizan las redes",
+    "url": "https://emisorasunidas.com/farandula/2026/10/07/imagenes-de-zuria-vega-y-michel-brown-vandalizando-publicidad-en-cdmx",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Entertainment",
+    "excerpt": "Guatemalan outlet covers the same Mexico City ad-intervention campaign as Publimetro's Oct 6 piece: Zuria Vega, Michel Brown, Raúl Briones and Osvaldo Benavides altered street billboards as an El Círculo promo, initially mistaken on social media for vandalism.",
+    "storyGroup": "cdmx-ad-campaign-20261006"
+  },
+  {
+    "outlet": "Reelgood",
+    "headline": "How to Watch Inside the Circle on Netflix – Streaming Guide",
+    "url": "https://blog.reelgood.com/how-to-watch-inside-the-circle-on-netflix-streaming-guide",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "By Isabella Thornton: streaming/availability guide confirming Inside the Circle (El círculo), based on Jorge Zepeda Patterson's novel Los corruptores, is streaming on Netflix.",
+    "storyGroup": null
   }
 ]

@@ -1087,7 +1087,55 @@
           "note": "Facebook promotional post; fetch returned no extractable post text beyond the search snippet (login-walled), insufficient to classify or dateverify. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://blog.reelgood.com/?p=261163",
+      "firstSeen": "2026-10-09T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; canonical/og:url is https://blog.reelgood.com/how-to-watch-inside-the-circle-on-netflix-streaming-guide, added to data.json in this same commit. Second address, not a distinct document.",
+      "reviewable": false
+    },
+    {
+      "url": "https://fictionhorizon.com/?p=390106",
+      "firstSeen": "2026-10-09T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; canonical is https://fictionhorizon.com/inside-the-circle-season-1-review-what-happens-when-one-leaked-video-tests-a-lifetime-of-loyalty/, already tracked in data.json (Fiction Horizon, 8/10 review by Robert Milakovic). Second address, not a distinct document.",
+      "reviewable": false
+    },
+    {
+      "url": "https://leisurebyte.com/?p=462029",
+      "firstSeen": "2026-10-09T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; canonical is https://leisurebyte.com/inside-the-circle-review-netflix-2026-el-circulo/, already tracked in data.json (Leisurebyte review). Second address, not a distinct document.",
+      "reviewable": false
+    },
+    {
+      "url": "https://flickonclick.com/?p=188077",
+      "firstSeen": "2026-10-09T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; canonical is https://www.flickonclick.com/inside-the-circle-review/, already tracked in data.json (FlickOnClick review). Second address, not a distinct document.",
+      "reviewable": false
     }
   ],
-  "lastUpdated": "2026-10-09T06:00:00Z"
+  "lastUpdated": "2026-10-09T10:00:00Z"
 }
