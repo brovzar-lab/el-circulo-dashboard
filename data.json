@@ -1065,5 +1065,113 @@
     "type": "Social",
     "excerpt": "Periodista de entretenimiento verificado entrevista a Zuria Vega, Michel Brown, Osvaldo Benavides y Raúl Briones sobre la trama de El Círculo.",
     "storyGroup": "candresperedo-cast-interview-20261008"
+  },
+  {
+    "outlet": "Excélsior",
+    "headline": "\"No es lo mismo que te ayuden a robar un banco a enterrar un muerto\": Zuria Vega sobre El círculo",
+    "url": "https://excelsior.com.mx/espectaculos/no-es-mismo-que-ayuden-robar-banco-enterrar-muerto-zuria-vega-sobre-circulo",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Entrevista a Zuria Vega sobre El Círculo: habla de los dilemas morales del grupo de amigos cuyo vínculo se pone a prueba por la manipulación y los secretos.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "The Editorial México",
+    "headline": "Entre el poder, la caída y la acción: Michel Brown en El Círculo",
+    "url": "https://theeditorialmexico.com/michel-brown-el-circulo-netflix-tomas",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Michel Brown habla de su personaje Tomás, un periodista caído en desgracia, y de las secuencias de acción coreografiadas que buscó para distanciarse de sí mismo.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "PRODU",
+    "headline": "Termina grabación de Los corruptores para Netflix con producción de Lemon Films",
+    "url": "https://produ.com/television/noticias/termina-grabacion-de-los-corruptores-para-netflix-con-produccion-de-lemon-films",
+    "date": "Aug 17, 2025",
+    "ts": 20250817,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Entertainment",
+    "excerpt": "Osvaldo Benavides anuncia en Instagram el fin del rodaje de la serie, producida por Lemon Studios, sobre cuatro amigos inseparables envueltos en un escándalo de corrupción.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Infobae",
+    "headline": "'El Círculo', el nuevo thriller mexicano basado en 'Los Corruptores', llegará a Netflix",
+    "url": "https://infobae.com/america/agencias/2026/09/09/el-circulo-el-nuevo-thriller-mexicano-basado-en-los-corruptores-llegara-a-netflix",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Entertainment",
+    "excerpt": "Anuncio del estreno del 7 de octubre: cuatro amigos de toda la vida cuya amistad se fractura cuando un video comprometedor los arrastra a la extorsión y el peligro.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Tribuna de México",
+    "headline": "Jorge Zepeda Patterson analiza el estreno de \"El Círculo\" en Netflix, la adaptación en formato de thriller político de su novela \"Los corruptores\"",
+    "url": "https://tribunademexico.com/jorge-zepeda-patterson-analiza-el-estreno-de-el-circulo-en-netflix-la-adaptacion-en-formato-de-thriller-politico-de-su-novela-los-corruptores",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "El autor de la novela 'Los Corruptores' analiza la adaptación como thriller político sobre redes de complicidad e intereses dentro de la élite política mexicana.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "La Voz de Michoacán",
+    "headline": "'El Círculo': La serie basada en 'Los Corruptores', llegará a Netflix protagonizada por Zuria Vega y Michel Brown",
+    "url": "https://lavozdemichoacan.com.mx/entretenimiento/series/llega-el-circulo-la-nueva-serie-de-netflix-basada-en-los-corruptores",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Anuncio del estreno del 7 de octubre: cuatro amigos de toda la vida cuyo vínculo se desmorona cuando un video filtrado expone sus secretos.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Deia",
+    "headline": "El thriller mexicano 'El Círculo' se suma a la oferta de Netflix",
+    "url": "https://deia.eus/television/2026/10/05/thriller-mexicano-circulo-suma-oferta-11621232.html",
+    "date": "Oct 5, 2026",
+    "ts": 20261005,
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Entertainment",
+    "excerpt": "Medio vasco cubre la llegada de la serie a Netflix, adaptación libre de la novela 'Los Corruptores' del autor mexicano Jorge Zepeda Patterson.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "UnoTV (YouTube)",
+    "headline": "Osvaldo Benavides, Zuria Vega y Michel Brown en \"El Círculo\", la nueva serie de Netflix",
+    "url": "https://youtube.com/watch?v=XnZWrYuYJD0",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Segmento de noticias de la cadena mexicana UnoTV sobre el estreno, con declaraciones del elenco sobre amistad, periodismo y corrupción.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Aura Series (Instagram)",
+    "headline": "Raúl Briones, Zuria Vega, Osvaldo Benavides y Michel Brown nos invitan a ver 'El Círculo'",
+    "url": "https://instagram.com/reel/DeNDWwZqFld",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "International",
+    "type": "Social",
+    "excerpt": "Reel promocional del elenco invitando a ver 'El Círculo', ya disponible en Netflix.",
+    "storyGroup": null
   }
 ]

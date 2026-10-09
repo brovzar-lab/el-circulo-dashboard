@@ -1055,9 +1055,8 @@
     {
       "url": "https://www.facebook.com/61556588083354/videos/zuria-vega-michel-brown-osvaldo-benavides-y-ra%C3%BAl-briones-nos-describen-a-sus-per/1902158610758272",
       "firstSeen": "2026-10-09T06:00:00Z",
-      "failCount": 2,
-      "lastStatus": 0,
-      "lastAttempt": "2026-10-09T18:30:00Z",
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T22:19:42Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -1073,8 +1072,20 @@
           "status": 0,
           "issue": "LEMA-12299",
           "note": "Retry (cooldownUntil was null): WebFetch again returned only the word 'Facebook', no extractable caption/date; Firecrawl does not support facebook.com. failCount now 2, still below 3-strike cooldown threshold."
+        },
+        {
+          "attempt": "2026-10-09T22:19:42Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12302",
+          "note": "Full caption extracted this retry, still no date anywhere on page. Reclassified fetch-failure -> editorial_undateable, reviewable:true."
         }
-      ]
+      ],
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Retried: WebFetch this run extracted the full caption (\"Zuria Vega, Michel Brown, Osvaldo Benavides y Raúl Briones nos describen a sus personajes en la serie de 'El Círculo'\", posted by AuraSeries) but no recoverable publish date anywhere on the page. Reclassified from fetch-failure tracking to editorial_undateable -- the real blocker is dateability, not fetchability (same pattern as the candresperedo FB entry reclassified in LEMA-12299).",
+      "reviewable": true,
+      "failCount": 2
     },
     {
       "url": "https://www.facebook.com/100093663771599/posts/-netflix-presents-the-thriller-el-c%C3%ADrculo-netflix-is-bringing-a-star-studded-mex/1016651014800348",
@@ -1455,7 +1466,154 @@
           "note": "WebFetch returned HTTP 410 Gone; Firecrawl scrape confirms 'This article has been removed and is no longer available.' Page genuinely gone, not a classification call. failCount=1, no cooldown yet."
         }
       ]
+    },
+    {
+      "url": "https://produ.com/programa/los-corruptores",
+      "firstSeen": "2026-10-09T22:19:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T22:19:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "PRODU program database entry: single sentence of boilerplate (\"based on the novel...\") plus a production-company/distributor metadata table and a link to a separate news item. Strips to a catalog card, not editorial content. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-09T22:19:42Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12302",
+          "note": "Database card, one sentence of boilerplate, no prose. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/es-es/title/tt36743307",
+      "firstSeen": "2026-10-09T22:19:42Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-10-09T22:19:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "IMDb title page (es-es locale) for 'Los corruptores'/El Círculo. WebFetch returned 403 (IMDb bot-block), but this is the same imdb.com/title/* shape already established as Rule F by family regardless of locale/depth -- cast/episode/rating metadata only, no written editorial content.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-09T22:19:42Z",
+          "method": "WebFetch",
+          "status": 403,
+          "issue": "LEMA-12302",
+          "note": "403 bot-block; classified by established imdb.com/title/* Rule F family precedent, not by this fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum",
+      "firstSeen": "2026-10-09T22:19:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T22:19:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Generic Netflix Tudum homepage/hub (70k-char fetch, confirmed no mention of 'círculo' or 'Inside the Circle' anywhere in the body). Surfaced only via a broad Top10/Tudum-ranking query; spotlights unrelated titles. Rule G.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-09T22:19:42Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12302",
+          "note": "Confirmed off-topic: generic homepage, zero mentions of the show in 70k+ chars of body text."
+        }
+      ]
+    },
+    {
+      "url": "https://whats-on-netflix.com/news/under-paris-makes-a-huge-splash-on-netflix-hierarchy-becomes-next-k-drama-hit-and-sweet-tooth-bows-out-netflix-top-10-report",
+      "firstSeen": "2026-10-09T22:19:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T22:19:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix Top 10 report covering 'Under Paris', 'Hierarchy', and 'Sweet Tooth' -- entirely unrelated titles, no mention of El Círculo/Inside the Circle. Surfaced only via a broad Top10-ranking query. Rule G, same shape as the already-ledgered 2022 Top10 report on the same site.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-09T22:19:42Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-12302",
+          "note": "Off-topic Top 10 report about different titles entirely."
+        }
+      ]
+    },
+    {
+      "url": "https://watchmode.com/tv/inside-the-circle-netflix",
+      "firstSeen": "2026-10-09T22:19:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T22:19:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Watchmode streaming-availability database page: metadata fields (rating, year, language, genre), episode/cast navigation links, provider list. The one sentence of plot summary is a functional description, not editorial prose. No publish date of its own. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-09T22:19:42Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12302",
+          "note": "Database/listing page, functional one-line synopsis only. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://thefutoncritic.com/showatch/inside-the-circle/listings",
+      "firstSeen": "2026-10-09T22:19:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T22:19:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TheFutonCritic 'Shows A-Z' listings page: a bare program directory/schedule entry, no written editorial content about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-09T22:19:42Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12302",
+          "note": "Bare A-Z listings directory page, no prose. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://filmaffinity.com/en/film805649.html",
+      "firstSeen": "2026-10-09T22:19:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-09T22:19:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FilmAffinity title page: credits/trailers/image-gallery navigation and a ratings/catalog card, same database shape as IMDb. Actual 'Pro Reviews' content lives behind a separate sub-URL, not on this page. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-09T22:19:42Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12302",
+          "note": "Database/catalog card, credits+trailers+gallery nav only. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-09T18:30:00Z"
+  "lastUpdated": "2026-10-09T22:19:42Z"
 }
