@@ -2292,7 +2292,91 @@
           "note": "Confirmed off-topic: unrelated show (Manifest)."
         }
       ]
+    },
+    {
+      "url": "https://wgrd.com/netflix-top-ten/",
+      "firstSeen": "2026-10-10T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Generic article about Netflix's 2020 Top 10 feature launch (published 2020-02-24); no mention of El Círculo/Inside the Circle anywhere, only example titles cited are 'To All The Boys I Loved Before: P.S. I Still Love You,' 'Sex Education,' and 'Locke & Key.' Surfaced only via broad 'Top 10' query match.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T18:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12346",
+          "note": "Confirmed off-topic: 2020 Netflix Top 10 feature launch article, no El Círculo mention."
+        }
+      ]
+    },
+    {
+      "url": "https://worldscreen.com/?p=232558",
+      "firstSeen": "2026-10-10T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "WordPress ?p= id-permalink 301-redirects to https://worldscreen.com/netflix-launches-top-10-list-popular-titles/, the same generic Netflix Top 10 feature-launch topic as the already-ledgered wgrd.com article; no El Círculo/Inside the Circle mention. Surfaced only via broad 'Top 10' query match.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T18:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12346",
+          "note": "Confirmed off-topic via redirect target slug: generic Netflix Top 10 launch article."
+        }
+      ]
+    },
+    {
+      "url": "https://whats-on-netflix.com/category/top-10s",
+      "firstSeen": "2026-10-10T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "Live multi-region Top 10 ranking dashboard (TV series), not a dedicated article: El Círculo/Inside the Circle appears only as a data row (Global #15, Spain #8, Mexico #2 at time of fetch) with no direct link or written text about the show. Stripping the ranking grid leaves nothing written about the show specifically. Rule F, same disposition as the already-ledgered FlixPatrol/JustWatch ranking-tracker entries.",
+      "history": [
+        {
+          "attempt": "2026-10-10T18:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12346",
+          "note": "Confirmed Rule F: generic multi-title ranking dashboard, no dedicated write-up."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/title/the-circle-2020/trailers",
+      "firstSeen": "2026-10-10T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "FlixPatrol trailers page for Netflix's unrelated 2020 reality-competition format 'The Circle' ('the-circle-2020' slug), not the 2026 Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'The Circle' title collision documented in this routine's known-noise note, same family as the already-ledgered flixpatrol.com/franchise/the-circle entry.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T18:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12346",
+          "note": "Confirmed off-topic by URL slug: 2020 reality show, not our 2026 series."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-10T14:00:00Z"
+  "lastUpdated": "2026-10-10T18:00:00Z"
 }
