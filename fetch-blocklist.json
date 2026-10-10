@@ -1436,10 +1436,10 @@
     {
       "url": "https://facebook.com/NetflixLatino/posts/se-les-avisa-que-la-serie-el-circulo-con-michel-brown-zuria-vega-osvaldo-benavid/1593403162826625",
       "firstSeen": "2026-10-09T18:30:00Z",
-      "failCount": 2,
+      "failCount": 3,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-10T02:15:00Z",
-      "cooldownUntil": null,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": "2026-11-09T10:00:00Z",
       "history": [
         {
           "attempt": "2026-10-09T18:30:00Z",
@@ -1454,6 +1454,13 @@
           "status": 0,
           "issue": "LEMA-12317",
           "note": "Retry attempt (cooldown was null/expired per Pass 0). WebFetch again returned only a partial/unusable snippet with no date; Firecrawl again declined facebook.com (unsupported site). failCount=2, still below the 3-strike cooldown threshold."
+        },
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-12338",
+          "note": "Retry attempt (cooldown was null/expired). WebFetch again returned only a truncated/unusable snippet, no date; Firecrawl again declined facebook.com. 3rd consecutive full-chain failure -- cooldownUntil set to 30 days out per ledger mechanics."
         }
       ]
     },
@@ -1963,7 +1970,171 @@
           "note": "WebFetch content truncated (no date); Firecrawl unsupported for facebook.com (403). No real date recoverable."
         }
       ]
+    },
+    {
+      "url": "https://threads.com/@enzoniacion/video/DeM_uhGiDxM/video-miercoles-de-resenas-esta-comedio-no-tiene-desperdicio-espejismos-entre-la-luz",
+      "firstSeen": "2026-10-10T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Post ('Miércoles de reseñas') promotes three unrelated comedy/book titles (Espejismos entre la Luz y la Oscuridad, La Telaraña en la Cuadratura del Círculo, La Piel del Mar) via cuspidelibros/yenny_elateneo retailers; matched only on the word 'círculo' in one of the unrelated titles, not about the Netflix series El Círculo/Inside the Circle at all.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12338",
+          "note": "Confirmed off-topic: content is about unrelated comedy/book titles, not El Círculo."
+        }
+      ]
+    },
+    {
+      "url": "https://threads.com/@mag_peru/post/DeK59SjgnVi/en-el-circulo-serie-mexicana-de-netflix-cuatro-amigos-de-toda-la-vida-quedan",
+      "firstSeen": "2026-10-10T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "mag_peru (El Comercio Perú entertainment desk) Threads post, on-topic synopsis of El Círculo, real editorial-brand account under Rule B. No real publish date recoverable: WebFetch returned only a relative '3d' timestamp, no article:published_time/JSON-LD/dateline equivalent exists on Threads. Genuine coverage omitted solely for lack of a date.",
+      "history": [
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12338",
+          "note": "Relative timestamp only ('3d'); same pattern as the already-ledgered NetflixLatino/1592303729603235 entry."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/LifeAndStyleMex/videos/1668588711367508",
+      "firstSeen": "2026-10-10T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "LifeAndStyleMex (entertainment editorial brand) Facebook video: full caption extracted via WebFetch (\"¿Qué tanto se conocen? Zuria Vega, Osvaldo Benavides y Raúl Briones se pusieron a prueba en esta dinámica de 'El Círculo'...\", #ThinkLikeANewMan, with production credits) but no visible posting date anywhere on the page. Firecrawl does not support facebook.com. Genuine coverage omitted solely for lack of a date.",
+      "history": [
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12338",
+          "note": "Full caption recovered, no date; Firecrawl unsupported for facebook.com."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/thebestnetflix/posts/1889134959007229",
+      "firstSeen": "2026-10-10T10:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-12338",
+          "note": "WebFetch returned only a truncated/unusable snippet (\"Best of Netflix - Netflix's Inside the Circle has a...\"), no full body, no date. Firecrawl does not support facebook.com. failCount=1, no cooldown yet."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/title/tt36743307",
+      "firstSeen": "2026-10-10T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "IMDb title record for El Círculo/Inside the Circle: logline, cast/crew, episode metadata only, no written editorial content. Rule F (IMDb title records are Rule F by family, per LEMA-10630 ruling).",
+      "history": [
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12338",
+          "note": "Bare IMDb title page, metadata table only."
+        }
+      ]
+    },
+    {
+      "url": "https://qr.netflix.com/sv-en/title/80217807",
+      "firstSeen": "2026-10-10T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "Official Netflix title-page, sv-en QR-redirect locale variant of the already-ledgered netflix.com/title/80217807 (Rule F listing/database family): synopsis, episode guide, no written analysis. Same disposition as the already-ledgered cz-en locale variant.",
+      "history": [
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12338",
+          "note": "Locale variant of already-ledgered official title page."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/gi/title/80217807",
+      "firstSeen": "2026-10-10T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "Official Netflix title-page, Gibraltar (gi) locale variant of the already-ledgered netflix.com/title/80217807 (Rule F listing/database family): synopsis, episode guide, subscription pricing only, no written analysis.",
+      "history": [
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12338",
+          "note": "Locale variant of already-ledgered official title page."
+        }
+      ]
+    },
+    {
+      "url": "https://whats-on-netflix.com/coming-soon/20-big-netflix-movies-expected-to-release-in-2027",
+      "firstSeen": "2026-10-10T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipNote": "Article is a list of 20 Netflix original movies expected in 2027 (Extraction 3, Time Out, etc.); confirmed via full-text fetch that neither 'Circle' nor 'Círculo' appears anywhere in the body. Surfaced only via broad 'Tudum ranking' query match.",
+      "history": [
+        {
+          "attempt": "2026-10-10T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12338",
+          "note": "Confirmed off-topic: no mention of El Círculo/Inside the Circle anywhere in the article."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-10T06:14:07Z"
+  "lastUpdated": "2026-10-10T10:00:00Z"
 }
