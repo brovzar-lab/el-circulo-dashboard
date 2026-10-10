@@ -992,7 +992,7 @@
     "market": "Mexico",
     "type": "Feature",
     "excerpt": "Cobertura del estreno, la novela de origen y la trama de chantaje y corrupción ligada a la muerte de una actriz.",
-    "storyGroup": null
+    "storyGroup": "wire-reforma-corruptores-20261009"
   },
   {
     "outlet": "Esquire Latinoamérica",
@@ -1208,6 +1208,66 @@
     "market": "Spain",
     "type": "Feature",
     "excerpt": "Madrid-based outlet frames the series as a mystery/espionage/betrayal thriller where \"nadie parece estar libre de sospecha,\" previewing the Netflix premiere for Spanish readers.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Excelsior",
+    "headline": "El Círculo en Netflix: Quién es quién y de qué trata la nueva serie mexicana",
+    "url": "https://excelsior.com.mx/espectaculos/circulo-netflix-quien-es-quien-y-que-trata-nueva-serie-mexicana",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Explainer on Netflix's 'El Círculo': plot synopsis, character/cast breakdown, production credits (dirs. Alejandro Lozano, Bernardo de la Rosa; prods. Billy and Fernando Rovzar), and cast quotes on the corruption/institutional-decay themes of the adaptation.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "NaniTalk",
+    "headline": "[รีวิว-เรื่องย่อ] Inside The Circle ซีรีส์การเมืองระทึกขวัญจากเม็กซิโก",
+    "url": "https://reviews.nanitalk.com/review-inside-the-circle",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "TH",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Thai-language review (7.7/10): a Mexican political thriller about four friends whose bond unravels when a leaked video implicates a powerful politician; reviewer says the series draws its strength from the fractured-friendship drama more than the political intrigue.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Milenio",
+    "headline": "¿Qué tanto se parece 'El círculo' de Netflix a 'Los corruptores', la novela de Jorge Zepeda Patterson?",
+    "url": "https://milenio.com/espectaculos/television/el-circulo-netflix-similitudes-los-corruptores",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Structural comparison of the Netflix adaptation to the 2013 source novel: both center on four friends entangled in scandal after an actress's death, but the series updates the PRI-era backdrop to contemporary Mexico under a female president and shifts emphasis from investigative journalism to personal relationships.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "El Diario de Chihuahua",
+    "headline": "Llega a Netflix 'El Círculo', thriller político basado en 'Los Corruptores'",
+    "url": "https://eldiariodechihuahua.mx/espectaculos/2026/oct/09/llega-a-netflix-el-circulo-thriller-politico-basado-en-los-corruptores-845998.html",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Agencia Reforma wire piece (same copy as El Diario's): Netflix's 'El Círculo' adapts 'Los Corruptores', following four friends drawn into blackmail, corruption and secrets tied to powerful political figures after a leaked video.",
+    "storyGroup": "wire-reforma-corruptores-20261009"
+  },
+  {
+    "outlet": "Yahoo Entertainment",
+    "headline": "New on Netflix: The 11 best new movies and shows in October, including Halloween favorites",
+    "url": "https://yahoo.com/entertainment/general/article/new-on-netflix-the-11-best-new-movies-and-shows-in-october-including-halloween-favorites-084136839.html",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Netflix October roundup; 'Inside the Circle' is named (with its Oct 7 release date) only in a secondary 'other new releases' list, not given an individual write-up like the piece's 11 featured picks.",
     "storyGroup": null
   }
 ]

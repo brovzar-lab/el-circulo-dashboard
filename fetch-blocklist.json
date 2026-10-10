@@ -1460,9 +1460,9 @@
     {
       "url": "https://macobserver.com/entertainment/inside-the-circle-book-differences-how-netflix-changes-jorge-zepeda-pattersons-los-corruptores",
       "firstSeen": "2026-10-09T18:30:00Z",
-      "failCount": 1,
+      "failCount": 2,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-09T18:30:00Z",
+      "lastAttempt": "2026-10-10T06:14:07Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -1471,6 +1471,13 @@
           "status": 0,
           "issue": "LEMA-12299",
           "note": "WebFetch returned HTTP 410 Gone; Firecrawl scrape confirms 'This article has been removed and is no longer available.' Page genuinely gone, not a classification call. failCount=1, no cooldown yet."
+        },
+        {
+          "attempt": "2026-10-10T06:14:07Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12320",
+          "note": "Retry after prior failure: WebFetch again returned HTTP 410 Gone (curl confirms 403 bot-block on direct check, but WebFetch's render consistently reports the article as removed). failCount=2, still below the 3-failure cooldown threshold."
         }
       ]
     },
@@ -1851,7 +1858,112 @@
           "note": "Same ni66050390 IMDb news-ID as the already-ledgered es-locale sibling (imdb.com/es/news/ni66050390), which syndicates the Heaven of Horror review already tracked in data.json. Locale mirror / second address, not a distinct document, consistent with the existing es/hi/it-locale sibling entries for this same syndication pattern."
         }
       ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/ecuador",
+      "firstSeen": "2026-10-10T06:14:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T06:14:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "FlixPatrol per-country Top 10 chart page (Ecuador): same ranking-table template already ledgered under flixpatrol.com/top10/netflix (no locale segment); strip the chart and nothing written about the show remains. Rule F, same family as the already-ledgered generic top10 page.",
+      "history": [
+        {
+          "attempt": "2026-10-10T06:14:07Z",
+          "method": "WebFetch(family-match)",
+          "status": 200,
+          "issue": "LEMA-12320",
+          "note": "Same surface family as already-ledgered flixpatrol.com/top10/netflix; classified by template, not re-fetched."
+        }
+      ]
+    },
+    {
+      "url": "https://justwatch.com/in/tv-show/los-corruptores",
+      "firstSeen": "2026-10-10T06:14:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T06:14:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "JustWatch show page, India locale: identical template to the already-ledgered justwatch.com/us/tv-show/los-corruptores (streaming-availability box + ranking chart + cached IMDb rating, single-sentence synopsis only). Rule F by surface family, same as the US locale page.",
+      "history": [
+        {
+          "attempt": "2026-10-10T06:14:07Z",
+          "method": "WebFetch(family-match)",
+          "status": 200,
+          "issue": "LEMA-12320",
+          "note": "Same surface family as already-ledgered justwatch.com/us/tv-show/los-corruptores."
+        }
+      ]
+    },
+    {
+      "url": "https://bbfc.co.uk/release/inside-the-circle-q29sbgvjdglvbjpwwc0xmtiymzi5",
+      "firstSeen": "2026-10-10T06:14:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T06:14:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "BBFC classification certificate page: content ratings, consumer-advice box, cast/director/runtime metadata, and per-episode classification details only (classified 06/10/2026); no written analysis or review content. Strip test leaves nothing written about the show -- Rule F, same shape as the already-ledgered RT/JustWatch database pages.",
+      "history": [
+        {
+          "attempt": "2026-10-10T06:14:07Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12320",
+          "note": "Classification/metadata-only page, no editorial content. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/osvaldobenavidesoficial/posts/1787216272773019",
+      "firstSeen": "2026-10-10T06:14:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T06:14:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "reviewable": false,
+      "skipNote": "Cast member Osvaldo Benavides' personal Facebook account (#ElCirculo ya está en Netflix!!!): individual crew-personal celebratory post, not a publisher/outlet/editorial-brand account. Social-candidate relevance gate (Rule B) excludes crew-personal accounts regardless of dateability.",
+      "history": [
+        {
+          "attempt": "2026-10-10T06:14:07Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12320",
+          "note": "Confirmed cast member's personal account posting about own show. Rule B crew-personal exclusion."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/SKYMexicoOficial/posts/1543823677775000",
+      "firstSeen": "2026-10-10T06:14:07Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-10T06:14:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "SKY México Oficial Facebook post referencing the leaked-video premise: WebFetch returned only a truncated title fragment (no post date, no account-type signal recoverable); Firecrawl scrape explicitly refuses Facebook ('we do not support this site', HTTP 403). Both fallback-chain methods exhausted with no real publish date recoverable -- Rule A undateable, reviewable for a future manual date lookup.",
+      "history": [
+        {
+          "attempt": "2026-10-10T06:14:07Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-12320",
+          "note": "WebFetch content truncated (no date); Firecrawl unsupported for facebook.com (403). No real date recoverable."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-10T02:15:00Z"
+  "lastUpdated": "2026-10-10T06:14:07Z"
 }
