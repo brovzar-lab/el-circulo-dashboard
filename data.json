@@ -1173,5 +1173,41 @@
     "type": "Social",
     "excerpt": "Reel promocional del elenco invitando a ver 'El Círculo', ya disponible en Netflix.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Mi Morelia",
+    "headline": "El círculo, serie mexicana basada en novela de Jorge Zepeda Patterson, llega a Netflix",
+    "url": "https://mimorelia.com/entretenimiento/el-circulo-serie-mexicana-basada-novela-jorge-zepeda-patterson-llega-netflix-n5594089",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Michoacán outlet previews the Netflix adaptation of Zepeda Patterson's novel, noting the author's journalism background (ex-director of El Universal, founder of Siglo 21) and that all eight episodes dropped at once.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "El Sol de México",
+    "headline": "“El círculo” narra la historia de cuatro amigos cuya relación de tambalea por un video filtrado",
+    "url": "https://oem.com.mx/elsoldemexico/gossip/el-circulo-narra-la-historia-de-cuatro-amigos-cuya-relacion-de-tambalea-por-un-video-filtrado-32467660",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Organización Editorial Mexicana outlet covers the series premise: four childhood friends whose bond is tested after a leaked video ties a murdered actress's case to a powerful government figure.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "La Parabólica",
+    "headline": "'El círculo': el nuevo thriller mexicano de Netflix",
+    "url": "https://laparabolica.tv/el-circulo-el-nuevo-thriller-mexicano-de-netflix",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Feature",
+    "excerpt": "Madrid-based outlet frames the series as a mystery/espionage/betrayal thriller where \"nadie parece estar libre de sospecha,\" previewing the Netflix premiere for Spanish readers.",
+    "storyGroup": null
   }
 ]
