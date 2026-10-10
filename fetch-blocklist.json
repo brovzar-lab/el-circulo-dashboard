@@ -1467,10 +1467,10 @@
     {
       "url": "https://macobserver.com/entertainment/inside-the-circle-book-differences-how-netflix-changes-jorge-zepeda-pattersons-los-corruptores",
       "firstSeen": "2026-10-09T18:30:00Z",
-      "failCount": 2,
+      "failCount": 3,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-10T06:14:07Z",
-      "cooldownUntil": null,
+      "lastAttempt": "2026-10-10T22:12:04Z",
+      "cooldownUntil": "2026-11-09T22:12:04Z",
       "history": [
         {
           "attempt": "2026-10-09T18:30:00Z",
@@ -1485,6 +1485,13 @@
           "status": 0,
           "issue": "LEMA-12320",
           "note": "Retry after prior failure: WebFetch again returned HTTP 410 Gone (curl confirms 403 bot-block on direct check, but WebFetch's render consistently reports the article as removed). failCount=2, still below the 3-failure cooldown threshold."
+        },
+        {
+          "attempt": "2026-10-10T22:12:04Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-12349",
+          "note": "3rd consecutive full-chain failure: WebFetch returned HTTP 410 Gone; Firecrawl scrape confirms page body is the outlet's own 'This article has been removed and is no longer available' notice (statusCode 410). Page is genuinely retracted, not a classification call. failCount=3, cooldownUntil set to 30 days out per ledger mechanics."
         }
       ]
     },
@@ -2378,5 +2385,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-10-10T18:00:00Z"
+  "lastUpdated": "2026-10-10T22:12:04Z"
 }
