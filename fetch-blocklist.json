@@ -2037,9 +2037,9 @@
     {
       "url": "https://facebook.com/thebestnetflix/posts/1889134959007229",
       "firstSeen": "2026-10-10T10:00:00Z",
-      "failCount": 1,
-      "lastStatus": 0,
-      "lastAttempt": "2026-10-10T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T14:00:00Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -2048,8 +2048,19 @@
           "status": 0,
           "issue": "LEMA-12338",
           "note": "WebFetch returned only a truncated/unusable snippet (\"Best of Netflix - Netflix's Inside the Circle has a...\"), no full body, no date. Firecrawl does not support facebook.com. failCount=1, no cooldown yet."
+        },
+        {
+          "attempt": "2026-10-10T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12343",
+          "note": "Fetch succeeded (full caption retrieved); reclassified from fetch-failure tracking to editorial_undateable -- no absolute publish date available."
         }
-      ]
+      ],
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Retried per the expired-cooldown-retry disposition: WebFetch this run retrieved the full caption (verified Facebook page 'Best of Netflix' -- on-topic real commentary on the show, not a hype-only repost) but the only date signal available is a relative UI string ('21 hours ago'), not an article:published_time/JSON-LD/dateline. Not treated as a real sourced date per Rule A. Same pattern as the already-ledgered candresperedo and 61556588083354 Facebook entries.",
+      "reviewable": true
     },
     {
       "url": "https://imdb.com/title/tt36743307",
@@ -2134,7 +2145,154 @@
           "note": "Confirmed off-topic: no mention of El Círculo/Inside the Circle anywhere in the article."
         }
       ]
+    },
+    {
+      "url": "https://revistatarantula.com/resena-el-circulo-de-los-ultimos-libreros-sylvie-baron",
+      "firstSeen": "2026-10-10T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Page is a review of the unrelated novel ‘El círculo de los últimos libreros’ by Sylvie Baron (Revista Tarántula's Letras y Libros section), not the Netflix series. Surfaced only via broad ‘crítica’ query match on the generic word ‘círculo’.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12343",
+          "note": "Confirmed off-topic: book review, not the TV series."
+        }
+      ]
+    },
+    {
+      "url": "https://milenio.com/opinion/alvaro-cueva/el-pozo-de-los-deseos-reprimidos/el-circulo-y-carrie",
+      "firstSeen": "2026-10-10T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Canonical (non-AMP) address for Álvaro Cueva's ‘El círculo y Carrie’ Milenio opinion column, already tracked in data.json under its AMP address (amp.milenio.com/opinion/alvaro-cueva/el-pozo-de-los-deseos-reprimidos/el-circulo-y-carrie, Oct 9). normalize.js does not fold the amp.* subdomain form to this canonical host, so the two addresses resolve to different keys mechanically; same byline, same title, same column confirms it is the same document by direct read. Rule I second address, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12343",
+          "note": "Same column/byline as the already-tracked amp.milenio.com address; second address."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/im/title/80217807",
+      "firstSeen": "2026-10-10T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official Netflix title page (logline + per-episode synopses) -- real written content, so not Rule F per the ledger's Rule C scope clarification (official show pages are coverage, evaluated normally). No article:published_time/JSON-LD datePublished/dateline anywhere on the page (checked via WebFetch and raw HTML grep for date meta tags, none found) -- it's a persistent, continuously-updated catalog listing with no publish timestamp. Genuine coverage omitted solely for lack of a real date.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-10T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12343",
+          "note": "Real synopsis content confirmed (not Rule F) but no recoverable publish date; raw HTML has no date meta tags."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/groups/netflixmustmovies2025/posts/2207899256802697",
+      "firstSeen": "2026-10-10T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Post in the public Facebook group 'Must Watch Movies 2026' -- a generic user-facing recommendation group, not a publisher/outlet/editorial-brand account; one-line hype caption ('FOUR FRIENDS, A LEAKED VIDEO...') with no byline or original reporting. Rule B account-type gate, relevance fails regardless of dateability.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12343",
+          "note": "Fan/recommendation group post, no original editorial content."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/groups/netflixrecommendationsmovies2023/posts/1164221922805303",
+      "firstSeen": "2026-10-10T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Post by 'Viral Movies Recommendations' into the public Facebook group 'Netflix Recommendations Movies 2023' -- a generic recommendation/content-aggregator account, not a recognized editorial outlet; near-identical boilerplate hype caption to the netflixmustmovies2025 post (same template, no byline or original reporting). Rule B account-type gate.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12343",
+          "note": "Fan/recommendation group post, no original editorial content; template matches a sibling group post found same run."
+        }
+      ]
+    },
+    {
+      "url": "https://avid.wiki/Netflix_(streaming_service)",
+      "firstSeen": "2026-10-10T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Audiovisual Identity Database entry about Netflix's corporate logo/sting history (the 'TUDUM' sound, animated ident); no mention of El Círculo/Inside the Circle anywhere. Surfaced only via broad 'Netflix Tudum' query match.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12343",
+          "note": "Confirmed off-topic: generic Netflix branding history page."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/videos/ben-stone-argues-with-cal-to-stay-inside-or-manifest-s4e1",
+      "firstSeen": "2026-10-10T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-10T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Tudum video page for the unrelated Netflix series 'Manifest' (season 4, episode 1 clip); no mention of El Círculo/Inside the Circle. Surfaced only via broad 'Tudum ranking' query matching the phrase 'stay Inside'.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-10T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12343",
+          "note": "Confirmed off-topic: unrelated show (Manifest)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-10T10:00:00Z"
+  "lastUpdated": "2026-10-10T14:00:00Z"
 }
