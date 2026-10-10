@@ -1293,5 +1293,41 @@
     "type": "Feature",
     "excerpt": "Reportaje de David Rubí sobre el estreno: cuatro amigos de la infancia se reencuentran en la CDMX y terminan envueltos en una trama de poder, acción y misterio.",
     "storyGroup": null
+  },
+  {
+    "outlet": "De Chismes",
+    "headline": "Netflix estrena El Círculo, un thriller sobre el poder mexicano",
+    "url": "https://dechismes.com/nota/netflix-estrena-el-circulo-un-thriller-sobre-el-poder-mexicano-106149",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Entertainment",
+    "excerpt": "Netflix estrenó este thriller mexicano de ocho episodios sobre cuatro amigos arrastrados a un chantaje político tras un asesinato y un video filtrado que los expone a presiones institucionales con funcionarios de alto nivel.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Best Of Netflix",
+    "headline": "The Five Best Series to Watch on Netflix This Weekend",
+    "url": "https://best-of-netflix.com/the-five-best-series-to-watch-on-netflix-this-weekend-55",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Weekend roundup includes Inside the Circle: \"The Mexican thriller centres on four lifelong friends who face intense personal and professional unravelling after a video links murdered actor Pamela Dosantos' death to a powerful military general and defence secretary.\"",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Netflix-News.com",
+    "headline": "Inside the Circle : le thriller mexicain sur une amitié brisée arrive sur Netflix le 7 octobre",
+    "url": "https://netflix-news.com/articles/programmes/nouveautes/1628957-inside-the-circle-le-thriller-mexicain-sur-une-amitie-brisee-arrive-sur-netflix-le-7-octobre-07-10-2026",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "FR",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Launch-day announcement piece: a decades-long friendship shatters when a compromising video surfaces among four childhood friends, based on Jorge Zepeda Patterson's novel Los Corruptores, starring Zuria Vega, Osvaldo Benavides, Raúl Briones and Michel Brown, directed by Alejandro Lozano.",
+    "storyGroup": null
   }
 ]
