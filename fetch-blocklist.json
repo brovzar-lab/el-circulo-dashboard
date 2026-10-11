@@ -2675,7 +2675,170 @@
           "note": "Metadata/listing-only page, no written editorial content about the show beyond synopsis. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DeU8nBghyVD",
+      "firstSeen": "2026-10-11T18:15:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T18:15:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "deestrenomx (De Estreno MX) Instagram reel, editorial-brand entertainment account (Osvaldo Benavides cast interview clip, cross-promoting LOS40 MX YouTube). WebFetch resolved only a relative timestamp ('21h ago'); Instagram exposes no absolute publish date in page metadata and Rule A forbids converting a relative stamp into an inferred date. Genuine coverage omitted solely for lack of a real date.",
+      "history": [
+        {
+          "attempt": "2026-10-11T18:15:14Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12395",
+          "note": "deestrenomx (De Estreno MX) Instagram reel, editorial-brand entertainment account (Osvaldo Benavides cast interview clip, cross-promoting LOS40 MX YouTube). WebFetch resolved only a relative timestamp ('21h ago'); Instagram exposes no absolute publish date in page metadata and Rule A forbids converting a relative stamp into an inferred date. Genuine coverage omitted solely for lack of a real date."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://www.facebook.com/magazinespain/videos/estreno-en-netflixes-de-el-c%C3%ADrculo-la-nueva-serie-mexicana-basada-en-los-corrupt/1294847899392573",
+      "firstSeen": "2026-10-11T18:15:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T18:15:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Magazine Spain (magazinespain.com) Facebook video post, editorial-brand entertainment magazine account, full promo caption with trailer link extracted via Tavily extract. No visible posting date anywhere in the fetched content. Genuine coverage omitted solely for lack of a date.",
+      "history": [
+        {
+          "attempt": "2026-10-11T18:15:14Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12395",
+          "note": "Magazine Spain (magazinespain.com) Facebook video post, editorial-brand entertainment magazine account, full promo caption with trailer link extracted via Tavily extract. No visible posting date anywhere in the fetched content. Genuine coverage omitted solely for lack of a date."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://www.facebook.com/cinemaspod/videos/el-c%C3%ADrculo-netflix-quiere-hacer-thriller-pero-parece-telenovela-sin-color-el-c%C3%ADr/2404426332242087",
+      "firstSeen": "2026-10-11T18:15:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T18:15:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Cine Mas Pod Facebook video post, editorial-brand movie-review podcast account (critical review: \"parece telenovela sin color\"). Full caption extracted via Tavily extract; only a relative timestamp ('6d'/6 days ago) is recoverable, not an absolute date, and Rule A forbids converting a relative stamp into an inferred date. Genuine coverage omitted solely for lack of a real date.",
+      "history": [
+        {
+          "attempt": "2026-10-11T18:15:14Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12395",
+          "note": "Cine Mas Pod Facebook video post, editorial-brand movie-review podcast account (critical review: \"parece telenovela sin color\"). Full caption extracted via Tavily extract; only a relative timestamp ('6d'/6 days ago) is recoverable, not an absolute date, and Rule A forbids converting a relative stamp into an inferred date. Genuine coverage omitted solely for lack of a real date."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/united-states",
+      "firstSeen": "2026-10-11T18:15:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T18:15:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol Top 10 United States ranking tracker: live chart table, no written editorial content about El Círculo/Inside the Circle specifically (same Rule F family as the already-ledgered flixpatrol.com/top10/netflix world page and flixpatrol.com/title/inside-the-circle/streaming entry).",
+      "history": [
+        {
+          "attempt": "2026-10-11T18:15:14Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12395",
+          "note": "FlixPatrol Top 10 United States ranking tracker: live chart table, no written editorial content about El Círculo/Inside the Circle specifically (same Rule F family as the already-ledgered flixpatrol.com/top10/netflix world page and flixpatrol.com/title/inside-the-circle/streaming entry)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DeMvrZ2kpci",
+      "firstSeen": "2026-10-11T18:15:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T18:15:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Leisurebyte's own Instagram promo post teasing their review (storyGroup match to leisurebyte.com/inside-the-circle-review-netflix-2026-el-circulo, already in data.json, ts 20261007). Same outlet republishing a short teaser of a review already tracked under its primary address -- Rule I second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-11T18:15:14Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12395",
+          "note": "Leisurebyte's own Instagram promo post teasing their review (storyGroup match to leisurebyte.com/inside-the-circle-review-netflix-2026-el-circulo, already in data.json, ts 20261007). Same outlet republishing a short teaser of a review already tracked under its primary address -- Rule I second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Netflixwatch/comments/1x02vn8/inside_the_circle_2026_netflix_series_review_when",
+      "firstSeen": "2026-10-11T18:15:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T18:15:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Reddit r/Netflixwatch post summarizing/linking to the moviesr.net (\"Midgard Times\") review already in data.json (ts 20261007) under its primary URL moviesr.net/p-inside-the-circle-2026-netflix-series-review-when-friendship-becomes-a-deadly-mystery. Second address for a document already in the feed, not a distinct document -- Rule I.",
+      "history": [
+        {
+          "attempt": "2026-10-11T18:15:14Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12395",
+          "note": "Reddit r/Netflixwatch post summarizing/linking to the moviesr.net (\"Midgard Times\") review already in data.json (ts 20261007) under its primary URL moviesr.net/p-inside-the-circle-2026-netflix-series-review-when-friendship-becomes-a-deadly-mystery. Second address for a document already in the feed, not a distinct document -- Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Mexico_Videos/comments/1x0eww6/osvaldo_benavides_zuria_vega_y_michel_brown_en_el",
+      "firstSeen": "2026-10-11T18:15:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T18:15:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "r/Mexico_Videos post reposting a cast video clip; the subreddit is a general video-sharing community, not a recognized editorial/outlet account -- fan-repost under Rule B's social-candidate relevance gate, not media coverage.",
+      "history": [
+        {
+          "attempt": "2026-10-11T18:15:14Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12395",
+          "note": "r/Mexico_Videos post reposting a cast video clip; the subreddit is a general video-sharing community, not a recognized editorial/outlet account -- fan-repost under Rule B's social-candidate relevance gate, not media coverage."
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Mexico_Videos/comments/1x09yqa/los_timbiriche_vs_nueva_serie_se_estrena_el",
+      "firstSeen": "2026-10-11T18:15:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T18:15:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "r/Mexico_Videos post reposting a news-segment video clip comparing Timbiriche coverage to the show's premiere; the subreddit is a general video-sharing community, not a recognized editorial/outlet account -- fan-repost under Rule B's social-candidate relevance gate, not media coverage.",
+      "history": [
+        {
+          "attempt": "2026-10-11T18:15:14Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12395",
+          "note": "r/Mexico_Videos post reposting a news-segment video clip comparing Timbiriche coverage to the show's premiere; the subreddit is a general video-sharing community, not a recognized editorial/outlet account -- fan-repost under Rule B's social-candidate relevance gate, not media coverage."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-11T14:14:11Z"
+  "lastUpdated": "2026-10-11T18:15:14Z"
 }
