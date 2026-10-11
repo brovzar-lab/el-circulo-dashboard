@@ -1413,5 +1413,77 @@
     "type": "Social",
     "excerpt": "Reseña en video de la serie: sinopsis del thriller sobre el asesinato de una actriz y la amistad de cuatro amigos de la infancia puesta a prueba.",
     "storyGroup": "victorbarba-review-20261010"
+  },
+  {
+    "outlet": "Milenio",
+    "headline": "¿Quién es quién en 'El Círculo'? Conoce a los personajes de la serie de Netflix",
+    "url": "https://milenio.com/espectaculos/television/quien-es-quien-el-circulo-serie-netflix-personajes-actores",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Character guide to El Círculo profiling the four childhood friends (Tomás, Amelia, Mario, Jaime) whose lives unravel after actress Pamela Dosantos' murder, explaining each role and how political ties and hidden secrets drive the plot.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Film-Rezensionen.de",
+    "headline": "Im Kreis der Korruption (El Círculo / Inside the Circle)",
+    "url": "https://film-rezensionen.de/2026/10/im-kreis-der-korruption-el-circulo-inside-the-circle-netflix",
+    "date": "Oct 10, 2026",
+    "ts": 20261010,
+    "lang": "DE",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Mixed-to-negative German review: criticizes the series for prioritizing constant plot twists over substantive storytelling, concluding with a measured recommendation against watching despite competent production.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Indiatimes",
+    "headline": "Inside the Circle Season 1 ending explained: Who is revealed as Pamela Dosantos' killer and what happened to General Salazar in the finale?",
+    "url": "https://indiatimes.com/trending/inside-the-circle-season-1-ending-explained-who-is-revealed-as-pamela-dosantos-killer-and-what-happened-to-general-salazar-in-the-finale/articleshow/134784156.html",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Season 1 ending-explainer by Sinthya Banik covering the Pamela Dosantos murder reveal and General Salazar's fate in the finale.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "TechTudo",
+    "headline": "Dentro do Círculo: veja quem é o assassino e final explicado da série Netflix",
+    "url": "https://techtudo.com.br/guia/2026/10/dentro-do-circulo-veja-quem-e-o-assassino-e-final-explicado-da-serie-netflix-streaming.ghtml",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "PT",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Portuguese-language (Brazil) ending explainer by Rafael Monteiro revealing Jaime as the mastermind behind Pamela Dosantos' murder and detailing General Salazar's cartel ties.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "News9live",
+    "headline": "OTT releases this week: Spider-Man Brand New Day, Reporting Live, Carrie, Insidious and more",
+    "url": "https://news9live.com/entertainment/ott/ott-releases-this-week-new-movies-series-3014628",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Weekly OTT roundup gives Inside the Circle its own dedicated section (release date, platform, synopsis) alongside other new streaming titles.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Movified",
+    "headline": "Inside the Circle review: 8 taut episodes get tangled",
+    "url": "https://movified.co/inside-the-circle-netflix-review",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Credited adaptation (sourced from What's on Netflix) reframed for an Indian-audience readership: praises the action set pieces, criticizes the balance between friendship drama and murder-mystery plotting, recommends it as a measured-expectations weekend watch.",
+    "storyGroup": null
   }
 ]
