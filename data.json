@@ -1353,5 +1353,53 @@
     "type": "Feature",
     "excerpt": "Explainer on the novel \"Los Corruptores\" by Jorge Zepeda Patterson as source material: fictional but informed by two decades of the author's own political journalism; some characters are composites of real figures.",
     "storyGroup": null
+  },
+  {
+    "outlet": "TechnoSports",
+    "headline": "Inside the Circle Netflix Review: A Fast-Paced Mexican Political Thriller That Loses Its Way in a Web of Twists",
+    "url": "https://technosports.co.in/inside-the-circle-netflix-review-a-fast",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "2.5/5 review: praises the show's action sequences and binge-worthy premise (a murdered actress, a leaked video, a powerful Defense Secretary) but criticizes its inability to balance character development with mystery plotting.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Milenio",
+    "headline": "Final explicado de El Círculo, serie de Netflix",
+    "url": "https://milenio.com/espectaculos/television/el-circulo-final-explicado-serie-netflix",
+    "date": "Oct 10, 2026",
+    "ts": 20261010,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Ending-explained recap by Natalie González Arredondo: breaks down the finale's betrayal twist (Jaime's hidden role in Pamela Dosantos's death), General Salazar's death, and the fates of Jimena and Viridiana.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Reforma",
+    "headline": "Apuesta Billy Rovzar por thriller político con 'El Círculo'",
+    "url": "https://reforma.com/apuesta-billy-rovzar-por-thriller-politico-con-el-circulo/ar3287072",
+    "date": "Oct 2, 2026",
+    "ts": 20261002,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Pre-release producer interview (Madrid dateline) with Billy Rovzar on adapting 'Los Corruptores' into 'El Círculo': compares the source novel's momentum to John Grisham, previews the show's political-thriller tone ahead of its Oct 7 Netflix launch.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "El Informador",
+    "headline": "Netflix: De Los corruptores a El Círculo, el poder se reinventa",
+    "url": "https://informador.mx/entretenimiento/netflix-de-los-corruptores-a-el-circulo-el-poder-se-reinventa-20261006-0023.html",
+    "date": "Oct 6, 2026",
+    "ts": 20261006,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Interview with Saúl Lisazo and author Jorge Zepeda Patterson on adapting the 2014 novel 'Los Corruptores' for 2026 and why Zepeda Patterson felt fiction was needed to capture corruption's informal mechanisms journalism can't fully document.",
+    "storyGroup": null
   }
 ]
