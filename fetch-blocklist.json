@@ -2488,7 +2488,112 @@
           "note": "Pure chart/ratings database page, no written content. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://m.filmaffinity.com/es/moviereviews.php?id=805649",
+      "firstSeen": "2026-10-11T10:14:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T10:14:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Filmaffinity 'Críticas profesionales' index page: a table of pull-quote excerpts from Decider (already in data.json, Oct 7), Heaven of Horror (already in data.json, Oct 7), Diario Milenio/Álvaro Cueva (already in data.json), and EscribiendoCine (already in data.json, Oct 8), each linking back to the original. No original editorial content of its own -- an archive index surfacing already-tracked documents, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-11T10:14:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12386",
+          "note": "Pure review-excerpt index of already-tracked outlets, no original content. Rule I, editorial_redundant_syndication."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/NetflixLatino/posts/ni-un-d%C3%ADa-les-duraron-los-secretos-a-zuria-ra%C3%BAl-y-michel-el-c%C3%ADrculo-se-estren%C3%B3-h/1591180229715585",
+      "firstSeen": "2026-10-11T10:14:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T10:14:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official NetflixLatino Facebook video post ('El Círculo se estrenó hoy') -- on-topic first-party promo content, media coverage under Rule B/C scope clarification. Only date signal available is a relative UI badge ('3d' at view time), not an article:published_time/JSON-LD/dateline. Not a real sourced date per Rule A. Same pattern as the already-ledgered candresperedo and AuraSeries Facebook entries.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-11T10:14:37Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-12386",
+          "note": "Official Netflix promo post, relative-only timestamp, no recoverable real date. Rule A, editorial_undateable, reviewable."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61556588083354/posts/ra%C3%BAl-briones-zuria-vega-osvaldo-benavides-y-michel-brown-nos-invitan-a-ver-el-c%C3%AD/122339596538219602",
+      "firstSeen": "2026-10-11T10:14:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T10:14:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "AuraSeries Facebook page ('El medio para fans del cine y las series... Un action media de FCO Group') -- an entertainment-media brand account, not a vendor/personal/fan-repost account, evaluated normally under Rule B. Post invites viewers to watch El Círculo with cast photo and hashtags. No article:published_time/JSON-LD/dateline or even a relative UI badge recoverable via WebFetch or Tavily Extract. No real sourced date. Rule A.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-11T10:14:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12386",
+          "note": "Entertainment-brand FB post, no recoverable date signal at all. Rule A, editorial_undateable, reviewable."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/fictionhorizon/posts/inside-the-circle-lands-on-netflix-today-as-a-season-of-eight-episodes-each-runn/1884157300057005",
+      "firstSeen": "2026-10-11T10:14:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T10:14:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Fiction Horizon's own Facebook post linking to their already-tracked review (fictionhorizon.com/inside-the-circle-season-1-review-what-happens-when-one-leaked-video-tests-a-lifetime-of-loyalty, in data.json since Oct 7) with a short synopsis caption carrying no original commentary of its own. Bare social link-post for an already-tracked document, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-11T10:14:37Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-12386",
+          "note": "Social promo link-post for the outlet's own already-tracked review article, no new content. Rule I, editorial_redundant_syndication."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DePKF2PgLLu",
+      "firstSeen": "2026-10-11T10:14:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T10:14:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "@latest_movies_n_series_updated is a fan/aggregator repost account (reposts plot synopses for many unrelated titles), not a publisher/outlet/editorial-brand account. Rule B account-type gate, relevance fails regardless of dateability.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-11T10:14:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12386",
+          "note": "Fan-repost aggregator account, not media coverage. Rule B, editorial_personal_repost."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-11T06:12:40Z"
+  "lastUpdated": "2026-10-11T10:14:37Z"
 }
