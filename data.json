@@ -1329,5 +1329,29 @@
     "type": "Feature",
     "excerpt": "Launch-day announcement piece: a decades-long friendship shatters when a compromising video surfaces among four childhood friends, based on Jorge Zepeda Patterson's novel Los Corruptores, starring Zuria Vega, Osvaldo Benavides, Raúl Briones and Michel Brown, directed by Alejandro Lozano.",
     "storyGroup": null
+  },
+  {
+    "outlet": "TheWrap",
+    "headline": "Netflix Unveils 4 New Series as Part of $1 Billion Investment in Mexico",
+    "url": "https://thewrap.com/netflix-four-new-series-1-billion-investment-mexico",
+    "date": "Apr 29, 2025",
+    "ts": 20250429,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "US trade-press announcement of Netflix's $1B Mexico slate; lists \"Corruptors\" (\"Los corruptores\"), based on the Jorge Zepeda Patterson novel, with the confirmed cast (Michel Brown, Zuria Vega, Osvaldo Benavides, Raúl Briones) -- the pre-retitling working title for El Círculo/Inside the Circle.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "The Cinema Holic",
+    "headline": "Is Inside the Circle Based on a True Story?",
+    "url": "https://thecinemaholic.com/inside-the-circle-true-story",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Explainer on the novel \"Los Corruptores\" by Jorge Zepeda Patterson as source material: fictional but informed by two decades of the author's own political journalism; some characters are composites of real figures.",
+    "storyGroup": null
   }
 ]
