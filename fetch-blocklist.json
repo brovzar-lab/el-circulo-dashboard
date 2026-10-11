@@ -2404,7 +2404,91 @@
           "note": "Unresolved WordPress ?p= id-permalink confirmed via redirect to already-tracked ComicBasics review."
         }
       ]
+    },
+    {
+      "url": "https://resumendiario.mx/n/295721-zuria-vega-destaca-en-entrevista-que-el-circulo-de-netflix-explora-dilemas-morales-y-la-lealtad-entre-amigos-en-mexico",
+      "firstSeen": "2026-10-11T06:12:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T06:12:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Self-declared automated metadata-extraction mirror of the already-tracked Excélsior interview (data.json 'No es lo mismo que te ayuden a robar un banco...' row, Oct 7). Page's own footer states: 'Fuente original: excelsior.com.mx. Generación: extracción automática de metadatos (título/imagen/fecha) y resumen breve.' Second address, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-11T06:12:40Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12368",
+          "note": "Self-declared auto-generated mirror of an already-tracked Excélsior article; Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/title/inside-the-circle/streaming",
+      "firstSeen": "2026-10-11T06:12:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T06:12:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol streaming-availability sub-page: chart/platform availability table only, no written editorial content. Same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/ bare show page.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-11T06:12:40Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12368",
+          "note": "FlixPatrol /streaming/ sub-page, pure availability table, same family as already-ledgered sibling. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://latestnetflix.com/series/290233",
+      "firstSeen": "2026-10-11T06:12:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T06:12:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "TMDB-driven catalog page with an embedded 'Reviews' section that quotes other named outlets (e.g. 'As Moviesr.net noted upon its debut...') rather than original per-outlet criticism; no article:published_time, JSON-LD datePublished, or visible dateline found for the review text itself -- only the show's own Oct 7, 2026 air date, which is not a publish date for this page's content. No real sourced publish date recoverable. Rule A.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-11T06:12:40Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12368",
+          "note": "Templated catalog/review-aggregation page with no recoverable real publish date. Rule A, editorial_undateable, reviewable."
+        }
+      ]
+    },
+    {
+      "url": "https://streamrank.tv/title/61574-inside-the-circle",
+      "firstSeen": "2026-10-11T06:12:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T06:12:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Pure database/listing page: chart rankings across 40+ countries, IMDb rating, platform availability, bare one-line synopsis, cast list. No written analysis or original commentary about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-11T06:12:40Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12368",
+          "note": "Pure chart/ratings database page, no written content. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-11T02:15:26.022Z"
+  "lastUpdated": "2026-10-11T06:12:40Z"
 }
