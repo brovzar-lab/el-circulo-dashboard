@@ -2593,7 +2593,89 @@
           "note": "Fan-repost aggregator account, not media coverage. Rule B, editorial_personal_repost."
         }
       ]
+    },
+    {
+      "url": "https://facebook.com/NetflixLatino/videos/28525151417156416",
+      "firstSeen": "2026-10-11T14:14:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T14:14:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Official NetflixLatino video post ('Menos mal que su fuente no era TikTok, la serie El Círculo ya está disponible') -- in-scope first-party promo under Rule B, but no real publish date recoverable: WebFetch and Firecrawl both returned no timestamp/metadata for this facebook.com video URL.",
+      "history": [
+        {
+          "attempt": "2026-10-11T14:14:11Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12392",
+          "note": "Official NetflixLatino account, on-topic, but undateable via either fetch method."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/ZuriaVegaOficial/posts/1674784184008693",
+      "firstSeen": "2026-10-11T14:14:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T14:14:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "reviewable": false,
+      "skipNote": "Cast member Zuria Vega's personal official Facebook account ('¿Maratón o qué? 🍿 EL CÍRCULO ⭕️'): individual crew-personal celebratory/engagement post, not a publisher/outlet/editorial-brand account. Social-candidate relevance gate (Rule B) excludes crew-personal accounts regardless of dateability.",
+      "history": [
+        {
+          "attempt": "2026-10-11T14:14:11Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12392",
+          "note": "Confirmed cast member's personal account posting about own show. Rule B crew-personal exclusion."
+        }
+      ]
+    },
+    {
+      "url": "https://tvshowsfinder.com/netflix-news/a-tense-mexican-political-thriller-that-gets-tangled-in-its-own-web",
+      "firstSeen": "2026-10-11T14:14:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T14:14:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Verbatim word-for-word reprint (identical headline and full body text, confirmed by direct fetch comparison) of the What's on Netflix review already tracked in data.json (https://www.whats-on-netflix.com/what-to-watch/inside-the-circle-netflix-review/). No byline, no original reporting. Rule I: a syndication feed item is a second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-11T14:14:11Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12392",
+          "note": "Word-for-word text match against the already-tracked What's on Netflix review; second address under Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://noticiasenvivo.cl/7th-oct-inside-the-circle-2026-8-episodes-tv-ma-6-10",
+      "firstSeen": "2026-10-11T14:14:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T14:14:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Generic database/listing entry (title metadata, episode count, TV-MA rating, numeric score, one-paragraph synopsis only); no editorial analysis, critical commentary, or original journalism about the show. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-11T14:14:11Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12392",
+          "note": "Metadata/listing-only page, no written editorial content about the show beyond synopsis. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-11T10:14:37Z"
+  "lastUpdated": "2026-10-11T14:14:11Z"
 }
