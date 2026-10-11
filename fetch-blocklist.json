@@ -2838,7 +2838,27 @@
           "note": "r/Mexico_Videos post reposting a news-segment video clip comparing Timbiriche coverage to the show's premiere; the subreddit is a general video-sharing community, not a recognized editorial/outlet account -- fan-repost under Rule B's social-candidate relevance gate, not media coverage."
         }
       ]
+    },
+    {
+      "url": "https://x.com/NotaCirculoRojo/status/2107136768055091342",
+      "firstSeen": "2026-10-11T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Post from @NotaCirculoRojo (Revista Círculo Rojo, a Mexican Tamaulipas regional news outlet) reporting on a US Coast Guard shooting incident in Tamaulipas -- unrelated to the Netflix series El Círculo/Inside the Circle. Surfaced only via the generic 'círculo' name collision with the outlet brand.",
+      "history": [
+        {
+          "attempt": "2026-10-11T22:00:00Z",
+          "method": "Firecrawl (WebFetch 402)",
+          "status": 200,
+          "issue": "LEMA-12402",
+          "note": "Off-topic: unrelated outlet brand name collision, not show coverage."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-11T18:15:14Z"
+  "lastUpdated": "2026-10-11T22:00:00Z"
 }
