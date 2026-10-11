@@ -2383,7 +2383,28 @@
           "note": "Confirmed off-topic by URL slug: 2020 reality show, not our 2026 series."
         }
       ]
+    },
+    {
+      "url": "https://www.comicbasics.com/?p=195147",
+      "firstSeen": "2026-10-11T02:15:26.022Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-11T02:15:26.022Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; redirects to https://www.comicbasics.com/inside-the-circle-season-1-review-when-one-leaked-video-turns-friendship-into-the-riskiest-place-to-stand/, already tracked in data.json (ComicBasics 8/10 review, Oct 8 2026). Second address, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-11T02:15:26.022Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12365",
+          "note": "Unresolved WordPress ?p= id-permalink confirmed via redirect to already-tracked ComicBasics review."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-10T22:12:04Z"
+  "lastUpdated": "2026-10-11T02:15:26.022Z"
 }
