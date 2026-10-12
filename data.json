@@ -1485,5 +1485,29 @@
     "type": "Review",
     "excerpt": "Credited adaptation (sourced from What's on Netflix) reframed for an Indian-audience readership: praises the action set pieces, criticizes the balance between friendship drama and murder-mystery plotting, recommends it as a measured-expectations weekend watch.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Cuarto Poder",
+    "headline": "Los corruptores llega al streaming",
+    "url": "https://www.cuartopoder.mx/gente/los-corruptores-llega-al-streaming/593227",
+    "date": "Oct 3, 2026",
+    "ts": 20261003,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Pre-premiere feature on Netflix's adaptation of Jorge Zepeda Patterson's novel Los corruptores, retitled El círculo, premiering Oct 7 with eight episodes; director Alejandro Lozano on shifting the focus from politics to friendship dynamics; cast: Zuria Vega, Osvaldo Benavides, Michel Brown, Raúl Briones.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "El Heraldo de México",
+    "headline": "La serie de Netflix que narra cómo 4 amigos se vuelven rehenes de sus secretos por un video comprometedor filtrado",
+    "url": "https://heraldodemexico.com.mx/espectaculos/2026/10/11/la-serie-de-netflix-que-narra-como-amigos-se-vuelven-rehenes-de-sus-secretos-por-un-video-comprometedor-filtrado-906061.html",
+    "date": "Oct 11, 2026",
+    "ts": 20261011,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Full synopsis/cast feature on El círculo: four childhood friends (\"Los Azules\") drawn into blackmail after a leaked video tied to an actress's murder; profiles Michel Brown (Tomás, journalist), Zuria Vega (Amelia), Raúl Briones (Mario), Osvaldo Benavides (Jaime), and Saúl Lisazo as Carlos.",
+    "storyGroup": null
   }
 ]

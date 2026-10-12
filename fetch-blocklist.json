@@ -2858,7 +2858,87 @@
           "note": "Off-topic: unrelated outlet brand name collision, not show coverage."
         }
       ]
+    },
+    {
+      "url": "https://imdb.com/title/tt36743307/externalreviews",
+      "firstSeen": "2026-10-12T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "IMDb's 'External reviews' page for El Círculo/Inside the Circle: a pure link directory to other outlets' review pages (title, outlet, byline, language tag per row), no written editorial content of its own. Strip the list and nothing remains -- Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-12T02:00:00Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12416",
+          "note": "Rule F listing/database page, no original content."
+        }
+      ]
+    },
+    {
+      "url": "https://televisando.com/critica-el-circulo-sinopsis-opiniones-trailer",
+      "firstSeen": "2026-10-12T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Page is a review of a 2015 Netflix film also titled 'El Círculo' (English title 'The Circle'/'Circulo', about 50 people trapped and dying every two minutes) -- an unrelated title that shares the generic Spanish name with our 2026 Mexican thriller. Surfaced only by the broad 'El Círculo' critica query, per Rule G.",
+      "history": [
+        {
+          "attempt": "2026-10-12T02:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12416",
+          "note": "Off-topic: different show with the same generic title (2015 film, not the 2026 Netflix series)."
+        }
+      ]
+    },
+    {
+      "url": "https://w2tch.com/shows/inside-the-circle",
+      "firstSeen": "2026-10-12T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Bare streaming-availability aggregator (JustWatch/Reelgood-style): one synopsis sentence, otherwise platform availability, ratings pulled from TMDB/IMDb/RT/Metacritic, episode/cast data tables. No original written analysis of the show -- Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-12T02:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12416",
+          "note": "Rule F listing/database page, no original content."
+        }
+      ]
+    },
+    {
+      "url": "https://whats-on-netflix.com/news/top-10-reports/netflix-top-10-report-sofia-carson-scores-another-hit-with-the-life-list-harlan-coben-streak-continues",
+      "firstSeen": "2026-10-12T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "A Netflix Top 10 weekly report (week ending Mar 30, 2025) covering Adolescence, The Electric State, The Life List, etc. -- no mention of El Círculo/Inside the Circle anywhere on the page. Surfaced only by the broad 'Netflix Top 10 Tudum ranking' query, per Rule G.",
+      "history": [
+        {
+          "attempt": "2026-10-12T02:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12416",
+          "note": "Off-topic: unrelated weekly Top 10 report, show not mentioned."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-11T22:00:00Z"
+  "lastUpdated": "2026-10-12T02:00:00Z"
 }
