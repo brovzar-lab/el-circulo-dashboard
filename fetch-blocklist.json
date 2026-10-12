@@ -2938,7 +2938,25 @@
           "note": "Off-topic: unrelated weekly Top 10 report, show not mentioned."
         }
       ]
+    },
+    {
+      "url": "http://thefutoncritic.com/showatch/inside-the-circle/dvd",
+      "key": "thefutoncritic.com/showatch/inside-the-circle/dvd",
+      "disposition": "permanentSkip",
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TheFutonCritic 'Shows A-Z' DVD/listings page: broadcast-history, status, time-slot, cast/crew table, studio info, and a one-line Netflix synopsis quote only -- own meta description literally says 'news, listings, dvds, episode guides.' Strips to a database card, no original written content. Rule F.",
+      "reviewable": false,
+      "firstSeen": "2026-10-12T06:00:00Z"
+    },
+    {
+      "url": "https://imdb.com/title/tt48396412",
+      "key": "imdb.com/title/tt48396412",
+      "disposition": "permanentSkip",
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "IMDb title page for 'Inside the Circle' Episode #1.5 (TV Episode 2026). Same imdb.com/title/* shape already established as Rule F by family regardless of locale/depth/episode-vs-series-level URL (see the imdb.com/es-es/title/tt36743307 entry in this ledger) -- cast/episode/rating metadata only, no written editorial content.",
+      "reviewable": false,
+      "firstSeen": "2026-10-12T06:00:00Z"
     }
   ],
-  "lastUpdated": "2026-10-12T02:00:00Z"
+  "lastUpdated": "2026-10-12T06:00:00Z"
 }
