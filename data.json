@@ -1569,5 +1569,29 @@
     "type": "Entertainment",
     "excerpt": "Premiere-day announcement: Zuria Vega stars in El Círculo, the new Mexican suspense series on Netflix, adapted from Jorge Zepeda Patterson's novel Los corruptores, marked by secrets, threats, and media manipulation.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Netflix-News.com",
+    "headline": "El Círculo sur Netflix : quel roman a inspiré la série et quelles sont les différences avec le livre ?",
+    "url": "https://netflix-news.com/articles/programmes/series/1631253-el-circulo-sur-netflix-quel-roman-a-inspire-la-serie-et-quelles-sont-les-differences-avec-le-livre-12-10-2026",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "lang": "FR",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Explains how the series adapts Jorge Zepeda Patterson's 2013 novel Los Corruptores (the friend group Los Azules caught in a murder/blackmail scandal), noting the series updates the setting to a contemporary Mexico with a female president and swaps the novel's journalist trigger for a viral video filmed by Tomás.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Télé-Loisirs (programme-tv.net)",
+    "headline": "El circulo (Netflix) : C'est quoi cette nouvelle série entre meurtre et secrets ?",
+    "url": "https://www.programme-tv.net/news/series-tv/409229-el-circulo-netflix-cest-quoi-cette-nouvelle-serie-entre-meurtre-et-secrets",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "FR",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "French launch-day writeup by Aurélie Hagopian introducing the new Netflix series to French-speaking audiences, covering premise, cast and genre (mystery/crime thriller about friendship and secrets).",
+    "storyGroup": null
   }
 ]
