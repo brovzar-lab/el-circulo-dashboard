@@ -3059,7 +3059,27 @@
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Netflix Tudum 2025 live-event recap page (prior-year event). Fetched and confirmed no mention of \"El Círculo\", \"Inside the Circle\", or any cast member anywhere in the body. Surfaced only via the broad Top10/Tudum-ranking query. Rule G.",
       "reviewable": false
+    },
+    {
+      "url": "https://technosports.co.in/inside-the-circle-netflix-review-a-fast?amp=1",
+      "firstSeen": "2026-10-12T22:14:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T22:14:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "AMP query-param variant (?amp=1) of the already-tracked TechnoSports review at https://technosports.co.in/inside-the-circle-netflix-review-a-fast (no query string), same CMS post. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-12T22:14:43Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12522",
+          "note": "AMP query-param variant of already-tracked TechnoSports review; second address, not a distinct document."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-12T18:10:33Z"
+  "lastUpdated": "2026-10-12T22:14:43Z"
 }
