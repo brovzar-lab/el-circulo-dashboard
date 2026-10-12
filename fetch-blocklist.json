@@ -2956,7 +2956,67 @@
       "skipNote": "IMDb title page for 'Inside the Circle' Episode #1.5 (TV Episode 2026). Same imdb.com/title/* shape already established as Rule F by family regardless of locale/depth/episode-vs-series-level URL (see the imdb.com/es-es/title/tt36743307 entry in this ledger) -- cast/episode/rating metadata only, no written editorial content.",
       "reviewable": false,
       "firstSeen": "2026-10-12T06:00:00Z"
+    },
+    {
+      "url": "https://streamrank.io/title/inside-the-circle-2026",
+      "firstSeen": "2026-10-12T10:16:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T10:16:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "StreamRank chart/database page for the title: ranking tables, platform availability, IMDb/TMDB ratings, cast list, and a single boilerplate plot synopsis sentence (\"Four lifelong friends are caught in a web of blackmail...\"). No original written analysis or commentary about the show. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-12T10:16:11Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12504",
+          "note": "StreamRank chart/database page for the title: ranking tables, platform availability, IMDb/TMDB ratings, cast list, and a single boilerplate plot synopsis sentence (\"Four lifelong friends are caught in a web of blackmail...\"). No original written analysis or commentary about the show. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/title/inside-the-circle/top10/",
+      "firstSeen": "2026-10-12T10:16:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T10:16:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol per-title TOP10 chart page: ranking table across countries plus the same single boilerplate synopsis sentence, no written editorial content. Same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/streaming/ sub-page.",
+      "history": [
+        {
+          "attempt": "2026-10-12T10:16:11Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12504",
+          "note": "FlixPatrol per-title TOP10 chart page: ranking table across countries plus the same single boilerplate synopsis sentence, no written editorial content. Same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/streaming/ sub-page."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/italy/",
+      "firstSeen": "2026-10-12T10:16:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T10:16:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Generic daily Netflix Italy TOP10 chart page covering many unrelated titles; El Círculo/Inside the Circle is one row in a multi-title ranking grid with no written content about it specifically -- same shape as the EPG/programming-grid example in the Rule F definition. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-12T10:16:11Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12504",
+          "note": "Generic daily Netflix Italy TOP10 chart page covering many unrelated titles; El Círculo/Inside the Circle is one row in a multi-title ranking grid with no written content about it specifically -- same shape as the EPG/programming-grid example in the Rule F definition. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-12T06:00:00Z"
+  "lastUpdated": "2026-10-12T10:16:11Z"
 }
