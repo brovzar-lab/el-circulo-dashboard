@@ -1545,5 +1545,29 @@
     "type": "Feature",
     "excerpt": "Source-novel comparison piece: details how Netflix's El Círculo adapted Jorge Zepeda Patterson's 2013 novel Los Corruptores to present-day Mexican politics, including the shift to a female president figure and other plot changes.",
     "storyGroup": null
+  },
+  {
+    "outlet": "El Mañana",
+    "headline": "El círculo: estreno en Netflix de la adaptación de Zepeda",
+    "url": "https://elmanana.com/escena/famosos/el-circulo-estreno-en-netflix-de-la-adaptacion-de-zepeda/6192994",
+    "date": "Oct 4, 2026",
+    "ts": 20261004,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Contrasts the Netflix series''s approach with Jorge Zepeda Patterson's source novel \"Los corruptores\": the show reframes the story around the cast of Zuria Vega and Osvaldo Benavides and aims to reflect contemporary Mexico without centering on politics the way the book does.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Red 93.3",
+    "headline": "Zuria Vega presenta El círculo, nueva serie mexicana de suspenso en Netflix",
+    "url": "https://red933.mx/zuria-vega-presenta-el-circulo-nueva-serie-mexicana-de-suspenso-en-netflix",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Premiere-day announcement: Zuria Vega stars in El Círculo, the new Mexican suspense series on Netflix, adapted from Jorge Zepeda Patterson's novel Los corruptores, marked by secrets, threats, and media manipulation.",
+    "storyGroup": null
   }
 ]

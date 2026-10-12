@@ -3037,7 +3037,29 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/world/2026-10-12",
+      "firstSeen": "2026-10-12T18:10:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T18:10:33Z",
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Date-stamped daily FlixPatrol world Top 10 chart page, same family as the already-ledgered flixpatrol.com/title/inside-the-circle and /top10/netflix/italy pages: per-title ranking table across many unrelated shows, no written editorial content about El Círculo specifically. Rule F.",
+      "reviewable": false
+    },
+    {
+      "url": "https://netflix.com/tudum/features/tudum-2025-the-live-event",
+      "firstSeen": "2026-10-12T18:10:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T18:10:33Z",
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix Tudum 2025 live-event recap page (prior-year event). Fetched and confirmed no mention of \"El Círculo\", \"Inside the Circle\", or any cast member anywhere in the body. Surfaced only via the broad Top10/Tudum-ranking query. Rule G.",
+      "reviewable": false
     }
   ],
-  "lastUpdated": "2026-10-12T14:12:31Z"
+  "lastUpdated": "2026-10-12T18:10:33Z"
 }
