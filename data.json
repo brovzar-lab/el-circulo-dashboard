@@ -1521,5 +1521,29 @@
     "type": "Feature",
     "excerpt": "Swedish outlet Metro Mode's English-language feature (Swedish title \"Den slutna cirkeln\") on El Círculo/Inside the Circle: Mexican Netflix thriller where actress Pamela Dosantos's murder and a leaked video draw journalist Tomás and three childhood friends into a web of blackmail and corruption; covers plot, full cast, and the Los Corruptores source novel.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Best Of Netflix",
+    "headline": "'Inside the Circle' ending explained: Who killed Pamela?",
+    "url": "https://best-of-netflix.com/inside-the-circle-ending-explained-who-killed-pamela",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Ending-explainer: the investigation into actor Pamela Dosantos's murder reveals Jaime, a member of the four-friend circle, as the killer, driven by both personal and professional motives.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Radio Fórmula",
+    "headline": "De Los corruptores a El Círculo: así cambió el libro de Jorge Zepeda Patterson al convertirse en serie de Netflix",
+    "url": "https://radioformula.com.mx/espectaculos/de-los-corruptores-a-el-circulo-asi-cambio-el-libro-de-jorge-zepeda-patterson-al-convertirse-en-serie-de-netflix-20261011-0056.html",
+    "date": "Oct 11, 2026",
+    "ts": 20261011,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Source-novel comparison piece: details how Netflix's El Círculo adapted Jorge Zepeda Patterson's 2013 novel Los Corruptores to present-day Mexican politics, including the shift to a female president figure and other plot changes.",
+    "storyGroup": null
   }
 ]
