@@ -3079,7 +3079,27 @@
           "note": "AMP query-param variant of already-tracked TechnoSports review; second address, not a distinct document."
         }
       ]
+    },
+    {
+      "url": "https://netflix.com/tudum/articles/heartstopper-movie-alice-oseman-plot-news",
+      "firstSeen": "2026-10-13T02:10:36Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T02:10:36Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Unrelated Netflix Tudum article about 'Heartstopper Forever', not El Círculo / Inside the Circle. Surfaced only via a broad Tudum/Top-10-ranking query (LEMA-12534 rotation query 2); same Rule-G shape as prior off-topic false positives from the generic title collision and Netflix-wide query surface.",
+      "history": [
+        {
+          "attempt": "2026-10-13T02:10:36Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12534",
+          "note": "Unrelated Netflix Tudum article about 'Heartstopper Forever', not El Círculo / Inside the Circle. Surfaced only via a broad Tudum/Top-10-ranking query."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-12T22:14:43Z"
+  "lastUpdated": "2026-10-13T02:10:36Z"
 }
