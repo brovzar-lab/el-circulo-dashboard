@@ -3410,7 +3410,67 @@
           "note": "Confirmed via WebFetch: official HR en Español announcement post, Sep 9 2026, same story as already-tracked HR article."
         }
       ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/world/2026-10-13",
+      "firstSeen": "2026-10-13T18:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T18:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Date-stamped daily FlixPatrol world Top 10 chart page, same family as the already-ledgered flixpatrol.com/top10/netflix/world/2026-10-12 and other dated/locale snapshot pages: per-title ranking table across many unrelated shows, no written editorial content about El Círculo specifically. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-13T18:30:00Z",
+          "method": "WebFetch(family-match)",
+          "status": 200,
+          "issue": "LEMA-12580",
+          "note": "Date-stamped daily FlixPatrol world Top 10 chart page, same family as the already-ledgered flixpatrol.com/top10/netflix/world/2026-10-12 and other dated/locale snapshot pages: per-title ranking table across many unrelated shows, no written editorial content about El Círculo specifically. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/italy/2026-10-13",
+      "firstSeen": "2026-10-13T18:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T18:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol per-country Top 10 chart page (Italy), date-stamped 2026-10-13: same ranking-table template already ledgered under flixpatrol.com/top10/netflix/italy/ (undated) and flixpatrol.com/top10/netflix/world/2026-10-12 (dated world); strip the chart and nothing written about the show remains. Rule F, same family.",
+      "history": [
+        {
+          "attempt": "2026-10-13T18:30:00Z",
+          "method": "WebFetch(family-match)",
+          "status": 200,
+          "issue": "LEMA-12580",
+          "note": "FlixPatrol per-country Top 10 chart page (Italy), date-stamped 2026-10-13: same ranking-table template already ledgered under flixpatrol.com/top10/netflix/italy/ (undated) and flixpatrol.com/top10/netflix/world/2026-10-12 (dated world); strip the chart and nothing written about the show remains. Rule F, same family."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/reunion/2026-10-13",
+      "firstSeen": "2026-10-13T18:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T18:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol per-country Top 10 chart page (Réunion), date-stamped 2026-10-13: same ranking-table template already ledgered under multiple other locale/date variants (world, Italy, Ecuador, United States); per-title ranking grid, no written editorial content about El Círculo specifically. Rule F, same family.",
+      "history": [
+        {
+          "attempt": "2026-10-13T18:30:00Z",
+          "method": "WebFetch(family-match)",
+          "status": 200,
+          "issue": "LEMA-12580",
+          "note": "FlixPatrol per-country Top 10 chart page (Réunion), date-stamped 2026-10-13: same ranking-table template already ledgered under multiple other locale/date variants (world, Italy, Ecuador, United States); per-title ranking grid, no written editorial content about El Círculo specifically. Rule F, same family."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-13T14:30:00Z"
+  "lastUpdated": "2026-10-13T18:30:00Z"
 }
