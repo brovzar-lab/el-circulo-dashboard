@@ -3470,7 +3470,81 @@
           "note": "FlixPatrol per-country Top 10 chart page (Réunion), date-stamped 2026-10-13: same ranking-table template already ledgered under multiple other locale/date variants (world, Italy, Ecuador, United States); per-title ranking grid, no written editorial content about El Círculo specifically. Rule F, same family."
         }
       ]
+    },
+    {
+      "url": "https://elpais.com/television/series/el-circulo",
+      "firstSeen": "2026-10-13T22:10:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T22:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "El País show-hub page: título/estreno/nacionalidad metadata block, one-line synopsis, embedded official trailer, and an 'Estrenos de la semana' calendar widget. No written editorial content specifically about El Círculo beyond that metadata -- strips to nothing per Rule F test.",
+      "history": [
+        {
+          "attempt": "2026-10-13T22:10:31Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12583",
+          "note": "El País show-hub page: título/estreno/nacionalidad metadata block, one-line synopsis, embedded official trailer, and an 'Estrenos de la semana' calendar widget. No written editorial content specifically about El Círculo beyond that metadata -- strips to nothing per Rule F test."
+        }
+      ]
+    },
+    {
+      "url": "https://elconfidencial.com/cultura/cine/2017-05-05/el-circulo-tom-hanks-emma-watson_1377281",
+      "firstSeen": "2026-10-13T22:10:31Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-13T22:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "About the 2017 film 'The Circle' (Tom Hanks, Emma Watson), a 2017-05-05 review confirmed via search snippet and URL date -- unrelated to the 2026 Netflix series El Círculo. Surfaced only because 'El Círculo'/'El círculo' is the Spanish title shared by the two works (WebFetch blocked by the site; off-topic confirmed independently from the indexed snippet content and the URL's 2017 dateline).",
+      "history": [
+        {
+          "attempt": "2026-10-13T22:10:31Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12583",
+          "note": "WebFetch blocked by elconfidencial.com. Off-topic confirmed via search-snippet content (review of the 2017 Tom Hanks/Emma Watson film) and the URL's 2017-05-05 dateline -- not the 2026 Netflix series."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/@netflixlat/video/7694847272227589396",
+      "firstSeen": "2026-10-13T22:10:31Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-13T22:10:31Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-13T22:10:31Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12583",
+          "note": "WebFetch returned no usable content (TikTok requires JS rendering/login wall). Firecrawl: site not supported (\"we do not support this site\"). Full fallback chain exhausted. failCount=1, no cooldown yet (needs 3 consecutive)."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/NetflixLatino/videos/1465272385551089",
+      "firstSeen": "2026-10-13T22:10:31Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-13T22:10:31Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-13T22:10:31Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12583",
+          "note": "WebFetch returned only the page shell (no video description/date, login wall). Firecrawl: site not supported (\"we do not support this site\"). Full fallback chain exhausted. failCount=1, no cooldown yet (needs 3 consecutive)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-13T18:30:00Z"
+  "lastUpdated": "2026-10-13T22:10:31Z"
 }
