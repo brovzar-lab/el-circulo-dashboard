@@ -3368,7 +3368,49 @@
           "note": "Account/caption retrieved via WebFetch, no recoverable publish date; Tavily Extract returned no content."
         }
       ]
+    },
+    {
+      "url": "https://tv.apple.com/mx/episode/critica-de-el-circulo/umc.cmc.3oljkhd5w20q6ycw7awbdoy93",
+      "firstSeen": "2026-10-13T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Apple TV episode-review page (Apple TV+ editorial \"Reviews de cine\" show) about the unrelated 2017 Emma Watson/Tom Hanks film \"The Circle\" (Dave Eggers adaptation), not the 2026 Netflix Mexican series \"El Círculo\"/\"Inside the Circle\". Surfaced only via the generic title collision, same pattern as the already-ledgered ecartelera.com/peliculas/el-circulo-2016 entry.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T14:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12577",
+          "note": "Off-topic title collision with the unrelated 2017 The Circle film; search snippet confirmed content before full fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/p/DdFeOzrkQxx",
+      "firstSeen": "2026-10-13T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Official @hollywoodreporteree (The Hollywood Reporter en Español) Instagram post announcing the show, dated Sep 9 2026 -- same date and same story as the HR en Español article already tracked in data.json (es.hollywoodreporter.com, ts 20260909). Bare social announcement post carrying no text of its own beyond the article caption; second address for an already-tracked document, not a distinct editorial artifact.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T14:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12577",
+          "note": "Confirmed via WebFetch: official HR en Español announcement post, Sep 9 2026, same story as already-tracked HR article."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-13T10:00:00Z"
+  "lastUpdated": "2026-10-13T14:30:00Z"
 }
