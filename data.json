@@ -63,8 +63,8 @@
     "outlet": "Fiction Horizon",
     "headline": "Meet the Cast of 'Inside the Circle' on Netflix (With Photos)",
     "url": "https://fictionhorizon.com/meet-the-cast-of-inside-the-circle-on-netflix-with-photos",
-    "date": "Oct 7, 2026",
-    "ts": 20261007,
+    "date": "Oct 4, 2026",
+    "ts": 20261004,
     "lang": "EN",
     "market": "International",
     "type": "Feature",
@@ -1592,6 +1592,18 @@
     "market": "International",
     "type": "Feature",
     "excerpt": "French launch-day writeup by Aurélie Hagopian introducing the new Netflix series to French-speaking audiences, covering premise, cast and genre (mystery/crime thriller about friendship and secrets).",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Memorias de Oz (YouTube)",
+    "headline": "EL CÍRCULO Netflix. Serie. Reseña",
+    "url": "https://www.youtube.com/watch?v=mN6VVy5X_jk",
+    "date": "Oct 10, 2026",
+    "ts": 20261010,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Review",
+    "excerpt": "Independent Spanish-language review channel (covers books, theater, film and series) praises the premise and direction by Alejandro Lozano (Matando Cabos, Control Z), noting it binged all eight episodes and wants to read the source novel Los Corruptores.",
     "storyGroup": null
   }
 ]
