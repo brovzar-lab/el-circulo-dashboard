@@ -1617,5 +1617,29 @@
     "type": "Feature",
     "excerpt": "English-language edition of Spain's Teknosfera network covers the Netflix Mexican thriller's blackmail-driven plot (four friends thrown into chaos by a leaked video), comparing its enclosed, high-pressure tension to Stephen King's storytelling style.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Netflix Latinoamérica (YouTube)",
+    "headline": "El círculo | Tráiler oficial | Netflix",
+    "url": "https://youtube.com/watch?v=fvNTDfFwD3Q",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Official Spanish-language trailer posted by Netflix Latinoamérica's YouTube channel ahead of the Oct 7 premiere, introducing the four childhood friends entangled by a leaked video and a web of corruption, ambition and moral dilemmas.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "What's on Netflix",
+    "headline": "Netflix Top 10s: Josh Hartnett's 'Below' and Ben Affleck's 'Animals' Top The Charts",
+    "url": "https://www.whats-on-netflix.com/news/top-10-reports/netflix-top-10s-josh-hartnetts-below-and-ben-afflecks-animals-top-the-charts/",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "First viewership data point for the show: ranks #4 in Netflix's Non-English TV Top 10 with 13.1M hours viewed and 2.1M views in its opening week (the outlet calls it 'not a great start'); also #6 among six Mexican Netflix titles compared over the same week, behind The Accident Season 1's 10.4M views.",
+    "storyGroup": null
   }
 ]
