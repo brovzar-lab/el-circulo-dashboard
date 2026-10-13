@@ -3242,7 +3242,133 @@
           "note": "Off-topic: review of the unrelated Netflix reality show 'The Circle'. Rule G."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DeUh4mSx-oa",
+      "firstSeen": "2026-10-13T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Instagram serves the same post at both /p/{shortcode} and /reel/{shortcode}; this is the /p/ address for the same shortcode (DeUh4mSx-oa) as the already-tracked instagram.com/reel/DeUh4mSx-oa (Victor Barba review, Oct 10, data.json storyGroup victorbarba-review-20261010). Mechanical URL-variant, Rule I, not a distinct document. Normalize tool does not currently fold IG /p/ vs /reel/ to the same key -- flagging as a tooling gap (escalated on LEMA-12571) rather than hand-patching normalize.js mid-sweep.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12571",
+          "note": "Resolved to the same shortcode as an already-tracked /reel/ URL; Rule I second address."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@memoriasdeoz/video/7695067697742187796",
+      "firstSeen": "2026-10-13T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Same creator (Memorias de Oz) cross-posting the identical review script/synopsis to TikTok that is the primary tracked piece on YouTube (watch?v=mN6VVy5X_jk, added this run). Search snippet text is verbatim-identical to the YouTube description. Rule I: same editorial artifact at a second platform address, not a genuinely separate piece.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T10:00:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-12571",
+          "note": "TikTok page itself geo-blocked (Hong Kong discontinuation notice) on fetch; classified via corroborating search-snippet text matching the tracked YouTube video verbatim."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DeOpCZ9jWcF",
+      "firstSeen": "2026-10-13T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "tenerifeweeknews Instagram post carries no original text of its own -- caption is only hashtags (#NETFLIX ESTRENO #CRÍTICA) plus a bare link to an external YouTube video. Rule I: 'a bare social link-post carrying no text of its own' is a second address, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12571",
+          "note": "Caption is hashtags + bare YouTube link only, no original text."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DeQcKmLO698",
+      "firstSeen": "2026-10-13T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "aura_series Instagram reel (Osvaldo Benavides describing his character, co-posted with rulobrionesc) -- entertainment-media brand account, evaluated normally under Rule B. WebFetch and Tavily Extract both retrieved the caption but no article:published_time/JSON-LD/dateline or even a relative UI badge. Same undateable pattern as this account's other already-ledgered posts. Genuine coverage omitted solely for lack of a real date.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-13T10:00:00Z",
+          "method": "WebFetch/TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12571",
+          "note": "Caption retrieved, no recoverable publish date."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/NetflixLatino/videos/ya-disponible-el-c%C3%ADrculo-netflix/2546622015761067",
+      "firstSeen": "2026-10-13T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official NetflixLatino Facebook video post (\"Ni un dia les duraron los secretos a Zuria, Raul y Michel... 'El Circulo' se estreno hoy\") -- on-topic first-party promo content, media coverage under Rule B/C scope clarification. Only date signal recoverable via WebFetch or Tavily Extract is a relative UI badge ('5d' at view time), not an article:published_time/JSON-LD/dateline. Not a real sourced date per Rule A. Same pattern as this account's other already-ledgered posts.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-13T10:00:00Z",
+          "method": "WebFetch/TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12571",
+          "note": "Only a relative '5d' UI badge found, no absolute date."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61556588083354/videos/ra%C3%BAl-briones-zuria-vega-osvaldo-benavides-y-michel-brown-nos-invitan-a-ver-el-c%C3%AD/1931853281140738",
+      "firstSeen": "2026-10-13T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "AuraSeries Facebook page video (\"Raul Briones, Zuria Vega, Osvaldo Benavides y Michel Brown nos invitan a ver 'El Circulo'\") -- entertainment-media brand account, evaluated normally under Rule B. WebFetch retrieved the account name and caption; Tavily Extract returned no usable content. No article:published_time/JSON-LD/dateline or relative UI badge recoverable by either method. Same undateable pattern as this account's other already-ledgered Facebook posts.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-13T10:00:00Z",
+          "method": "WebFetch/TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-12571",
+          "note": "Account/caption retrieved via WebFetch, no recoverable publish date; Tavily Extract returned no content."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-13T06:00:00Z"
+  "lastUpdated": "2026-10-13T10:00:00Z"
 }
