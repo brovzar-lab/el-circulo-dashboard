@@ -3099,7 +3099,150 @@
           "note": "Unrelated Netflix Tudum article about 'Heartstopper Forever', not El Círculo / Inside the Circle. Surfaced only via a broad Tudum/Top-10-ranking query."
         }
       ]
+    },
+    {
+      "url": "https://crossbinge.com/work/inside-the-circle",
+      "firstSeen": "2026-10-13T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "CrossBinge title page: one boilerplate logline sentence ('Four lifelong friends are caught in a web of blackmail when a leaked video threatens to expose the secrets that could destroy their friendship.'), cast list, streaming-availability widget, and similar-series recommendations. No written analysis of the show, no publish date. Same database/tracker shape as JustWatch/Reelgood entries already ledgered. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T06:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12537",
+          "note": "Database/catalog card, one boilerplate sentence, cast+streaming widget, no publish date. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/thebestnetflix/posts/1892263358694389",
+      "firstSeen": "2026-10-13T06:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-13T06:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-13T06:00:00Z",
+          "method": "WebFetch/Firecrawl/Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-12537",
+          "note": "Facebook promo/curation post ('Best of Netflix' page); full fallback chain failed to extract post content -- WebFetch returned only a page-title fragment, Firecrawl refused the domain ('we do not support this site'), Tavily Extract returned empty. Only the Tavily *search* snippet surfaced partial text ('The acting is intense, with a strong emotional core...'), not enough to classify account type or dateability. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/horror/comments/1k2d4kr/question_about_the_movie_circle_on_netflix",
+      "firstSeen": "2026-10-13T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/horror thread asking about the 2015 film 'Circle' (50 people wake up in a room, forced to vote on who dies), unrelated to the 2026 Mexican Netflix series El Círculo / Inside the Circle. Surfaced only via the generic site:reddit.com broad query. Rule G.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T06:00:00Z",
+          "method": "Exa search snippet",
+          "status": 200,
+          "issue": "LEMA-12537",
+          "note": "Off-topic: about the unrelated 2015 film 'Circle', not the 2026 Netflix series. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/TheCircleTV/hot",
+      "firstSeen": "2026-10-13T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/TheCircleTV is the subreddit for Netflix's reality-TV format 'The Circle' (UK format, premiered 2018), an unrelated show that happens to share the word 'círculo'/'circle' in its title. Not the 2026 Mexican thriller El Círculo. Rule G.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T06:00:00Z",
+          "method": "Exa search snippet",
+          "status": 200,
+          "issue": "LEMA-12537",
+          "note": "Off-topic: subreddit for the unrelated Netflix reality show 'The Circle', not our series. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/television/comments/fef8fv/the_circle_netflix_is_shallow_trash_realitytv",
+      "firstSeen": "2026-10-13T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/television thread discussing Netflix's reality-TV format 'The Circle' ('shallow trash reality TV'), unrelated to the 2026 Mexican thriller El Círculo / Inside the Circle. Rule G.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T06:00:00Z",
+          "method": "Exa search snippet",
+          "status": 200,
+          "issue": "LEMA-12537",
+          "note": "Off-topic: about the unrelated Netflix reality show 'The Circle'. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/blackmirror/comments/6kvsxj/recommendation_the_circle_movie_netflix",
+      "firstSeen": "2026-10-13T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/blackmirror thread recommending the unrelated 2015 film 'Circle' (low-budget sci-fi thriller), not the 2026 Mexican Netflix series El Círculo. Rule G.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T06:00:00Z",
+          "method": "Exa search snippet",
+          "status": 200,
+          "issue": "LEMA-12537",
+          "note": "Off-topic: about the unrelated 2015 film 'Circle'. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/television/comments/eq23ej/netflixs_the_circle_review_how_the_show_gets",
+      "firstSeen": "2026-10-13T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-13T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/television review thread for Netflix's reality-TV format 'The Circle', unrelated to the 2026 Mexican thriller El Círculo / Inside the Circle. Rule G.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-13T06:00:00Z",
+          "method": "Exa search snippet",
+          "status": 200,
+          "issue": "LEMA-12537",
+          "note": "Off-topic: review of the unrelated Netflix reality show 'The Circle'. Rule G."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-13T02:10:36Z"
+  "lastUpdated": "2026-10-13T06:00:00Z"
 }
