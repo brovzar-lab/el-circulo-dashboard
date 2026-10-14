@@ -186,7 +186,7 @@ survived 18 days and two cleanup waves this way -- see [LEMA-10623](/LEMA/issues
 
 Read-only, report-only: never edits `data.json` or `fetch-blocklist.json`, never makes an
 editorial call. Same division of labour as the rest of this kit -- mechanics here, judgment
-with the agent. Five checks:
+with the agent. Seven checks:
 
 1. **`ledgerOverlap` (assertable).** `data.json` rows whose normalized key matches a
    `permanentSkip` ledger row, **excluding** `skipReason=editorial_redundant_syndication` (see
@@ -243,6 +243,38 @@ with the agent. Five checks:
    call that is itself still an open judgment call (e.g. `tv.apple.com`'s `l` was between
    LEMA-11733 and LEMA-11736), and that host must stay visible to this advisory until the
    provisional flag is cleared. See the LEMA-11736 section below.
+6. **`titleOnlySkipSuspects` (advisory, high signal).** [LEMA-12647](/LEMA/issues/LEMA-12647)/
+   [LEMA-12658](/LEMA/issues/LEMA-12658): the opposite-direction check from `ledgerOverlap` --
+   everything above looks at "a row is in `data.json` but should not be," nothing looked at "a
+   `fetch-blocklist.json` row was permanently excluded on evidence too thin to trust." A
+   `fetch-blocklist.json` row is flagged when ALL of: `permanentSkip: true`; `skipReason ===
+   'editorial_off_topic_false_positive'` (Rule G -- the relevance-miss category, the only
+   `permanentSkip` reason that is a per-article "is this about the show" call a human could get
+   wrong on title alone, as opposed to a structural/editorial judgment); no body-fetch evidence
+   (`skipMethod === 'title_snippet_only'`, or `skipMethod` absent/out-of-vocabulary and no
+   `history[].method` entry matches a fetch-method token -- including having no `history` at
+   all); and the `skipNote` does not name a concrete alternative subject (a quoted title, or two
+   or more consecutive capitalized words -- a person's name, a named program). Deliberately
+   simple and deliberately tuned toward flagging, per the ruling: a false positive here costs one
+   fetch during triage, a false negative hides a permanently suppressed article that might
+   actually be El Círculo coverage (see the Las Azules precedent,
+   [LEMA-12645](/LEMA/issues/LEMA-12645), kinotico.es, skipped on title alone with the body
+   actually naming the show). The fetch-method matcher is an explicit, named allow-list of
+   substrings (`FETCH_METHOD_TOKENS`/`NO_FETCH_METHOD_TOKENS` in `tools/lib/audit.js`), ported
+   verbatim from the Las Azules kit. Each finding carries `url`, `skipNote`, `skipMethod`,
+   `historyMethods` (every `history[].method` seen), and which reason fired for condition 3
+   (`condition3`: `skipMethod_title_snippet_only` / `no_history` / `no_fetch_method_in_history`)
+   and condition 4 (`condition4`: `note_lacks_alternative_subject`), so a bounded triage can work
+   straight from the JSON.
+7. **`skipMethodVocabulary` (advisory, never gates).** [LEMA-12648](/LEMA/issues/LEMA-12648) adds
+   a forward-only, closed-vocabulary `skipMethod` field (`body_fetch` | `title_snippet_only`) to
+   new Rule F/G/H rows. El Círculo's existing Rule F/G/H rows were backfilled in the same commit
+   that ported this check ([LEMA-12658](/LEMA/issues/LEMA-12658)) rather than left absent, since
+   the port itself closed the adoption gap this field exists to catch; any row ledgered after
+   that commit without a `skipMethod` value is a live Pass 0c gap, not a tolerated pre-adoption
+   row. A row that DOES carry a `skipMethod` value outside the two-item vocabulary is flagged
+   here (typo, stale pre-finalization value, etc.) -- advisory only, same posture as every other
+   check in this file.
 
 ```
 $ node tools/sweep-integrity.js audit
@@ -268,15 +300,24 @@ $ node tools/sweep-integrity.js audit
 - Intersection (surface-family AND run-date proxy -- near-conclusive): 2 row(s)
   - https://tv.apple.com/lu/show/las-azules/umc.cmc.73wmdmkfpta5ul1vbwckmme39
   - https://tv.apple.com/es/show/las-azules/umc.cmc.73wmdmkfpta5ul1vbwckmme39
+- Title-only skip suspects (advisory, never gates): 0 row(s)
+- skipMethod out-of-vocabulary (advisory, never gates): 0 row(s)
 ```
+
+The `0 row(s)` counts above for checks 6/7 are a live run against origin/lemon-virtual-studios
+taken at `skipMethod` adoption time ([LEMA-12658](/LEMA/issues/LEMA-12658)), after backfilling
+`skipMethod` onto every then-existing Rule F/G/H row: unlike the Las Azules precedent that
+motivated check 6, every one of El Círculo's pre-adoption title/snippet-only Rule G rows already
+named its alternative subject by a quoted title in the `skipNote`, so none were flagged.
 
 `--repo path` overrides where check 4 runs its `git log`/`git show` calls (defaults to the
 directory containing `--data`); only useful for pointing the check at a different checkout,
 e.g. in tests. Prints the same `[audit] ... rows=<N> sha256=<hash>` stderr fingerprints as
 `lookup` (LEMA-10448) for both input files. Exit is **1** only when `ledgerOverlap` (the
-assertable bucket, excluding `editorial_redundant_syndication`) is non-empty -- the
-`ledgerOverlapAdvisory` bucket, the two other advisory checks, and their intersection never
-affect the exit code, per the ticket's explicit requirement.
+assertable bucket, excluding `editorial_redundant_syndication`) is non-empty -- every other
+check (`ledgerOverlapAdvisory`, `surfaceFamilyMatch`, `queryVariantPairs`,
+`runDateProxySuspects`, their intersection, `titleOnlySkipSuspects`, and `skipMethodVocabulary`)
+is advisory and never affects the exit code, per the ticket's explicit requirement.
 
 ### `reconcile --candidates <candidates.json> --data <pre-write data.json> [--added <added-rows.json>] [--removed <removed-rows.json>] [--json]`
 

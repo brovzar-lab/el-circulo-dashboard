@@ -1,5 +1,5 @@
 {
-  "_readme": "Persistent fetch-failure ledger for the El Círculo media sweep routine. Sweeps must read this before attempting any body fetch on a candidate URL and skip anything currently in cooldown, rendering the skip on the sweep evidence line. failCount tracks consecutive full fallback-chain failures (WebFetch AND Firecrawl scrape both failed in the same attempt). Three consecutive full-chain failures sets cooldownUntil to 30 days out. After cooldown expires, the URL gets one retry (WebFetch then Firecrawl); success resets failCount to 0 and clears cooldownUntil, failure restarts the 30-day cooldown. A separate category, permanentSkip with a skipReason, marks URLs that are fetchable but excluded for an editorial reason (for example a syndicated republication of a story already in data.json under a primary outlet). permanentSkip entries are skipped regardless of cooldownUntil and must never be treated as, or logged as, a fetch failure. See LEMA-9620 for origin, LEMA-9619 for the incident that motivated this file, and LEMA-9621 for the permanentSkip category. Two standing editorial rules, adopted LEMA-9642 (CEO ruling on LEMA-9641), apply to every sweep going forward and must not be re-escalated: (1) No proxy, inferred, or approximated dates ever enter data.json. A crawler artifact like this ledger's firstSeen timestamp is never a substitute for a real, sourced publish date -- not even with a disclaimer in the excerpt, because sorting and the dashboard KPIs read ts, not the excerpt. If no real publish date can be recovered (WebFetch AND Firecrawl both exhausted), the candidate is permanentSkip with skipReason \"editorial_undateable\" and reviewable: true, never added with a substitute date. Rule A amendment (fourth condition on the URL-path sourcing provision defined in the Media Sweep routine), adopted 2026-09-15 (CEO ruling on LEMA-10278, implemented in LEMA-10287): the URL path must contain a day component. A /YYYY/MM/ path yields a month, not a date. Never floor a month to its first day, or any other day, to manufacture a ts. If the path carries no day, the path is not a source: fall back to the page's own article:published_time, JSON-LD datePublished, or visible dateline; if none resolve, Rule A's undateable path applies as normal. A page's structured publish date is only usable when that page's canonical points at itself. (2) Social-candidate relevance gate, separate from and prior to any dateability check: vendor, supplier, crew-personal, and fan-repost accounts are not media coverage and must be skipped as permanentSkip on relevance grounds (skipReason \"editorial_vendor_promo\" for a vendor/supplier company account, \"editorial_personal_repost\" for an individual crew-personal or fan-repost account) regardless of whether a date could be found. Publisher, outlet, and editorial-brand accounts are media coverage and are evaluated normally, dateability included. reviewable: true (used on editorial_undateable entries only) marks a permanentSkip entry as genuine coverage omitted solely for lack of a real date, distinct from editorial_redundant_syndication (we already have the story) and editorial_vendor_promo/editorial_personal_repost (not coverage at all, dateability irrelevant). It is queryable only, for a future manual date lookup; it implies no dashboard or UI surfacing. A third standing rule, adopted 2026-09-06 (CEO ruling on LEMA-9761, implemented in LEMA-9762), applies going forward and must not be re-escalated: (3) no un-ledgered exclusions. Any decision to exclude a candidate from data.json must be written to this ledger as a permanentSkip entry in the same run the decision is made; a decision recorded only in a run comment or deliverable document does not persist, because the next sweep cannot see it. An exclusion must use one of the existing skipReason values above. Agents must not invent a new exclusion ground mid-run: if no existing skipReason fits a candidate, the candidate is included in data.json that run and a new issue is opened escalating the proposed category, rather than being excluded on an invented ground. Two scope clarifications travel with this rule: first-party promotional and BTS video produced by the studio or platform itself (trailers, \"inside look\" pieces, cast interview clips, press releases, official show pages) is media coverage under Rule B like any other official show/network account content, evaluated normally for dateability and duplication, not a candidate for a new editorial skip category. There is no publish-date floor on candidates: coverage is never excluded, under any rule, on the grounds that it predates Season 2, and Season 1 era coverage is in scope on the same terms as Season 2 coverage. A fourth standing rule, adopted 2026-09-10 (CEO ruling on LEMA-9880, implemented in LEMA-9883), applies going forward and must not be re-escalated: (4) Rule A applies retroactively, plus two guardrails. Rule A governs what ts means, not when an entry was written or which sweep run committed it: an entry that violates Rule A today violates it regardless of vintage, and there is no grandfathering for entries already in data.json. Rule C does not block retroactive remediation: Rule C governs how an exclusion is recorded (ledgered, in the run where the decision is made, using an existing skipReason), not when the candidate was first seen. A retroactive removal of an already-published entry satisfies Rule C when the data.json removal and the matching fetch-blocklist.json permanentSkip entry land in the same commit, because the remediation run is the run where the decision is made. Guardrail one, ledger precedence: before writing any permanentSkip entry to this ledger, check whether that same URL is already present in data.json. If it is, this ledger wins: remove the data.json entry in the same commit that adds the permanentSkip entry, rather than leaving a live feed entry that a permanentSkip entry silently contradicts. Guardrail two, future-ts guard: any candidate or existing data.json entry whose ts is later than the sweep's run date is an automatic Rule A violation, a publish date cannot be in the future, and must never be committed; an existing entry found with a future ts must be flagged and remediated under this rule (removed and ledgered in the same commit), not left in place. A fifth standing rule, adopted 2026-09-10 (CEO ruling on LEMA-9923, implemented in LEMA-9924), applies going forward and must not be re-escalated: (5) piracy and unauthorized-distribution gate, separate from and prior to any dateability check: a candidate is permanentSkip with skipReason \"editorial_piracy_or_unauthorized_distribution\" when both hold -- the page is on-topic for the show, and its primary function is supplying or linking to unauthorized copies of the title rather than reporting on, reviewing, or promoting it. Signals: download or torrent/magnet links, \"ENLACE VIP\"/\"ENLACE FREE\" style link tiers, an embedded full-episode player, release-quality labelling in the title (720p, 1080p, WEB-DL, HDTV), a synopsis blurb that exists only as an SEO wrapper around the links. Dateability is irrelevant to Rule E exactly as it is to Rule B: a piracy listing with a perfect sourced publish date is still not coverage. Rule E applies retroactively on the same logic Rule D established for Rule A: it classifies what an entry is, not when it was committed, so there is no grandfathering, and Rule C is satisfied when the data.json removal and the matching permanentSkip entry land in the same commit. reviewable is false or omitted on these entries -- reviewable: true means genuine coverage omitted solely for lack of a date, and these are not coverage at all, same posture as editorial_vendor_promo and editorial_personal_repost. The skipNote must record what is hosted, the claimed quality tier, the page publish date, and that it is an unauthorized-distribution listing. Four scope limits travel with this rule and must not be stretched: legal-availability guides (\"where to watch\" articles, JustWatch/Reelgood-style legal aggregators, official platform pages) are coverage and are evaluated normally; low-quality or SEO-farm editorial is still editorial, Rule E is about function, not production values; Rule E does not apply to social candidates at all, including YouTube -- trailer uploads, clip reposts, and channel overviews stay under Rule B's account-type gate; and ambiguity routes to Rule C, not to Rule E -- if a page has both real editorial content and unauthorized links, or you cannot tell, include it and escalate, never resolve ambiguity by stretching Rule E. A sixth standing rule, adopted 2026-09-10 (CEO ruling on LEMA-9751, implemented in LEMA-9927), applies going forward and must not be re-escalated: (6) listing/database gate, for on-topic and fetchable candidates that carry no written editorial content about the show: a candidate is permanentSkip with skipReason \"editorial_listing_or_database\" when it is a TVDB/IMDb-style episode listing row, an EPG or programming-grid page where the show is one row in a daily schedule, or a bare directory placeholder page for an episode that has not aired. Test: strip the metadata table or schedule grid from the page; if nothing written about the show remains, it is Rule F. Explicitly NOT Rule F, and must be left alone: an article about the release schedule is written journalism about the show and is coverage, not a data row -- the line is prose-about-the-show versus a data row, not the word \"schedule\" appearing in the URL or title. reviewable is false or omitted on Rule F entries -- these are not coverage at all, same posture as editorial_vendor_promo and editorial_personal_repost. Rule F clarification (surface family, not page subject), adopted 2026-09-21 (CEO ruling on LEMA-10630, implemented in LEMA-10632): Rule F classifies the surface, not the subject it happens to catalog. A reference-database record is Rule F regardless of which title, person, or episode ID it carries, and regardless of whether the work it catalogs is itself legitimate coverage. Named families under this clarification: imdb.com/title/* and pro.imdb.com/title/* at any locale and any depth (bare title record, /cast, /episodes), and imdb.com/name/*. imdb.com/news/* is a different surface family and is untouched by this clarification -- those stay syndicated news articles in data.json, exactly as Rule H scope limit (3) already provides. A seventh standing rule, adopted 2026-09-10 (CEO ruling on LEMA-9751, implemented in LEMA-9927), applies going forward and must not be re-escalated: (7) off-topic false-positive gate: a candidate is permanentSkip with skipReason \"editorial_off_topic_false_positive\" when it is about a different show, person, or topic entirely and surfaced only as a broad-query match. This is not an editorial judgment, it is a relevance miss, and it is ledgered for exactly one reason: so the sweep stops re-fetching the same non-qualifying URL every two hours. The skipNote on a Rule G entry must state what the page is actually about -- \"off-topic\" alone is not auditable and a wrong off-topic call would be invisible without it. reviewable is false or omitted on Rule G entries for the same reason as Rule F. Rule C still governs ambiguity for both Rule F and Rule G: if you cannot tell whether a page has real editorial content about the show, include it in data.json and escalate a new issue, never resolve the ambiguity by reaching for Rule F or Rule G. Both rules are forward-only as adopted. If a future sweep encounters an existing entry that plainly fails Rule F or Rule G, Rule D's retroactivity logic applies (remove from data.json and add the permanentSkip entry in the same commit). An eighth standing rule, Rule H (user-review aggregate gate, evaluated before and separately from dateability), adopted 2026-09-15 (CEO ruling on LEMA-10162, implemented in LEMA-10163), applies going forward and retroactively (no grandfathering, same basis as the fourth standing rule above) and must not be re-escalated: (8) a candidate is permanentSkip with skipReason \"editorial_user_review_aggregate\" when both hold -- the page is an outlet-run surface whose show-related prose is written by members of the public rather than by the outlet's staff or commissioned critics, and it is the aggregation surface itself, not a single authored article. Examples: AlloCiné critiques spectateurs, IMDb title/*/reviews user-review tabs, Rotten Tomatoes audience-review tabs, Metacritic user-score tabs, and member-review pages on Letterboxd, SensCritique and FilmAffinity. Dateability is irrelevant to Rule H exactly as it is to Rules B, E, F and G: do not spend a fetch-fallback-chain attempt trying to date one. reviewable is false or omitted, same posture as editorial_vendor_promo, editorial_personal_repost, editorial_listing_or_database and editorial_off_topic_false_positive -- these are not coverage at all. The skipNote must record the outlet, the specific surface (for example \"critiques spectateurs tab\"), and the review count and average score seen, so that a wrong call is auditable rather than invisible. Rule H applies retroactively on the logic Rule D established for Rule A and Rule E: it classifies what an entry is, not when it was committed, so there is no grandfathering. If a run's full-feed check surfaces an existing data.json entry meeting both prongs, remove it and add the matching permanentSkip entry in the same commit, which satisfies Rule C the same way retroactive Rule D and Rule E remediation does. Four scope limits travel with Rule H and must not be stretched. (1) Critic and press aggregation surfaces are not entries either, but they ARE lead sources, and the sweep must mine them: AlloCiné critiques presse, the Rotten Tomatoes critic list, the Metacritic critic list -- the aggregation page gets no row, for the same one-document-one-row reason, but the sweep SHOULD read it and add each individual named critic review as its own entry, at its own URL, with its own outlet and its own sourced publish date, evaluated normally under Rules A through G; ledger the aggregation URL under Rule H with a skipNote stating that it was mined and which individual reviews were harvested from it -- this turns a skip into coverage yield instead of losing the press. (2) A staff-written article about audience reaction is coverage: an outlet's own piece (\"what viewers are saying\", \"the internet reacts to the finale\") is prose journalism written by the outlet and is evaluated normally, the same line Rule F draws: prose-about-the-show written by the outlet, versus a data surface populated by the public. (3) IMDb /news/ items are untouched: those are syndicated news articles, not the user-reviews tab; Rule H reaches imdb.com/title/*/reviews, never imdb.com/news/*; any existing editorial_undateable grandfather on IMDb news is unaffected. (4) Rule H does not apply to social candidates at all: Rule B keeps the account-type gate for YouTube, Facebook, X, Instagram and TikTok, a comment section under a trailer upload is not a Rule H surface, and a fan repost stays editorial_personal_repost. Ambiguity routes to Rule C, not to Rule H: if you cannot tell whether a page's prose is staff-written or public-submitted, or the page mixes both, include it in data.json and open an escalation, do not resolve the ambiguity by reaching for Rule H, exactly as Rules E, F and G already require. Rule H extension (mining-duty scope), adopted 2026-09-17 (CEO ruling on LEMA-10424, implemented in LEMA-10458): the scope-limit-(1) mining duty is not confined to rows classified under Rule H itself -- it attaches to whichever surface actually renders named critic attribution, regardless of which exclusion rule that row's own classification carries. Mining and exclusion are orthogonal: a row kept under a different rule (for example Rule F, a listing/database page that happens to render named critic excerpts) keeps its own label and permanentSkip status, and the mining is recorded in that row's own skipNote, updated in place per Rule C's one-URL-one-row clause, exactly as a dedicated Rule H row's skipNote already records its own mining. When auditing an outlet for this duty, enumerate its surfaces per season/title path, not just per outlet -- a missing ledger row for one season or title path is the recurring failure this extension exists to catch, not a wrong label. A standing rule, Rule I (distinct document vs. second address, governs the boundary between excluding a candidate here as editorial_redundant_syndication and tagging-and-keeping it under the sweep routine's step 4f duplicate-story check), adopted 2026-09-15 (CEO ruling on LEMA-10247, implemented in LEMA-10274), applies going forward and retroactively (no grandfathering, same basis as the fourth standing rule above) and must not be re-escalated: the test is whether the candidate URL serves a distinct document, or is a second address for a document already in data.json. A distinct document covering the same underlying story -- another outlet republishing a wire story, or the same outlet covering the same event in a genuinely separate piece or format -- is coverage: add it to data.json and assign the existing storyGroup, never permanentSkip. Rule I amendment (\"separate format\" clarification and post-ID test), adopted 2026-09-15 (CEO ruling on LEMA-10278, implemented in LEMA-10287): the \"genuinely separate piece or format\" limb means a separate editorial artifact with content of its own -- a video piece, a podcast, a photo gallery, a liveblog -- not a rendering variant of the same CMS post; a print stylesheet, an AMP page, a reader-mode URL, and a syndication feed item are second addresses. Mechanical shortcut: the same outlet publishing the same CMS post ID at two URLs is one document at two addresses unless a fetch shows genuinely different body content, which resolves the Deadline/Variety/Rolling Stone PMC family without spending a fetch. A second address for a document already in the feed -- a mobile subdomain variant, a URL that redirects or canonicalizes to a tracked URL, a tag or archive index surfacing an already-tracked post, or a bare social link-post carrying no text of its own -- remains permanentSkip with skipReason editorial_redundant_syndication; no new skipReason value is created by this rule. Same-commit removal plus ledger write satisfies the third standing rule above exactly as retroactive remediation under the fourth standing rule does. Historical note: the storyGroup field's original definition (LEMA-9622) also listed \"exact URL-variant duplicate\" as a covered case; per Rule I that phrase describes only pre-existing second-address rows the non-destructive LEMA-9622 backfill found already live in data.json and chose to tag rather than delete -- it is not authority to add new second-address rows going forward, which remain permanentSkip under editorial_redundant_syndication. Ported as-is from the Las Azules S2 Media Sweep kit (LEMA-12167, 2026-10-07) per the mature-design reuse call on that ticket; Rules A-I above are the general, dataset-agnostic editorial policy proven out over that routine's operation and apply here from the first sweep rather than being re-derived from scratch.",
+  "_readme": "Persistent fetch-failure ledger for the El Círculo media sweep routine. Sweeps must read this before attempting any body fetch on a candidate URL and skip anything currently in cooldown, rendering the skip on the sweep evidence line. failCount tracks consecutive full fallback-chain failures (WebFetch AND Firecrawl scrape both failed in the same attempt). Three consecutive full-chain failures sets cooldownUntil to 30 days out. After cooldown expires, the URL gets one retry (WebFetch then Firecrawl); success resets failCount to 0 and clears cooldownUntil, failure restarts the 30-day cooldown. A separate category, permanentSkip with a skipReason, marks URLs that are fetchable but excluded for an editorial reason (for example a syndicated republication of a story already in data.json under a primary outlet). permanentSkip entries are skipped regardless of cooldownUntil and must never be treated as, or logged as, a fetch failure. See LEMA-9620 for origin, LEMA-9619 for the incident that motivated this file, and LEMA-9621 for the permanentSkip category. Two standing editorial rules, adopted LEMA-9642 (CEO ruling on LEMA-9641), apply to every sweep going forward and must not be re-escalated: (1) No proxy, inferred, or approximated dates ever enter data.json. A crawler artifact like this ledger's firstSeen timestamp is never a substitute for a real, sourced publish date -- not even with a disclaimer in the excerpt, because sorting and the dashboard KPIs read ts, not the excerpt. If no real publish date can be recovered (WebFetch AND Firecrawl both exhausted), the candidate is permanentSkip with skipReason \"editorial_undateable\" and reviewable: true, never added with a substitute date. Rule A amendment (fourth condition on the URL-path sourcing provision defined in the Media Sweep routine), adopted 2026-09-15 (CEO ruling on LEMA-10278, implemented in LEMA-10287): the URL path must contain a day component. A /YYYY/MM/ path yields a month, not a date. Never floor a month to its first day, or any other day, to manufacture a ts. If the path carries no day, the path is not a source: fall back to the page's own article:published_time, JSON-LD datePublished, or visible dateline; if none resolve, Rule A's undateable path applies as normal. A page's structured publish date is only usable when that page's canonical points at itself. (2) Social-candidate relevance gate, separate from and prior to any dateability check: vendor, supplier, crew-personal, and fan-repost accounts are not media coverage and must be skipped as permanentSkip on relevance grounds (skipReason \"editorial_vendor_promo\" for a vendor/supplier company account, \"editorial_personal_repost\" for an individual crew-personal or fan-repost account) regardless of whether a date could be found. Publisher, outlet, and editorial-brand accounts are media coverage and are evaluated normally, dateability included. reviewable: true (used on editorial_undateable entries only) marks a permanentSkip entry as genuine coverage omitted solely for lack of a real date, distinct from editorial_redundant_syndication (we already have the story) and editorial_vendor_promo/editorial_personal_repost (not coverage at all, dateability irrelevant). It is queryable only, for a future manual date lookup; it implies no dashboard or UI surfacing. A third standing rule, adopted 2026-09-06 (CEO ruling on LEMA-9761, implemented in LEMA-9762), applies going forward and must not be re-escalated: (3) no un-ledgered exclusions. Any decision to exclude a candidate from data.json must be written to this ledger as a permanentSkip entry in the same run the decision is made; a decision recorded only in a run comment or deliverable document does not persist, because the next sweep cannot see it. An exclusion must use one of the existing skipReason values above. Agents must not invent a new exclusion ground mid-run: if no existing skipReason fits a candidate, the candidate is included in data.json that run and a new issue is opened escalating the proposed category, rather than being excluded on an invented ground. Two scope clarifications travel with this rule: first-party promotional and BTS video produced by the studio or platform itself (trailers, \"inside look\" pieces, cast interview clips, press releases, official show pages) is media coverage under Rule B like any other official show/network account content, evaluated normally for dateability and duplication, not a candidate for a new editorial skip category. There is no publish-date floor on candidates: coverage is never excluded, under any rule, on the grounds that it predates Season 2, and Season 1 era coverage is in scope on the same terms as Season 2 coverage. A fourth standing rule, adopted 2026-09-10 (CEO ruling on LEMA-9880, implemented in LEMA-9883), applies going forward and must not be re-escalated: (4) Rule A applies retroactively, plus two guardrails. Rule A governs what ts means, not when an entry was written or which sweep run committed it: an entry that violates Rule A today violates it regardless of vintage, and there is no grandfathering for entries already in data.json. Rule C does not block retroactive remediation: Rule C governs how an exclusion is recorded (ledgered, in the run where the decision is made, using an existing skipReason), not when the candidate was first seen. A retroactive removal of an already-published entry satisfies Rule C when the data.json removal and the matching fetch-blocklist.json permanentSkip entry land in the same commit, because the remediation run is the run where the decision is made. Guardrail one, ledger precedence: before writing any permanentSkip entry to this ledger, check whether that same URL is already present in data.json. If it is, this ledger wins: remove the data.json entry in the same commit that adds the permanentSkip entry, rather than leaving a live feed entry that a permanentSkip entry silently contradicts. Guardrail two, future-ts guard: any candidate or existing data.json entry whose ts is later than the sweep's run date is an automatic Rule A violation, a publish date cannot be in the future, and must never be committed; an existing entry found with a future ts must be flagged and remediated under this rule (removed and ledgered in the same commit), not left in place. A fifth standing rule, adopted 2026-09-10 (CEO ruling on LEMA-9923, implemented in LEMA-9924), applies going forward and must not be re-escalated: (5) piracy and unauthorized-distribution gate, separate from and prior to any dateability check: a candidate is permanentSkip with skipReason \"editorial_piracy_or_unauthorized_distribution\" when both hold -- the page is on-topic for the show, and its primary function is supplying or linking to unauthorized copies of the title rather than reporting on, reviewing, or promoting it. Signals: download or torrent/magnet links, \"ENLACE VIP\"/\"ENLACE FREE\" style link tiers, an embedded full-episode player, release-quality labelling in the title (720p, 1080p, WEB-DL, HDTV), a synopsis blurb that exists only as an SEO wrapper around the links. Dateability is irrelevant to Rule E exactly as it is to Rule B: a piracy listing with a perfect sourced publish date is still not coverage. Rule E applies retroactively on the same logic Rule D established for Rule A: it classifies what an entry is, not when it was committed, so there is no grandfathering, and Rule C is satisfied when the data.json removal and the matching permanentSkip entry land in the same commit. reviewable is false or omitted on these entries -- reviewable: true means genuine coverage omitted solely for lack of a date, and these are not coverage at all, same posture as editorial_vendor_promo and editorial_personal_repost. The skipNote must record what is hosted, the claimed quality tier, the page publish date, and that it is an unauthorized-distribution listing. Four scope limits travel with this rule and must not be stretched: legal-availability guides (\"where to watch\" articles, JustWatch/Reelgood-style legal aggregators, official platform pages) are coverage and are evaluated normally; low-quality or SEO-farm editorial is still editorial, Rule E is about function, not production values; Rule E does not apply to social candidates at all, including YouTube -- trailer uploads, clip reposts, and channel overviews stay under Rule B's account-type gate; and ambiguity routes to Rule C, not to Rule E -- if a page has both real editorial content and unauthorized links, or you cannot tell, include it and escalate, never resolve ambiguity by stretching Rule E. A sixth standing rule, adopted 2026-09-10 (CEO ruling on LEMA-9751, implemented in LEMA-9927), applies going forward and must not be re-escalated: (6) listing/database gate, for on-topic and fetchable candidates that carry no written editorial content about the show: a candidate is permanentSkip with skipReason \"editorial_listing_or_database\" when it is a TVDB/IMDb-style episode listing row, an EPG or programming-grid page where the show is one row in a daily schedule, or a bare directory placeholder page for an episode that has not aired. Test: strip the metadata table or schedule grid from the page; if nothing written about the show remains, it is Rule F. Explicitly NOT Rule F, and must be left alone: an article about the release schedule is written journalism about the show and is coverage, not a data row -- the line is prose-about-the-show versus a data row, not the word \"schedule\" appearing in the URL or title. reviewable is false or omitted on Rule F entries -- these are not coverage at all, same posture as editorial_vendor_promo and editorial_personal_repost. Rule F clarification (surface family, not page subject), adopted 2026-09-21 (CEO ruling on LEMA-10630, implemented in LEMA-10632): Rule F classifies the surface, not the subject it happens to catalog. A reference-database record is Rule F regardless of which title, person, or episode ID it carries, and regardless of whether the work it catalogs is itself legitimate coverage. Named families under this clarification: imdb.com/title/* and pro.imdb.com/title/* at any locale and any depth (bare title record, /cast, /episodes), and imdb.com/name/*. imdb.com/news/* is a different surface family and is untouched by this clarification -- those stay syndicated news articles in data.json, exactly as Rule H scope limit (3) already provides. A seventh standing rule, adopted 2026-09-10 (CEO ruling on LEMA-9751, implemented in LEMA-9927), applies going forward and must not be re-escalated: (7) off-topic false-positive gate: a candidate is permanentSkip with skipReason \"editorial_off_topic_false_positive\" when it is about a different show, person, or topic entirely and surfaced only as a broad-query match. This is not an editorial judgment, it is a relevance miss, and it is ledgered for exactly one reason: so the sweep stops re-fetching the same non-qualifying URL every two hours. The skipNote on a Rule G entry must state what the page is actually about -- \"off-topic\" alone is not auditable and a wrong off-topic call would be invisible without it. reviewable is false or omitted on Rule G entries for the same reason as Rule F. Rule C still governs ambiguity for both Rule F and Rule G: if you cannot tell whether a page has real editorial content about the show, include it in data.json and escalate a new issue, never resolve the ambiguity by reaching for Rule F or Rule G. Both rules are forward-only as adopted. If a future sweep encounters an existing entry that plainly fails Rule F or Rule G, Rule D's retroactivity logic applies (remove from data.json and add the permanentSkip entry in the same commit). Rule G amendment (no-fetch carve-out, affirmative-signal-only), adopted 2026-10-14 (CEO ruling on LEMA-12647, implemented in LEMA-12648): a Rule G skip may be made on search-result title or snippet alone only when the title or snippet carries an affirmative, specific identifier of a different subject -- a named different title, a named person with no connection to the show, or an explicitly different topic. The absence of the show's own title from a headline is not an affirmative signal and never qualifies on its own. Headlines that never qualify for the carve-out and always require a body fetch: awards or finalist roundups, industry-trend pieces, platform-wide slate articles, listicles, and any headline naming no specific subject at all. If the required fetch fails, the row is a fetch-failure ledger row under Pass 0, not a Rule G skip -- a failed fetch is never evidence of off-topic. Rule C continues to govern ambiguity, unchanged. This amendment is forward-only and does not retroactively invalidate existing Rule G rows; the existing stock of no-fetch rows is handled by a bounded triage task, not a mass reversal. Ledger schema addition (skipMethod field), adopted 2026-10-14 (CEO ruling on LEMA-12647, implemented in LEMA-12648): every permanentSkip row carrying skipReason editorial_off_topic_false_positive, editorial_listing_or_database, or editorial_user_review_aggregate must carry a skipMethod field from adoption forward, a closed two-value vocabulary, body_fetch or title_snippet_only. Free text is not permitted; if neither value describes how the call was made, escalate per Rule C rather than inventing a third. skipMethod is forward-only and is never backfilled onto rows ledgered before adoption, and its absence on a pre-existing row is never itself a Pass 0c violation, the same posture dateSource already carries. An eighth standing rule, Rule H (user-review aggregate gate, evaluated before and separately from dateability), adopted 2026-09-15 (CEO ruling on LEMA-10162, implemented in LEMA-10163), applies going forward and retroactively (no grandfathering, same basis as the fourth standing rule above) and must not be re-escalated: (8) a candidate is permanentSkip with skipReason \"editorial_user_review_aggregate\" when both hold -- the page is an outlet-run surface whose show-related prose is written by members of the public rather than by the outlet's staff or commissioned critics, and it is the aggregation surface itself, not a single authored article. Examples: AlloCiné critiques spectateurs, IMDb title/*/reviews user-review tabs, Rotten Tomatoes audience-review tabs, Metacritic user-score tabs, and member-review pages on Letterboxd, SensCritique and FilmAffinity. Dateability is irrelevant to Rule H exactly as it is to Rules B, E, F and G: do not spend a fetch-fallback-chain attempt trying to date one. reviewable is false or omitted, same posture as editorial_vendor_promo, editorial_personal_repost, editorial_listing_or_database and editorial_off_topic_false_positive -- these are not coverage at all. The skipNote must record the outlet, the specific surface (for example \"critiques spectateurs tab\"), and the review count and average score seen, so that a wrong call is auditable rather than invisible. Rule H applies retroactively on the logic Rule D established for Rule A and Rule E: it classifies what an entry is, not when it was committed, so there is no grandfathering. If a run's full-feed check surfaces an existing data.json entry meeting both prongs, remove it and add the matching permanentSkip entry in the same commit, which satisfies Rule C the same way retroactive Rule D and Rule E remediation does. Four scope limits travel with Rule H and must not be stretched. (1) Critic and press aggregation surfaces are not entries either, but they ARE lead sources, and the sweep must mine them: AlloCiné critiques presse, the Rotten Tomatoes critic list, the Metacritic critic list -- the aggregation page gets no row, for the same one-document-one-row reason, but the sweep SHOULD read it and add each individual named critic review as its own entry, at its own URL, with its own outlet and its own sourced publish date, evaluated normally under Rules A through G; ledger the aggregation URL under Rule H with a skipNote stating that it was mined and which individual reviews were harvested from it -- this turns a skip into coverage yield instead of losing the press. (2) A staff-written article about audience reaction is coverage: an outlet's own piece (\"what viewers are saying\", \"the internet reacts to the finale\") is prose journalism written by the outlet and is evaluated normally, the same line Rule F draws: prose-about-the-show written by the outlet, versus a data surface populated by the public. (3) IMDb /news/ items are untouched: those are syndicated news articles, not the user-reviews tab; Rule H reaches imdb.com/title/*/reviews, never imdb.com/news/*; any existing editorial_undateable grandfather on IMDb news is unaffected. (4) Rule H does not apply to social candidates at all: Rule B keeps the account-type gate for YouTube, Facebook, X, Instagram and TikTok, a comment section under a trailer upload is not a Rule H surface, and a fan repost stays editorial_personal_repost. Ambiguity routes to Rule C, not to Rule H: if you cannot tell whether a page's prose is staff-written or public-submitted, or the page mixes both, include it in data.json and open an escalation, do not resolve the ambiguity by reaching for Rule H, exactly as Rules E, F and G already require. Rule H extension (mining-duty scope), adopted 2026-09-17 (CEO ruling on LEMA-10424, implemented in LEMA-10458): the scope-limit-(1) mining duty is not confined to rows classified under Rule H itself -- it attaches to whichever surface actually renders named critic attribution, regardless of which exclusion rule that row's own classification carries. Mining and exclusion are orthogonal: a row kept under a different rule (for example Rule F, a listing/database page that happens to render named critic excerpts) keeps its own label and permanentSkip status, and the mining is recorded in that row's own skipNote, updated in place per Rule C's one-URL-one-row clause, exactly as a dedicated Rule H row's skipNote already records its own mining. When auditing an outlet for this duty, enumerate its surfaces per season/title path, not just per outlet -- a missing ledger row for one season or title path is the recurring failure this extension exists to catch, not a wrong label. A standing rule, Rule I (distinct document vs. second address, governs the boundary between excluding a candidate here as editorial_redundant_syndication and tagging-and-keeping it under the sweep routine's step 4f duplicate-story check), adopted 2026-09-15 (CEO ruling on LEMA-10247, implemented in LEMA-10274), applies going forward and retroactively (no grandfathering, same basis as the fourth standing rule above) and must not be re-escalated: the test is whether the candidate URL serves a distinct document, or is a second address for a document already in data.json. A distinct document covering the same underlying story -- another outlet republishing a wire story, or the same outlet covering the same event in a genuinely separate piece or format -- is coverage: add it to data.json and assign the existing storyGroup, never permanentSkip. Rule I amendment (\"separate format\" clarification and post-ID test), adopted 2026-09-15 (CEO ruling on LEMA-10278, implemented in LEMA-10287): the \"genuinely separate piece or format\" limb means a separate editorial artifact with content of its own -- a video piece, a podcast, a photo gallery, a liveblog -- not a rendering variant of the same CMS post; a print stylesheet, an AMP page, a reader-mode URL, and a syndication feed item are second addresses. Mechanical shortcut: the same outlet publishing the same CMS post ID at two URLs is one document at two addresses unless a fetch shows genuinely different body content, which resolves the Deadline/Variety/Rolling Stone PMC family without spending a fetch. A second address for a document already in the feed -- a mobile subdomain variant, a URL that redirects or canonicalizes to a tracked URL, a tag or archive index surfacing an already-tracked post, or a bare social link-post carrying no text of its own -- remains permanentSkip with skipReason editorial_redundant_syndication; no new skipReason value is created by this rule. Same-commit removal plus ledger write satisfies the third standing rule above exactly as retroactive remediation under the fourth standing rule does. Historical note: the storyGroup field's original definition (LEMA-9622) also listed \"exact URL-variant duplicate\" as a covered case; per Rule I that phrase describes only pre-existing second-address rows the non-destructive LEMA-9622 backfill found already live in data.json and chose to tag rather than delete -- it is not authority to add new second-address rows going forward, which remain permanentSkip under editorial_redundant_syndication. Ported as-is from the Las Azules S2 Media Sweep kit (LEMA-12167, 2026-10-07) per the mature-design reuse call on that ticket; Rules A-I above are the general, dataset-agnostic editorial policy proven out over that routine's operation and apply here from the first sweep rather than being re-derived from scratch.",
   "entries": [
     {
       "url": "https://www.comicbasics.com/?p=194112",
@@ -71,6 +71,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Show/trailer database page: title metadata, release date, and a one-paragraph synopsis only; no reviews, analysis, or interviews. Stripping the metadata block leaves nothing written about the show. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T02:18:06Z",
@@ -91,6 +92,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "TheTVDB cast/crew listing page for the series -- a bare database/catalog page with no written editorial content. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T02:18:06Z",
@@ -111,6 +113,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Review of a different, unrelated title: 'The Circle' (2017), the Emma Watson/Tom Hanks film adaptation of Dave Eggers' novel, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'El Círculo' title collision.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T02:18:06Z",
@@ -131,6 +134,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Review of Netflix's unrelated reality-competition format 'The Circle' Season 2, not the Mexican thriller 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'The Circle' title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T02:18:06Z",
@@ -151,6 +155,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Listing/index page of critic reviews for the unrelated 2017 film 'El Círculo' (Emma Watson/Tom Hanks adaptation of Dave Eggers' novel), not the 2026 Netflix Mexican series. Surfaced only via the generic 'El Círculo' title collision; sibling individual review page at /criticas/18924/ already ledgered for the same reason.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T06:16:54Z",
@@ -171,6 +176,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "About TV host Joanna Vega-Biestro publicly criticizing actors Osvaldo Benavides and Ludwika Paleta for conditioning their appearance on her show during unrelated film ('Noche de Bodas') promotion; no mention of El Círculo. Surfaced only via an Osvaldo Benavides cast-interview query.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T06:16:54Z",
@@ -191,6 +197,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Same Joanna Vega-Biestro/Ludwika Paleta/Osvaldo Benavides interview-access dispute as the unotv.com row (dated 2024-03-06, predates El Círculo entirely); not about the show. Surfaced only via an Osvaldo Benavides cast-interview query.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T06:16:54Z",
@@ -211,6 +218,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Same Joanna Vega-Biestro/Ludwika Paleta/Osvaldo Benavides dispute over the 'Noche de Bodas' promotional interview; not about El Círculo. Surfaced only via an Osvaldo Benavides cast-interview query.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T06:16:54Z",
@@ -231,6 +239,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Michel Brown discussing pandemic-era anxiety and his 'Pasión de Gavilanes' character Franco Reyes, published 2022-02-04; no connection to El Círculo. Surfaced only via a Michel Brown cast-interview query.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T06:16:54Z",
@@ -271,6 +280,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Unresolved WordPress ?p= id-permalink for the same numeric post id (21730) as the already-ledgered https://eagleeye.news/21730/artsandleisure/review-netflix-series-the-circle-season-2-comes-to-an-end -- a review of Netflix's unrelated 'The Circle' Season 2 reality format, not El Círculo. Same page, second address; direct request 403'd (bot-block) but the shared numeric id confirms identity.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T06:16:54Z",
@@ -311,6 +321,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Confirmed via redirect (curl -L) to https://1147.tcu.edu/2020/03/25/the-circle-review/, a 2020 student-site review of the unrelated 2017 film 'The Circle' (Emma Watson/Tom Hanks), not El Círculo. Surfaced only via the generic title collision.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T06:16:54Z",
@@ -365,6 +376,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "RT show page: boilerplate one-line logline, cast list, and crew/network metadata only; Tomatometer/Popcornmeter both show 0 reviews (no aggregate score exists yet, consistent with show context). No critic excerpts, no episode list, no written analysis. Stripping the metadata table leaves nothing written about the show. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T14:13:40Z",
@@ -528,6 +540,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (social-media-profile dating/influencer show), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T22:08:02Z",
@@ -548,6 +561,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' and its social-media/catfishing dynamics (NYT International Weekly syndicated piece), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T22:08:02Z",
@@ -568,6 +582,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (described as a Gran Hermano-style influencer contest), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T22:08:02Z",
@@ -588,6 +603,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' (Gran Hermano/influencer-era framing), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T22:08:02Z",
@@ -608,6 +624,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Off-topic false positive: about the FlixPatrol franchise/ranking page for Netflix's reality-competition format 'The Circle' across its international adaptations, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T22:08:02Z",
@@ -628,6 +645,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Off-topic false positive: about Netflix's reality-competition format 'The Circle' reaching the Brazilian Top 10, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T22:08:02Z",
@@ -648,6 +666,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Off-topic false positive: about the 'The Circle' reality-TV subculture/meme entry (UK Channel 4 format and its international adaptations, including Netflix's US version premiered 2020-01-01), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T22:08:02Z",
@@ -668,6 +687,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Off-topic false positive: about the AMP mirror of the 'The Circle' reality-TV subculture/meme entry; second address for the knowyourmeme.com row already ledgered this run, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic \"The Circle\" title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-08T22:08:02Z",
@@ -709,6 +729,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "RT season page: Tomatometer shows '1 Reviews' but no percentage/consensus; one critic blurb (Karina Adelgaard, 3/5) is reflected but the page itself is cast/crew/episode metadata, same Rule F family as the already-ledgered bare show page. Original critic review not yet located by this run's queries -- worth targeting by name next sweep.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T02:20:00Z",
@@ -729,6 +750,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "RT reviews-list page: no Tomatometer score, no critic excerpts rendered, same site family as already-ledgered show page. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T02:20:00Z",
@@ -749,6 +771,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Official Netflix title/watch page: synopsis, cast, episode guide, technical/subscription metadata only -- no reviews, interviews, or written analysis. Strips to nothing but a catalog entry; same shape as the already-ruled Apple TV+ locale show pages. Rule F, not Rule C's press-release/BTS-video carve-out (no press release text present).",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T02:20:00Z",
@@ -769,6 +792,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Netflix Media Center page: logline/genre tags only, confirmed no press release, no cast/creative info, no downloadable press materials; links to two unrelated 'what to watch' roundups. Same Rule F family as the Netflix title page and the already-ruled Apple tv-pr/originals pages.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T02:20:00Z",
@@ -809,6 +833,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "TheFutonCritic 'Shows A-Z' directory entry: pure site-navigation boilerplate, no written content about the show at all. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T02:20:00Z",
@@ -829,6 +854,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Ground News aggregation page: compiles/paraphrases coverage from 4 other outlets (Hola News, RPP, Sopitas.com, thefutoncritic.com) with no original reporting of its own. Index/database shape, not a distinct document under Rule I.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T02:20:00Z",
@@ -849,6 +875,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Article is a 2022 Netflix Top 10 report covering The Watcher / The Curse of Bridge Hollow / Someone Borrowed -- entirely unrelated content. Surfaced only via a footer link to an unrelated review on the same site. Rule G.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T02:20:00Z",
@@ -930,6 +957,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FlixPatrol Top 10 ranking tracker: per-country chart table ('Last updated on October 8, 2026'), no written editorial content, not a legal-availability guide so the Rule E scope limit does not apply. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T02:20:00Z",
@@ -950,6 +978,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Official Netflix title-page, cz-en locale variant of the already-ledgered netflix.com/title/80217807 (Rule F listing/database family); same disposition by surface family, no new editorial content.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T06:00:00Z",
@@ -970,6 +999,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Netflix Tudum 'What to Watch' monthly roundup covering dozens of unrelated titles; El Círculo gets a generic 2-sentence synopsis blurb, same genus as other listing/calendar pages already classified Rule F, not a distinct piece about the show.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T06:00:00Z",
@@ -1162,6 +1192,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "RT episode-reviews page (S1E2): no Tomatometer score, no critic excerpts rendered (reviews gated behind an unloaded 'Load More'), same Rule F family as the already-ledgered show/season/reviews-index pages for this title.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T14:13:59Z",
@@ -1182,6 +1213,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Article is about 'El poder de la red' (The Social Reckoning), an unrelated Aaron Sorkin film about Facebook/Frances Haugen, not El Círculo. Surfaced only because both titles contain the word 'red'/'círculo'-adjacent terms in a broad social-reactions query.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T14:13:59Z",
@@ -1202,6 +1234,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Facebook post about a character named 'Cristian' and family member 'Barbara Hidalgo' -- not El Círculo's cast (Amelia/Tomas/Mario/Jaime). Different show/telenovela, surfaced via broad 'reacciones redes sociales' query match.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T14:13:59Z",
@@ -1222,6 +1255,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Post is about an unrelated 'new R-rated Netflix thriller movie' per The Horror Universe's own linked article ('Netflix's New R-Rated Thriller Movie Instantly Takes The...'), not El Círculo. Surfaced only via broad 'Netflix Top 10' query match.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T14:13:59Z",
@@ -1242,6 +1276,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Covers Netflix's H1 2026 (Jan-June) 'What We Watched' viewership report, a period entirely before El Círculo's Oct 7, 2026 premiere; the show is not mentioned. Surfaced only via broad 'Netflix Top 10/ranking' query match.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T14:13:59Z",
@@ -1262,6 +1297,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FlixPatrol Top 10 World ranking tracker: live chart table, no written editorial content (same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/ entry from LEMA-12214); not a legal-availability guide so the Rule E scope limit does not apply. Rule F, not Rule A -- matches established precedent for this page family rather than the JustWatch undateable-snapshot reasoning.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-09T14:13:59Z",
@@ -1505,6 +1541,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "PRODU program database entry: single sentence of boilerplate (\"based on the novel...\") plus a production-company/distributor metadata table and a link to a separate news item. Strips to a catalog card, not editorial content. Rule F.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1526,6 +1563,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "IMDb title page (es-es locale) for 'Los corruptores'/El Círculo. WebFetch returned 403 (IMDb bot-block), but this is the same imdb.com/title/* shape already established as Rule F by family regardless of locale/depth -- cast/episode/rating metadata only, no written editorial content.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1547,6 +1585,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Generic Netflix Tudum homepage/hub (70k-char fetch, confirmed no mention of 'círculo' or 'Inside the Circle' anywhere in the body). Surfaced only via a broad Top10/Tudum-ranking query; spotlights unrelated titles. Rule G.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1568,6 +1607,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Netflix Top 10 report covering 'Under Paris', 'Hierarchy', and 'Sweet Tooth' -- entirely unrelated titles, no mention of El Círculo/Inside the Circle. Surfaced only via a broad Top10-ranking query. Rule G, same shape as the already-ledgered 2022 Top10 report on the same site.",
+      "skipMethod": "title_snippet_only",
       "reviewable": false,
       "history": [
         {
@@ -1589,6 +1629,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Watchmode streaming-availability database page: metadata fields (rating, year, language, genre), episode/cast navigation links, provider list. The one sentence of plot summary is a functional description, not editorial prose. No publish date of its own. Rule F.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1610,6 +1651,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "TheFutonCritic 'Shows A-Z' listings page: a bare program directory/schedule entry, no written editorial content about the show. Rule F.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1631,6 +1673,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FilmAffinity title page: credits/trailers/image-gallery navigation and a ratings/catalog card, same database shape as IMDb. Actual 'Pro Reviews' content lives behind a separate sub-URL, not on this page. Rule F.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1757,6 +1800,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "JustWatch show page: structured streaming-availability box + JustWatch Daily Streaming Chart ranking data (rank 58, Top 10: 0 days, Top 100/1000: 3 days) and a cached IMDb rating (3.5); only prose is a single-sentence synopsis. Strip test leaves no written editorial content about the show -- Rule F.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1778,6 +1822,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Tudum article is a historical list of Netflix's Sunset Boulevard billboard campaigns (entries from 2021-2022 era); does not mention El Círculo/Inside the Circle anywhere. Surfaced only via broad \"Tudum ranking\" query match.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1799,6 +1844,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Tudum article is about the unrelated Netflix series 'North of North'; no mention of El Círculo/Inside the Circle. Surfaced only via broad \"Tudum ranking\" query match.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1820,6 +1866,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Decider's current Netflix Top 10 Shows list (East of Eden, The Gentlemen S2, etc.) -- confirmed via full-text search of the fetched article body that neither \"Circle\" nor \"Círculo\" appears anywhere; the show is not on this week's list. Surfaced only via broad \"Top 10\" query match.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1841,6 +1888,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "IMDb news tab for tt27787857 ('As Viúvas das Quintas-Feiras', an unrelated 2023 Brazilian/Portuguese series); the page's primary subject is that title, not El Círculo. It happens to carry a syndicated teaser blurb mentioning 'Inside The Circle' via IMDb's cross-title news aggregator, but the page itself is about a different show. Surfaced only via broad query match.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -1884,6 +1932,7 @@
       "skipReason": "editorial_listing_or_database",
       "reviewable": false,
       "skipNote": "FlixPatrol per-country Top 10 chart page (Ecuador): same ranking-table template already ledgered under flixpatrol.com/top10/netflix (no locale segment); strip the chart and nothing written about the show remains. Rule F, same family as the already-ledgered generic top10 page.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-10T06:14:07Z",
@@ -1905,6 +1954,7 @@
       "skipReason": "editorial_listing_or_database",
       "reviewable": false,
       "skipNote": "JustWatch show page, India locale: identical template to the already-ledgered justwatch.com/us/tv-show/los-corruptores (streaming-availability box + ranking chart + cached IMDb rating, single-sentence synopsis only). Rule F by surface family, same as the US locale page.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-10T06:14:07Z",
@@ -1926,6 +1976,7 @@
       "skipReason": "editorial_listing_or_database",
       "reviewable": false,
       "skipNote": "BBFC classification certificate page: content ratings, consumer-advice box, cast/director/runtime metadata, and per-episode classification details only (classified 06/10/2026); no written analysis or review content. Strip test leaves nothing written about the show -- Rule F, same shape as the already-ledgered RT/JustWatch database pages.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-10T06:14:07Z",
@@ -1988,6 +2039,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Post ('Miércoles de reseñas') promotes three unrelated comedy/book titles (Espejismos entre la Luz y la Oscuridad, La Telaraña en la Cuadratura del Círculo, La Piel del Mar) via cuspidelibros/yenny_elateneo retailers; matched only on the word 'círculo' in one of the unrelated titles, not about the Netflix series El Círculo/Inside the Circle at all.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2080,6 +2132,7 @@
       "skipReason": "editorial_listing_or_database",
       "reviewable": false,
       "skipNote": "IMDb title record for El Círculo/Inside the Circle: logline, cast/crew, episode metadata only, no written editorial content. Rule F (IMDb title records are Rule F by family, per LEMA-10630 ruling).",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-10T10:00:00Z",
@@ -2101,6 +2154,7 @@
       "skipReason": "editorial_listing_or_database",
       "reviewable": false,
       "skipNote": "Official Netflix title-page, sv-en QR-redirect locale variant of the already-ledgered netflix.com/title/80217807 (Rule F listing/database family): synopsis, episode guide, no written analysis. Same disposition as the already-ledgered cz-en locale variant.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-10T10:00:00Z",
@@ -2122,6 +2176,7 @@
       "skipReason": "editorial_listing_or_database",
       "reviewable": false,
       "skipNote": "Official Netflix title-page, Gibraltar (gi) locale variant of the already-ledgered netflix.com/title/80217807 (Rule F listing/database family): synopsis, episode guide, subscription pricing only, no written analysis.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-10T10:00:00Z",
@@ -2143,6 +2198,7 @@
       "skipReason": "editorial_off_topic_false_positive",
       "reviewable": false,
       "skipNote": "Article is a list of 20 Netflix original movies expected in 2027 (Extraction 3, Time Out, etc.); confirmed via full-text fetch that neither 'Circle' nor 'Círculo' appears anywhere in the body. Surfaced only via broad 'Tudum ranking' query match.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-10T10:00:00Z",
@@ -2163,6 +2219,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Page is a review of the unrelated novel ‘El círculo de los últimos libreros’ by Sylvie Baron (Revista Tarántula's Letras y Libros section), not the Netflix series. Surfaced only via broad ‘crítica’ query match on the generic word ‘círculo’.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2268,6 +2325,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Audiovisual Identity Database entry about Netflix's corporate logo/sting history (the 'TUDUM' sound, animated ident); no mention of El Círculo/Inside the Circle anywhere. Surfaced only via broad 'Netflix Tudum' query match.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2289,6 +2347,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Tudum video page for the unrelated Netflix series 'Manifest' (season 4, episode 1 clip); no mention of El Círculo/Inside the Circle. Surfaced only via broad 'Tudum ranking' query matching the phrase 'stay Inside'.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2310,6 +2369,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Generic article about Netflix's 2020 Top 10 feature launch (published 2020-02-24); no mention of El Círculo/Inside the Circle anywhere, only example titles cited are 'To All The Boys I Loved Before: P.S. I Still Love You,' 'Sex Education,' and 'Locke & Key.' Surfaced only via broad 'Top 10' query match.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2331,6 +2391,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "WordPress ?p= id-permalink 301-redirects to https://worldscreen.com/netflix-launches-top-10-list-popular-titles/, the same generic Netflix Top 10 feature-launch topic as the already-ledgered wgrd.com article; no El Círculo/Inside the Circle mention. Surfaced only via broad 'Top 10' query match.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2353,6 +2414,7 @@
       "skipReason": "editorial_listing_or_database",
       "reviewable": false,
       "skipNote": "Live multi-region Top 10 ranking dashboard (TV series), not a dedicated article: El Círculo/Inside the Circle appears only as a data row (Global #15, Spain #8, Mexico #2 at time of fetch) with no direct link or written text about the show. Stripping the ranking grid leaves nothing written about the show specifically. Rule F, same disposition as the already-ledgered FlixPatrol/JustWatch ranking-tracker entries.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-10T18:00:00Z",
@@ -2373,6 +2435,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "FlixPatrol trailers page for Netflix's unrelated 2020 reality-competition format 'The Circle' ('the-circle-2020' slug), not the 2026 Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'The Circle' title collision documented in this routine's known-noise note, same family as the already-ledgered flixpatrol.com/franchise/the-circle entry.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2436,6 +2499,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FlixPatrol streaming-availability sub-page: chart/platform availability table only, no written editorial content. Same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/ bare show page.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2478,6 +2542,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Pure database/listing page: chart rankings across 40+ countries, IMDb rating, platform availability, bare one-line synopsis, cast list. No written analysis or original commentary about the show. Rule F.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -2666,6 +2731,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Generic database/listing entry (title metadata, episode count, TV-MA rating, numeric score, one-paragraph synopsis only); no editorial analysis, critical commentary, or original journalism about the show. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-11T14:14:11Z",
@@ -2749,6 +2815,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FlixPatrol Top 10 United States ranking tracker: live chart table, no written editorial content about El Círculo/Inside the Circle specifically (same Rule F family as the already-ledgered flixpatrol.com/top10/netflix world page and flixpatrol.com/title/inside-the-circle/streaming entry).",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-11T18:15:14Z",
@@ -2849,6 +2916,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Post from @NotaCirculoRojo (Revista Círculo Rojo, a Mexican Tamaulipas regional news outlet) reporting on a US Coast Guard shooting incident in Tamaulipas -- unrelated to the Netflix series El Círculo/Inside the Circle. Surfaced only via the generic 'círculo' name collision with the outlet brand.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-11T22:00:00Z",
@@ -2869,6 +2937,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "IMDb's 'External reviews' page for El Círculo/Inside the Circle: a pure link directory to other outlets' review pages (title, outlet, byline, language tag per row), no written editorial content of its own. Strip the list and nothing remains -- Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-12T02:00:00Z",
@@ -2889,6 +2958,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Page is a review of a 2015 Netflix film also titled 'El Círculo' (English title 'The Circle'/'Circulo', about 50 people trapped and dying every two minutes) -- an unrelated title that shares the generic Spanish name with our 2026 Mexican thriller. Surfaced only by the broad 'El Círculo' critica query, per Rule G.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-12T02:00:00Z",
@@ -2909,6 +2979,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Bare streaming-availability aggregator (JustWatch/Reelgood-style): one synopsis sentence, otherwise platform availability, ratings pulled from TMDB/IMDb/RT/Metacritic, episode/cast data tables. No original written analysis of the show -- Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-12T02:00:00Z",
@@ -2929,6 +3000,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "A Netflix Top 10 weekly report (week ending Mar 30, 2025) covering Adolescence, The Electric State, The Life List, etc. -- no mention of El Círculo/Inside the Circle anywhere on the page. Surfaced only by the broad 'Netflix Top 10 Tudum ranking' query, per Rule G.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-12T02:00:00Z",
@@ -2967,6 +3039,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "StreamRank chart/database page for the title: ranking tables, platform availability, IMDb/TMDB ratings, cast list, and a single boilerplate plot synopsis sentence (\"Four lifelong friends are caught in a web of blackmail...\"). No original written analysis or commentary about the show. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-12T10:16:11Z",
@@ -2987,6 +3060,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FlixPatrol per-title TOP10 chart page: ranking table across countries plus the same single boilerplate synopsis sentence, no written editorial content. Same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/streaming/ sub-page.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-12T10:16:11Z",
@@ -3007,6 +3081,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Generic daily Netflix Italy TOP10 chart page covering many unrelated titles; El Círculo/Inside the Circle is one row in a multi-title ranking grid with no written content about it specifically -- same shape as the EPG/programming-grid example in the Rule F definition. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-12T10:16:11Z",
@@ -3090,6 +3165,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Unrelated Netflix Tudum article about 'Heartstopper Forever', not El Círculo / Inside the Circle. Surfaced only via a broad Tudum/Top-10-ranking query (LEMA-12534 rotation query 2); same Rule-G shape as prior off-topic false positives from the generic title collision and Netflix-wide query surface.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-13T02:10:36Z",
@@ -3110,6 +3186,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "CrossBinge title page: one boilerplate logline sentence ('Four lifelong friends are caught in a web of blackmail when a leaked video threatens to expose the secrets that could destroy their friendship.'), cast list, streaming-availability widget, and similar-series recommendations. No written analysis of the show, no publish date. Same database/tracker shape as JustWatch/Reelgood entries already ledgered. Rule F.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -3148,6 +3225,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "r/horror thread asking about the 2015 film 'Circle' (50 people wake up in a room, forced to vote on who dies), unrelated to the 2026 Mexican Netflix series El Círculo / Inside the Circle. Surfaced only via the generic site:reddit.com broad query. Rule G.",
+      "skipMethod": "title_snippet_only",
       "reviewable": false,
       "history": [
         {
@@ -3169,6 +3247,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "r/TheCircleTV is the subreddit for Netflix's reality-TV format 'The Circle' (UK format, premiered 2018), an unrelated show that happens to share the word 'círculo'/'circle' in its title. Not the 2026 Mexican thriller El Círculo. Rule G.",
+      "skipMethod": "title_snippet_only",
       "reviewable": false,
       "history": [
         {
@@ -3190,6 +3269,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "r/television thread discussing Netflix's reality-TV format 'The Circle' ('shallow trash reality TV'), unrelated to the 2026 Mexican thriller El Círculo / Inside the Circle. Rule G.",
+      "skipMethod": "title_snippet_only",
       "reviewable": false,
       "history": [
         {
@@ -3211,6 +3291,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "r/blackmirror thread recommending the unrelated 2015 film 'Circle' (low-budget sci-fi thriller), not the 2026 Mexican Netflix series El Círculo. Rule G.",
+      "skipMethod": "title_snippet_only",
       "reviewable": false,
       "history": [
         {
@@ -3232,6 +3313,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "r/television review thread for Netflix's reality-TV format 'The Circle', unrelated to the 2026 Mexican thriller El Círculo / Inside the Circle. Rule G.",
+      "skipMethod": "title_snippet_only",
       "reviewable": false,
       "history": [
         {
@@ -3379,6 +3461,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Apple TV episode-review page (Apple TV+ editorial \"Reviews de cine\" show) about the unrelated 2017 Emma Watson/Tom Hanks film \"The Circle\" (Dave Eggers adaptation), not the 2026 Netflix Mexican series \"El Círculo\"/\"Inside the Circle\". Surfaced only via the generic title collision, same pattern as the already-ledgered ecartelera.com/peliculas/el-circulo-2016 entry.",
+      "skipMethod": "body_fetch",
       "reviewable": false,
       "history": [
         {
@@ -3421,6 +3504,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Date-stamped daily FlixPatrol world Top 10 chart page, same family as the already-ledgered flixpatrol.com/top10/netflix/world/2026-10-12 and other dated/locale snapshot pages: per-title ranking table across many unrelated shows, no written editorial content about El Círculo specifically. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-13T18:30:00Z",
@@ -3441,6 +3525,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FlixPatrol per-country Top 10 chart page (Italy), date-stamped 2026-10-13: same ranking-table template already ledgered under flixpatrol.com/top10/netflix/italy/ (undated) and flixpatrol.com/top10/netflix/world/2026-10-12 (dated world); strip the chart and nothing written about the show remains. Rule F, same family.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-13T18:30:00Z",
@@ -3461,6 +3546,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FlixPatrol per-country Top 10 chart page (Réunion), date-stamped 2026-10-13: same ranking-table template already ledgered under multiple other locale/date variants (world, Italy, Ecuador, United States); per-title ranking grid, no written editorial content about El Círculo specifically. Rule F, same family.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-13T18:30:00Z",
@@ -3481,6 +3567,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "El País show-hub page: título/estreno/nacionalidad metadata block, one-line synopsis, embedded official trailer, and an 'Estrenos de la semana' calendar widget. No written editorial content specifically about El Círculo beyond that metadata -- strips to nothing per Rule F test.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-13T22:10:31Z",
@@ -3501,6 +3588,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "About the 2017 film 'The Circle' (Tom Hanks, Emma Watson), a 2017-05-05 review confirmed via search snippet and URL date -- unrelated to the 2026 Netflix series El Círculo. Surfaced only because 'El Círculo'/'El círculo' is the Spanish title shared by the two works (WebFetch blocked by the site; off-topic confirmed independently from the indexed snippet content and the URL's 2017 dateline).",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-13T22:10:31Z",
@@ -3555,6 +3643,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "Netflix's own India-locale title/catalog page for the show: title block, trailer, per-episode synopses, cast/genre/audio metadata, 'More Like This' recommendations, and pricing plans -- no original written journalism or editorial content about the show. Strip test leaves nothing but catalog data. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T02:30:00Z",
@@ -3615,6 +3704,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "IMDb title record for a different, unrelated 2021 romantic dramedy also titled 'Inside the Circle' -- title collision only, confirmed via IMDb's own plot summary (no connection to the 2026 Netflix/Jorge Zepeda Patterson series). Rule G.",
+      "skipMethod": "title_snippet_only",
       "history": [
         {
           "attempt": "2026-10-14T06:30:00Z",
@@ -3635,6 +3725,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "r/TheCircleTV subreddit (Netflix's unrelated reality show 'The Circle') -- thread lists unrelated English-language Netflix Top 10 titles, no mention of El Círculo/Inside the Circle. Rule G, the same reality-show-title collision this dataset's known-risk note anticipated.",
+      "skipMethod": "title_snippet_only",
       "history": [
         {
           "attempt": "2026-10-14T06:30:00Z",
@@ -3655,6 +3746,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Generic Netflix Top 10/Tudum all-time-rankings reel (Money Heist et al.) surfaced by the Top10/Tudum query -- no mention of El Círculo/Inside the Circle anywhere in caption or comments. Rule G query noise.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T06:30:00Z",
@@ -3712,6 +3804,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "BBC Weather article (9 Oct 2026) about a polar-vortex-driven snow event on UK roads; no relation to the show. Surfaced only via a broad ES social-chatter query on the generic word \"círculo\".",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T10:30:00Z",
@@ -3732,6 +3825,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "BBC Weather article about flooding from Hurricane Polo in Puerto San Carlos, Baja California Sur, Mexico; no relation to the show. Surfaced only via a broad ES social-chatter query.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T10:30:00Z",
@@ -3752,6 +3846,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "City of El Cerrito, California municipal government page about city council meetings and agendas; no relation to the show. Surfaced via title-collision on \"El Ce[rrito]\"/\"El Círculo\" style broad query match.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T10:30:00Z",
@@ -3772,6 +3867,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Inter-American Development Bank (IADB) page describing its Central America regional country office (\"América en el Centro\"); no relation to the show. Surfaced via broad query noise on \"el\"/\"centro\" fragments.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T10:30:00Z",
@@ -3792,6 +3888,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Ogden City, Utah municipal website listing for El Monte Golf Course (facility details, ratings, tee-time booking); no relation to the show. Surfaced via broad query noise on \"El\" fragment.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T10:30:00Z",
@@ -3812,6 +3909,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "San Diego County Library El Cajon branch page (hours, address, events); no relation to the show. Surfaced via broad query noise on \"El\" fragment.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T10:30:00Z",
@@ -3832,6 +3930,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Bare TikTok homepage with no specific post or content about the show; not a usable candidate under any rule, surfaced as an undifferentiated hit from a social-chatter query.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T10:30:00Z",
@@ -3852,6 +3951,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Netflix Top 10 report entirely about Animals (23.8M views) and Below (17M views); no mention of El Círculo / Inside the Circle anywhere on the page. Surfaced only via the broad Top 10/Tudum ranking query. Rule G.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T14:09:24Z",
@@ -3872,6 +3972,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "What's on Netflix Top 10 Viewership stats-search page for Inside The Circle: auto-generated chart/rank/points data table plus a pulled synopsis only, no original written analysis. Stripping the data table leaves nothing written about the show. Distinct from the site's narrative Top 10 Report articles (already tracked under type Feature), which are written journalism and remain in scope. Rule F.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T14:09:24Z",
@@ -3929,6 +4030,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_user_review_aggregate",
       "skipNote": "AlloCiné critiques spectateurs tab (viewer/audience review aggregator) for El Círculo: https://www.allocine.fr/series/ficheserie-1000003700/critiques/. 2 audience ratings as of this remediation (2026-10-14): patrick torres (2.5/5, Oct 12, 2026) finds the opening interesting but the rest unoriginal; Laurent B. (3.5/5, Oct 10, 2026) praises the dark atmosphere and power/loyalty themes. Critiques presse (press) section confirmed empty as of 2026-10-14 -- no professional critic reviews rendered on this page. Rule H (editorial_user_review_aggregate, LEMA-10162/LEMA-10163) governs this candidate; the originating precedent is this exact surface on the Las Azules sibling dashboard (allocine.fr/series/ficheserie-31977/critiques/, LEMA-10163). Removed from data.json, where it had been committed under Rule C as a stopgap (LEMA-12651) because Rule H was absent from this repo's ledger readme at the time -- that gap is fixed in this same commit (LEMA-12653). Independently of the Rule C/Rule H question, the row's ts=20261012 was also a standalone Rule A violation: it was taken from the newest audience comment visible at crawl time, not a publish date for the document. This aggregation page has no publish date of its own -- a date belonging to one user's comment is not a publish date for the page, and index.html's sorting and KPI counts read ts, not the excerpt, so the in-excerpt disclaimer did not repair it. This is the identical Rule A crawler-artifact violation already ruled on for the Las Azules AlloCiné row (ts=20251011, newest review at crawl time), which was removed on exactly that ground (LEMA-10162). Per Rule H scope limit 1, AlloCiné's separate critiques presse surface for the same title was mined as a lead source in this same commit; see https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/ for the harvest record.",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T22:40:00Z",
@@ -3949,6 +4051,7 @@
       "permanentSkip": true,
       "skipReason": "editorial_user_review_aggregate",
       "skipNote": "AlloCiné critiques presse tab (press-critic aggregator, distinct from the critiques spectateurs tab) for El Círculo: https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/. Fetched live 2026-10-14 to discharge Rule H scope limit 1's mining duty. Zero-yield negative result, per Rule A (never assumed): the press-reviews section renders no content and no empty-state placeholder -- the only review content on this URL is the same 'Critiques Spectateurs' (audience) section already ledgered at https://www.allocine.fr/series/ficheserie-1000003700/critiques/ (2 spectator ratings, patrick torres 2.5/5 Oct 12 and Laurent B. 3.5/5 Oct 10). No press outlets, bylines, or scores to mine as of this check. El Círculo premiered 2026-10-07; French press coverage may still be forthcoming. Ledgered under Rule H per scope limit 1: the aggregation page itself gets no row, with or without press content, but the sweep must keep checking it. A weekly Pass 0b re-mine step naming this exact URL is added to the El Círculo Media Sweep routine in this same commit, bounded through 2026-12-16 (LEMA-12653).",
+      "skipMethod": "body_fetch",
       "history": [
         {
           "attempt": "2026-10-14T22:40:00Z",
