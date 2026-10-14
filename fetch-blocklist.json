@@ -3701,7 +3701,147 @@
           "note": "WebFetch returned no usable content (Instagram login wall, no caption/date extracted). No Firecrawl attempt needed to confirm pattern already established for this platform. failCount=1, no cooldown yet (needs 3 consecutive)."
         }
       ]
+    },
+    {
+      "url": "https://www.bbc.com/weather/articles/c6pqg9j7d2w7o",
+      "firstSeen": "2026-10-14T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "BBC Weather article (9 Oct 2026) about a polar-vortex-driven snow event on UK roads; no relation to the show. Surfaced only via a broad ES social-chatter query on the generic word \"círculo\".",
+      "history": [
+        {
+          "attempt": "2026-10-14T10:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12631",
+          "note": "BBC Weather article (9 Oct 2026) about a polar-vortex-driven snow event on UK roads; no relation to the show. Surfaced only via a broad ES social-chatter query on the generic word \"círculo\"."
+        }
+      ]
+    },
+    {
+      "url": "https://www.bbc.com/weather/articles/cmlye0d7q7zno",
+      "firstSeen": "2026-10-14T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "BBC Weather article about flooding from Hurricane Polo in Puerto San Carlos, Baja California Sur, Mexico; no relation to the show. Surfaced only via a broad ES social-chatter query.",
+      "history": [
+        {
+          "attempt": "2026-10-14T10:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12631",
+          "note": "BBC Weather article about flooding from Hurricane Polo in Puerto San Carlos, Baja California Sur, Mexico; no relation to the show. Surfaced only via a broad ES social-chatter query."
+        }
+      ]
+    },
+    {
+      "url": "https://www.elcerrito.gov/482/City-Meetings-and-Agendas",
+      "firstSeen": "2026-10-14T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "City of El Cerrito, California municipal government page about city council meetings and agendas; no relation to the show. Surfaced via title-collision on \"El Ce[rrito]\"/\"El Círculo\" style broad query match.",
+      "history": [
+        {
+          "attempt": "2026-10-14T10:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12631",
+          "note": "City of El Cerrito, California municipal government page about city council meetings and agendas; no relation to the show. Surfaced via title-collision on \"El Ce[rrito]\"/\"El Círculo\" style broad query match."
+        }
+      ]
+    },
+    {
+      "url": "https://www.iadb.org/en/who-we-are/country-offices/america-en-el-centro",
+      "firstSeen": "2026-10-14T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Inter-American Development Bank (IADB) page describing its Central America regional country office (\"América en el Centro\"); no relation to the show. Surfaced via broad query noise on \"el\"/\"centro\" fragments.",
+      "history": [
+        {
+          "attempt": "2026-10-14T10:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12631",
+          "note": "Inter-American Development Bank (IADB) page describing its Central America regional country office (\"América en el Centro\"); no relation to the show. Surfaced via broad query noise on \"el\"/\"centro\" fragments."
+        }
+      ]
+    },
+    {
+      "url": "https://www.ogdencity.gov/Facilities/Facility/Details/El-Monte-Golf-Course-5",
+      "firstSeen": "2026-10-14T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Ogden City, Utah municipal website listing for El Monte Golf Course (facility details, ratings, tee-time booking); no relation to the show. Surfaced via broad query noise on \"El\" fragment.",
+      "history": [
+        {
+          "attempt": "2026-10-14T10:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12631",
+          "note": "Ogden City, Utah municipal website listing for El Monte Golf Course (facility details, ratings, tee-time booking); no relation to the show. Surfaced via broad query noise on \"El\" fragment."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sdcl.org/locations/13/",
+      "firstSeen": "2026-10-14T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "San Diego County Library El Cajon branch page (hours, address, events); no relation to the show. Surfaced via broad query noise on \"El\" fragment.",
+      "history": [
+        {
+          "attempt": "2026-10-14T10:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12631",
+          "note": "San Diego County Library El Cajon branch page (hours, address, events); no relation to the show. Surfaced via broad query noise on \"El\" fragment."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/",
+      "firstSeen": "2026-10-14T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Bare TikTok homepage with no specific post or content about the show; not a usable candidate under any rule, surfaced as an undifferentiated hit from a social-chatter query.",
+      "history": [
+        {
+          "attempt": "2026-10-14T10:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12631",
+          "note": "Bare TikTok homepage with no specific post or content about the show; not a usable candidate under any rule, surfaced as an undifferentiated hit from a social-chatter query."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-14T06:30:00Z"
+  "lastUpdated": "2026-10-14T10:30:00Z"
 }
