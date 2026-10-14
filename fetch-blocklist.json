@@ -3881,7 +3881,23 @@
           "note": "What's on Netflix Top 10 Viewership stats-search page for Inside The Circle: auto-generated chart/rank/points data table plus a pulled synopsis only, no original written analysis. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://diezminutos.es/teleprograma/series-tv/a71458100/romper-el-circulo-netflix-pelicula-libro-colleen-hoover",
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Diez Minutos (Hearst España) piece is about the unrelated Netflix film 'Romper el círculo' (Colleen Hoover's 'It Ends With Us'), not Lemon's El Círculo/Los Corruptores. Surfaced only via the generic 'círculo' broad-query match. Rule G.",
+      "reviewable": false,
+      "cooldownUntil": null,
+      "failCount": 0
+    },
+    {
+      "url": "https://flixpatrol.com/title/inside-the-circle/hours",
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol per-title Hours chart sub-page: viewing-hours ranking table plus the same single boilerplate synopsis sentence and IMDb score, no original written analysis. Same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/ and /top10/ sub-pages.",
+      "reviewable": false,
+      "cooldownUntil": null,
+      "failCount": 0
     }
   ],
-  "lastUpdated": "2026-10-14T14:09:24Z"
+  "lastUpdated": "2026-10-14T18:08:54Z"
 }
