@@ -1749,5 +1749,89 @@
     "type": "Review",
     "excerpt": "Values-focused review site rates the series 'TRADITIONAL LEAN' (+16.34 TRAD), judging it prioritizes classic moral questions of trust, loyalty, and consequence over political messaging.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Mega Urbe",
+    "headline": "El Círculo: ficción rebasada",
+    "url": "https://megaurbe.com.mx/el-circulo-netflix-resena/",
+    "date": "Oct 10, 2026",
+    "ts": 20261010,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Review",
+    "excerpt": "Praises the Netflix thriller's cast and entertainment value but argues it softens novel Los Corruptores' corruption critique, drawing a real-world parallel to a journalist's recent killing in Oaxaca. Verdict: the series 'domestica la rabia de la novela.'",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Late Show (Argentina)",
+    "headline": "“El Círculo”, el policial mexicano de Netflix que atrapa desde el primer capítulo y no da respiro",
+    "url": "https://lateshow.com.ar/el-circulo-el-policial-mexicano-de-netflix-que-atrapa-desde-el-primer-capitulo-y-no-da-respiro/",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Review",
+    "excerpt": "Argentine outlet review praising pacing, cast, and Michel Brown's performance in the eight-episode Mexican crime series. Author's verdict: 'En mi opinión, El Círculo es una excelente serie.'",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Martin Cid Magazine (Spain)",
+    "headline": "El círculo en Netflix: un vídeo filtrado convierte a cuatro amigos en rehenes de sus secretos",
+    "url": "https://es.martincid.com/television/el-circulo-en-netflix-un-video-filtrado-convierte-a-cuatro-amigos-en-rehenes-de-sus-secretos/",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Feature",
+    "excerpt": "Spain-edition preview/feature (distinct byline and article from the already-tracked LatAm-edition piece) on the premise, cast, and themes: argues the series is less about the leaked video than about loyalty and complicity within a powerful circle of friends.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Notitel",
+    "headline": "Crítica de la serie de Netflix \"El círculo\" para estudiantes de noveno grado",
+    "url": "https://www.notitel.com/2026/10/critica-de-la-serie-de-netflix-el.html",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Review",
+    "excerpt": "Review of the Netflix thriller framed for a student audience: praises the cast and tension while noting the demands of following multiple simultaneous storylines.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Movieplayer.it",
+    "headline": "Dentro il cerchio, recensione: una serie thriller che indaga tra i palazzi del potere",
+    "url": "https://movieplayer.it/articoli/dentro-il-cerchio-recensione-serie-thriller-netflix_38050/",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "lang": "IT",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Italian review (2/5) of the eight-episode series under its Italian title 'Dentro il cerchio', adapted from novel I corruttori (Los Corruptores): finds too many characters and forced twists, judges neither the protagonists nor the themes are developed in depth.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Flixlândia",
+    "headline": "'Dentro do Círculo' vai fazer você desconfiar dos seus melhores amigos",
+    "url": "https://flixlandia.com.br/dentro-do-circulo-serie-netflix-critica-final-explicado/",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "PT",
+    "market": "Latin America",
+    "type": "Review",
+    "excerpt": "Brazilian review of the Mexican political thriller (Portuguese title 'Dentro do Círculo'), covering plot, ending explained, the source novel Os Corruptores, cast, and Season 2 prospects.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "AlloCiné (audience reviews)",
+    "headline": "El Círculo – Critiques spectateurs (AlloCiné)",
+    "url": "https://www.allocine.fr/series/ficheserie-1000003700/critiques/",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "lang": "FR",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "AUDIENCE RATINGS ONLY, no professional press reviews yet on this page (Critiques presse tab empty). 2 spectator ratings as of this sweep: patrick torres (2.5/5, Oct 12) praises the opening but finds the investigation increasingly implausible and telenovela-like; Laurent B. (3.5/5, Oct 10) praises the dark atmosphere and power-dynamics themes. Included per Rule C pending a ruling on audience-only aggregator pages -- see LEMA-12651.",
+    "storyGroup": null
   }
 ]
