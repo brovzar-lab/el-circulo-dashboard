@@ -3564,7 +3564,144 @@
           "note": "Netflix own-platform locale title/catalog page, no editorial content. Rule F (editorial_listing_or_database)."
         }
       ]
+    },
+    {
+      "url": "https://gobernantes.com/vernota.php?id=531033",
+      "firstSeen": "2026-10-14T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Gobernantes.com (Veracruz) reprints El Heraldo de México's Oct 11 feature verbatim, attributed to that outlet -- same headline, same article already tracked under heraldodemexico.com.mx/.../906061.html. Rule I second address.",
+      "history": [
+        {
+          "attempt": "2026-10-14T06:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12597",
+          "note": "Syndicated reprint of already-tracked El Heraldo de México article (906061.html), credited to that outlet. Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/planetadelibrosmx/videos/1719472739116974",
+      "firstSeen": "2026-10-14T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Same 'Platicamos con el elenco de El Círculo' cast-interview content cross-posted by the same org (Planeta de Libros México) to Facebook; Instagram reel (instagram.com/reel/Dea9-c6E1M5, this run) kept as the primary row since it carries a confirmed absolute date (Oct 12 via video alt text) that this FB copy doesn't surface. Rule I second address, same org cross-platform repost.",
+      "history": [
+        {
+          "attempt": "2026-10-14T06:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12597",
+          "note": "Cross-platform repost of the same interview already admitted via the Instagram reel. Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/title/tt8413220",
+      "firstSeen": "2026-10-14T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "IMDb title record for a different, unrelated 2021 romantic dramedy also titled 'Inside the Circle' -- title collision only, confirmed via IMDb's own plot summary (no connection to the 2026 Netflix/Jorge Zepeda Patterson series). Rule G.",
+      "history": [
+        {
+          "attempt": "2026-10-14T06:30:00Z",
+          "method": "search-snippet",
+          "status": 200,
+          "issue": "LEMA-12597",
+          "note": "Confirmed off-topic: different title (tt8413220, 2021 romantic dramedy), pure name collision with our show's international title."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/TheCircleTV/comments/1cc8tdv/netflix_top_10_watched",
+      "firstSeen": "2026-10-14T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/TheCircleTV subreddit (Netflix's unrelated reality show 'The Circle') -- thread lists unrelated English-language Netflix Top 10 titles, no mention of El Círculo/Inside the Circle. Rule G, the same reality-show-title collision this dataset's known-risk note anticipated.",
+      "history": [
+        {
+          "attempt": "2026-10-14T06:30:00Z",
+          "method": "search-snippet",
+          "status": 200,
+          "issue": "LEMA-12597",
+          "note": "Off-topic: subreddit for the unrelated Netflix reality format 'The Circle', no mention of our show in the thread."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/reel/DKXxwlFPBCI",
+      "firstSeen": "2026-10-14T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Generic Netflix Top 10/Tudum all-time-rankings reel (Money Heist et al.) surfaced by the Top10/Tudum query -- no mention of El Círculo/Inside the Circle anywhere in caption or comments. Rule G query noise.",
+      "history": [
+        {
+          "attempt": "2026-10-14T06:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12597",
+          "note": "Off-topic: general Netflix Tudum/Top10 countdown content, show never mentioned."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/ar/title/80217807",
+      "firstSeen": "2026-10-14T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix's own Argentina-locale title/catalog page -- same established Rule F family as the India (netflix.com/in/title/80217807, LEMA-12594) and other locale variants: title block, episode synopses, cast/genre metadata, no original editorial content.",
+      "history": [
+        {
+          "attempt": "2026-10-14T06:30:00Z",
+          "method": "family-match",
+          "status": 200,
+          "issue": "LEMA-12597",
+          "note": "Locale variant of the already-ledgered Netflix own-platform title-page family. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/p/DedXmxDtVnp",
+      "firstSeen": "2026-10-14T06:30:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-14T06:30:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-14T06:30:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12597",
+          "note": "WebFetch returned no usable content (Instagram login wall, no caption/date extracted). No Firecrawl attempt needed to confirm pattern already established for this platform. failCount=1, no cooldown yet (needs 3 consecutive)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-14T02:30:00Z"
+  "lastUpdated": "2026-10-14T06:30:00Z"
 }

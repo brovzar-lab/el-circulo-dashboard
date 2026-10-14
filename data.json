@@ -1665,5 +1665,29 @@
     "type": "Review",
     "excerpt": "Spoiler-free Hindi-language review: calls it a character-driven murder-mystery thriller blending friendship, betrayal, corruption and secrets; praises the mystery/character development but flags uneven, sometimes repetitive pacing after the second episode.",
     "storyGroup": "premiere-reviews-20261007"
+  },
+  {
+    "outlet": "LadeProdu (Instagram)",
+    "headline": "Reel: reacción al estreno de El Círculo, elogia la dirección de actores",
+    "url": "https://instagram.com/reel/DecKmpjROdX",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "LadeProdu (45K seguidores, cuenta mexicana de cine) reacciona al estreno de El Círculo en Netflix Latinoamérica, elogia la dirección de actores y promete revelar quiénes son los directores en una futura publicación.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Planeta de Libros México (Instagram)",
+    "headline": "Platicamos con el elenco de El Círculo, la impactante serie de Netflix",
+    "url": "https://instagram.com/reel/Dea9-c6E1M5",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Reel del editor del libro Los corruptores (Planeta de Libros México) con entrevistas al elenco de El Círculo sobre la adaptación de la novela de Jorge Zepeda Patterson.",
+    "storyGroup": "planeta-libros-cast-interview-20261012"
   }
 ]
