@@ -3544,7 +3544,27 @@
           "note": "WebFetch returned only the page shell (no video description/date, login wall). Firecrawl: site not supported (\"we do not support this site\"). Full fallback chain exhausted. failCount=1, no cooldown yet (needs 3 consecutive)."
         }
       ]
+    },
+    {
+      "url": "https://www.netflix.com/in/title/80217807",
+      "firstSeen": "2026-10-14T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix's own India-locale title/catalog page for the show: title block, trailer, per-episode synopses, cast/genre/audio metadata, 'More Like This' recommendations, and pricing plans -- no original written journalism or editorial content about the show. Strip test leaves nothing but catalog data. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-14T02:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12594",
+          "note": "Netflix own-platform locale title/catalog page, no editorial content. Rule F (editorial_listing_or_database)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-13T22:10:31Z"
+  "lastUpdated": "2026-10-14T02:30:00Z"
 }

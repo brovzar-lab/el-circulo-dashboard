@@ -1641,5 +1641,29 @@
     "type": "Feature",
     "excerpt": "First viewership data point for the show: ranks #4 in Netflix's Non-English TV Top 10 with 13.1M hours viewed and 2.1M views in its opening week (the outlet calls it 'not a great start'); also #6 among six Mexican Netflix titles compared over the same week, behind The Accident Season 1's 10.4M views.",
     "storyGroup": null
+  },
+  {
+    "outlet": "OKDiario",
+    "headline": "'El Círculo': la serie que arrasa en Netflix y retrata a Claudia Sheinbaum en el epicentro de la corrupción en México",
+    "url": "https://okdiario.com/cool/television/circulo-serie-que-arrasa-netflix-retrata-claudia-sheinbaum-epicentro-corrupcion-mexico-20536376",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Feature on the political-thriller angle: notes the show's fictional president (played by Sophie Alexander-Katz) physically resembles real Mexican president Claudia Sheinbaum, and frames the series as a portrait of influence-trafficking and blackmail at the top of Mexican power, adapted from Jorge Zepeda Patterson's 2013 novel 'Los Corruptores'.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Drama Diaries (YouTube)",
+    "headline": "Inside the Circle Netflix Review in Hindi : Har Kisi Par Shak",
+    "url": "https://www.youtube.com/watch?v=fTxCtUfykHI",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "HI",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Spoiler-free Hindi-language review: calls it a character-driven murder-mystery thriller blending friendship, betrayal, corruption and secrets; praises the mystery/character development but flags uneven, sometimes repetitive pacing after the second episode.",
+    "storyGroup": "premiere-reviews-20261007"
   }
 ]
