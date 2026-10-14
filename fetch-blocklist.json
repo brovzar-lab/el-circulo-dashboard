@@ -3841,7 +3841,47 @@
           "note": "Bare TikTok homepage with no specific post or content about the show; not a usable candidate under any rule, surfaced as an undifferentiated hit from a social-chatter query."
         }
       ]
+    },
+    {
+      "url": "https://screenstat.in/netflix-top-10s-animals-23-8m/",
+      "firstSeen": "2026-10-14T14:09:24Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T14:09:24Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix Top 10 report entirely about Animals (23.8M views) and Below (17M views); no mention of El Círculo / Inside the Circle anywhere on the page. Surfaced only via the broad Top 10/Tudum ranking query. Rule G.",
+      "history": [
+        {
+          "attempt": "2026-10-14T14:09:24Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12637",
+          "note": "Netflix Top 10 report entirely about Animals (23.8M views) and Below (17M views); no mention of El Círculo / Inside the Circle anywhere on the page. Surfaced only via the broad Top 10/Tudum ranking query. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/top-10-title-search/?title=Inside+The+Circle",
+      "firstSeen": "2026-10-14T14:09:24Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-14T14:09:24Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "What's on Netflix Top 10 Viewership stats-search page for Inside The Circle: auto-generated chart/rank/points data table plus a pulled synopsis only, no original written analysis. Stripping the data table leaves nothing written about the show. Distinct from the site's narrative Top 10 Report articles (already tracked under type Feature), which are written journalism and remain in scope. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-14T14:09:24Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12637",
+          "note": "What's on Netflix Top 10 Viewership stats-search page for Inside The Circle: auto-generated chart/rank/points data table plus a pulled synopsis only, no original written analysis. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-14T10:30:00Z"
+  "lastUpdated": "2026-10-14T14:09:24Z"
 }
