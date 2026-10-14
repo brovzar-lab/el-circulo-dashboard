@@ -1701,5 +1701,53 @@
     "type": "Feature",
     "excerpt": "Trade-press case study on a Netflix out-of-home ad campaign in Mexico City using \"Spoiler Alert\"-style posters and street furniture to tease El Círculo's plot twists without revealing them.",
     "storyGroup": "publisitios-ooh-campaign-20261013"
+  },
+  {
+    "outlet": "FinalExplicado.net",
+    "headline": "El círculo: final explicado, quién mató a Pamela y por qué",
+    "url": "https://finalexplicado.net/el-circulo-final-explicado-quien-mato-pamela",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Feature",
+    "excerpt": "Ending-explainer piece: Jaime, lifelong friend of journalist Tomás, is revealed as Pamela Dosantos's killer, pressuring General Salazar and hurting his own father; closes on the arrival of Comandante Lara.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Entre Líneas",
+    "headline": "Captamos a Zuria Vega, Michel Brown y Raúl Briones 'vandalizando' las calles de la CDMX",
+    "url": "https://entrelineas.com.mx/captamos-a-zuria-vega-michel-brown-y-raul-briones-vandalizando-las-calles-de-la-cdmx-2",
+    "date": "Oct 6, 2026",
+    "ts": 20261006,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Chihuahua outlet covers the same Mexico City street-art ad-intervention campaign as Publimetro/Quién's Oct 6 pieces: cast seen 'defacing' billboards as part of a Netflix promo for El Círculo ahead of the premiere.",
+    "storyGroup": "cdmx-ad-campaign-20261006"
+  },
+  {
+    "outlet": "Fiction Horizon",
+    "headline": "Netflix 'Inside the Circle' Ending Explained: Jaime's Betrayal and the Threats Still Waiting",
+    "url": "https://fictionhorizon.com/netflix-inside-the-circle-ending-explained-jaimes-betrayal-and-the-threats-still-waiting",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Explains the finale: Jaime orchestrated Pamela Dosantos's murder and manipulated Tomas, Salazar dies by suicide, Commander Lara is introduced, and romantic tensions and a likely Season 2 remain open.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "VirtueVigil",
+    "headline": "Is Inside the Circle (2026) Woke? Netflix's Spanish-Language Blackmail Thriller Reviewed",
+    "url": "https://virtuevigil.com/reviews/inside-the-circle-2026",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Values-focused review site rates the series 'TRADITIONAL LEAN' (+16.34 TRAD), judging it prioritizes classic moral questions of trust, loyalty, and consequence over political messaging.",
+    "storyGroup": null
   }
 ]
