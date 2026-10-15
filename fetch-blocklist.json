@@ -4481,7 +4481,28 @@
           "note": "Multi-title Netflix October 2026 premieres roundup page: El Círculo gets one short templated synopsis among dozens of titles, no dedicated commentary. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/2059665924464803/posts/2666474203783969",
+      "firstSeen": "2026-10-15T18:19:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T18:19:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Public Facebook group post (not a publisher/outlet/editorial-brand account -- a generic numbered-ID fan group) reposting an unsourced claim that El Círculo reached #4 on Netflix weekly rankings with 2.1M views. No verifiable editorial identity behind the group, no attribution for the viewership figure (not Tudum/FlixPatrol-sourced), fan-repost account under the Rule A(2) social-candidate relevance gate -- excluded regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T18:19:14Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12722",
+          "note": "Fan Facebook group repost of an unsourced Top-4 viewership claim, no editorial identity behind the group. Rule A(2) fan-repost relevance gate."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-15T18:17:32Z"
+  "lastUpdated": "2026-10-15T18:19:14Z"
 }
