@@ -1821,5 +1821,53 @@
     "type": "Review",
     "excerpt": "Brazilian review of the Mexican political thriller (Portuguese title 'Dentro do Círculo'), covering plot, ending explained, the source novel Os Corruptores, cast, and Season 2 prospects.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Netflix Latinoamérica (TikTok)",
+    "headline": "Lo que pasa en redes no siempre se queda en redes: Netflix promociona 'El Círculo'",
+    "url": "https://tiktok.com/@netflixlat/video/7694847272227589396",
+    "date": "Oct 10, 2026",
+    "ts": 20261010,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Video promocional oficial de Netflix Latinoamérica: \"Lo que pasa en redes no siempre se queda en redes. Mira 'El Círculo' solo en Netflix.\"",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Netflix Latinoamérica (YouTube)",
+    "headline": "Menos mal que su fuente no era TikTok: Netflix promociona 'El Círculo'",
+    "url": "https://youtube.com/watch?v=Drom2TYdkmU",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Short promocional oficial de Netflix Latinoamérica: \"Menos mal que su fuente no era TikTok. La serie 'El círculo' ya está disponible.\"",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Hablemos De Series RD (Instagram)",
+    "headline": "El Círculo, basada en Los Corruptores de Jorge Zepeda Patterson, se estrena el 7 de octubre",
+    "url": "https://instagram.com/p/DT5ghxZka-c",
+    "date": "Jan 24, 2026",
+    "ts": 20260124,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Publicación anunciando el estreno de 'El Círculo' en Netflix para el 7 de octubre, basada en la novela 'Los Corruptores' de Jorge Zepeda Patterson.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Muchas Pelis (YouTube)",
+    "headline": "'El Círculo' en Netflix: ¿Está basada en una historia real y habrá segunda temporada?",
+    "url": "https://youtube.com/watch?v=hG5kvDb3sdM",
+    "date": "Oct 11, 2026",
+    "ts": 20261011,
+    "lang": "ES",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Video que analiza si 'El Círculo' está basada en hechos reales y evalúa la posibilidad de una segunda temporada.",
+    "storyGroup": null
   }
 ]
