@@ -4460,7 +4460,28 @@
           "note": "Roundup/listicle page with no original prose about the show; only an image-only sidebar teaser linking to the already-tracked review. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://cinepremiere.com.mx/series-peliculas-netflix-estrenos.html",
+      "firstSeen": "2026-10-15T18:17:32Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T18:17:32Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Multi-title Netflix October 2026 premieres roundup page (CinePremiere.com.mx): El Círculo gets one short templated synopsis entry (\"Serie mexicana basada en la novela Los corruptores del periodista y escritor Jorge Zepeda Patterson...\") among dozens of unrelated titles, descriptive not evaluative, no dedicated editorial commentary. Stripping the metadata/cast-list blurb leaves nothing written specifically about the show. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T18:17:32Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12722",
+          "note": "Multi-title Netflix October 2026 premieres roundup page: El Círculo gets one short templated synopsis among dozens of titles, no dedicated commentary. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-15T14:20:00Z"
+  "lastUpdated": "2026-10-15T18:17:32Z"
 }
