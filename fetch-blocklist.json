@@ -2664,12 +2664,12 @@
       "firstSeen": "2026-10-11T14:14:11Z",
       "failCount": 0,
       "lastStatus": 200,
-      "lastAttempt": "2026-10-11T14:14:11Z",
+      "lastAttempt": "2026-10-15T02:20:00Z",
       "cooldownUntil": null,
       "permanentSkip": true,
-      "skipReason": "editorial_undateable",
-      "reviewable": true,
-      "skipNote": "Official NetflixLatino video post ('Menos mal que su fuente no era TikTok, la serie El Círculo ya está disponible') -- in-scope first-party promo under Rule B, but no real publish date recoverable: WebFetch and Firecrawl both returned no timestamp/metadata for this facebook.com video URL.",
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "Official NetflixLatino Facebook video ('Menos mal que su fuente no era TikTok, la serie El Círculo ya está disponible') -- previously editorial_undateable (no recoverable date via WebFetch/Firecrawl). Now identified as a cross-platform second address of the identical campaign piece tracked in data.json via its YouTube Shorts sibling (https://youtube.com/watch?v=Drom2TYdkmU, same caption, real publishDate 2026-10-13) -- Rule I second address with a now-known date, reclassified from editorial_undateable per Rule C in-place update.",
       "history": [
         {
           "attempt": "2026-10-11T14:14:11Z",
@@ -2677,6 +2677,13 @@
           "status": 200,
           "issue": "LEMA-12392",
           "note": "Official NetflixLatino account, on-topic, but undateable via either fetch method."
+        },
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "cross-platform caption match",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Reclassified from editorial_undateable to Rule I second address once YouTube sibling with a real date was found."
         }
       ]
     },
@@ -3621,7 +3628,7 @@
       "firstSeen": "2026-10-13T22:10:31Z",
       "failCount": 1,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-13T22:10:31Z",
+      "lastAttempt": "2026-10-15T02:20:00Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -3630,8 +3637,19 @@
           "status": 0,
           "issue": "LEMA-12583",
           "note": "WebFetch returned only the page shell (no video description/date, login wall). Firecrawl: site not supported (\"we do not support this site\"). Full fallback chain exhausted. failCount=1, no cooldown yet (needs 3 consecutive)."
+        },
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "cross-platform caption match",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Reclassified from open fetch-fail to Rule I second address once TikTok sibling with a real date was found."
         }
-      ]
+      ],
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "Official NetflixLatino Facebook video ('Lo que pasa en redes no siempre se queda en redes. Mira 'El Círculo' solo en Netflix') -- previously an open fetch-fail (WebFetch/Firecrawl both blocked by Facebook's login wall, failCount=1). Now identified as a cross-platform second address of the identical campaign piece tracked in data.json via its TikTok sibling (@netflixlat, https://tiktok.com/@netflixlat/video/7694847272227589396, same caption, Oct 10, 2026) -- Rule I second address, updated in place per Rule C."
     },
     {
       "url": "https://www.netflix.com/in/title/80217807",
@@ -4061,7 +4079,161 @@
           "note": "Rule H scope-limit-1 mining duty: press tab confirmed empty, zero-yield negative result."
         }
       ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/mexico",
+      "firstSeen": "2026-10-15T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol Mexico Top 10 chart -- bare ranking table (El Círculo/Inside The Circle appears as one dated row, no written prose about the show). Same established family as already-ledgered flixpatrol.com/top10/netflix/{world,italy,reunion,ecuador,united-states} country/world Top10 pages.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "Tavily content extract",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Country Top10 snapshot, ranking table only, Rule F listing/database."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/mexico/tv",
+      "firstSeen": "2026-10-15T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Mexico TV Top 10 chart -- bare ranking table (Inside The Circle: Season 1 appears as row 02, no written prose). Same established family as already-ledgered netflix.com/tudum/articles/* listing pages and the FlixPatrol Top10 family.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "Tavily content extract",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Tudum Top10 ranking table, Rule F listing/database."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/tv-non-english",
+      "firstSeen": "2026-10-15T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Global Non-English TV Top 10 chart -- bare ranking table (Inside The Circle: Season 1 appears as row 04, 2.1M views, no written prose). Same established family as the Tudum/FlixPatrol Top10 listing pages already ledgered.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "Tavily content extract",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Tudum global Top10 ranking table, Rule F listing/database."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/circlenetflix",
+      "firstSeen": "2026-10-15T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "X/Twitter account @CircleNetflix is the account for Netflix's unrelated reality competition format 'The Circle' (post: \"whew, The Circle is coming in HOT and heavy. The first four episodes are NOW STREAMING!\"), not our El Círculo/Inside the Circle. Affirmative different-subject signal present in the account's own post text (named different show, its own episode-release framing), qualifying for the Rule G no-fetch carve-out (LEMA-12648).",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "search-result-snippet",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Off-topic: different Netflix show entirely ('The Circle' reality format)."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/p/DJDGckEyp8U",
+      "firstSeen": "2026-10-15T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Instagram post from @michel123brown, the personal verified account of cast member Michel Brown (Tomás), promoting the show he stars in. Crew-personal account, not a publisher/editorial-brand account -- Rule B relevance gate excludes it regardless of date (post dated Apr 29, 2025 per image caption).",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Cast member's own personal account, Rule B crew-personal exclusion."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/p/DePUSMwD-Mo",
+      "firstSeen": "2026-10-15T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Official Netflix Latinoamérica (netflixlat) Instagram post ('¿Sus caritas te sonaban? Conócelos en sus nuevos personajes') -- on-topic first-party promo under Rule B, but no real sourced publish date: WebFetch found only a relative UI badge ('6d') and an image alt-text date ('October 08, 2026'), which is not an article:published_time/JSON-LD/visible dateline per Rule A's named sources -- same undateable pattern as this account's other already-ledgered posts.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Official account, on-topic, but no Rule-A-qualifying date signal beyond alt text/relative badge."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/@aura.series/video/7694002282320481544",
+      "firstSeen": "2026-10-15T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Aura Series TikTok cross-post of the identical cast-promo piece already tracked in data.json as the Aura Series Instagram reel (https://instagram.com/reel/DeNDWwZqFld, 'Raúl Briones, Zuria Vega, Osvaldo Benavides y Michel Brown nos invitan a ver El Círculo', Oct 7, 2026) -- same brand, same caption text, same campaign, different platform address. Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-15T02:20:00Z",
+          "method": "curl (createTime extraction)",
+          "status": 200,
+          "issue": "LEMA-12671",
+          "note": "Confirmed identical caption/date to already-tracked Instagram reel sibling; Rule I cross-platform repost."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-14T22:40:00Z"
+  "lastUpdated": "2026-10-15T02:20:00Z"
 }
