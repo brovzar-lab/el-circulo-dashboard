@@ -4254,7 +4254,172 @@
           "note": "IMDb news permalink is a verbatim syndicated repost of the Fiction Horizon review already in data.json; identical review text. Second address, not a distinct document."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DefjQUGGQIx",
+      "firstSeen": "2026-10-15T10:10:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T10:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Official The Hollywood Reporter en Español Instagram account promoting its own already-tracked article (es.hollywoodreporter.com/el-elenco-de-el-circulo-debate-los-limites-de-la-lealtad-y-sobre-como-saber-cuando-es-momento-de-soltar, in data.json, Oct 14 2026). Bare social link-post carrying no text of its own beyond the promo caption. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-15T10:10:31Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-12713",
+          "note": "Official The Hollywood Reporter en Español Instagram account promoting its own already-tracked article. Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/miniserie-el-circulo",
+      "firstSeen": "2026-10-15T10:10:31Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-15T10:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (surface family, same test as already-ledgered Tudum/FlixPatrol Top10 pages) -- an aggregation of many videos under the topic tag, not a distinct document of its own. curl fetch returned only the generic JS-shell page (no og tags, no extractable body); classification made on URL-family pattern plus Tavily's indexed snippet, not a full rendered body.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-15T10:10:31Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12713",
+          "note": "TikTok discover/hashtag index page, generic JS shell only; classified Rule F by URL-family pattern + Tavily snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DePgeC1nZDs",
+      "firstSeen": "2026-10-15T10:10:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T10:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Official LatinaMedia.Co (@latinamediaco) Instagram account promoting its own already-tracked article (latinamedia.co/el-circulo, in data.json as a Feature row, Oct 7 2026) -- caption quotes Carolina Alvarado's review verdict and links to the article in bio. Second address, not a distinct document. Note: our data.json row dates this Oct 7, 2026; a direct WebFetch of the article itself read its visible dateline as October 6, 2026 -- flagging the one-day discrepancy for awareness, not correcting unilaterally without a clearer basis.",
+      "history": [
+        {
+          "attempt": "2026-10-15T10:10:31Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-12713",
+          "note": "Official LatinaMedia.Co Instagram account promoting its own already-tracked article. Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/inside-the-circle-on-netflix-review",
+      "firstSeen": "2026-10-15T10:10:31Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-15T10:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same surface family as miniserie-el-circulo above -- aggregation of many videos under the topic tag, not a distinct document. curl fetch returned only the generic JS-shell page; classification made on URL-family pattern plus Tavily's indexed snippet.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-15T10:10:31Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12713",
+          "note": "TikTok discover/hashtag index page, generic JS shell only; classified Rule F by URL-family pattern + Tavily snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/news/ni66046084",
+      "firstSeen": "2026-10-15T10:10:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T10:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb News teaser page (\"See full article at Fiction Horizon\", byline Robert Milakovic, dated 10/4/2026) syndicating the already-tracked fictionhorizon.com/meet-the-cast-of-inside-the-circle-on-netflix-with-photos article (in data.json, Oct 4 2026). A syndication feed item per Rule I, not a distinct document -- same pattern as the already-ledgered imdb.com/news/permalink/ni66050434 entry. Rule H scope limit (3) confirms IMDb /news/ items are evaluated normally (not Rule H user-review-aggregate territory); this one resolves under Rule I instead.",
+      "history": [
+        {
+          "attempt": "2026-10-15T10:10:31Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-12713",
+          "note": "IMDb News teaser syndicating an already-tracked Fiction Horizon article. Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/au/tv-show/los-corruptores",
+      "firstSeen": "2026-10-15T10:10:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T10:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Body fetch confirmed: streaming-availability/ranking aggregator page (Top 10/Top 100/Top 1000 chart position, watch-provider list) with only an unattributed, templated plot synopsis -- no review or critical commentary. Stripping the metadata/chart block leaves nothing written specifically about the show. Rule F listing/database gate; JustWatch is a legal-availability guide (Rule E scope limit 1 exempts it from the piracy gate) but that does not exempt it from the separate Rule F listing test, which it fails as a bare aggregator page.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T10:10:31Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12713",
+          "note": "Body fetch confirmed bare streaming-availability/ranking aggregator page, no review content. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/joy.price.3726613/posts/1900881431293562",
+      "firstSeen": "2026-10-15T10:10:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T10:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Post is about Netflix's unrelated long-running reality format 'The Circle', not the 2026 Mexican thriller 'El Círculo'/'Inside the Circle' -- snippet explicitly compares it to Big Brother and calls it \"A Reality TV Fan's Dream\", an affirmative, specific identifier of a different show (qualifies for the Rule G no-fetch carve-out). Surfaced only via the generic 'the circle' title collision noted in the routine's known-noise guidance.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-15T10:10:31Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-12713",
+          "note": "Post is about the unrelated Netflix reality show 'The Circle', not our title. Rule G off-topic false positive, affirmative signal in snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.metacritic.com/news/what-to-watch-on-netflix-right-now",
+      "firstSeen": "2026-10-15T10:10:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T10:10:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Body fetch confirmed: platform-wide 'what's new on Netflix' release-calendar roundup; 'Inside the Circle S1' appears as a single table row under \"Added October 7\" with a trailer link and genre tags only, no Metascore, no description, no prose about the show anywhere on the page. Stripping the schedule table leaves nothing written about the show specifically. Rule F listing/database gate. (This headline shape -- a platform-wide slate article -- is one of the types the Rule G no-fetch carve-out explicitly excludes from title/snippet-only resolution; this is Rule F, not Rule G, but the same evidentiary caution applied, hence the full body fetch before classifying.)",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T10:10:31Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12713",
+          "note": "Body fetch confirmed platform-wide release-calendar roundup, one-row table entry only, no prose about the show. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-15T06:30:00Z"
+  "lastUpdated": "2026-10-15T10:10:31Z"
 }
