@@ -4502,7 +4502,92 @@
           "note": "Fan Facebook group repost of an unsourced Top-4 viewership claim, no editorial identity behind the group. Rule A(2) fan-repost relevance gate."
         }
       ]
+    },
+    {
+      "url": "https://about.netflix.com/news/netflix-revealed-the-future-of-mexican-stories-coming-in-2026",
+      "firstSeen": "2026-10-15T22:15:03Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T22:15:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix newsroom article (about.netflix.com), published 2026-01-27, previewing the full 2026 Mexican slate: El Círculo gets one short templated mention (\"starring Zuria Vega, Osvaldo Benavides, Michel Brown, and Raul Briones, adapted from the novel Los corruptores by Jorge Zepeda Patterson\") among a long list of unrelated titles getting first looks, no dedicated plot/cast/editorial discussion. Same shape as the already-ledgered CinePremiere Netflix-October-roundup entry. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T22:15:03Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12725",
+          "note": "Multi-title Netflix 2026 Mexican-slate newsroom roundup; El Círculo gets one templated sentence among dozens of titles, no dedicated commentary. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/dilsesouthofficial/posts/inside-the-circle-2026-is-now-streaming-in-english-and-spanish-exclusively-on-ne/1530190462461340",
+      "firstSeen": "2026-10-15T22:15:03Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T22:15:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "\"Dil Se South\" (South Asian dubbed-content fan/promo page) Facebook post announcing \"Inside The Circle (2026) is now streaming... exclusively on Netflix\" -- editorial-brand-adjacent entertainment account, evaluated normally under Rule B. WebFetch and Tavily Extract both retrieved only the og:title/og:description (\"Dil Se South\" / the streaming announcement text); no article:published_time, JSON-LD datePublished, or visible dateline recoverable from the login-walled page. Genuine coverage omitted solely for lack of a real date.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-15T22:15:03Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12725",
+          "note": "No recoverable publish date (login-walled Facebook post, og tags only). editorial_undateable, reviewable."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DeZsdd0P7O0",
+      "firstSeen": "2026-10-15T22:15:03Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T22:15:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Fan/aggregator Instagram post whose caption is a near-verbatim paraphrase of Vogue México's already-tracked cast/premise guide (vogue.mx/articulo/el-circulo-netflix-reparto, in data.json, Oct 7 2026) -- same opening sentence (\"La trama parte de una adaptación de Los Corruptores...\") and same cast list in the same order. Second address for an already-tracked document, not a distinct piece. No account name or date recoverable either (WebFetch returned only \"Instagram\"; Tavily Extract returned caption text but no author/date), consistent with this being an unattributed repost rather than original coverage.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T22:15:03Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12725",
+          "note": "Caption is a near-verbatim paraphrase of the already-tracked Vogue México cast guide. Rule I, redundant syndication."
+        }
+      ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/top-10-title-search",
+      "firstSeen": "2026-10-15T22:15:03Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T22:15:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "What's on Netflix Top 10 title-search tool: a live ranking-table/search database (Inside The Circle appears as one row, #4 non-English TV, week of Oct 5-11 2026, 13.1M hours / 2.1M views) with no written editorial commentary about the show. Same Rule F family as the already-ledgered FlixPatrol/Tudum Top10 chart pages.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T22:15:03Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12725",
+          "note": "Live ranking-table/search tool, no written content about the show. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-15T18:19:14Z"
+  "lastUpdated": "2026-10-15T22:15:03Z"
 }
