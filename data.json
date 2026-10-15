@@ -1869,5 +1869,53 @@
     "type": "Feature",
     "excerpt": "Video que analiza si 'El Círculo' está basada en hechos reales y evalúa la posibilidad de una segunda temporada.",
     "storyGroup": null
+  },
+  {
+    "outlet": "FilmTV.it",
+    "headline": "Dentro il cerchio: La serie Netflix e un'amicizia indistruttibile",
+    "url": "https://filmtv.it/articoli/4311/dentro-il-cerchio-serie-netflix-trama-cast-foto-trailer",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "IT",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Italian preview feature: four lifelong friends drawn into a blackmail network after a compromising video leaks; notes the novel source (Los corruptores), consulting-producer role of Jorge Zepeda Patterson, and Lemon Studios production.",
+    "storyGroup": "premiere-day-coverage-20261007"
+  },
+  {
+    "outlet": "FilmVandaag.nl",
+    "headline": "Nu te streamen: nieuwe Mexicaanse thrillerserie vanaf vandaag op Netflix",
+    "url": "https://filmvandaag.nl/nieuws/33003-nu-te-streamen-nieuwe-mexicaanse-thrillerserie-vanaf-vandaag-op-netflix",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "lang": "NL",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Dutch premiere-day announcement piece: four childhood friends whose lives unravel after becoming entangled in the murder of a famous actress; based on Jorge Zepeda Patterson's novel Los corruptores.",
+    "storyGroup": "premiere-day-coverage-20261007"
+  },
+  {
+    "outlet": "The Hollywood Reporter en Español",
+    "headline": "El elenco de El Círculo debate los límites de la lealtad y sobre cómo saber cuándo es momento de soltar",
+    "url": "https://es.hollywoodreporter.com/el-elenco-de-el-circulo-debate-los-limites-de-la-lealtad-y-sobre-como-saber-cuando-es-momento-de-soltar",
+    "date": "Oct 14, 2026",
+    "ts": 20261014,
+    "lang": "ES",
+    "market": "International",
+    "type": "Entertainment",
+    "excerpt": "Cast interview (Zuria Vega, Michel Brown, Osvaldo Benavides, Raúl Briones) on loyalty, lies breaking trust, and knowing when to let go of a long friendship. Vega: \"La paz es algo muy valioso.\"",
+    "storyGroup": "thr-es-cast-interview-20261014"
+  },
+  {
+    "outlet": "Spoiler (YouTube)",
+    "headline": "The cast of \"The Circle\" tells us ALL about the Netflix series!",
+    "url": "https://youtube.com/watch?v=HOGKN7qLSEo",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Mexican entertainment channel (41.9K subs) cast interview with Michel Brown, Zuria Vega, Raúl Briones, and Osvaldo Benavides about friendship, secrets, and filming in CDMX (Metro, Zócalo night shoots).",
+    "storyGroup": "spoiler-cast-interview-20261012"
   }
 ]

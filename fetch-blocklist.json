@@ -4233,7 +4233,28 @@
           "note": "Confirmed identical caption/date to already-tracked Instagram reel sibling; Rule I cross-platform repost."
         }
       ]
+    },
+    {
+      "url": "https://imdb.com/news/permalink/ni66050434",
+      "firstSeen": "2026-10-15T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news permalink is a verbatim syndicated repost of the Fiction Horizon review already in data.json (headline \"'Inside the Circle' Season 1 Review: What Happens When One Leaked Video Tests a Lifetime of Loyalty\"); identical review text, no original IMDb editorial attribution. Second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T06:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12674",
+          "note": "IMDb news permalink is a verbatim syndicated repost of the Fiction Horizon review already in data.json; identical review text. Second address, not a distinct document."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-15T02:20:00Z"
+  "lastUpdated": "2026-10-15T06:30:00Z"
 }
