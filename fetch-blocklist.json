@@ -4419,7 +4419,48 @@
           "note": "Body fetch confirmed platform-wide release-calendar roundup, one-row table entry only, no prose about the show. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/news/ni66052649",
+      "firstSeen": "2026-10-15T14:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T14:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news syndication of the Whats on Netflix review already tracked in data.json (\"'Inside the Circle' Netflix Review: A Tense Mexican Political Thriller That Gets Tangled in Its Own Web\" by Florian Etcheverry, https://whats-on-netflix.com/what-to-watch/inside-the-circle-netflix-review/); same headline, same opening text, no original IMDb editorial attribution. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-15T14:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12719",
+          "note": "IMDb news syndication of the Whats on Netflix review already tracked in data.json; same headline, same opening text. Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/what-to-watch/most-watched-new-netflix-movies-2026",
+      "firstSeen": "2026-10-15T14:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-15T14:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "\"Most Watched New Netflix Movies of 2026 So Far\" roundup page (movies, not shows -- El Círculo/Inside the Circle isn't even in scope of the list itself). The only mention of the show is an image-only sidebar teaser linking to the Whats on Netflix review already tracked in data.json; no original prose about the show on this page. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-15T14:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12719",
+          "note": "Roundup/listicle page with no original prose about the show; only an image-only sidebar teaser linking to the already-tracked review. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-15T10:10:31Z"
+  "lastUpdated": "2026-10-15T14:20:00Z"
 }
