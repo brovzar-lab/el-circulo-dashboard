@@ -2013,5 +2013,41 @@
     "type": "Entertainment",
     "excerpt": "Announcement piece confirming Netflix's Oct 7 premiere of El Círculo, the Mexican thriller adapted from Jorge Zepeda Patterson's Los Corruptores, following four lifelong friends whose secrets are exposed after a leaked video.",
     "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "Overdrive",
+    "headline": "Dentro do Círculo: elenco e personagens; saiba quem é quem na série",
+    "url": "https://gameoverdrive.com.br/dentro-do-circulo-elenco/",
+    "date": "Oct 11, 2026",
+    "ts": 20261011,
+    "lang": "PT",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Brazilian cast guide for 'Dentro do Círculo' (El Círculo), naming the four lead friends and supporting cast and characters without spoiling the finale's twists.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "SensaCine Mexico",
+    "headline": "La nueva serie mexicana que triunfa en Netflix: con solo 8 episodios te mantendrá atado al sillón hasta terminarla",
+    "url": "https://www.sensacine.com.mx/noticias/noticia-1000226884/",
+    "date": "Oct 10, 2026",
+    "ts": 20261010,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Review",
+    "excerpt": "Recommends El Círculo as an addictive 8-episode Mexican thriller about four childhood friends whose loyalty is tested after an actress's murder and a leaked video, adapted from Jorge Zepeda Patterson's Los corruptores.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "ESdiario",
+    "headline": "De qué trata El círculo: cuatro amigos, un vídeo y un asesinato en el nuevo thriller de Netflix",
+    "url": "https://www.esdiario.com/chismografo/tendencias/261012/199465/el-circulo.html",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Feature",
+    "excerpt": "Explainer on the Mexican Netflix thriller, based on Jorge Zepeda Patterson's Los corruptores, following four childhood friends drawn into blackmail after one posts a video linking a government official to an actress's murder.",
+    "storyGroup": null
   }
 ]
