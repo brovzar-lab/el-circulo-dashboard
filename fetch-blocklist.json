@@ -4764,7 +4764,70 @@
           "note": "Same Tudum Top10 chart template as the already-ledgered bare-path sibling; dated archive path, no written content. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/bNrAnvlwIMA",
+      "firstSeen": "2026-10-16T10:13:22Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T10:13:22Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "YouTube Shorts third address for Netflix Latino's official promotional clip (\"Lo que pasa en redes no siempre se queda en redes. Mira 'El Círculo' solo en Netflix.\") -- identical caption/content already tracked as a TikTok row in data.json (@netflixlat, Oct 10) and already ledgered as a second address on Facebook (facebook.com/NetflixLatino/videos/1465272385551089). Same clip, third platform, no distinct editorial content.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-16T10:13:22Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12832",
+          "note": "Confirmed identical caption to the already-tracked TikTok/Facebook cross-posts of this Netflix Latino promo clip. Rule I second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/title/tt9581768",
+      "firstSeen": "2026-10-16T10:13:22Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-16T10:13:22Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "IMDb title record for 'The Circle' (TV Series 2020-2024), Netflix's unrelated US social-experiment reality competition (catfish format) -- a different show, title collision only with 'El Círculo'/'Inside the Circle'. WebFetch returned HTTP 403 (IMDb blocks direct fetch, consistent with prior sweeps); classified from the search engine's own title/cast/episode-rating snippet, which unambiguously names the concrete alternative subject (season/episode titles like 'Hello, Circle', 'Face-to-Face', ratings for a 2020-2024 run).",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-16T10:13:22Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-12832",
+          "note": "403 Forbidden on direct fetch; disposition made from search-snippet evidence naming the concrete alternative subject (Netflix reality series 'The Circle', 2020-2024), per the Rule G title-snippet carve-out."
+        }
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Circle_(American_TV_series)",
+      "firstSeen": "2026-10-16T10:13:22Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T10:13:22Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Wikipedia article for the American adaptation of 'The Circle', Netflix's unrelated social-media reality competition format (catfish contestants, Seaburn/Alex/etc.) -- title collision only with 'El Círculo'/'Inside the Circle'. Confirmed via the search snippet's own content (contestant names, 2020 premiere, reality-format description), which names the concrete alternative subject directly.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-16T10:13:22Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12832",
+          "note": "Search-snippet evidence (contestant names, reality-format description, 2020 premiere date) unambiguously identifies the unrelated Netflix reality series, not the 2026 Mexican thriller."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-16T06:12:15Z"
+  "lastUpdated": "2026-10-16T10:13:22Z"
 }
