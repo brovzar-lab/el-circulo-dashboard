@@ -4913,7 +4913,117 @@
           "note": "AMP rendering variant (_amp.html suffix) of the ESdiario explainer canonically tracked in data.json at https://www.esdiario.com/chismografo/tendencias/261012/199465/el-circulo.html (this run, LEMA-12869). Second address, not a distinct document."
         }
       ]
+    },
+    {
+      "url": "https://reddit.com/r/TheCircleTV/comments/1lzbmra/still_nothing_on_the_circle",
+      "firstSeen": "2026-10-16T22:15:18Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T22:15:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/TheCircleTV thread ('¿Y todavía nada del Círculo??') discussing Netflix's unrelated reality-TV format 'The Circle', not the 2026 Mexican thriller El Círculo / Inside the Circle. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-16T22:15:18Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-12874",
+          "note": "Off-topic: subreddit thread for the unrelated Netflix reality show 'The Circle'."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/movies/comments/1np44yt/has_anyone_seen_the_movie_circle_2015_on_netflix",
+      "firstSeen": "2026-10-16T22:15:18Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T22:15:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/movies thread about the unrelated 2015 film 'Circle' (50 people trapped in a room voting on who dies), not the 2026 Netflix series El Círculo. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-16T22:15:18Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-12874",
+          "note": "Off-topic: about the unrelated 2015 film 'Circle'."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/movies/comments/1ce5sie/why_do_so_many_people_say_the_circle_2017_is_so",
+      "firstSeen": "2026-10-16T22:15:18Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T22:15:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/movies thread about the unrelated 2017 film 'The Circle' (Emma Watson/Tom Hanks adaptation of Dave Eggers' novel), not the 2026 Netflix series El Círculo. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-16T22:15:18Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-12874",
+          "note": "Off-topic: about the unrelated 2017 film 'The Circle'."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/scifi/comments/1jyy0sw/my_thoughts_on_circle_2015",
+      "firstSeen": "2026-10-16T22:15:18Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T22:15:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/scifi thread about the unrelated 2015 film 'Circle', not the 2026 Netflix series El Círculo. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-16T22:15:18Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-12874",
+          "note": "Off-topic: about the unrelated 2015 film 'Circle'."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/horror/comments/9ivbku/can_someone_explain_the_ending_of_the_circle",
+      "firstSeen": "2026-10-16T22:15:18Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T22:15:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "r/horror thread asking about the ending of the unrelated 2015 film 'Circle', not the 2026 Netflix series El Círculo. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-16T22:15:18Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-12874",
+          "note": "Off-topic: about the unrelated 2015 film 'Circle'."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-16T18:14:00Z"
+  "lastUpdated": "2026-10-16T22:15:18Z"
 }
