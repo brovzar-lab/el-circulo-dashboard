@@ -4872,7 +4872,28 @@
           "note": "Candidate surfaced by audiencia/ranking query (fan post claiming El Círculo hit #4 on Netflix global ranking, Top 10 in 22 countries). Full fallback chain failed: WebFetch returned only a bare page-title fragment ('Recomendaciones Netflix Peliculas y Series 2026'), Tavily Extract (basic and advanced) returned empty. Firecrawl MCP tool not available to this run (Research Specialist tool-kit gap vs. the routine's documented kit) -- flagged separately for tool-availability visibility, not treated as an editorial call. Cannot confirm account type (public Facebook group 'netfliteando', name suggests fan community) or a real sourced date from available tools this run. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://serienjunkies.de/im-kreis-der-korruption/",
+      "firstSeen": "2026-10-16T18:08:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T18:08:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "German TVDB-style episode guide/reference page (Serienjunkies, IPPEN.MEDIA). Short synopsis plus cast/episode metadata; no byline and no fixed article publish date (only 'Angelegt am 24.09.2026' / 'zuletzt aktualisiert 15.10.2026' living-record stamps, not an article date). Surface-family database record, Rule F, parallel to the IMDb/Apple-show-page family.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-16T18:08:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12869",
+          "note": "German TVDB-style episode guide/reference page (Serienjunkies, IPPEN.MEDIA). Short synopsis plus cast/episode metadata; no byline and no fixed article publish date (only 'Angelegt am 24.09.2026' / 'zuletzt aktualisiert 15.10.2026' living-record stamps, not an article date). Surface-family database record, Rule F, parallel to the IMDb/Apple-show-page family."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-16T14:20:00Z"
+  "lastUpdated": "2026-10-16T18:08:37Z"
 }
