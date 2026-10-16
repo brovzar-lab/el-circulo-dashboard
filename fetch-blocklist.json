@@ -3020,21 +3020,43 @@
     },
     {
       "url": "http://thefutoncritic.com/showatch/inside-the-circle/dvd",
-      "key": "thefutoncritic.com/showatch/inside-the-circle/dvd",
-      "disposition": "permanentSkip",
+      "firstSeen": "2026-10-12T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "TheFutonCritic 'Shows A-Z' DVD/listings page: broadcast-history, status, time-slot, cast/crew table, studio info, and a one-line Netflix synopsis quote only -- own meta description literally says 'news, listings, dvds, episode guides.' Strips to a database card, no original written content. Rule F.",
-      "reviewable": false,
-      "firstSeen": "2026-10-12T06:00:00Z"
+      "history": [
+        {
+          "attempt": "2026-10-12T06:00:00Z",
+          "method": "unknown (backfilled)",
+          "status": 200,
+          "issue": "LEMA-12736",
+          "note": "Schema-repair backfill: original fetch method/issue for this row's first classification is not recoverable from the stored data; skipReason/skipNote content is pre-existing and unchanged. [Schema repair, LEMA-12736: row was missing permanentSkip/history scaffolding since creation, found via assert-integrity while this run attempted to classify a near-duplicate. Editorial judgment (skipReason/skipNote) unchanged, not re-litigated; only the write-path envelope completed so the dedup gate actually honors this disposition going forward.]"
+        }
+      ]
     },
     {
       "url": "https://imdb.com/title/tt48396412",
-      "key": "imdb.com/title/tt48396412",
-      "disposition": "permanentSkip",
+      "firstSeen": "2026-10-12T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-12T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "IMDb title page for 'Inside the Circle' Episode #1.5 (TV Episode 2026). Same imdb.com/title/* shape already established as Rule F by family regardless of locale/depth/episode-vs-series-level URL (see the imdb.com/es-es/title/tt36743307 entry in this ledger) -- cast/episode/rating metadata only, no written editorial content.",
-      "reviewable": false,
-      "firstSeen": "2026-10-12T06:00:00Z"
+      "history": [
+        {
+          "attempt": "2026-10-12T06:00:00Z",
+          "method": "unknown (backfilled)",
+          "status": 200,
+          "issue": "LEMA-12736",
+          "note": "Schema-repair backfill: original fetch method/issue for this row's first classification is not recoverable from the stored data; skipReason/skipNote content is pre-existing and unchanged. [Schema repair, LEMA-12736: row was missing permanentSkip/history scaffolding since creation, found via assert-integrity while this run attempted to classify a near-duplicate. Editorial judgment (skipReason/skipNote) unchanged, not re-litigated; only the write-path envelope completed so the dedup gate actually honors this disposition going forward.]"
+        }
+      ]
     },
     {
       "url": "https://streamrank.io/title/inside-the-circle-2026",
@@ -4003,19 +4025,50 @@
     },
     {
       "url": "https://diezminutos.es/teleprograma/series-tv/a71458100/romper-el-circulo-netflix-pelicula-libro-colleen-hoover",
+      "firstSeen": "2026-10-16T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
       "skipReason": "editorial_off_topic_false_positive",
       "skipNote": "Diez Minutos (Hearst España) piece is about the unrelated Netflix film 'Romper el círculo' (Colleen Hoover's 'It Ends With Us'), not Lemon's El Círculo/Los Corruptores. Surfaced only via the generic 'círculo' broad-query match. Rule G.",
-      "reviewable": false,
-      "cooldownUntil": null,
-      "failCount": 0
+      "history": [
+        {
+          "attempt": "2026-10-16T02:20:00Z",
+          "method": "unknown (backfilled)",
+          "status": 200,
+          "issue": "LEMA-12736",
+          "note": "Schema-repair backfill: original fetch method/issue for this row's first classification is not recoverable from the stored data; skipReason/skipNote content is pre-existing and unchanged. [Schema repair, LEMA-12736: row was missing permanentSkip/history scaffolding since creation, found via assert-integrity while this run attempted to classify a near-duplicate. Editorial judgment (skipReason/skipNote) unchanged, not re-litigated; only the write-path envelope completed so the dedup gate actually honors this disposition going forward.]"
+        }
+      ]
     },
     {
       "url": "https://flixpatrol.com/title/inside-the-circle/hours",
+      "firstSeen": "2026-10-16T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
       "skipNote": "FlixPatrol per-title Hours chart sub-page: viewing-hours ranking table plus the same single boilerplate synopsis sentence and IMDb score, no original written analysis. Same Rule F family as the already-ledgered flixpatrol.com/title/inside-the-circle/ and /top10/ sub-pages.",
-      "reviewable": false,
-      "cooldownUntil": null,
-      "failCount": 0
+      "history": [
+        {
+          "attempt": "2026-10-16T02:20:00Z",
+          "method": "unknown (backfilled)",
+          "status": 200,
+          "issue": "LEMA-12736",
+          "note": "Schema-repair backfill: original fetch method/issue for this row's first classification is not recoverable from the stored data; skipReason/skipNote content is pre-existing and unchanged. [Schema repair, LEMA-12736: row was missing permanentSkip/history scaffolding since creation, found via assert-integrity while this run attempted to classify a near-duplicate. Editorial judgment (skipReason/skipNote) unchanged, not re-litigated; only the write-path envelope completed so the dedup gate actually honors this disposition going forward.]"
+        },
+        {
+          "attempt": "2026-10-16T02:20:00Z",
+          "method": "WebFetch/curl/Tavily extract (all blocked: 403/Cloudflare challenge/empty)",
+          "status": 403,
+          "issue": "LEMA-12736",
+          "note": "Re-confirmed unfetchable by any method this run; pre-existing skipReason/skipNote classification (Rule F, same flixpatrol.com/title/inside-the-circle/* family) still holds, independently corroborated via Tavily's indexed search snippet."
+        }
+      ]
     },
     {
       "url": "https://www.abandomoviez.net/dbs/critica_especializada.php?film=6654",
@@ -4587,7 +4640,68 @@
           "note": "Live ranking-table/search tool, no written content about the show. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DefIQI-Pp-D",
+      "firstSeen": "2026-10-16T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "pacas_tv Instagram account: an individual fan/reviewer account (personal-opinion caption “En mi opinión... me gustó bastante”, hashtag matches the account handle, no publisher/outlet branding or verification). Rule A condition (2) / Rule B relevance gate: fan-repost accounts are not media coverage and are skipped regardless of dateability. Not reached: the only date signals present (a relative “1d” UI badge and the video's alt-text date) would not have satisfied Rule A anyway.",
+      "history": [
+        {
+          "attempt": "2026-10-16T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12736",
+          "note": "Individual fan account (pacas_tv), personal-opinion review post. Rule B relevance gate fails regardless of dateability."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/planetadelibrosmx/posts/platicamos-con-el-elenco-de-el-c%C3%ADrculo-la-impactante-serie-de-netflix-que-est%C3%A1-b/1522143653280133",
+      "firstSeen": "2026-10-16T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Planeta de Libros México ‘Platicamos con el elenco de El Círculo’ cast-interview promo, cross-posted to this Facebook /posts/ address with the identical caption as the org's own /videos/ address (facebook.com/planetadelibrosmx/videos/1719472739116974, already ledgered as a Rule I dup) and as the Instagram reel kept as primary (instagram.com/reel/Dea9-c6E1M5, in data.json, Oct 12). No date shown on this address either. Third address for the same campaign, Rule I.",
+      "history": [
+        {
+          "attempt": "2026-10-16T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12736",
+          "note": "Third address (after IG reel + FB /videos/) for the same Planeta de Libros México cast-interview campaign. Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/be-en/title/80217807",
+      "firstSeen": "2026-10-16T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix's own title/streaming-catalog page: promotional synopsis, cast/creator credits, one-line episode blurbs, genre/audio/subtitle metadata, and subscription pricing only — no written editorial or critical content. Same reference-database surface family as the already-ledgered IMDb title records and JustWatch show pages (Rule F classifies the surface, not the subject it catalogs). Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-16T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12736",
+          "note": "Netflix's own title/catalog page, no original editorial content. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-15T22:15:03Z"
+  "lastUpdated": "2026-10-16T02:20:00Z"
 }
