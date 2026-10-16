@@ -1965,5 +1965,41 @@
     "type": "Feature",
     "excerpt": "Full season episode guide by Greg Wheeler listing runtimes and per-episode synopses for all 8 episodes (all released Oct 7, 2026), plus where-to-watch and season 2 status notes.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Cuarto Poder",
+    "headline": "Zuria, Osvaldo y Michel protagonizan thriller",
+    "url": "https://cuartopoder.mx/gente/zuria-osvaldo-y-michel-protagonizan-thriller/590691",
+    "date": "Sep 10, 2026",
+    "ts": 20260910,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Pre-premiere piece on El Círculo (Netflix, Oct 7): four lifelong friends unravel after a leaked video exposes them to blackmail; introduces cast Zuria Vega, Osvaldo Benavides, Raúl Briones, Michel Brown and the Los corruptores source novel.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "ABC Noticias",
+    "headline": "Netflix lanzará 'El Círculo', serie basada en la novela 'Los Corruptores'",
+    "url": "https://abcnoticias.mx/show/2026/9/9/netflix-lanzara-el-circulo-serie-basada-en-la-novela-los-corruptores-289261.html",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Announcement piece: Netflix thriller El Círculo, based on Jorge Zepeda Patterson's Los Corruptores, premieres Oct 7; a leaked video pulls four lifelong friends into a blackmail plot. Cast: Zuria Vega, Michel Brown, Raúl Briones, Osvaldo Benavides.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "El Universal (MX)",
+    "headline": "Jorge Zepeda Paterson y la adptación de una de sus novelas llega a Netflix con 'El círculo'",
+    "url": "https://eluniversal.com.mx/espectaculos/jorge-zepeda-paterson-y-la-adptacion-de-una-de-sus-novelas-llega-a-netflix-con-el-circulo",
+    "date": "Oct 2, 2026",
+    "ts": 20261002,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Source-novel feature: covers the Netflix adaptation of Zepeda Patterson's 2013 novel Los corruptores, noting the show shifts focus from the book's political intrigue to a friend group caught in scandal; led by Zuria Vega and Osvaldo Benavides, premieres the following Wednesday with 8 episodes.",
+    "storyGroup": null
   }
 ]
