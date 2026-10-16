@@ -4893,7 +4893,27 @@
           "note": "German TVDB-style episode guide/reference page (Serienjunkies, IPPEN.MEDIA). Short synopsis plus cast/episode metadata; no byline and no fixed article publish date (only 'Angelegt am 24.09.2026' / 'zuletzt aktualisiert 15.10.2026' living-record stamps, not an article date). Surface-family database record, Rule F, parallel to the IMDb/Apple-show-page family."
         }
       ]
+    },
+    {
+      "url": "https://www.esdiario.com/chismografo/tendencias/261012/199465/el-circulo_amp.html",
+      "firstSeen": "2026-10-16T18:14:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T18:14:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "AMP rendering variant (_amp.html suffix) of the ESdiario explainer canonically tracked in data.json at https://www.esdiario.com/chismografo/tendencias/261012/199465/el-circulo.html (this run, LEMA-12869). Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-16T18:14:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12869",
+          "note": "AMP rendering variant (_amp.html suffix) of the ESdiario explainer canonically tracked in data.json at https://www.esdiario.com/chismografo/tendencias/261012/199465/el-circulo.html (this run, LEMA-12869). Second address, not a distinct document."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-16T18:08:37Z"
+  "lastUpdated": "2026-10-16T18:14:00Z"
 }
