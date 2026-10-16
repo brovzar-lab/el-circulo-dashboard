@@ -3230,9 +3230,9 @@
     {
       "url": "https://facebook.com/thebestnetflix/posts/1892263358694389",
       "firstSeen": "2026-10-13T06:00:00Z",
-      "failCount": 1,
+      "failCount": 2,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-13T06:00:00Z",
+      "lastAttempt": "2026-10-16T14:20:00Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -3241,6 +3241,13 @@
           "status": 0,
           "issue": "LEMA-12537",
           "note": "Facebook promo/curation post ('Best of Netflix' page); full fallback chain failed to extract post content -- WebFetch returned only a page-title fragment, Firecrawl refused the domain ('we do not support this site'), Tavily Extract returned empty. Only the Tavily *search* snippet surfaced partial text ('The acting is intense, with a strong emotional core...'), not enough to classify account type or dateability. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        },
+        {
+          "attempt": "2026-10-16T14:20:00Z",
+          "method": "WebFetch/Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-12851",
+          "note": "Retry (cooldownUntil was null, failCount=1): WebFetch again returned only a bare truncated title fragment ('Best of Netflix - Alejandro Lozano's Inside the Circle,...'), Tavily Extract (basic and advanced) returned empty. Firecrawl MCP tool not available to this run -- same tool-kit gap as the sibling netfliteando entry above, not an editorial call. failCount now 2, still below 3-strike cooldown threshold."
         }
       ]
     },
@@ -4827,7 +4834,45 @@
           "note": "Search-snippet evidence (contestant names, reality-format description, 2020 premiere date) unambiguously identifies the unrelated Netflix reality series, not the 2026 Mexican thriller."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/news/ni66045981",
+      "firstSeen": "2026-10-16T14:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T14:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "IMDb news aggregator page ('Where Was ‘Inside the Circle’ Filmed? What We Know About Netflix’s Mexican Thriller') is a syndicated repost crediting 'See full article at Comic Basics, 10/4/2026, by Laura Bais'; the ComicBasics original (https://www.comicbasics.com/where-was-inside-the-circle-filmed-what-we-know-about-netflixs-mexican-thriller/) is already tracked in data.json at the same ts (Oct 4, 2026). Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-16T14:20:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-12851",
+          "note": "Fetched full page via Tavily Extract; body explicitly attributes the piece to Comic Basics, already-tracked original confirmed by URL+ts match in data.json. Rule I second-address, same family as other already-ledgered ComicBasics syndication rows."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/netfliteando/posts/2840697256302009",
+      "firstSeen": "2026-10-16T14:20:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-16T14:20:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-16T14:20:00Z",
+          "method": "WebFetch/Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-12851",
+          "note": "Candidate surfaced by audiencia/ranking query (fan post claiming El Círculo hit #4 on Netflix global ranking, Top 10 in 22 countries). Full fallback chain failed: WebFetch returned only a bare page-title fragment ('Recomendaciones Netflix Peliculas y Series 2026'), Tavily Extract (basic and advanced) returned empty. Firecrawl MCP tool not available to this run (Research Specialist tool-kit gap vs. the routine's documented kit) -- flagged separately for tool-availability visibility, not treated as an editorial call. Cannot confirm account type (public Facebook group 'netfliteando', name suggests fan community) or a real sourced date from available tools this run. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-16T10:13:22Z"
+  "lastUpdated": "2026-10-16T14:20:00Z"
 }
