@@ -4701,7 +4701,70 @@
           "note": "Netflix's own title/catalog page, no original editorial content. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://whats-on-netflix.com/TOP-10-TITLE-SEARCH?title=Inside%20The%20Circle",
+      "firstSeen": "2026-10-16T06:12:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T06:12:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Uppercase-path case-variant of the already-ledgered What's on Netflix Top 10 Viewership stats-search page for Inside The Circle (lowercase /top-10-title-search/ sibling row, same host, not folded by HOST_CASE_INSENSITIVE_PATH since whats-on-netflix.com has no entry there). Confirmed via fetch: identical shape -- auto-generated chart/rank/points data table plus a pulled synopsis only, no original written analysis. Rule F, same family as the lowercase sibling.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-16T06:12:15Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12743",
+          "note": "Uppercase-path case-variant of already-ledgered lowercase sibling; same Rule F listing/database shape confirmed via fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/title/inside-the-circle/rankings",
+      "firstSeen": "2026-10-16T06:12:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T06:12:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol per-country TOP 10 ranking table for Inside The Circle (/rankings sibling of the already-ledgered flixpatrol.com/title/inside-the-circle/ page). Confirmed via Firecrawl scrape: pure ranking table (country-by-country chart position by week) plus boilerplate synopsis/cast metadata, no original written analysis. Rule F, same family as the already-ledgered FlixPatrol title page.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-16T06:12:15Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12743",
+          "note": "Per-country ranking table only, no written analysis. Same FlixPatrol Rule F family as the already-ledgered /title/inside-the-circle/ page."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/tv-non-english/2021-12-19",
+      "firstSeen": "2026-10-16T06:12:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-16T06:12:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix Tudum Global Non-English TV Top 10 chart, dated archive path (same client-rendered chart template and date-range selector as the already-ledgered netflix.com/tudum/top10/tv-non-english bare-path sibling). Confirmed via Firecrawl scrape: date-selector-driven ranking table only, no written prose. Rule F, same established Tudum Top10 family.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-16T06:12:15Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12743",
+          "note": "Same Tudum Top10 chart template as the already-ledgered bare-path sibling; dated archive path, no written content. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-16T03:15:00Z"
+  "lastUpdated": "2026-10-16T06:12:15Z"
 }
