@@ -5064,7 +5064,112 @@
           "note": "Verbatim syndicated repost of Fiction Horizon article already in data.json; second address, not a distinct document."
         }
       ]
+    },
+    {
+      "url": "https://www.netflix.com/browse?jbv=80217807",
+      "firstSeen": "2026-10-17T10:10:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T10:10:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix catalog/browse page for the show: one-line synopsis, per-episode plot blurbs, cast/genre tags, trailer. No reviews, interviews, or analysis -- same pattern as the already-ledgered platform show-page family (kinocheck, RT show pages). Stripping the metadata leaves nothing written about the show specifically. No publish date shown (persistent catalog page). Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-17T10:10:08Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12938",
+          "note": "Official Netflix catalog/browse page for the show: one-line synopsis, per-episode plot blurbs, cast/genre tags, trailer. No reviews, interviews, or analysis -- same pattern as the already-ledgered platform show-page family (kinocheck, RT show pages). Stripping the metadata leaves nothing written about the show specifically. No publish date shown (persistent catalog page). Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/ca/tv-show/los-corruptores",
+      "firstSeen": "2026-10-17T10:10:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T10:10:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "JustWatch Canada show page: streaming-availability grid, episode list, and boilerplate one-line synopsis only; no written review or analysis. Legal-availability aggregators are Rule-E-exempt from the piracy gate (coverage in principle) but this specific page is still a bare database/listing surface under Rule F once its own content is examined. Ledgered per-path per the Rule H extension enumerate-per-path guidance (this is the /ca/ locale instance).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-17T10:10:08Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12938",
+          "note": "JustWatch Canada show page: streaming-availability grid, episode list, and boilerplate one-line synopsis only; no written review or analysis. Legal-availability aggregators are Rule-E-exempt from the piracy gate (coverage in principle) but this specific page is still a bare database/listing surface under Rule F once its own content is examined. Ledgered per-path per the Rule H extension enumerate-per-path guidance (this is the /ca/ locale instance)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/top10/es/paraguay/tv",
+      "firstSeen": "2026-10-17T10:10:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T10:10:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum per-country (Paraguay) live Top 10 TV ranking table -- bare ranking data (El círculo: Temporada 1 appears at rank 05), no written prose about the show. Same listing/database family as the already-ledgered global Tudum Top10 and FlixPatrol pages. Continuously updated \"ahora\" page, not a dateable article.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-17T10:10:08Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12938",
+          "note": "Official Netflix Tudum per-country (Paraguay) live Top 10 TV ranking table -- bare ranking data (El círculo: Temporada 1 appears at rank 05), no written prose about the show. Same listing/database family as the already-ledgered global Tudum Top10 and FlixPatrol pages. Continuously updated \"ahora\" page, not a dateable article."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/top10/es/nicaragua/tv",
+      "firstSeen": "2026-10-17T10:10:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T10:10:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum per-country (Nicaragua) live Top 10 TV ranking table -- bare ranking data (El círculo: Temporada 1 appears at rank 10), no written prose about the show. Same listing/database family as the already-ledgered global Tudum Top10 and FlixPatrol pages. Continuously updated \"ahora\" page, not a dateable article.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-17T10:10:08Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12938",
+          "note": "Official Netflix Tudum per-country (Nicaragua) live Top 10 TV ranking table -- bare ranking data (El círculo: Temporada 1 appears at rank 10), no written prose about the show. Same listing/database family as the already-ledgered global Tudum Top10 and FlixPatrol pages. Continuously updated \"ahora\" page, not a dateable article."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/articles/top-10-october-5-2026",
+      "firstSeen": "2026-10-17T10:10:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T10:10:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Tudum weekly Top 10 digest article (week of Oct 5, 2026): the article's own written paragraphs cover only the #1/#2 ranked titles per list (Below, Doctor X: Mafia in White, Crazy Rich Incredibly Broke, etc.); Inside The Circle appears only as a row (#4, non-English TV, 2.1M views) in the accompanying ranking table with no dedicated sentence of its own. Stripping the table leaves nothing written specifically about this show. Rule F, same test as a schedule-grid page.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-17T10:10:08Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12938",
+          "note": "Tudum weekly Top 10 digest article (week of Oct 5, 2026): the article's own written paragraphs cover only the #1/#2 ranked titles per list (Below, Doctor X: Mafia in White, Crazy Rich Incredibly Broke, etc.); Inside The Circle appears only as a row (#4, non-English TV, 2.1M views) in the accompanying ranking table with no dedicated sentence of its own. Stripping the table leaves nothing written specifically about this show. Rule F, same test as a schedule-grid page."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-17T02:10:32Z"
+  "lastUpdated": "2026-10-17T10:10:08Z"
 }
