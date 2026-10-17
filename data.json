@@ -2169,5 +2169,17 @@
     "type": "Social",
     "excerpt": "Official Netflix Latinoamérica TikTok promo highlighting the chase-scene sequences filmed in Mexico City (metro, Zócalo) for 'El círculo', now streaming. Date sourced from TikTok's createTime field.",
     "storyGroup": "netflixlat-chase-scenes-promo-20261008"
+  },
+  {
+    "outlet": "Un Rockstar Resume (YouTube)",
+    "headline": "El Círculo - ¿Habrá Temporada 2?",
+    "url": "https://youtube.com/watch?v=macdBfFjeqg",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Spanish-language YouTube creator video (Un Rockstar Resume, 46K subscribers) discussing Season 2 prospects for El Círculo: notes Netflix has not officially confirmed a renewal, and that unresolved threads (the fallout for Jaime, Pamela's death, the corruption network) could carry into a potential second season if the story expands beyond its source novel, Los Corruptores.",
+    "storyGroup": null
   }
 ]
