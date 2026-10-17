@@ -724,11 +724,11 @@
       "firstSeen": "2026-10-09T02:20:00Z",
       "failCount": 0,
       "lastStatus": 200,
-      "lastAttempt": "2026-10-09T02:20:00Z",
+      "lastAttempt": "2026-10-17T14:17:44Z",
       "cooldownUntil": null,
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
-      "skipNote": "RT season page: Tomatometer shows '1 Reviews' but no percentage/consensus; one critic blurb (Karina Adelgaard, 3/5) is reflected but the page itself is cast/crew/episode metadata, same Rule F family as the already-ledgered bare show page. Original critic review not yet located by this run's queries -- worth targeting by name next sweep.",
+      "skipNote": "RT season page: Tomatometer shows 3 Reviews (no percentage/consensus yet). All three critic reviews now confirmed already in data.json: Archi Sengupta/LeisureByte.com (3/5), Joel Keller/Decider, Karina Adelgaard/Heaven of Horror (3/5). Mining duty (Rule H scope limit 1) satisfied -- no new rows needed. Page itself remains Rule F (cast/crew/episode metadata, same family as the already-ledgered bare show page).",
       "skipMethod": "body_fetch",
       "history": [
         {
@@ -737,6 +737,13 @@
           "status": 200,
           "issue": "LEMA-12214",
           "note": "RT season page, metadata + 1 reflected review blurb, no written analysis of its own. Rule F."
+        },
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "RT season page: Tomatometer shows 3 Reviews (no percentage/consensus yet). All three critic reviews now confirmed already in data.json: Archi Sengupta/LeisureByte.com (3/5), Joel Keller/Decider, Karina Adelgaard/Heaven of Horror (3/5). Mining duty (Rule H scope limit 1) satisfied -- no new rows needed. Page itself remains Rule F (cast/crew/episode metadata, same family as the already-ledgered bare show page)."
         }
       ]
     },
@@ -5169,7 +5176,190 @@
           "note": "Tudum weekly Top 10 digest article (week of Oct 5, 2026): the article's own written paragraphs cover only the #1/#2 ranked titles per list (Below, Doctor X: Mafia in White, Crazy Rich Incredibly Broke, etc.); Inside The Circle appears only as a row (#4, non-English TV, 2.1M views) in the accompanying ranking table with no dedicated sentence of its own. Stripping the table leaves nothing written specifically about this show. Rule F, same test as a schedule-grid page."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DeipUVjMXqr",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Instagram reel from 'moviestore0s', a fan/meme-repost account cross-posting movie/TV clips with generic hashtag spam (#zuriavega #mexican #kiss #review) and no independent public identity beyond entertainment fandom; comments are emoji/follow-spam. Rule B individual fan-repost account, dateability irrelevant.",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "Instagram reel from 'moviestore0s', a fan/meme-repost account cross-posting movie/TV clips with generic hashtag spam (#zuriavega #mexican #kiss #review) and no independent public identity beyond entertainment fandom; comments are emoji/follow-spam. Rule B individual fan-repost account, dateability irrelevant."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/inside-the-circle-netflix-review",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same surface family as other already-ledgered /discover/ pages for this title (e.g. inside-the-circle-on-netflix-review): aggregation of many videos under the topic tag, not a distinct document. Direct fetch only returns the generic JS-shell; classified on URL-family pattern plus Tavily's indexed snippet.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "TikTok /discover/<slug> hashtag/topic index page, same surface family as other already-ledgered /discover/ pages for this title (e.g. inside-the-circle-on-netflix-review): aggregation of many videos under the topic tag, not a distinct document. Direct fetch only returns the generic JS-shell; classified on URL-family pattern plus Tavily's indexed snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DekjmuJxPzc",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Official The Hollywood Reporter en Español Instagram reel promoting its own already-tracked article (es.hollywoodreporter.com/el-elenco-de-el-circulo-debate-los-limites-de-la-lealtad-y-sobre-como-saber-cuando-es-momento-de-soltar, in data.json, Oct 14 2026) -- same promo caption/content as the already-ledgered sibling post instagram.com/p/DefjQUGGQIx. Bare social link-post, no text of its own. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "Official The Hollywood Reporter en Español Instagram reel promoting its own already-tracked article (es.hollywoodreporter.com/el-elenco-de-el-circulo-debate-los-limites-de-la-lealtad-y-sobre-como-saber-cuando-es-momento-de-soltar, in data.json, Oct 14 2026) -- same promo caption/content as the already-ledgered sibling post instagram.com/p/DefjQUGGQIx. Bare social link-post, no text of its own. Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DeiTwSSlSCW",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official Quién (quiencom) Instagram exclusive carousel interview with Zuria Vega, Osvaldo Benavides, Michel Brown and Raúl Briones on their characters' moral dilemmas (photos by @vaztujonas) -- genuine outlet-account content, not a repost, but no usable Rule A date: the caption carries no visible date, and the page's own 'Photo by Quién on October 15, 2026' string is alt-text/accessibility metadata, not a visible dateline (same precedent as the netflixlat IG post in the 2026-10-15 sweep). No matching quien.com article URL found. reviewable: true.",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "Official Quién (quiencom) Instagram exclusive carousel interview with Zuria Vega, Osvaldo Benavides, Michel Brown and Raúl Briones on their characters' moral dilemmas (photos by @vaztujonas) -- genuine outlet-account content, not a repost, but no usable Rule A date: the caption carries no visible date, and the page's own 'Photo by Quién on October 15, 2026' string is alt-text/accessibility metadata, not a visible dateline (same precedent as the netflixlat IG post in the 2026-10-15 sweep). No matching quien.com article URL found. reviewable: true."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/quiencom/posts/exclusiva-en-el-c%C3%ADrculo-los-secretos-las-mentiras-y-las-verdades-inc%C3%B3modas-amena/1555389133283386",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Facebook cross-post of the same Quién 'dilemas morales' cast-interview carousel ledgered this run at instagram.com/p/DeiTwSSlSCW (identical caption, same org). Kept the Instagram post as the reference row. Second address, same-org cross-platform repost.",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "Facebook cross-post of the same Quién 'dilemas morales' cast-interview carousel ledgered this run at instagram.com/p/DeiTwSSlSCW (identical caption, same org). Kept the Instagram post as the reference row. Second address, same-org cross-platform repost."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/NetflixLatino/posts/qued%C3%A9-en-shock-con-estas-escenas-de-persecuci%C3%B3n-en-la-ciudad-de-m%C3%A9xico-el-c%C3%ADrcul/1600967425403532",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Facebook post with caption identical to this run's new data.json row (TikTok @netflixlat/video/7694407640549575956, dateable via TikTok createTime: Oct 8, 2026). Facebook blocks WebFetch/Firecrawl (login wall; Firecrawl declined the domain outright) so the TikTok copy is kept as the dateable reference row. Second address, same-org cross-platform repost.",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "Facebook post with caption identical to this run's new data.json row (TikTok @netflixlat/video/7694407640549575956, dateable via TikTok createTime: Oct 8, 2026). Facebook blocks WebFetch/Firecrawl (login wall; Firecrawl declined the domain outright) so the TikTok copy is kept as the dateable reference row. Second address, same-org cross-platform repost."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-netflix-lo-corretean-en-el-metro",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page aggregating videos under this tag (including the netflixlat chase-scene clip), same Rule F surface family as other already-ledgered /discover/ pages for this title. Not a distinct document.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "TikTok /discover/<slug> hashtag/topic index page aggregating videos under this tag (including the netflixlat chase-scene clip), same Rule F surface family as other already-ledgered /discover/ pages for this title. Not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-el-circulo-netflix-persecuci%C3%B3n",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same Rule F surface family as other already-ledgered /discover/ pages for this title. Not a distinct document.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "TikTok /discover/<slug> hashtag/topic index page, same Rule F surface family as other already-ledgered /discover/ pages for this title. Not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/VlObcX3wN7g",
+      "firstSeen": "2026-10-17T14:17:44Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T14:17:44Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "YouTube Short from channel 'Jessy Blossom' (@jesy109), an individual entertainment-review/reaction creator with no public identity independent of entertainment fandom (generic #reseña/#parati/#suspenso hashtag review format spanning multiple unrelated titles). Rule B amendment (LEMA-12887/12888): profile carries no affirmative journalist/columnist/academic/official-type signal, so it stays under editorial_personal_repost scope. On-topic and dateable (publishDate 2026-10-15) but dateability is irrelevant to a Rule B exclusion.",
+      "history": [
+        {
+          "attempt": "2026-10-17T14:17:44Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12943",
+          "note": "YouTube Short from channel 'Jessy Blossom' (@jesy109), an individual entertainment-review/reaction creator with no public identity independent of entertainment fandom (generic #reseña/#parati/#suspenso hashtag review format spanning multiple unrelated titles). Rule B amendment (LEMA-12887/12888): profile carries no affirmative journalist/columnist/academic/official-type signal, so it stays under editorial_personal_repost scope. On-topic and dateable (publishDate 2026-10-15) but dateability is irrelevant to a Rule B exclusion."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-17T10:10:08Z"
+  "lastUpdated": "2026-10-17T14:17:44Z"
 }
