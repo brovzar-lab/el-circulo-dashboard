@@ -2061,5 +2061,29 @@
     "type": "Feature",
     "excerpt": "Explainer connecting El Círculo's fictional corruption plot to real Mexican political dynamics; notes an unverified X post by analyst Mario Di Costanzo claiming Hidalgo governor Julio Menchaca sought urgent talks with the president over a character some read as based on him.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Mario Di Costanzo (X)",
+    "headline": "AL MOMENTO: Trunea el gobernador de Hidalgo por la serie de Netflix \"El Círculo\"",
+    "url": "https://x.com/mario_dico50/status/2110518383888474432",
+    "date": "Oct 14, 2026",
+    "ts": 20261014,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Independent political/economic commentator (not an entertainment outlet, crew, or show-affiliated account) claims Hidalgo governor Julio Menchaca urgently sought to speak with President Sheinbaum over the show, alleging political circles read a character (\"El Rey del Huachicol\") as based on him. Went viral (5.7k likes, 2.5k retweets) and is the source post the already-tracked Sopitas Oct 16 piece cites. Account-type note: does not cleanly fit Rule B's publisher/outlet/editorial-brand vs. vendor/crew/fan-repost buckets; included under Rule C pending policy clarification (escalated same run).",
+    "storyGroup": "hidalgo-gobernador-el-circulo-reaction"
+  },
+  {
+    "outlet": "Magú (X)",
+    "headline": "La serie El Círculo me la brincaba... hoy que leo que el gober de Hidalgo la quiere bajar del streaming, me dieron ganas de verla",
+    "url": "https://x.com/MaguMonero/status/2110946289894535563",
+    "date": "Oct 16, 2026",
+    "ts": 20261016,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Independent personal-commentary account reacting to the Menchaca/Hidalgo reported-censorship-attempt story (same storyGroup as the Mario Di Costanzo post), framing it as a reason to watch the show. Not an entertainment outlet or show-affiliated account; included under Rule C per the same account-type ambiguity noted on the Di Costanzo row.",
+    "storyGroup": "hidalgo-gobernador-el-circulo-reaction"
   }
 ]
