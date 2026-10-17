@@ -5023,7 +5023,48 @@
           "note": "Off-topic: about the unrelated 2015 film 'Circle'."
         }
       ]
+    },
+    {
+      "url": "https://esquirecolombia.com/el-circulo-serie-netflix-actores-personajes",
+      "firstSeen": "2026-10-17T02:10:32Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T02:10:32Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Esquire Colombia cast/character guide (\"El Círculo: quién es quién en la serie de los cuatro amigos...\"), genuine on-topic editorial feature by Adrian Lora, but no real publish date recoverable: no article:published_time meta tag, no JSON-LD datePublished/dateModified, no visible byline dateline in fetched HTML/markdown. Only date-like signal is a WordPress cover-image filename embedding 2026-10-12T10:55:38 -- an upload-artifact timestamp, not a sourced publish date, and not one of Rule A's approved fallbacks (meta/JSON-LD/dateline). URL path carries no day component either. Genuine coverage, not a duplicate of any tracked row.",
+      "history": [
+        {
+          "attempt": "2026-10-17T02:10:32Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12886",
+          "note": "No article:published_time/JSON-LD/dateline recoverable; cover-image filename timestamp is an upload artifact, not an approved Rule A fallback."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/news/ni66045849",
+      "firstSeen": "2026-10-17T02:10:32Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T02:10:32Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news syndication box verbatim reposts Fiction Horizon's \"Netflix's 'Inside the Circle' Release Date, Trailer, Cast and Plot Explained\" (already in data.json, ts 20261004) via a \"See full article at Fiction Horizon\" partner-content box; no original IMDb editorial copy, same pattern as the two other already-ledgered IMDb /news/ syndication rows for this title. Second address, not a distinct document (Rule I).",
+      "history": [
+        {
+          "attempt": "2026-10-17T02:10:32Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-12886",
+          "note": "Verbatim syndicated repost of Fiction Horizon article already in data.json; second address, not a distinct document."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-16T22:15:18Z"
+  "lastUpdated": "2026-10-17T02:10:32Z"
 }
