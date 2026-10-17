@@ -2097,5 +2097,77 @@
     "type": "Article",
     "excerpt": "French-language original editorial piece (by Simon Janvier) on the Los corruptores-to-El Círculo adaptation: the series swaps the novel's press-publication scandal trigger for a leaked video and updates the political context to contemporary Mexico, while expanding family/romantic subplots around the core group of four friends.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Diario de Confianza (DDC+)",
+    "headline": "¿Gobernador se ofendió por serie de Netflix? Esto sabemos",
+    "url": "https://diariodeconfianza.mx/julio-menchaca-serie-el-circulo-netflix-mario-di-costanzo/",
+    "date": "Oct 15, 2026",
+    "ts": 20261015,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Article",
+    "excerpt": "Reports that analyst Mario Di Costanzo claimed on X, citing an unnamed source, that Hidalgo governor Julio Menchaca asked to speak with President Claudia Sheinbaum about \"El Círculo\"; notes neither the state government nor the Presidency has responded, and there is no evidence any character is based on the governor.",
+    "storyGroup": "hidalgo-gobernador-el-circulo-reaction"
+  },
+  {
+    "outlet": "Mercado Negro",
+    "headline": "Netflix convierte los spoilers de «El Círculo» en una campaña de marketing",
+    "url": "https://www.mercadonegro.pe/marketing/netflix-el-circulo-spoiler/",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Peruvian marketing trade outlet covers Netflix's spoiler-warning OOH poster campaign across Mexico City to build curiosity around \"El Círculo\" ahead of/around premiere, framing it as a case study in spoiler-driven marketing.",
+    "storyGroup": "publisitios-ooh-campaign-20261013"
+  },
+  {
+    "outlet": "Marie Claire México",
+    "headline": "'El Círculo' de Netflix: Cuando la amistad se enfrenta a la verdad",
+    "url": "https://marieclaire.com.mx/el-circulo-netflix-significado-amistad/",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "By Anna Brenda Sánchez: frames the thriller as a story about friendship under pressure, where loyalty and secrets test four friends, and ties the plot to real Mexican issues (femicide, journalism, corruption) as a loose adaptation of 'Los corruptores'.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Lika Online",
+    "headline": "„U krugu” među najgledanijim serijama u Hrvatskoj: novi Netflixov triler počinje smrću glumice",
+    "url": "https://www.lika-online.hr/u-krugu-medu-najgledanijim-serijama-u-hrvatskoj-novi-netflixov-triler-pocinje-smrcu-glumice/",
+    "date": "Oct 11, 2026",
+    "ts": 20261011,
+    "lang": "HR",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "Croatian outlet reports \"U krugu\" (Inside the Circle) among the most-watched series in Croatia; recaps the premise of journalist Tomás publishing a video linking an actress's death to a powerful defense minister, drawing childhood friends into the fallout.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "GRYOnline.pl",
+    "headline": "Ma 8 odcinków i jest w top 10 Netflixa. „Wciągający” thriller kryminalny zainteresował także Polaków",
+    "url": "https://www.gry-online.pl/newsroom/ma-8-odcinkow-i-jest-w-top-10-netflixa-wciagajacy-thriller-krymin/zd31f21",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "lang": "PL",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "By Pamela Jakiel: the eight-episode Mexican thriller (Polish title 'Skorumpowani') entered Poland's Netflix Top 10 over the weekend and ranked 7th globally; says it breaks no new ground but is gripping, especially for its focus on the four friends' relationship.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Netflix Latinoamérica (TikTok)",
+    "headline": "Quedé en shock con estas escenas de persecución en la Ciudad de México",
+    "url": "https://www.tiktok.com/@netflixlat/video/7694407640549575956",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Official Netflix Latinoamérica TikTok promo highlighting the chase-scene sequences filmed in Mexico City (metro, Zócalo) for 'El círculo', now streaming. Date sourced from TikTok's createTime field.",
+    "storyGroup": "netflixlat-chase-scenes-promo-20261008"
   }
 ]
