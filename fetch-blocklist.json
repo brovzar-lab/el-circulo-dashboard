@@ -5380,7 +5380,205 @@
           "note": "epguides.com episode guide/database page for El Círculo (season 1 episode table, cast list placeholders ('?'), one-sentence logline citing the source novel). No byline, review, or original editorial writing beyond the catalog metadata. 'Last updated: Sun, 11 Oct 2026 15:00' is a living-record stamp, not an article publish date (Rule A). Catalog metadata page, Rule F, parallel to the kinocheck.com/thetvdb.com/serienjunkies.de listing-page family already ledgered for this show."
         }
       ]
+    },
+    {
+      "url": "https://imdb.com/title/tt36743307/episodes",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "IMDb title-record episode-list sub-page (/episodes) for El Círculo/Inside the Circle: per-episode rating numbers only, no written editorial content. Same established family as already-ledgered imdb.com/title/tt36743307 (base) and /externalreviews. Rule F (IMDb title records are Rule F by family, LEMA-10630 ruling).",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "IMDb title-record episode-list sub-page for El Círculo/Inside the Circle. Same family as already-ledgered imdb.com/title/tt36743307 and /externalreviews -- bare episode/rating list, no written editorial content. Rule F (IMDb title records are Rule F by family, LEMA-10630 ruling)."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/es/news/ni65294704",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "IMDb News (imdb.com/news/* is NOT the Rule-F title-record family) article headlined 'Women in Blue (Las Azules) Renewed for a Second Season' -- substantively about Las Azules' S2 renewal, mentions Inside the Circle only in a passing release-date comparison. Different named subject in the headline itself satisfies the Rule G no-fetch carve-out. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "IMDb News piece headlined 'Women in Blue (Las Azules) Renewed for a Second Season' -- about a different Lemon Studios show's renewal, not about El Círculo. Surfaced only because the article's body references 'Inside the Circle' release details in passing. Rule G, named alternative subject (Las Azules renewal) satisfies the no-fetch carve-out."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/reel/DehAJlYsZls",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Content-farm aggregator Instagram account (\"bob_geor_latest_movies_series_anime\") posting a bare synopsis card for the show, bundled in the same caption with an unrelated Tanzanian retail shop’s phone numbers and ads -- not a publisher/outlet or genuine editorial voice, no original commentary. The caption’s \"Rate: 5.0/10\" is not a real aggregator score, just account boilerplate reused across unrelated titles. Rule A(2) social-candidate relevance gate: excluded regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-snippet",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "Content-farm aggregator Instagram account (bob_geor_latest_movies_series_anime) posting a generic synopsis card plus an unrelated Tanzanian retail business’s phone numbers/ads in the same caption. No editorial identity, synopsis data only (incorrect 5.0/10 \"rate\" field, not a real aggregator score). Rule A(2) social-candidate relevance gate."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/es/el-salvador/tv",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum El Salvador TV Top 10 chart -- bare ranking table (El círculo: Temporada 1 appears as row 08, no written prose, only a title/rank/weeks-on-list layout). Same established per-country Tudum Top10 family as already-ledgered netflix.com/tudum/top10/es/{paraguay,nicaragua}/tv and /mexico/tv. Rule F, surfaced incidentally via a Top10/Tudum query, not a hunt across all 190 country pages.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-snippet",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "Official Netflix Tudum El Salvador TV Top 10 chart -- bare ranking table (El círculo: Temporada 1 appears as row 08, no written prose). Same established family as already-ledgered netflix.com/tudum/top10/es/{paraguay,nicaragua}/tv and /mexico/tv."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/discover/spoiler-el-circulo",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (surface family, same test as already-ledgered Tudum/FlixPatrol Top10 pages and the two other already-ledgered /discover/ pages for this show) -- an aggregation of many videos under the topic tag, not a distinct document. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "TikTok /discover/<slug> hashtag/topic index page -- same surface family as already-ledgered tiktok.com/discover/miniserie-el-circulo and /inside-the-circle-on-netflix-review. Aggregation of many videos under the topic tag, not a distinct document. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/discover/netflix-estrena-el-c%C3%ADrculo",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other three already-ledgered /discover/ pages for this show -- an aggregation of many videos under the topic tag, not a distinct document. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "TikTok /discover/<slug> hashtag/topic index page -- same surface family as already-ledgered tiktok.com/discover/miniserie-el-circulo and /inside-the-circle-on-netflix-review. Aggregation of many videos under the topic tag, not a distinct document. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/p/DeXqkc_x40Y",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Personal Instagram post (mvidriales) reminiscing about a booktrailer for the source novel \"Los Corruptores\" made ~13 years ago when she worked at the publisher, prompted by El Círculo’s Netflix release (\"A propósito de la salida de El círculo...\"). Content is personal nostalgia about the old book promotion, not commentary on the show itself, and the account is personal, not an editorial outlet. Rule A(2) social-candidate relevance gate: excluded regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-snippet",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "Personal Instagram post by a former publishing-house employee reminiscing about a 13-year-old booktrailer for the source novel \"Los Corruptores\", prompted by the show’s Netflix release. No original commentary on the show itself, personal account not an editorial outlet. Rule A(2) social-candidate relevance gate."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/por.colima/posts/4216535445146791",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Facebook post headlined 'Circula en Redes, qué opinas?' -- surfaced on a generic-word collision (\"circula\"/\"círculo\"), content describes an unrelated show about a teenager obsessed with influencer culture, no connection to El Círculo/Inside the Circle. Named alternative subject in the post's own description satisfies the Rule G no-fetch carve-out.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "Facebook post headlined 'Circula en Redes, qué opinas?' about an unrelated show (a teenager obsessed with influencer culture) -- a generic-word collision on \"circula\", not about El Círculo. Rule G, named alternative subject satisfies the no-fetch carve-out."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/p/Dekfl3NGcqR",
+      "firstSeen": "2026-10-17T22:14:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T22:14:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Instagram post (\"Comenta CÍRCULO para acceder a un espacio exclusivo para hombres...\") using \"círculo\" as a generic engagement-bait keyword for an unrelated men’s community group/course, not a reference to El Círculo/Inside the Circle. Named alternative subject (men’s community engagement post) satisfies the Rule G no-fetch carve-out.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-17T22:14:33Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-12950",
+          "note": "Instagram post using \"CÍRCULO\" as a generic engagement-bait term for an unrelated men’s community group, not about the show. Rule G, named alternative subject (men’s community engagement post) satisfies the no-fetch carve-out."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-17T18:09:11Z"
+  "lastUpdated": "2026-10-17T22:14:33Z"
 }
