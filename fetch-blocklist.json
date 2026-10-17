@@ -5359,7 +5359,28 @@
           "note": "YouTube Short from channel 'Jessy Blossom' (@jesy109), an individual entertainment-review/reaction creator with no public identity independent of entertainment fandom (generic #reseña/#parati/#suspenso hashtag review format spanning multiple unrelated titles). Rule B amendment (LEMA-12887/12888): profile carries no affirmative journalist/columnist/academic/official-type signal, so it stays under editorial_personal_repost scope. On-topic and dateable (publishDate 2026-10-15) but dateability is irrelevant to a Rule B exclusion."
         }
       ]
+    },
+    {
+      "url": "https://epguides.com/Circulo",
+      "firstSeen": "2026-10-17T18:09:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-17T18:09:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "epguides.com episode guide/database page for El Círculo (season 1 episode table, cast list placeholders ('?'), one-sentence logline citing the source novel). No byline, review, or original editorial writing beyond the catalog metadata. 'Last updated: Sun, 11 Oct 2026 15:00' is a living-record stamp, not an article publish date (Rule A). Catalog metadata page, Rule F, parallel to the kinocheck.com/thetvdb.com/serienjunkies.de listing-page family already ledgered for this show.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-17T18:09:11Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-12946",
+          "note": "epguides.com episode guide/database page for El Círculo (season 1 episode table, cast list placeholders ('?'), one-sentence logline citing the source novel). No byline, review, or original editorial writing beyond the catalog metadata. 'Last updated: Sun, 11 Oct 2026 15:00' is a living-record stamp, not an article publish date (Rule A). Catalog metadata page, Rule F, parallel to the kinocheck.com/thetvdb.com/serienjunkies.de listing-page family already ledgered for this show."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-17T14:17:44Z"
+  "lastUpdated": "2026-10-17T18:09:11Z"
 }
