@@ -2085,5 +2085,17 @@
     "type": "Social",
     "excerpt": "Independent personal-commentary account reacting to the Menchaca/Hidalgo reported-censorship-attempt story (same storyGroup as the Mario Di Costanzo post), framing it as a reason to watch the show. Not an entertainment outlet or show-affiliated account; included under Rule C per the same account-type ambiguity noted on the Di Costanzo row.",
     "storyGroup": "hidalgo-gobernador-el-circulo-reaction"
+  },
+  {
+    "outlet": "Netflix News",
+    "headline": "El Círculo sur Netflix : quel roman a inspiré la série et quelles sont les différences avec le livre ?",
+    "url": "https://www.netflix-news.com/articles/programmes/series/1631253-el-circulo-sur-netflix-quel-roman-a-inspire-la-serie-et-quelles-sont-les-differences-avec-le-livre-17-10-2026",
+    "date": "Oct 17, 2026",
+    "ts": 20261017,
+    "lang": "FR",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "French-language original editorial piece (by Simon Janvier) on the Los corruptores-to-El Círculo adaptation: the series swaps the novel's press-publication scandal trigger for a leaked video and updates the political context to contemporary Mexico, while expanding family/romantic subplots around the core group of four friends.",
+    "storyGroup": null
   }
 ]
