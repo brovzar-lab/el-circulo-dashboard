@@ -5644,7 +5644,50 @@
           "note": "Headline exact match to already-tracked comicbasics.com article."
         }
       ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/mexico/2026-10-16",
+      "firstSeen": "2026-10-18T06:12:35Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T06:12:35Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol Mexico Top 10 chart, dated snapshot (Oct 16, 2026). Search-result title 'TOP 10 on Netflix in Mexico on October 16, 2026' with chart-row snippet ('...Inside The Circle, 8 d. 3. –. Take Charge of My Heart...') confirms the same bare ranking-table template already ledgered under flixpatrol.com/top10/netflix/mexico (no date segment) and the other country/world Top10 pages; direct fetch returned HTTP 403. Rule F names FlixPatrol Top-10 chart surfaces explicitly (LEMA-12962/12963): the surface stays Rule F regardless of prose.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-18T06:12:35Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-12972",
+          "note": "Dated Top10 Mexico snapshot, same established FlixPatrol chart-surface family."
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Mexico_Videos/comments/1wc5r2k/zuria_vega_protagoniza_el_c%C3%ADrculo_nueva_serie_de",
+      "firstSeen": "2026-10-18T06:12:35Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T06:12:35Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "r/Mexico_Videos post ('Zuria Vega protagoniza \"El Círculo\", nueva serie de Netflix') reposting cast news. Same subreddit already classified in this ledger (sibling row reddit.com/r/Mexico_Videos/comments/1x0eww6) as a general video-sharing community, not a recognized editorial/outlet account -- fan-repost under Rule B's social-candidate relevance gate, not media coverage.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-18T06:12:35Z",
+          "method": "Tavily (search snippet); direct fetch blocked (WebFetch/curl 403)",
+          "status": 200,
+          "issue": "LEMA-12972",
+          "note": "Sibling post in the same already-classified r/Mexico_Videos fan-repost community."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-18T02:15:02Z"
+  "lastUpdated": "2026-10-18T06:12:35Z"
 }
