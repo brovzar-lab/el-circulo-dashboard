@@ -2181,5 +2181,53 @@
     "type": "Social",
     "excerpt": "Spanish-language YouTube creator video (Un Rockstar Resume, 46K subscribers) discussing Season 2 prospects for El Círculo: notes Netflix has not officially confirmed a renewal, and that unresolved threads (the fallout for Jaime, Pamela's death, the corruption network) could carry into a potential second season if the story expands beyond its source novel, Los Corruptores.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Maxine Woodside / Todo Para la Mujer (Instagram)",
+    "headline": "PRIMICIA: Netflix presenta El Círculo, nueva serie con secretos, chantajes y traiciones",
+    "url": "https://instagram.com/reel/DdEo-M9hson",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Primicia de Maxine Woodside (Todo Para la Mujer / Woodside Media TV) anunciando el estreno de \"El Círculo\" el 7 de octubre, con elenco encabezado por Zuria Vega, Michel Brown, Raúl Briones y Osvaldo Benavides, basada en \"Los Corruptores\" de Jorge Zepeda Patterson.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "Marie Claire México (Instagram)",
+    "headline": "Recomendación de fin de semana: El Círculo",
+    "url": "https://instagram.com/reel/DenJ4NxhnuH",
+    "date": "Oct 17, 2026",
+    "ts": 20261017,
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Reel de recomendación de Marie Claire México sobre \"El Círculo\", describiéndola como una serie que invita a reflexionar sobre el verdadero significado de la amistad; cita a Zuria Vega (Amelia), Michel Brown (Tomás), Raúl Briones (Mario) y Osvaldo Benavides (Jaime).",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Aura Series (TikTok)",
+    "headline": "Zuria Vega, Michel Brown, Osvaldo Benavides y Raúl Briones nos describen a sus personajes en El Círculo",
+    "url": "https://tiktok.com/@aura.series/video/7694450196234685714",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "lang": "ES",
+    "market": "International",
+    "type": "Social",
+    "excerpt": "Clip promocional en el que el elenco principal describe brevemente a sus respectivos personajes en \"El Círculo\". Date sourced from TikTok createTime field.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Remezcla",
+    "headline": "Netflix to Release 50 Mexican Movies & Series in the Next Two Years",
+    "url": "https://remezcla.com/film/netflix-mexico-slate-2019",
+    "date": "Feb 19, 2019",
+    "ts": 20190219,
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Netflix Mexico slate-announcement roundup from the 2019 FORO conference; devotes one ~60-word paragraph (about 8% of the article) to \"Los corruptores\" (the novel that became El Círculo) as an upcoming thriller series -- published 7 years before premiere, under the pre-rename project title, with no mention of \"El Círculo\"/\"Inside the Circle\". Included per Rule C (no existing skipReason fits a years-old thin pre-production mention under a different working title); escalated for a category ruling.",
+    "storyGroup": null
   }
 ]
