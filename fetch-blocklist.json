@@ -5578,7 +5578,73 @@
           "note": "Instagram post using \"CÍRCULO\" as a generic engagement-bait term for an unrelated men’s community group, not about the show. Rule G, named alternative subject (men’s community engagement post) satisfies the no-fetch carve-out."
         }
       ]
+    },
+    {
+      "url": "https://facebook.com/RadioFormulaMX/posts/1279956581259964",
+      "firstSeen": "2026-10-18T02:15:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T02:15:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Radio Fórmula's own Facebook page resharing their own already-tracked article (radioformula.com.mx, \"De Los corruptores a El Círculo...\", ts 20261011) -- same outlet, same headline/story, different platform address. Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-18T02:15:02Z",
+          "method": "tavily_search snippet + outlet headline match",
+          "status": 200,
+          "issue": "LEMA-12961",
+          "note": "Headline and content identical to already-tracked radioformula.com.mx article; same outlet FB share."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/fictionhorizon/posts/1881291803676888",
+      "firstSeen": "2026-10-18T02:15:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T02:15:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Fiction Horizon's own Facebook page (post dated Oct 4, 2026) sharing their own already-tracked article (fictionhorizon.com/meet-the-cast-of-inside-the-circle-on-netflix-with-photos, ts 20261004) -- post text links directly to that article. Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-18T02:15:02Z",
+          "method": "tavily_extract (advanced)",
+          "status": 200,
+          "issue": "LEMA-12961",
+          "note": "Full post body fetched; confirms it links to and summarizes the already-tracked \"Meet the Cast\" article."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/comic.basics/posts/122269365026247280",
+      "firstSeen": "2026-10-18T02:15:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T02:15:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "ComicBasics's own Facebook page resharing their own already-tracked article (comicbasics.com, \"Meet the Cast of Netflix's 'Inside the Circle' (with Pictures)\", ts 20261004) -- identical headline. Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-18T02:15:02Z",
+          "method": "tavily_search snippet + outlet headline match",
+          "status": 200,
+          "issue": "LEMA-12961",
+          "note": "Headline exact match to already-tracked comicbasics.com article."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-17T22:14:33Z"
+  "lastUpdated": "2026-10-18T02:15:02Z"
 }
