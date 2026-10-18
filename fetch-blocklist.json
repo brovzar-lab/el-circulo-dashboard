@@ -3237,10 +3237,10 @@
     {
       "url": "https://facebook.com/thebestnetflix/posts/1892263358694389",
       "firstSeen": "2026-10-13T06:00:00Z",
-      "failCount": 2,
+      "failCount": 3,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-16T14:20:00Z",
-      "cooldownUntil": null,
+      "lastAttempt": "2026-10-18T14:08:45Z",
+      "cooldownUntil": "2026-11-17T14:08:45Z",
       "history": [
         {
           "attempt": "2026-10-13T06:00:00Z",
@@ -3255,6 +3255,13 @@
           "status": 0,
           "issue": "LEMA-12851",
           "note": "Retry (cooldownUntil was null, failCount=1): WebFetch again returned only a bare truncated title fragment ('Best of Netflix - Alejandro Lozano's Inside the Circle,...'), Tavily Extract (basic and advanced) returned empty. Firecrawl MCP tool not available to this run -- same tool-kit gap as the sibling netfliteando entry above, not an editorial call. failCount now 2, still below 3-strike cooldown threshold."
+        },
+        {
+          "attempt": "2026-10-18T14:08:45Z",
+          "method": "WebFetch/Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-13026",
+          "note": "Second retry (cooldownUntil was null, failCount=2): WebFetch again returned only a bare truncated title fragment, Tavily Extract (advanced) returned empty. Firecrawl MCP tool still not available to this agent. Third consecutive full-chain failure -- failCount now 3, cooldownUntil set to 30 days out per the ledger's standing policy."
         }
       ]
     },
@@ -5750,7 +5757,45 @@
           "note": "Cross-platform second address identified during 2026-10-18 ~1006Z sweep."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/@adepa88/video/7695514706680761618",
+      "firstSeen": "2026-10-18T14:08:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T14:08:45Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-18T14:08:45Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13026",
+          "note": "TikTok video from @adepa88 (\"Pretty_porsh\"), caption \"INSIDE THE CIRCLE... I really enjoyed the mystery and tension in this series\" -- on-topic. Account profile (reviewed via same-page \"more from\" feed) posts casual recommendation clips across many unrelated titles (Telugu films, Korean dramas, horror movies, other Netflix shows) with no independent public identity (not a journalist/critic/academic/etc.) -- an entertainment-fandom personal account per the Rule B amendment (LEMA-12887/12888). Does not clear the commentator carve-out."
+        }
+      ],
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "reviewable": false,
+      "skipNote": "Individual TikTok account (@adepa88 / \"Pretty_porsh\") with no public identity independent of the show or of entertainment fandom -- posts casual movie/show recommendation clips across many unrelated titles (Telugu cinema, Korean dramas, horror movies). Rule B account-type gate, editorial_personal_repost; dateability not evaluated per Rule B (irrelevant regardless of date)."
+    },
+    {
+      "url": "https://www.facebook.com/radiomitre/posts/la-miniserie-mexicana-que-es-furor-en-netflix-tiene-6-capitulos-y-no-es-apta-para-el-publico/1692373349592710",
+      "firstSeen": "2026-10-18T14:08:45Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-18T14:08:45Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-18T14:08:45Z",
+          "method": "WebFetch/Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-13026",
+          "note": "Radio Mitre (Argentina) Facebook post; WebFetch returned only a truncated title fragment (\"Radio Mitre - La miniserie mexicana que es furor en...\"), no body, no date. Tavily Extract returned empty (Facebook, same tool-kit gap as prior FB rows -- no Firecrawl MCP available to this agent). Post title cites \"6 capitulos\" (El Circulo has 8), and the only available search snippet text is a comment mentioning \"EL CIRCULO\" as a comparison aside, so on-topic status for the post itself is unconfirmed either way. Per Rule G's no-fetch carve-out, a failed fetch is never evidence of off-topic -- logged as a fetch-failure row, not a Rule G skip. failCount=1, no cooldown yet."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-18T10:10:51Z"
+  "lastUpdated": "2026-10-18T14:08:45Z"
 }
