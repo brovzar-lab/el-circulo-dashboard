@@ -2234,5 +2234,18 @@
     "type": "Feature",
     "excerpt": "Netflix Mexico slate-announcement roundup from the 2019 FORO conference; devotes one ~60-word paragraph (about 8% of the article) to \"Los corruptores\" (the novel that became El Círculo) as an upcoming thriller series -- published 7 years before premiere, under the pre-rename project title, with no mention of \"El Círculo\"/\"Inside the Circle\". Included per Rule C (no existing skipReason fits a years-old thin pre-production mention under a different working title); escalated for a category ruling.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Time Out México",
+    "headline": "\"No siempre vas a estar ganando\": Andrés Revo sobre el aprendizaje y la madurez en la actuación",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/cine/no-siempre-vas-a-estar-ganando-andres-revo-sobre-el-aprendizaje-y-la-madurez-en-la-actuacion",
+    "date": "Oct 16, 2026",
+    "ts": 20261016,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Entrevista de Stivi de Tivi con Andrés Revo, quien interpreta a la versión joven de Jaime en El Círculo; habla de su personaje, su mentor Alejandro Andrade y su regreso al Festival de Morelia.",
+    "storyGroup": null
   }
 ]
