@@ -5795,7 +5795,70 @@
           "note": "Radio Mitre (Argentina) Facebook post; WebFetch returned only a truncated title fragment (\"Radio Mitre - La miniserie mexicana que es furor en...\"), no body, no date. Tavily Extract returned empty (Facebook, same tool-kit gap as prior FB rows -- no Firecrawl MCP available to this agent). Post title cites \"6 capitulos\" (El Circulo has 8), and the only available search snippet text is a comment mentioning \"EL CIRCULO\" as a comparison aside, so on-topic status for the post itself is unconfirmed either way. Per Rule G's no-fetch carve-out, a failed fetch is never evidence of off-topic -- logged as a fetch-failure row, not a Rule G skip. failCount=1, no cooldown yet."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DeXqkc_x40Y",
+      "firstSeen": "2026-10-18T18:08:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T18:08:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Instagram reel from @laVidriales (@mvidriales, ~2.7K followers), posted Oct 11 2026, with review-style commentary on El Círculo (\"Suspenso logrado. Un producto sólido...\"). Profile bio (\"High standards. Low expectations. Florista de noche en @scabiosapunk y @silvestrefloristas\") and feed (travel photos, selfies, volcano/nature clips) show a personal lifestyle account with no independent public role -- no journalist/columnist/academic/author/official/comparable public-figure signal per the Rule B amendment's affirmative-signal test. Profile settles the question (personal identity, no critic/commentator signal), so this resolves as a direct Rule B skip, not a Rule C escalation.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-18T18:08:40Z",
+          "method": "WebFetch/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13029",
+          "note": "Personal lifestyle IG account (florist bio, no critic/journalist signal); affirmative-signal test does not clear Rule B. editorial_personal_repost."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-netflix-circulo-es-real",
+      "firstSeen": "2026-10-18T18:08:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T18:08:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show (e.g. miniserie-el-circulo, inside-the-circle-on-netflix-review) -- aggregation of many videos under the topic tag, not a distinct document. WebFetch returned only the generic 'TikTok - Make Your Day' JS-shell; classified on URL-family pattern plus Tavily's indexed snippet. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-18T18:08:40Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13029",
+          "note": "TikTok /discover/<slug> hashtag/topic index page, generic JS shell only; classified Rule F by URL-family pattern + Tavily snippet, same family as other ledgered /discover/ pages."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-netflix-spoiler",
+      "firstSeen": "2026-10-18T18:08:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T18:08:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show -- aggregation of many videos under the topic tag, not a distinct document. WebFetch returned only the generic 'TikTok - Make Your Day' JS-shell; classified on URL-family pattern plus Tavily's indexed snippet. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-18T18:08:40Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13029",
+          "note": "TikTok /discover/<slug> hashtag/topic index page, generic JS shell only; classified Rule F by URL-family pattern + Tavily snippet, same family as other ledgered /discover/ pages."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-18T14:08:45Z"
+  "lastUpdated": "2026-10-18T18:08:40Z"
 }
