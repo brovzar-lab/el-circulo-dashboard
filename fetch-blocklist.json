@@ -5687,7 +5687,70 @@
           "note": "Sibling post in the same already-classified r/Mexico_Videos fan-repost community."
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/roastbrief/posts/-para-celebrar-el-estreno-de-el-c%C3%ADrculo-en-netflix-el-elenco-llev%C3%B3-la-intriga-a-/1573994944754890",
+      "firstSeen": "2026-10-18T10:10:51Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T10:10:51Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Facebook cross-post of Roastbrief's identical 'Spoiler Alert' street-marketing campaign post for El Círculo's premiere, already tracked in data.json via its Instagram address (instagram.com/p/DeXd41RGF4z, Oct 17 2026). Same caption and campaign photos/video. Rule I second address, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-18T10:10:51Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13019",
+          "note": "Cross-platform second address identified during 2026-10-18 ~1006Z sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61556588083354/posts/zuria-vega-michel-brown-osvaldo-benavides-y-ra%C3%BAl-briones-nos-describen-a-sus-per/122339868692219602",
+      "firstSeen": "2026-10-18T10:10:51Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T10:10:51Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Official 'Aura Series' Facebook page cross-post of the identical cast-describes-their-characters promo clip already tracked in data.json via its TikTok address (tiktok.com/@aura.series/video/7694450196234685714, Oct 9 2026, dateSource=platform_api_timestamp). Same caption ('...nos describen a sus personajes en la serie de El Círculo'). Rule I second address, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-18T10:10:51Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13019",
+          "note": "Cross-platform second address identified during 2026-10-18 ~1006Z sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/NetflixLatino/posts/lo-que-pasa-en-redes-no-siempre-se-queda-en-redesmira-el-c%C3%ADrculo-solo-en-netflix/1596679509165657",
+      "firstSeen": "2026-10-18T10:10:51Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T10:10:51Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Another official NetflixLatino Facebook address for the identical 'Lo que pasa en redes no siempre se queda en redes. Mira El Círculo solo en Netflix' promo clip. Same campaign already tracked via its TikTok original (@netflixlat, Oct 10 2026) and already-ledgered as additional addresses on Facebook (facebook.com/NetflixLatino/videos/1465272385551089) and YouTube Shorts (youtube.com/watch?v=bNrAnvlwIMA). Rule I additional address, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-18T10:10:51Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13019",
+          "note": "Cross-platform second address identified during 2026-10-18 ~1006Z sweep."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-18T06:12:35Z"
+  "lastUpdated": "2026-10-18T10:10:51Z"
 }
