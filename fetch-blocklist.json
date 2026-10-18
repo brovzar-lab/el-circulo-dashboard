@@ -5858,7 +5858,170 @@
           "note": "TikTok /discover/<slug> hashtag/topic index page, generic JS shell only; classified Rule F by URL-family pattern + Tavily snippet, same family as other ledgered /discover/ pages."
         }
       ]
+    },
+    {
+      "url": "https://www.detona.com/articulo/reunion-31a-circulo-montevideo-en-mexico-reflexion",
+      "firstSeen": "2026-10-18T22:15:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T22:15:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: about the 31st plenary assembly of the Círculo de Montevideo (an Ibero-American think-tank foundation) held in Mexico, not the Netflix series El Círculo. Headline: \"En el Círculo de Montevideo\" / \"Se celebra en México la 31a reunión del Círculo de Montevideo, una asamblea de reflexión iberoamericana.\" Surfaced only via the generic word \"círculo\" matching a broad query.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-18T22:15:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13033",
+          "note": "Off-topic: Círculo de Montevideo foundation assembly, not the Netflix series."
+        }
+      ]
+    },
+    {
+      "url": "https://www.krlzqv.cn/html/72d95898969.html",
+      "firstSeen": "2026-10-18T22:15:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T22:15:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: aggregator/scraper page republishing a Mashable article about 'The Circle Brazil', Netflix's unrelated social-media reality competition format, with pandemic-era (2020) references. No mention of El Círculo / Inside the Circle. Surfaced only via the generic word \"circle\" matching a broad query.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-18T22:15:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13033",
+          "note": "Off-topic: republished Mashable piece on the reality show 'The Circle Brazil', unrelated to our title."
+        }
+      ]
+    },
+    {
+      "url": "https://www.aljamila.com/node/349551/%D9%81%D9%86-%D9%88%D9%85%D8%B4%D8%A7%D9%87%D9%8A%D8%B1/%D9%85%D8%B4%D8%A7%D9%87%D9%8A%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8/%D9%87%D9%84-%D8%AA%D9%86%D8%B6%D9%85-%D8%A5%D9%84%D9%8A%D8%B3%D8%A7-%D8%A5%D9%84%D9%89-%D9%87%D8%B0%D8%A7-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%A8%D8%B9%D8%AF-%D8%AA%D9%84%D9%83-%D8%A7%D9%84%D8%AA%D8%BA%D8%B1%D9%8A%D8%AF%D8%A9%D8%9F",
+      "firstSeen": "2026-10-18T22:15:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T22:15:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive: 2019 Arabic-language article (\"Will Elissa join this series after that tweet?\") about singer Elissa's tweet hinting at joining Money Heist (La Casa de Papel), based on her referencing 'the professor' and 'Nairobi'. No mention of El Círculo / Inside the Circle, and predates the 2026 show entirely. Surfaced only via a broad query.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-18T22:15:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13033",
+          "note": "Off-topic: 2019 article about singer Elissa and Money Heist, unrelated and pre-dates our show."
+        }
+      ]
+    },
+    {
+      "url": "https://trecobox.com.br/es/dentro-do-circulo-5-motivos-assistir-netflix/",
+      "firstSeen": "2026-10-18T22:15:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T22:15:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Second address for the already-tracked trecobox.com.br/dentro-do-circulo-5-motivos-assistir-netflix (data.json, Oct 17 2026). The /es/ path is a URL-wrapper only -- the body text is unchanged Portuguese (not actually translated to Spanish), confirmed by fetch. Rule I: same CMS post, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-18T22:15:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13033",
+          "note": "Confirmed body text identical (Portuguese) to the canonical non-/es/ URL already in data.json; second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/venezuela/2026-10-18/",
+      "firstSeen": "2026-10-18T22:15:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T22:15:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol Top 10 ranking tracker for Venezuela (Oct 18, 2026): live per-country chart table, no written editorial content. Same Rule F family as the already-ledgered flixpatrol.com/top10/netflix/ecuador and flixpatrol.com/title/inside-the-circle entries. Confirmed via Firecrawl: 'Inside The Circle' appears at rank #10 (-2), 11 days on chart.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-18T22:15:37Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-13033",
+          "note": "FlixPatrol per-country Top 10 chart page (Venezuela), same ranking-table template as other ledgered flixpatrol.com/top10/netflix/<country> rows. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/uk/tv-series/los-corruptores",
+      "firstSeen": "2026-10-18T22:15:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T22:15:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "JustWatch UK show page (note: UK locale uses /tv-series/ path segment vs other locales' /tv-show/): streaming-availability box, 'where to watch' buy boxes, JustWatch Daily Streaming Chart ranking (rank 1048 UK), and a one-line synopsis only; no written review. Same Rule F family as the already-ledgered justwatch.com/{us,in,au,ca}/tv-show/los-corruptores entries.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-18T22:15:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13033",
+          "note": "JustWatch UK show page: streaming-availability + ranking aggregator, no editorial content. Rule F, same family as other JustWatch locale entries."
+        }
+      ]
+    },
+    {
+      "url": "https://www.adorocinema.com/series/serie-1000003700/streaming/",
+      "firstSeen": "2026-10-18T22:15:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-18T22:15:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "AdoroCinema (Brazilian AlloCiné sister site, same show ID 1000003700 as allocine.fr) streaming-availability page: shows only a one-line synopsis and a 'subscribe to watch on Netflix' panel, no written review or analysis. First ledgered entry for this host; new Rule F family member on the same reasoning as the existing JustWatch streaming-availability entries.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-18T22:15:37Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13033",
+          "note": "AdoroCinema streaming-availability page, no editorial content. Rule F, new family for adorocinema.com."
+        }
+      ]
+    },
+    {
+      "url": "https://hollywoodrecord.com/netflix-weekly-viewing-metrics-for-the-period-of-october-5th-to-october-11th-2026/",
+      "firstSeen": "2026-10-18T22:15:37Z",
+      "failCount": 1,
+      "lastStatus": 500,
+      "lastAttempt": "2026-10-18T22:15:37Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-18T22:15:37Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 500,
+          "issue": "LEMA-13033",
+          "note": "Full fallback-chain failure: WebFetch returned HTTP 500; Firecrawl confirmed the live site itself is throwing a fatal PHP error (uncaught TypeError in wp-includes/class-wp-hook.php, a broken 'gemininews_cronjob' callback), not a fetch-tool issue. failCount=1 of 3 before cooldown."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-18T18:08:40Z"
+  "lastUpdated": "2026-10-18T22:15:37Z"
 }
