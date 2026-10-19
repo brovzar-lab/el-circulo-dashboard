@@ -2494,5 +2494,70 @@
     "type": "Social",
     "excerpt": "Dominican Republic morning show Despierta AM (RD) posts an Instagram reel with host Mario Hidalgo discussing El Círculo (Netflix), framed around corruption, power and secrets; caption points viewers to a full interview on the show's YouTube channel.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Xataka México",
+    "headline": "Netflix tiene la serie mexicana basada en un libro que está arrasando: retrata la corrupción política del país",
+    "url": "https://www.xataka.com.mx/cine-y-tv/netflix-tiene-serie-mexicana-basada-libro-que-esta-arrasando-retrata-corrupcion-politica-pais",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Xataka México recommends El Círculo as a political thriller worth watching, noting its 8-episode run and sustained Top 10 placement in Mexico, Spain and Latin America; flags the 'Presidenta Torres' character as a clear parallel to Claudia Sheinbaum.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Martin Cid Magazine",
+    "headline": "Osvaldo Benavides: the Nandito kid who walked away and came back in charge",
+    "url": "https://www.martincid.com/people/osvaldo-benavides",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "article_published_time",
+    "lang": "EN",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "Martin Cid Magazine (EN) profile of Osvaldo Benavides by Penelope H. Fritz, covering his October spotlight on two screens: playing Jaime, a businessman who trades in other people's information, in Netflix's El Círculo, alongside executive-producing and starring in ViX's Timbiriche; notes El Círculo ranked second among Netflix's trending titles in Mexico within two days of its Oct 7 premiere.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Martin Cid Magazine (Spain)",
+    "headline": "Osvaldo Benavides, de Nandito en María la del Barrio a productor de la serie de Timbiriche",
+    "url": "https://es.martincid.com/people/osvaldo-benavides-de-nandito-en-maria-la-del-barrio-a-productor-de-la-serie-de-timbiriche",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Article",
+    "excerpt": "Spain-edition (distinct localized article from the EN edition, same Penelope H. Fritz byline) of the Osvaldo Benavides profile, covering his role as Jaime in El Círculo alongside his Timbiriche producer/acting credit.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Martin Cid Magazine (Germany)",
+    "headline": "Osvaldo Benavides: Vom Telenovela-Kinderstar zum Produzenten der Timbiriche-Serie",
+    "url": "https://de.martincid.com/people/osvaldo-benavides-vom-telenovela-kinderstar-zum-produzenten-der-timbiriche-serie",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "article_published_time",
+    "lang": "DE",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "German-edition (distinct localized article, same Penelope H. Fritz byline) of the Osvaldo Benavides profile, covering his role as Jaime in Netflix's El Círculo alongside his Timbiriche producer/acting credit.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Martin Cid Magazine (France)",
+    "headline": "Osvaldo Benavides, l'enfant star des telenovelas devenu producteur de Timbiriche",
+    "url": "https://fr.martincid.com/people/osvaldo-benavides-lenfant-star-des-telenovelas-devenu-producteur-de-timbiriche",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "article_published_time",
+    "lang": "FR",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "French-edition (distinct localized article, same Penelope H. Fritz byline) of the Osvaldo Benavides profile, covering his role as Jaime in Netflix's El Círculo alongside his Timbiriche producer/acting credit.",
+    "storyGroup": null
   }
 ]
