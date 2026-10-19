@@ -6285,7 +6285,49 @@
           "note": "TikTok /discover/<slug> hashtag/topic index page, same surface family as already-ledgered tiktok.com/discover/ pages for this show. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.elhablador.com.mx/el-circulo-resena/",
+      "firstSeen": "2026-10-19T22:15:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T22:15:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Review of a different, unrelated title: 'The Circle' (2017), the Emma Watson/Tom Hanks film adaptation of Dave Eggers' novel, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'El Círculo' title collision.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-19T22:15:27Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13195",
+          "note": "Review of a different, unrelated title: 'The Circle' (2017), the Emma Watson/Tom Hanks film adaptation of Dave Eggers' novel, not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'El Círculo' title collision."
+        }
+      ]
+    },
+    {
+      "url": "https://lanetaneta.com/los-9-mejores-tuits-sobre-la-temporada-4-de-the-circle/",
+      "firstSeen": "2026-10-19T22:15:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T22:15:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Roundup of tweets about Netflix's unrelated reality-competition format 'The Circle' Season 4 (2022, winner Frank Greasley), not the Mexican thriller 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'The Circle' title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-19T22:15:27Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13195",
+          "note": "Roundup of tweets about Netflix's unrelated reality-competition format 'The Circle' Season 4 (2022, winner Frank Greasley), not the Mexican thriller 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'The Circle' title collision documented in this routine's known-noise note."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-19T14:06:00Z"
+  "lastUpdated": "2026-10-19T22:15:27Z"
 }
