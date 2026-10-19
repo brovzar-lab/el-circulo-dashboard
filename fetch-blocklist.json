@@ -6021,7 +6021,176 @@
           "note": "Full fallback-chain failure: WebFetch returned HTTP 500; Firecrawl confirmed the live site itself is throwing a fatal PHP error (uncaught TypeError in wp-includes/class-wp-hook.php, a broken 'gemininews_cronjob' callback), not a fetch-tool issue. failCount=1 of 3 before cooldown."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/netflix-inside-the-circle-reviews",
+      "firstSeen": "2026-10-19T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show (e.g. inside-the-circle-on-netflix-review) -- aggregation of many videos under the topic tag, not a distinct document. Classified on URL-family pattern plus Tavily's indexed snippet.",
+      "history": [
+        {
+          "attempt": "2026-10-19T02:30:00Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13042",
+          "note": "TikTok /discover/ Rule F family match, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tomsguide.com/entertainment/netflix/netflix-top-10-movies-heres-the-3-worth-watching-right-now-october-17-18",
+      "firstSeen": "2026-10-19T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Tom's Guide weekend Netflix-movies Top10 roundup (Animals, Preach Pray Love, Sacrifice, Ice Age, Tyler Perry's Doing Life, Twilight, The Breadwinner, Norm, Cocaine Bear). Confirmed via direct body fetch: zero mention of El Circulo/Inside the Circle anywhere in the article -- a movies-only Top10 list, surfaced only by broad Top10/Tudum query noise per Rule G.",
+      "history": [
+        {
+          "attempt": "2026-10-19T02:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13042",
+          "note": "Body fetch confirmed zero mention of the show; movies-only list."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/de-quien-hablas-de-la-serie-de-netflix-el-c%C3%ADrculo",
+      "firstSeen": "2026-10-19T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show -- aggregation of many videos under the topic tag, not a distinct document. Classified on URL-family pattern plus Tavily's indexed snippet.",
+      "history": [
+        {
+          "attempt": "2026-10-19T02:30:00Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13042",
+          "note": "TikTok /discover/ Rule F family match, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/netfliteando/posts/-eran-inseparables-hasta-que-se-filtr%C3%B3-un-video-con-sus-secretos-el-c%C3%ADrculo-8-ep/1680851793657109",
+      "firstSeen": "2026-10-19T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipMethod": "body_fetch",
+      "skipNote": "Facebook page 'netfliteando' posting an on-topic teaser caption ('Eran inseparables... El Circulo 8 ep'). This account/family (facebook.com/netfliteando and facebook.com/groups/netfliteando) is already ledgered twice as a non-independent fan/aggregator page under Rule B (editorial_personal_repost); this post is the same account, same disposition, no independent identity signal found.",
+      "history": [
+        {
+          "attempt": "2026-10-19T02:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13042",
+          "note": "Confirmed on-topic caption but same established non-independent fan-page account family."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/Dec8IuWBLJa",
+      "firstSeen": "2026-10-19T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Search snippet appeared to describe El Circulo's plot, but direct fetch (Tavily extract) confirmed this reel is posted by the 'vix' account and is actually promoting an unrelated ViX series ('Ve la serie, disponible en #ViX, nuevo episodio todos los viernes...', comment thread discusses 'Sasha'/Timbiriche-adjacent content) -- a genuine Rule G false positive from indexed-snippet mismatch, not the show being covered.",
+      "history": [
+        {
+          "attempt": "2026-10-19T02:30:00Z",
+          "method": "tavily_extract",
+          "status": 200,
+          "issue": "LEMA-13042",
+          "note": "Direct fetch confirmed off-topic (different ViX series, not El Circulo), despite a misleading search snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-netflix-cast",
+      "firstSeen": "2026-10-19T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show -- aggregation of many videos under the topic tag, not a distinct document. Classified on URL-family pattern plus Tavily's indexed snippet.",
+      "history": [
+        {
+          "attempt": "2026-10-19T02:30:00Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13042",
+          "note": "TikTok /discover/ Rule F family match, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DemoWU3G11c",
+      "firstSeen": "2026-10-19T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Talent On The Road Management (verified talent agency, clients incl. Michel Brown/Osvaldo Benavides/Raul Briones) Instagram post promoting the same Quien 'verdades incomodas, dilemas morales, limites de la lealtad' cast-interview carousel already ledgered as a cross-platform repost family, with instagram.com/p/DeiTwSSlSCW kept as the reference row. Third address, same underlying press event, agency-repost caption with no independent reporting of its own. Only rendered date was Instagram's alt-text accessibility string (Oct 17, 2026) which does not qualify as a Rule A source per the established alt-text-disqualified precedent -- moot here since the row resolves on Rule I regardless of date.",
+      "history": [
+        {
+          "attempt": "2026-10-19T02:30:00Z",
+          "method": "tavily_extract",
+          "status": 200,
+          "issue": "LEMA-13042",
+          "note": "Confirmed same underlying Quien interview story already tracked at instagram.com/p/DeiTwSSlSCW; third-address agency repost."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61556588083354/videos/andr%C3%A9s-revo-nos-cuenta-sobre-el-amor%C3%ADo-que-tiene-amelia-en-el-c%C3%ADrculo-de-netflix/2050129479037430",
+      "firstSeen": "2026-10-19T02:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T02:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Aura Series Facebook video (same brand already tracked as legitimate coverage via its Instagram reel and TikTok clip in data.json), Andres Revo discussing Amelia's romance storyline -- on-topic, distinct caption/content from the other two already-tracked Aura Series items (not a Rule I second address). No recoverable real publish date: WebFetch/curl found no JSON-LD, no article:published_time, no visible dateline; og:type is video.other with no release-date meta. Reviewable if a real date surfaces later.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-19T02:30:00Z",
+          "method": "WebFetch+curl",
+          "status": 200,
+          "issue": "LEMA-13042",
+          "note": "On-topic Aura Series content, no recoverable date via any available method."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-18T22:15:37Z"
+  "lastUpdated": "2026-10-19T02:30:00Z"
 }
