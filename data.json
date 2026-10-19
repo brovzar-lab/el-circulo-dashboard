@@ -2403,5 +2403,83 @@
     "type": "Article",
     "excerpt": "Argentine outlet MDZ Online pairs El Círculo (\"thriller de suspenso, intriga policial y drama político\" triggered by a leaked video of actress Pamela Dosantos after her murder) with the unrelated series Criminales Organizados in a two-show roundup.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Cinespoilers México",
+    "headline": "El Círculo: la amistad como territorio de secretos, poder y corrupción",
+    "url": "https://cinespoilersmexico.com/2026/10/12/el-circulo-la-amistad-como-territorio-de-secretos-poder-y-corrupcion",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Article",
+    "excerpt": "Cinespoilers México critical overview by Daniel Mumont: frames El Círculo's thriller mechanics around a decades-old friendship turned source of secrets, political espionage and corruption; praises the show's pacing and atmospheric score, though offers no formal score or verdict.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Revista GENTE",
+    "headline": "Qué ver en Netflix: la serie de solo 8 capítulos con un ex \"Jugate conmigo\" que llegó al Nº 2 entre las más vistas de Argentina",
+    "url": "https://revistagente.com/entretenimiento/que-ver-en-netflix-la-serie-de-solo-8-capitulos-con-un-ex-jugate-conmigo-que-llego-al-no-2-entre-las-mas-vistas-de-argentina",
+    "date": "Oct 15, 2026",
+    "ts": 20261015,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Revista GENTE (Argentina) profile by María Eugenia Belich of El Círculo, the 8-episode Mexican Netflix thriller led by Michel Brown (a former 'Jugate Conmigo' star), based on Jorge Zepeda Patterson's novel; notes the show reached No. 2 on Netflix Argentina's series ranking.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Martin Cid Magazine (LatAm)",
+    "headline": "Michel Brown, el argentino que México premió por Amar a muerte y hoy está en El círculo",
+    "url": "https://latam.martincid.com/people/michel-brown-el-argentino-que-mexico-premio-por-amar-a-muerte-y-hoy-esta-en-el-circulo",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Martin Cid Magazine (LatAm) profile of Argentine actor Michel Brown by Penelope H. Fritz, tracing his career from Pasión de Gavilanes through Amar a Muerte and Pálpito to his current role as journalist Tomás in El Círculo.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Martin Cid Magazine (Spain)",
+    "headline": "Michel Brown, del Franco Reyes que arrasó en Antena 3 al periodista de El círculo",
+    "url": "https://es.martincid.com/people/michel-brown-del-franco-reyes-que-arraso-en-antena-3-al-periodista-de-el-circulo",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Article",
+    "excerpt": "Martin Cid Magazine (Spain) profile of Michel Brown by Penelope H. Fritz, opening on his legacy role as Franco Reyes in Antena 3's Pasión de Gavilanes and covering his current part as journalist Tomás in El Círculo.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Che Netflix (Instagram)",
+    "headline": "El Círculo ya está disponible en Netflix",
+    "url": "https://instagram.com/reel/DelFH04CdyZ",
+    "date": "Oct 17, 2026",
+    "ts": 20261017,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "International",
+    "type": "Social",
+    "excerpt": "Che Netflix's Instagram reel announces that 'El Círculo' is now available on Netflix, embedded in a casual personal anecdote caption; no critique or rating given.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Qué Series Mirar (Instagram)",
+    "headline": "El Círculo: reseña, \"un producto sólido\"",
+    "url": "https://instagram.com/p/Dec9DrtJFDO",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Qué Series Mirar's Instagram review rates El Círculo \"Buena+\" (good-plus): praises the strong, gripping story and cast performances as \"a solid product,\" but notes the finale rushes to resolve its threads and some plot points are predictable.",
+    "storyGroup": null
   }
 ]
