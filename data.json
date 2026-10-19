@@ -2559,5 +2559,57 @@
     "type": "Article",
     "excerpt": "French-edition (distinct localized article, same Penelope H. Fritz byline) of the Osvaldo Benavides profile, covering his role as Jaime in Netflix's El Círculo alongside his Timbiriche producer/acting credit.",
     "storyGroup": null
+  },
+  {
+    "outlet": "El Informador",
+    "headline": "'El Círculo': El rompecabezas político que une la traición con el caso de una famosa actriz",
+    "url": "https://informador.mx/entretenimiento/netflix--el-circulo-el-rompecabezas-politico-que-une-la-traicion-con-el-caso-de-una-famosa-actriz-20260909-0164.html",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "EFE wire piece on 'El Círculo', based on Jorge Zepeda Patterson's novel 'Los Corruptores', following lifelong friends whose bond is tested after a leaked video pulls them into blackmail tied to a famous actress's case; previews the Oct 7 premiere.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "El Siglo de Torreón",
+    "headline": "Netflix estrena El Círculo: de qué trata la serie mexicana con Zuria Vega y Osvaldo Benavides",
+    "url": "https://elsiglodetorreon.com.mx/noticia/2026/netflix-estrena-el-circulo-de-que-trata-la-serie-mexicana-con-zuria-vega-y-osvaldo-benavides.html",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Premiere-preview piece (EL SIGLO | Agencias) on 'El Círculo', describing a leaked video that threatens the friendship of four men and triggers a chain of threats; notes the Oct 7 Netflix premiere and the Jorge Zepeda Patterson novel source.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Movie Crazy Planet",
+    "headline": "El Círculo, la amistad se fractura y la confianza desaparece",
+    "url": "https://moviecrazyplanet.com/?p=23258",
+    "date": "Sep 16, 2026",
+    "ts": 20260916,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Spanish-language synopsis piece on 'El Círculo': a leaked video drags four lifelong friends into a web of blackmail and imminent danger, fracturing their friendship and trust.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "El Comercio (Perú)",
+    "headline": "Lista de actores y personajes de \"El círculo\": quién es quién en el elenco de la nueva serie mexicana de Netflix",
+    "url": "https://elcomercio.pe/mag/fama/que-ver/el-circulo-actores-y-personajes-guia-del-elenco-de-la-serie-mexicana-de-netflix-inside-the-circle-cast-guide-nnda-nnlt-noticia",
+    "date": "Oct 4, 2026",
+    "ts": 20261004,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "By Carla Ocaña: cast and character guide for 'El Círculo', the Mexican Netflix suspense thriller adapted from Jorge Zepeda Patterson's novel 'Los corruptores', following four lifelong friends drawn into blackmail tied to actress Pamela Dosantos's murder.",
+    "storyGroup": null
   }
 ]
