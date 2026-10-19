@@ -6197,7 +6197,51 @@
           "note": "On-topic Aura Series content, no recoverable date via any available method."
         }
       ]
+    },
+    {
+      "url": "https://www3.stage.netflix.com/ly-en/title/80217807",
+      "firstSeen": "2026-10-19T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix title page (Libya locale, stage subdomain) for show id 80217807: synopsis, cast/credits, episode-by-episode promotional loglines, genre tags, and upsell carousels only. Same surface family as the 10 already-ledgered netflix.com/*/title/80217807 locale pages. No reviews or critic commentary. Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-19T10:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13175",
+          "note": "Official Netflix title page, synopsis/cast/episode-logline metadata only, same family as 10 other already-ledgered netflix.com/*/title/80217807 locale rows. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/discover/la-serie-la-peli-el-c%C3%ADrculo",
+      "firstSeen": "2026-10-19T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same surface family as the three already-ledgered tiktok.com/discover/ pages for this show (miniserie-el-circulo, spoiler-el-circulo, inside-the-circle-on-netflix-review): an aggregation of many videos under the topic tag, not a distinct document. Full fetch returned only the generic JS-shell page (no og tags, no extractable body); classification made on URL-family pattern plus Tavily's indexed snippet, consistent with the existing miniserie-el-circulo precedent.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-19T10:30:00Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-13175",
+          "note": "TikTok /discover/<slug> hashtag/topic index page -- same surface family as already-ledgered tiktok.com/discover/ pages for this show. Aggregation of many videos under the topic tag, not a distinct document. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-19T06:30:00Z"
+  "lastUpdated": "2026-10-19T10:30:00Z"
 }
