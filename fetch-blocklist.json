@@ -6241,7 +6241,51 @@
           "note": "TikTok /discover/<slug> hashtag/topic index page -- same surface family as already-ledgered tiktok.com/discover/ pages for this show. Aggregation of many videos under the topic tag, not a distinct document. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-netflix-quien-es-el-malo",
+      "firstSeen": "2026-10-19T14:06:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T14:06:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('Discover videos related to El Circulo Netflix Quien Es El Malo on TikTok'), same surface family as the other already-ledgered tiktok.com/discover/ pages for this show: an aggregation of many videos under the topic tag, not a distinct document. Confirmed via direct fetch (Tavily extract): page lists many unrelated creators' videos tagged under the topic, no single-document content. Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-19T14:06:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13184",
+          "note": "TikTok /discover/<slug> hashtag/topic index page, same surface family as already-ledgered tiktok.com/discover/ pages for this show. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-c%C3%ADrculo-serie",
+      "firstSeen": "2026-10-19T14:06:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-19T14:06:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('El Círculo Serie'), same surface family as the other already-ledgered tiktok.com/discover/ pages for this show: aggregation of many videos under the topic tag ('Discover videos related to El Círculo Serie on TikTok'), not a distinct document. Confirmed via direct fetch (Tavily extract): page lists many unrelated creators' videos plus a 'Related to' sidebar of unrelated discover tags, no single-document content. Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-19T14:06:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13184",
+          "note": "TikTok /discover/<slug> hashtag/topic index page, same surface family as already-ledgered tiktok.com/discover/ pages for this show. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-19T10:30:00Z"
+  "lastUpdated": "2026-10-19T14:06:00Z"
 }
