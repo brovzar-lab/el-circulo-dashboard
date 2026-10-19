@@ -396,19 +396,61 @@ function rowHasFetchEvidenceInHistory(history) {
 // title, accent-insensitive.
 const SHOW_NAME_PATTERN = /el\s*c[ií]rculo|inside\s+the\s+circle/gi;
 
+// Role/category nouns that, across real skipNote text, routinely introduce
+// the named alternative subject one or two words later ("singer Amaia",
+// "band Veintiuno", "actresses from RCTV", "series A la deriva"). Closed,
+// curated list (not "any noun") so it doesn't swallow unrelated capitalized
+// words -- ported from the Las Azules fix, LEMA-13111.
+const ENTITY_CUE_WORDS = /\b(?:singer|actor|actress|actors|actresses|band|show|series|program|programme|account|platform|team|film|movie|drama|telenovela|novela|novel|album|song|game|app|label|segment|episode|podcast|magazine)\b/gi;
+
+// Connector words that commonly sit inside a multi-word proper noun or
+// title without breaking it ("A la deriva", "Cuna de Lobos"). Only one
+// connector allowed between the two capitalized anchors, so this stays a
+// titled-phrase detector, not "any two caps in a sentence".
+const CONNECTOR_WORDS = '(?:de|del|la|las|el|los|von|van|the|of|and|y)';
+
+// A cue-word lookahead stops at the next sentence/clause boundary so it
+// never reaches into the *following* sentence, where an ordinary
+// sentence-initial capital would otherwise be misread as a named entity.
+const SENTENCE_BOUNDARY = /[.!?;]/;
+
 // Deliberately simple, deliberately errs toward flagging (same posture as
 // the Las Azules original): a note is satisfactory only when it names a
-// concrete alternative subject -- a quoted/curly-quoted title, or
-// two-or-more consecutive capitalized words (a person's name, a named
-// program). Requiring 2+ words (not a single capitalized word) is the
-// conservative choice that tunes toward flagging more, not fewer, notes.
+// concrete alternative subject -- a quoted/curly-quoted title, two-or-more
+// consecutive capitalized words (a person's name, a named program), a
+// capitalized phrase broken by a single connector word ("A la deriva"), or
+// a capitalized word introduced by a role/category cue word in the same
+// clause ("singer Amaia", "band Veintiuno"). Requiring 2+ consecutive words
+// for the base case (not a single capitalized word) is the conservative
+// choice that tunes toward flagging more, not fewer, notes; the two newer
+// branches below close the specific gap LEMA-13111 found in the Las Azules
+// twin of this check (single-word proper nouns and particle-broken titles
+// were being misread as "no subject named").
 function hasConcreteAlternativeSubject(skipNote) {
   if (typeof skipNote !== 'string' || !skipNote.trim()) return false;
   const quotedTitle = /["“]([^"”]{2,})["”]|'([^']{2,})'/.test(skipNote);
   if (quotedTitle) return true;
   const withoutShowName = skipNote.replace(SHOW_NAME_PATTERN, '');
   const properNounSequences = withoutShowName.match(/\b[A-Z][\p{L}'-]*(?:\s+[A-Z][\p{L}'-]*)+\b/gu) || [];
-  return properNounSequences.length > 0;
+  if (properNounSequences.length > 0) return true;
+
+  // No 'i' flag here: case-insensitive mode would case-fold the [A-Z]
+  // anchors too, turning "uppercase letter" into "any letter". Connector
+  // words are closed-class function words that only occur lowercase in
+  // this prose, so case-insensitivity isn't needed on this branch.
+  const connectedPhrase = new RegExp(`\\b[A-Z][\\p{L}'-]*\\s+${CONNECTOR_WORDS}\\s+[A-Z][\\p{L}'-]*\\b`, 'gu');
+  if (connectedPhrase.test(withoutShowName)) return true;
+
+  ENTITY_CUE_WORDS.lastIndex = 0;
+  let cueMatch;
+  while ((cueMatch = ENTITY_CUE_WORDS.exec(withoutShowName)) !== null) {
+    const rest = withoutShowName.slice(cueMatch.index + cueMatch[0].length);
+    const boundaryIdx = rest.search(SENTENCE_BOUNDARY);
+    const clause = boundaryIdx === -1 ? rest : rest.slice(0, boundaryIdx);
+    if (/\b[A-Z][\p{L}'-]*\b/u.test(clause)) return true;
+  }
+
+  return false;
 }
 
 // Flags a ledger row when ALL of: (1) permanentSkip true, (2) skipReason is
