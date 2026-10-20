@@ -2663,5 +2663,31 @@
     "type": "Entertainment",
     "excerpt": "YouTube Short from THR en Español's official channel: Zuria Vega, Raul Briones, Osvaldo Benavides and Michel Brown on the limits of loyalty and knowing when to let go, a distinct video-format piece of the same cast-interview event as the outlet's Oct 14 article.",
     "storyGroup": "thr-es-cast-interview-20261014"
+  },
+  {
+    "outlet": "El Intransigente",
+    "headline": "8 capítulos para ver: la serie mexicana de intrigas políticas que conquista a Netflix",
+    "url": "https://elintransigente.com/2026/10/19/netflix-el-circulo-serie-mexicana-politica/",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Argentine outlet explainer on the 8-episode Mexican thriller adapting Jorge Zepeda Patterson's novel 'Los corruptores': a leaked video showing actress Pamela Dosantos entering the defense secretary's residence shortly before her death pulls four lifelong friends into a web of blackmail and secrets.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "ComicBasics",
+    "headline": "'Inside the Circle' Season 1 Recap and Ending Explained: The Finale Twist Turns a Political Conspiracy Into a Painfully Personal Betrayal",
+    "url": "https://www.comicbasics.com/inside-the-circle-season-1-recap-and-ending-explained-the-finale-twist-turns-a-political-conspiracy-into-a-painfully-personal-betrayal",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "dateSource": "article_published_time",
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Recap/ending-explained piece: Jaime is revealed to have killed actress Pamela Dosantos and framed General Salazar using the leaked video; the open ending leaves a Northern Cartel threat and a likely revenge plot against Tomas and Amelia.",
+    "storyGroup": null
   }
 ]
