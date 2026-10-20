@@ -6415,7 +6415,28 @@
           "note": "Filmaffinity critic-review aggregation sub-page; all 4 linked reviews independently confirmed already tracked in data.json."
         }
       ]
+    },
+    {
+      "url": "https://technosports.co.in/?p=1475273",
+      "firstSeen": "2026-10-20T06:11:25.000Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T06:11:25.000Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Unresolved WordPress ?p= id-permalink; canonical (mainEntityOfPage/JSON-LD) resolves to https://technosports.co.in/inside-the-circle-netflix-review-a-fast/, already tracked in data.json (TechnoSports 2.5/5 review, Oct 9 2026). Second address, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T06:11:25.000Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13209",
+          "note": "Unresolved WordPress ?p= id-permalink confirmed via JSON-LD mainEntityOfPage pointing to already-tracked TechnoSports review."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-20T02:13:18Z"
+  "lastUpdated": "2026-10-20T06:11:25Z"
 }
