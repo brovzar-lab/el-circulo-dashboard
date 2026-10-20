@@ -2637,5 +2637,31 @@
     "type": "Feature",
     "excerpt": "Renewal-status explainer: Netflix has not yet renewed the show for Season 2; notes the source novel Los Corruptores is the first of a three-book 'Los Azules' trilogy with unresolved plot threads (Jaime's exposure, Tomas' autopsy-report lead) that could support a second season.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Semanario (Argentina, via PressReader)",
+    "headline": "Michel Brown",
+    "url": "https://pressreader.com/argentina/semanario/20261015/281878715343594",
+    "date": "Oct 15, 2026",
+    "ts": 20261015,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Press feature on Michel Brown: the Argentine actor based in Mexico who rose to fame as Franco Reyes in Pasion de Gavilanes dreams of returning to Buenos Aires for a project, while he now shines in the new Mexican thriller El Circulo.",
+    "storyGroup": "michel-brown-semanario-20261015"
+  },
+  {
+    "outlet": "The Hollywood Reporter en Español (YouTube)",
+    "headline": "El elenco de EL CÍRCULO sobre cuándo es momento de soltar",
+    "url": "https://youtube.com/watch?v=qAne0wfYhic",
+    "date": "Oct 16, 2026",
+    "ts": 20261016,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "International",
+    "type": "Entertainment",
+    "excerpt": "YouTube Short from THR en Español's official channel: Zuria Vega, Raul Briones, Osvaldo Benavides and Michel Brown on the limits of loyalty and knowing when to let go, a distinct video-format piece of the same cast-interview event as the outlet's Oct 14 article.",
+    "storyGroup": "thr-es-cast-interview-20261014"
   }
 ]
