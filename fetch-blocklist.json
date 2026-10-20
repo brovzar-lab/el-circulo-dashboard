@@ -6569,8 +6569,8 @@
       "url": "https://facebook.com/elintraespectaculos/posts/1637242478447256",
       "firstSeen": "2026-10-20T18:13:43Z",
       "failCount": 1,
-      "lastStatus": 0,
-      "lastAttempt": "2026-10-20T18:13:43Z",
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T22:10:52Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -6579,9 +6579,109 @@
           "status": 0,
           "issue": "LEMA-13289",
           "note": "Facebook post page returned only a truncated title via WebFetch, a login-wall stub via curl (1.5KB), and an empty result via Tavily advanced extract -- full fallback chain exhausted this attempt. failCount=1, no cooldown yet (needs 3 consecutive)."
+        },
+        {
+          "attempt": "2026-10-20T22:10:52Z",
+          "method": "Tavily extract (advanced)",
+          "status": 200,
+          "issue": "LEMA-13293",
+          "note": "Previous attempt (LEMA-13289) exhausted WebFetch/curl/Tavily; this retry's Tavily extract (advanced) succeeded and surfaced the full post plus the linked original article."
+        }
+      ],
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Retry succeeded via Tavily extract (advanced): this is El Intransigente Show's Facebook repost of the headline \"8 capítulos para ver: la serie mexicana de intrigas políticas que conquista a Netflix\", with a comment linking to the full article at https://elintransigente.com/2026/10/19/netflix-el-circulo-serie-mexicana-politica/ (tracked as its own data.json row this run, ts=20261019). No original caption text or analysis beyond the headline and photo. Second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false
+    },
+    {
+      "url": "https://globaltrendhub.net/index.php?mod=Hub&view_nota=44670",
+      "firstSeen": "2026-10-20T22:10:52Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T22:10:52Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "GlobalTrendHub automated-aggregation mirror (byline \"Por Luis Gutiérrez\", tag \"Excelsior\", link \"Visitar cobertura en sitio original\") of the already-tracked Excélsior interview \"No es lo mismo que te ayuden a robar un banco a enterrar un muerto\": Zuria Vega sobre El círculo (data.json, ts=20261007). Same pattern as the already-ledgered resumendiario.mx mirror of the same source article. Second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T22:10:52Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13293",
+          "note": "Confirmed syndication mirror of already-tracked Excélsior interview; names source outlet and links to original."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/es/news/ni66050434",
+      "firstSeen": "2026-10-20T22:10:52Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T22:10:52Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb News (es locale) syndication of Fiction Horizon's 'Inside the Circle' Season 1 Review, explicitly tagged \"Mira el artículo completo en Fiction Horizon\" linking to https://fictionhorizon.com/inside-the-circle-season-1-review-what-happens-when-one-leaked-video-tests-a-lifetime-of-loyalty/, already tracked in data.json (ts=20261007). Per imdb.com/news/* family precedent (not Rule F by itself, but a redundant mirror here). Second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T22:10:52Z",
+          "method": "Tavily extract (advanced)",
+          "status": 200,
+          "issue": "LEMA-13293",
+          "note": "WebFetch returned 403; Tavily extract confirmed syndication tag and link to already-tracked Fiction Horizon review."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/de/news/ni66045849",
+      "firstSeen": "2026-10-20T22:10:52Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T22:10:52Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb News (de locale) syndication of Fiction Horizon's \"Netflix's 'Inside the Circle' Release Date, Trailer, Cast and Plot Explained\", explicitly tagged \"Den vollständigen Artikel findest du unter Fiction Horizon\" linking to https://fictionhorizon.com/netflixs-inside-the-circle-release-date-trailer-cast-and-plot-explained/, already tracked in data.json (ts=20261004). Second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T22:10:52Z",
+          "method": "Tavily extract (advanced)",
+          "status": 200,
+          "issue": "LEMA-13293",
+          "note": "WebFetch returned 403; Tavily extract confirmed syndication tag and link to already-tracked Fiction Horizon feature."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/MediasetInfinityES/videos/867565579779735",
+      "firstSeen": "2026-10-20T22:10:52Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T22:10:52Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Mitele/MediasetInfinity promo post for Spanish TV program 'Cuarto Milenio' (\"La misteriosa bola púrpura que ha preocupado a los habitantes de Texas\"). Surfaced by a broad day-range query for the generic term; does not mention Netflix, El Círculo, or Inside the Circle at all -- no caption, hashtag, or body text referencing the show. Rule G off-topic false positive, same noise shape documented in this routine's description (generic 'círculo' / unrelated 'Circle' matches).",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T22:10:52Z",
+          "method": "Tavily extract (advanced)",
+          "status": 200,
+          "issue": "LEMA-13293",
+          "note": "Confirmed off-topic: content is a Cuarto Milenio promo, no reference to El Círculo/Inside the Circle anywhere on the page."
         }
       ]
     }
   ],
-  "lastUpdated": "2026-10-20T18:13:43Z"
+  "lastUpdated": "2026-10-20T22:10:52Z"
 }
