@@ -6327,7 +6327,95 @@
           "note": "Roundup of tweets about Netflix's unrelated reality-competition format 'The Circle' Season 4 (2022, winner Frank Greasley), not the Mexican thriller 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'The Circle' title collision documented in this routine's known-noise note."
         }
       ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/slovakia/tv",
+      "firstSeen": "2026-10-20T02:13:18Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-20T02:13:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Slovakia TV Top 10 chart -- bare country-specific ranking table (WebFetch returned only the page title plus a truncated body, consistent with a chart/table render, no written prose about El Círculo/Inside the Circle specifically). Same established family as the already-ledgered Tudum Global Non-English TV Top10 page (netflix.com/tudum/top10/tv-non-english) and the FlixPatrol ranking pages. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T02:13:18Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13198",
+          "note": "Netflix Tudum country-specific Top10 chart page, Rule F listing/database, same family as tv-non-english global chart."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/discover/inside-the-circle-netflix-cast",
+      "firstSeen": "2026-10-20T02:13:18Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-20T02:13:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show (e.g. miniserie-el-circulo, serie-netflix-circulo-es-real). WebFetch returned only the generic 'TikTok - Make Your Day' JS-shell with no caption, creator, or comment data. Classified on URL-family pattern plus Exa's indexed snippet (\"Starring Zuria Vega, Osvaldo Benavides, Raúl Briones and Michel Brown\"), consistent with an aggregation page, not a distinct document. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T02:13:18Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13198",
+          "note": "TikTok discover/hashtag index page, generic JS shell only; classified Rule F by URL-family pattern + Exa snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://filmaffinity.com/es/film805649.html",
+      "firstSeen": "2026-10-20T02:13:18Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T02:13:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Filmaffinity 'ficha' (database card) for El círculo: user rating (5.6/43 votos), cast/crew/genre/runtime metadata table, trailer/image counts, JustWatch availability links. Page itself states \"0 críticas - títulos\" (zero written user reviews). Strips to a catalog card, no original editorial prose. Same listing/database family as the already-ledgered IMDb title and RT show pages. Rule F. Mining duty (Rule H scope limit 1) checked against the site's separate 'Críticas profesionales [4]' sub-page (filmaffinity.com/es/pro-reviews.php?movie-id=805649, ledgered separately): all 4 linked critic excerpts (Decider/Joel Keller, Heaven of Horror/Karina Adelgaard, Diario Milenio/Álvaro Cueva, EscribiendoCine/Juan Pablo Russo) confirmed already tracked in data.json -- no new rows needed.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T02:13:18Z",
+          "method": "Firecrawl scrape",
+          "status": 200,
+          "issue": "LEMA-13198",
+          "note": "Filmaffinity ficha (database card): ratings/cast/crew metadata only, 0 written reviews on page, Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://filmaffinity.com/es/pro-reviews.php?movie-id=805649",
+      "firstSeen": "2026-10-20T02:13:18Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T02:13:18Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Filmaffinity 'Críticas profesionales' aggregation sub-page for El círculo: a table of 4 linked critic-review excerpts, each sourced from and linking out to the original outlet article, not original Filmaffinity prose. Rule F (aggregation page, like the RT season page). Rule H scope limit (1) mining duty discharged by direct inspection: Decider/Joel Keller -> decider.com/2026/10/07/inside-the-circle-netflix-review-stream-or-skip-it (in data.json); Heaven of Horror/Karina Adelgaard -> heavenofhorror.com/reviews/inside-the-circle-2026-netflix-series (in data.json); Diario Milenio/Álvaro Cueva -> milenio.com/opinion/alvaro-cueva/el-pozo-de-los-deseos-reprimidos/el-circulo-y-carrie (in data.json under its AMP address, non-AMP form already ledgered Rule I second-address); EscribiendoCine/Juan Pablo Russo -> escribiendocine.com/noticias/2026/10/08/25818-critica-de-el-circulo... (in data.json). All 4 confirmed already tracked -- no new rows needed.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T02:13:18Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13198",
+          "note": "Filmaffinity critic-review aggregation sub-page; all 4 linked reviews independently confirmed already tracked in data.json."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-19T22:15:27Z"
+  "lastUpdated": "2026-10-20T02:13:18Z"
 }
