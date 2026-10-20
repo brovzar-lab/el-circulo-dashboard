@@ -2624,5 +2624,18 @@
     "type": "Social",
     "excerpt": "Mexican newspaper El Sol de México posts a short Facebook video in which actress Zuria Vega shares what makes El Círculo, Netflix's new production, special; no critique or rating given.",
     "storyGroup": null
+  },
+  {
+    "outlet": "The Review Geek",
+    "headline": "Has Netflix renewed Inside the Circle for Season 2? Here's what we know:",
+    "url": "https://www.thereviewgeek.com/renewedorcanceled-insidethecircles2/",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "dateSource": "article_published_time",
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Renewal-status explainer: Netflix has not yet renewed the show for Season 2; notes the source novel Los Corruptores is the first of a three-book 'Los Azules' trilogy with unresolved plot threads (Jaime's exposure, Tomas' autopsy-report lead) that could support a second season.",
+    "storyGroup": null
   }
 ]
