@@ -6436,7 +6436,152 @@
           "note": "Unresolved WordPress ?p= id-permalink confirmed via JSON-LD mainEntityOfPage pointing to already-tracked TechnoSports review."
         }
       ]
+    },
+    {
+      "url": "https://tiktok.com/discover/serie-el-c%C3%ADrculo-netflix",
+      "firstSeen": "2026-10-20T18:13:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T18:13:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> topic-index page, same surface family as the already-ledgered sibling /discover/ pages for this title (inside-the-circle-netflix-review, inside-the-circle-on-netflix-review): aggregation of many videos under the topic tag, not a distinct document. Fetch returned only the generic JS-shell (<title>TikTok - Make Your Day</title>); classified on URL-family pattern plus Tavily's indexed snippet.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T18:13:43Z",
+          "method": "curl + Tavily snippet",
+          "status": 200,
+          "issue": "LEMA-13289",
+          "note": "TikTok /discover/ surface family match, no distinct editorial content."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/Viicmovie/posts/2315614465903905",
+      "firstSeen": "2026-10-20T18:13:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T18:13:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "'Viic Movie' Facebook page: a generic debate-prompt post ('Abro debate sobre El circulo... ¿Que opiniones tienen?') with no original review or analysis of its own. The page's own pinned comment promotes subscribing for 'peliculas completas' (full movies) and 'las mejores peliculas en tendencias', a movie-clip/piracy-adjacent content-aggregator account, not a publisher, outlet, or named public figure. No affirmative independent-public-role signal per the Rule B commentator test; the only date signal available was a relative '5d' UI badge, which would not satisfy Rule A regardless.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T18:13:43Z",
+          "method": "Tavily extract (advanced)",
+          "status": 200,
+          "issue": "LEMA-13289",
+          "note": "Fan/content-aggregator debate post, fails Rule B relevance gate."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/fausto.lozano/posts/10164355601973751",
+      "firstSeen": "2026-10-20T18:13:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T18:13:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Same Fausto Lozano Lara review post as facebook.com/fausto.lozano/videos/1113733354852271 (identical caption opening 'Reseña de la serie El círculo. Es un thriller mexicano de ocho episodios dirigido por Alejandro Lozano...'), rendered at Facebook's legacy /posts/ address for the same video upload. Second address, not a distinct document; the /videos/ address is the reference row.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-20T18:13:43Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13289",
+          "note": "Confirmed identical caption/content as the /videos/ address for the same post."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/fausto.lozano/videos/1113733354852271",
+      "firstSeen": "2026-10-20T18:13:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T18:13:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Fausto Lozano Lara Facebook page, Facebook-categorized as Public figure/Digital creator: a published novelist (book 'No soy Meche la de Juan Gabriel', sold on Amazon/MercadoLibre/bookstores) who posts regular reseñas of films/series plus writing-craft commentary, clears Rule B's commentator test as a named author/public figure, so this reseña of El Círculo is coverage in principle. No recoverable real publish date: the only signal is a relative '16 hours ago' / '16h' UI badge (confirmed via curl and Tavily advanced extract), which per established Rule A practice does not qualify as a sourced date; no JSON-LD, no article:published_time, no absolute dateline present. Reviewable if an absolute date surfaces later.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-20T18:13:43Z",
+          "method": "curl + Tavily extract (advanced)",
+          "status": 200,
+          "issue": "LEMA-13289",
+          "note": "Author/public-figure account clears Rule B; no absolute publish date recoverable, only a relative UI badge."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/NetflixLatino/videos/2318458525361181",
+      "firstSeen": "2026-10-20T18:13:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T18:13:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official Netflix Latino Facebook video (car-chase scene promo clip), clears Rule B as an official platform/show account. No recoverable real publish date: og:type is video.other with full caption ('Quedé en shock con estas escenas de persecución en la Ciudad de México... El círculo ya está disponible.') but no article:published_time, no JSON-LD datePublished, no visible dateline; WebFetch, curl, and Tavily advanced extract all returned no date field. Reviewable if a real date surfaces later.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-20T18:13:43Z",
+          "method": "WebFetch + curl + Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13289",
+          "note": "Official outlet video account clears Rule B; no date field recoverable by any fallback method."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/NetflixLatino/videos/1141078225097278",
+      "firstSeen": "2026-10-20T18:13:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-20T18:13:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official Netflix Latino Facebook video ('Todos sabemos lo que pasa entre ellos dos y el papá...' relationship-tease promo clip), clears Rule B as an official platform/show account. No recoverable real publish date: og:type is video.other with full caption but no article:published_time, no JSON-LD datePublished, no visible dateline; WebFetch, curl, and Tavily advanced extract all returned no date field. Reviewable if a real date surfaces later.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-20T18:13:43Z",
+          "method": "WebFetch + curl + Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13289",
+          "note": "Official outlet video account clears Rule B; no date field recoverable by any fallback method."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/elintraespectaculos/posts/1637242478447256",
+      "firstSeen": "2026-10-20T18:13:43Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-20T18:13:43Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-20T18:13:43Z",
+          "method": "WebFetch + curl + Tavily extract (advanced)",
+          "status": 0,
+          "issue": "LEMA-13289",
+          "note": "Facebook post page returned only a truncated title via WebFetch, a login-wall stub via curl (1.5KB), and an empty result via Tavily advanced extract -- full fallback chain exhausted this attempt. failCount=1, no cooldown yet (needs 3 consecutive)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-20T06:11:25Z"
+  "lastUpdated": "2026-10-20T18:13:43Z"
 }
