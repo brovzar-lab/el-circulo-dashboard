@@ -6789,7 +6789,112 @@
           "note": "Netflix Tudum country-specific Top10 chart page, Rule F listing/database, same family as tv-non-english global chart."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-c%C3%ADrculo-netflix-quien-fue",
+      "firstSeen": "2026-10-21T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-21T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same surface family as other already-ledgered /discover/ pages for this title: aggregation of many videos under the topic tag, not a distinct document. Direct fetch only returns the generic JS-shell; classified on URL-family pattern plus Exa's indexed snippet.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-21T10:30:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13344",
+          "note": "TikTok /discover/ hashtag/topic index page, generic JS shell only; classified Rule F by URL-family pattern + indexed snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-serie",
+      "firstSeen": "2026-10-21T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-21T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same surface family as other already-ledgered /discover/ pages for this title: aggregation of many videos under the topic tag, not a distinct document. Direct fetch only returns the generic JS-shell; classified on URL-family pattern plus Exa's indexed snippet.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-21T10:30:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13344",
+          "note": "TikTok /discover/ hashtag/topic index page, generic JS shell only; classified Rule F by URL-family pattern + indexed snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/pt/news/ni66045982/",
+      "firstSeen": "2026-10-21T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb Portuguese-locale news syndication of the ComicBasics article 'What Inside the Circle Is Based On Might Surprise Netflix Thriller Fans' (already in data.json, ts 20261004) -- page itself links out with 'Veja o artigo completo em Comic Basics'. Second address for an already-tracked document, not a distinct piece.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-21T10:30:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13344",
+          "note": "Confirmed verbatim locale mirror linking back to the ComicBasics original; classified Rule H second address."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/news/ni66053729/",
+      "firstSeen": "2026-10-21T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news syndication of the Moviedelic.com article '8 Shows Like Inside the Circle You Must See' by Saagar Kote (already tracked in data.json as 'Shows Like Inside the Circle', ts 20261009) -- page itself links out with 'See full article at Moviedelic'. Second address for an already-tracked document, not a distinct piece.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-21T10:30:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13344",
+          "note": "Confirmed verbatim syndication linking back to the Moviedelic original; classified Rule H second address."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@aura.series/video/7698426434716503303",
+      "firstSeen": "2026-10-21T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Surfaced via a broad 'reacciones redes sociales' query on the @aura.series account (which also posts El Círculo content, e.g. the already-tracked video .../7694450196234685714). This specific video's indexed title names a different, unrelated title ('La Venganza de El Charro Negro'); the video itself returned 'currently unavailable' on fetch, so content could not be confirmed as on-topic. Classified as a different-show false positive per Rule G on the available evidence (indexed title); alternative subject named per the title-only carve-out.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-21T10:30:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13344",
+          "note": "Video page returned 'currently unavailable'; indexed title names an unrelated show, classified Rule G off-topic false positive."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-21T06:30:00Z"
+  "lastUpdated": "2026-10-21T10:30:00Z"
 }
