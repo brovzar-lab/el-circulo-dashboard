@@ -2702,5 +2702,83 @@
     "type": "Article",
     "excerpt": "TheFutonCritic's weekly Netflix Top 10 ratings report lists Inside The Circle: Season 1 at No. 4 on the Non-English TV chart for the week of Oct. 5-11, 2026, with 13.1M hours viewed and 2.1M views in its first week in the Top 10.",
     "storyGroup": "netflix-top10-nonenglish-week-oct5-11-2026"
+  },
+  {
+    "outlet": "Vogue México",
+    "headline": "El final explicado y resumen de El círculo: La serie mexicana de Netflix",
+    "url": "https://www.vogue.mx/articulo/el-circulo-netflix-final-explicado",
+    "date": "Oct 20, 2026",
+    "ts": 20261020,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Vogue México ending-explained piece by Miguel Vicencio: walks through the Season 1 finale, confirming Jaime orchestrated Pamela Dosantos's death and the leaked video to frame Salazar, Salazar's suicide, and Amelia leveraging the fallout politically; Los Azules' trust remains intact at season's end though Jaime's betrayal is not yet revealed to the group.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Newz",
+    "headline": "El círculo: miniserie de Netflix que revela corrupción",
+    "url": "https://es.newz.com/serie-politica-de-netflix-el-circulo-arrasa-en-mexico-y-latinoamerica/",
+    "date": "Oct 20, 2026",
+    "ts": 20261020,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Newz editorial-staff recap of the 8-episode Mexican political thriller based on Jorge Zepeda Patterson's 'Los corruptores', reporting the show reached the Top 10 in Mexico, Spain and much of Latin America (no viewership figures cited).",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Radio Distrito 7",
+    "headline": "Un thriller político mexicano basado en una exitosa novela conquista la audiencia global en el servicio de streaming",
+    "url": "https://radiodistrito7.com/un-thriller-politico-mexicano-basado-en-una-exitosa-novela-conquista-la-audiencia-global-en-el-servicio-de-streaming/",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Byline Abby Saenz. Reports on 'Los Azules', the four lifelong friends whose trust erodes after a viral video exposes a murder tied to extortion and complicity among government elites; praises the show's tension and critique of press/political power. Claims Top 10 placement across parts of Latin America and Europe (no data cited). Near-identical plot/credit framing to the same-day El Destape and Provincia Abierta pieces, consistent with shared wire/catalog-source content.",
+    "storyGroup": "wire-premiere-synopsis-20261019"
+  },
+  {
+    "outlet": "El Destape",
+    "headline": "El thriller de suspenso mexicano que combina corrupción, secretos y chantajes",
+    "url": "https://www.eldestapeweb.com/cultura/thriller-suspenso-mexicano-combina-corrupcion-secretos-chantajes-20261019145849",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Argentine outlet El Destape (no byline; catalog/press-kit-style structure). Synopsis plus specific crew credits (directed by Alejandro Lozano and Bernardo de la Rosa, script by Fanie Soto, produced by Lemon Films and Netflix) matching the same-day Provincia Abierta piece near word-for-word, consistent with shared wire/catalog-source content.",
+    "storyGroup": "wire-premiere-synopsis-20261019"
+  },
+  {
+    "outlet": "Provincia Abierta",
+    "headline": "El círculo: el thriller mexicano sobre corrupción y secretos que desembarca en Netflix",
+    "url": "https://provinciaabierta.com/el-circulo-el-thriller-mexicano-sobre-corrupcion-y-secretos-7033b9eb/",
+    "date": "Oct 19, 2026",
+    "ts": 20261019,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Byline 'Redaccion Provincia Abierta'. Synopsis plus the same specific crew credits (Alejandro Lozano creator, Lozano and Bernardo de la Rosa directors, Fanie Soto script, Lemon Films/Netflix production) as the same-day El Destape piece, consistent with shared wire/catalog-source content.",
+    "storyGroup": "wire-premiere-synopsis-20261019"
+  },
+  {
+    "outlet": "TheFutonCritic.com",
+    "headline": "Ratings - Netflix Top 10: Week of October 12 - Get the Ransom Ready: \"Animals\" Takes the No. 1 Spot for a Second Week",
+    "url": "http://www.thefutoncritic.com/ratings/2026/10/20/netflix-top-10-week-of-october-12-get-the-ransom-ready-animals-takes-the-no-1-spot-for-a-second-week-461015/20261020netflix05/",
+    "date": "Oct 20, 2026",
+    "ts": 20261020,
+    "dateSource": "dated_url_path",
+    "lang": "EN",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "TheFutonCritic's weekly Netflix Top 10 ratings report (via Netflix press release) lists Inside The Circle: Season 1 at No. 6 on the Non-English TV chart for the week of Oct. 12-18, 2026, with 12.3M hours viewed and 2.0M views, its second cumulative week in the Top 10.",
+    "storyGroup": "netflix-top10-nonenglish-week-oct12-18-2026"
   }
 ]
