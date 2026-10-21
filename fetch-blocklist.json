@@ -6723,7 +6723,73 @@
           "note": "What's on Netflix 'Most Popular' dated chart tool page: pure ranking/database tables, no written analysis. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://selectvideo.net/netflix-top10",
+      "firstSeen": "2026-10-21T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-21T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "SelectVideo third-party Netflix Top 10 chart tracker: Inside The Circle appears at rank 6 on the Non-English TV list (week of 2026-10-18), but the page is a bare ranking chart plus generic boilerplate/FAQ text about how the tracker works, no written analysis specific to the show. Same chart-tool family as the already-ledgered FlixPatrol and Tudum Top10 pages. Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-21T06:30:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13307",
+          "note": "Netflix Top10 chart-tracker site, Rule F listing/database, same family as FlixPatrol/Tudum Top10 chart pages."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/top10/hungary/tv",
+      "firstSeen": "2026-10-21T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-21T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Hungary TV Top 10 chart -- bare country-specific ranking table (WebFetch returned only the page title plus a truncated body, consistent with a chart/table render, no written prose about El Círculo/Inside the Circle specifically). Same established family as the already-ledgered Tudum Global Non-English TV Top10 page (netflix.com/tudum/top10/tv-non-english) and the other per-country Tudum Top10 entries (Mexico, Paraguay, Nicaragua, El Salvador, Slovakia). Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-21T06:30:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13307",
+          "note": "Netflix Tudum country-specific Top10 chart page, Rule F listing/database, same family as tv-non-english global chart."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/top10/serbia/tv",
+      "firstSeen": "2026-10-21T06:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-21T06:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Serbia TV Top 10 chart -- bare country-specific ranking table (WebFetch returned only the page title plus a truncated body, consistent with a chart/table render, no written prose about El Círculo/Inside the Circle specifically). Same established family as the already-ledgered Tudum Global Non-English TV Top10 page (netflix.com/tudum/top10/tv-non-english) and the other per-country Tudum Top10 entries (Mexico, Paraguay, Nicaragua, El Salvador, Slovakia, Hungary). Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-21T06:30:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13307",
+          "note": "Netflix Tudum country-specific Top10 chart page, Rule F listing/database, same family as tv-non-english global chart."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-21T02:12:00Z"
+  "lastUpdated": "2026-10-21T06:30:00Z"
 }
