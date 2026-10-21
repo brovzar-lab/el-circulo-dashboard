@@ -6894,7 +6894,29 @@
           "note": "Video page returned 'currently unavailable'; indexed title names an unrelated show, classified Rule G off-topic false positive."
         }
       ]
+    },
+    {
+      "url": "https://flixpatrol.com/hours/",
+      "firstSeen": "2026-10-21T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol global Hours Viewed Last Week index page (all-platform, all-title chart, confirmed via Firecrawl, updated weekly every Tuesday): Inside The Circle appears as one row (12.3M hours, rank #6, Netflix TV Non-English) in a multi-title ranking grid, no written content about the show specifically. Same established Rule F listing/database family as the already-ledgered flixpatrol.com/title/inside-the-circle/{,/rankings,/hours,/streaming,/top10} and flixpatrol.com/top10/netflix/* chart pages.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-21T14:00:00Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-13352",
+          "note": "Global Hours Viewed index chart, Inside The Circle is one ranked row among many unrelated titles, no written analysis. Rule F, same FlixPatrol family as already-ledgered sibling pages."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-21T10:30:00Z"
+  "lastUpdated": "2026-10-21T14:10:00Z"
 }
