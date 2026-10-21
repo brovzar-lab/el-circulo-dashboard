@@ -6681,7 +6681,49 @@
           "note": "Confirmed off-topic: content is a Cuarto Milenio promo, no reference to El Círculo/Inside the Circle anywhere on the page."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/@kro4571/video/7694920104533888274",
+      "firstSeen": "2026-10-21T02:12:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T02:12:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "TikTok video by 'Carolina' (@kro4571, bio: \"La vida es demasiado corta para no ser feliz\", 4969 followers / 4972 following, 219.4K likes) -- a personal/lifestyle account with no independent public identity as a commentator, critic, or entertainment-brand account. Caption is a single generic sentence (\"Nueva serie de Netflix. Círculo\") plus reach-chasing hashtags (#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii, #viraltiktok, #tenden), not original commentary. Confirmed via direct profile + video fetch (Tavily extract). Rule B account-type gate: fan-repost account, relevance fails regardless of dateability (post itself is dated 10-10 on the page).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-21T02:12:00Z",
+          "method": "WebFetch/Tavily",
+          "status": 200,
+          "issue": "LEMA-13296",
+          "note": "TikTok video by 'Carolina' (@kro4571) -- personal/fan account, no independent commentator identity. Rule B account-type gate (editorial_personal_repost)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/most-popular/?dateselect=10%2F20%2F2026",
+      "firstSeen": "2026-10-21T02:12:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T02:12:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "What's on Netflix 'Most Popular' global chart tool for the selected date: a global Top 50 movies/TV table plus per-country (US, UK, Canada, India, etc.) daily Top 10 lists, with only a brief non-analytical intro blurb. Inside The Circle appears twice, both as chart rows (Global TV #24, 33 points, flat; Mexico TV #2, unchanged) -- no written analysis or commentary. Same Rule F listing/database family as the already-ledgered whats-on-netflix.com /top-10-title-search/ and /news/top-10-reports/ sibling pages on this host.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-21T02:12:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13296",
+          "note": "What's on Netflix 'Most Popular' dated chart tool page: pure ranking/database tables, no written analysis. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-20T22:10:52Z"
+  "lastUpdated": "2026-10-21T02:12:00Z"
 }
