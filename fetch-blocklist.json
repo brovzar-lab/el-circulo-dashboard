@@ -6916,7 +6916,95 @@
           "note": "Global Hours Viewed index chart, Inside The Circle is one ranked row among many unrelated titles, no written analysis. Rule F, same FlixPatrol family as already-ledgered sibling pages."
         }
       ]
+    },
+    {
+      "url": "https://tiktok.com/discover/el-circulo-netflix-rese%C3%B1a",
+      "firstSeen": "2026-10-21T18:03:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T18:03:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show (e.g. miniserie-el-circulo, inside-the-circle-on-netflix-review). Tavily extract returned only the generic JS-shell ('Discover videos related to on TikTok. Last updated 2026-10-19'), no distinct caption/creator/comment content. Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-21T18:03:30Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13406",
+          "note": "TikTok /discover/ hashtag/topic index page, generic JS shell only; classified Rule F by URL-family pattern, same family as other ledgered /discover/ pages for this show."
+        }
+      ]
+    },
+    {
+      "url": "https://sensacine.com/peliculas/pelicula-234164/criticas-espectadores",
+      "firstSeen": "2026-10-21T18:03:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T18:03:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "SensaCine user-reviews page for the unrelated 2017 film 'El círculo' (English title 'The Circle', starring Emma Watson and Tom Hanks, about corporate surveillance/privacy) -- shares only the generic Spanish title with our 2026 Mexican Netflix thriller. Tavily extract confirmed: all 16 user reviews dated 2017-2021 explicitly reference Emma Watson/Tom Hanks and the privacy/social-media plot, none mention Netflix, Zuria Vega, or our show. Surfaced only by the broad 'El Círculo' crítica query. Rule G, same pattern as the already-ledgered televisando.com row for the same unrelated film.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-21T18:03:30Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13406",
+          "note": "Confirmed off-topic: page reviews the 2017 Emma Watson/Tom Hanks film 'The Circle', not our show. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://reddit.com/r/television/comments/eq23ej/netflixs_the_circle_review_how_the_show_gets?tl=es-es",
+      "firstSeen": "2026-10-21T18:03:30Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-21T18:03:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Reddit r/television thread discussing Netflix's unrelated reality competition format 'The Circle' ('Crítica de The Circle de Netflix: Cómo el programa acierta...'), not our scripted Mexican thriller 'El Círculo'/'Inside the Circle'. Named alternative subject per Rule G carve-out: Netflix's 'The Circle' reality show. Surfaced only by the broad site:reddit.com query matching the shared generic title.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-21T18:03:30Z",
+          "method": "search-result-title",
+          "status": 0,
+          "issue": "LEMA-13406",
+          "note": "Title/snippet confirms this is about Netflix's 'The Circle' reality show, not our title. Rule G, names alternative subject per carve-out."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/tv",
+      "firstSeen": "2026-10-21T18:03:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T18:03:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Global (English-language) TV Top 10 chart -- bare ranking table, no written prose. Confirmed via Tavily extract: Inside The Circle does not even appear in this English-language chart (it ranks on the separate Non-English chart, already ledgered at netflix.com/tudum/top10/tv-non-english). Same Rule F listing/database family as that already-ledgered sibling page; ledgered here for family consistency even though the show isn't currently charting on this specific page.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-21T18:03:30Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13406",
+          "note": "Confirmed bare ranking table, show not present on this English-chart page; Rule F by family, same as already-ledgered tv-non-english sibling."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-21T14:10:00Z"
+  "lastUpdated": "2026-10-21T18:03:30Z"
 }
