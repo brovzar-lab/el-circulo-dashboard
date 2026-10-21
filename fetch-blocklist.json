@@ -7004,7 +7004,73 @@
           "note": "Confirmed bare ranking table, show not present on this English-chart page; Rule F by family, same as already-ledgered tv-non-english sibling."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DeRj64WB4yK",
+      "firstSeen": "2026-10-21T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "teretellez personal fan account Instagram photo post (\"Que buena serie #elcirculo, del libro de #loscorruptores un pedacito de la realidad de nuestro actual México\") -- a personal/commentator account, evaluated normally as coverage under Rule B (CEO ruling, LEMA-12887: commentator accounts are coverage by default, not excluded). Checked via direct HTML fetch for article:published_time, JSON-LD, and dateline: none present. The only date-shaped signal anywhere on the page is Instagram's own accessibility alt-text string on an embedded photo (\"Photo by Tere Tellez on October 09, 2026...\"), which does not qualify as a Rule A source per the established alt-text-disqualified precedent (applies to outlet-owned and personal accounts alike). Genuine on-topic coverage omitted solely for lack of a real publish date.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-21T22:00:00Z",
+          "method": "WebFetch+Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13417",
+          "note": "Personal account, Rule B coverage by default; only date signal is alt-text accessibility string, disqualified per established precedent; no article:published_time/JSON-LD/dateline recoverable."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/Det4_eBvR63",
+      "firstSeen": "2026-10-21T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Realidad o Ficción (@realidadoficcionpodcast) Instagram reel announcing the show's Netflix premiere, source-novel angle (\"La serie #ElCirculo basada en la novela Los Corruptores...llegará a Netflix el 7 de octubre\"). Podcast/commentator-brand account, evaluated normally as coverage under Rule B. Checked via direct HTML fetch and Tavily Extract: no caption/description rendered server-side, no article:published_time meta, no JSON-LD datePublished, no visible dateline or even a relative UI timestamp recoverable by either method. Genuine on-topic coverage omitted solely for lack of a real publish date.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-21T22:00:00Z",
+          "method": "WebFetch+Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13417",
+          "note": "Podcast/commentator account, Rule B coverage by default; no date signal of any kind recoverable (no caption even renders server-side)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61558143045617/posts/-un-video-que-nunca-debi%C3%B3-salir-a-la-luz-puede-destruirlo-todo-zuria-vega-osvald/122257277486271434",
+      "firstSeen": "2026-10-21T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-21T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Entremedios Facebook post (\"Un video que nunca debió salir a la luz puede destruirlo todo. Zuria Vega, Osvaldo Benavides, Michel Brown y Raúl Briones quedan atrapados...\" -- entertainment-media page, evaluated normally as coverage under Rule B. WebFetch retrieved the account name and caption; no article:published_time/JSON-LD/dateline or even a relative UI timestamp recoverable. Firecrawl not attempted per the standing facebook.com refusal precedent. Genuine on-topic coverage omitted solely for lack of a real publish date.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-21T22:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13417",
+          "note": "Entertainment-media account, Rule B coverage by default; no date signal recoverable; Firecrawl skipped per standing facebook.com refusal precedent."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-21T18:03:30Z"
+  "lastUpdated": "2026-10-21T22:00:00Z"
 }
