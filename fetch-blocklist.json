@@ -7488,7 +7488,69 @@
           "note": "Bare Top10 table row only, no written commentary on this show; fails Rule F embedded-list carve-out."
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/ElPasquinDeLaRegionHuichapan/posts/%EF%B8%8F-estalla-menchaca-por-nueva-serie-de-netflix-el-c%C3%ADrculo-por-qu%C3%A9-hablan-de-%C3%A9l%EF%B8%8F-e/1084421271020498",
+      "firstSeen": "2026-10-22T10:05:04Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T10:05:04Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "El Pasquin (Facebook page tagged 'Entertainment website', regional Hidalgo outlet) post: on-topic original commentary -- Hidalgo governor Julio Menchaca Salazar reportedly asked to speak urgently with President Sheinbaum over the Netflix series 'El Circulo' amid speculation he inspired the 'Rey del Huachicol' character; same underlying story already covered via the tracked Sopitas article (distinct document, Rule I, would share storyGroup if dateable). No recoverable real publish date: confirmed via Tavily extract body fetch, only date signal is a relative UI badge ('6 days ago' / '6d'), no JSON-LD, no article:published_time, no visible absolute dateline. reviewable: true.",
+      "reviewable": true
+    },
+    {
+      "url": "https://www.tiktok.com/discover/video-serie-el-circulo",
+      "firstSeen": "2026-10-22T10:05:04Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T10:05:04Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('Video Serie El Circulo'), identical URL-shape surface family to the other already-ledgered tiktok.com/discover/ pages for this show (confirmed Rule F aggregation surfaces, not distinct documents). Direct re-fetch this run was obstructed (Tavily extract and WebFetch both returned a non-content interstitial/landing shell, no page body rendered) -- classified on surface-family match to this ledger's own confirmed siblings per Rule F's surface-not-subject clarification, not on title/snippet subject-matter alone.",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only"
+    },
+    {
+      "url": "https://www.facebook.com/elheraldopodcast/posts/no-te-pierdas-la-entrevista-que-oscar-uriel-hizo-para-gu%C3%ADadelhater-al-cast-de-la/1150021517550272",
+      "firstSeen": "2026-10-22T10:05:04Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T10:05:04Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "El Heraldo Podcast (editorial-brand outlet account, El Heraldo de Mexico's podcast arm) Facebook post promoting Oscar Uriel's #GuiaDelHater interview with the 'El Circulo' cast -- genuine outlet coverage, passes Rule B. No recoverable real publish date: confirmed via WebFetch and curl, no JSON-LD, no article:published_time, no visible dateline rendered. reviewable: true.",
+      "reviewable": true
+    },
+    {
+      "url": "https://www.tiktok.com/discover/c%C3%B3mo-se-llaman-las-protagonistas-de-la-serie-el-c%C3%ADrculo-de-netflix",
+      "firstSeen": "2026-10-22T10:05:04Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T10:05:04Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('Como Se Llaman Las Protagonistas De La Serie El Circulo De Netflix'). Confirmed via Tavily extract body fetch: page aggregates multiple distinct creators' videos under the topic (LadeProdu, Marcus Vinicius, Alan Crux/comboamigues, Aura Series), no single-document content -- same Rule F family as the other already-ledgered tiktok.com/discover/ pages for this show.",
+      "reviewable": false,
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://www.facebook.com/61556588083354/videos/edu-maruri-nos-cuenta-sobre-su-casting-para-interpretar-la-versi%C3%B3n-joven-de-tom%C3%A1/1646706757004057",
+      "firstSeen": "2026-10-22T10:05:04Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T10:05:04Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Aura Series Facebook video (same brand already tracked as legitimate coverage elsewhere in data.json and already ledgered once under this same account ID, 61556588083354) -- actor Edu Maruri discussing his casting as the young version of Tomas. On-topic, distinct content/caption from the other already-ledgered Aura Series item on this account (different subject: casting story vs. Amelia's romance storyline), not a Rule I second address. No recoverable real publish date: confirmed via WebFetch, no JSON-LD, no article:published_time, no visible dateline; same failure mode as the sibling Aura Series row already in this ledger. reviewable: true.",
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-10-22T06:45:00Z"
+  "lastUpdated": "2026-10-22T10:05:04Z"
 }
