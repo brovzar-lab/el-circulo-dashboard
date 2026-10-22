@@ -7334,7 +7334,161 @@
           "note": "Third-platform (TikTok) address for the same Fausto Lozano Lara review already ledgered across Facebook /posts/ and /videos/. Rule I second address; no platform_api_timestamp available (only a relative '2d ago' UI label, not raw createTime)."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DehOV6JxAsz",
+      "firstSeen": "2026-10-22T06:45:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T06:45:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram reel from 'comboamigues' (Combo Amigues | Alan Cruz), a named entertainment-commentary persona posting regular substantive analysis of shows/films (this post discusses the real-world political context behind the source novel 'Los Corruptores' and tags the official cast). Rule B's affirmative-signal test is genuinely ambiguous here: the account is not a generic fan-repost (consistent named persona, original written analysis, regular posting cadence) but also does not carry one of Rule B's named independent-public-role signals (journalist/columnist/academic/author/elected official/comparable). Disposition does not turn on resolving that ambiguity: the only date signal found was an Instagram-rendered alt-text caption ('Video by Combo Amigues | Alan Cruz on October 15, 2026'), which per this ledger's established precedent (alt-text date is not a valid Rule A source, confirmed to apply even to outlet-owned content) does not satisfy Rule A. No JSON-LD, no article:published_time, no visible on-page dateline, no relative UI badge even. Genuine on-topic content omitted solely for lack of a real publish date; the Rule B ambiguity is noted here for visibility but was not escalated separately since it does not change the outcome.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-22T06:45:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13419",
+          "note": "No recoverable real publish date (alt-text only, not a valid Rule A source). reviewable=true."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DevL_PrPodn",
+      "firstSeen": "2026-10-22T06:45:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T06:45:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram reel from 'marieclaire_la' (Marie Claire Mexico), an established magazine/outlet account, clears Rule B automatically as a publisher/editorial-brand account. Substantive on-topic content analyzing the show's theme of friendship vs. political reality and naming the principal cast. Only date signal found was an Instagram-rendered alt-text caption ('Video by Marie Claire Mexico on October 20, 2026'), which per this ledger's established precedent does not satisfy Rule A (alt-text is not a valid source, confirmed to apply even to outlet-owned content). No JSON-LD, no article:published_time, no visible on-page dateline. Genuine outlet coverage omitted solely for lack of a real publish date.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-22T06:45:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13419",
+          "note": "Outlet account clears Rule B; no recoverable real publish date (alt-text only). reviewable=true."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DeuLpsskXEU",
+      "firstSeen": "2026-10-22T06:45:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T06:45:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram post from 'cesarantulio' (Cesar Antulio / 'Antulio'), a working actor/influencer (~12K followers, repped by BLU TALENT) posting a minimal-caption emoji/tag post ('circle-emoji, clapperboard-emoji @netflixlat') with no original analysis. Rule B's affirmative-signal test is ambiguous (an actor is not on Rule B's named independent-public-role list, but 'comparable named public figure' is not strictly ruled out either, and the post's thinness itself argues against treating this as substantive commentator coverage). Disposition does not turn on resolving that ambiguity: only date signal available was a relative '1 day ago' UI badge plus an alt-text caption date, neither of which satisfies Rule A (relative badges are never a source; alt-text is established as not a valid source either). No JSON-LD, no article:published_time, no visible absolute dateline. Flagged here for visibility rather than separately escalated since the Rule B question does not change the outcome either way.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-22T06:45:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13419",
+          "note": "No recoverable real publish date (relative badge + alt-text only, neither valid). reviewable=true; Rule B account-type ambiguity noted but immaterial to outcome."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DewipIHukX8",
+      "firstSeen": "2026-10-22T06:45:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T06:45:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Instagram post from 'blu.talent' (BLU TALENT), a talent-management agency promoting its own client Edna Alcocer's role in El Circulo. This is a vendor/supplier account under Rule B's named exclusion bucket (self-promotional business account representing a client's commercial interest, not an independent publisher, outlet, or commentator), so it is excluded by account type regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T06:45:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13419",
+          "note": "Talent-agency vendor/supplier account, Rule B exclusion by account type."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/CromaMultimedios/posts/1923679062120352",
+      "firstSeen": "2026-10-22T06:45:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T06:45:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Croma Multimedios Facebook page, a genuine Mexican news/media outlet account, clears Rule B automatically as a publisher. Substantive original political-journalism content (\"FICCION O MENSAJE POLITICO? EL CIRCULO DE NETFLIX DESATA RUMORES SOBRE EL GOBIERNO DE HIDALGO\", reporting a rumor involving analyst Mario Di Costanzo and Hidalgo governor Julio Menchaca). Only date signal available on the rendered page (via mobile Facebook, after the standard facebook.com URL returned nothing) was a relative '4d'/'4 days ago' badge, which does not satisfy Rule A (relative badges are never a source). No JSON-LD, no absolute dateline. Genuine outlet coverage omitted solely for lack of a real publish date.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-22T06:45:00Z",
+          "method": "WebFetch (m.facebook.com) + Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13419",
+          "note": "Outlet account clears Rule B; no recoverable real publish date (relative badge only). reviewable=true. Standard facebook.com URL returned no content; m.facebook.com variant fetched successfully -- noting this fetch-path wrinkle for future Facebook candidates on this ledger."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61577052920443/videos/1651401606728881",
+      "firstSeen": "2026-10-22T06:45:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T06:45:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Facebook video post with caption identical to the already-ledgered instagram.com/reel/Det4_eBvR63 ('Realidad o Ficcion' podcast: 'Miniserie corta en Netflix que acaba de llegar a la plataforma y esta basada en la exitosa novela de Jorge Zepeda Patterson!... El circulo / Los corruptores'). Second address for the same undateable post, not a distinct document; the Instagram reel stays the reviewable reference row (also undateable, so this does not change the sweep's net yield).",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T06:45:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13419",
+          "note": "Rule I second address of instagram.com/reel/Det4_eBvR63 (identical caption)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/news/top-10-reports/netflix-top-10s-the-diplomat-s4-returns-strong-while-hollywood-arts-and-sacrifice-miss",
+      "firstSeen": "2026-10-22T06:45:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T06:45:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "What's on Netflix weekly Top 10 report for the week ending Oct 18, 2026. Full body fetched and checked for prose mention of Inside the Circle/El Circulo: none found anywhere in the written commentary (which covers The Diplomat S4, Sacrifice, Hollywood Arts, Below, Animals, Tyson, The Trap, Therapy Done Right, Love Is Blind). Inside The Circle appears only as a bare row (#6, Non-English TV chart) in the raw ranking table at the bottom, with no accompanying analysis -- fails the Rule F embedded-list carve-out test (which requires actual written commentary about the show, per the already-ledgered sibling What's on Netflix report that does carry a sentence of specific commentary on Inside the Circle and is in data.json for that reason). Rule F listing/database, same family as FlixPatrol/Tudum bare tables.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T06:45:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13419",
+          "note": "Bare Top10 table row only, no written commentary on this show; fails Rule F embedded-list carve-out."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-22T02:07:33Z"
+  "lastUpdated": "2026-10-22T06:45:00Z"
 }
