@@ -7722,7 +7722,28 @@
           "note": "Personal fan account bulk-posting generic templated blurbs across many unrelated titles; no original editorial content about El Círculo specifically."
         }
       ]
+    },
+    {
+      "url": "https://facebook.com/groups/425437502198904/posts/2018652092877429",
+      "firstSeen": "2026-10-22T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Facebook post in 'El Club de los Libros Soñadores', a general-interest reader book-club group, not a publisher/outlet/editorial-brand account. An unidentified individual member personally recounts having just started watching the Netflix series and recalling having read the source novel 'Los Corruptores' (misspelled 'Los curruptores' in the post). No original reporting, review, or analysis -- individual/fan-repost account under Rule B's social-candidate relevance gate, regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T22:00:00Z",
+          "method": "WebFetch/Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13429",
+          "note": "Confirmed via WebFetch: post is in 'El Club de los Libros Soñadores' Facebook group, individual member's personal reaction post. Tavily Extract returned no content (Facebook access-walled). Rule B fan-repost/personal-account exclusion."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-22T18:10:00Z"
+  "lastUpdated": "2026-10-22T22:00:00Z"
 }
