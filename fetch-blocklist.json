@@ -7550,7 +7550,137 @@
       "skipReason": "editorial_undateable",
       "skipNote": "Aura Series Facebook video (same brand already tracked as legitimate coverage elsewhere in data.json and already ledgered once under this same account ID, 61556588083354) -- actor Edu Maruri discussing his casting as the young version of Tomas. On-topic, distinct content/caption from the other already-ledgered Aura Series item on this account (different subject: casting story vs. Amelia's romance storyline), not a Rule I second address. No recoverable real publish date: confirmed via WebFetch, no JSON-LD, no article:published_time, no visible dateline; same failure mode as the sibling Aura Series row already in this ledger. reviewable: true.",
       "reviewable": true
+    },
+    {
+      "url": "https://imdb.com/it/news/ni66045938",
+      "firstSeen": "2026-10-22T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb Italian-locale news aggregator page re-posts the Fiction Horizon article 'What Novel Inside the Circle on Netflix Is Based On and How the Series Changes It' (already tracked in data.json, fictionhorizon.com/what-novel-inside-the-circle-on-netflix-is-based-on-and-how-the-series-changes-it/, ts 20261004, outlet Fiction Horizon, byline Arthur S. Poe) with a link back and dateline 04/10/2026. Second address for an already-tracked document, not a distinct piece. Same pattern as the already-ledgered ni66050390/ni66046084 IMDb News locale pages.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T14:30:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13425",
+          "note": "Second address for Fiction Horizon's 'What Novel Inside the Circle...' piece, already in data.json."
+        }
+      ]
+    },
+    {
+      "url": "https://a24.com/trends/que-ver-netflix-nueva-miniserie-6-episodios-que-acaba-estrenarse-y-es-un-exito-mundial-n1608628",
+      "firstSeen": "2026-10-22T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Article is about a different Netflix title, 'Bajo la superficie' (Under the Surface, the Josh Hartnett/Newfoundland sea-creature miniseries), not 'El Círculo'/'Inside the Circle'. The only occurrence of the word is a generic use of 'círculo familiar' ('family circle') in the body text. Surfaced only via the broad Top 10/ranking query's generic-word collision, same Rule G shape as other 'círculo' false positives in this ledger.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T14:30:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13425",
+          "note": "Confirmed off-topic: article is about 'Bajo la superficie', not El Círculo; only a generic 'círculo familiar' phrase matched the query."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/@aura.series/video/7697429947056409872",
+      "firstSeen": "2026-10-22T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Video returns 'Video currently unavailable' on fetch (deleted/private/removed) via both Tavily Extract and WebFetch -- no caption, no createTime, no recoverable content of any kind. Search-result snippet text described it as cast/casting commentary possibly about 'Timbiriche: La serie' with only an incidental 'El Círculo de Netflix' mention, but this cannot be confirmed against the live page, so neither a date nor a confirmed subject is recoverable. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T14:30:00Z",
+          "method": "Tavily Extract + WebFetch",
+          "status": 404,
+          "issue": "LEMA-13425",
+          "note": "Video unavailable on both fetch attempts; no date or content recoverable."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://facebook.com/groups/netflixrecommendationsmoviesseries2025/posts/1121356344023668",
+      "firstSeen": "2026-10-22T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook group post; login wall blocks any post body, byline, or publish-date metadata from being read via Tavily Extract or WebFetch -- only the group's own title text ('Netflix Recommendations Movies & Series 2026 | FOUR LIFELONG FRIENDS') is visible, which names a list collection, not a post date. No recoverable real publish date. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T14:30:00Z",
+          "method": "Tavily Extract + WebFetch",
+          "status": 200,
+          "issue": "LEMA-13425",
+          "note": "Facebook login wall blocks post body/date; no recoverable date."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://facebook.com/oscarurielcine/posts/1686852359463737",
+      "firstSeen": "2026-10-22T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook post from critic/interviewer Oscar Uriel referencing his own cast interview (#ElCirculo); login wall blocks post body and publish-date metadata via Tavily Extract or WebFetch -- only the post's own title text is visible. No recoverable real publish date. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T14:30:00Z",
+          "method": "Tavily Extract + WebFetch",
+          "status": 200,
+          "issue": "LEMA-13425",
+          "note": "Facebook login wall blocks post body/date; no recoverable date."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://facebook.com/61577052920443/posts/122187633938901764",
+      "firstSeen": "2026-10-22T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook page post ('Miniserie corta en Netflix que acaba de llegar a la plataforma y esta basada en la exitosa novela de Jorge Zepeda Patterson!'); login wall blocks publish-date metadata and the posting page's identity via Tavily Extract or WebFetch. No recoverable real publish date. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T14:30:00Z",
+          "method": "Tavily Extract + WebFetch",
+          "status": 200,
+          "issue": "LEMA-13425",
+          "note": "Facebook login wall blocks post body/date and page identity; no recoverable date."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-10-22T10:05:04Z"
+  "lastUpdated": "2026-10-22T14:35:00Z"
 }
