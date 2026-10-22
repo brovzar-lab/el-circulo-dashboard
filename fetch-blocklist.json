@@ -7680,7 +7680,49 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://tiktok.com/discover/presidenta-en-serie-el-circulo",
+      "firstSeen": "2026-10-22T18:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T18:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "TikTok /discover/ topic page is entirely about an unrelated show: 'Presidenta del Círculo Trueno' (the account hookedinoneep_mx's recap series, a different fictional property using the word 'círculo' in its own title). No content about El Círculo/'Inside the Circle' (2026 Netflix Mexican thriller) anywhere on the page. Surfaced only via the generic 'círculo' title collision documented in this routine's known-noise note (Rule G).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T18:10:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13428",
+          "note": "Off-topic: 'Presidenta del Círculo Trueno' recap content, unrelated to El Círculo (2026 Netflix series). Generic 'círculo' word collision."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/@john_ulloque/video/7697678725768285471",
+      "firstSeen": "2026-10-22T18:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T18:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "John Ulloque is a personal/fan account posting a templated one-line title+genre+runtime blurb for dozens of unrelated Netflix titles in identical format (confirmed against sibling posts on the same account: 'Sacrificio', 'Embestida', 'Mentiras Peligrosas', 'Las Cartas de la Vida', 'Crepúsculo', etc., all using the same '•TITLE •YEAR •Genre •runtime/episodes, synopsis. #movies #netflix...' template). This El Círculo post ('•EL CÍRCULO •2026 •De Intriga • 8 episodios…!') carries no original review, opinion, or analysis -- it is indistinguishable from this account's generic personal watch-list/recommendation feed. Rule B individual fan-repost account, same disposition as the already-ledgered moviestore0s Instagram row.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-22T18:10:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13428",
+          "note": "Personal fan account bulk-posting generic templated blurbs across many unrelated titles; no original editorial content about El Círculo specifically."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-22T14:35:00Z"
+  "lastUpdated": "2026-10-22T18:10:00Z"
 }
