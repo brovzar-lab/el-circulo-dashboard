@@ -7070,7 +7070,271 @@
           "note": "Entertainment-media account, Rule B coverage by default; no date signal recoverable; Firecrawl skipped per standing facebook.com refusal precedent."
         }
       ]
+    },
+    {
+      "url": "https://tiktok.com/discover/serie-el-c%C3%ADrculo",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the many already-ledgered /discover/ pages for this show (e.g. serie-el-circulo-netflix, inside-the-circle-on-netflix-review): aggregation of many videos under the topic tag, not a distinct document. Classified on URL-family pattern plus Tavily's indexed snippet ('Reseña de la serie El círculo...'). Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "TikTok /discover/ Rule F family match, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/NetflixArg/posts/1557478169746894",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 400,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official Netflix Argentina Facebook account post promoting El Círculo's Netflix availability ('Es como cuando me junto con mi amiga a comer choris en la costanera... La serie El círculo ya está disponible en Netflix.'). On-topic official-account promo (same treatment as the already-tracked Netflix Latinoamérica Instagram rows), but no recoverable real publish date: WebFetch returned the caption with no date metadata, Tavily extract (basic and advanced) returned nothing, and a direct curl with browser UA was blocked (HTTP 400). Full fallback chain exhausted. Reviewable if an absolute date surfaces later.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "WebFetch + Tavily extract + curl",
+          "status": 400,
+          "issue": "LEMA-13418",
+          "note": "On-topic official-account promo post; caption recovered but no absolute publish date recoverable after full fetch chain (WebFetch, Tavily basic/advanced, curl+UA)."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/idara.effiong.39/posts/28429359066736330",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 400,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Personal Facebook account post with headline 'FOUR LIFELONG FRIENDS. ONE LEAKED VIDEO...' matching El Círculo/Inside the Circle's own synopsis language -- on-topic under Rule B (personal accounts are coverage by default, not an excluded bucket). No recoverable real publish date or full caption: WebFetch returned only the truncated headline, Tavily extract (basic and advanced) returned nothing, and a direct curl with browser UA was blocked (HTTP 400). Full fallback chain exhausted. Reviewable if an absolute date surfaces later.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "WebFetch + Tavily extract + curl",
+          "status": 400,
+          "issue": "LEMA-13418",
+          "note": "On-topic personal-account post (Rule B); no absolute publish date or full caption recoverable after full fetch chain (WebFetch, Tavily basic/advanced, curl+UA)."
+        }
+      ]
+    },
+    {
+      "url": "https://cultura.cervantes.es/berlin/es/jorge-zepeda-patterson-y-su-novela-los-usurpadores/145772",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Instituto Cervantes (Berlin/Munich/Hamburg) event page for a 2021 videoconference with Jorge Zepeda Patterson about 'Los usurpadores' -- a different novel in his 'Los Azules' trilogy, not 'Los Corruptores' (the novel El Círculo adapts). Confirmed via full body fetch: the page is about that separate book/event, mentions 'Los corruptores' only once in passing as a prior work being adapted for Netflix. Rule G: known noise source (surfaced by the generic 'Los Corruptores Jorge Zepeda Patterson' query), alternative subject = Instituto Cervantes 'Los usurpadores' videoconference event.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Confirmed off-topic: page is about a different Zepeda Patterson novel/event, not El Círculo. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/whatsondisneyplus/posts/1556331336519956",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "About Hulu's unrelated 'The Circle' reality competition reboot hosted by Tinx (premiering November 2026), not El Círculo/Inside the Circle. Rule G known noise source: 'The Circle' is a long-running unrelated Netflix/Hulu reality format. Alternative subject = Hulu 'The Circle' reboot premiere.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Off-topic: unrelated 'The Circle' reality show (Hulu/Tinx), not El Círculo. Rule G, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://mashable.com/article/the-circle-brazil-netflix",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "2020 Mashable article about Netflix's unrelated reality show 'The Circle Brazil', not El Círculo/Inside the Circle. Rule G known noise source. Alternative subject = 'The Circle Brazil' reality show.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Off-topic: unrelated 'The Circle Brazil' reality show, pre-dates this show by 6 years. Rule G, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://deadline.com/2026/10/hulu-tinx-host-the-circle-reboot-premiere-1237169862",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Deadline article about Hulu's unrelated 'The Circle' reality competition reboot hosted by Tinx, not El Círculo/Inside the Circle. Rule G known noise source. Alternative subject = Hulu 'The Circle' reboot premiere.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Off-topic: unrelated 'The Circle' reality show (Hulu/Tinx), not El Círculo. Rule G, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://yahoo.com/entertainment/tv/articles/save-dates-circle-moves-hulu-224827984.html",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Yahoo article about Netflix's unrelated reality show 'The Circle' moving to Hulu, not El Círculo/Inside the Circle. Rule G known noise source. Alternative subject = 'The Circle' reality show moving to Hulu.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Off-topic: unrelated 'The Circle' reality show, not El Círculo. Rule G, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://wrestlenomics.com/articles/2026/wwe-raw-oct-12-on-netflix-2500000-global-views-tv-ratings-analysis",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Wrestlenomics article analyzing WWE Raw's Netflix viewership ratings; no mention of El Círculo/Inside the Circle. Surfaced by the generic Netflix Top 10/Tudum ranking query with no actual connection to this show. Alternative subject = WWE Raw Netflix ratings.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Off-topic: WWE Raw Netflix ratings article, no El Círculo content. Rule G, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/articles/six-kings-slam-tennis-riyadh-season-2026",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix Tudum article about the Six Kings Slam tennis exhibition in Riyadh; no mention of El Círculo/Inside the Circle (the show appears nowhere in the article, only in an unrelated 'Popular Releases' sidebar list on the same site). Alternative subject = Six Kings Slam tennis exhibition.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Off-topic: Tudum tennis exhibition article, no substantive El Círculo content. Rule G, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://whats-on-netflix.com/news/alicias-law-mexican-the-good-wife-adaptation-netflix-release-date",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "What's on Netflix casting article for the unrelated series 'Alicia's Law', mentioning Michel Brown's past-work credits ('...and most recently, Inside the Circle') only as a one-line bio aside, not as El Círculo coverage. Alternative subject = 'Alicia's Law' casting announcement.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Off-topic: 'Alicia's Law' casting article, passing one-line credit mention only, not El Círculo coverage. Rule G, no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/@faustolozanolara/video/7698205824467897621",
+      "firstSeen": "2026-10-22T02:07:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-22T02:07:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Same Fausto Lozano Lara review as facebook.com/fausto.lozano/videos/1113733354852271 (identical caption 'Reseña de la serie El círculo. Es un thriller mexicano de ocho episodios dirigido por Alejandro Lozano...'), posted to TikTok as a third platform address for the same review. TikTok's own UI shows only a relative '2d ago' label (consistent with the FB post's 2026-10-20 firstSeen), not an authoritative platform API createTime field -- Tavily extract returned the rendered page only, no raw JSON/SIGI state, so this does not qualify as dateSource=platform_api_timestamp any more than the FB address's relative badge qualified as a date. Second/third address, not a distinct document; the FB /videos/ address stays the reviewable reference row.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-22T02:07:33Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13418",
+          "note": "Third-platform (TikTok) address for the same Fausto Lozano Lara review already ledgered across Facebook /posts/ and /videos/. Rule I second address; no platform_api_timestamp available (only a relative '2d ago' UI label, not raw createTime)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-21T22:00:00Z"
+  "lastUpdated": "2026-10-22T02:07:33Z"
 }
