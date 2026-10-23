@@ -7787,7 +7787,29 @@
           "note": "Genuine editorial interview content, undateable: no structured date signal recoverable, WebFetch 403, URL-slug date unconfirmed as a convention for this host (first row)."
         }
       ]
+    },
+    {
+      "url": "https://leisurebyte.com/tag/inside-the-circle/",
+      "firstSeen": "2026-10-23T06:04:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T06:04:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Tag/archive index page: shows teaser excerpts linking to two tagged articles (an ending-explainer and a review, both already tracked in data.json) plus unrelated 'Popular articles' teasers for other shows. No original written content of its own. Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-23T06:04:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13447",
+          "note": "Tag/archive index page: shows teaser excerpts linking to two tagged articles (an ending-explainer and a review, both already tracked in data.json) plus unrelated 'Popular articles' teasers for other shows. No original written content of its own. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-23T02:20:00Z"
+  "lastUpdated": "2026-10-23T06:04:00Z"
 }
