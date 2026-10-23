@@ -7743,7 +7743,51 @@
           "note": "Confirmed via WebFetch: post is in 'El Club de los Libros Soñadores' Facebook group, individual member's personal reaction post. Tavily Extract returned no content (Facebook access-walled). Rule B fan-repost/personal-account exclusion."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-c%C3%ADrculo-netflix",
+      "firstSeen": "2026-10-23T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('El Círculo Netflix'), same established surface family as the other already-ledgered tiktok.com/discover/ pages for this show: aggregation of many creators' videos under the topic tag (including recomendemoscine, comboamigues, spoilerjusto clips), not a distinct document. Classified on URL-family pattern plus Tavily's indexed snippet. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-23T02:20:00Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13433",
+          "note": "TikTok /discover/ Rule F family match (9th sibling row for this show), no fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://www.show.news/trending/saul-lisazo-revela-los-secretos-de-el-circulo-la-nueva-serie-de-netflix-que-estrena-el-7-de-octubre-20260909-0003.html",
+      "firstSeen": "2026-10-23T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-10-23T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Show News (by Gilberto Coronel) exclusive interview with Saúl Lisazo about his character Carlos Lemús in El Círculo -- genuine staff-written editorial coverage, not excluded on relevance or surface-family grounds. No recoverable real publish date: WebFetch returned HTTP 403 (site blocks direct fetch), Tavily extract (advanced) retrieved full body text but no article:published_time meta, JSON-LD datePublished, or visible on-page dateline. The URL slug carries a YYYYMMDD-NNNN pattern ('20260909-0003') consistent with this host's sitewide article-ID convention, but this is the first show.news row ledgered for this show -- no cross-row confirmation exists yet that the slug's embedded date equals true publish date, so it is not used as a dated_url_path source per Rule A's dated-URL-path conditions. Rule A: permanentSkip, reviewable for a future run that can confirm the date (e.g. if a later show.news row's slug-date is corroborated by that row's own structured metadata).",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-23T02:20:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13433",
+          "note": "Genuine editorial interview content, undateable: no structured date signal recoverable, WebFetch 403, URL-slug date unconfirmed as a convention for this host (first row)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-22T22:00:00Z"
+  "lastUpdated": "2026-10-23T02:20:00Z"
 }
