@@ -7809,7 +7809,108 @@
           "note": "Tag/archive index page: shows teaser excerpts linking to two tagged articles (an ending-explainer and a review, both already tracked in data.json) plus unrelated 'Popular articles' teasers for other shows. No original written content of its own. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://amp.milenio.com/espectaculos/television/el-circulo-netflix-similitudes-los-corruptores",
+      "firstSeen": "2026-10-23T10:06:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T10:06:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "AMP-subdomain second address of the already-tracked milenio.com/espectaculos/television/el-circulo-netflix-similitudes-los-corruptores row (same headline '¿Qué tanto se parece...', byline Yair Hernández, Oct 9 2026). Confirmed via direct body fetch: identical article content under Milenio's amp.milenio.com hosting form. Not a universal amp.-subdomain fold -- the already-ledgered Álvaro Cueva column (amp.milenio.com/opinion/alvaro-cueva/.../el-circulo-y-carrie) has no non-AMP counterpart in this dataset, so each amp.milenio.com URL is confirmed individually, not folded by host pattern.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-23T10:06:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13483",
+          "note": "AMP second address of already-tracked milenio.com similitudes-los-corruptores article; confirmed via body fetch, Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/gb/title/80217807",
+      "firstSeen": "2026-10-23T10:06:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T10:06:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "5th sibling in the Netflix per-locale title-page family (joins gi, im, in, ar), url=netflix.com/<locale>/title/80217807. Cast/synopsis metadata card, no editorial content. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-23T10:06:00Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-13483",
+          "note": "New GB locale sibling of the already-established Netflix title-page Rule F family."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/es/news/ni66046084",
+      "firstSeen": "2026-10-23T10:06:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T10:06:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "ES-locale second address of the already-ledgered imdb.com/news/ni66046084 (EN) row -- same IMDb News teaser (\"Meet the Cast of 'Inside the Circle' on Netflix\", dated 4/10/2026, by Robert Milakovic) syndicating the already-tracked fictionhorizon.com/meet-the-cast-of-inside-the-circle-on-netflix-with-photos article. Confirmed via direct body fetch (Tavily extract): identical teaser content, identical byline/date, identical outbound link to Fiction Horizon. Rule I.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-23T10:06:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13483",
+          "note": "ES-locale second address of already-ledgered imdb.com/news/ni66046084 EN row; same Fiction Horizon syndication target. Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DL5erA1Roun",
+      "firstSeen": "2026-10-23T10:06:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T10:06:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Search-snippet/real-content mismatch: the Tavily search result attributed this URL to an Andrés Revo 'El Círculo' promo caption, but direct body fetch shows the actual post is from account aura_series (posted July 9, 2025), captioned 'Estos son los personajes de Kenneth Lavill ¿Cuál es tu favorito?' -- a character-guide post for a different show entirely ('De viaje por un libro'/Kenneth Lavill), with no mention of El Círculo, Netflix, or any of this show's cast anywhere on the page. The search index's snippet for this URL was simply wrong. Not a generic-word title collision (Rule G's usual shape here) -- a snippet/real-content mismatch instead, same anti-pattern family as the LEMA-13042 Instagram/vix case.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-23T10:06:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13483",
+          "note": "Search snippet wrongly attributed to this URL; real page content is an unrelated aura_series character-guide post with no mention of El Círculo. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/UJCuba/posts/lascartassobrelamesa-la-exitosa-pel%C3%ADcula-de-netflix-no-mires-arriba-spoilers-ha-/4766920296735524",
+      "firstSeen": "2026-10-23T10:06:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-23T10:06:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-23T10:06:00Z",
+          "method": "WebFetch+Tavily extract+curl/UA",
+          "status": 0,
+          "issue": "LEMA-13483",
+          "note": "Full fallback chain exhausted: WebFetch returned only a truncated hashtag/attribution header, Tavily extract returned empty, curl+UA returned no og:*/article meta tags. Search snippet suggests the post is primarily about an unrelated Netflix film ('No miren arriba') with a passing 'EL CIRCULO' mention of uncertain referent -- could not confirm on/off-topic without body access. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-23T06:04:00Z"
+  "lastUpdated": "2026-10-23T10:06:00Z"
 }
