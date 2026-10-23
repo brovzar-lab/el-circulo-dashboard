@@ -7998,7 +7998,94 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://www.tiktok.com/discover/con-quien-se-queda-jaime-del-circulo-netflix",
+      "firstSeen": "2026-10-23T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('Con Quien Se Queda Jaime Del Circulo Netflix'), same established surface family as the many already-ledgered tiktok.com/discover/ pages for this show: aggregation of many unrelated creators' videos under the topic tag plus a 'Related to' sidebar of unrelated discover tags, not a distinct document. Confirmed via direct fetch (Tavily extract). Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-23T18:00:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13537",
+          "note": "TikTok /discover/ Rule F family match, confirmed via body fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/en-qu%C3%A9-plataforma-puedo-ver-la-serie-el-c%C3%ADrculo",
+      "firstSeen": "2026-10-23T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('En Qué Plataforma Puedo Ver La Serie El Círculo'), same established surface family as the many already-ledgered tiktok.com/discover/ pages for this show. Direct fetch (Tavily extract) returned only the generic TikTok landing shell (no og tags, no extractable body); classified on URL-family pattern plus the search-indexed snippet. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-23T18:00:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13537",
+          "note": "TikTok /discover/ Rule F family match, generic JS shell only on fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://lateshow.com.ar/netflix-se-quedo-en-los-90",
+      "firstSeen": "2026-10-23T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Article is entirely about Netflix Argentina adding 'Beverly Hills, 90210' to its catalog; El Círculo appears nowhere in the article body. The only connection is a 'Publicaciones relacionadas' (related posts) sidebar widget linking to this outlet's own separate, already-tracked article (lateshow.com.ar/el-circulo-el-policial-mexicano-de-netflix-que-atrapa-desde-el-primer-capitulo-y-no-da-respiro/, in data.json as Late Show (Argentina), ts=20261012). A sidebar cross-link to an already-ledgered distinct document is not coverage on this URL. Rule G.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-23T18:00:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13537",
+          "note": "Off-topic: Beverly Hills 90210 catalog piece; El Círculo only appears as a related-post sidebar link to an already-tracked separate article."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@adrianduarteaguilar/video/7699655343856520455",
+      "firstSeen": "2026-10-23T18:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-23T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Video returns 'Video currently unavailable' on fetch (Tavily extract); no content recoverable. Surfaced by the broad ES social query on the word 'círculo'. The only recovered text is the search engine's own indexed snippet: 'Gracias a Netflix por la invitación a la premier de #...' followed by 'Las reacciones en redes sociales no se hicieron esperar. Cientos de miles de usuarios critican severamente la postura del guanajuatense, recordándole...' -- this describes a social-media backlash against an unnamed Guanajuato-based public figure's conduct at an unspecified premiere event, not El Círculo coverage. No mention of El Círculo, Netflix's Mexican thriller, or any cast/crew name anywhere in the recovered snippet or page title. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-23T18:00:00Z",
+          "method": "Tavily extract",
+          "status": 0,
+          "issue": "LEMA-13537",
+          "note": "Video unavailable on fetch; indexed snippet describes an unrelated Guanajuato political-figure premiere controversy, no El Círculo content."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-23T14:06:11Z"
+  "lastUpdated": "2026-10-23T18:00:00Z"
 }
