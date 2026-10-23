@@ -8085,7 +8085,150 @@
           "note": "Video unavailable on fetch; indexed snippet describes an unrelated Guanajuato political-figure premiere controversy, no El Círculo content."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-el-c%C3%ADrculo-actor",
+      "firstSeen": "2026-10-23T22:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T22:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/ keyword-aggregation page (\"Serie El Círculo Actor\"): confirmed via Tavily Extract (WebFetch returned no usable content, SPA shell only) as a grid of unrelated video thumbnails from multiple creators (Candrés Peredo, Netflix Latinoamérica, LadeProdu, Aura Series), no written editorial content of its own. Same surface family as the already-ledgered tiktok.com/discover/el-c%C3%ADrculo-netflix entry. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-23T22:07:25Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13543",
+          "note": "TikTok /discover/ keyword-aggregation page (\"Serie El Círculo Actor\"): confirmed via Tavily Extract (WebFetch returned no usable content, SPA shell only) as a grid of unrelated video thumbnails from multiple creators (Candrés Peredo, Netflix Latinoamérica, LadeProdu, Aura Series), no written editorial content of its own. Same surface family as the already-ledgered tiktok.com/discover/el-c%C3%ADrculo-netflix entry. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/actores-que-salen-en-el-circulo-serie",
+      "firstSeen": "2026-10-23T22:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T22:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/ keyword-aggregation page: confirmed via Tavily Extract as a grid of unrelated video thumbnails (Candrés Peredo, Aura Series, LadeProdu etc.), no written editorial content of its own. Same surface family as the already-ledgered tiktok.com/discover/ entries. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-23T22:07:25Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13543",
+          "note": "TikTok /discover/ keyword-aggregation page: confirmed via Tavily Extract as a grid of unrelated video thumbnails (Candrés Peredo, Aura Series, LadeProdu etc.), no written editorial content of its own. Same surface family as the already-ledgered tiktok.com/discover/ entries. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/actores-que-se-participaron-en-la-serie-c%C3%ADrculo",
+      "firstSeen": "2026-10-23T22:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T22:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/ keyword-aggregation page: confirmed via Tavily Extract as a grid of unrelated video thumbnails, no written editorial content of its own. Same surface family as the already-ledgered tiktok.com/discover/ entries. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-23T22:07:25Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13543",
+          "note": "TikTok /discover/ keyword-aggregation page: confirmed via Tavily Extract as a grid of unrelated video thumbnails, no written editorial content of its own. Same surface family as the already-ledgered tiktok.com/discover/ entries. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/quien-es-el-actor-de-circulo-la-serie",
+      "firstSeen": "2026-10-23T22:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T22:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/ keyword-aggregation page: confirmed via Tavily Extract as a grid of unrelated video thumbnails (LadeProdu, Aura Series, Candrés Peredo, Ruben Saucedo, Netflix Latinoamerica etc., plus off-topic K-drama content mixed in), no written editorial content of its own. Same surface family as the already-ledgered tiktok.com/discover/ entries. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-23T22:07:25Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13543",
+          "note": "TikTok /discover/ keyword-aggregation page: confirmed via Tavily Extract as a grid of unrelated video thumbnails (LadeProdu, Aura Series, Candrés Peredo, Ruben Saucedo, Netflix Latinoamerica etc., plus off-topic K-drama content mixed in), no written editorial content of its own. Same surface family as the already-ledgered tiktok.com/discover/ entries. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tvguide.com/news/new-on-netflix-october-2026",
+      "firstSeen": "2026-10-23T22:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T22:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TV Guide 'New on Netflix October 2026' page: confirmed via WebFetch as a calendar/list of releases across the month (East of Eden, Below, Animals, The Diplomat, Cyberpunk: Edgerunners 2, etc.), by Tim Surette, published Oct 22 2026. 'Inside the Circle' appears only as a single line under the Oct. 7 heading with no written prose about the show specifically -- strip the schedule grid and nothing about this title remains. Rule F (EPG/programming-grid shape).",
+      "history": [
+        {
+          "attempt": "2026-10-23T22:07:25Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13543",
+          "note": "TV Guide 'New on Netflix October 2026' page: confirmed via WebFetch as a calendar/list of releases across the month (East of Eden, Below, Animals, The Diplomat, Cyberpunk: Edgerunners 2, etc.), by Tim Surette, published Oct 22 2026. 'Inside the Circle' appears only as a single line under the Oct. 7 heading with no written prose about the show specifically -- strip the schedule grid and nothing about this title remains. Rule F (EPG/programming-grid shape)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61577078961285/videos/zuria-vega-ra%C3%BAl-briones-osvaldo-benavides-y-michel-brown-protagonizan-el-c%C3%ADrculo/1976227533056877",
+      "firstSeen": "2026-10-23T22:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T22:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Facebook video post carrying the identical promo caption as the already-ledgered instagram.com/reel/DekjmuJxPzc ('Zuria Vega, Raúl Briones, Osvaldo Benavides y Michel Brown protagonizan El Círculo, una nueva serie que explora los límites de la amistad, la confianza y la lealtad...'), which is itself a second address for the already-tracked es.hollywoodreporter.com/el-elenco-de-el-circulo-debate-los-limites-de-la-lealtad-y-sobre-como-saber-cuando-es-momento-de-soltar article (data.json, Oct 14 2026). Cross-platform repost of the same promotional interview teaser, no independent content. Rule I second address.",
+      "history": [
+        {
+          "attempt": "2026-10-23T22:07:25Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13543",
+          "note": "Facebook video post carrying the identical promo caption as the already-ledgered instagram.com/reel/DekjmuJxPzc ('Zuria Vega, Raúl Briones, Osvaldo Benavides y Michel Brown protagonizan El Círculo, una nueva serie que explora los límites de la amistad, la confianza y la lealtad...'), which is itself a second address for the already-tracked es.hollywoodreporter.com/el-elenco-de-el-circulo-debate-los-limites-de-la-lealtad-y-sobre-como-saber-cuando-es-momento-de-soltar article (data.json, Oct 14 2026). Cross-platform repost of the same promotional interview teaser, no independent content. Rule I second address."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/escena-osvaldo-benavides-the-circle",
+      "firstSeen": "2026-10-23T22:07:25Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-23T22:07:25Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-23T22:07:25Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 0,
+          "issue": "LEMA-13543",
+          "note": "WebFetch returned only the generic 'TikTok - Make Your Day' SPA shell (no content). Tavily Extract fallback (Firecrawl MCP not available this run) returned, on two separate attempts, either an empty result or a 'TikTok has discontinued operating in Hong Kong' geofencing stub instead of real page content. Full fallback-chain failure, not an editorial call -- failCount=1, no cooldown yet. Sibling tiktok.com/discover/ URLs in the same query batch fetched successfully and confirmed as the same Rule F aggregation-page family; this one is withheld from that classification pending a successful fetch, per the standing rule that a failed fetch is never evidence of surface family/off-topic."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-23T18:00:00Z"
+  "lastUpdated": "2026-10-23T22:07:25Z"
 }
