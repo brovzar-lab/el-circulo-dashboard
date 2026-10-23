@@ -2858,5 +2858,44 @@
     "type": "Social",
     "excerpt": "Instagram post from radio station La 99 FM announcing El Círculo on Netflix: after the murder of a famous actress, the lives of 4 childhood friends are caught up in a web of secrets. Dated via image alt text (\"October 09, 2026\"), no separate datePublished/uploadDate metadata exposed.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Xeva",
+    "headline": "'El Círculo', el nuevo thriller mexicano basado en 'Los Corruptores', llegará a Netflix",
+    "url": "https://xeva.com.mx/espectaculos/294278/el-circulo-el-nuevo-thriller-mexicano-basado-en-los-corruptores-llegara-a-netflix",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Mexican wire-pattern early announcement piece (same headline/story as the already-tracked Diario El Mundo and Plano Informativo pieces): a years-long friendship is put to the test after the murder of actress Pamela Dosantos, in Netflix's thriller based on Jorge Zepeda Patterson's novel 'Los Corruptores'.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "SensaCine México (YouTube)",
+    "headline": "\"EVERYONE is prone to being CORRUPTIBLE\": The Circle, new Netflix series",
+    "url": "https://www.youtube.com/watch?v=91DUt_9ydfM",
+    "date": "Oct 22, 2026",
+    "ts": 20261022,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Exclusive video interview with cast Zuria Vega, Osvaldo Benavides, Michel Brown and Raúl Briones discussing the show's theme of everyday corruptibility and friendship, the adaptation of 'Los Corruptores', and the Mexico City filming locations.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Bolly Bourse",
+    "headline": "Review: Inside the Circle",
+    "url": "https://bollybourse.com/review/inside-the-circle",
+    "date": "Oct 22, 2026",
+    "ts": 20261022,
+    "dateSource": "visible_dateline",
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "3/5 stars, \"Recommended\": praises the four leads' long-friendship chemistry (especially Zuria Vega's Amelia) and tight editing, but finds the show overstuffed with subplots and says it \"would have been sharper at six episodes.\"",
+    "storyGroup": null
   }
 ]
