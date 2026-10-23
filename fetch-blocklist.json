@@ -7910,7 +7910,95 @@
           "note": "Full fallback chain exhausted: WebFetch returned only a truncated hashtag/attribution header, Tavily extract returned empty, curl+UA returned no og:*/article meta tags. Search snippet suggests the post is primarily about an unrelated Netflix film ('No miren arriba') with a passing 'EL CIRCULO' mention of uncertain referent -- could not confirm on/off-topic without body access. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/elheraldopodcast/posts/oscar-uriel-nos-trae-esta-entrevista-con-los-protagonistas-de-elcirculo-la-nueva/1150866557465768",
+      "firstSeen": "2026-10-23T14:04:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T14:04:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "El Heraldo Podcast Facebook video post (\"Oscar Uriel nos trae esta entrevista con los protagonistas de #ElCirculo, la nueva serie protagonizada por Michel Brown, Zuria Vega y Raúl Briones\"), same underlying Oscar Uriel cast-interview event already ledgered from a different account (facebook.com/oscarurielcine/posts/1686852359463737, also editorial_undateable). Confirmed via direct fetch (WebFetch): caption carries no visible publish date, and Facebook's login wall blocks any further page metadata. No recoverable real publish date. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-23T14:04:30Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13492",
+          "note": "No visible publish date on caption; Facebook login wall blocks metadata. reviewable=true."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://www.facebook.com/sensacinemexico/videos/ra%C3%BAl-briones-y-michel-brown-nos-dejaron-pensando-con-esta-reflexi%C3%B3n-sobre-el-c%C3%ADr/1100862049455379",
+      "firstSeen": "2026-10-23T14:04:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T14:04:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Sensacine México Facebook video, caption \"Raúl Briones y Michel Brown nos dejaron pensando con esta reflexión sobre 'El Círculo'.\" Direct fetch (WebFetch) found no usable publish date on the caption; Facebook's login wall blocks the rest of page metadata. No recoverable real publish date for this address. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-23T14:04:30Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13492",
+          "note": "No visible publish date on caption; Facebook login wall blocks metadata. reviewable=true."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://www.instagram.com/reel/De0OUXAjbdy",
+      "firstSeen": "2026-10-23T14:04:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T14:04:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Search-indexed content snippet (\"Zuria Vega, Michel Brown, Osvaldo Benavides y Raúl Briones nos describen a sus personajes en la serie de 'El Círculo'... En entrevista con THE HOLLYWOOD [REPORTER]\") matches the same promotional multi-clip pattern and intro wording as the already-ledgered official Hollywood Reporter en Español reel instagram.com/reel/DekjmuJxPzc (Rule I, redundant syndication of the already-tracked THR es.hollywoodreporter.com cast-interview article). Direct body fetch via WebFetch and Tavily extract both failed to resolve this short-link reliably (Tavily extract returned an unrelated account's profile grid, not this post -- a known failure mode for this class of Instagram URL, same anti-pattern as the LEMA-13483 aura_series mismatch). Classification rests on the search-engine content snippet alone, not a confirmed body fetch; flagged reviewable for a future audit pass with better Instagram access.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-23T14:04:30Z",
+          "method": "WebFetch+Tavily extract",
+          "status": 0,
+          "issue": "LEMA-13492",
+          "note": "Body fetch unreliable (resolved to unrelated profile grid); classified on search snippet content alone as a Rule I repost of the already-ledgered THR es reel/article. reviewable=true."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://www.instagram.com/reel/DezBk-iR69H",
+      "firstSeen": "2026-10-23T14:04:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-23T14:04:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram reel from 'richardouglasm' (Richard Douglas Martínez), a personal commentator account -- clears Rule B per the exclusion-gate ruling (commentator accounts are coverage by default). Confirmed via direct fetch (WebFetch): substantive on-topic personal opinion/review content naming the show's creator, director, and principal cast. Only date signal found was the reel thumbnail's Instagram-rendered alt-text ('October 22, 2026'), which per this ledger's established precedent does not satisfy Rule A (alt-text is not a valid source). No JSON-LD, no article:published_time, no visible on-page dateline recoverable via WebFetch. Genuine commentator coverage omitted solely for lack of a real publish date.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-23T14:04:30Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13492",
+          "note": "Only date evidence is alt-text, which is disqualified per established precedent. reviewable=true."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-10-23T10:06:00Z"
+  "lastUpdated": "2026-10-23T14:06:11Z"
 }
