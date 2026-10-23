@@ -2819,5 +2819,44 @@
     "type": "Feature",
     "excerpt": "Ending-explainer by Archi Sengupta breaking down the finale of Netflix's Inside the Circle: identifies Jaime as the person behind Pamela Dosantos's murder within the group of four childhood friends. Companion piece to Leisurebyte's own review of the show (already tracked).",
     "storyGroup": null
+  },
+  {
+    "outlet": "NRT Mexico Noticias",
+    "headline": "¡De la novela al streaming! 'El Círculo', basada en Jorge Zepeda Patterson, llega a Netflix",
+    "url": "https://noticiasnrt.com/2026/10/02/el-circulo-jorge-zepeda-patterson-netflix",
+    "date": "Oct 2, 2026",
+    "ts": 20261002,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "By Alejandro Imperial: pre-premiere piece on El Círculo's Oct 7 Netflix release, framing the show's shift from the 2013 novel's corruption/politics focus toward the friendship and secrets of four lifelong friends after a leaked video implicates one of them. Cast: Zuria Vega, Osvaldo Benavides, Michel Brown, Raúl Briones. Confirms 190+ country release.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Marie Claire México",
+    "headline": "El Círculo: Secretos, poder y lealtades al límite en la nueva serie de Netflix",
+    "url": "https://marieclaire.com.mx/el-circulo-netflix",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Third distinct Marie Claire México website piece on the show (joins the Oct 7 'hechos reales' and Oct 13 'significado amistad' articles already tracked): pre-premiere feature on El Círculo describing it as a thriller about secrets, power and loyalty, following four lifelong friends whose relationship unravels after a leaked video. Same day-of-trailer-reveal wave as the outlet's other Sep 9 peers.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "La 99 FM (Instagram)",
+    "headline": "¡\"El Círculo\" llega con una red de secretos! Netflix",
+    "url": "https://www.instagram.com/p/DeSKggFnxQo",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Instagram post from radio station La 99 FM announcing El Círculo on Netflix: after the murder of a famous actress, the lives of 4 childhood friends are caught up in a web of secrets. Dated via image alt text (\"October 09, 2026\"), no separate datePublished/uploadDate metadata exposed.",
+    "storyGroup": null
   }
 ]
