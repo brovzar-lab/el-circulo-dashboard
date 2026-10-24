@@ -2923,5 +2923,31 @@
     "type": "Entertainment",
     "excerpt": "Pre-premiere trailer-release coverage: Zuria Vega, Michel Brown, Raul Briones and Osvaldo Benavides test the limits of friendship in El Circulo, based on Jorge Zepeda Patterson novel Los Corruptores, ahead of the Oct 7 Netflix premiere.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Jorge Zepeda Patterson (X)",
+    "headline": "Novel author reacts to the Netflix adaptation: \"Muy buena la adaptación\"",
+    "url": "https://x.com/jorgezepedap/status/2108343811143344617",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Jorge Zepeda Patterson, author of the source novel Los Corruptores, posts his own reaction to the Netflix series: \"Muy buena la adaptación que hizo Netflix de mi novela Los Corruptores, con la serie EL CÍRCULO. Estoy enganchando aunque conozca el final. Cuatro amigos metidos en un thriller político.\" Author commentary on his own adapted work, distinct from the already-tracked press coverage of the adaptation.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Radio 10 - AM 710 (X)",
+    "headline": "El Círculo named in Radio 10's streaming recommendations thread",
+    "url": "https://x.com/Radio10/status/2113247215812788239",
+    "date": "Oct 22, 2026",
+    "ts": 20261022,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Argentine talk-radio station Radio 10 (AM 710) posts host Catalina Dlugi's streaming-recommendations thread for #MañanaSylvestre, listing 'EL CIRCULO (Netflix)' as item 15 among 15 recommended titles across Netflix/Prime/HBO/Flow. Outlet-account embedded-list mention, coverage per the established embedded-list-mention precedent (LEMA-12962), not a bare auto-generated chart.",
+    "storyGroup": null
   }
 ]
