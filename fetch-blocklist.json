@@ -8600,7 +8600,161 @@
           "note": "Official Netflix Tudum Mexico TV Top 10 chart, /es/mexico/ locale-prefixed path variant -- bare ranking table, El circulo at rank 2, no written prose. Same established Tudum Top10 family."
         }
       ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/most-popular",
+      "firstSeen": "2026-10-24T18:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T18:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "skipNote": "whats-on-netflix.com's 'Most Popular' tool page: auto-generated global Top 10 movies/TV points tables plus country-specific top-10 charts (Inside The Circle appears at #6 in the Mexico TV table for Oct 24, 2026). No staff-written prose about the show, same Rule F listing/database family as this host's already-ledgered /top-10-title-search page (LEMA-12725) and the Tudum/FlixPatrol Top10 family.",
+      "history": [
+        {
+          "attempt": "2026-10-24T18:07:25Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13575",
+          "note": "Confirmed bare ranking-tool page, no prose; Rule F listing/database family."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DdHqsUZoXfa",
+      "firstSeen": "2026-10-24T18:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T18:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_vendor_promo",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "skipNote": "Instagram reel from 'talentontheroad' (Talent On The Road Management, verified talent agency representing Osvaldo Benavides, Michel Brown and Raul Briones), posting the official Netflix 'El Circulo' trailer reveal and naming its own represented actors in the cast. Vendor/supplier self-promotional agency account under Rule B's named exclusion bucket, same pattern as the already-ledgered 'blu.talent' (instagram.com/p/DewipIHukX8) and '3managementmx' (instagram.com/p/Deu_dvzkb5k) agency posts, and this same agency's own earlier Rule-I-resolved post (instagram.com/p/DemoWU3G11c). Excluded by account type regardless of dateability; only date signal visible was an Instagram alt-text caption ('Video by Talent On The Road Management on September 10, 2026'), which is immaterial to the outcome here. NOTE flagged separately on the execution issue: this alt-text-as-date question has conflicting precedent in this ledger's own history (see comment) and was not relied on for this disposition.",
+      "history": [
+        {
+          "attempt": "2026-10-24T18:07:25Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13575",
+          "note": "Vendor/supplier talent-agency account, Rule B exclusion by account type, same pattern as blu.talent/3managementmx."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DesmrrClAtr",
+      "firstSeen": "2026-10-24T18:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T18:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "skipNote": "Fausto Lozano Lara's 'El circulo' review reposted to a third/fourth platform address (identical caption to facebook.com/fausto.lozano/videos/1113733354852271, already the reviewable reference row for this review, and to the TikTok and facebook.com/.../posts/ addresses also already ledgered). Second address, not a distinct document (Rule I); this address's own alt-text shows 'Video by Fausto Lozano Lara on October 19, 2026' but that is not relied on since the row resolves on Rule I regardless of date, consistent with the reference row's own treatment.",
+      "history": [
+        {
+          "attempt": "2026-10-24T18:07:25Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13575",
+          "note": "Confirmed identical caption to the already-ledgered Fausto Lozano Lara review family; fourth-platform second address."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/MxUlysses/status/2111689772939006042",
+      "firstSeen": "2026-10-24T18:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T18:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "skipNote": "Ulises Castellanos (@MxUlysses), a confirmed Mexican photojournalist (former Proceso photo editor, El Universal columnist/photo editor, La Silla Rota weekly columnist, Universidad Panamericana photojournalism professor -- independent public identity confirmed via web search, not just the profile itself), posts substantive review commentary: 'Acabo de terminar EL CIRCULO... thriller politico con ritmo, secretos, lealtades rotas... Recomendable, de principio a fin.' Clears Rule B as a named journalist/public-figure account. No recoverable real publish date: X's timestamp line did not render in any of three fetch attempts (WebFetch 402, two Tavily extract passes), unlike sibling candidates from the same batch where the timestamp line did render. No JSON-LD, no article:published_time, no visible absolute dateline obtained. Not guessed per Rule A.",
+      "history": [
+        {
+          "attempt": "2026-10-24T18:07:25Z",
+          "method": "WebFetch + Tavily extract (x2)",
+          "status": 200,
+          "issue": "LEMA-13575",
+          "note": "Rule B clears (confirmed journalist identity); no recoverable absolute timestamp across 3 fetch attempts."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/HLFrisbie/status/2112587562124824857",
+      "firstSeen": "2026-10-24T18:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T18:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "skipNote": "Hector Frisbie (@HLFrisbie) quote-tweets the novel author's own tweet with a one-line personal recommendation ('Les recomiendo esta serie de @jorgezepedap El Circulo en @netflix'), no independent public-identity signal found on the account. Individual account with no public identity independent of the show or of entertainment fandom; Rule B fan-repost exclusion. (The quoted original tweet by the novel's actual author, x.com/jorgezepedap/status/2108343811143344617, was evaluated separately and added to data.json as its own distinct document.)",
+      "history": [
+        {
+          "attempt": "2026-10-24T18:07:25Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13575",
+          "note": "Personal fan account, minimal quote-tweet recommendation; Rule B exclusion."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/The_Dr_Justice/status/2112893443076722689",
+      "firstSeen": "2026-10-24T18:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T18:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "skipNote": "TheDrJustice (@The_Dr_Justice), bio confirms a personal Argentine lawyer/criminologist account ('Bach.Univ.en Dcho,Abogado UBA,Criminologo,Docente...') with no journalism/entertainment-criticism public role; profile feed is generic personal retweeting of unrelated news (hurricanes, museums, politics, old telenovela writers). Affirmative-signal test resolves in the negative per the Rule B amendment; direct editorial_personal_repost skip, not a Rule C escalation.",
+      "history": [
+        {
+          "attempt": "2026-10-24T18:07:25Z",
+          "method": "Tavily extract (profile + post)",
+          "status": 200,
+          "issue": "LEMA-13575",
+          "note": "Personal generalist account confirmed via profile bio/feed; Rule B exclusion."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/voguelatam/status/2112665751278735378",
+      "firstSeen": "2026-10-24T18:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T18:07:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "skipNote": "Vogue Mexico y Latam's own X post promoting its already-tracked article (vogue.mx/articulo/el-circulo-netflix-final-explicado, in data.json since Oct 20, 2026): 'El circulo llego a Netflix el 7 de octubre de 2026. Repasamos de que trata y la explicacion del final...' plus a link to the same article. Same-outlet cross-platform second address, Rule I.",
+      "history": [
+        {
+          "attempt": "2026-10-24T18:07:25Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13575",
+          "note": "Same-outlet promo tweet for an already-tracked Vogue Mexico article; Rule I second address."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-24T14:30:00Z"
+  "lastUpdated": "2026-10-24T18:07:25Z"
 }
