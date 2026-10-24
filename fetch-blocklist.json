@@ -8358,7 +8358,73 @@
           "note": "Only relative timestamp visible; raw HTML has no machine-readable date field. reviewable=true."
         }
       ]
+    },
+    {
+      "url": "https://threads.com/@oscaruriel71/post/De1uy2iEeH1",
+      "firstSeen": "2026-10-24T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "Threads post by verified account oscaruriel71 (Oscar Uriel, El Heraldo de México) announcing/linking his own cast-interview video ('El Círculo: Los protagonistas hablan sobre la AMISTAD y los SECRETOS | Guía del Hater', youtu.be/1ESwcxQTDXE). The YouTube video itself (El Heraldo de México channel) is kept as the primary data.json row: it carries an authoritative publish timestamp via YouTube's own Data API (publishedAt 2026-10-23T02:30:18Z), while this Threads post shows only a relative '15h' on-page indicator, no absolute date. Rule I second address, same interview content, no additional substantive information on the Threads side.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-24T06:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13548",
+          "note": "Threads post linking to YouTube interview; no absolute date on page, interview content covered via its YouTube source instead."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/es/title/tt36743307",
+      "firstSeen": "2026-10-24T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "Spanish-locale (/es/) sibling of the already-ledgered IMDb title record (imdb.com/title/tt36743307, imdb.com/es-es/title/tt36743307): logline, cast/crew, episode metadata, and an IMDb user aggregate rating (5.1/10, 285 votes) only, no written editorial content. Same Rule F family (IMDb title records are Rule F by family, per LEMA-10630 ruling); rich metadata is evidence FOR Rule F, not against it.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-24T06:00:00Z",
+          "method": "Firecrawl scrape",
+          "status": 200,
+          "issue": "LEMA-13548",
+          "note": "Bare IMDb title page (es locale), metadata/rating table only."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/romania/tv",
+      "firstSeen": "2026-10-24T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "Official Netflix Tudum Romania TV Top 10 chart -- bare ranking table (Inside The Circle: Season 1 appears as row 10, week of 10/12-10/18/26, no written prose). Same established family as the already-ledgered Tudum per-country Top10 pages (Mexico, Hungary, tv-non-english, etc.) and the FlixPatrol Top10 family. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-24T06:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13548",
+          "note": "Tudum Romania Top10 chart, Rule F listing/database."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-24T02:20:00Z"
+  "lastUpdated": "2026-10-24T06:00:00Z"
 }
