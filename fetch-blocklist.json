@@ -8512,7 +8512,95 @@
           "note": "Age-restricted/login-walled, no content accessible, no recoverable date. reviewable=true."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/por-qu%C3%A9-quieren-quitar-la-serie-el-c%C3%ADrculo-de-netflix",
+      "firstSeen": "2026-10-24T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established Rule F surface family as other already-ledgered /discover/ pages for this title (e.g. miniserie-el-circulo, inside-the-circle-netflix-review) -- aggregation of many unrelated videos under the topic tag, no single-document content, confirmed via Tavily extract (20+ distinct video cards listed).",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-24T14:30:00Z",
+          "method": "tavily-extract",
+          "status": 200,
+          "issue": "LEMA-13574",
+          "note": "TikTok /discover/<slug> hashtag/topic index page, same established Rule F surface family as other already-ledgered /discover/ pages for this title -- aggregation of many unrelated videos under the topic tag, no single-document content."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/final-explicado-de-circulo-netflix",
+      "firstSeen": "2026-10-24T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established Rule F surface family as other already-ledgered /discover/ pages for this title -- aggregation of many unrelated videos under the topic tag, no single-document content, confirmed via Tavily extract.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-24T14:30:00Z",
+          "method": "tavily-extract",
+          "status": 200,
+          "issue": "LEMA-13574",
+          "note": "TikTok /discover/<slug> hashtag/topic index page, same established Rule F surface family as other already-ledgered /discover/ pages for this title -- aggregation of many unrelated videos under the topic tag, no single-document content."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/oscarurielcine/posts/buen-viernes-aqu%C3%AD-mi-entrevista-con-zuria-vega-osvaldo-benavides-michel-brown-y-r/1688314795984160",
+      "firstSeen": "2026-10-24T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook post from oscarurielcine (\"Buen viernes. Aqui mi entrevista con Zuria Vega, Osvaldo Benavides, Michel Brown y Raul Briones\"), the same underlying Oscar Uriel cast-interview event already ledgered from the same account under a different post id (facebook.com/oscarurielcine/posts/1686852359463737, also editorial_undateable) and whose primary address is the YouTube video https://www.youtube.com/watch?v=1ESwcxQTDXE already in data.json with an authoritative publishedAt timestamp. Confirmed via direct fetch (WebFetch) and Tavily extract: only the caption lede is visible, no taken_at/published_at field; Facebook login wall blocks further page metadata. No recoverable real publish date. Rule I second address, not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-24T14:30:00Z",
+          "method": "webfetch",
+          "status": 200,
+          "issue": "LEMA-13574",
+          "note": "Facebook post, same underlying Oscar Uriel cast-interview event as already-ledgered facebook.com/oscarurielcine/posts/1686852359463737 and the primary YouTube row. Login wall blocks publish-date metadata; no recoverable date."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/top10/es/mexico/tv",
+      "firstSeen": "2026-10-24T14:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T14:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Mexico TV Top 10 chart, locale-prefixed path variant (/es/mexico/ vs. the already-ledgered netflix.com/tudum/top10/mexico/tv bare path -- distinct normalized key per the locale-path ambiguity documented in tools/README.md, not the same ledger row) -- bare ranking table (El circulo: Temporada 1 appears at rank 2 for the week of 12/10-18/10/26), no written prose. Same established Tudum Top10 family as already-ledgered netflix.com/tudum/top10/{mexico,es/paraguay,es/nicaragua,es/el-salvador}/tv. Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-24T14:30:00Z",
+          "method": "webfetch",
+          "status": 200,
+          "issue": "LEMA-13574",
+          "note": "Official Netflix Tudum Mexico TV Top 10 chart, /es/mexico/ locale-prefixed path variant -- bare ranking table, El circulo at rank 2, no written prose. Same established Tudum Top10 family."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-24T10:00:00Z"
+  "lastUpdated": "2026-10-24T14:30:00Z"
 }
