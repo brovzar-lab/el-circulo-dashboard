@@ -1078,7 +1078,7 @@
     "market": "Mexico",
     "type": "Feature",
     "excerpt": "Entrevista a Zuria Vega sobre El Círculo: habla de los dilemas morales del grupo de amigos cuyo vínculo se pone a prueba por la manipulación y los secretos.",
-    "storyGroup": null
+    "storyGroup": "excelsior-cast-moral-dilemmas-20261007"
   },
   {
     "outlet": "The Editorial México",
@@ -2949,5 +2949,18 @@
     "type": "Social",
     "excerpt": "Argentine talk-radio station Radio 10 (AM 710) posts host Catalina Dlugi's streaming-recommendations thread for #MañanaSylvestre, listing 'EL CIRCULO (Netflix)' as item 15 among 15 recommended titles across Netflix/Prime/HBO/Flow. Outlet-account embedded-list mention, coverage per the established embedded-list-mention precedent (LEMA-12962), not a bare auto-generated chart.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Coahuila Hoy",
+    "headline": "\"No es lo mismo que te ayuden a robar un banco a enterrar un muerto\": Zuria Vega sobre El círculo",
+    "url": "https://coahuilahoy.com/2026/10/07/no-es-lo-mismo-que-te-ayuden-a-robar-un-banco-a-enterrar-un-muerto-zuria-vega-sobre-el-circulo",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Regional outlet Coahuila Hoy republishes (credited, opening line \"Excélsior platicó con Zuria Vega, Michel Brown, Raúl Briones y Osvaldo Benavides\") the Excélsior cast interview on the moral dilemmas and friendship bonds behind El Círculo. Distinct outlet wire pickup of the same interview, Rule I coverage, not an automated metadata-extraction mirror (no self-declared auto-generation disclaimer, unlike the already-ledgered resumendiario.mx/globaltrendhub.net mirrors of this same source article).",
+    "storyGroup": "excelsior-cast-moral-dilemmas-20261007"
   }
 ]
