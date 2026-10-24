@@ -8228,7 +8228,137 @@
           "note": "WebFetch returned only the generic 'TikTok - Make Your Day' SPA shell (no content). Tavily Extract fallback (Firecrawl MCP not available this run) returned, on two separate attempts, either an empty result or a 'TikTok has discontinued operating in Hong Kong' geofencing stub instead of real page content. Full fallback-chain failure, not an editorial call -- failCount=1, no cooldown yet. Sibling tiktok.com/discover/ URLs in the same query batch fetched successfully and confirmed as the same Rule F aggregation-page family; this one is withheld from that classification pending a successful fetch, per the standing rule that a failed fetch is never evidence of surface family/off-topic."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/pel%C3%ADcula-el-circulo-en-la-vida-real-de-quien-hablan",
+      "firstSeen": "2026-10-24T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/ keyword-aggregation page (\"Película El Círculo en la vida real de quien hablan\"). Confirmed via direct curl fetch: page carries schema.org Hashtag/CollectionPage markers, a generic SPA shell title (\"TikTok - Make Your Day\"), no single-video content or publish date of its own. Same surface family as the already-ledgered tiktok.com/discover/el-c%C3%ADrculo-netflix and tiktok.com/discover/serie-el-c%C3%ADrculo-actor entries. Rule F.",
+      "history": [
+        {
+          "attempt": "2026-10-24T02:20:00Z",
+          "method": "curl+grep",
+          "status": 200,
+          "issue": "LEMA-13546",
+          "note": "Confirmed Hashtag/CollectionPage schema markers; aggregation page, no single-document content. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://decine21.com/series/el-circulo-53002",
+      "firstSeen": "2026-10-24T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Decine21 \"Crítica El Círculo (2026)\" by Juan Luis Sánchez, a genuine written critic review (6/10, embedded in the site's catalog page: cast, genre, streaming availability, similar titles). Confirmed via direct curl fetch of raw HTML: the page's own JSON-LD datePublished field is the sentinel invalid value \"-0001-11-30\", and no other dateline, byline date, or article:published_time meta tag is present anywhere on the page. No recoverable real publish date. Not guessed per Rule A.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-24T02:20:00Z",
+          "method": "curl+WebFetch",
+          "status": 200,
+          "issue": "LEMA-13546",
+          "note": "JSON-LD datePublished is sentinel -0001-11-30; no other date metadata found. reviewable=true."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/De29rJAN69l",
+      "firstSeen": "2026-10-24T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Instagram reel from @dateandoando, a personal/commentary account, giving a casual opinion review of El Círculo (\"no estamos ante la obra maestra de la televisión moderna...\"). Page is login-walled on direct fetch (raw curl returns generic \"Instagram\" shell, no embedded uploadDate/taken_at field); only a relative \"26 minutes ago\"-style timestamp is visible via indirect rendering, which is a proxy, not a real date, and is not used per Rule A. No recoverable real publish date.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-24T02:20:00Z",
+          "method": "WebFetch+curl",
+          "status": 200,
+          "issue": "LEMA-13546",
+          "note": "Login-walled; only relative timestamp visible, not used as a proxy date. reviewable=true."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/336903292818755/posts/860430773799335",
+      "firstSeen": "2026-10-24T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Facebook group post (search snippet showed a casual fan review, \"Should you still watch it? Yes, its very good... 7/10 final rating\"). Direct fetch is blocked by Facebook's login wall -- the returned page is generic interstitial content, not the real post, with no visible author, date, or verifiable body text. No recoverable real publish date.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-24T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13546",
+          "note": "Facebook login wall blocks real content and date; search-snippet text only. reviewable=true."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/mx/serie/los-corruptores",
+      "firstSeen": "2026-10-24T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "JustWatch Mexico streaming-availability catalog page for \"Los corruptores\" (El Círculo): confirmed via direct fetch as a pure listing page (where-to-watch, pricing, JustWatch/IMDb score tiles, daily streaming-chart rank, cast, related-title carousels), no original written editorial or critic content. Same Rule F family as the already-ledgered justwatch.com/us/tv-show/los-corruptores entry.",
+      "history": [
+        {
+          "attempt": "2026-10-24T02:20:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13546",
+          "note": "Confirmed pure catalog/streaming-availability listing page, no editorial content. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.threads.com/@oscaruriel71/post/De1uy2iEeH1/el-circulo-en-netflix-aqui-mi-entrevista-con-zuria-vega-osvaldo-bemavides-raul",
+      "firstSeen": "2026-10-24T02:20:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T02:20:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Threads post from @oscaruriel71 (\"El Círculo en Netflix. Aquí mi entrevista con Zuria Vega, Osvaldo Benavides, Raúl Briones y Michel Brown\", linking a YouTube interview via Guía del Hater), the same underlying Oscar Uriel cast-interview event already ledgered under the Facebook account facebook.com/oscarurielcine/posts/1686852359463737 (also editorial_undateable). Only a relative \"11h\"-style timestamp is visible on the rendered page; raw HTML carries no taken_at/published_at/timestamp field. No recoverable real publish date, not guessed per Rule A.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-24T02:20:00Z",
+          "method": "WebFetch+curl",
+          "status": 200,
+          "issue": "LEMA-13546",
+          "note": "Only relative timestamp visible; raw HTML has no machine-readable date field. reviewable=true."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-23T22:07:25Z"
+  "lastUpdated": "2026-10-24T02:20:00Z"
 }
