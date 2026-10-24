@@ -8424,7 +8424,95 @@
           "note": "Tudum Romania Top10 chart, Rule F listing/database."
         }
       ]
+    },
+    {
+      "url": "https://instagram.com/p/Deu_dvzkb5k",
+      "firstSeen": "2026-10-24T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_vendor_promo",
+      "reviewable": false,
+      "skipNote": "Instagram post from '3managementmx' (3Management), a talent-management agency, promoting a press/photoshoot appearance by its represented client Zuria Vega ('Zuria Vega X #ElCirculo lifeandstylemex', with texto/fotos/moda/peinado-y-maquillaje/diseño/editor/PR credits). Self-promotional business account representing a client's commercial interest, not an independent publisher, outlet, or commentator -- same pattern as the already-ledgered 'blu.talent' (BLU TALENT) row. Rule B relevance gate, vendor/supplier company account, excluded regardless of dateability (the post itself carries a visible 'October 20, 2026' dateline, immaterial to the outcome).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-24T10:00:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13571",
+          "note": "Talent-management agency vendor account, Rule B exclusion by account type."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/Megacable/videos/4534719293454915",
+      "firstSeen": "2026-10-24T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_vendor_promo",
+      "reviewable": false,
+      "skipNote": "Facebook video from 'Megacable, Conectamos tu vida', a Mexican telecom/ISP's commercial marketing account, using El Círculo only as a hook to advertise its own 'Streaming+' bundle add-on ('$299 pesos al mes adicionales... en mega.mx'). Self-promotional business account representing a commercial interest unrelated to the show's production or to entertainment journalism, not an independent publisher, outlet, or commentator. Rule B relevance gate, vendor/supplier company account, excluded regardless of dateability (page shows only a relative '2d ago' badge, no absolute date, immaterial to the outcome).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-24T10:00:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13571",
+          "note": "Telecom/ISP commercial marketing account, Rule B exclusion by account type."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/ridougb/videos/1103113215961268",
+      "firstSeen": "2026-10-24T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Facebook video from 'Richard Douglas Martinez' (personal account, self-identifies with 'Camino al Sol Estación 97.7 fm' and 'Casting Factory'), a personal-opinion review of El Círculo ('Mi Opinión Personal'). Account plausibly clears Rule B's commentator exception (radio-personality/broadcaster role), so this is not a Rule B relevance skip. Disposition turns entirely on Rule A: only a relative '1d'/'a day ago' UI badge is visible, no JSON-LD datePublished, no article:published_time, no absolute visible dateline -- both WebFetch and Tavily extract exhausted with no recoverable real publish date (WebFetch returned only a login-wall page with no metadata). permanentSkip editorial_undateable, reviewable: true.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-24T10:00:00Z",
+          "method": "WebFetch + Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13571",
+          "note": "No recoverable real publish date (relative badge only). reviewable=true."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/reel/De3PJVHsdq3",
+      "firstSeen": "2026-10-24T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-24T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Instagram reel surfaced via search (account handle 'moviestore0s', a movie-themed account of undetermined type -- store/fan/aggregator, could not be confirmed as outlet/commentator). Page is age-restricted/login-walled: both WebFetch and Tavily extract returned no caption, no date (relative or absolute), and no visible content at all. No recoverable real publish date. permanentSkip editorial_undateable, reviewable: true.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-24T10:00:00Z",
+          "method": "WebFetch + Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13571",
+          "note": "Age-restricted/login-walled, no content accessible, no recoverable date. reviewable=true."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-24T06:00:00Z"
+  "lastUpdated": "2026-10-24T10:00:00Z"
 }
