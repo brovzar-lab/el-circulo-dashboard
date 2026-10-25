@@ -8754,7 +8754,51 @@
           "note": "Same-outlet promo tweet for an already-tracked Vogue Mexico article; Rule I second address."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/De4xQvRIhvB",
+      "firstSeen": "2026-10-25T02:05:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T02:05:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram post from 'instalogan77' (Raul Gcia Fdez), a personal photo-carousel/portfolio account with no editorial brand identity. The single image mentioning the show (\"estrenó El Círculo ⭕️ en Netflix!!!\", tagged #lavalla #tv #tvseries #series #netflix) carries no caption text beyond that line amid an otherwise unrelated personal photo feed. Only date signal recoverable via Tavily extract is the platform-rendered alt-text (\"Photo by Raúl Gcía Fdez on October 24, 2026\") -- per established precedent this alt-text is not a valid Rule A source, confirmed to apply even to outlet-owned content, let alone a personal account. No JSON-LD, no article:published_time, no visible on-page dateline. No recoverable real publish date.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-25T02:05:40Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13577",
+          "note": "Personal photo-carousel account, one-line show mention amid unrelated content; only alt-text date available, not a valid Rule A source. permanentSkip editorial_undateable, reviewable: true."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/pt/title/tt36743307",
+      "firstSeen": "2026-10-25T02:05:40Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T02:05:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "IMDb title page (pt locale, 'Dentro do Círculo') for El Círculo/Inside the Circle: same imdb.com/*/title/<id> shape already established as Rule F by family regardless of locale -- rating/popularity metadata, episode guide, cast/crew credits, and 3 unpaid user star-reviews (not critic reviews) only, no original IMDb editorial copy about the show. Confirmed by direct fetch: strips to a catalog card, same family as the already-ledgered imdb.com/title/tt36743307 (EN) and imdb.com/es-es/title/tt36743307 rows for this title.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-25T02:05:40Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13577",
+          "note": "Confirmed same imdb.com/*/title/<id> Rule F family as already-ledgered EN and es-es locale rows for this title; new locale, no original content."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-24T18:07:25Z"
+  "lastUpdated": "2026-10-25T02:05:40Z"
 }
