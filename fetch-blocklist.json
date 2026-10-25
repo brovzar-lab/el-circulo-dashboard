@@ -8930,7 +8930,183 @@
           "note": "Full-page extract confirms pure catalog/listing shell, no staff review text; distinct from the already-tracked FilmVandaag.nl news article."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/De4tNTGNw5o",
+      "firstSeen": "2026-10-25T14:06:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T14:06:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_vendor_promo",
+      "reviewable": false,
+      "skipNote": "Instagram reel from 'idearium30' / 'Idearium® | Marketing & Com', a marketing/communications agency account, carouselling its own campaign work (the El Círculo CDMX street-advertising 'vandalism' stunt and related posts dated Oct 1-24, 2026). Self-promotional vendor/supplier account showcasing agency work, not an independent publisher, outlet, or commentator -- same pattern as the already-ledgered '3managementmx' (LEMA-13571) and 'blu.talent' rows. Rule B relevance gate, vendor/supplier company account, excluded regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-25T14:06:45Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13591",
+          "note": "Marketing/communications agency vendor account, Rule B exclusion by account type."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/100068089219358/posts/el-c%C3%ADrculo-2026-netflix-serie-mexicana-basada-en-el-libro-los-corruptores-del-pe/1432380999041527",
+      "firstSeen": "2026-10-25T14:06:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T14:06:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Facebook cross-post of the 'Dateandoando' page's review/synopsis content (identical text to the already-ledgered Instagram reel https://www.instagram.com/reel/De29rJAN69l, same account, same permanentSkip/editorial_undateable disposition). WebFetch of the post body surfaced no publish date or dateline, only the series' 2026 release year.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-25T14:06:45Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13591",
+          "note": "Cross-platform repost of already-ledgered Dateandoando content; no recoverable publish date."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/InfoTez/posts/circula-en-redes-sociales/1740960174703086",
+      "firstSeen": "2026-10-25T14:06:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T14:06:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipNote": "Generic Facebook post titled 'Circula en redes sociales' promoting the page's own unrelated personal/charity project and Instagram account; no mention of El Círculo, Netflix, or any cast member. Surfaced only via a 'circula'/'círculo' word-stem match in the query.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-25T14:06:45Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-13591",
+          "note": "Off-topic: unrelated personal project promotion, generic word-stem collision, not about the show."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/eliotnewmedia/posts/eva-mar%C3%ADa-beristain-se-corona-como-la-ganadora-de-la-categor%C3%ADa-better-you-presen/1547042407464989",
+      "firstSeen": "2026-10-25T14:06:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T14:06:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipNote": "Post about Eva María Beristain winning the 'Better You' category performing 'La Nave del Olvido' on the TV contest 'Yo me llamo 2026'; no relation to El Círculo. Surfaced only via a generic 'reacciones en redes sociales' phrase match.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-25T14:06:45Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-13591",
+          "note": "Off-topic: unrelated singing-contest story, alternative subject named explicitly in the post."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/que-significa-el-circulito-en-chats-en-ig",
+      "firstSeen": "2026-10-25T14:06:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T14:06:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipNote": "TikTok /discover/ topic page about the new blue-circle online-status/Meta AI indicator in WhatsApp, Instagram and Facebook chats; unrelated to the Netflix series. Surfaced only via the generic 'circulito'/'círculo' word match.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-25T14:06:45Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-13591",
+          "note": "Off-topic: unrelated Meta/WhatsApp UI feature explainer, alternative subject named explicitly."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/575406091878321/posts/1108382305247361",
+      "firstSeen": "2026-10-25T14:06:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T14:06:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipNote": "Facebook group discussion ('Has anybody watched Inside the Circle???') referring to a different, unrelated title explicitly dated by a commenter as 'from 2017', not the 2026 Netflix Mexican series. Surfaced only via the generic English title collision 'Inside the Circle'.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-25T14:06:45Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-13591",
+          "note": "Off-topic: unrelated pre-existing title sharing the same generic English name, alternative subject named explicitly (2017)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/actores-del-el-circulo-netflix",
+      "firstSeen": "2026-10-25T14:06:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T14:06:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (surface family, same test as already-ledgered 'miniserie-el-circulo' and other /discover/ pages) -- an aggregation of many videos under the topic tag, not a distinct document of its own. Classification made on URL-family pattern plus Tavily's indexed snippet, which shows the page listing multiple unrelated videos.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-25T14:06:45Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-13591",
+          "note": "TikTok discover/hashtag index page, classified Rule F by URL-family pattern (same family as already-ledgered /discover/ rows)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/inside-the-circle-netflix-review-jaime",
+      "firstSeen": "2026-10-25T14:06:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T14:06:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (surface family, same test as the already-ledgered 'inside-the-circle-on-netflix-review' discover page) -- an aggregation of many videos under the topic tag, not a distinct document of its own.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-25T14:06:45Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-13591",
+          "note": "TikTok discover/hashtag index page, classified Rule F by URL-family pattern (same family as already-ledgered /discover/ rows)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-25T10:00:00Z"
+  "lastUpdated": "2026-10-25T14:06:45Z"
 }
