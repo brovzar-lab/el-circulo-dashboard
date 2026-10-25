@@ -8886,7 +8886,51 @@
           "note": "TikTok /discover/ aggregation family, same pattern as existing ledgered siblings."
         }
       ]
+    },
+    {
+      "url": "https://www.eluniversal.com.mx/mundo/el-circulo-expone-violenta-realidad/?outputType=amp",
+      "firstSeen": "2026-10-25T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "El Universal AMP rendering (?outputType=amp) of the already-tracked article \"El círculo expone violenta realidad\" by Sughey Bańos (canonical https://www.eluniversal.com.mx/mundo/el-circulo-expone-violenta-realidad/, data.json ts 20261025). Confirmed via direct curl fetch of raw HTML: the AMP URL's own <link rel=\"canonical\"> tag points back to the base article URL; identical JSON-LD headline/author/datePublished. Second address for an already-tracked document, not a distinct piece. Rule I.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-25T10:00:00Z",
+          "method": "curl + canonical-tag check",
+          "status": 200,
+          "issue": "LEMA-13588",
+          "note": "AMP variant canonicalizes to the base El Universal article URL already in data.json; folded as Rule I second address."
+        }
+      ]
+    },
+    {
+      "url": "https://www.filmvandaag.nl/serie/18662-el-circulo",
+      "firstSeen": "2026-10-25T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FilmVandaag.nl show catalog page for El círculo: structured show metadata (cast, runtime, network, streaming link), a mirrored IMDb score (5.1/271 votes) and the site's own user-submitted rating aggregate (6.3/10 from 3 user votes), a watchlist/seen-list of site members, and a one-sentence plot synopsis -- no staff-written editorial prose or critic analysis of the show. Confirmed via Tavily advanced extract (full page content): strip test leaves no written editorial content, same Rule F listing/database family as the already-ledgered JustWatch and decine21-style catalog shells. The site's one genuine editorial piece about this show, a news article ('Nu te streamen: nieuwe Mexicaanse thrillerserie vanaf vandaag op Netflix', linked from this page's 'Laatste nieuws' box), is already tracked separately in data.json (outlet FilmVandaag.nl, ts 20261007) -- confirmed via lookup before ledgering this catalog page, so no distinct content is being excluded here.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-25T10:00:00Z",
+          "method": "Tavily extract (advanced)",
+          "status": 200,
+          "issue": "LEMA-13588",
+          "note": "Full-page extract confirms pure catalog/listing shell, no staff review text; distinct from the already-tracked FilmVandaag.nl news article."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-25T06:00:00Z"
+  "lastUpdated": "2026-10-25T10:00:00Z"
 }
