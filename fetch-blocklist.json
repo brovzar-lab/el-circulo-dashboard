@@ -9149,7 +9149,51 @@
           "note": "DE-locale sibling of the already-ledgered es/bare-locale ni66050390 syndication entries; WebFetch returned 403, Tavily Extract confirmed identical repost-of-Heaven-of-Horror pattern."
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/TuSpoilerMx/posts/spoilers-por-toda-la-ciudad-%EF%B8%8F-para-celebrar-su-estreno-en-netflix-el-elenco-de-e/2072715003503434",
+      "firstSeen": "2026-10-25T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-25T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook post from 'Spoiler Mx' (TuSpoilerMx), on-topic by its own snippet ('¡Spoilers por toda la ciudad! ⚠️ Para celebrar su estreno en Netflix, el elenco de \"El Círculo\" puso spoilers de la serie por toda la Ciudad de México'), describing a cast promotional spoiler stunt around Mexico City. Full fallback chain exhausted: Tavily extract (advanced) returned no content, WebFetch returned only a truncated title fragment with no visible date, and Firecrawl refused the request outright (facebook.com unsupported site, confirmed error: \"we do not support this site\"). No JSON-LD, meta published_time, or visible dateline recoverable. No recoverable real publish date.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-25T22:00:00Z",
+          "method": "Tavily search snippet (WebFetch truncated, Tavily extract empty, Firecrawl refused facebook.com)",
+          "status": 0,
+          "issue": "LEMA-13593",
+          "note": "On-topic cast spoiler-stunt promo post, but full fetch fallback chain exhausted with no recoverable date. permanentSkip editorial_undateable, reviewable: true."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/NegociosInternacionales2.0/posts/circula-en-redes-sociales-opiniones/1466316872204968",
+      "firstSeen": "2026-10-25T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipNote": "Facebook post from 'Negocios Internacionales 2.0' titled 'Circula en redes sociales. 🇦🇷 ¿Opiniones?' (dated 'June 27' per the page's own timestamp) -- confirmed via Tavily extract to be entirely about FIFA/World Cup refereeing and Lionel Messi commentary (comments reference Messi, FIFA, Portugal/Colombia matches, Cabo Verde). No mention of El Círculo, Netflix, or any cast member anywhere in the post or its 108 comments. Surfaced only via a 'circula'/'círculo' word-stem match in the query, same recurring generic-phrase collision pattern as the already-ledgered facebook.com/InfoTez/posts/circula-en-redes-sociales/1740960174703086.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-25T22:00:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13593",
+          "note": "Off-topic: unrelated FIFA/World Cup social post, generic word-stem collision, not about the show. Rule G."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-25T18:00:00Z"
+  "lastUpdated": "2026-10-25T22:00:00Z"
 }
