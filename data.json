@@ -2975,5 +2975,18 @@
     "type": "Social",
     "excerpt": "Political-commentary X account (\"El sensei de la política\", anonymous/pseudonymous handle, no named real-world identity found in profile) posts long-form praise and analysis naming the principal cast (Zuria Vega, Osvaldo Benavides, Maria Elisa Camargo, Saul Lisazo, Jorge Zarate), tying the show's fictional corruption/power themes to real Mexican politics (\"hasta la presidente de la serie se parece a la senora que habita nuestro Palacio Nacional\") and to the 2013 source novel by Jorge Zepeda Patterson. Account-type note: profile does not affirmatively settle a named-public-figure signal under the Rule B amendment (LEMA-12887/12888); included per Rule C (include and escalate) on the same ambiguous-account-type basis as the already-included Mario Di Costanzo and Magu rows.",
     "storyGroup": null
+  },
+  {
+    "outlet": "El Universal",
+    "headline": "El círculo expone violenta realidad",
+    "url": "https://www.eluniversal.com.mx/mundo/el-circulo-expone-violenta-realidad/",
+    "date": "Oct 25, 2026",
+    "ts": 20261025,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "El Universal (reporter Sughey Baños) interviews Osvaldo Benavides, who says El Círculo puts its finger on the wound of a Mexico marked by corruption and violence, wanting audiences to feel reflected in the story; piece frames the friendship-under-pressure plot (Jaime, Amelia, Tomás, Mario) against Mexico's real political corruption, power struggles and abuse.",
+    "storyGroup": null
   }
 ]
