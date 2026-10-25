@@ -9106,7 +9106,50 @@
           "note": "TikTok discover/hashtag index page, classified Rule F by URL-family pattern (same family as already-ledgered /discover/ rows)."
         }
       ]
+    },
+    {
+      "url": "https://www.justwatch.com/za/tv-series/los-corruptores/season-1",
+      "firstSeen": "2026-10-25T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "skipNote": "South Africa-locale sibling of the already-ledgered justwatch.com/us/tv-show/los-corruptores/season-1 entry (editorial_undateable). Confirmed via direct fetch: same JustWatch template -- continuously regenerated live availability/chart snapshot (\"We checked for updates on 34 streaming services on 22 October 2026 at 06:01:18\"), no discrete publish date, no original review/analysis prose (only streaming availability, episode listing, ratings, cast, and recommendation carousels). Rule E scope limit applies (coverage, evaluated normally, not a piracy/Rule F exclusion) but it is undateable under Rule A, same disposition as the US sibling.",
+      "history": [
+        {
+          "attempt": "2026-10-25T18:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13592",
+          "note": "ZA-locale sibling of the already-ledgered US JustWatch page; same live-snapshot undateable pattern confirmed by direct fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/de/news/ni66050390",
+      "firstSeen": "2026-10-25T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "German-locale sibling of the already-ledgered ni66050390 IMDb news syndication entries (es-locale and bare /news/ locale), which repost the Heaven of Horror review already tracked in data.json. Confirmed via Tavily extract: identical syndication box ('Den vollständigen Artikel findest du unter Heaven of Horror', byline Karina \"ScreamQueen\" Adelgaard, 7.10.2026), no original IMDb editorial copy. Locale mirror / second address, not a distinct document (Rule I), consistent with the existing es/bare-locale sibling entries for this same ni-ID.",
+      "history": [
+        {
+          "attempt": "2026-10-25T18:00:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13592",
+          "note": "DE-locale sibling of the already-ledgered es/bare-locale ni66050390 syndication entries; WebFetch returned 403, Tavily Extract confirmed identical repost-of-Heaven-of-Horror pattern."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-25T14:06:45Z"
+  "lastUpdated": "2026-10-25T18:00:00Z"
 }
