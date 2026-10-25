@@ -8798,7 +8798,95 @@
           "note": "Confirmed same imdb.com/*/title/<id> Rule F family as already-ledgered EN and es-es locale rows for this title; new locale, no original content."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/fr/news/ni66046084",
+      "firstSeen": "2026-10-25T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb news syndication (FR locale) of Fiction Horizon's 'Meet the Cast of Inside the Circle on Netflix (With Photos)' (already in data.json as Fiction Horizon, ts 20261004) via a 'Voir l'article complet sur Fiction Horizon' partner-content box dated 04/10/2026 by Robert Milakovic; no original IMDb editorial copy. Second address, same pattern as the already-ledgered es/en-locale IMDb news syndication rows for this title. Rule I.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-25T06:00:00Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13578",
+          "note": "Confirmed FR-locale IMDb news syndication of already-tracked Fiction Horizon cast article; no original content."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/elheraldopodcast/videos/oscar-uriel-nos-trae-esta-entrevista-con-los-protagonistas-de-elcirculo-la-nueva/2210113493722273",
+      "firstSeen": "2026-10-25T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "El Heraldo Podcast Facebook video post ('Oscar Uriel nos trae esta entrevista con los protagonistas de #ElCirculo, la nueva serie protagonizada por Michel Brown, Zuria Vega y Raul Briones'), the same underlying Oscar Uriel cast-interview event already ledgered from other accounts/addresses (facebook.com/oscarurielcine/posts/1686852359463737, facebook.com/elheraldopodcast/posts/1150866557465768, both editorial_undateable). Confirmed via WebFetch: caption carries no visible publish date, JSON-LD, or meta published_time; Facebook's login wall blocks further page metadata. No recoverable real publish date. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-25T06:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13578",
+          "note": "Same Oscar Uriel #ElCirculo cast interview event as already-ledgered sibling addresses; no recoverable date."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/oscarurielcine/posts/ayer-tuve-el-privilegio-de-ser-padrino-de-la-develaci%C3%B3n-de-placa-de-losmon%C3%B3logos/1688696325946007",
+      "firstSeen": "2026-10-25T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Facebook post from Oscar Uriel (the critic/interviewer behind several already-ledgered El Circulo cast interviews) but about an unrelated event: 'Ayer tuve el privilegio de ser padrino de la develacion de placa de los monologos' (a plaque-unveiling ceremony). Full fallback chain exhausted: Tavily extract (advanced) returned no content, WebFetch returned only the truncated title fragment, direct curl with browser UA was blocked (empty shell, no og:description). The only visible text (the title fragment) makes no mention of El Circulo/Inside the Circle. Surfaced only via account-name overlap with the interviewer's other, genuinely on-topic posts. Rule G off-topic false positive.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-25T06:00:00Z",
+          "method": "Tavily extract",
+          "status": 0,
+          "issue": "LEMA-13578",
+          "note": "Full fallback chain exhausted (Tavily extract empty, WebFetch truncated, curl blocked); visible title fragment does not mention El Circulo. Rule G off-topic."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/actores-que-salen-en-la-serie-el-circulo",
+      "firstSeen": "2026-10-25T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-25T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('Actores Que Salen En La Serie El Circulo'), same established Rule F surface family as the many already-ledgered /discover/ pages for this title (e.g. serie-el-circulo-actor, actores-que-salen-en-el-circulo-serie): aggregation of multiple unrelated creators' videos under the topic tag (CineMasNews, Iovana Leonor Chavez Ochoa, others), no single-document editorial content of its own. Confirmed via Tavily search snippet showing multiple distinct video cards.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-25T06:00:00Z",
+          "method": "Tavily search",
+          "status": 200,
+          "issue": "LEMA-13578",
+          "note": "TikTok /discover/ aggregation family, same pattern as existing ledgered siblings."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-25T02:05:40Z"
+  "lastUpdated": "2026-10-25T06:00:00Z"
 }
