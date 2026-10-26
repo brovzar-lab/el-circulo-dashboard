@@ -4138,11 +4138,11 @@
       "firstSeen": "2026-10-14T22:40:00Z",
       "failCount": 0,
       "lastStatus": 200,
-      "lastAttempt": "2026-10-19T06:30:00Z",
+      "lastAttempt": "2026-10-26T06:27:00Z",
       "cooldownUntil": null,
       "permanentSkip": true,
       "skipReason": "editorial_user_review_aggregate",
-      "skipNote": "AlloCiné critiques presse tab (press-critic aggregator, distinct from the critiques spectateurs tab) for El Círculo: https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/. Fetched live 2026-10-14 to discharge Rule H scope limit 1's mining duty. Zero-yield negative result, per Rule A (never assumed): the press-reviews section renders no content and no empty-state placeholder -- the only review content on this URL is the same 'Critiques Spectateurs' (audience) section already ledgered at https://www.allocine.fr/series/ficheserie-1000003700/critiques/ (2 spectator ratings, patrick torres 2.5/5 Oct 12 and Laurent B. 3.5/5 Oct 10). No press outlets, bylines, or scores to mine as of this check. El Círculo premiered 2026-10-07; French press coverage may still be forthcoming. Ledgered under Rule H per scope limit 1: the aggregation page itself gets no row, with or without press content, but the sweep must keep checking it. A weekly Pass 0b re-mine step naming this exact URL is added to the El Círculo Media Sweep routine in this same commit, bounded through 2026-12-16 (LEMA-12653). Re-checked 2026-10-19 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13052): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet.",
+      "skipNote": "AlloCiné critiques presse tab (press-critic aggregator, distinct from the critiques spectateurs tab) for El Círculo: https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/. Fetched live 2026-10-14 to discharge Rule H scope limit 1's mining duty. Zero-yield negative result, per Rule A (never assumed): the press-reviews section renders no content and no empty-state placeholder -- the only review content on this URL is the same 'Critiques Spectateurs' (audience) section already ledgered at https://www.allocine.fr/series/ficheserie-1000003700/critiques/ (2 spectator ratings, patrick torres 2.5/5 Oct 12 and Laurent B. 3.5/5 Oct 10). No press outlets, bylines, or scores to mine as of this check. El Círculo premiered 2026-10-07; French press coverage may still be forthcoming. Ledgered under Rule H per scope limit 1: the aggregation page itself gets no row, with or without press content, but the sweep must keep checking it. A weekly Pass 0b re-mine step naming this exact URL is added to the El Círculo Media Sweep routine in this same commit, bounded through 2026-12-16 (LEMA-12653). Re-checked 2026-10-19 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13052): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-10-26 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13609): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet.",
       "skipMethod": "body_fetch",
       "history": [
         {
@@ -4158,6 +4158,13 @@
           "status": 200,
           "issue": "LEMA-13052",
           "note": "Weekly cadence re-check: press tab still empty, zero-yield negative result, audience-ratings content unchanged."
+        },
+        {
+          "attempt": "2026-10-26T06:27:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "/LEMA/issues/LEMA-13609",
+          "note": "Weekly cadence re-check: press tab still empty, zero-yield negative result, audience-ratings content unchanged from prior checks."
         }
       ]
     },
@@ -9237,7 +9244,28 @@
           "note": "WebFetch returned HTTP 202 (blocked); Tavily Extract confirmed 'See full article at Whats-on-Netflix' syndication teaser matching the already-tracked data.json row."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-el-c%C3%ADrculo-es-real",
+      "firstSeen": "2026-10-26T06:27:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-26T06:27:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same surface family as miniserie-el-circulo and inside-the-circle-on-netflix-review above -- aggregation of many videos under the topic tag (\"serie el círculo es real\"), not a distinct document. WebFetch returned only the generic JS-shell title (\"TikTok - Make Your Day\"), no body, no publish date, no author; Tavily Extract returned empty content. Classification made on URL-family pattern (TikTok's own fixed /discover/ namespace for auto-generated keyword aggregation pages), consistent with the two already-ledgered siblings for this same show.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-26T06:27:00Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 0,
+          "issue": "/LEMA/issues/LEMA-13609",
+          "note": "TikTok discover/hashtag index page, no renderable body via either fetch method; classified Rule F by URL-family pattern matching two already-ledgered sibling /discover/ pages for this show."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-26T02:00:00Z"
+  "lastUpdated": "2026-10-26T06:30:00Z"
 }
