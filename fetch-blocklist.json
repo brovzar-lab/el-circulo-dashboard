@@ -9373,7 +9373,73 @@
           "note": "TikTok discover/hashtag index page, full body rendered via Tavily advanced extract; confirmed the topic tag's actual video feed is about an unrelated Zuria Vega Netflix title ('Pecados Inconfesables'), not El Circulo. Rule F aggregator + Rule G off-topic, body-fetch classification."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/Dd45arlt_xx?hl=en",
+      "firstSeen": "2026-10-26T18:04:16Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T18:04:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Osvaldo Benavides (cast, plays Jaime) personal Instagram reel, a spoiler-scene teaser with caption 'Un adelanto para que aguanten las ganas hasta el 7 de octubre' (posted ahead of the Oct 7 premiere). Login-walled on direct fetch; no article:published_time/JSON-LD/visible on-page dateline. Only date-shaped signal is Instagram's own alt-text ('Video by Osvaldo Benavides on September 29, 2026'), which does not qualify as a Rule A source per this ledger's established alt-text-disqualified precedent (applies to talent/personal accounts same as outlet accounts). Genuine on-topic coverage omitted solely for lack of a real publish date.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-26T18:04:16Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13658",
+          "note": "Alt-text-only date (Sept 29, 2026); no recoverable real publish date. editorial_undateable."
+        }
+      ]
+    },
+    {
+      "url": "https://www2.stage.netflix.com/gp-es/title/80217807",
+      "firstSeen": "2026-10-26T18:04:16Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T18:04:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Spanish-locale (gp-es) staging-domain mirror of the official Netflix title page for El Círculo/Inside the Circle: synopsis, cast, episode guide, no written editorial content. Same Rule F listing/database family as the already-ledgered netflix.com/title/80217807 (English/default locale) -- a second-locale address for the identical catalog entry, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-26T18:04:16Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-13658",
+          "note": "Rule F, same family as netflix.com/title/80217807."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/fictionhorizon/posts/created-by-alejandro-lozano-netflixs-inside-the-circle-also-known-as-el-c%C3%ADrculo-/1885242346615167",
+      "firstSeen": "2026-10-26T18:04:16Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T18:04:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Fiction Horizon (outlet/editorial-brand Facebook page) promo post, dated on-page 'October 8 at 5:01 AM', linking to and excerpting their own already-tracked article 'Netflix Inside the Circle Ending Explained: Jaime's Betrayal and the Threats Still Waiting' (data.json, ts 20261008). Second address for an already-tracked document, not a distinct piece. Rule I.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-26T18:04:16Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13658",
+          "note": "Links to already-ledgered Fiction Horizon 'Ending Explained' article, ts 20261008. Rule I second address."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-26T14:00:00Z"
+  "lastUpdated": "2026-10-26T18:05:08Z"
 }
