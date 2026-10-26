@@ -9331,7 +9331,49 @@
           "note": "Confirmed canonical link tag points to the dated full-slug URL, which this run added to data.json."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-netflix-el-circulo-mexico-actores",
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (surface family, same test as already-ledgered Tudum/FlixPatrol Top10 pages and the other 40 already-ledgered tiktok.com/discover/ rows for this show) -- an aggregation of dozens of unrelated videos under the topic tag (cast interview clips, fan reactions, unrelated Netflix promos), not a distinct document of its own. Confirmed via Tavily advanced extract (full rendered body, not title/snippet only): page is an auto-generated topic feed with no staff-written prose about the show. Rule F.",
+      "firstSeen": "2026-10-26T14:00:00Z",
+      "lastAttempt": "2026-10-26T14:00:00Z",
+      "lastStatus": 0,
+      "failCount": 0,
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-26T14:00:00Z",
+          "issue": "LEMA-13655",
+          "method": "Tavily extract (advanced)",
+          "status": 0,
+          "note": "TikTok discover/hashtag index page, full body rendered via Tavily advanced extract; confirmed aggregation of many unrelated videos under the topic tag. Rule F body-fetch classification (LEMA-12962 standard), not URL-slug-only."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/pel%C3%ADcula-de-zuria-vega-en-netflix",
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered tiktok.com/discover/ rows for this show. Confirmed via Tavily advanced extract (full rendered body): the page's AI-generated summary and video feed are actually about a DIFFERENT Zuria Vega Netflix title, 'Pecados Inconfesables' (an unrelated crime/mystery series), not El Circulo/Inside the Circle at all -- this /discover/ slug generically matched 'Zuria Vega' + 'Netflix' but the topic tag itself is off-topic for this show (Rule G shape, off-topic false positive, layered on top of the Rule F aggregator-page exclusion). Named alternative subject: 'Pecados Inconfesables'.",
+      "firstSeen": "2026-10-26T14:00:00Z",
+      "lastAttempt": "2026-10-26T14:00:00Z",
+      "lastStatus": 0,
+      "failCount": 0,
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-26T14:00:00Z",
+          "issue": "LEMA-13655",
+          "method": "Tavily extract (advanced)",
+          "status": 0,
+          "note": "TikTok discover/hashtag index page, full body rendered via Tavily advanced extract; confirmed the topic tag's actual video feed is about an unrelated Zuria Vega Netflix title ('Pecados Inconfesables'), not El Circulo. Rule F aggregator + Rule G off-topic, body-fetch classification."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-26T10:00:00Z"
+  "lastUpdated": "2026-10-26T14:00:00Z"
 }
