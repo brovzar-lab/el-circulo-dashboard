@@ -2988,5 +2988,57 @@
     "type": "Feature",
     "excerpt": "El Universal (reporter Sughey Baños) interviews Osvaldo Benavides, who says El Círculo puts its finger on the wound of a Mexico marked by corruption and violence, wanting audiences to feel reflected in the story; piece frames the friendship-under-pressure plot (Jaime, Amelia, Tomás, Mario) against Mexico's real political corruption, power struggles and abuse.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Expansión Regional",
+    "headline": "El círculo aborda la corrupción y la violencia a través de una amistad puesta a prueba",
+    "url": "https://expansionregional.mx/2026/10/25/el-circulo-aborda-la-corrupcion-y-la-violencia-a-traves-de-una-amistad-puesta-a-prueba",
+    "date": "Oct 25, 2026",
+    "ts": 20261025,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Mexican outlet Expansión Regional covers the same Osvaldo Benavides press-day interview as El Universal's Oct 25 piece (shares the 'no podemos hacernos de la vista gorda' quote, condensed/paraphrased, own headline and structure, no RSS syndication tag), framing El Círculo's friendship-under-pressure plot against Mexico's real corruption and abuse of power.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Martin Cid Magazine",
+    "headline": "Zuria Vega, the telenovela heroine who chose roles her children can't watch",
+    "url": "https://martincid.com/people/zuria-vega",
+    "date": "Oct 18, 2026",
+    "ts": 20261018,
+    "dateSource": "article_published_time",
+    "lang": "EN",
+    "market": "International",
+    "type": "Profile",
+    "excerpt": "Profile of Zuria Vega by Penelope H. Fritz covers her career and, prominently, her role as Amelia in El Círculo (arrived on Netflix Oct 7, 2026, adapted from Jorge Zepeda Patterson's Los corruptores), including her quote on friendships between men and women rarely explored in fiction.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Vertice Noticias",
+    "headline": "Netflix: las series y películas que lideran el ranking en Argentina",
+    "url": "https://verticenoticias.com.ar/articulo/2026/10/netflix-las-series-y-peliculas-que-lideran-el-ranking-en-argentina.php",
+    "date": "Oct 20, 2026",
+    "ts": 20261020,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine outlet Vertice Noticias (byline Lali Be) covers Netflix's official Oct 5-11 Argentina Top 10, naming 'El círculo' in 5th place among series behind Bajo la superficie, Al este del Edén and Te conozco; embedded-list outlet mention with brief editorial framing, not a bare auto-generated chart.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Clarín",
+    "headline": "Lo más visto en Netflix México: las 10 series más exitosas del momento, con \"Bajo la superficie: miniserie\" a la cabeza",
+    "url": "https://clarin.com/espectaculos/lo-mas-visto-en-netflix-mexico-las-10-series-mas-exitosas-del-momento-con-bajo-la-superficie-miniserie-a-la-cabeza_0_AjILk2q9IV.html",
+    "date": "Oct 23, 2026",
+    "ts": 20261023,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine outlet Clarín (Redacción Clarín) covers Netflix Mexico's Oct 12-18 series Top 10, naming 'El círculo: temporada 1' at #2 behind Bajo la superficie, in an outlet article with editorial framing about the week's streaming trends (not a bare database page).",
+    "storyGroup": null
   }
 ]
