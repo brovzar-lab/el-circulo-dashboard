@@ -9193,7 +9193,51 @@
           "note": "Off-topic: unrelated FIFA/World Cup social post, generic word-stem collision, not about the show. Rule G."
         }
       ]
+    },
+    {
+      "url": "https://www.cartademexico.com/nota/el-circulo-expone-violenta-realidad",
+      "firstSeen": "2026-10-26T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "Carta de México reprint of El Universal's 'El círculo expone violenta realidad' (Osvaldo Benavides interview, already in data.json, ts 20261025). Page explicitly labels itself 'Contenido sindicado vía RSS de El Universal Internacional' and the author field reads 'El Universal Internacional'; opening paragraph is verbatim ('Aunque como toda serie busca entretener...'). Confirmed via direct fetch (WebFetch). Rule I second address, El Universal is the reference row.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-26T02:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13594",
+          "note": "Explicit RSS-syndication tag confirms second address for the already-tracked El Universal interview."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/es/news/ni66052649",
+      "firstSeen": "2026-10-26T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "IMDb News teaser page ('Inside the Circle Netflix Review: A Tense Mexican Political Thriller That Gets Tangled in Its Own Web') syndicating the already-tracked whats-on-netflix.com review (in data.json, ts 20261008, byline Florian Etcheverry, 8/10/2026) -- page itself links out with 'Mira el artículo completo en Whats-on-Netflix'. Confirmed via Tavily Extract. Second address for an already-tracked document, not a distinct piece (Rule I).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-26T02:00:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13594",
+          "note": "WebFetch returned HTTP 202 (blocked); Tavily Extract confirmed 'See full article at Whats-on-Netflix' syndication teaser matching the already-tracked data.json row."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-25T22:00:00Z"
+  "lastUpdated": "2026-10-26T02:00:00Z"
 }
