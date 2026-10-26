@@ -3040,5 +3040,70 @@
     "type": "Article",
     "excerpt": "Argentine outlet Clarín (Redacción Clarín) covers Netflix Mexico's Oct 12-18 series Top 10, naming 'El círculo: temporada 1' at #2 behind Bajo la superficie, in an outlet article with editorial framing about the week's streaming trends (not a bare database page).",
     "storyGroup": null
+  },
+  {
+    "outlet": "Ayther",
+    "headline": "El Circulo Saison 2 : Quelle date de sortie Netflix ?",
+    "url": "https://ayther.fr/el-circulo-saison-2",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "dateSource": "jsonld_datepublished",
+    "lang": "FR",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "French outlet Ayther (Yann Grosboillot) speculates on a season 2 of El Circulo/Los Corruptores following the Oct 7, 2026 Netflix premiere: no renewal announced, but the finale's open storylines make one seem likely; guesses a 2028 release if confirmed.",
+    "storyGroup": "season2-speculation-fr-20261008-16"
+  },
+  {
+    "outlet": "Plano Informativo",
+    "headline": "Llega a Netflix 'El Círculo', thriller político",
+    "url": "https://planoinformativo.com/1175016/llega-a-netflix-el-circulo-thriller-politico",
+    "date": "Oct 11, 2026",
+    "ts": 20261011,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Article",
+    "excerpt": "Plano Informativo (Espectáculos) introduces El Círculo, the 8-episode Mexican Netflix thriller (premiered Oct 7, 2026) based on Jorge Zepeda Patterson's Los corruptores, following four friends whose bond is tested after a video tied to a famous actress's death surfaces blackmail and corruption.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Film Music Reporter",
+    "headline": "'Inside the Circle' ('El Círculo') Soundtrack Album Released",
+    "url": "https://filmmusicreporter.com/2026/10/07/inside-the-circle-el-circulo-soundtrack-album-released",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "dateSource": "visible_dateline",
+    "lang": "EN",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "Film Music Reporter notes Netflix Music released the soundtrack album for Inside the Circle (El Círculo), with original score by Dan Zlotnik, alongside a brief description of the 8-part thriller about four lifelong friends drawn into blackmail after a leaked video.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Netflix News (FR)",
+    "headline": "El Círculo sur Netflix : la série mexicaine aura-t-elle une saison 2 ?",
+    "url": "https://netflix-news.com/articles/programmes/series/1630998-inside-the-circle-sur-netflix-la-serie-mexicaine-aura-t-elle-une-saison-2-12-10-2026",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "dateSource": "jsonld_datepublished",
+    "lang": "FR",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "French fan outlet Netflix News covers whether Inside the Circle (El Círculo, based on Los Corruptores) will get a season 2: no renewal confirmed as of this writing, notes Netflix typically needs several weeks of viewing data, and that the finished source novel could complicate a sequel.",
+    "storyGroup": "season2-speculation-fr-20261008-16"
+  },
+  {
+    "outlet": "Série News",
+    "headline": "El Círculo saison 2 : Netflix va-t-il donner une suite au thriller mexicain après ce final ?",
+    "url": "https://serie-news.com/netflix/56826-el-circulo-saison-2-netflix-va-t-il-donner-une-suite-au-thriller-mexicain-apres-ce-final-16-10-2026",
+    "date": "Oct 16, 2026",
+    "ts": 20261016,
+    "dateSource": "jsonld_datepublished",
+    "lang": "FR",
+    "market": "International",
+    "type": "Article",
+    "excerpt": "French outlet Série News (Simon Janvier) recaps the El Círculo finale (Pamela Dosantos's murder solved, cartel threats and character fallout unresolved) and discusses season 2 prospects; as of Oct 12, 2026 Netflix had not renewed the show and no filming/release dates were set.",
+    "storyGroup": "season2-speculation-fr-20261008-16"
   }
 ]
