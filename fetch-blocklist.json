@@ -9439,7 +9439,139 @@
           "note": "Links to already-ledgered Fiction Horizon 'Ending Explained' article, ts 20261008. Rule I second address."
         }
       ]
+    },
+    {
+      "url": "https://elorbe.com/orbita-de-estrellas/2026/10/26/el-circulo-expone-violenta-realidad.html",
+      "firstSeen": "2026-10-26T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "El Orbe 'Órbita de Estrellas' republication of El Universal's wire piece 'El círculo expone violenta realidad' (same headline, same Osvaldo Benavides quotes), credited to the SUN wire service at the foot of the article. Primary address already tracked in data.json under El Universal (eluniversal.com.mx/mundo/el-circulo-expone-violenta-realidad, ts 20261025). Second address, not a distinct document, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-26T22:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13659",
+          "note": "SUN wire syndication of the already-tracked El Universal article."
+        }
+      ]
+    },
+    {
+      "url": "https://izlebunu.com/en/series/inside-the-circle-2026",
+      "firstSeen": "2026-10-26T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Streaming-availability database entry (izlebunu.com), confirmed via direct fetch: 'Where to Watch' platform links, season/episode counts, cast list, FAQs, 'More on the same platform' and 'Similar series' carousels -- no staff-written prose or analysis, no byline. Only date signal is a non-article 'Streaming info last updated: October 26, 2026' living-record stamp. Surface-family database record, Rule F, parallel to the JustWatch/FlixPatrol/Tudum Top 10 family already ledgered on this sweep.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-26T22:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13659",
+          "note": "Confirmed streaming-listing/database page, no editorial prose, Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/es/news/ni66048861",
+      "firstSeen": "2026-10-26T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "IMDb News aggregator page 'Where is Netflix's Inside the Circle Filmed?' is an index/teaser pointer to the underlying article on Moviedelic ('Mira el articulo completo en Moviedelic'), byline Naman Shrestha, dated 6/10/2026 -- matching the already-tracked data.json row (moviedelic.com/where-netflix-inside-the-circle-filmed/, ts 20261006). Same document, second address via IMDb's own syndication index, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-26T22:00:00Z",
+          "method": "WebFetch+Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13659",
+          "note": "Confirmed IMDb News is an index pointer to the already-tracked Moviedelic article, same byline/date."
+        }
+      ]
+    },
+    {
+      "url": "https://www.threads.com/@voguelatam/post/DeupTimgehG/el-circulo-llego-a-netflix-el-de-octubre-de-repasamos-de-que-trata-y-la",
+      "firstSeen": "2026-10-26T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Vogue Mexico y Latam's own Threads post promoting its already-tracked article (vogue.mx/articulo/el-circulo-netflix-final-explicado, in data.json since Oct 20, 2026); confirmed via direct fetch, the post embeds a link-preview card pointing at that exact URL, same caption text as the already-ledgered X.com sibling post (x.com/voguelatam/status/2112665751278735378). Same-outlet cross-platform second address, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-26T22:00:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13659",
+          "note": "Confirmed link-preview card points at the already-tracked Vogue Mexico article."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/voguelatam/posts/esta-serie-mexicana-de-netflix-abre-la-conversaci%C3%B3n-sobre-la-lealtad-y-los-l%C3%ADmit/1673932330760228",
+      "firstSeen": "2026-10-26T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Vogue Mexico y Latam Facebook post ('Esta serie mexicana de Netflix abre la conversacion sobre la lealtad y los limites...', caption includes an editorial opinion line 'Mi opinion: Es una serie cortita (8 capitulos)...'). Genuine outlet coverage, passes Rule B. Attempted via WebFetch and Tavily Extract; Facebook's login wall blocks all page content and metadata for this account/post (consistent with this ledger's established Facebook fetch-failure pattern). No recoverable real publish date.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-26T22:00:00Z",
+          "method": "WebFetch+Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-13659",
+          "note": "Facebook login wall blocked content/metadata retrieval; no date recoverable."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/Deu1AYrke-q",
+      "firstSeen": "2026-10-26T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post captioned '@diegosandoval__m forma parte del elenco de El Circulo, que se estrena el 7 de octubre en @netflixlat...' (pre-premiere casting-announcement content). Attempted via Tavily Extract; Instagram's login wall returned only unrelated sidebar/suggested-post carousel data, no usable caption, uploadDate, or taken_at field for this specific post, and no account identity could be confirmed. No recoverable real publish date.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-26T22:00:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13659",
+          "note": "Login wall returned unrelated sidebar data only; no date or confirmed account identity recoverable."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-26T18:05:08Z"
+  "lastUpdated": "2026-10-26T22:05:00Z"
 }
