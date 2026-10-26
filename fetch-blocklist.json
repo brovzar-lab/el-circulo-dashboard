@@ -9265,7 +9265,73 @@
           "note": "TikTok discover/hashtag index page, no renderable body via either fetch method; classified Rule F by URL-family pattern matching two already-ledgered sibling /discover/ pages for this show."
         }
       ]
+    },
+    {
+      "url": "https://ayther.fr/?p=124652",
+      "firstSeen": "2026-10-26T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "Unresolved WordPress ?p= id-permalink for Ayther's 'El Circulo Saison 2 : Quelle date de sortie Netflix ?'; canonical is https://ayther.fr/el-circulo-saison-2, added to data.json this run (LEMA-13647, Oct 26 2026 sweep). Second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-26T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13647",
+          "note": "Confirmed canonical link tag points to https://ayther.fr/el-circulo-saison-2, which this run added to data.json."
+        }
+      ]
+    },
+    {
+      "url": "https://filmmusicreporter.com/?p=143190",
+      "firstSeen": "2026-10-26T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "Unresolved WordPress ?p= id-permalink for Film Music Reporter's 'Inside the Circle (El Círculo) Soundtrack Album Released'; canonical is https://filmmusicreporter.com/2026/10/07/inside-the-circle-el-circulo-soundtrack-album-released, added to data.json this run (LEMA-13647, Oct 26 2026 sweep). Second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-26T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13647",
+          "note": "Confirmed permalink points to the dated canonical URL, which this run added to data.json."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix-news.com/?p=1630998",
+      "firstSeen": "2026-10-26T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-26T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipNote": "Unresolved WordPress ?p= id-permalink for Netflix News (FR)'s 'El Círculo sur Netflix : la série mexicaine aura-t-elle une saison 2 ?'; canonical is https://netflix-news.com/articles/programmes/series/1630998-inside-the-circle-sur-netflix-la-serie-mexicaine-aura-t-elle-une-saison-2-12-10-2026, added to data.json this run (LEMA-13647, Oct 26 2026 sweep). Second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-26T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13647",
+          "note": "Confirmed canonical link tag points to the dated full-slug URL, which this run added to data.json."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-26T06:30:00Z"
+  "lastUpdated": "2026-10-26T10:00:00Z"
 }
