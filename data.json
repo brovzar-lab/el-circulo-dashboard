@@ -3157,5 +3157,31 @@
     "type": "Social",
     "excerpt": "Personal TikTok creator Liz Villaro (@lizvillaro0804) posts a positive capsule review of El Círculo captioned \"Reseña #elcirculo #netflix no se la pueden perder\" (\"you can't miss it\"); an individual commentator's own review, not a vendor/crew/fan-repost account (Rule B). Date sourced from TikTok's createTime field in the page's own data layer, confirmed matching this exact video ID and caption.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Quadratín México",
+    "headline": "Entra Saúl Lisazo en El círculo de poder, corrupción y espionaje",
+    "url": "https://mexico.quadratin.com.mx/entra-saul-lisazo-en-el-circulo-de-poder-corrupcion-y-espionaje/",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Quadratín México (reporter Ximena Peña) interviews Saúl Lisazo about his role as Carlos Lemus, an influential lawyer/businessman in El Círculo whose secrets threaten his position; piece covers the corruption and espionage plot tied to the C5 video-surveillance system.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Revista Fama",
+    "headline": "'El Círculo': Reparto completo del thriller mexicano de Netflix",
+    "url": "https://www.revistafama.com/tendencias/el-circulo-reparto-completo-thriller-mexicano-de-netflix",
+    "date": "Oct 6, 2026",
+    "ts": 20261006,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Revista Fama (Grupo Milenio) previews El Círculo's full cast ahead of its Oct 7 global Netflix release, framing the plot around actress Pamela Dosantos' murder exposing a network of espionage, political corruption and blackmail among four childhood friends; based on Jorge Zepeda Patterson's novel Los Corruptores.",
+    "storyGroup": null
   }
 ]
