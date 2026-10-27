@@ -9629,7 +9629,28 @@
           "note": "WebFetch: HTTP 410 Gone. Firecrawl fallback scrape returned success=true but rendered the site's generic 'Pagina no encontrada' 404 template, not article content -- full fallback chain exhausted, not an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/de/news/ni66046084",
+      "firstSeen": "2026-10-27T14:04:52Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-27T14:04:52Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "German-locale (/de/) sibling of the already-ledgered IMDb News teaser imdb.com/news/ni66046084 (English), confirmed via direct fetch: identical \"Meet the Cast of 'Inside the Circle' on Netflix (With Photos)\" headline, identical syndication box (\"Den vollstaendigen Artikel findest du unter Fiction Horizon\", byline Robert Milakovic, dated 4.10.2026) reposting the already-tracked fictionhorizon.com/meet-the-cast-of-inside-the-circle-on-netflix-with-photos article (in data.json, Oct 4 2026). Same locale-variant second-address pattern already seen for this title. Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-27T14:04:52Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-13677",
+          "note": "German-locale sibling of the already-ledgered English IMDb News syndication teaser for this title; confirmed identical content via direct fetch. Second address, not a distinct document."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-27T06:05:06Z"
+  "lastUpdated": "2026-10-27T14:04:52Z"
 }
