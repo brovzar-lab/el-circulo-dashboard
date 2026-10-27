@@ -9571,7 +9571,65 @@
           "note": "Login wall returned unrelated sidebar data only; no date or confirmed account identity recoverable."
         }
       ]
+    },
+    {
+      "url": "https://www.elespectadorimaginario.com/el-circulo",
+      "firstSeen": "2026-10-27T06:05:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-27T06:05:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Review of the 2017 James Ponsoldt film 'The Circle' (Emma Watson/Tom Hanks adaptation of Dave Eggers' novel), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'El Círculo' title collision.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-27T06:05:06Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13661",
+          "note": "Review of the 2017 James Ponsoldt film 'The Circle' (Emma Watson/Tom Hanks adaptation of Dave Eggers' novel), not the 2026 Netflix Mexican series 'El Círculo'/'Inside the Circle'. Surfaced only via the generic 'El Círculo' title collision."
+        }
+      ]
+    },
+    {
+      "url": "https://puntosciegos.com/destacados/el-circulo-expone-violenta-realidad/",
+      "firstSeen": "2026-10-27T06:05:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-27T06:05:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Syndicated republication of El Universal's 'El círculo expone violenta realidad' (already in data.json, ts=20261025) -- same Osvaldo Benavides interview content on corruption/violence themes; page carries an 'EL UNIVERSAL' attribution line and has no independent publish-date metadata (no JSON-LD, no article:published_time, no visible byline), consistent with a syndicated mirror. Second address, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-10-27T06:05:06Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13661",
+          "note": "Syndicated republication of El Universal's 'El círculo expone violenta realidad' (already tracked). Second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://dechismes.com/nota/el-circulo-lleva-la-corrupcion-a-netflix-106003",
+      "firstSeen": "2026-10-27T06:05:06Z",
+      "failCount": 1,
+      "lastStatus": 410,
+      "lastAttempt": "2026-10-27T06:05:06Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-27T06:05:06Z",
+          "method": "WebFetch",
+          "status": 410,
+          "issue": "LEMA-13661",
+          "note": "WebFetch: HTTP 410 Gone. Firecrawl fallback scrape returned success=true but rendered the site's generic 'Pagina no encontrada' 404 template, not article content -- full fallback chain exhausted, not an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-26T22:05:00Z"
+  "lastUpdated": "2026-10-27T06:05:06Z"
 }
