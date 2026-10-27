@@ -9650,7 +9650,112 @@
           "note": "German-locale sibling of the already-ledgered English IMDb News syndication teaser for this title; confirmed identical content via direct fetch. Second address, not a distinct document."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-el-circulo-quien-es-el-culpable",
+      "firstSeen": "2026-10-27T18:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-27T18:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> topic-index page (\"Serie El Circulo Quien Es El Culpable\"): same surface family as the already-ledgered tiktok.com/discover/serie-el-c%C3%ADrculo-actor and tiktok.com/discover/miniserie-el-circulo entries -- a keyword-aggregation grid of unrelated creator videos, not a distinct document. Classified on URL-family pattern plus Tavily's indexed snippet (no full body fetch needed given the established family). Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-27T18:30:00Z",
+          "method": "Tavily",
+          "status": 0,
+          "issue": "LEMA-13678",
+          "note": "TikTok discover/topic index page, same surface family as prior-ledgered sibling discover pages; classified Rule F by URL-family pattern + Tavily snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/peliculas-de-netflix-con-nombres-de-actores-el-circulo",
+      "firstSeen": "2026-10-27T18:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-27T18:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> topic-index page (\"Peliculas De Netflix Con Nombres De Actores El Circulo\"): same surface family as the already-ledgered tiktok.com/discover/ sibling entries -- keyword-aggregation grid, not a distinct document. Classified on URL-family pattern plus Tavily's indexed snippet. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-27T18:30:00Z",
+          "method": "Tavily",
+          "status": 0,
+          "issue": "LEMA-13678",
+          "note": "TikTok discover/topic index page, same surface family as prior-ledgered sibling discover pages; classified Rule F by URL-family pattern + Tavily snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/artista-que-sale-en-la-pelicula-el-circulo",
+      "firstSeen": "2026-10-27T18:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-27T18:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> topic-index page (\"Artista Que Sale En La Pelicula El Circulo\"): same surface family as the already-ledgered tiktok.com/discover/ sibling entries -- keyword-aggregation grid, not a distinct document. Classified on URL-family pattern plus Tavily's indexed snippet. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-27T18:30:00Z",
+          "method": "Tavily",
+          "status": 0,
+          "issue": "LEMA-13678",
+          "note": "TikTok discover/topic index page, same surface family as prior-ledgered sibling discover pages; classified Rule F by URL-family pattern + Tavily snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/articles/the-circle-season-7-release-date-cast-news",
+      "firstSeen": "2026-10-27T18:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-27T18:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix Tudum article about 'The Circle' Season 7, the unrelated US social-media reality competition format (named contestants Antonio, Madelyn, Garret, Darian, Deb visible in Tavily's extracted snippet), not the 2026 Mexican thriller 'El Circulo'/'Inside the Circle'. Same title-collision pattern as the already-ledgered en.wikipedia.org/wiki/The_Circle_(American_TV_series) entry. Surfaced only via the generic 'Circle' keyword match.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-27T18:30:00Z",
+          "method": "Tavily",
+          "status": 0,
+          "issue": "LEMA-13678",
+          "note": "Off-topic: 'The Circle' reality competition show, not El Circulo. Contestant names in snippet confirm the alternative subject."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/title/81044551",
+      "firstSeen": "2026-10-27T18:30:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-27T18:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix title page for 'The Circle', the unrelated US social-media reality competition format (7 seasons of trailers, episode list 'Hello, Circle' / 'Face-to-Face' etc. visible in Tavily's extracted snippet), not the 2026 Mexican thriller 'El Circulo'/'Inside the Circle'. Same title-collision pattern as the already-ledgered en.wikipedia.org/wiki/The_Circle_(American_TV_series) entry. Surfaced only via the generic 'Circle' keyword match.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-27T18:30:00Z",
+          "method": "Tavily",
+          "status": 0,
+          "issue": "LEMA-13678",
+          "note": "Off-topic: 'The Circle' reality competition show, not El Circulo. Episode list in snippet confirms the alternative subject."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-27T14:04:52Z"
+  "lastUpdated": "2026-10-27T18:30:00Z"
 }
