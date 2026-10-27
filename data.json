@@ -3131,5 +3131,31 @@
     "type": "News",
     "excerpt": "Randy Meeks (SensaCine.com) reports El Círculo remains in the global Top 10 in 23 countries in its second week, including several Latin American markets plus Hungary, Portugal, Romania and Serbia. Calls the 8-episode run binge-friendly but flags a large ensemble and heavy subplotting as its main weakness; frames the show's corruption themes as deliberately resonant with 2013-to-today Mexican politics per source novelist Jorge Zepeda Patterson.",
     "storyGroup": null
+  },
+  {
+    "outlet": "El Exprés",
+    "headline": "El Círculo llega a Netflix",
+    "url": "https://elexpres.com/nota.php?story_id=373746",
+    "date": "Oct 25, 2026",
+    "ts": 20261025,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "El Exprés (San Luis Potosí; Redacción) recaps El Círculo's premise and cast for a regional-outlet audience: directed by Alejandro Lozano, based on the novel Los Corruptores, starring Zuria Vega and Osvaldo Benavides as four friends drawn into a blackmail network after a leaked video, across eight episodes exploring power and its consequences.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Liz Villaro (TikTok)",
+    "headline": "Reseña #ElCírculo #Netflix no se la pueden perder",
+    "url": "https://www.tiktok.com/@lizvillaro0804/video/7699230153892760853",
+    "date": "Oct 21, 2026",
+    "ts": 20261021,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "International",
+    "type": "Social",
+    "excerpt": "Personal TikTok creator Liz Villaro (@lizvillaro0804) posts a positive capsule review of El Círculo captioned \"Reseña #elcirculo #netflix no se la pueden perder\" (\"you can't miss it\"); an individual commentator's own review, not a vendor/crew/fan-repost account (Rule B). Date sourced from TikTok's createTime field in the page's own data layer, confirmed matching this exact video ID and caption.",
+    "storyGroup": null
   }
 ]
