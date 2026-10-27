@@ -9755,7 +9755,28 @@
           "note": "Off-topic: 'The Circle' reality competition show, not El Circulo. Episode list in snippet confirms the alternative subject."
         }
       ]
+    },
+    {
+      "url": "https://tiktok.com/discover/c%C3%B3mo-es-que-se-llama-la-serie-nueva-de-netflix-el-c%C3%ADrculo",
+      "firstSeen": "2026-10-27T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-27T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other two already-ledgered /discover/ pages for this show (miniserie-el-circulo, inside-the-circle-on-netflix-review) -- aggregation of many videos under the topic/question tag, not a distinct document. WebFetch returned only the generic JS-shell page (title only, no extractable body); classification made on URL-family pattern plus Tavily's indexed snippet, matching the identical reasoning already used for the two sibling entries.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-27T22:00:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13679",
+          "note": "TikTok discover/hashtag index page, generic JS shell only; classified Rule F/H by URL-family pattern + Tavily snippet, consistent with sibling /discover/ entries."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-27T18:30:00Z"
+  "lastUpdated": "2026-10-27T22:00:00Z"
 }
