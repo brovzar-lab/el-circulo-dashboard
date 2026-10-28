@@ -3196,5 +3196,18 @@
     "type": "Feature",
     "excerpt": "What's on Netflix's renewal/cancellation prediction roundup lists Inside the Circle among Spanish-language titles with a 2.1M opening, calling it \"leaning cancellation\" and the last of six Mexican-title comparisons cited.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Uruguay Al Día",
+    "headline": "Serie de ocho episodios sobre corrupción cautiva a México en Netflix",
+    "url": "https://uruguayaldia.com.uy/serie-de-ocho-episodios-sobre-corrupcion-cautiva-a-mexico-en-netflix",
+    "date": "Oct 26, 2026",
+    "ts": 20261026,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Uruguayan outlet reports El Círculo (based on Jorge Zepeda Patterson's 2013 novel Los Corruptores) reached Netflix's top 10 in 23 countries within two weeks of release, describing the eight-episode series as a sharp look at Mexican political corruption with a large ensemble cast that can make the plot hard to follow.",
+    "storyGroup": null
   }
 ]
