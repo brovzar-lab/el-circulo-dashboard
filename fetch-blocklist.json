@@ -10240,7 +10240,71 @@
           "note": "Login-walled; no recoverable absolute date for this reel specifically."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/De-YvHERJvp",
+      "firstSeen": "2026-10-28T18:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T18:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "@peppers_series Instagram post (personal/fan commentary account, Ciudad de México), a casual opinion review of El Círculo (\"Por fin una serie que nos demuestra como es la realidad en México...\"). Direct curl fetch of the post returns Instagram's login-walled shell with no JSON-LD, no datePublished/uploadDate meta tag, and no absolute dateline for this specific post (only sibling posts on the same profile show absolute dates via alt-text; this post's own alt-text contains no date). No recoverable real publish date. Not guessed per Rule A.",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T18:10:00Z",
+          "method": "WebFetch+curl",
+          "status": 200,
+          "issue": "LEMA-13711",
+          "note": "No recoverable real publish date; login-walled, no JSON-LD/meta date fields present."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/mariaelisacamargo/posts/early-post-de-diademuertos-ech%C3%A1ndole-flores-a-la-muertita-de-netflix-mi-controve/1682822176537938",
+      "firstSeen": "2026-10-28T18:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T18:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Facebook post by María Elisa Camargo (El Círculo supporting cast) surfaced by a generic query match, but the post's own content (\"¿Es buena? Es puro fan service... ¿Recomendable? Si sos fan de Paulina de la Mora\") is about a different Netflix title -- Paulina de la Mora is a character from La Casa de las Flores, not El Círculo. Confirmed via Tavily-indexed excerpt. Not about El Círculo despite the author being El Círculo cast. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-28T18:10:00Z",
+          "method": "Tavily",
+          "status": 200,
+          "issue": "LEMA-13711",
+          "note": "Post content is about La Casa de las Flores (Paulina de la Mora reference), not El Círculo. Off-topic false positive despite author being El Círculo cast."
+        }
+      ]
+    },
+    {
+      "url": "https://moviesr.net/str-Zuria%20Vega",
+      "firstSeen": "2026-10-28T18:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T18:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "MoviesR.net actor-tag archive page for Zuria Vega: a site-wide listing/index of articles mentioning her across many unrelated titles (The Perfect Lie, Carrie, The Final Problem, etc.), confirmed via direct fetch -- no dedicated, distinct El Círculo/Inside the Circle review or article exists at this URL itself. Pure tag-aggregation page, no written content of its own about this show. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T18:10:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13711",
+          "note": "Actor-tag listing/archive page, no dedicated Inside the Circle content. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-28T14:10:00Z"
+  "lastUpdated": "2026-10-28T18:10:00Z"
 }
