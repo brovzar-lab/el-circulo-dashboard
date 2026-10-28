@@ -9940,7 +9940,131 @@
           "note": "Facebook post, search snippet ambiguous ('La actriz recordo una escena de la serie de Netflix que volvio a cobrar protagonismo...', duplicated verbatim across viastreamingarg and ViaCordoba.com.ar, suggesting wire content about an unconfirmed show). WebFetch returned only a truncated snippet with no show name, date, or body; Firecrawl scrape failed (success: false). Cannot confirm topic or date from available tools this run. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://whenetflix.com/el-circulo",
+      "firstSeen": "2026-10-28T10:08:29Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T10:08:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Season-2 renewal tracker/database page: countdown timer, episode table, cast list, 'Related shows' block; internally inconsistent season-2 date fields (premiere Oct 7 2026 vs a season-2 episode-table date of Oct 6 2027) with no original written analysis once the tables are stripped. Only prose present is generic boilerplate ('season 2 was always bound to happen', generic synopsis). Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T10:08:29Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13693",
+          "note": "Confirmed via direct fetch: tracker/database page, no original editorial prose once tables stripped."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://microescenas.com/videos/7672-el-circulo-trailer-oficial-netflix",
+      "firstSeen": "2026-10-28T10:08:29Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T10:08:29Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-28T10:08:29Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 0,
+          "issue": "LEMA-13693",
+          "note": "WebFetch failed (connection error); Firecrawl scrape failed (HTTP 500). Full fallback chain exhausted once; not yet 3 consecutive failures, no cooldown set."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/discover/para-cu%C3%A1ndo-sacar-la-segunda-temporada-de-el-circulo",
+      "firstSeen": "2026-10-28T10:08:29Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T10:08:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (surface family, same test as the 47 already-ledgered TikTok discover rows for this title, e.g. LEMA-12713) -- an aggregation of many videos under the topic tag, not a distinct document. WebFetch and Firecrawl both returned no renderable body (Firecrawl 403; Tavily Extract returned TikTok's Hong Kong service-discontinuation interstitial, not the real page). Classification made on URL-family pattern consistent with the established precedent, not a full rendered body.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-28T10:08:29Z",
+          "method": "WebFetch+Firecrawl+TavilyExtract",
+          "status": 0,
+          "issue": "LEMA-13693",
+          "note": "TikTok discover/hashtag index page, no renderable body across 3 fetch attempts; classified Rule F by established URL-family pattern."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://facebook.com/groups/9197285373700609/posts/28747539628248559",
+      "firstSeen": "2026-10-28T10:08:29Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T10:08:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Generic Netflix fan/recommendation Facebook group repost ('EL CÍRCULO YA ESTÁ ENTRE LAS SERIES MÁS VISTAS DE NETFLIX ESTA SEMANA! ... 2.1 MILLONES DE VISUALIZACIONES, puesto #4'), restating the already-ledgered Tudum week-of-Oct-5 Top 10 figure with no original reporting. Group account, not a publisher/outlet/editorial-brand account -- fan-repost per Rule B, dateability moot.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T10:08:29Z",
+          "method": "TavilySearch",
+          "status": 200,
+          "issue": "LEMA-13693",
+          "note": "Fan group repost of already-ledgered Tudum Top10 figure; Rule B fan-repost account."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/groups/692346447959619/posts/2474374116423501",
+      "firstSeen": "2026-10-28T10:08:29Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T10:08:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Generic Netflix fan/recommendation Facebook group post listing premiere-announcement boilerplate (platform, release date, episode count, genre) with no original reporting. Group account, not a publisher/outlet/editorial-brand account -- fan-repost per Rule B, dateability moot.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T10:08:29Z",
+          "method": "TavilySearch",
+          "status": 200,
+          "issue": "LEMA-13693",
+          "note": "Fan group premiere-announcement repost; Rule B fan-repost account."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/groups/netflixrecommendationsseries/posts/1689936616113642",
+      "firstSeen": "2026-10-28T10:08:29Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T10:08:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "'Netflix Recommendations Series' Facebook group post with a casual synopsis/plot-summary blurb ('a high-profile murder didn't just shock the public, but threatened to completely expose the dark, childhood secrets...'). Group account, not a publisher/outlet/editorial-brand account -- fan-repost per Rule B, dateability moot.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T10:08:29Z",
+          "method": "WebFetch+TavilySearch",
+          "status": 200,
+          "issue": "LEMA-13693",
+          "note": "Fan group plot-summary repost, no original reporting; Rule B fan-repost account."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-28T06:00:00Z"
+  "lastUpdated": "2026-10-28T10:09:57.887Z"
 }
