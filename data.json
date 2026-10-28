@@ -3209,5 +3209,18 @@
     "type": "Feature",
     "excerpt": "Uruguayan outlet reports El Círculo (based on Jorge Zepeda Patterson's 2013 novel Los Corruptores) reached Netflix's top 10 in 23 countries within two weeks of release, describing the eight-episode series as a sharp look at Mexican political corruption with a large ensemble cast that can make the plot hard to follow.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Global Newsflix",
+    "headline": "La serie El Círculo alcanza el top 10 en 23 países",
+    "url": "https://globalnewsflix.com/a/f8ebfc021acf4528/la-serie-el-circulo-alcanza-el-top-10-en-23-paises",
+    "date": "Oct 27, 2026",
+    "ts": 20261027,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Global Newsflix reports El Círculo reached Netflix's Top 10 in 23 countries (including Latin America, Hungary, Portugal, Romania, and Serbia) two weeks after its premiere, recapping the Los Azules friend group's plot around Pamela Dosantos' murder and the leaked video implicating a political-corruption network.",
+    "storyGroup": null
   }
 ]
