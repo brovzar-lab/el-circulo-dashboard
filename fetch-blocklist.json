@@ -1701,7 +1701,7 @@
       "cooldownUntil": null,
       "permanentSkip": true,
       "skipReason": "editorial_undateable",
-      "skipNote": "La República (Peru) cast-guide piece syndicated via Yahoo Noticias. No article:published_time/JSON-LD/dateline recoverable via WebFetch or Firecrawl; the only date string in body (\"miércoles 7 de octubre de 2026\") refers to the show's premiere, not the article's publish date. Genuine coverage omitted solely for lack of a date.",
+      "skipNote": "La República (Peru) cast-guide piece syndicated via Yahoo Noticias. No article:published_time/JSON-LD/dateline recoverable via WebFetch or Firecrawl; the only date string in body (\"miércoles 7 de octubre de 2026\") refers to the show's premiere, not the article's publish date. Genuine coverage omitted solely for lack of a date. Confirmed 2026-10-28 (LEMA-13712): a second Yahoo content-ID for the same La República cast-guide article (circulo-descubre-lista-actores-personajes-225147220.html) was found by search, same headline/cast-list/plot-summary content. That second address shows a visible \"Actualizado dom, 4 de octubre de 2026\" (updated) timestamp, not an original publish date -- an update stamp is a proxy for publish date under Rule A, so it does not resolve this entry's undateable ruling. Ledgered as a second address of this entry rather than re-litigated.",
       "reviewable": true,
       "history": [
         {
@@ -1710,6 +1710,13 @@
           "status": 200,
           "issue": "LEMA-12317",
           "note": "La República (Peru) cast-guide piece syndicated via Yahoo Noticias. No article:published_time/JSON-LD/dateline recoverable via WebFetch or Firecrawl; the only date string in body (\"miércoles 7 de octubre de 2026\") refers to the show's premiere, not the article's publish date. Genuine coverage omitted solely for lack of a date."
+        },
+        {
+          "attempt": "2026-10-28T22:00:00Z",
+          "method": "search_snippet",
+          "status": 200,
+          "issue": "LEMA-13712",
+          "note": "Second Yahoo content-ID (225147220) for the same article confirmed via WebFetch; ledgered as second address, see updated skipNote."
         }
       ]
     },
@@ -10304,7 +10311,29 @@
           "note": "Actor-tag listing/archive page, no dedicated Inside the Circle content. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://es-us.noticias.yahoo.com/circulo-descubre-lista-actores-personajes-225147220.html",
+      "firstSeen": "2026-10-28T22:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T22:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Same La República (Peru) cast-guide piece as the already-ledgered es-us.noticias.yahoo.com/c%C3%ADrculo-descubre-lista-actores-personajes-194801085.html entry (same headline pattern, same cast-list/plot-summary content), served under a second Yahoo numeric content-ID. Confirmed via WebFetch content comparison this run. Page shows an \"Actualizado dom, 4 de octubre de 2026, 7:48 p.m. UTC\" (updated) timestamp, not an original publish date -- not used as a dateSource per Rule A (proxy/update-stamp, not original publish time). Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T22:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13712",
+          "note": "Yahoo ID-permalink recurrence: second content-ID for an already-ruled undateable La República cast-guide piece."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-28T18:10:00Z"
+  "lastUpdated": "2026-10-28T22:00:00Z"
 }
