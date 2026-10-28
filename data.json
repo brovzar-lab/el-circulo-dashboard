@@ -3300,5 +3300,18 @@
     "type": "Review",
     "excerpt": "Video review from TikTok content creator Juan Gonzalez (@jsalvadorgzz), who regularly posts short-form reseñas of streaming titles across platforms; this entry covers El Círculo.",
     "storyGroup": null
+  },
+  {
+    "outlet": "diary of a chama (TikTok)",
+    "headline": "SE LLAMA EL CIRCULO 100/10 de mis series favoritas",
+    "url": "https://www.tiktok.com/@diaryofachama/video/7699659471332576543",
+    "date": "Oct 23, 2026",
+    "ts": 20261023,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Personal TikTok creator @diaryofachama (self-identified Venezuelan, #venezolana) posts an enthusiastic personal review captioned \"SE LLAMA EL CIRCULO 100/10 de mis series favoritas sin duda @Netflix\" (\"It's called El Círculo, 100/10 one of my favorite series, no doubt\"); an individual commentator's own reaction, not a vendor/crew/fan-repost account (Rule B). Date sourced from TikTok's createTime field in the page's own data layer, confirmed matching this exact video ID and caption.",
+    "storyGroup": null
   }
 ]
