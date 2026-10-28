@@ -3222,5 +3222,31 @@
     "type": "Feature",
     "excerpt": "Global Newsflix reports El Círculo reached Netflix's Top 10 in 23 countries (including Latin America, Hungary, Portugal, Romania, and Serbia) two weeks after its premiere, recapping the Los Azules friend group's plot around Pamela Dosantos' murder and the leaked video implicating a political-corruption network.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Spoiler.mx",
+    "headline": "¡Nadie está libre de secretos! El trailer de El Círculo revela el nuevo thriller mexicano de Netflix",
+    "url": "https://spoiler.mx/noticia/trailer-de-el-circulo",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Trailer-reveal piece on El Círculo's Oct 7 Netflix premiere, framing the series around blackmail, ambition, fear and broken loyalties among four lifelong friends; based on Jorge Zepeda Patterson's novel Los Corruptores, with Zepeda Patterson serving as production consultant.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "Filmaholic (YouTube)",
+    "headline": "Inside the Circle Season 2 | Netflix Renewal Status & What Happens Next",
+    "url": "https://youtube.com/watch?v=4qx_bk8lmp8",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "dateSource": "visible_dateline",
+    "lang": "EN",
+    "market": "International",
+    "type": "Social",
+    "excerpt": "Filmaholic (102K subscribers) breaks down Inside the Circle's open-ended finale -- Jaime's exposure as the murder's orchestrator, Commander Lara's arrival, and the still-unresolved cartel/political conspiracy -- and reports Netflix has neither renewed nor cancelled the series for a second season as of this video.",
+    "storyGroup": null
   }
 ]
