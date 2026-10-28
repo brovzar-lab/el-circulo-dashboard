@@ -3248,5 +3248,57 @@
     "type": "Social",
     "excerpt": "Filmaholic (102K subscribers) breaks down Inside the Circle's open-ended finale -- Jaime's exposure as the murder's orchestrator, Commander Lara's arrival, and the still-unresolved cartel/political conspiracy -- and reports Netflix has neither renewed nor cancelled the series for a second season as of this video.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Plaza Juarez",
+    "headline": "'El Círculo', el nuevo thriller mexicano basado en 'Los Corruptores', llegará a Netflix",
+    "url": "https://plazajuarez.mx/el-circulo-el-nuevo-thriller-mexicano-basado-en-los-corruptores-llegara-a-netflix/",
+    "date": "Sep 10, 2026",
+    "ts": 20260910,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Trailer-drop announcement piece: a years-long friendship is tested by the murder of famous actress Pamela Dosantos in El Círculo, based on Jorge Zepeda Patterson's novel Los Corruptores, premiering on Netflix October 7.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "El Sumario",
+    "headline": "'El Círculo': thriller mexicano basado en 'Los Corruptores', llegará a Netflix",
+    "url": "https://elsumario.com/el-circulo-thriller-mexicano-basado-en-los-corruptores-llegara-a-netflix/",
+    "date": "Sep 10, 2026",
+    "ts": 20260910,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Entertainment",
+    "excerpt": "Trailer-drop announcement piece noting director Alejandro Lozano 'Patas', previously known for 2004's Matando Cabos, helms El Círculo, the Los Corruptores adaptation premiering on Netflix October 7.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "PRODU",
+    "headline": "Netflix estrenará la serie de suspenso El círculo el 7 de octubre",
+    "url": "https://www.produ.com/television/noticias/netflix-estrenara-la-serie-de-suspenso-el-circulo-el-7-de-octubre/",
+    "date": "Sep 10, 2026",
+    "ts": 20260910,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Entertainment",
+    "excerpt": "Trade-press premiere-date announcement: El Círculo, produced by Lemon Studios for Netflix and based on Los Corruptores, directed by Alejandro Lozano, premieres October 7.",
+    "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "Juan Gonzalez (TikTok)",
+    "headline": "El Círculo Netflix México #tvseries #reseñas",
+    "url": "https://www.tiktok.com/@jsalvadorgzz/video/7700666783405149447",
+    "date": "Oct 27, 2026",
+    "ts": 20261027,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Review",
+    "excerpt": "Video review from TikTok content creator Juan Gonzalez (@jsalvadorgzz), who regularly posts short-form reseñas of streaming titles across platforms; this entry covers El Círculo.",
+    "storyGroup": null
   }
 ]
