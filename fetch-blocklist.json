@@ -10064,7 +10064,183 @@
           "note": "Fan group plot-summary repost, no original reporting; Rule B fan-repost account."
         }
       ]
+    },
+    {
+      "url": "https://x.com/i/status/2100623316159484085",
+      "firstSeen": "2026-10-28T14:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T14:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Vanguardia's own X post (@vanguardiacom) promoting its already-tracked article (vanguardia.com/entretenimiento/tendencias/2026/09/17/el-circulo-el-nuevo-thriller-mexicano-basado-en-los-corruptores-llegara-a-netflix/, in data.json). Tweet dated 09/17/2026, matching the article's own date exactly. Same-outlet cross-platform second address, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T14:10:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13700",
+          "note": "Rule I second address of already-tracked Vanguardia article."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/TuSpoilerMx/status/2097720028057440607",
+      "firstSeen": "2026-10-28T14:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T14:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Spoiler.mx's own X post (@TuSpoilerMx) promoting its already-tracked trailer-reveal article (spoiler.mx/noticia/trailer-de-el-circulo, in data.json since Sep 9, 2026, storyGroup trailer-reveal-20260909). Tweet dated 09/09/2026, same day. Same-outlet cross-platform second address, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T14:10:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13700",
+          "note": "Rule I second address of already-tracked Spoiler.mx article."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/SociedadN_/status/2097736793420419221",
+      "firstSeen": "2026-10-28T14:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T14:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Sociedad Noticias's own X post (@SociedadN_) promoting its already-tracked article (sociedad-noticias.com/2026/09/09/el-circulo-netflix-estrenara-el-thriller-basado-en-los-corruptores-el-7-de-octubre, in data.json, storyGroup trailer-reveal-20260909). Same-outlet cross-platform second address, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T14:10:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13700",
+          "note": "Rule I second address of already-tracked Sociedad Noticias article."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/diaplazajuarez/status/2098145234521571823",
+      "firstSeen": "2026-10-28T14:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T14:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Diario Plaza Juarez's own X post (@diaplazajuarez) promoting its own article, added to data.json this same run as the Plaza Juarez row (plazajuarez.mx/el-circulo-el-nuevo-thriller-mexicano-basado-en-los-corruptores-llegara-a-netflix/). Same-outlet cross-platform second address, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T14:10:00Z",
+          "method": "Tavily Extract + curl redirect resolve",
+          "status": 200,
+          "issue": "LEMA-13700",
+          "note": "t.co/XEMAl24Y0R resolved to the Plaza Juarez article tracked this run; tweet is the second address."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/el_sumario/status/2098109629024596365",
+      "firstSeen": "2026-10-28T14:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T14:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "El Sumario's own X post (@el_sumario) promoting its own article, added to data.json this same run as the El Sumario row (elsumario.com/el-circulo-thriller-mexicano-basado-en-los-corruptores-llegara-a-netflix/). Same-outlet cross-platform second address, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T14:10:00Z",
+          "method": "Tavily Extract + curl redirect resolve",
+          "status": 200,
+          "issue": "LEMA-13700",
+          "note": "t.co/OtZB20Dgwd resolved to the El Sumario article tracked this run; tweet is the second address."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/PRODU/status/2098246652993700205",
+      "firstSeen": "2026-10-28T14:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T14:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "PRODU's own X post (@PRODU) promoting its own premiere-date article, added to data.json this same run (produ.com/television/noticias/netflix-estrenara-la-serie-de-suspenso-el-circulo-el-7-de-octubre/) -- a distinct PRODU article from the already-tracked production-wrap piece (produ.com/.../termina-grabacion-de-los-corruptores...). Same-outlet cross-platform second address, Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T14:10:00Z",
+          "method": "Tavily Extract + curl redirect resolve",
+          "status": 200,
+          "issue": "LEMA-13700",
+          "note": "t.co/oatg3YW4qQ resolved to a second, distinct PRODU article tracked this run; tweet is the second address of that article, not of the already-tracked production-wrap piece."
+        }
+      ]
+    },
+    {
+      "url": "https://www.themoviedb.org/tv/290233-el-circulo/cast",
+      "firstSeen": "2026-10-28T14:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T14:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TMDB cast & crew page for El Círculo/Inside the Circle: structured cast/crew database listing only (actor names, character credits, episode counts), no written editorial content. Same surface family as already-ledgered IMDb title records. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-28T14:10:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13700",
+          "note": "Confirmed via direct fetch: pure cast/crew listing, no prose."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/De-NiiLSJ6D",
+      "firstSeen": "2026-10-28T14:10:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-28T14:10:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram reel from @sacobecerril (Isaac Becerril), a personal account, sharing a personal anecdote ('El año pasado hice casting para El Círculo...') about having auditioned for the show -- not a cast member, not a review or commentary on the show itself. Page is login-walled on direct fetch; no JSON-LD datePublished, no article:published_time, no visible absolute dateline recoverable (only other, unrelated posts on the same profile show absolute dates, not this reel). No recoverable real publish date for this specific reel. Not guessed per Rule A.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-28T14:10:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13700",
+          "note": "Login-walled; no recoverable absolute date for this reel specifically."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-28T10:09:57.887Z"
+  "lastUpdated": "2026-10-28T14:10:00Z"
 }
