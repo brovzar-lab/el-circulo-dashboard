@@ -9776,7 +9776,171 @@
           "note": "TikTok discover/hashtag index page, generic JS shell only; classified Rule F/H by URL-family pattern + Tavily snippet, consistent with sibling /discover/ entries."
         }
       ]
+    },
+    {
+      "url": "https://instagram.com/reel/DfBRJT4OZzy",
+      "firstSeen": "2026-10-28T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Instagram reel from account 'edendorantes1'. Caption: \"LA DIVAZA Llega a evento KIM KARDASHIAN Listo para subirse al ring como se esta preparando enterate\" -- about La Divaza attending a Kim Kardashian event, unrelated to El Circulo/Inside the Circle. Surfaced only via generic 'circulo' keyword match in a broad social-chatter query. Rule G.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T06:00:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13681",
+          "note": "Off-topic: La Divaza/Kim Kardashian event post, not El Circulo. Confirmed via full caption fetch, no show/Netflix mention anywhere."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktok.com/discover/quien-actua-en-la-serie-el-circulo",
+      "firstSeen": "2026-10-28T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> topic-index page (\"Quien Actua En La Serie El Circulo\"), same established surface family as the other already-ledgered /discover/ pages for this show (serie-el-circulo-actor, serie-el-circulo-quien-es-el-culpable, actores-que-se-participaron-en-la-serie-circulo, netflix-inside-the-circle-reviews) -- aggregation of many unrelated creator videos under the topic tag, not a distinct document. Classified on established URL-family pattern plus Tavily's indexed snippet. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-28T06:00:00Z",
+          "method": "Tavily",
+          "status": 0,
+          "issue": "LEMA-13681",
+          "note": "TikTok discover/topic index page; classified Rule F by URL-family pattern, consistent with four sibling /discover/ entries already ledgered."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/reel/De4oAQBJKLK",
+      "firstSeen": "2026-10-28T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Instagram reel from account 'pelisyseriesquever' (\"movies and series to watch\"), caption per Tavily snippet: \"Zuria Vega, Osvaldo Benavides, Michel Brown y Raul Briones son el elenco principal de 'El Circulo'\" -- a generic cast-announcement repost. Account has no public identity independent of the show or of entertainment fandom (no journalist/critic/official role visible in profile or posts); it is a movie-and-series fan/content-aggregation account, the exact archetype the Rule B amendment (LEMA-12888) describes as fan-repost. Relevance gate applies regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T06:00:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13681",
+          "note": "Fan/content-aggregation account repost of a cast announcement; no independent public identity signal. Rule B fan-repost skip, dateability not reached."
+        }
+      ]
+    },
+    {
+      "url": "https://decine21.com/estrenos-series-netflix",
+      "firstSeen": "2026-10-28T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "decine21.com 'Estrenos series Netflix' page: confirmed via direct fetch as a paginated database/catalog of 600 Netflix series (filters for points/year/country/genre, 50 per page), each with poster, metadata and a truncated synopsis -- El Circulo's entry is a catalog record (year, runtime, genre, director, cast, 6/10 score, truncated synopsis), not original critical analysis or prose coverage. Rule F listing/database gate, same family as the already-ledgered JustWatch/FlixPatrol/Tudum Top 10/whats-on-netflix top-10-title-search pages.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T06:00:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13681",
+          "note": "Confirmed 600-title paginated database page via direct fetch, no original editorial prose about El Circulo specifically. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://eldocumentalista.com.mx/2026/10/26/el-circulo-expone-violenta-realidad",
+      "firstSeen": "2026-10-28T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "El Documentalista republication of the same wire piece headlined 'El circulo expone violenta realidad' (byline 'admin', dated Oct 26 2026 8pm, Nacional section), identical Osvaldo Benavides/Michel Brown/Zuria Vega interview quotes as the already-ledgered El Orbe mirror (elorbe.com/orbita-de-estrellas/...) and the primary address already tracked in data.json under El Universal (eluniversal.com.mx/mundo/el-circulo-expone-violenta-realidad, ts 20261025). Third mirror of the same SUN-network wire story. Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T06:00:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13681",
+          "note": "Confirmed same headline/quotes as already-ledgered El Orbe mirror and primary El Universal data.json row. Rule I redundant syndication."
+        }
+      ]
+    },
+    {
+      "url": "https://dominicanos.nyc/articulo/solo-dura-8-episodios-y-ya-ha-conquistado-a-mexico-en-netflix-una-serie-sobre-la-4d35cb21-ed75-420d-b537-37a33faf66a1",
+      "firstSeen": "2026-10-28T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "DominicanosNYC mirror of the SensaCine.com article already tracked in data.json ('Solo dura 8 episodios y ya ha conquistado a Mexico en Netflix...', outlet SensaCine, ts 20261026). Firecrawl scrape confirms the page explicitly labels itself \"Contenido importado automaticamente\" with byline \"SensaCine - Fuente verificada\", same headline, same image. Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T06:00:00Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-13681",
+          "note": "WebFetch returned only a JS-shell header (SPA, no content); Firecrawl scrape succeeded and confirmed explicit 'Contenido importado automaticamente' / SensaCine source credit, same headline as the already-tracked SensaCine row. Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/sk/title/80217807",
+      "firstSeen": "2026-10-28T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix's own official title/catalog page (Slovakia locale) for Inside The Circle: metadata, promotional synopsis, cast/creator credits, episode list, sign-in/pricing prompts -- the platform's own listing, not third-party editorial coverage. Same non-editorial-platform-page family as the already-ledgered media.netflix.com/it/only-on-netflix/80217807 entry. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-28T06:00:00Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13681",
+          "note": "Confirmed official Netflix title/catalog page via direct fetch, no original editorial content. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/viastreamingarg/posts/1743244001135189",
+      "firstSeen": "2026-10-28T06:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-28T06:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-28T06:00:00Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-13681",
+          "note": "Facebook post, search snippet ambiguous ('La actriz recordo una escena de la serie de Netflix que volvio a cobrar protagonismo...', duplicated verbatim across viastreamingarg and ViaCordoba.com.ar, suggesting wire content about an unconfirmed show). WebFetch returned only a truncated snippet with no show name, date, or body; Firecrawl scrape failed (success: false). Cannot confirm topic or date from available tools this run. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-27T22:00:00Z"
+  "lastUpdated": "2026-10-28T06:00:00Z"
 }
