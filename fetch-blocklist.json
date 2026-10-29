@@ -10509,7 +10509,68 @@
           "note": "No recoverable publish date found; Firecrawl refuses instagram.com entirely; declined to use a non-platform vision-caption date as a proxy."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/news/permalink/ni66050390",
+      "firstSeen": "2026-10-29T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Fifth address form for the same ni66050390 IMDb News ID (joining the already-ledgered bare/es/de/it-locale siblings); confirmed via Tavily Extract: identical syndication box linking to heavenofhorror.com/reviews/inside-the-circle-2026-netflix-series (10/7/2026, byline Karina \"ScreamQueen\" Adelgaard), the same Heaven of Horror review already tracked in data.json. Second address, not a distinct document. Rule I.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-29T14:00:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13730",
+          "note": "/news/permalink/ni66050390 address form of the already-ledgered ni66050390 syndication family; confirmed identical Heaven of Horror syndication content."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sensacine.com.mx/series/serie-1000003700/",
+      "firstSeen": "2026-10-29T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "SensaCine (AlloCiné group) show database page for El Círculo: premiere info, genre tags, synopsis blurb, cast list, season/episode listing, trivia note (based on Los Corruptores) -- no staff-written review or analysis prose, no ratings aggregation. Same listing/database surface family as the already-ledgered AlloCiné critiques-presse page and other show-database pages on this ledger. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-29T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13730",
+          "note": "Confirmed via direct fetch: show database page only (synopsis, cast, season listing, trivia), no original editorial content. Rule F listing/database."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DfCmX2mGQvN",
+      "firstSeen": "2026-10-29T14:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-29T14:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-10-29T14:00:00Z",
+          "method": "WebFetch/Tavily Extract/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-13730",
+          "note": "Candidate post cited in search snippets as a FlixPatrol Top-10 ranking repost for El Círculo (claimed: No. 9 worldwide, 5 days in Top 10). WebFetch returned only a generic 'Instagram' placeholder (no caption/date), Tavily Extract returned no content, Firecrawl explicitly declined instagram.com ('we do not support this site'). Full fetch chain exhausted, content unconfirmed. failCount=1, no cooldown yet. Note: the underlying Top-10 viewership signal is independently covered by the already-ledgered flixpatrol.com/title/inside-the-circle page (Rule F listing/database family), so no coverage gap results from leaving this unresolved."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-29T10:04:57.275Z"
+  "lastUpdated": "2026-10-29T14:00:00Z"
 }
