@@ -10658,7 +10658,70 @@
           "note": "New cg-locale sibling of the already-established Netflix title-page Rule F family. Confirmed via full extract."
         }
       ]
+    },
+    {
+      "url": "https://www.carteltec.com/el-circulo-donde-ver-el-anillo-en-streaming-netflix/",
+      "firstSeen": "2026-10-29T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "About the 2002 American horror film 'The Ring' (Spanish title 'El anillo'), a remake of the Japanese film Ring by Hideo Nakata, starring Naomi Watts -- not the 2026 Netflix Mexican series. Confirmed via body fetch: article discusses Rachel Keller/Naomi Watts, Gore Verbinski, and Paramount+ availability; no mention of Zuria Vega, Michel Brown, or the Mexican production. Surfaced only via the generic 'El Círculo'/'The Circle' title collision.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-29T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13760",
+          "note": "About the 2002 film 'The Ring'/'El anillo', not the Netflix Mexican series. Generic title collision."
+        }
+      ]
+    },
+    {
+      "url": "http://blogliterariolluviadeletras.blogspot.com/2016/01/lunes-de-serie-el-circulo.html",
+      "firstSeen": "2026-10-29T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "2016 blog post reviewing the unrelated TV series 'The Secret Circle' (based on L.J. Smith's novels, creators Andrew Miller/Kevin Williamson, cast Britt Robertson/Phoebe Tonkin, aired on Antena 3 in Spain) -- not the 2026 Netflix Mexican series. Confirmed via body fetch: no mention of Netflix, Zuria Vega, Michel Brown, or Osvaldo Benavides. Surfaced only via the generic 'El círculo' title collision.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-29T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13760",
+          "note": "2016 blog post about the unrelated show 'The Secret Circle', not the Netflix Mexican series."
+        }
+      ]
+    },
+    {
+      "url": "https://twiscan.com/en/x/circle",
+      "firstSeen": "2026-10-29T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "TwiScan web viewer for the X/Twitter account @circle, the fintech company behind USDC/EURC stablecoins (301.2K followers) -- not the Netflix series. Confirmed via body fetch: posts cover stablecoins, payments, and AI agent payments; no mention of Netflix or 'El Círculo'. Surfaced only via the generic 'circle' name collision.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-29T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13760",
+          "note": "X/Twitter viewer for the fintech company Circle, not the Netflix series."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-29T18:03:32Z"
+  "lastUpdated": "2026-10-29T22:30:00Z"
 }
