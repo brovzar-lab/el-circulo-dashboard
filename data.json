@@ -3365,5 +3365,44 @@
     "type": "Feature",
     "excerpt": "El Informador interview with actor Ramón Medina spanning three of his October 2026 projects; roughly a third of the piece is devoted to El Círculo, where Medina plays Efraín Restrepo and discusses the weight of the show's silences, distinct from his comedy and crime-drama roles discussed elsewhere in the same article. Embedded mention inside outlet editorial prose, not a listing/database page.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Información Center",
+    "headline": "Benavides habla sobre la serie \"El círculo\" y su abordaje del problema de la corrupción en México",
+    "url": "https://informacion.center/benavides-habla-sobre-la-serie-el-circulo-y-su-abordaje-del-problema",
+    "date": "Oct 25, 2026",
+    "ts": 20261025,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Osvaldo Benavides discusses El Círculo (credited to El Universal Espectáculos as original source), saying the series -- which follows friends hunted after posting an incriminating video -- aims to entertain while highlighting Mexico's violence and corruption. Cast includes Zuria Vega, Michel Brown and Raúl Briones.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Fuera de Foco",
+    "headline": "Andrés Revo llega al FICM con Al día siguiente",
+    "url": "https://fueradefoco.com.mx/entrevistas/andres-revo-llega-al-ficm-con-al-dia-siguiente",
+    "date": "Oct 22, 2026",
+    "ts": 20261022,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Interview with actor Andrés Revo about his lead role in the short film Al día siguiente at FICM; the piece also names his work on El Círculo, where he plays the younger version of Osvaldo Benavides's character alongside co-star Raúl Briones.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "88.9 Noticias",
+    "headline": "Las series hechas en México gustan a nivel internacional",
+    "url": "https://889noticias.mx/noticias/las-series-hechas-en-mexico-gustan-a-nivel-internacional",
+    "date": "Oct 21, 2026",
+    "ts": 20261021,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Article",
+    "excerpt": "Trend piece on Mexican-made series succeeding internationally; states El Círculo \"ascendió al segundo puesto de las producciones más vistas de Netflix en las últimas semanas.\"",
+    "storyGroup": null
   }
 ]
