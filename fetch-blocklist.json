@@ -10333,7 +10333,29 @@
           "note": "Yahoo ID-permalink recurrence: second content-ID for an already-ruled undateable La República cast-guide piece."
         }
       ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/most-popular/?dateselect=10%2F25%2F2026",
+      "firstSeen": "2026-10-29T02:02:57Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T02:02:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "skipNote": "What's on Netflix 'Most Popular' global chart tool for the selected date (10/25/2026): auto-generated global Top 50 movies/TV points table plus per-country daily Top 10 lists, with only a brief non-analytical intro blurb describing the feature itself. Inside The Circle appears once, Mexico TV #6, unchanged from the prior day -- no written analysis or commentary. Same Rule F listing/database family as the already-ledgered whats-on-netflix.com /most-popular/ dated siblings (LEMA-13296, LEMA-13575) and /top-10-title-search/ (LEMA-12725).",
+      "history": [
+        {
+          "attempt": "2026-10-29T02:02:57Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13713",
+          "note": "What's on Netflix 'Most Popular' dated chart tool page for 10/25/2026: pure ranking/database tables, no written analysis. Rule F, same family as prior dated snapshots of this tool."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-28T22:00:00Z"
+  "lastUpdated": "2026-10-29T02:02:57Z"
 }
