@@ -10355,7 +10355,73 @@
           "note": "What's on Netflix 'Most Popular' dated chart tool page for 10/25/2026: pure ranking/database tables, no written analysis. Rule F, same family as prior dated snapshots of this tool."
         }
       ]
+    },
+    {
+      "url": "https://es.webtech360.com/detail/series-mas-vistas-en-espana-semana-del-19-de-kw-rec-kw-es-001-hp1-99911259.html",
+      "firstSeen": "2026-10-29T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Spain Netflix Top-10 weekly piece naming 'El círculo: temporada 1' at #9 for the Oct 5-11 week, with real editorial prose (not a bare chart). No recoverable real publish date anywhere: no article:published_time, no JSON-LD datePublished, footer shows only a generic 'Copyright 2015 WebTech360', and the only dates in the body are the chart's own reference window (5-11 Oct) and a 'consultado el 19 de octubre' aside, neither of which is this article's own publish date. Programmatic-looking URL slug (kw-rec-kw-es-001-hp1-...) consistent with a templated content-farm page. Rule A: no proxy/inferred dates, ever.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-29T06:00:00Z",
+          "method": "webfetch+curl",
+          "status": 200,
+          "issue": "LEMA-13714",
+          "note": "No recoverable publish date found by either WebFetch or direct curl+grep for meta/JSON-LD dates."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/es/venezuela/tv",
+      "firstSeen": "2026-10-29T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Official Netflix Tudum Venezuela TV Top 10 chart for the week of 19/10-25/10/26. El Círculo does NOT appear in this week's Venezuela list (Doctora X, Donde termina la máscara, Bajo la superficie, La trampa, La chispa del amor, Lupin, Te conozco, La diplomática, Dragon Ball Super: Beerus). Surfaced only via the generic 'Tudum Top 10 ranking' query term, not because the page covers the show. Rule G off-topic false positive, distinct from the already-ledgered Tudum Top10 locale siblings (mexico, es/paraguay, es/nicaragua, es/el-salvador) where El Círculo does chart.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-29T06:00:00Z",
+          "method": "webfetch",
+          "status": 200,
+          "issue": "LEMA-13714",
+          "note": "Confirmed via fetch: El Círculo absent from this week's Venezuela Top 10 list."
+        }
+      ]
+    },
+    {
+      "url": "https://imdb.com/es/news/ni66082704",
+      "firstSeen": "2026-10-29T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "IMDb news (es locale) syndicated reprint of Netflix's own 'Top 10 Movies and Shows: Week of October 19, 2026' Tudum article. Full article text (fetched via Firecrawl after WebFetch 403'd and direct curl returned empty 202) contains zero mention of El Círculo / 'círculo' / 'circle' anywhere -- covers only the English-TV #1 and non-English-TV #1 titles that week, neither of which is El Círculo. Surfaced only via the generic Tudum Top10 query term. Rule G off-topic false positive.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-29T06:00:00Z",
+          "method": "firecrawl",
+          "status": 200,
+          "issue": "LEMA-13714",
+          "note": "WebFetch 403'd, direct curl returned empty 202; Firecrawl scrape succeeded and showed no mention of El Círculo in full article body."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-29T02:02:57Z"
+  "lastUpdated": "2026-10-29T06:00:00Z"
 }
