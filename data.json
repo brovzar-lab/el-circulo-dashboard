@@ -3313,5 +3313,44 @@
     "type": "Social",
     "excerpt": "Personal TikTok creator @diaryofachama (self-identified Venezuelan, #venezolana) posts an enthusiastic personal review captioned \"SE LLAMA EL CIRCULO 100/10 de mis series favoritas sin duda @Netflix\" (\"It's called El Círculo, 100/10 one of my favorite series, no doubt\"); an individual commentator's own reaction, not a vendor/crew/fan-repost account (Rule B). Date sourced from TikTok's createTime field in the page's own data layer, confirmed matching this exact video ID and caption.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Clarín",
+    "headline": "Lo más visto en Netflix Uruguay: las 10 series más exitosas del momento, con \"Bajo la superficie: miniserie\" a la cabeza",
+    "url": "https://clarin.com/espectaculos/lo-mas-visto-en-netflix-uruguay-las-10-series-mas-exitosas-del-momento-con-bajo-la-superficie-miniserie-a-la-cabeza_0_JYnUu0muea.html",
+    "date": "Oct 23, 2026",
+    "ts": 20261023,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine outlet Clarín (Redacción Clarín) covers Netflix Uruguay's Oct 12-18 series Top 10, naming 'El círculo: temporada 1' at #3 behind Bajo la superficie and La trampa, in an outlet article with editorial framing about the week's streaming trends (not a bare database page); same templated Clarín multi-locale format as the already-tracked Mexico edition.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Todo La Rioja",
+    "headline": "Netflix México: las 10 series más vistas del 5 al 11 de octubre",
+    "url": "https://todolarioja.com/2026/10/17/netflix-mexico-series-mas-vistas-5-11-octubre",
+    "date": "Oct 17, 2026",
+    "ts": 20261017,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Article",
+    "excerpt": "Spanish regional outlet Todo La Rioja (La Rioja, Spain) covers Netflix Mexico's Oct 5-11 series Top 10, naming 'El círculo: temporada 1' at #2 behind Bajo la superficie: miniserie, in a general weekly-ranking editorial piece with brief embedded-list mention, not a bare database chart.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Prensa X",
+    "headline": "El Círculo, la serie mexicana sobre corrupción que dura 8 episodios y ya es top 10 en 23 países",
+    "url": "https://prensax.com/noticia/circulo-serie-mexicana-netflix-es-top-10-23",
+    "date": "Oct 26, 2026",
+    "ts": 20261026,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Prensa X (Redacción Prensa X) reports El Círculo reached Netflix's Top 10 in 23 countries two weeks after premiere, recapping the Los Azules friend group's plot around the leaked video of a murdered actress; distinct wording and sentence structure from the already-tracked Global Newsflix piece on the same underlying fact, not a second address of it.",
+    "storyGroup": null
   }
 ]
