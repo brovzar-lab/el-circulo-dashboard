@@ -3352,5 +3352,18 @@
     "type": "Feature",
     "excerpt": "Prensa X (Redacción Prensa X) reports El Círculo reached Netflix's Top 10 in 23 countries two weeks after premiere, recapping the Los Azules friend group's plot around the leaked video of a murdered actress; distinct wording and sentence structure from the already-tracked Global Newsflix piece on the same underlying fact, not a second address of it.",
     "storyGroup": null
+  },
+  {
+    "outlet": "El Informador",
+    "headline": "Streaming: Ramón Medina y las ventajas de la libertad",
+    "url": "https://www.informador.mx/entretenimiento/streaming-ramon-medina-y-las-ventajas-de-la-libertad-20261026-0191.html",
+    "date": "Oct 27, 2026",
+    "ts": 20261027,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "El Informador interview with actor Ramón Medina spanning three of his October 2026 projects; roughly a third of the piece is devoted to El Círculo, where Medina plays Efraín Restrepo and discusses the weight of the show's silences, distinct from his comedy and crime-drama roles discussed elsewhere in the same article. Embedded mention inside outlet editorial prose, not a listing/database page.",
+    "storyGroup": null
   }
 ]
