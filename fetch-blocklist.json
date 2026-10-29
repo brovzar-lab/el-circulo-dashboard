@@ -10570,7 +10570,95 @@
           "note": "Candidate post cited in search snippets as a FlixPatrol Top-10 ranking repost for El Círculo (claimed: No. 9 worldwide, 5 days in Top 10). WebFetch returned only a generic 'Instagram' placeholder (no caption/date), Tavily Extract returned no content, Firecrawl explicitly declined instagram.com ('we do not support this site'). Full fetch chain exhausted, content unconfirmed. failCount=1, no cooldown yet. Note: the underlying Top-10 viewership signal is independently covered by the already-ledgered flixpatrol.com/title/inside-the-circle page (Rule F listing/database family), so no coverage gap results from leaving this unresolved."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-c%C3%ADrculo-netflix-tomas-y-amelia",
+      "firstSeen": "2026-10-29T18:03:32Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T18:03:32Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show (e.g. miniserie-el-circulo, netflix-inside-the-circle-reviews) -- aggregation of many videos under the topic tag, not a distinct document. Confirmed via Tavily Extract: page lists ~10+ unrelated creator videos under the tag, no original editorial body of its own.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-29T18:03:32Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13758",
+          "note": "TikTok discover/topic index page, confirmed via full extract. Same Rule F family as existing /discover/ siblings."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/inside-the-circle-english-review",
+      "firstSeen": "2026-10-29T18:03:32Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T18:03:32Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show -- aggregation of many videos under the 'inside the circle english review' topic tag, not a distinct document of its own. Classified by URL-family pattern plus Tavily's indexed snippet showing the generic discover-page title format.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-29T18:03:32Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-13758",
+          "note": "TikTok discover/topic index page. Same Rule F family as existing /discover/ siblings."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DfDyQPFxsdu",
+      "firstSeen": "2026-10-29T18:03:32Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T18:03:32Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram reel from @jeisonnetflix (Jeison Santos), a personal fan account, posting a plain plot synopsis of El Círculo ('La serie mexicana de Netflix El círculo es un thriller político y de suspenso que sigue a Los Azules...') -- clears Rule B per the exclusion-gate ruling (commentator accounts are coverage by default). Confirmed via Tavily Extract: no JSON-LD, no article:published_time, no visible on-page dateline for this specific post. Only date signal is the rendered alt-text ('Video by Jeison Santos on October 28, 2026'), which per this ledger's established precedent does not satisfy Rule A (alt-text is not a valid source). No recoverable real publish date. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-29T18:03:32Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13758",
+          "note": "Confirmed via full extract: no recoverable real publish date, alt-text date not valid per Rule A precedent."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/cg/title/80217807",
+      "firstSeen": "2026-10-29T18:03:32Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T18:03:32Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Another sibling in the Netflix per-locale title-page family (Republic of the Congo locale, cg), url=netflix.com/cg/title/80217807. Confirmed via Tavily Extract: trailer, per-episode synopses, cast/genre metadata, pricing carousel only, no written editorial content. Same Rule F listing/database family as the already-ledgered locale siblings (title, cz-en, gi, im, in, ar, be-en, gb, gp-es, sk, etc).",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-29T18:03:32Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13758",
+          "note": "New cg-locale sibling of the already-established Netflix title-page Rule F family. Confirmed via full extract."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-29T14:00:00Z"
+  "lastUpdated": "2026-10-29T18:03:32Z"
 }
