@@ -10421,7 +10421,95 @@
           "note": "WebFetch 403'd, direct curl returned empty 202; Firecrawl scrape succeeded and showed no mention of El Círculo in full article body."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/it/news/ni66050390",
+      "firstSeen": "2026-10-29T10:04:57.275Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T10:04:57.275Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Italian-locale (/it/) sibling of the already-ledgered imdb.com/news/ni66050390 and imdb.com/es/news/ni66050390 entries for this same ni66050390 News ID, confirmed via direct Firecrawl fetch: identical syndication box linking out to heavenofhorror.com/reviews/inside-the-circle-2026-netflix-series (the Heaven of Horror review, already tracked in data.json). Locale mirror / second address, not a distinct document. Rule I.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-29T10:04:57.275Z",
+          "method": "Firecrawl scrape",
+          "status": 200,
+          "issue": "LEMA-13726",
+          "note": "IT-locale sibling of ni66050390; confirmed identical syndication content pointing to the already-tracked Heaven of Horror review."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61574476296344/posts/el-c%C3%ADrculo-debut%C3%B3-hace-2-semanas-y-ya-entr%C3%B3-al-top-10-en-23-pa%C3%ADses-la-serie-llam/122175146522815876",
+      "firstSeen": "2026-10-29T10:04:57.275Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T10:04:57.275Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook post (page id 61574476296344) noting El Círculo debuted two weeks prior and entered the Top 10 in 23 countries. Body fetch succeeded (text retrieved) but the page exposes no recoverable real publish date: only the relative phrase 'hace 2 semanas', no absolute timestamp accessible via WebFetch, and Firecrawl explicitly refuses facebook.com ('we do not support this site'). No proxy/inferred date used. Rule A.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-29T10:04:57.275Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13726",
+          "note": "No recoverable publish date found; Firecrawl refuses facebook.com entirely."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/100068089219358/videos/el-c%C3%ADrculo-2026-netflix-serie-mexicana-basada-en-el-libro-los-corruptores-del-pe/859378627239168",
+      "firstSeen": "2026-10-29T10:04:57.275Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T10:04:57.275Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook video post (page id 100068089219358, caption sign-off #dateandoando) giving a lukewarm review of El Círculo. Body fetch succeeded (caption retrieved) but no recoverable real publish date anywhere: no absolute timestamp accessible via WebFetch, and Firecrawl explicitly refuses facebook.com ('we do not support this site'). No proxy/inferred date used. Rule A.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-29T10:04:57.275Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13726",
+          "note": "No recoverable publish date found; Firecrawl refuses facebook.com entirely."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DfBOXVWOxka",
+      "firstSeen": "2026-10-29T10:04:57.275Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-29T10:04:57.275Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram reel by account miraestocineyseries (Mira Esto Cine y Series) promoting El círculo. Body fetch succeeded (caption retrieved) but no machine-readable publish timestamp was recoverable: the page shows only a relative '1d' label, and Firecrawl explicitly refuses instagram.com ('we do not support this site'). A third-party vision-generated image description surfaced an Oct 27 2026 date via Tavily search, but that is the search tool's own auto-caption, not the platform's own createTime/timestamp payload, so it is not a platform_api_timestamp and is not used per Rule A (no proxy/inferred dates).",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-29T10:04:57.275Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13726",
+          "note": "No recoverable publish date found; Firecrawl refuses instagram.com entirely; declined to use a non-platform vision-caption date as a proxy."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-29T06:00:00Z"
+  "lastUpdated": "2026-10-29T10:04:57.275Z"
 }
