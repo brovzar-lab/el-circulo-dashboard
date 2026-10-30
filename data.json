@@ -3404,5 +3404,18 @@
     "type": "Article",
     "excerpt": "Trend piece on Mexican-made series succeeding internationally; states El Círculo \"ascendió al segundo puesto de las producciones más vistas de Netflix en las últimas semanas.\"",
     "storyGroup": null
+  },
+  {
+    "outlet": "SensaCine México (YouTube)",
+    "headline": "\"TODOS somos CORRUPTIBLES\": RAÚL BRIONES sobre EL CÍRCULO",
+    "url": "https://youtube.com/watch?v=co9KeELIqlo",
+    "date": "Oct 29, 2026",
+    "ts": 20261029,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "YouTube Short from SensaCine México's official channel: Raúl Briones and Michel Brown reflect on the show's theme that corruption isn't just political or power-driven, but can grow out of small complicities and silences among lifelong friends. Date sourced from YouTube Data API's publishedAt field for this exact video ID.",
+    "storyGroup": null
   }
 ]
