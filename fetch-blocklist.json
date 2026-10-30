@@ -10875,7 +10875,51 @@
           "note": "No mention of El Círculo / Inside the Circle in full article text; show had fallen off the Oct 19 week's Top 10."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/De1_orijq7C",
+      "firstSeen": "2026-10-30T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram post from account movie.magicwithbrian (Movie Magic With Brian), same account whose El Circulo/Inside the Circle content was already ledgered on its Facebook mirror page (facebook.com/groups/336903292818755/posts/860430773799335). Both WebFetch and Tavily Extract (advanced) returned only the account's profile photo grid, not the individual post body -- no caption, no post-specific date recoverable. The alt-text dates visible (Oct 23/29/30, 2026) label the grid thumbnails generally, not this specific post, so they do not qualify as a Rule A source even under the already-rejected alt-text precedent. No recoverable real publish date for this post. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-10-30T10:30:00Z",
+          "method": "WebFetch + Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13813",
+          "note": "Fetch returned account profile grid, not the individual post; no post-specific date recoverable."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/spoilers-de-la-serie-el-c%C3%ADrculo-de-netflix",
+      "firstSeen": "2026-10-30T10:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T10:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('Spoilers De La Serie El Círculo De Netflix'), same established Rule F surface family as the 20+ other already-ledgered tiktok.com/discover/ pages for this show (e.g. miniserie-el-circulo, netflix-inside-the-circle-reviews, zuria-vega-serie-netflix): aggregation of 30+ unrelated creator videos under the topic tag ('Discover videos related to... Last updated 2026-10-26'), not a distinct document of its own. Confirmed via Tavily Extract full-body fetch.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-10-30T10:30:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13813",
+          "note": "TikTok discover/topic index page, confirmed via full extract. Same Rule F family as existing /discover/ siblings."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-30T06:00:00Z"
+  "lastUpdated": "2026-10-30T10:30:00Z"
 }
