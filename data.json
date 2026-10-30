@@ -3417,5 +3417,31 @@
     "type": "Entertainment",
     "excerpt": "YouTube Short from SensaCine México's official channel: Raúl Briones and Michel Brown reflect on the show's theme that corruption isn't just political or power-driven, but can grow out of small complicities and silences among lifelong friends. Date sourced from YouTube Data API's publishedAt field for this exact video ID.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Jinndo Radio",
+    "headline": "El círculo de Netflix: violencia y corrupción en la pantalla",
+    "url": "https://jinndo.co/el-circulo-netflix",
+    "date": "Oct 25, 2026",
+    "ts": 20261025,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Analysis piece (byline Fernando Lara Capera) arguing the show's plot thread involving a senior military official implicated via the leaked video surfaces real social anxieties about abuse of state security power; cites El Universal's Benavides interview as a source but develops its own institutional-corruption framing distinct from that piece.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Infraestructura 2030",
+    "headline": "El círculo, adaptación de Los corruptores, llegará a Netflix el 7 de octubre",
+    "url": "https://infraestructura2030.com/el-circulo-adaptacion-de-los-corruptores-llegara-a-netflix-el-7-de-octubre",
+    "date": "Oct 2, 2026",
+    "ts": 20261002,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Article",
+    "excerpt": "Pre-premiere feature noting the series shifts focus from the 2013 novel's politics-centered plot to the friend group's personal bonds; names director Alejandro Lozano, producer Lemon Films/Billy Rovzar, and notes Francisco Ramos originally acquired the novel's adaptation rights years before the series came together.",
+    "storyGroup": null
   }
 ]
