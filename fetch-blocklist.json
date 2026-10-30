@@ -10721,7 +10721,140 @@
           "note": "X/Twitter viewer for the fintech company Circle, not the Netflix series."
         }
       ]
+    },
+    {
+      "url": "http://laboulayenoticias.com/index.php/2026/10/26/solo-dura-8-episodios-y-ya-ha-conquistado-a-mexico-en-netflix-una-serie-sobre-la-corrupcion-repleta-de-giros-imposibles-que-mantiene-en-vilo-hasta-el-final/",
+      "firstSeen": "2026-10-30T02:06:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T02:06:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "laboulayenoticias mirror of the already-tracked SensaCine.com article ('Solo dura 8 episodios y ya ha conquistado a Mexico en Netflix...', data.json ts 20261026): JSON-LD datePublished 2026-10-26T22:59:55Z, identical headline, and body text retains an inline link to sensacine.com/actores/actor-1000101391 (Jorge Zepeda Patterson's SensaCine actor page), a syndication artifact confirming this is a republished copy, not an independently authored piece. Rule I second address.",
+      "history": [
+        {
+          "method": "body_fetch",
+          "issue": "LEMA-13761",
+          "date": "2026-10-30T02:06:09Z"
+        }
+      ]
+    },
+    {
+      "url": "https://discursociudadano.com/el-circulo-expone-violenta-realidad/",
+      "firstSeen": "2026-10-30T02:06:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T02:06:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Discurso Ciudadano republication of El Universal's 'El circulo expone violenta realidad' (already in data.json, ts 20261025): identical verbatim Osvaldo Benavides quote ('Queremos que la gente se quede picada, ya sea porque se ve reflejada o la trama esta interesante...'), byline reads only 'Por Discurso Ciudadano' with no original-source credit, consistent with the same wire-story cascade as the already-ledgered elorbe.com/eldocumentalista.com.mx mirrors of this story. Rule I second address.",
+      "history": [
+        {
+          "method": "body_fetch",
+          "issue": "LEMA-13761",
+          "date": "2026-10-30T02:06:09Z"
+        }
+      ]
+    },
+    {
+      "url": "https://observadoronline.com.mx/el-circulo-expone-violenta-realidad/",
+      "firstSeen": "2026-10-30T02:06:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T02:06:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "Observador Online republication of El Universal's 'El circulo expone violenta realidad' (already in data.json, ts 20261025): identical verbatim Osvaldo Benavides quote, byline 'admin' only (no original-source credit), JSON-LD datePublished 2026-10-26T14:48:30Z, same wire-story cascade as the already-ledgered elorbe.com/eldocumentalista.com.mx mirrors. Rule I second address.",
+      "history": [
+        {
+          "method": "body_fetch",
+          "issue": "LEMA-13761",
+          "date": "2026-10-30T02:06:09Z"
+        }
+      ]
+    },
+    {
+      "url": "https://elinformantedemexico.com/el-circulo-expone-violenta-realidad/",
+      "firstSeen": "2026-10-30T02:06:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T02:06:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "El Informante de Mexico republication of El Universal's 'El circulo expone violenta realidad' (already in data.json, ts 20261025): identical verbatim Osvaldo Benavides quote, byline 'admin' only (no original-source credit), JSON-LD datePublished 2026-10-25T22:30:09Z, same wire-story cascade as the already-ledgered elorbe.com/eldocumentalista.com.mx mirrors. Rule I second address.",
+      "history": [
+        {
+          "method": "body_fetch",
+          "issue": "LEMA-13761",
+          "date": "2026-10-30T02:06:09Z"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/zuria-vega-serie-netflix",
+      "firstSeen": "2026-10-30T02:06:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T02:06:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('Zuria Vega Serie Netflix'), same established Rule F surface family as the 20+ other already-ledgered tiktok.com/discover/ pages for this show (e.g. miniserie-el-circulo, inside-the-circle-on-netflix-review): aggregation of many videos under the topic tag, not a distinct document. Direct curl fetch returned only the generic 'TikTok - Make Your Day' shell, no renderable content (JS-only page, consistent with the established fetch-failure precedent for this surface family).",
+      "history": [
+        {
+          "method": "title_snippet_only",
+          "issue": "LEMA-13761",
+          "date": "2026-10-30T02:06:09Z"
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/news/ni66051931/",
+      "firstSeen": "2026-10-30T02:06:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T02:06:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "IMDb News teaser page for Fiction Horizon's 'Netflix \"Inside the Circle\" Ending Explained: Jaime's Betrayal and the Threats Still Waiting' (already in data.json, ts 20261008). Page excerpt matches verbatim and explicitly links out: 'See full article at Fiction Horizon'. Confirmed via Tavily Extract. Second address for an already-tracked document, Rule I.",
+      "history": [
+        {
+          "method": "body_fetch",
+          "issue": "LEMA-13761",
+          "date": "2026-10-30T02:06:09Z"
+        }
+      ]
+    },
+    {
+      "url": "https://abcentertainment.co.in/inside-the-circle-review-2026-tv-show-series-cast-crew-online-2/",
+      "firstSeen": "2026-10-30T02:06:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T02:06:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "ABC Entertainment's 'review' is a verbatim scrape of the already-tracked But Why Tho review (data.json, ts 20261007, https://butwhytho.net/2026/10/inside-the-circle-review-netflix): multiple sentences match word-for-word with no attribution -- 'Three episodes in, Inside the Circle is off to a fantastic start.', '...sells the fact that they are old friends.', 'The biggest question is whether or not the series can keep the many moving pieces straight and deliver a satisfying ending.' Byline is a generic 'admin' with no named critic; this is a content-farm republication, not an independently authored piece. Rule I second address, not a distinct document -- caught by direct side-by-side comparison, not title alone.",
+      "history": [
+        {
+          "method": "body_fetch",
+          "issue": "LEMA-13761",
+          "date": "2026-10-30T02:06:09Z"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-29T22:30:00Z"
+  "lastUpdated": "2026-10-30T02:06:09Z"
 }
