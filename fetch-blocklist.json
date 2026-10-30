@@ -11054,7 +11054,238 @@
           "note": "Tag/listing aggregator page, no standalone article content. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/michael-brown-actor-argentino",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (\"Michael Brown Actor Argentino\"), same established Rule F surface family as the other already-ledgered tiktok.com/discover/ pages for this show.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "TikTok /discover/<slug> hashtag/topic index page (\"Michael Brown Actor Argentino\"), same established Rule F surface family as the other already-ledgered tiktok.com/discover/ pages for this show."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/es-es/name/nm17259437/news",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "IMDb person-news listing page for Jorge Zepeda Patterson: aggregates headline/thumbnail links to other outlets' articles (ScreenRant, Fiction Horizon, Just Jared, etc.), no staff-written IMDb prose about El Círculo. Rule F listing/database, same family as imdb.com title-news aggregator pages already ledgered.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "IMDb person-news listing page for Jorge Zepeda Patterson: aggregates headline/thumbnail links to other outlets' articles (ScreenRant, Fiction Horizon, Just Jared, etc.), no staff-written IMDb prose about El Círculo. Rule F listing/database, same family as imdb.com title-news aggregator pages already ledgered."
+        }
+      ]
+    },
+    {
+      "url": "https://noticiassin.com/vida-y-estilo/arte/2026/09/09/el-circulo-el-nuevo-thriller-mexicano-basado-en-los-corruptores-llegara-a-netflix-2112797",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Verbatim Agencia EFE wire piece (byline \"Agencia EFE\", dated Sep 9 2026), identical paragraph-for-paragraph text (same Pamela Dosantos/Tony Dalton/Lemon Studios wording) to the already-tracked El Heraldo (Honduras) row in data.json (elheraldo.hn/entretenimiento/el-circulo-netflix-trailer-fecha-estreno-los-corruptores-jorge-zepeda-patterson-LD31980568, also byline Agencia EFE, same wire story). Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "Verbatim Agencia EFE wire piece (byline \"Agencia EFE\", dated Sep 9 2026), identical paragraph-for-paragraph text (same Pamela Dosantos/Tony Dalton/Lemon Studios wording) to the already-tracked El Heraldo (Honduras) row in data.json (elheraldo.hn/entretenimiento/el-circulo-netflix-trailer-fecha-estreno-los-corruptores-jorge-zepeda-patterson-LD31980568, also byline Agencia EFE, same wire story). Rule I second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://prensaabierta.com/articles/el-circulo-el-nuevo-thriller-mexicano-basado-en-los-corrupto",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Verbatim Agencia EFE wire piece (byline \"EFE (Internacional)\", footer \"#EFE Internacional\"), identical paragraph-for-paragraph text to the already-tracked El Heraldo (Honduras) row in data.json (elheraldo.hn/entretenimiento/el-circulo-netflix-trailer-fecha-estreno-los-corruptores-jorge-zepeda-patterson-LD31980568) and to noticiassin.com's mirror of the same wire story (ledgered this run). Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "Verbatim Agencia EFE wire piece (byline \"EFE (Internacional)\", footer \"#EFE Internacional\"), identical paragraph-for-paragraph text to the already-tracked El Heraldo (Honduras) row in data.json (elheraldo.hn/entretenimiento/el-circulo-netflix-trailer-fecha-estreno-los-corruptores-jorge-zepeda-patterson-LD31980568) and to noticiassin.com's mirror of the same wire story (ledgered this run). Rule I second address, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.centralnoticia.cl/tendencia/2026/10/27/tonka-tomicic-reacciona-rumor-romance-periodista-mensaje/432746",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Chilean entertainment article about TV host Tonka Tomicic and a dating-rumor denial; never mentions Netflix or El Círculo/Inside the Circle. The word \"círculo\" appears once in the unrelated generic phrase \"círculo íntimo\" (inner circle) describing a friend's closeness to Tomicic. Body-fetch confirmed off-topic broad-query false positive.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "Chilean entertainment article about TV host Tonka Tomicic and a dating-rumor denial; never mentions Netflix or El Círculo/Inside the Circle. The word \"círculo\" appears once in the unrelated generic phrase \"círculo íntimo\" (inner circle) describing a friend's closeness to Tomicic. Body-fetch confirmed off-topic broad-query false positive."
+        }
+      ]
+    },
+    {
+      "url": "https://screenrant.com/netflix-shows-2026-most-watched",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "ScreenRant's ranked list of Netflix's 10 most-watched 2026 shows (Bridgerton, I Will Find You, His & Hers, etc.) never mentions El Círculo/Inside the Circle anywhere in the rankings or body text. Body-fetch confirmed off-topic broad-query false positive.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "ScreenRant's ranked list of Netflix's 10 most-watched 2026 shows (Bridgerton, I Will Find You, His & Hers, etc.) never mentions El Círculo/Inside the Circle anywhere in the rankings or body text. Body-fetch confirmed off-topic broad-query false positive."
+        }
+      ]
+    },
+    {
+      "url": "https://decider.com/2026/10/28/the-top-10-movies-on-netflix-that-are-most-popular-right-now",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Decider's Top 10 Movies on Netflix feature (Animals, Gladiator II, Surviving Hurricane Otis, etc.) never mentions El Círculo/Inside the Circle, which is a series, not a movie. Same off-topic Top-10-feature family as decider.com's already-ledgered Top 10 Shows page.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "Decider's Top 10 Movies on Netflix feature (Animals, Gladiator II, Surviving Hurricane Otis, etc.) never mentions El Círculo/Inside the Circle, which is a series, not a movie. Same off-topic Top-10-feature family as decider.com's already-ledgered Top 10 Shows page."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tomsguide.com/entertainment/netflix/5-best-new-to-netflix-movies-and-shows-to-stream-this-week-oct-26-nov-1",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Tom's Guide \"new to Netflix this week (Oct 26-Nov 1)\" roundup lists only titles debuting that week (Minimum Wage, Champions, Balaraw: Blood Island, A Couple of Lies, etc.); El Círculo premiered Oct 7 and is not in scope for this list. No mention found.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "Tom's Guide \"new to Netflix this week (Oct 26-Nov 1)\" roundup lists only titles debuting that week (Minimum Wage, Champions, Balaraw: Blood Island, A Couple of Lies, etc.); El Círculo premiered Oct 7 and is not in scope for this list. No mention found."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@cinemasnews/video/7699968674899184897",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Search snippet surfaced this URL under an \"El Círculo\" query, but the video itself (CineMasNews account) is about an unrelated film, \"Phony: La otra madre\" -- no mention of El Círculo/Inside the Circle anywhere in the caption or transcript. Body-fetch (Tavily extract) confirmed mismatch/off-topic.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "Search snippet surfaced this URL under an \"El Círculo\" query, but the video itself (CineMasNews account) is about an unrelated film, \"Phony: La otra madre\" -- no mention of El Círculo/Inside the Circle anywhere in the caption or transcript. Body-fetch (Tavily extract) confirmed mismatch/off-topic."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/AlanOli20810533/status/2114908689589264801",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Individual X post in Portuguese about Brazilian politics (voting for Lula, friend-group reaction); \"círculo\" appears only in the generic phrase \"meu círculo\" (my circle of friends), unrelated to the Netflix show. Body-fetch (Tavily extract) confirmed off-topic broad-query false positive.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13832",
+          "note": "Individual X post in Portuguese about Brazilian politics (voting for Lula, friend-group reaction); \"círculo\" appears only in the generic phrase \"meu círculo\" (my circle of friends), unrelated to the Netflix show. Body-fetch (Tavily extract) confirmed off-topic broad-query false positive."
+        }
+      ]
+    },
+    {
+      "url": "https://www.msn.com/es-mx/entretenimiento/tv/qué-tanto-se-parece-el-círculo-de-netflix-a-los-corruptores-la-novela-de-jorge-zepeda-patterson/ar-AA2dVS5X",
+      "firstSeen": "2026-10-30T22:30:00Z",
+      "failCount": 1,
+      "lastStatus": null,
+      "lastAttempt": "2026-10-30T22:30:00Z",
+      "cooldownUntil": "2026-11-01T22:30:00Z",
+      "permanentSkip": false,
+      "skipReason": null,
+      "skipNote": "Fetch-failure, not a disposition: WebFetch returned HTTP 403; Tavily extract returned empty content; Playwright MCP was unavailable this run (browser instance in use elsewhere). URL slug is clearly on-topic (\"que tanto se parece el circulo de netflix a los corruptores\") but body content could not be retrieved to confirm originality vs. syndication. Per Rule G's fetch-failure clause, this is a retry-pending ledger row, not a Rule G off-topic skip.",
+      "skipMethod": null,
+      "history": [
+        {
+          "attempt": "2026-10-30T22:30:00Z",
+          "method": "WebFetch+Tavily",
+          "status": null,
+          "issue": "LEMA-13832",
+          "note": "WebFetch 403, Tavily extract empty, Playwright busy. Retry next sweep."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-30T18:02:21Z"
+  "lastUpdated": "2026-10-30T22:30:00Z"
 }
