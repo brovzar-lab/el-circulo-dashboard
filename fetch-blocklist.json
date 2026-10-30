@@ -11033,7 +11033,28 @@
           "note": "Facebook login wall blocked full body/date recovery; Tavily Extract also returned empty."
         }
       ]
+    },
+    {
+      "url": "https://gestion.pe/noticias/el-circulo",
+      "firstSeen": "2026-10-30T18:02:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T18:02:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Gestion.pe tag/listing page (\"Noticias sobre El círculo\"): aggregates teaser links to other already-tracked articles (e.g. the Oct 6 cast-intro piece), with pagination controls, no standalone written content of its own. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T18:02:21Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13831",
+          "note": "Tag/listing aggregator page, no standalone article content. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-30T14:00:00Z"
+  "lastUpdated": "2026-10-30T18:02:21Z"
 }
