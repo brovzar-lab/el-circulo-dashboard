@@ -10854,7 +10854,28 @@
           "date": "2026-10-30T02:06:09Z"
         }
       ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/articles/top-10-october-19-2026",
+      "firstSeen": "2026-10-30T06:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-30T06:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix Tudum weekly Top 10 recap article for the week of October 19, 2026. Full body fetched and read in full (Tavily Extract, advanced depth, text format): covers Below, Animals, Lupin Part 4, Nobody Wants This S3, The Diplomat S4, TYSON, Love Is Blind S11, East of Eden, The New Stanford Prison Experiment, Surviving Hurricane Otis, Tyler Perry's Doing Life -- no mention of El Círculo / Inside the Circle anywhere in the article text (it had already dropped off that week's Top 10 by Oct 19, 12 days post-premiere). Surfaced only via a broad 'Inside the Circle Netflix Top 10 OR Tudum ranking' query matching the Tudum/Top10 keyword pair, not any actual show content. Rule G off-topic false positive (query-noise, not a title collision this time).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-30T06:00:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13762",
+          "note": "No mention of El Círculo / Inside the Circle in full article text; show had fallen off the Oct 19 week's Top 10."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-30T02:06:09Z"
+  "lastUpdated": "2026-10-30T06:00:00Z"
 }
