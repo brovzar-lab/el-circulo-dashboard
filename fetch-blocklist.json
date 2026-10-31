@@ -11285,7 +11285,70 @@
           "note": "WebFetch 403, Tavily extract empty, Playwright busy. Retry next sweep."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/news/ni66045938",
+      "firstSeen": "2026-10-31T02:05:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T02:05:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb News teaser page ('What Novel Inside the Circle on Netflix Is Based On and How the Series Changes It') syndicating the already-tracked Fiction Horizon article (data.json, ts 20261004, url fictionhorizon.com/what-novel-inside-the-circle-on-netflix-is-based-on-and-how-the-series-changes-it/). Search-snippet text matches the Fiction Horizon article's opening paragraph verbatim ('The series is based on the novel Los Corruptores by writer and journalist Jorge Zepeda Patterson. Here is a closer look at the book, the changes made for...'); direct fetch returned HTTP 403 but the title + verbatim opening text confirm the same IMDb News teaser/syndication-index pattern already ledgered for this article's other locale/ID siblings. Second address for an already-tracked document, Rule I.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-31T02:05:08Z",
+          "method": "Tavily+WebFetch(403)",
+          "status": 403,
+          "issue": "LEMA-13834",
+          "note": "Direct fetch blocked (403); disposition confirmed via verbatim title/opening-text match against the already-tracked Fiction Horizon source in a Tavily search snippet."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61580815850039/videos/atala-w/1771580794106396",
+      "firstSeen": "2026-10-31T02:05:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T02:05:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "W Radio Irapuato 107.9 FM Facebook video ('ATALA W', 54:45). A Tavily web-search snippet surfaced apparent on-air commentary about Zuria Vega's and Osvaldo Benavides's El Círculo characters, but neither WebFetch nor Tavily Extract (advanced) can retrieve the video's transcript or caption body -- both return only the player chrome, a relative post age ('a day ago'), and an ambiguous '@seguidores 29/10/2026' tag line that is not confirmed to be this video's own publish date (the same tag format recurs across this page's unrelated posts). No recoverable real publish date and no confirmed on-topic substantive content. Rule A.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-31T02:05:08Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13834",
+          "note": "Page chrome fetched successfully but no transcript/caption text or confirmed absolute publish date recoverable; Facebook video transcript not exposed to scrapers."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/602990527283338/posts/2245516549697386",
+      "firstSeen": "2026-10-31T02:05:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T02:05:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook group post surfaced by a cast-interview query; a search-engine snippet showed what appears to be a Netflix promotional cast image for El Círculo, but the group itself ('AMATITLAN VENTA DE TODO', a local buy/sell marketplace group unrelated to entertainment coverage) and the post's actual caption/date are not retrievable via WebFetch (only the group's own bio header loads). No recoverable real publish date, and on-topic substantive content cannot be confirmed beyond the search snippet. Rule A.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-10-31T02:05:08Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13834",
+          "note": "Only the parent groups bio/header loaded; post body, caption and date inaccessible."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-30T22:30:00Z"
+  "lastUpdated": "2026-10-31T02:05:08Z"
 }
