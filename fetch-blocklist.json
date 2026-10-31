@@ -11720,7 +11720,28 @@
           "note": "epguides.com episode guide: database/listing page, no prose. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://elcuervonica.com/noticias/2026/10/26/solo-dura-8-episodios-y-ya-ha-conquistado-a-mexico-en-netflix-una-serie-sobre-la/",
+      "firstSeen": "2026-10-31T18:00:00.000Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T18:00:00.000Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "El Cuervo Nica republication of SensaCine.com's 'Solo dura 8 episodios y ya ha conquistado a México en Netflix...' (already in data.json, SensaCine.com, ts 20261026, https://www.sensacine.com/noticias/series/noticia-1000229221). Page explicitly credits SensaCine as the source and carries the same headline, framing (Top 10 in 23 countries, 'Los Azules' friend group), and body content as the already-tracked SensaCine piece. Confirmed via direct WebFetch. Rule I second address, SensaCine.com is the reference row.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-31T18:00:00.000Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13860",
+          "note": "El Cuervo Nica republication of SensaCine.com's top-10-in-23-countries piece; credits SensaCine as source, same headline/framing. Second address, not a distinct document."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-31T14:03:32.405Z"
+  "lastUpdated": "2026-10-31T18:00:00.000Z"
 }
