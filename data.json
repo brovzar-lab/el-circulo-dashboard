@@ -3456,5 +3456,44 @@
     "type": "Article",
     "excerpt": "Producer Billy Rovzar promotes El Círculo, an eight-episode political thriller based on Jorge Zepeda Patterson's novel Los Corruptores and directed by Alejandro Lozano, ahead of its October 7 Netflix premiere; piece covers the plot involving a Mexican vedette's death and the investigation into ties to political power.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Semanario ZETA",
+    "headline": "Autenticidad para audiencias",
+    "url": "https://zetatijuana.com/2025/05/autenticidad-para-audiencias",
+    "date": "May 12, 2025",
+    "ts": 20250512,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Article",
+    "excerpt": "Roberto A. Partida Sandoval piece on Netflix's billion-dollar-plus investment in Mexican productions names 'Los corruptores' (El Círculo's working title) among shows then in production, naming source author Jorge Zepeda Patterson's novel and lead cast Michel Brown, Zuria Vega, Osvaldo Benavides and Raúl Briones; pre-identity-era coverage with affirmative lineage (novel + author + cast).",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Napolike",
+    "headline": "Dentro il cerchio, il thriller Netflix dal 7 ottobre",
+    "url": "https://www.napolike.it/televisione/2026/09/dentro-il-cerchio-thriller-netflix-7-ottobre-344999",
+    "date": "Sep 25, 2026",
+    "ts": 20260925,
+    "dateSource": "visible_dateline",
+    "lang": "IT",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Gennaro Marchesi preview of the Italian-titled 'Dentro il cerchio' ahead of its Oct 7 Netflix premiere in 190 countries: plot centers on the death of actress Pamela Dosantos and a leaked video drawing four childhood friends into blackmail and danger; frames the show around power, corruption and impunity in Mexico. Mild positive tone, no rating given.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "TV Sorrisi e Canzoni",
+    "headline": "Dentro il cerchio: la serie Netflix",
+    "url": "https://www.sorrisi.com/tv/serie-tv/dentro-il-cerchio",
+    "date": "Sep 28, 2026",
+    "ts": 20260928,
+    "dateSource": "visible_dateline",
+    "lang": "IT",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Paolo Di Lorenzo preview feature on Netflix's 'Dentro il cerchio' (El Círculo): plot summary and cast overview ahead of the Oct 7 premiere.",
+    "storyGroup": null
   }
 ]
