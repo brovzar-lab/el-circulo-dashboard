@@ -3508,5 +3508,83 @@
     "type": "Profile",
     "excerpt": "De Reporteros profiles actor Diego Sandoval, who plays Nico, a 17-year-old coding prodigy who designs video games from his rooftop in El Círculo (based on Jorge Zepeda Patterson's novel Los corruptores). Covers his prep (skateboarding and programming lessons) and how the investigation into Pamela Dosantos's murder draws Nico in through loyalty to his friends.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Clarín",
+    "headline": "Lo más visto en Netflix México: las 10 series más exitosas del momento, con \"Bajo la superficie: miniserie\" a la cabeza",
+    "url": "https://clarin.com/espectaculos/lo-mas-visto-en-netflix-mexico-las-10-series-mas-exitosas-del-momento-con-bajo-la-superficie-miniserie-a-la-cabeza_0_sdByvXop45.html",
+    "date": "Oct 30, 2026",
+    "ts": 20261030,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine outlet Clarín (Redacción Clarín) covers Netflix Mexico's Oct 19-25 series Top 10, naming 'El círculo: temporada 1' third behind Bajo la superficie and Dragon Ball Super: Beerus, in an outlet article with editorial framing about weekly streaming trends (not a bare database page).",
+    "storyGroup": "netflix-top10-mexico-week-oct19-25-2026"
+  },
+  {
+    "outlet": "La Gaceta Santafesina",
+    "headline": "Netflix México: Top 10 de series más vistas del 19 al 25 de octubre",
+    "url": "https://lagacetasantafesina.com/2026/10/30/netflix-mexico-series-mas-vistas-19-25-octubre",
+    "date": "Oct 30, 2026",
+    "ts": 20261030,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine regional outlet La Gaceta Santafesina republishes the Netflix Mexico weekly Top 10 story, naming 'El círculo: temporada 1' third in the ranking for the week of Oct 19-25.",
+    "storyGroup": "netflix-top10-mexico-week-oct19-25-2026"
+  },
+  {
+    "outlet": "San Juan Diario",
+    "headline": "Las 10 series más vistas en Netflix México entre el 19 y el 25 de octubre de 2026",
+    "url": "https://sanjuandiario.com/2026/10/31/las-10-series-mas-vistas-en-netflix-mexico-entre-el-19-y-el-25-de-octubre-de-2026",
+    "date": "Oct 31, 2026",
+    "ts": 20261031,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine outlet San Juan Diario republishes the Netflix Mexico weekly Top 10 story, explicitly credited on-page to 'la Redacción de Clarín', naming 'El círculo: temporada 1' third in the ranking for the week of Oct 19-25.",
+    "storyGroup": "netflix-top10-mexico-week-oct19-25-2026"
+  },
+  {
+    "outlet": "Latidos TV",
+    "headline": "Lo más visto en Netflix México: las 10 series más exitosas del momento, con \"Bajo la superficie: miniserie\" a la cabeza",
+    "url": "https://latidostv.com.ar/lo-mas-visto-en-netflix-mexico-las-10-series-mas-exitosas-del-momento-con-bajo-la-superficie-miniserie-a-la-cabeza",
+    "date": "Oct 30, 2026",
+    "ts": 20261030,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine outlet Latidos TV (byline 'Latitv') republishes the Netflix Mexico weekly Top 10 story, crediting Clarín as the original source, naming 'El círculo: temporada 1' third in the ranking for the week of Oct 19-25.",
+    "storyGroup": "netflix-top10-mexico-week-oct19-25-2026"
+  },
+  {
+    "outlet": "La Pampa Nuestra",
+    "headline": "Netflix México: Top 10 de series más vistas del 19 al 25 de octubre",
+    "url": "https://lapampanuestra.com/2026/10/30/netflix-mexico-top-10-series-19-25-octubre",
+    "date": "Oct 30, 2026",
+    "ts": 20261030,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine outlet La Pampa Nuestra republishes the Netflix Mexico weekly Top 10 story, naming 'El círculo: temporada 1' third in the ranking for the week of Oct 19-25.",
+    "storyGroup": "netflix-top10-mexico-week-oct19-25-2026"
+  },
+  {
+    "outlet": "Somos Chubut",
+    "headline": "Netflix México: Top 10 de series más vistas del 19 al 25 de octubre",
+    "url": "https://somoschubut.com/2026/10/30/netflix-mexico-series-mas-vistas-19-25-octubre",
+    "date": "Oct 30, 2026",
+    "ts": 20261030,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Article",
+    "excerpt": "Argentine outlet Somos Chubut republishes the Netflix Mexico weekly Top 10 story, sourced on-page to Netflix's published rankings, naming 'El círculo: temporada 1' third in the ranking for the week of Oct 19-25.",
+    "storyGroup": "netflix-top10-mexico-week-oct19-25-2026"
   }
 ]
