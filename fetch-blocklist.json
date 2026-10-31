@@ -11678,7 +11678,28 @@
           "note": "DNS resolution failure (ENOTFOUND) via WebFetch; Tavily Extract also failed to resolve this host. Full fallback chain exhausted this run without a usable fetch -- NOT evidence of off-topic, logged as a fetch failure per ledger policy."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/it/news/ni66046084",
+      "firstSeen": "2026-10-31T11:40:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T11:40:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb News (Italian locale) teaser page syndicating Fiction Horizon's already-tracked 'Meet the Cast of Inside the Circle on Netflix (With Photos)' (data.json, ts 20261004, byline Robert Milakovic, 04/10/2026 dateline on this page). Page excerpt matches verbatim and explicitly links out: 'Vedi l'articolo completo su Fiction Horizon'. Confirmed via Tavily Extract. Locale-mirror second address for an already-tracked document, consistent with the existing es/it-locale sibling entries for this same syndication pattern (Rule I).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-31T11:40:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13854",
+          "note": "IMDb News (it locale) teaser syndicating the already-tracked Fiction Horizon 'Meet the Cast' article; verbatim excerpt + explicit out-link. Second address, not a distinct document."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-31T06:13:16.065Z"
+  "lastUpdated": "2026-10-31T11:40:00Z"
 }
