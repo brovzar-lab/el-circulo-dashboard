@@ -11348,7 +11348,337 @@
           "note": "Only the parent groups bio/header loaded; post body, caption and date inaccessible."
         }
       ]
+    },
+    {
+      "url": "https://indiehoy.com/series/3-series-escandalosas-para-ver-en-netflix/?amp=1",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Listicle '3 series escandalosas para ver en Netflix' naming 3 shows (Cómo arruinar la Navidad: La boda, Jugando con fuego, The Circle US/Brazil reality). Does not mention El Círculo/Inside the Circle. Confirmed off-topic via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "Listicle '3 series escandalosas para ver en Netflix' naming 3 shows (Cómo arruinar la Navidad: La boda, Jugando con fuego, The Circle US/Brazil reality). Does not mention El Círculo/Inside the Circle. Confirmed off-topic via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://imdb.com/news/ni63410053",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "IMDb News item 'Everything to know about The Circle Season 3 on Netflix' - about the unrelated Netflix reality competition show's Season 3 (2021), not the Mexican thriller El Círculo. Confirmed off-topic via body fetch (Tavily extract, WebFetch 403'd).",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "IMDb News item 'Everything to know about The Circle Season 3 on Netflix' - about the unrelated Netflix reality competition show's Season 3 (2021), not the Mexican thriller El Círculo. Confirmed off-topic via body fetch (Tavily extract, WebFetch 403'd)."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://whats-on-netflix.com/TOP-10-TITLE-SEARCH/?title=The+Circle",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Title-search param 'The+Circle' returns only the reality competition show's Top-10 data (plus The Circle Brazil/France), not El Círculo/Inside the Circle. Distinct from the already-ledgered title=Inside%20The%20Circle variant of this same tool (which correctly returns our show's data and is Rule F). Confirmed via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "Title-search param 'The+Circle' returns only the reality competition show's Top-10 data (plus The Circle Brazil/France), not El Círculo/Inside the Circle. Distinct from the already-ledgered title=Inside%20The%20Circle variant of this same tool (which correctly returns our show's data and is Rule F). Confirmed via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://screencrush.com/netflix-top-ten/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "ScreenCrush article 'Netflix's New Feature Reveals the Company's Top 10 Films and Shows', published Feb 24 2020, about the generic launch of Netflix's Top 10 feature. No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "ScreenCrush article 'Netflix's New Feature Reveals the Company's Top 10 Films and Shows', published Feb 24 2020, about the generic launch of Netflix's Top 10 feature. No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://tvguide.com/news/netflix-top-10-shows-and-movies-january-19-2023/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "TVGuide weekly Netflix Top 10 roundup for Jan 19 2023 (published Jan 23 2023). Lists 'The Circle' (reality show, Season 5, ranked #8) among other titles. No mention of El Círculo/Inside the Circle, which did not exist in 2023. Confirmed off-topic via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "TVGuide weekly Netflix Top 10 roundup for Jan 19 2023 (published Jan 23 2023). Lists 'The Circle' (reality show, Season 5, ranked #8) among other titles. No mention of El Círculo/Inside the Circle, which did not exist in 2023. Confirmed off-topic via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://tvguide.com/news/netflix-top-10-shows-and-movies-january-12-2023/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "TVGuide weekly Netflix Top 10 roundup for Jan 12 2023, same template/outlet as the Jan 19 2023 edition. Lists 'The Circle' (reality show, Season 5). No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "TVGuide weekly Netflix Top 10 roundup for Jan 12 2023, same template/outlet as the Jan 19 2023 edition. Lists 'The Circle' (reality show, Season 5). No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://tvguide.com/news/netflix-top-10-shows-and-movies-january-18-2023/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "TVGuide weekly Netflix Top 10 roundup for Jan 18 2023, same template/outlet as the Jan 12/19 2023 editions. Lists 'The Circle' (reality show, Season 5). No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "TVGuide weekly Netflix Top 10 roundup for Jan 18 2023, same template/outlet as the Jan 12/19 2023 editions. Lists 'The Circle' (reality show, Season 5). No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://about.netflix.com/zh_cn/news/new-top-10-on-netflix",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix's own zh_cn-locale press post announcing the general weekly 'Netflix Top 10' charts feature, dated Nov 16 2021. Generic feature-launch announcement, no show named. No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "Netflix's own zh_cn-locale press post announcing the general weekly 'Netflix Top 10' charts feature, dated Nov 16 2021. Generic feature-launch announcement, no show named. No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://business-punk.com/?p=73391",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Business Punk (German) article 'Netflix veröffentlicht erstmals Top-Ten seiner Inhalte', dated May 13 2019, about Netflix UK's first published weekly Top Ten (led by 'Our Planet'). No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "Business Punk (German) article 'Netflix veröffentlicht erstmals Top-Ten seiner Inhalte', dated May 13 2019, about Netflix UK's first published weekly Top Ten (led by 'Our Planet'). No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://gizchina.com/news/netflix-top-10-title-website-makes-selecting-easier",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Gizchina article 'Netflix Announces Top 10 Website, Making Viewing the Best Titles Much Easier', dated Nov 17 2021, generic feature-launch announcement for top10.netflix.com. No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "Gizchina article 'Netflix Announces Top 10 Website, Making Viewing the Best Titles Much Easier', dated Nov 17 2021, generic feature-launch announcement for top10.netflix.com. No mention of El Círculo/Inside the Circle. Confirmed off-topic via body fetch."
+        }
+      ],
+      "skipMethod": "body_fetch"
+    },
+    {
+      "url": "https://flixpatrol.com/title/the-circle-2020/streaming/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "FlixPatrol chart page for 'The Circle (2020)', a different, unrelated title (named different title in URL/title qualifies for Rule G no-fetch carve-out). Same disposition already applied to the sibling flixpatrol.com/title/the-circle-2020/trailers/ and /franchise/the-circle/ rows in this ledger.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "title_snippet_only",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "FlixPatrol chart page for 'The Circle (2020)', a different, unrelated title (named different title in URL/title qualifies for Rule G no-fetch carve-out). Same disposition already applied to the sibling flixpatrol.com/title/the-circle-2020/trailers/ and /franchise/the-circle/ rows in this ledger."
+        }
+      ],
+      "skipMethod": "title_snippet_only"
+    },
+    {
+      "url": "https://flixpatrol.com/title/the-circle-2017/hours-viewed/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "FlixPatrol chart page for 'The Circle (2017)', a different, unrelated title (named different title in URL/title qualifies for Rule G no-fetch carve-out). Same disposition already applied to sibling flixpatrol.com the-circle-* rows in this ledger.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "title_snippet_only",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "FlixPatrol chart page for 'The Circle (2017)', a different, unrelated title (named different title in URL/title qualifies for Rule G no-fetch carve-out). Same disposition already applied to sibling flixpatrol.com the-circle-* rows in this ledger."
+        }
+      ],
+      "skipMethod": "title_snippet_only"
+    },
+    {
+      "url": "https://flixpatrol.com/person/sally-wilcox/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "FlixPatrol person page for Sally Wilcox, a named individual with no connection to El Círculo's cast or crew (named different person qualifies for Rule G no-fetch carve-out).",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "title_snippet_only",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "FlixPatrol person page for Sally Wilcox, a named individual with no connection to El Círculo's cast or crew (named different person qualifies for Rule G no-fetch carve-out)."
+        }
+      ],
+      "skipMethod": "title_snippet_only"
+    },
+    {
+      "url": "https://martincid.com/people/michel-brown/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Martin Cid Magazine feature profiling Michel Brown's career, discussing his role as Tomás in El Círculo/Inside the Circle specifically (genuine on-topic coverage, confirmed via body fetch). No JSON-LD datePublished, no article:published_time meta tag, and no visible publish date found on the page (only a 2026 copyright line and 'X min read'). WebFetch returned content but no date; Tavily not separately re-tried for this one since WebFetch succeeded in rendering the page body without any date field present. Genuinely undateable after available fetch tooling exhausted.",
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "title_snippet_only",
+          "status": 200,
+          "issue": "LEMA-13837",
+          "note": "Martin Cid Magazine feature profiling Michel Brown's career, discussing his role as Tomás in El Círculo/Inside the Circle specifically (genuine on-topic coverage, confirmed via body fetch). No JSON-LD datePublished, no article:published_time meta tag, and no visible publish date found on the page (only a 2026 copyright line and 'X min read'). WebFetch returned content but no date; Tavily not separately re-tried for this one since WebFetch succeeded in rendering the page body without any date field present. Genuinely undateable after available fetch tooling exhausted."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://curtonews.com/en/global/netflix-top-10-entenda-ranking-streaming/",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 1,
+      "lastStatus": 403,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": false,
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch+Tavily",
+          "status": 403,
+          "issue": "LEMA-13837",
+          "note": "WebFetch returned 403 Forbidden; Tavily Extract (advanced) and Tavily Search both failed to retrieve this page's actual content (search returned unrelated results). Full fallback chain exhausted this run without a usable fetch -- NOT evidence of off-topic, logged as a fetch failure per ledger policy."
+        }
+      ]
+    },
+    {
+      "url": "https://oak1.the-numbers.com/home-market/netflix-daily-chart/2020/07/24",
+      "firstSeen": "2026-10-31T06:13:16.065Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "cooldownUntil": null,
+      "permanentSkip": false,
+      "history": [
+        {
+          "attempt": "2026-10-31T06:13:16.065Z",
+          "method": "WebFetch+Tavily",
+          "status": 0,
+          "issue": "LEMA-13837",
+          "note": "DNS resolution failure (ENOTFOUND) via WebFetch; Tavily Extract also failed to resolve this host. Full fallback chain exhausted this run without a usable fetch -- NOT evidence of off-topic, logged as a fetch failure per ledger policy."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-31T02:05:08Z"
+  "lastUpdated": "2026-10-31T06:13:16.065Z"
 }
