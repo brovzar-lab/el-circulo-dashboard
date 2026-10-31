@@ -11699,7 +11699,28 @@
           "note": "IMDb News (it locale) teaser syndicating the already-tracked Fiction Horizon 'Meet the Cast' article; verbatim excerpt + explicit out-link. Second address, not a distinct document."
         }
       ]
+    },
+    {
+      "url": "https://epguides.com/InsidetheCircle",
+      "firstSeen": "2026-10-31T14:03:32.405Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-10-31T14:03:32.405Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "epguides.com episode guide: episode titles/air-dates table (TVmaze-sourced data) plus a single-sentence logline only, no prose analysis, no byline; only a living \"last updated\" stamp (Sun, 11 Oct 2026) rather than an article publish date. Stripping the metadata table leaves nothing written about the show. Rule F, same surface family as the serienjunkies.de and kinocheck.com episode/show-database records already ledgered on this sweep.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-10-31T14:03:32.405Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13857",
+          "note": "epguides.com episode guide: database/listing page, no prose. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-31T11:40:00Z"
+  "lastUpdated": "2026-10-31T14:03:32.405Z"
 }
