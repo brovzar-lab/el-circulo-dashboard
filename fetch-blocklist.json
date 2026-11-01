@@ -11815,7 +11815,28 @@
           "note": "WebFetch retrieved post text (synopsis/genre card format); no date found. editorial_undateable, reviewable: true."
         }
       ]
+    },
+    {
+      "url": "https://streamrank.tv/netflix-top-10",
+      "firstSeen": "2026-11-01T06:02:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T06:02:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "StreamRank.tv Netflix weekly official Top 10 chart (view-count table, generic global chart, snapshot dated 2026-10-18 in-page). Confirmed via Firecrawl scrape: pure ranking/view-count table with TMDB poster thumbnails, no written analysis, and El Circulo/Inside the Circle does not even appear in this particular 20-title window. Same chart/database surface family as the already-ledgered streamrank.io title page (different TLD/subdomain of the same tracker product, same Rule F shape: no original written content). Rule F (editorial_listing_or_database).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-01T06:02:54Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-13864",
+          "note": "StreamRank.tv Netflix weekly official Top 10 chart (view-count table, generic global chart, snapshot dated 2026-10-18 in-page). Confirmed via Firecrawl scrape: pure ranking/view-count table with TMDB poster thumbnails, no written analysis, and El Circulo/Inside the Circle does not even appear in this particular 20-title window. Same chart/database surface family as the already-ledgered streamrank.io title page (different TLD/subdomain of the same tracker product, same Rule F shape: no original written content). Rule F (editorial_listing_or_database)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-01T02:06:42Z"
+  "lastUpdated": "2026-11-01T06:02:54Z"
 }
