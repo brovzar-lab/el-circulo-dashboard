@@ -11906,7 +11906,115 @@
           "note": "Confirmed Rule F listing/database (streaming-audience stats profile), no editorial prose, no dateable publish date."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/julio-machaca-representado-en-la-s%C3%A9rie-de-netflix-el-c%C3%ADrculo",
+      "firstSeen": "2026-11-01T22:03:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T22:03:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> topic-index page (\"Julio Machaca Representado En La Série De Netflix El Círculo\"), same established Rule F surface family as 20+ other already-ledgered tiktok.com/discover/ pages for this show. Confirmed via Tavily Extract: renders a \"Discover videos related to...\" aggregator header over unrelated creator videos under the topic tag, not a distinct document of its own.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-01T22:03:43Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13889",
+          "note": "Confirmed TikTok discover-family aggregator shell via full body fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/osvaldo-benavides-el-circulo",
+      "firstSeen": "2026-11-01T22:03:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T22:03:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/osvaldo-benavides-el-circulo topic-index page, same established Rule F surface family as 20+ other already-ledgered tiktok.com/discover/ pages for this show. Confirmed via Tavily Extract: \"TikTok - Make Your Day\" app-prompt shell with a sidebar of related /discover/ topic links, no distinct article content.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-01T22:03:43Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13889",
+          "note": "Confirmed TikTok discover-family aggregator shell via full body fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/De8COVkiyfO",
+      "firstSeen": "2026-11-01T22:03:43Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-01T22:03:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Instagram reel surfaced from an analysis/spoiler search hit referencing this show, but Tavily Extract (advanced) returned only an Instagram login wall plus a cached, unrelated profile's carousel (\"Combo Amigues | Alan Cruz\"), not this reel's own caption or metadata -- WebFetch is not usable for bare instagram.com/reel/ pages per prior precedent. No recoverable real publish date, and the show-relevance of this specific reel could not even be independently confirmed from the fetched content. Not guessed per Rule A.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-01T22:03:43Z",
+          "method": "Tavily Extract (advanced)",
+          "status": 0,
+          "issue": "LEMA-13889",
+          "note": "Login wall + mismatched cached content; no usable body or date metadata recovered."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61589364031021/videos/-hasta-d%C3%B3nde-llegar%C3%ADas-para-proteger-tus-secretosel-c%C3%ADrculo-es-una-serie-de-susp/2343767159707711",
+      "firstSeen": "2026-11-01T22:03:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T22:03:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Facebook video post from generic recommendation page \"Ese wey recomienda\": templated promo caption (\"¿Hasta dónde llegarías para proteger tus secretos?... esta serie puede llamar tu atención\") with show hashtags, no staff analysis. Tavily Extract recovered the og:description caption but hit the Facebook login wall for all page/post metadata; no article:published_time, JSON-LD datePublished, or visible dateline recoverable. No recoverable real publish date.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-01T22:03:43Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13889",
+          "note": "OG caption recovered; login wall blocked all date metadata."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61574263522346/videos/-el-c%C3%ADrculo-2026-g%C3%A9nero-thriller-drama-crimen-tipo-serie-disponible-en-netflix-d/1337934508329471",
+      "firstSeen": "2026-11-01T22:03:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T22:03:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipNote": "Facebook video post from the same generic recommendation page (\"Mira esto cine y series\") already ledgered under a sibling post id (facebook.com/61574263522346/posts/122143379876808784, also editorial_undateable) for this show: templated movie-info card (genre tags, platform, generic synopsis), no staff analysis. Tavily Extract recovered the og:description caption but hit the Facebook login wall for all page/post metadata; no recoverable real publish date.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-01T22:03:43Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13889",
+          "note": "OG caption recovered; login wall blocked all date metadata. Same account as an already-ledgered sibling post."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-01T18:00:00Z"
+  "lastUpdated": "2026-11-01T22:03:43Z"
 }
