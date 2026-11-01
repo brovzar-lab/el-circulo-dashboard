@@ -11857,7 +11857,49 @@
           "note": "RPP.pe Netflix tag page; El Circulo does not appear on the page at all. Off-topic false positive from broad query noise, not a listing/database page about the show."
         }
       ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/mexico/tv/2022-01-16",
+      "firstSeen": "2026-11-01T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Netflix Tudum Top 10 Mexico weekly TV ranking page (dated slug stale vs. displayed week of 10/19-10/25/26). Inside The Circle: Season 1 ranked #3 in Mexico shows, no name-check of 'El Círculo', no staff prose beyond a one-line 'Catch the Latest' teaser about other titles. Same editorial_listing_or_database family as the other netflix.com/tudum/top10/* rows already ledgered (mexico/tv, es/mexico/tv, tv-non-english, etc.) -- pure ranking/database surface, Rule F.",
+      "history": [
+        {
+          "attempt": "2026-11-01T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13885",
+          "note": "Confirmed Rule F listing/database; Inside The Circle present as a ranked entry only, no editorial content."
+        }
+      ]
+    },
+    {
+      "url": "https://content-signals.com/p/inside-the-circle",
+      "firstSeen": "2026-11-01T14:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T14:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "content-signals.com streaming-audience profile page for 'Inside the Circle' (El círculo named as original title). Automated viewership database: Attention Index, view-count ranges, Top 10 run weeks, no byline/author, no narrative reporting, no publish date (only data-period dates: first aired 7 Oct 2026, latest week 12-18 Oct 2026). New host for this ledger; same editorial_listing_or_database family as flixpatrol.com, streamrank.io/.tv, whats-on-netflix.com, selectvideo.net already ledgered on this sweep -- Rule F.",
+      "history": [
+        {
+          "attempt": "2026-11-01T14:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13885",
+          "note": "Confirmed Rule F listing/database (streaming-audience stats profile), no editorial prose, no dateable publish date."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-01T10:02:37Z"
+  "lastUpdated": "2026-11-01T14:00:00Z"
 }
