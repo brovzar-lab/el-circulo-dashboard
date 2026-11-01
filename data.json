@@ -3586,5 +3586,18 @@
     "type": "Article",
     "excerpt": "Argentine outlet Somos Chubut republishes the Netflix Mexico weekly Top 10 story, sourced on-page to Netflix's published rankings, naming 'El círculo: temporada 1' third in the ranking for the week of Oct 19-25.",
     "storyGroup": "netflix-top10-mexico-week-oct19-25-2026"
+  },
+  {
+    "outlet": "Magazine Spain (Instagram)",
+    "headline": "Estreno de El Círculo: thriller mexicano basado en Los Corruptores",
+    "url": "https://www.instagram.com/reel/DeMtaFKMTOO",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Spain",
+    "type": "Social",
+    "excerpt": "Cuenta editorial de entretenimiento española (Magazine Spain) anuncia el estreno de El Círculo en Netflix, thriller basado en Los Corruptores de Jorge Zepeda Patterson, con enlace al tráiler completo. Fecha visible en la publicación (7 de octubre, '3w').",
+    "storyGroup": null
   }
 ]
