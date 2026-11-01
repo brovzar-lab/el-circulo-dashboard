@@ -8229,9 +8229,9 @@
     {
       "url": "https://www.tiktok.com/discover/escena-osvaldo-benavides-the-circle",
       "firstSeen": "2026-10-23T22:07:25Z",
-      "failCount": 1,
-      "lastStatus": 0,
-      "lastAttempt": "2026-10-23T22:07:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T02:06:42Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -8240,8 +8240,19 @@
           "status": 0,
           "issue": "LEMA-13543",
           "note": "WebFetch returned only the generic 'TikTok - Make Your Day' SPA shell (no content). Tavily Extract fallback (Firecrawl MCP not available this run) returned, on two separate attempts, either an empty result or a 'TikTok has discontinued operating in Hong Kong' geofencing stub instead of real page content. Full fallback-chain failure, not an editorial call -- failCount=1, no cooldown yet. Sibling tiktok.com/discover/ URLs in the same query batch fetched successfully and confirmed as the same Rule F aggregation-page family; this one is withheld from that classification pending a successful fetch, per the standing rule that a failed fetch is never evidence of surface family/off-topic."
+        },
+        {
+          "attempt": "2026-11-01T02:06:42Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13862",
+          "note": "Retry succeeded: Tavily Extract (advanced) returned full rendered TikTok discover page body (20+ video thumbnails under topic tag, no staff-written prose). Confirmed Rule F listing/database family, same as 55 sibling tiktok.com/discover/ rows. Converted from fetch-failure to permanentSkip in place (Rule C one-URL-one-row)."
         }
-      ]
+      ],
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (surface family, same test as already-ledgered Tudum/FlixPatrol Top10 pages and the 55+ sibling tiktok.com/discover/ rows) -- an aggregation of ~20 videos under the topic tag with a header line \"Discover videos related to ... on TikTok\", no staff-written prose of its own. Successful retry this run via Tavily Extract (advanced) returned full rendered body confirming the aggregation-page shape. Rule F listing/database gate.",
+      "skipMethod": "body_fetch"
     },
     {
       "url": "https://www.tiktok.com/discover/pel%C3%ADcula-el-circulo-en-la-vida-real-de-quien-hablan",
@@ -11741,7 +11752,70 @@
           "note": "El Cuervo Nica republication of SensaCine.com's top-10-in-23-countries piece; credits SensaCine as source, same headline/framing. Second address, not a distinct document."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/quien-es-salazar-circulo-netflix",
+      "firstSeen": "2026-11-01T02:06:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T02:06:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same Rule F aggregation-page family as the 55+ sibling tiktok.com/discover/ rows. Tavily Extract (advanced) returned the full rendered body: a \"Discover videos related to Quien Es Salazar Circulo Netflix on TikTok\" header plus ~16 video thumbnails from unrelated creators (Netflix Latinoamerica, fan accounts, a spoiler-analysis account), no staff-written prose of its own. Rule F listing/database gate.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-01T02:06:42Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 200,
+          "issue": "LEMA-13862",
+          "note": "WebFetch returned only the generic TikTok SPA shell; Tavily Extract (advanced) returned the full rendered discover-page body. Classified Rule F on full body content."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-el-circulo-vida-real",
+      "firstSeen": "2026-11-01T02:06:42Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-01T02:06:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same Rule F aggregation-page family as the 55+ sibling tiktok.com/discover/ rows (e.g. tiktok.com/discover/miniserie-el-circulo, same skipMethod). WebFetch and Tavily Extract both returned only the generic JS shell; classification made on URL-family pattern plus Tavily search-index snippet (\"El Círculo es una serie de Netflix que explora cómo un video filtrado pone en peligro una amistad de toda la vida...\"), consistent with every other confirmed member of this family.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-01T02:06:42Z",
+          "method": "WebFetch+TavilyExtract",
+          "status": 0,
+          "issue": "LEMA-13862",
+          "note": "TikTok discover/hashtag index page, generic JS shell only on both WebFetch and Tavily Extract; classified Rule F by URL-family pattern + Tavily search snippet, consistent with sibling rows."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61574263522346/posts/el-c%C3%ADrculo-2026-g%C3%A9nero-thriller-drama-crimen-tipo-serie-disponible-en-netflix-d/122143379876808784",
+      "firstSeen": "2026-11-01T02:06:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-01T02:06:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook post from an entertainment recommendation page (\"Mira esto cine y series\"-style account) presenting El Círculo as a templated movie-info card: genre tags, platform, and a generic \"received generally positive reviews\" synopsis line (templated boilerplate -- no real RT/Metacritic aggregate exists for this show, per the show context baseline). WebFetch retrieved the post text; no posting date, article:published_time, or JSON-LD datePublished found anywhere in the fetched content. No recoverable real publish date.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-01T02:06:42Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13862",
+          "note": "WebFetch retrieved post text (synopsis/genre card format); no date found. editorial_undateable, reviewable: true."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-31T18:00:00.000Z"
+  "lastUpdated": "2026-11-01T02:06:42Z"
 }
