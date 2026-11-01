@@ -724,11 +724,11 @@
       "firstSeen": "2026-10-09T02:20:00Z",
       "failCount": 0,
       "lastStatus": 200,
-      "lastAttempt": "2026-10-17T14:17:44Z",
+      "lastAttempt": "2026-11-01T18:00:00Z",
       "cooldownUntil": null,
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
-      "skipNote": "RT season page: Tomatometer shows 3 Reviews (no percentage/consensus yet). All three critic reviews now confirmed already in data.json: Archi Sengupta/LeisureByte.com (3/5), Joel Keller/Decider, Karina Adelgaard/Heaven of Horror (3/5). Mining duty (Rule H scope limit 1) satisfied -- no new rows needed. Page itself remains Rule F (cast/crew/episode metadata, same family as the already-ledgered bare show page).",
+      "skipNote": "RT season page re-check: Tomatometer now shows 4 Reviews (up from 3 on 2026-10-17), still no percentage/consensus. The 4th review's critic/outlet could not be identified this run -- RT's review list is gated behind a client-side 'Load More' control with no server-rendered content (confirmed via WebFetch and Tavily Extract, both returned the empty 'Load More' shell; Playwright was unavailable this run, browser instance locked by a concurrent process; no Firecrawl access for this agent). Rule H mining duty not fully dischargeable this run for the 4th review -- same structural limitation already on record from LEMA-12295's episode-reviews page. Page itself remains Rule F (listing/database), disposition unchanged. Re-check again on a future sweep when a rendering-capable fetch path is available.",
       "skipMethod": "body_fetch",
       "history": [
         {
@@ -744,6 +744,13 @@
           "status": 200,
           "issue": "LEMA-12943",
           "note": "RT season page: Tomatometer shows 3 Reviews (no percentage/consensus yet). All three critic reviews now confirmed already in data.json: Archi Sengupta/LeisureByte.com (3/5), Joel Keller/Decider, Karina Adelgaard/Heaven of Horror (3/5). Mining duty (Rule H scope limit 1) satisfied -- no new rows needed. Page itself remains Rule F (cast/crew/episode metadata, same family as the already-ledgered bare show page)."
+        },
+        {
+          "attempt": "2026-11-01T18:00:00Z",
+          "method": "WebFetch/Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13888",
+          "note": "RT season page re-check: Tomatometer now shows 4 Reviews (up from 3 on 2026-10-17), still no percentage/consensus. The 4th review's critic/outlet could not be identified this run -- RT's review list is gated behind a client-side 'Load More' control with no server-rendered content (confirmed via WebFetch and Tavily Extract, both returned the empty 'Load More' shell; Playwright was unavailable this run, browser instance locked by a concurrent process; no Firecrawl access for this agent). Rule H mining duty not fully dischargeable this run for the 4th review -- same structural limitation already on record from LEMA-12295's episode-reviews page. Page itself remains Rule F (listing/database), disposition unchanged. Re-check again on a future sweep when a rendering-capable fetch path is available."
         }
       ]
     },
@@ -11901,5 +11908,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-11-01T14:00:00Z"
+  "lastUpdated": "2026-11-01T18:00:00Z"
 }
