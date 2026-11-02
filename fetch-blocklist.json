@@ -1067,10 +1067,10 @@
     {
       "url": "https://www.tiktok.com/@candresperedo/video/7694479656157842696",
       "firstSeen": "2026-10-09T06:00:00Z",
-      "failCount": 2,
+      "failCount": 3,
       "lastStatus": 0,
-      "lastAttempt": "2026-10-09T18:30:00Z",
-      "cooldownUntil": null,
+      "lastAttempt": "2026-11-02T18:06:33Z",
+      "cooldownUntil": "2026-12-02T18:06:33Z",
       "history": [
         {
           "attempt": "2026-10-09T06:00:00Z",
@@ -1085,6 +1085,13 @@
           "status": 0,
           "issue": "LEMA-12299",
           "note": "Retry (cooldownUntil was null): WebFetch returned only the generic TikTok player shell again, no caption/date extractable. failCount now 2, still below 3-strike cooldown threshold."
+        },
+        {
+          "attempt": "2026-11-02T18:06:33Z",
+          "method": "WebFetch/Firecrawl",
+          "status": 0,
+          "issue": "LEMA-13972",
+          "note": "Retry after expired cooldown: WebFetch returned only the generic TikTok player shell again (no caption/date extractable); Firecrawl scrape refused outright (\"we do not support this site\"). Third consecutive full-chain failure -- failCount now 3, cooldownUntil set to 2026-12-02T18:06:33Z (30 days)."
         }
       ]
     },
@@ -12265,7 +12272,28 @@
           "note": "TikTok /discover/ topic-index page, same family as 20+ already-ledgered siblings. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/top10/costa-rica/tv/2021-08-01",
+      "firstSeen": "2026-11-02T18:06:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T18:06:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Netflix Tudum Top 10 Costa Rica TV page (week of Oct 19-25, 2026 per the page's own week selector). Body-fetch confirmed via WebFetch: lists Costa Rica's top 10 shows for that week and does not mention \"El Círculo\" or \"Inside the Circle\" anywhere. Surfaced only because the broad Tudum/Top10/ranking query matched on generic keywords (Tudum, Top 10, ranking), not on the show. Rule G.",
+      "history": [
+        {
+          "attempt": "2026-11-02T18:06:33Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13972",
+          "note": "Off-topic false positive: Costa Rica Tudum Top 10 page for Oct 19-25, 2026, no mention of El Círculo/Inside the Circle. Rule G, skipMethod=body_fetch."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-02T14:08:28Z"
+  "lastUpdated": "2026-11-02T18:06:33Z"
 }
