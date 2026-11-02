@@ -12090,9 +12090,9 @@
     {
       "url": "https://www.macobserver.com/?p=490752",
       "firstSeen": "2026-11-02T06:10:00Z",
-      "failCount": 1,
+      "failCount": 2,
       "lastStatus": 403,
-      "lastAttempt": "2026-11-02T06:10:00Z",
+      "lastAttempt": "2026-11-02T14:08:28Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -12101,15 +12101,22 @@
           "status": 403,
           "issue": "LEMA-13893",
           "note": "WebFetch: HTTP 403 (Cloudflare 'challenge' mitigation, cf-mitigated header). Direct curl with browser UA also 403'd the same way. Tavily extract returned no content for this URL. Firecrawl MCP tool and Playwright (browser session already in use, stale lock) were not available this run -- fallback chain not fully completable this run, flagged for tool-availability visibility, not treated as an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down). Candidate title: Inside the Circle Book Differences: How Netflix Changes Jorge Zepeda Patterson's Los Corruptores (English)."
+        },
+        {
+          "attempt": "2026-11-02T14:08:28Z",
+          "method": "WebFetch/curl/Tavily Extract",
+          "status": 403,
+          "issue": "LEMA-13969",
+          "note": "2nd consecutive full-chain-exhaustion attempt (English-locale 'Inside the Circle Book Differences' candidate): WebFetch HTTP 403 (Cloudflare challenge), direct curl with browser UA also 403, Tavily Extract returned no content. Playwright MCP was unavailable this run (browser instance locked by a concurrent process, same as the prior attempt); no Firecrawl access for this agent. failCount now 2, still below the 3-failure cooldown threshold. Not a classification call -- fetch fallback chain genuinely exhausted twice in a row for this host."
         }
       ]
     },
     {
       "url": "https://www.macobserver.com/?p=490829",
       "firstSeen": "2026-11-02T06:10:00Z",
-      "failCount": 1,
+      "failCount": 2,
       "lastStatus": 403,
-      "lastAttempt": "2026-11-02T06:10:00Z",
+      "lastAttempt": "2026-11-02T14:08:28Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -12118,6 +12125,13 @@
           "status": 403,
           "issue": "LEMA-13893",
           "note": "WebFetch: HTTP 403 (Cloudflare 'challenge' mitigation, cf-mitigated header). Direct curl with browser UA also 403'd the same way. Tavily extract returned no content for this URL. Firecrawl MCP tool and Playwright (browser session already in use, stale lock) were not available this run -- fallback chain not fully completable this run, flagged for tool-availability visibility, not treated as an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down). Candidate title: Inside the Circle, le differenze dal libro: come Netflix cambia Los Corruptores di Jorge Zepeda Patterson (Italian)."
+        },
+        {
+          "attempt": "2026-11-02T14:08:28Z",
+          "method": "WebFetch/curl/Tavily Extract",
+          "status": 403,
+          "issue": "LEMA-13969",
+          "note": "2nd consecutive full-chain-exhaustion attempt (Italian-locale 'Inside the Circle Book Differences' candidate): WebFetch HTTP 403 (Cloudflare challenge), direct curl with browser UA also 403, Tavily Extract returned no content. Playwright MCP was unavailable this run (browser instance locked by a concurrent process, same as the prior attempt); no Firecrawl access for this agent. failCount now 2, still below the 3-failure cooldown threshold. Not a classification call -- fetch fallback chain genuinely exhausted twice in a row for this host."
         }
       ]
     },
@@ -12141,7 +12155,117 @@
           "note": "TVmaze show database record: structured metadata/cast/episode table, no prose review. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.sensacine.com/series/serie-1000003700/temporada-1000006247/reparto",
+      "firstSeen": "2026-11-02T14:08:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T14:08:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "SensaCine (AlloCine's Spanish-language sister site) cast/crew listing page for El Circulo T01: photo grid of actors with character names, writers, and directors only -- no prose, no synopsis, no analysis. Same Rule F family as the already-ledgered JustWatch/Netflix-browse cast listing pages. Confirmed via Tavily Extract full-body fetch.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-02T14:08:28Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13969",
+          "note": "Cast/crew photo-grid listing page, no written content. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.adorocinema.com/series/serie-1000003700/temporada-1000006247/elenco",
+      "firstSeen": "2026-11-02T14:08:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T14:08:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "AdoroCinema (AlloCine's Brazilian-Portuguese sister site, same CMS/template as SensaCine) cast/crew listing page for Dentro do Circulo T01: photo grid of actors with character names, writers, and directors only -- no prose, no synopsis, no analysis. Same Rule F family as the already-ledgered SensaCine/JustWatch/Netflix-browse cast listing pages. Confirmed via Tavily Extract full-body fetch.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-02T14:08:28Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13969",
+          "note": "Cast/crew photo-grid listing page, no written content. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://reelgood.com/show/el-circulo-2026",
+      "firstSeen": "2026-11-02T14:08:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T14:08:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Reelgood 'Where to Watch' page: per-country streaming availability table plus the same syndicated platform synopsis used everywhere else (no original written analysis), under a continuously regenerated 'Streaming availability last updated: 02:03:39 AM, 11/02/2026 PST' snapshot banner. Same shape and disposition as the already-ledgered JustWatch family (editorial_undateable): evaluated normally under Rule A (not a piracy/Rule F exclusion), but no discrete publish date exists to source a real ts from. Confirmed via Tavily Extract full-body fetch.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-02T14:08:28Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13969",
+          "note": "Streaming-availability snapshot page with syndicated synopsis only, continuously regenerated, no discrete publish date. Rule A undateable, same family as JustWatch."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/fr/serie/los-corruptores",
+      "firstSeen": "2026-11-02T14:08:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T14:08:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "France-locale sibling of the already-ledgered justwatch.com/us/tv-show/los-corruptores/season-1 and justwatch.com/za/tv-series/los-corruptores/season-1 entries (both editorial_undateable). Confirmed via Tavily Extract: same JustWatch template -- continuously regenerated streaming-chart/availability snapshot plus syndicated synopsis, no original review/analysis prose, no discrete publish date. Rule E scope limit applies (coverage, evaluated normally, not a piracy/Rule F exclusion) but undateable under Rule A, same disposition as the US and ZA siblings.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-02T14:08:28Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13969",
+          "note": "FR-locale JustWatch show page, same undateable template as US/ZA siblings. Rule A."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/c%C3%B3mo-se-llama-la-actriz-de-el-c%C3%ADrculo-netflix-2026",
+      "firstSeen": "2026-11-02T14:08:28Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-02T14:08:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('Como Se Llama La Actriz De El Circulo Netflix 2026'), same established Rule F surface family as the 20+ other already-ledgered tiktok.com/discover/ pages for this show: an aggregation of many unrelated creator videos under the topic tag, not a distinct document of its own. Tavily Extract returned no extractable body (empty JS-shell), consistent with the family's established fetch signature; classification made on URL-family pattern plus Tavily's indexed search snippet, per the already-repeated precedent for this exact surface family.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-02T14:08:28Z",
+          "method": "Tavily Extract (empty) + search snippet",
+          "status": 0,
+          "issue": "LEMA-13969",
+          "note": "TikTok /discover/ topic-index page, same family as 20+ already-ledgered siblings. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-02T10:00:00Z"
+  "lastUpdated": "2026-11-02T14:08:28Z"
 }
