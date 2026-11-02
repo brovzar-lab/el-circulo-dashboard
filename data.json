@@ -3625,5 +3625,31 @@
     "type": "Entertainment",
     "excerpt": "Cast-interview feature with Diego Sandoval, who plays Nico, the teenage programming prodigy; he discusses the show's theme of social-media virality, his character's dual nature as genius and 17-year-old, and the production scale. Notes the show has spent two weeks in Netflix's top 10.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Segundo a Segundo",
+    "headline": "Zuria Vega y elenco de 'El Círculo' abordan dilemas morales en nueva serie",
+    "url": "https://segundoasegundo.com/zuria-vega-y-elenco-de-el-circulo-abordan-dilemas-morales-en-nueva-serie/",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Derivative write-up citing an Excélsior interview: Zuria Vega, Michel Brown, Raúl Briones and Osvaldo Benavides discuss the moral dilemmas their characters face adapting 'Los corruptores' into 'El Círculo', the fragility of friendship under pressure, and praise the production's technical quality.",
+    "storyGroup": "excelsior-cast-moral-dilemmas-20261007"
+  },
+  {
+    "outlet": "The Futon Critic",
+    "headline": "Netflix Revealed the Future of Mexican Stories Coming in 2026",
+    "url": "http://www.thefutoncritic.com/news/2026/01/22/netflix-revealed-the-future-of-mexican-stories-coming-in-2026-718212/20260122netflix04/",
+    "date": "Jan 22, 2026",
+    "ts": 20260122,
+    "dateSource": "dated_url_path",
+    "lang": "EN",
+    "market": "International",
+    "type": "News",
+    "excerpt": "Trade-press recap of a Netflix Mexico content-slate reveal event names El Círculo among the announced titles: \"a series starring Zuria Vega, Osvaldo Benavides, Michel Brown, and Raul Briones, adapted from the novel Los corruptores by Jorge Zepeda Patterson,\" alongside other 2026 Mexican titles (Santita, México 86, El otro padre). Pre-identity-era coverage in scope per LEMA-12964: affirmatively establishes lineage via named novel, author, and platform.",
+    "storyGroup": null
   }
 ]
