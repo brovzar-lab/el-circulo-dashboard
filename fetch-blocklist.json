@@ -12120,7 +12120,28 @@
           "note": "WebFetch: HTTP 403 (Cloudflare 'challenge' mitigation, cf-mitigated header). Direct curl with browser UA also 403'd the same way. Tavily extract returned no content for this URL. Firecrawl MCP tool and Playwright (browser session already in use, stale lock) were not available this run -- fallback chain not fully completable this run, flagged for tool-availability visibility, not treated as an editorial call. failCount=1, no cooldown yet (needs 3 consecutive to cool down). Candidate title: Inside the Circle, le differenze dal libro: come Netflix cambia Los Corruptores di Jorge Zepeda Patterson (Italian)."
         }
       ]
+    },
+    {
+      "url": "https://tvmaze.com/shows/91118/el-circulo",
+      "firstSeen": "2026-11-02T10:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T10:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TVmaze show database record for El Circulo (Netflix): channel/genre/runtime metadata, structured cast table, episode list with airdates, streaming-provider links by country, alternate titles. Short synopsis and one-line episode blurbs only, no staff-written review or analysis. No publish date or last-updated stamp on the page (only an episode airdate, Oct 7, 2026). Rule F, same surface family as the already-ledgered epguides.com/serienjunkies.de/thetvdb.com show-database records for this title.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-02T10:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13960",
+          "note": "TVmaze show database record: structured metadata/cast/episode table, no prose review. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-02T06:10:00Z"
+  "lastUpdated": "2026-11-02T10:00:00Z"
 }
