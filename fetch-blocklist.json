@@ -12014,7 +12014,51 @@
           "note": "OG caption recovered; login wall blocked all date metadata. Same account as an already-ledgered sibling post."
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/SKYMexicoOficial/posts/el-secreto-mejor-guardado-al-descubierto-fue-entrega-secuestro-o-la-peor-de-las-/1563072162516818",
+      "firstSeen": "2026-11-02T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Off-topic false positive from the broad 'El Círculo Netflix reacciones redes sociales' query. Confirmed via targeted follow-up search: this Sky México post/campaign (also on X as @skymexico, 2026-10-29) is for an unrelated 2023 miniseries, \"La Caída del Mayo\" (about the hijacking of flight KA29 Dubai, #LaCaídaDelMayo), not about El Círculo or Los Corruptores at all. No genuine on-topic content. Rule G.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-02T02:00:00Z",
+          "method": "Tavily search (targeted follow-up)",
+          "status": 200,
+          "issue": "LEMA-13890",
+          "note": "Confirmed unrelated Sky México miniseries campaign (La Caída del Mayo), not El Círculo. Rule G off-topic false positive."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/fictionhorizon/posts/netflixs-inside-the-circle-follows-four-lifelong-friends-caught-in-a-web-of-blac/1884160753389993",
+      "firstSeen": "2026-11-02T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Fiction Horizon's own Facebook page resharing their own already-tracked article (fictionhorizon.com/netflixs-inside-the-circle-release-date-trailer-cast-and-plot-explained, in data.json, ts 20261004) -- post caption/logline matches the article's opening line verbatim (\"Netflix's Inside the Circle follows four lifelong friends caught in a web of blackmail...\"). Facebook fetch blocked (WebFetch/Tavily Extract both returned only a truncated caption, no body), but the matching logline and same-outlet own-page pattern confirm this is a second address for the already-tracked document, not a distinct piece. Rule I.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-02T02:00:00Z",
+          "method": "Tavily search + WebFetch (both fetch-blocked)",
+          "status": 200,
+          "issue": "LEMA-13890",
+          "note": "Own-outlet Facebook repost of already-tracked fictionhorizon.com article, matching logline. Rule I second address."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-01T22:03:43Z"
+  "lastUpdated": "2026-11-02T02:00:00Z"
 }
