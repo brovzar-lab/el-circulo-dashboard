@@ -12293,7 +12293,133 @@
           "note": "Off-topic false positive: Costa Rica Tudum Top 10 page for Oct 19-25, 2026, no mention of El Círculo/Inside the Circle. Rule G, skipMethod=body_fetch."
         }
       ]
+    },
+    {
+      "url": "https://www.lavanguardia.com/peliculas-series/series/el-circulo-290233",
+      "firstSeen": "2026-11-02T22:05:20Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T22:05:20Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "La Vanguardia's TMDB-powered show-catalog page for El círculo: synopsis, cast, episode list, streaming availability and audience rating, no staff-written prose about the show. Stripping the data table leaves nothing written. Rule F, same family as the already-ledgered IMDb/TMDB-style title records.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-02T22:05:20Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-13973",
+          "note": "La Vanguardia's TMDB-powered show-catalog page for El círculo: synopsis, cast, episode list, streaming availability and audience rating, no staff-written prose about the show. Stripping the data table leaves nothing written. Rule F, same family as the already-ledgered IMDb/TMDB-style title records."
+        }
+      ]
+    },
+    {
+      "url": "https://whats-on-netflix.com/TOP-10-TITLE-SEARCH?week=2026-10-18",
+      "firstSeen": "2026-11-02T22:05:20Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T22:05:20Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "What's on Netflix Top 10 title-search tool, week-filtered variant (?week= param instead of ?title=): live ranking-table/search database for the week of Oct 12-18 2026 (Inside The Circle #6 non-English TV, 12.3M hours / 2.0M views, week 2), no written editorial commentary. New query-param shape not covered by the already-ledgered ?title= sibling rows. Rule F, same family.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-02T22:05:20Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13973",
+          "note": "What's on Netflix Top 10 title-search tool, week-filtered variant (?week= param instead of ?title=): live ranking-table/search database for the week of Oct 12-18 2026 (Inside The Circle #6 non-English TV, 12.3M hours / 2.0M views, week 2), no written editorial commentary. New query-param shape not covered by the already-ledgered ?title= sibling rows. Rule F, same family."
+        }
+      ]
+    },
+    {
+      "url": "https://digitalfernsehen.de/news/inhalte/fernsehen/nach-netflix-aus-streamingdienst-fuehrt-the-circle-fort-1190299",
+      "firstSeen": "2026-11-02T22:05:20Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T22:05:20Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Headline affirmatively names a different, specific title: 'The Circle' (the Netflix reality-competition format) continuing at another streaming service after its Netflix run ends -- not El Círculo/Inside the Circle. Rule G no-fetch carve-out (named different title).",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-02T22:05:20Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-13973",
+          "note": "Headline affirmatively names a different, specific title: 'The Circle' (the Netflix reality-competition format) continuing at another streaming service after its Netflix run ends -- not El Círculo/Inside the Circle. Rule G no-fetch carve-out (named different title)."
+        }
+      ]
+    },
+    {
+      "url": "https://eltiempomx.com/noticia/2026/netflix-anuncia-sus-estrenos-de-noviembre-de-2026-en-mexico.html",
+      "firstSeen": "2026-11-02T22:05:20Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T22:05:20Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix November 2026 Mexico premiere roundup (Palomas Negras, La emperatriz, Bienvenidos a El Bulli, etc.) -- no mention of El Círculo/Inside the Circle anywhere in the body. Surfaced only via a broad 'Netflix noviembre' query match.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-02T22:05:20Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13973",
+          "note": "Netflix November 2026 Mexico premiere roundup (Palomas Negras, La emperatriz, Bienvenidos a El Bulli, etc.) -- no mention of El Círculo/Inside the Circle anywhere in the body. Surfaced only via a broad 'Netflix noviembre' query match."
+        }
+      ]
+    },
+    {
+      "url": "https://eleconomista.com.mx/arteseideas/estrenos-netflix-noviembre-2026-son-series-peliculas-eventos-llegan-mexico-20261025-840336.html",
+      "firstSeen": "2026-11-02T22:05:20Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T22:05:20Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix November 2026 Mexico premiere/events roundup -- no mention of El Círculo/Inside the Circle anywhere in the body. Surfaced only via a broad 'Netflix noviembre' query match.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-02T22:05:20Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-13973",
+          "note": "Netflix November 2026 Mexico premiere/events roundup -- no mention of El Círculo/Inside the Circle anywhere in the body. Surfaced only via a broad 'Netflix noviembre' query match."
+        }
+      ]
+    },
+    {
+      "url": "https://elimparcial.com/espectaculos/2026/10/21/que-ver-en-netflix-en-noviembre-de-2026-estas-son-las-series-y-peliculas-que-llegan-al-catalogo",
+      "firstSeen": "2026-11-02T22:05:20Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-02T22:05:20Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix November 2026 catalog roundup (series/films arriving) -- no mention of El Círculo/Inside the Circle or any similar term anywhere in the body. Surfaced only via a broad 'Netflix noviembre' query match.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-02T22:05:20Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13973",
+          "note": "Netflix November 2026 catalog roundup (series/films arriving) -- no mention of El Círculo/Inside the Circle or any similar term anywhere in the body. Surfaced only via a broad 'Netflix noviembre' query match."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-02T18:06:33Z"
+  "lastUpdated": "2026-11-02T22:05:20Z"
 }
