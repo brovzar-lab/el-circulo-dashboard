@@ -1246,7 +1246,7 @@
     "market": "Mexico",
     "type": "Feature",
     "excerpt": "Structural comparison of the Netflix adaptation to the 2013 source novel: both center on four friends entangled in scandal after an actress's death, but the series updates the PRI-era backdrop to contemporary Mexico under a female president and shifts emphasis from investigative journalism to personal relationships.",
-    "storyGroup": null
+    "storyGroup": "milenio-novel-comparison-interview-20261009"
   },
   {
     "outlet": "El Diario de Chihuahua",
@@ -3651,5 +3651,18 @@
     "type": "News",
     "excerpt": "Trade-press recap of a Netflix Mexico content-slate reveal event names El Círculo among the announced titles: \"a series starring Zuria Vega, Osvaldo Benavides, Michel Brown, and Raul Briones, adapted from the novel Los corruptores by Jorge Zepeda Patterson,\" alongside other 2026 Mexican titles (Santita, México 86, El otro padre). Pre-identity-era coverage in scope per LEMA-12964: affirmatively establishes lineage via named novel, author, and platform.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Agua Quemada",
+    "headline": "El Círculo en Netflix: la ficción se infiltra nuevamente en las entrañas del poder",
+    "url": "https://aguaquemada.mx/el-circulo-en-netflix-la-ficcion-se-infiltra-nuevamente-en-las-entranas-del-poder",
+    "date": "Oct 9, 2026",
+    "ts": 20261009,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Derivative write-up citing a Milenio interview with Jorge Zepeda Patterson: covers the Netflix premiere of El Círculo, adapted from his 2013 novel Los corruptores, following four childhood friends drawn into a blackmail network after a leaked video threatens to expose secrets that could destroy their friendships. Notes the story's themes of power, corruption, journalism and disinformation remain relevant, and that adaptations of the other two novels in his trilogy are being considered.",
+    "storyGroup": "milenio-novel-comparison-interview-20261009"
   }
 ]
