@@ -3664,5 +3664,44 @@
     "type": "Feature",
     "excerpt": "Derivative write-up citing a Milenio interview with Jorge Zepeda Patterson: covers the Netflix premiere of El Círculo, adapted from his 2013 novel Los corruptores, following four childhood friends drawn into a blackmail network after a leaked video threatens to expose secrets that could destroy their friendships. Notes the story's themes of power, corruption, journalism and disinformation remain relevant, and that adaptations of the other two novels in his trilogy are being considered.",
     "storyGroup": "milenio-novel-comparison-interview-20261009"
+  },
+  {
+    "outlet": "Omelete México",
+    "headline": "El círculo | ¿Quién mató a Pamela Dosantos?, final explicado de la serie",
+    "url": "https://www.omelete.com.mx/series-tv/el-circulo-quien-mato-a-pamela-dosantos-final-explicado-de-la-serie",
+    "date": "Oct 21, 2026",
+    "ts": 20261021,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Ending-explained piece: reveals Jaime orchestrated Pamela Dosantos's death and the leaked video framing General Salazar to protect himself, Salazar's suicide with instructions to continue pursuing Tomás and Amelia, and the kidnapping of Jimena and Viridiana signaling the power network remains active.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Reporte Noreste",
+    "headline": "Los corruptores en la actualidad",
+    "url": "https://reportenoreste.com/2026/10/21/los-corruptores-en-la-actualidad/",
+    "date": "Oct 21, 2026",
+    "ts": 20261021,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Opinion column by Zaira Rosas tying Jorge Zepeda Patterson's 2013 novel 'Los corruptores' to present-day Mexican politics, then connecting it to Netflix's recent adaptation 'El círculo': notes the series keeps character names and the friendship-of-four focus while softening direct political-figure critique from the novel.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Kewe (X)",
+    "headline": "Recommends El Círculo in a reply thread about another Netflix show",
+    "url": "https://x.com/BoTotes/status/2115952608972071029",
+    "date": "Oct 29, 2026",
+    "ts": 20261029,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Personal account (@BoTotes, 'Kewe • 🇲🇽', no bio/independent public-role signal found) replies to an unrelated thread about Netflix's 'Nadie quiere esto' with a one-line recommendation: 'Cuando termines, te recomiendo El Círculo, en Netflix. 👌🏼'. Account-type note: profile carries no affirmative public-figure signal and none excluding it either; included per Rule C (include and escalate) on the same ambiguous-account-type basis as the already-included Mario Di Costanzo, Magú, and El sensei de la política rows.",
+    "storyGroup": null
   }
 ]
