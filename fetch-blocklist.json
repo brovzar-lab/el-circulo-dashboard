@@ -12462,7 +12462,73 @@
           "note": "Redundant syndication: verbatim copy of Reporte Noreste's Zaira Rosas column, already tracked at the original outlet. Rule I second address, skipMethod=body_fetch."
         }
       ]
+    },
+    {
+      "url": "https://cinemarascals.com/shadows-of-loyalty-a-deep-dive-into-netflixs-inside-the-circle/",
+      "firstSeen": "2026-11-03T06:02:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T06:02:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Cinema Rascals 'Shadows of Loyalty: A Deep Dive into Netflix's Inside The Circle' -- genuine original critical analysis (verdict: stylish but emotionally thin, weak character development, shift to generic action undercuts the thriller's stakes). Confirmed via raw HTML fetch: no JSON-LD datePublished, no article:published_time meta tag, no <time> element, no visible byline/dateline anywhere on the rendered page. No recoverable real publish date by any of the five dateSource methods. Rule A: omitted from data.json for lack of a date, not a guessed/proxied one.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-03T06:02:27Z",
+          "method": "WebFetch + raw curl HTML inspection",
+          "status": 200,
+          "issue": "LEMA-13978",
+          "note": "Original review prose confirmed; no datePublished/meta/dateline found by any method. editorial_undateable per Rule A."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/es/tv",
+      "firstSeen": "2026-11-03T06:02:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T06:02:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Global Top 10 chart, Spanish-locale path (/es/tv) -- 'Top 10 global de series de habla inglesa' ranking table (rank/views/runtime/hours viewed), no written analysis. Inside The Circle/El Círculo does not appear (English-language chart; the show ranks on the separate Non-English chart, already ledgered at netflix.com/tudum/top10/tv-non-english). Same Rule F listing/database family as the already-ledgered netflix.com/tudum/top10/tv (bare English path) and netflix.com/tudum/top10/es/mexico/tv (locale-prefixed) siblings -- distinct normalized key from both due to the /es/ locale prefix with no country segment.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-03T06:02:27Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13978",
+          "note": "Confirmed bare ranking table, show not present on this English-language global chart; Rule F by family, same as already-ledgered tv and tv-non-english siblings."
+        }
+      ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/tv/global",
+      "firstSeen": "2026-11-03T06:02:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T06:02:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Official Netflix Tudum Global TV Top 10 chart, /tv/global path variant -- ranking table plus a short unrelated article teaser ('Animals and Below Hold the Top Spots for a Third Week') about other titles, no written content about El Círculo/Inside the Circle. Show does not appear in this week's (10/19-10/25/26) Global Top 10. Same Rule F listing/database family as the already-ledgered netflix.com/tudum/top10/tv (bare path) sibling -- distinct normalized key due to the /global segment.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-03T06:02:27Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13978",
+          "note": "Confirmed bare ranking table (plus unrelated teaser prose about other titles), show not present on this week's chart; Rule F by family, same as already-ledgered tv sibling."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-03T02:00:00Z"
+  "lastUpdated": "2026-11-03T06:02:27Z"
 }
