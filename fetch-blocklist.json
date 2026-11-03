@@ -724,11 +724,11 @@
       "firstSeen": "2026-10-09T02:20:00Z",
       "failCount": 0,
       "lastStatus": 200,
-      "lastAttempt": "2026-11-01T18:00:00Z",
+      "lastAttempt": "2026-11-03T14:05:52Z",
       "cooldownUntil": null,
       "permanentSkip": true,
       "skipReason": "editorial_listing_or_database",
-      "skipNote": "RT season page re-check: Tomatometer now shows 4 Reviews (up from 3 on 2026-10-17), still no percentage/consensus. The 4th review's critic/outlet could not be identified this run -- RT's review list is gated behind a client-side 'Load More' control with no server-rendered content (confirmed via WebFetch and Tavily Extract, both returned the empty 'Load More' shell; Playwright was unavailable this run, browser instance locked by a concurrent process; no Firecrawl access for this agent). Rule H mining duty not fully dischargeable this run for the 4th review -- same structural limitation already on record from LEMA-12295's episode-reviews page. Page itself remains Rule F (listing/database), disposition unchanged. Re-check again on a future sweep when a rendering-capable fetch path is available.",
+      "skipNote": "RT season page re-check: Tomatometer still shows 4 Reviews, no percentage/consensus. The previously-unidentified 4th review (noted 2026-11-01 as not dischargeable due to RT's client-side 'Load More' gate) is now identified via a fresh Tavily search of the live RT page's cached snippet: Srijoni Rudra / Digital Mafia Talkies, dated Oct 19, 2026 in RT's own byline -- this is the same review already tracked in data.json as 'DMT (Digital Mind Talkies)' (Srijoni Rudra, ts 20261008, dmtalkies.com). Outlet-name rendering differs slightly between RT's credit ('Digital Mafia Talkies') and this ledger's data.json outlet field ('DMT (Digital Mind Talkies)') and RT's credited date (Oct 19) differs from the source page's own dateline (Oct 8) -- both point to the same dmtalkies.com review by the same critic on the same show, no new row needed. Rule H mining duty for this page is now fully discharged: all 4 Tomatometer-counted reviews are confirmed already in data.json (LeisureByte/Archi Sengupta, Heaven of Horror/Karina Adelgaard, Decider/Joel Keller, DMT/Srijoni Rudra). Page itself remains Rule F (listing/database), disposition unchanged.",
       "skipMethod": "body_fetch",
       "history": [
         {
@@ -751,6 +751,13 @@
           "status": 200,
           "issue": "LEMA-13888",
           "note": "RT season page re-check: Tomatometer now shows 4 Reviews (up from 3 on 2026-10-17), still no percentage/consensus. The 4th review's critic/outlet could not be identified this run -- RT's review list is gated behind a client-side 'Load More' control with no server-rendered content (confirmed via WebFetch and Tavily Extract, both returned the empty 'Load More' shell; Playwright was unavailable this run, browser instance locked by a concurrent process; no Firecrawl access for this agent). Rule H mining duty not fully dischargeable this run for the 4th review -- same structural limitation already on record from LEMA-12295's episode-reviews page. Page itself remains Rule F (listing/database), disposition unchanged. Re-check again on a future sweep when a rendering-capable fetch path is available."
+        },
+        {
+          "attempt": "2026-11-03T14:05:52Z",
+          "method": "Tavily Search",
+          "status": 200,
+          "issue": "LEMA-13995",
+          "note": "Identified RT's previously-unknown 4th review as Srijoni Rudra/Digital Mafia Talkies (RT-credited Oct 19), matching the already-tracked DMT (Digital Mind Talkies) review in data.json. Rule H mining duty closed, no new row."
         }
       ]
     },
@@ -12570,7 +12577,71 @@
           "note": "Off-topic: Netflix reality show 'The Circle' S5, not the Mexican thriller El Circulo/Inside the Circle. Article dated 2022-12-31."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circuito-netflix",
+      "firstSeen": "2026-11-03T14:05:52Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T14:05:52Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('El Circuito Netflix', a slug variant using 'circuito' rather than 'círculo'), same established Rule F surface family as the 20+ other already-ledgered tiktok.com/discover/ pages for this show: an aggregation of many unrelated creator videos under the topic tag (including a genuine El Círculo cast-interview clip from a third-party creator), not a distinct document of its own. Confirmed via Tavily Extract as the same grid-of-video-thumbnails shape as the other ledgered discover pages. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-03T14:05:52Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13995",
+          "note": "TikTok /discover/ aggregation page, 'circuito' slug variant, same Rule F family as existing discover pages for this show."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/personajes-de-serie-el-c%C3%ADrculo",
+      "firstSeen": "2026-11-03T14:05:52Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T14:05:52Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/ keyword-aggregation page ('Personajes De Serie El Círculo'): confirmed via Tavily Extract as a grid of unrelated video thumbnails from multiple creators (Netflix Latinoamérica, Candrés Peredo, others), no written editorial content of its own, same surface family as the 20+ other already-ledgered tiktok.com/discover/ pages for this show. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-03T14:05:52Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13995",
+          "note": "TikTok /discover/ aggregation page, same Rule F family as existing discover pages for this show."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DfPau7yD9p7",
+      "firstSeen": "2026-11-03T14:05:52Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T14:05:52Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "@royaldeluxmx (Royal Delux) Instagram post, an entertainment-content brand account (promotes a full book-vs-series comparison article linked in bio), in-scope under Rule B. Caption: 'Un asesinato, cuatro amigos y demasiados secretos' -- promotes El Círculo, Netflix's adaptation of Jorge Zepeda Patterson's 'Los Corruptores', naming the four leads. WebFetch returned only a relative post age ('1d') and an unrelated image's alt-text date; no JSON-LD, no article:published_time, no visible on-page dateline for this specific post. No recoverable real publish date. Genuine coverage omitted solely for lack of a date, not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-03T14:05:52Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13995",
+          "note": "Royal Delux (editorial-brand account) El Círculo promo post, genuine coverage, no recoverable absolute publish date. Rule A / editorial_undateable."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-03T10:08:38Z"
+  "lastUpdated": "2026-11-03T14:05:52Z"
 }
