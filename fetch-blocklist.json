@@ -12419,7 +12419,50 @@
           "note": "Netflix November 2026 catalog roundup (series/films arriving) -- no mention of El Círculo/Inside the Circle or any similar term anywhere in the body. Surfaced only via a broad 'Netflix noviembre' query match."
         }
       ]
+    },
+    {
+      "url": "https://www.moviepilot.de/news/netflix-miniserie-charts-thriller-1165311",
+      "firstSeen": "2026-11-03T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Moviepilot.de article about 'Haustausch' (English title 'A Couple of Lies'), a Swedish Netflix miniseries based on a Stefan Ahnhem novel, climbing to #2 on Netflix's global series chart behind Lupin. Body-fetch confirmed via Tavily Extract: no mention of El Círculo/Inside the Circle anywhere in the article. Surfaced only because the broad 'Netflix Top 10 Tudum ranking' query matched on generic chart/miniseries keywords. Rule G.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-03T02:00:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13977",
+          "note": "Off-topic false positive: article is about the Swedish Netflix miniseries 'Haustausch'/'A Couple of Lies', no mention of El Círculo. Rule G, skipMethod=body_fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://www.impactohuasteco.com/?p=20428",
+      "firstSeen": "2026-11-03T02:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T02:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Verbatim republication of Zaira Rosas's 'Los corruptores en la actualidad' opinion column, already tracked at its original outlet Reporte Noreste (https://reportenoreste.com/2026/10/21/los-corruptores-en-la-actualidad/, byline confirmed by both the visible 'Por: Zaira Rosas' credit on Reporte Noreste and the shared article image filename crediting 'Zaira Rosas-Reporte Noreste'). Body-fetch comparison confirmed identical article text on both sites. This site serves the article at its raw WordPress ?p=<id> address (confirmed via canonical tag, not a redirect to a slug URL -- looksLikeUnresolvedIdPermalink flagged true but the canonical stays ?p=20428, so this is the site's native URL form, not an unresolved second address for a slug). Rule I second address.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-03T02:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13977",
+          "note": "Redundant syndication: verbatim copy of Reporte Noreste's Zaira Rosas column, already tracked at the original outlet. Rule I second address, skipMethod=body_fetch."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-02T22:05:20Z"
+  "lastUpdated": "2026-11-03T02:00:00Z"
 }
