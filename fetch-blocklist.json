@@ -12528,7 +12528,49 @@
           "note": "Confirmed bare ranking table (plus unrelated teaser prose about other titles), show not present on this week's chart; Rule F by family, same as already-ledgered tv sibling."
         }
       ]
+    },
+    {
+      "url": "https://es.moyens.net/netflix/the-circle-quien-ganara-la-temporada-5-los-fanaticos-comparten-sus-predicciones/",
+      "firstSeen": "2026-11-03T10:08:38Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T10:08:38Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "About Netflix's unrelated reality-competition format 'The Circle' Season 5 (contestants Chaz Lawery, Raven Sutton, Sam Carmona, etc.), published 2023-01-17, predating El Circulo entirely. Surfaced only via the generic 'El Circulo'/'The Circle' title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-03T10:08:38Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-13990",
+          "note": "Off-topic: Netflix reality show 'The Circle' S5, not the Mexican thriller El Circulo/Inside the Circle. Article dated 2023-01-17."
+        }
+      ]
+    },
+    {
+      "url": "https://es.moyens.net/netflix/los-fanaticos-the-circle-odiaron-instantaneamente-concursante-temporada-son-tan/",
+      "firstSeen": "2026-11-03T10:08:38Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T10:08:38Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "About Netflix's unrelated reality-competition format 'The Circle' Season 5 (contestant Paris McTizic and others), published 2022-12-31, predating El Circulo entirely. Surfaced only via the generic 'El Circulo'/'The Circle' title collision documented in this routine's known-noise note.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-03T10:08:38Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-13990",
+          "note": "Off-topic: Netflix reality show 'The Circle' S5, not the Mexican thriller El Circulo/Inside the Circle. Article dated 2022-12-31."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-03T06:02:27Z"
+  "lastUpdated": "2026-11-03T10:08:38Z"
 }
