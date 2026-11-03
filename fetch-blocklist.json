@@ -12692,7 +12692,28 @@
           "note": "Confirmed via body fetch: pure catalog metadata, no editorial content."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DfH-HGqFZ-Y",
+      "firstSeen": "2026-11-03T22:03:32.995Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T22:03:32.995Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Instagram post from account revistacirculorojo (\"Revista Círculo Rojo\"), surfaced only via the generic \"círculo\" word collision noted in this routine's known-noise-source. Fetched via Tavily Extract: post carries only image alt-text (screenshots of text/Twitter posts) with no caption text recovered, and nothing in the fetched content references Netflix, El Círculo/Inside the Circle, or any cast member. Web search found no publication by this name connected to the show. Off-topic, Rule G.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-03T22:03:32.995Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-13997",
+          "note": "Off-topic generic-word-collision false positive, no El Círculo/Netflix content in fetched post."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-03T18:00:00Z"
+  "lastUpdated": "2026-11-03T22:03:32.995Z"
 }
