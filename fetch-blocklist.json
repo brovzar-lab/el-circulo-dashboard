@@ -11685,9 +11685,9 @@
     {
       "url": "https://curtonews.com/en/global/netflix-top-10-entenda-ranking-streaming/",
       "firstSeen": "2026-10-31T06:13:16.065Z",
-      "failCount": 1,
+      "failCount": 2,
       "lastStatus": 403,
-      "lastAttempt": "2026-10-31T06:13:16.065Z",
+      "lastAttempt": "2026-11-03T18:00:00Z",
       "cooldownUntil": null,
       "permanentSkip": false,
       "history": [
@@ -11697,6 +11697,13 @@
           "status": 403,
           "issue": "LEMA-13837",
           "note": "WebFetch returned 403 Forbidden; Tavily Extract (advanced) and Tavily Search both failed to retrieve this page's actual content (search returned unrelated results). Full fallback chain exhausted this run without a usable fetch -- NOT evidence of off-topic, logged as a fetch failure per ledger policy."
+        },
+        {
+          "attempt": "2026-11-03T18:00:00Z",
+          "method": "WebFetch+Tavily",
+          "status": 403,
+          "issue": "LEMA-13996",
+          "note": "WebFetch returned 403 Forbidden; Tavily Extract (basic and advanced) both returned empty content, and Tavily Search for the URL's own content surfaced only unrelated results. Full fallback chain exhausted this run without a usable fetch -- NOT evidence of off-topic, logged as a fetch failure per ledger policy (same pattern as this row's prior LEMA-13837 attempt)."
         }
       ]
     },
@@ -12641,7 +12648,51 @@
           "note": "Royal Delux (editorial-brand account) El Círculo promo post, genuine coverage, no recoverable absolute publish date. Rule A / editorial_undateable."
         }
       ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/coming-soon/netflix-mexico-2026-slate-every-new-series-and-movie-coming-this-year",
+      "firstSeen": "2026-11-03T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Whats-on-Netflix 'Netflix Mexico 2026 Slate' roundup article (published 2026-02-12, pre-premiere, when the show was still titled 'Corruptores'): a list of ~15 upcoming Netflix Mexico titles, each given a heading and a short paragraph or two of plot/cast details pulled from press materials, no critical analysis of any individual title. El Circulo gets one such short paragraph among the ~15. Same shape as the already-ledgered about.netflix.com Mexican-slate newsroom piece and the CinePremiere Netflix-roundup entry. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-03T18:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13996",
+          "note": "Confirmed via body fetch: roundup/listing shape, no dedicated editorial content for this title specifically."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/je/title/80217807",
+      "firstSeen": "2026-11-03T18:00:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-03T18:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "netflix.com/je/title/80217807 (Jersey locale). Catalog/title page: synopsis, cast, episode guide, technical/subscription metadata only, no reviews or editorial content. Same family as the already-ledgered netflix.com/<locale>/title/80217807 sibling pages (e.g. /ar/, /be-en/) and the bare netflix.com/title/80217807 row. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-03T18:00:00Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13996",
+          "note": "Confirmed via body fetch: pure catalog metadata, no editorial content."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-03T14:05:52Z"
+  "lastUpdated": "2026-11-03T18:00:00Z"
 }
