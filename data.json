@@ -1787,7 +1787,7 @@
     "market": "Spain",
     "type": "Feature",
     "excerpt": "Spain-edition preview/feature (distinct byline and article from the already-tracked LatAm-edition piece) on the premise, cast, and themes: argues the series is less about the leaked video than about loyalty and complicity within a powerful circle of friends.",
-    "storyGroup": null
+    "storyGroup": "premiere-day-coverage-20261007"
   },
   {
     "outlet": "Notitel",
@@ -2441,7 +2441,7 @@
     "market": "Latin America",
     "type": "Article",
     "excerpt": "Martin Cid Magazine (LatAm) profile of Argentine actor Michel Brown by Penelope H. Fritz, tracing his career from Pasión de Gavilanes through Amar a Muerte and Pálpito to his current role as journalist Tomás in El Círculo.",
-    "storyGroup": null
+    "storyGroup": "michel-brown-profile-20261019"
   },
   {
     "outlet": "Martin Cid Magazine (Spain)",
@@ -2454,7 +2454,7 @@
     "market": "Spain",
     "type": "Article",
     "excerpt": "Martin Cid Magazine (Spain) profile of Michel Brown by Penelope H. Fritz, opening on his legacy role as Franco Reyes in Antena 3's Pasión de Gavilanes and covering his current part as journalist Tomás in El Círculo.",
-    "storyGroup": null
+    "storyGroup": "michel-brown-profile-20261019"
   },
   {
     "outlet": "Che Netflix (Instagram)",
@@ -2519,7 +2519,7 @@
     "market": "International",
     "type": "Article",
     "excerpt": "Martin Cid Magazine (EN) profile of Osvaldo Benavides by Penelope H. Fritz, covering his October spotlight on two screens: playing Jaime, a businessman who trades in other people's information, in Netflix's El Círculo, alongside executive-producing and starring in ViX's Timbiriche; notes El Círculo ranked second among Netflix's trending titles in Mexico within two days of its Oct 7 premiere.",
-    "storyGroup": null
+    "storyGroup": "osvaldo-benavides-profile-20261019"
   },
   {
     "outlet": "Martin Cid Magazine (Spain)",
@@ -2532,7 +2532,7 @@
     "market": "Spain",
     "type": "Article",
     "excerpt": "Spain-edition (distinct localized article from the EN edition, same Penelope H. Fritz byline) of the Osvaldo Benavides profile, covering his role as Jaime in El Círculo alongside his Timbiriche producer/acting credit.",
-    "storyGroup": null
+    "storyGroup": "osvaldo-benavides-profile-20261019"
   },
   {
     "outlet": "Martin Cid Magazine (Germany)",
@@ -2545,7 +2545,7 @@
     "market": "International",
     "type": "Article",
     "excerpt": "German-edition (distinct localized article, same Penelope H. Fritz byline) of the Osvaldo Benavides profile, covering his role as Jaime in Netflix's El Círculo alongside his Timbiriche producer/acting credit.",
-    "storyGroup": null
+    "storyGroup": "osvaldo-benavides-profile-20261019"
   },
   {
     "outlet": "Martin Cid Magazine (France)",
@@ -2558,7 +2558,7 @@
     "market": "International",
     "type": "Article",
     "excerpt": "French-edition (distinct localized article, same Penelope H. Fritz byline) of the Osvaldo Benavides profile, covering his role as Jaime in Netflix's El Círculo alongside his Timbiriche producer/acting credit.",
-    "storyGroup": null
+    "storyGroup": "osvaldo-benavides-profile-20261019"
   },
   {
     "outlet": "El Informador",
@@ -3013,7 +3013,7 @@
     "market": "International",
     "type": "Profile",
     "excerpt": "Profile of Zuria Vega by Penelope H. Fritz covers her career and, prominently, her role as Amelia in El Círculo (arrived on Netflix Oct 7, 2026, adapted from Jorge Zepeda Patterson's Los corruptores), including her quote on friendships between men and women rarely explored in fiction.",
-    "storyGroup": null
+    "storyGroup": "zuria-vega-profile-20261018"
   },
   {
     "outlet": "Vertice Noticias",
@@ -3770,16 +3770,16 @@
     "storyGroup": null
   },
   {
-    "outlet": "Martin Cid Magazine ES",
+    "outlet": "Martin Cid Magazine (Spain)",
     "headline": "Zuria Vega, de heroína de Televisa a actriz de thrillers que sus hijos no pueden ver",
     "url": "https://es.martincid.com/people/zuria-vega-de-heroina-de-televisa-a-actriz-de-thrillers-que-sus-hijos-no-pueden-ver",
     "date": "Oct 18, 2026",
     "ts": 20261018,
     "dateSource": "article_published_time",
     "lang": "ES",
-    "market": "International",
+    "market": "Spain",
     "type": "Profile",
     "excerpt": "Spanish-language edition of Martin Cid Magazine's Zuria Vega profile (same author Penelope H. Fritz, same Oct 18 2026 publish date as the already-tracked English edition at martincid.com/people/zuria-vega); covers El Círculo prominently, quoting Vega on her character Amelia and the show's exploration of adult friendships across genders rarely depicted in fiction.",
-    "storyGroup": null
+    "storyGroup": "zuria-vega-profile-20261018"
   }
 ]
