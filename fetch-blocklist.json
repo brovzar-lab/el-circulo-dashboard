@@ -12966,7 +12966,41 @@
           "note": "Classified via established Rule F locale-variant family precedent (14 prior sibling entries, same title id 80217807)."
         }
       ]
+    },
+    {
+      "url": "https://facebook.com/100083002797453/posts/1118080150968734",
+      "firstSeen": "2026-11-04T18:05:52Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-04T18:05:52Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-11-04T18:05:52Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-14011",
+          "note": "WebFetch returned only the truncated page title (\"De qué trata 'El círculo', la nueva...\") and a 'SOLO Telenovelas' site-name fragment; no post body, account identity, or date recoverable. Firecrawl MCP tool was not available this run (fallback chain not completable). failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
+    },
+    {
+      "url": "https://instagram.com/reel/DeVXS_Lkiuy",
+      "firstSeen": "2026-11-04T18:05:52Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-04T18:05:52Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-11-04T18:05:52Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-14011",
+          "note": "WebFetch returned no usable content (bare 'Instagram' placeholder) -- account handle, caption, and date all unrecoverable behind Instagram's login wall. Firecrawl MCP tool was not available this run (fallback chain not completable). failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-04T14:04:48Z"
+  "lastUpdated": "2026-11-04T18:05:52Z"
 }
