@@ -12815,7 +12815,90 @@
           "note": "Fan-group generic question post, no original editorial content. Rule B account-type gate."
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/3990393370996402/posts/28819026604373068",
+      "firstSeen": "2026-11-04T10:07:41Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-04T10:07:41Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-11-04T10:07:41Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-14005",
+          "note": "WebFetch returned only a truncated login-walled header fragment ('ESTRENOS DE OCTUBRE', Palin Escuintla Guatemala community page), no extractable post body. Firecrawl fallback returned HTTP 403: 'we do not support this site' for facebook.com. Full fallback chain exhausted this attempt. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-el-circulo-netflix-segunda-temporada",
+      "firstSeen": "2026-11-04T10:07:41Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-04T10:07:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as el-circulo-netflix-actores and other already-ledgered /discover/ pages for this show: an aggregation of many videos under the topic tag, not a distinct document of its own. WebFetch, Tavily Extract, and direct curl all returned only the generic JS-shell page (no og tags, no extractable per-document body).",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-04T10:07:41Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14005",
+          "note": "Confirmed Rule F listing/database page, no extractable body distinct from the aggregation shell."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/actores-de-la-serie-el-circulo",
+      "firstSeen": "2026-11-04T10:07:41Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-04T10:07:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as el-circulo-netflix-actores and other already-ledgered /discover/ pages for this show: an aggregation of many videos under the topic tag (interviews, fan clips, cast features), not a distinct document of its own. WebFetch, Tavily Extract, and direct curl all returned only the generic JS-shell page (no og tags, no extractable per-document body).",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-04T10:07:41Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14005",
+          "note": "Confirmed Rule F listing/database page, no extractable body distinct from the aggregation shell."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@francoreyes504/video/7703732920120331541",
+      "firstSeen": "2026-11-04T10:07:41Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-04T10:07:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Tavily's indexed search snippet attributed this URL to a Franco Reyes post about El Circulo, but a direct fetch of the live page shows the account now displays as \"Michelle 1M\" with an unrelated caption (\"Aca modelando un poco #parati #francoreyes\") and no reference to El Circulo, Netflix, or any cast member. The account/handle appears to have been renamed or repurposed since indexing. Not about the show at all; stale/mismatched search-index snippet, not a Rule A dateability question.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-04T10:07:41Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14005",
+          "note": "Live page content confirmed off-topic (unrelated modeling clip), not El Circulo coverage."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-04T06:13:28Z"
+  "lastUpdated": "2026-11-04T10:07:41Z"
 }
