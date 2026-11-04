@@ -3729,5 +3729,31 @@
     "type": "News",
     "excerpt": "Agencia EFE wire piece (via RPP Peru) on the Netflix premiere announcement: names Zuria Vega, Michel Brown, Raul Briones, Osvaldo Benavides as leads, cites the official synopsis around the leaked-video/blackmail plot and the Pamela Dosantos actress subplot, credits director Alejandro Lozano and producers Billy and Fernando Rovzar (Lemon Studios), and notes the novel Los Corruptores by Jorge Zepeda Patterson as source material. Part of the same Sep 9, 2026 press-kit trailer-reveal wave as MNI Noticias, Plano Informativo, and SensaCine Mexico.",
     "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "Royal Delux",
+    "headline": "El círculo: la corrupción cambia de rostro, pero conserva sus viejas costumbres",
+    "url": "https://royaldelux.mx/2026/11/02/el-circulo-la-corrupcion-cambia-de-rostro-pero-conserva-sus-viejas-costumbres",
+    "date": "Nov 2, 2026",
+    "ts": 20261102,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Men's lifestyle outlet Royal Delux compares the Netflix series to Jorge Zepeda Patterson's 2013 novel 'Los Corruptores', noting the series keeps the inciting murder and most characters while updating other elements.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Los Streameadores (YouTube)",
+    "headline": "El Círculo: El thriller de Netflix lleno de secretos y traiciones",
+    "url": "https://www.youtube.com/watch?v=ZNsrO5h9eCo",
+    "date": "Nov 2, 2026",
+    "ts": 20261102,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Review",
+    "excerpt": "Exa Monterrey 97.3 FM streaming-review podcast (hosts Ricardo Verastegui, Freddy Gaitan, Laura Arechiga) discusses El Circulo's plot and corruption themes; hosts rate it 4/5 and 3.5/5.",
+    "storyGroup": null
   }
 ]
