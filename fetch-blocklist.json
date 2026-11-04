@@ -12751,7 +12751,71 @@
           "note": "Netfliteando Facebook post re: El Círculo viewership (\"2 millones de visualizaciones\"). Tavily Extract returned no content; WebFetch returned only the truncated social-card headline, no full post text or date. Insufficient to classify or dateverify. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/ya-no-ser%C3%A9-solo-la-serie-el-c%C3%ADrculo",
+      "firstSeen": "2026-11-04T06:13:28Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-04T06:13:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as miniserie-el-circulo and inside-the-circle-on-netflix-review above -- an aggregation of many videos under the topic tag, not a distinct document of its own. WebFetch confirmed only the generic JS-shell page (no og tags, no extractable body).",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-04T06:13:28Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13999",
+          "note": "TikTok discover/hashtag index page, generic JS shell only; classified Rule F by URL-family pattern, same family as existing discover/ rows."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-netflix-actores",
+      "firstSeen": "2026-11-04T06:13:28Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-04T06:13:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as miniserie-el-circulo and inside-the-circle-on-netflix-review above -- an aggregation of many videos under the topic tag, not a distinct document of its own. WebFetch confirmed only the generic JS-shell page (no og tags, no extractable body).",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-04T06:13:28Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-13999",
+          "note": "TikTok discover/hashtag index page, generic JS shell only; classified Rule F by URL-family pattern, same family as existing discover/ rows."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/NetflixBangers/posts/3102086526845121",
+      "firstSeen": "2026-11-04T06:13:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-04T06:13:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "Public Facebook fan group 'NetflixBangers' -- generic fan question post (\"Anyone watched Inside the Circle on Netflix? What's your honest review?\"), no original reporting or editorial identity behind the group. Rule B account-type gate applies regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-04T06:13:28Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-13999",
+          "note": "Fan-group generic question post, no original editorial content. Rule B account-type gate."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-04T02:04:27Z"
+  "lastUpdated": "2026-11-04T06:13:28Z"
 }
