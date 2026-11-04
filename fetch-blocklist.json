@@ -13000,7 +13000,51 @@
           "note": "WebFetch returned no usable content (bare 'Instagram' placeholder) -- account handle, caption, and date all unrecoverable behind Instagram's login wall. Firecrawl MCP tool was not available this run (fallback chain not completable). failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
+    },
+    {
+      "url": "https://netflix.com/tudum/top10/mexico/tv/2021-09-12",
+      "firstSeen": "2026-11-04T22:04:55Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-04T22:04:55Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "skipNote": "Netflix Tudum Mexico TV Top 10 chart, dated archive path -- same client-rendered ranking-table template as the already-ledgered netflix.com/tudum/top10/mexico/tv bare-path sibling and its other dated-archive siblings. Confirmed via body fetch: this week's chart (2026-10-26 to 2026-11-01) does not even list Inside The Circle, but disposition is by surface family (Rule F), not by whether the title currently appears. Same established Tudum/FlixPatrol Top10 listing/database family.",
+      "history": [
+        {
+          "attempt": "2026-11-04T22:04:55Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14014",
+          "note": "Tudum Top10 dated-archive chart page, Rule F listing/database family, confirmed by body fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://facebook.com/osvaldobenavidesoficial/posts/1790597655768214",
+      "firstSeen": "2026-11-04T22:04:55Z",
+      "failCount": 1,
+      "lastStatus": 403,
+      "lastAttempt": "2026-11-04T22:04:55Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "title_snippet_only",
+      "reviewable": true,
+      "skipNote": "Osvaldo Benavides' official Facebook page post (\"Ya acabaron #ElCirculo? ... esta en Netflix Latinoamerica rompiendola con todo\") reacting to the show. No recoverable real publish date: WebFetch returned no dateline, Tavily Extract returned empty, and Exa Contents returned a 403 SOURCE_NOT_AVAILABLE error -- full fetch fallback chain exhausted behind Facebook's access wall. Rule A: no proxy/inferred date, so this stays undateable rather than guessed. reviewable=true in case a future run can recover the date via a different method.",
+      "history": [
+        {
+          "attempt": "2026-11-04T22:04:55Z",
+          "method": "WebFetch+TavilyExtract+ExaContents",
+          "status": 403,
+          "issue": "LEMA-14014",
+          "note": "All three fetch methods failed to recover a real publish date behind Facebook's access wall; permanentSkip as editorial_undateable per Rule A, reviewable for future re-check."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-04T18:17:58Z"
+  "lastUpdated": "2026-11-04T22:05:56Z"
 }
