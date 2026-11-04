@@ -12819,9 +12819,9 @@
     {
       "url": "https://www.facebook.com/groups/3990393370996402/posts/28819026604373068",
       "firstSeen": "2026-11-04T10:07:41Z",
-      "failCount": 1,
+      "failCount": 2,
       "lastStatus": 0,
-      "lastAttempt": "2026-11-04T10:07:41Z",
+      "lastAttempt": "2026-11-04T14:04:48Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -12830,6 +12830,13 @@
           "status": 0,
           "issue": "LEMA-14005",
           "note": "WebFetch returned only a truncated login-walled header fragment ('ESTRENOS DE OCTUBRE', Palin Escuintla Guatemala community page), no extractable post body. Firecrawl fallback returned HTTP 403: 'we do not support this site' for facebook.com. Full fallback chain exhausted this attempt. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        },
+        {
+          "attempt": "2026-11-04T14:04:48Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-14010",
+          "note": "Retry attempt: WebFetch again returned only the truncated login-walled header fragment ('Palin Escuintla, Guatemala | ESTRENOS DE OCTUBRE'), no extractable post body confirming any El Círculo content. Tavily Extract also returned no content for this URL. Firecrawl fallback confirmed unsupported for facebook.com (HTTP/API error: 'we do not support this site'). Full fallback chain exhausted again. failCount=2, no cooldown yet (needs 3 consecutive to cool down)."
         }
       ]
     },
@@ -12898,7 +12905,68 @@
           "note": "Live page content confirmed off-topic (unrelated modeling clip), not El Circulo coverage."
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/elhogardelcine/posts/2141367456747476",
+      "firstSeen": "2026-11-04T14:04:48Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-04T14:04:48Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-11-04T14:04:48Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-14010",
+          "note": "WebFetch returned only the bare page title ('El Hogar Del Cine | El círculo'), no extractable post body, author, or timestamp -- Facebook group post content is login-walled. Tavily Extract also returned no content for this URL. Firecrawl fallback confirmed unsupported for facebook.com (HTTP/API error: 'we do not support this site'). Full fallback chain exhausted this attempt. failCount=1, no cooldown yet (needs 3 consecutive to cool down). Candidate surfaced via Tavily search snippet only ('Serie bastante floja...'), too thin and unattributed to evaluate Rule B/dateability without a real body fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/canaltelecafe/videos/las-respuestas-podr%C3%ADan-estar-m%C3%A1s-cerca-pero-confiar-en-las-apariencias-puede-se/970095549027872",
+      "firstSeen": "2026-11-04T14:04:48Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-04T14:04:48Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Confirmed via direct body fetch: this Canal Telecafé (Colombian TV channel) video promotes an upcoming episode of 'El Círculo de los Uróboros', an unrelated Colombian telenovela about guilt, manipulation and secrets airing Friday Oct 30 at 9:30pm -- not Lemon Studios' Netflix 'El Círculo'/'Inside the Circle'. Surfaced only because the broad Spanish-language query matches the shared generic title words. Rule G off-topic false positive, same noise pattern the routine description anticipates for this show's generic title.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-04T14:04:48Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14010",
+          "note": "Confirmed different, unrelated show ('El Círculo de los Uróboros', Colombian telenovela) via body fetch. Rule G off-topic false positive."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/lu-en/title/80217807",
+      "firstSeen": "2026-11-04T14:04:48Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-04T14:04:48Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Netflix official title page (id 80217807), Luxembourg EN locale. Same established Rule F surface family as the already-ledgered netflix.com/*/title/80217807 locale variants (cz-en, sv-en, gi, im, in, ar, be-en, ly-en, gb, gp-es, sk, cg, je) -- bare official show/synopsis page, no written editorial prose about the show distinct from the catalog template. Classified on URL-family pattern consistent with the established precedent for this exact surface family; no new fetch needed to confirm per that precedent.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-04T14:04:48Z",
+          "method": "title_snippet_only",
+          "status": 200,
+          "issue": "LEMA-14010",
+          "note": "Classified via established Rule F locale-variant family precedent (14 prior sibling entries, same title id 80217807)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-04T10:07:41Z"
+  "lastUpdated": "2026-11-04T14:04:48Z"
 }
