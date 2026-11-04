@@ -12713,7 +12713,45 @@
           "note": "Off-topic generic-word-collision false positive, no El Círculo/Netflix content in fetched post."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/habr%C3%A1-segunda-temporada-de-el-circulo",
+      "firstSeen": "2026-11-04T16:00:00Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-04T16:00:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established Rule F surface family as 25+ other already-ledgered tiktok.com/discover/ pages for this show. Confirmed via Tavily Extract: renders the generic 'Discover' aggregator shell over unrelated creator videos (including several off-topic 'The Circle' reality-show and Turkish 'Halka' results) under the topic tag, not a distinct document of its own.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-04T16:00:00Z",
+          "method": "Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-13998",
+          "note": "TikTok discover/hashtag index page; rendered body confirms generic aggregator shell (not article content). Classified Rule F by URL-family pattern + confirmed body fetch."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/netfliteando/posts/el-c%C3%ADrculo-sigue-en-la-mas-vistas-de-netflix-2-millones-de-visualizaciones-y-to/1682822410126714",
+      "firstSeen": "2026-11-04T16:00:00Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-04T16:00:00Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-11-04T16:00:00Z",
+          "method": "Tavily Extract/WebFetch",
+          "status": 0,
+          "issue": "LEMA-13998",
+          "note": "Netfliteando Facebook post re: El Círculo viewership (\"2 millones de visualizaciones\"). Tavily Extract returned no content; WebFetch returned only the truncated social-card headline, no full post text or date. Insufficient to classify or dateverify. failCount=1, no cooldown yet (needs 3 consecutive to cool down)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-03T22:03:32.995Z"
+  "lastUpdated": "2026-11-04T16:00:00Z"
 }
