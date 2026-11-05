@@ -13156,7 +13156,91 @@
           "note": "Per-country weekly chart row only, no written analysis. Same FlixPatrol Rule F family."
         }
       ]
+    },
+    {
+      "url": "https://vozdeamerica.com/a/el-actor-michel-brown-participa-en-la-serie-parot-/6282146.html",
+      "firstSeen": "2026-11-05T18:05:41Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-05T18:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Voice of America interview (2021) about actor Michel Brown in the unrelated series \"Parot\" (Spanish Supreme Court doctrine drama). No mention of El Círculo / Inside the Circle anywhere in the article. Surfaced only via the Michel Brown cast-interview query. Rule G.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T18:05:41Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14026",
+          "note": "Confirmed off-topic: 2021 VOA piece on Michel Brown in \"Parot\", unrelated to El Círculo."
+        }
+      ]
+    },
+    {
+      "url": "https://letsfindmovie.com/mx/movies/inside-the-circle",
+      "firstSeen": "2026-11-05T18:05:41Z",
+      "failCount": 1,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-05T18:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Listing for a different, unrelated 2021 American film also titled \"Inside the Circle\" (cast: Omar Mora, Stefy Garcia), not the 2026 Netflix Mexican series. WebFetch timed out (504) and Tavily Extract fallback returned no content, so this disposition rests on title/snippet evidence (the search engine's own summary distinguishing the two titles), which already names the concrete alternative subject per the Rule G title-only carve-out.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-05T18:05:41Z",
+          "method": "WebFetch",
+          "status": null,
+          "issue": "LEMA-14026",
+          "note": "WebFetch 504 timeout; Tavily Extract fallback returned empty content. Off-topic disposition made on title/snippet evidence naming the 2021 American film homonym as the alternative subject."
+        }
+      ]
+    },
+    {
+      "url": "https://thetvdb.com/series/el-circulo",
+      "firstSeen": "2026-11-05T18:05:41Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-05T18:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TheTVDB series database entry: structured metadata (status, air dates, network, runtime, genres), a season/episode table, a blank-role cast list, and a multilingual one-paragraph logline only. No staff-written prose, review, or analysis. Same database family as the already-ledgered thetvdb.com/series/el-circulo/people subpage. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T18:05:41Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14026",
+          "note": "Confirmed Rule F listing/database page by body fetch, not URL slug."
+        }
+      ]
+    },
+    {
+      "url": "https://sacnilk.com/series/3104",
+      "firstSeen": "2026-11-05T18:05:41Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-05T18:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Sacnilk series profile page: user-rating widget, one-paragraph promotional synopsis, key-details table (genre/runtime/release), and unrelated related-articles teasers. No original staff-written analysis of El Círculo / Inside the Circle. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T18:05:41Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14026",
+          "note": "Confirmed Rule F listing/database page by body fetch, not URL slug."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-05T14:04:37Z"
+  "lastUpdated": "2026-11-05T18:05:41Z"
 }
