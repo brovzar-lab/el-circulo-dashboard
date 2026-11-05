@@ -13240,7 +13240,113 @@
           "note": "Confirmed Rule F listing/database page by body fetch, not URL slug."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/inside-the-circle-review-netflix",
+      "firstSeen": "2026-11-05T22:05:41Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-05T22:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same surface family as 6+ already-ledgered sibling /discover/ pages on this dataset. Tavily Extract confirmed only the generic logged-out JS shell ('Visit TikTok to discover profiles!'), no extractable per-video body -- an aggregation page, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T22:05:41Z",
+          "method": "Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-14027",
+          "note": "TikTok discover/topic index page, generic JS shell only; classified Rule F by established URL-family pattern."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/como-se-llama-la-actris-del-el-circulo-netflix",
+      "firstSeen": "2026-11-05T22:05:41Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-05T22:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same surface family as already-ledgered sibling /discover/ pages on this dataset. Tavily Extract confirmed only the generic logged-out JS shell, no extractable per-video body.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T22:05:41Z",
+          "method": "Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-14027",
+          "note": "TikTok discover/topic index page, generic JS shell only; classified Rule F by established URL-family pattern."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/RoyalDeluxMX/posts/qu%C3%A9-sucede-cuando-tus-amigos-forman-parte-del-poder-que-intentas-desenmascarartr/122232769094333879",
+      "firstSeen": "2026-11-05T22:05:41Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-05T22:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "RoyalDeluxMX's own Facebook account promoting its own already-tracked article (royaldelux.mx/2026/11/02/el-circulo-la-corrupcion-cambia-de-rostro-pero-conserva-sus-viejas-costumbres/, already a data.json row added 2026-11-04, LEMA-14005). Confirmed via curl -L that the FB post's linked URL resolves to that exact article slug. Same outlet, cross-platform promo of an already-tracked document -- Rule I second address.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T22:05:41Z",
+          "method": "WebFetch + curl",
+          "status": 0,
+          "issue": "LEMA-14027",
+          "note": "FB post login-walled for caption text, but curl -L on the linked royaldelux.mx URL resolved to the exact slug of the already-tracked 2026-11-02 article."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DfTP3txMRXC",
+      "firstSeen": "2026-11-05T22:05:41Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-05T22:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Instagram reel by account 'arturoizanami' carrying the identical review caption/text ('El círculo es un buen thriller político hecho en México' + identical hashtag set) as the already-tracked YouTube Short by the same reviewer, Arturo Izanami Figueroa Beck (data.json row added LEMA-14010, 2026-11-03). Same creator, same review text, second platform -- Rule I second address.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T22:05:41Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-14027",
+          "note": "Confirmed via WebFetch: account arturoizanami, caption text byte-for-byte matches the already-tracked YouTube Short's description."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DfVr0QshRtS",
+      "firstSeen": "2026-11-05T22:05:41Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-05T22:05:41Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Instagram reel from account 'cuentameloyaof' (entertainment-TV segment account) featuring guest oscaruriel71 tagging the exact four El Círculo leads (zuriavvega, osvaldobenavides, rulobrionesc, michel123brown) plus @netflixlat under the caption '¡Los amigos en el cine y la televisión!' -- confirmed on-topic by the specific cast tag set, clearing Rule B. Full fallback chain exhausted for a date: WebFetch (x2) and Tavily Extract (advanced + basic) all returned no relative or absolute timestamp, no og:video date, no alt-text date. No recoverable publish date by any available method.",
+      "skipMethod": "body_fetch",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-05T22:05:41Z",
+          "method": "WebFetch + Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-14027",
+          "note": "Full caption and comment thread recovered (confirms on-topic cast tagging), but no date field recoverable by any method tried."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-05T18:05:41Z"
+  "lastUpdated": "2026-11-05T22:05:41Z"
 }
