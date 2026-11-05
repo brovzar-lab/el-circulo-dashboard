@@ -13093,7 +13093,28 @@
           "note": "Instagram cross-post of the already-tracked Planeta de Libros Mexico FB video (same caption, @netflixlat credit). FB copy kept as primary (confirmed dateline); this IG address is a second address, Rule I."
         }
       ]
+    },
+    {
+      "url": "https://www.filmtheque.com/en/netflix-top-10",
+      "firstSeen": "2026-11-05T10:02:34Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-05T10:02:34Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Weekly Netflix Top 10 global chart page (Films EN/non-EN, Series EN/non-EN). Confirmed via Firecrawl body fetch: Inside The Circle appears only as a bare chart row (rank 6, Series non-English, week ending 2026-10-18, 2.0M views, 2 weeks in Top 10) -- auto-generated rank/views/weeks-in-Top10 table, no byline, no written analysis or commentary about the show anywhere on the page. New host for this ledger; same editorial_listing_or_database family as flixpatrol.com, streamrank.io/.tv, whats-on-netflix.com, content-signals.com already ledgered on this sweep -- Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T10:02:34Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-14018",
+          "note": "Weekly Netflix Top 10 global chart page; Inside The Circle appears only as a bare rank/views chart row, no written analysis. Rule F, new host."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-05T06:07:55Z"
+  "lastUpdated": "2026-11-05T10:02:34Z"
 }
