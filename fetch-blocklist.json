@@ -13044,7 +13044,28 @@
           "note": "All three fetch methods failed to recover a real publish date behind Facebook's access wall; permanentSkip as editorial_undateable per Rule A, reviewable for future re-check."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DfVgzbVoArw",
+      "firstSeen": "2026-11-05T02:04:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-05T02:04:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Instagram post from a press-junket account (Mariana Gomez) is entirely about 'Palacio', a different upcoming Netflix show premiering Nov 6, 2026 ('Press junket #Palacio. Estreno Este 6 de noviembre.'). Surfaced via a Tavily snippet artifact that bled in unrelated text referencing 'El Círculo'; confirmed via direct body fetch that the actual post caption, tagged accounts, and comments never mention El Círculo / Inside the Circle at all. Rule G off-topic false positive, alternate subject is 'Palacio'.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T02:04:11Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14015",
+          "note": "Instagram post is about Palacio (different Netflix show), not El Círculo. Confirmed via body fetch; caption/comments never name El Círculo."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-04T22:05:56Z"
+  "lastUpdated": "2026-11-05T02:04:11Z"
 }
