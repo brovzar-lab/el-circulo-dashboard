@@ -12819,10 +12819,10 @@
     {
       "url": "https://www.facebook.com/groups/3990393370996402/posts/28819026604373068",
       "firstSeen": "2026-11-04T10:07:41Z",
-      "failCount": 2,
+      "failCount": 3,
       "lastStatus": 0,
-      "lastAttempt": "2026-11-04T14:04:48Z",
-      "cooldownUntil": null,
+      "lastAttempt": "2026-11-05T06:07:55Z",
+      "cooldownUntil": "2026-12-05T06:07:55Z",
       "history": [
         {
           "attempt": "2026-11-04T10:07:41Z",
@@ -12837,6 +12837,13 @@
           "status": 0,
           "issue": "LEMA-14010",
           "note": "Retry attempt: WebFetch again returned only the truncated login-walled header fragment ('Palin Escuintla, Guatemala | ESTRENOS DE OCTUBRE'), no extractable post body confirming any El Círculo content. Tavily Extract also returned no content for this URL. Firecrawl fallback confirmed unsupported for facebook.com (HTTP/API error: 'we do not support this site'). Full fallback chain exhausted again. failCount=2, no cooldown yet (needs 3 consecutive to cool down)."
+        },
+        {
+          "attempt": "2026-11-05T06:07:55Z",
+          "method": "WebFetch/Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-14016",
+          "note": "Third consecutive attempt: WebFetch again returned only the truncated login-walled header fragment, no post body. Tavily Extract returned no content for this URL either. Firecrawl unavailable for facebook.com per prior attempts. Full fallback chain exhausted a third consecutive time -- failCount=3, cooldownUntil set to 30 days out (2026-12-05T06:07:55Z) per the ledger _readme cooldown rule."
         }
       ]
     },
@@ -13065,7 +13072,28 @@
           "note": "Instagram post is about Palacio (different Netflix show), not El Círculo. Confirmed via body fetch; caption/comments never name El Círculo."
         }
       ]
+    },
+    {
+      "url": "https://instagram.com/p/DdEsRiFCOy3",
+      "firstSeen": "2026-11-05T06:07:55Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-05T06:07:55Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Instagram cross-post of the same Planeta de Libros Mexico promotional video (identical caption: \"Poder, periodismo y secretos inconfesables... llega a la pantalla este 7 de octubre con la serie El círculo\"), credited to @netflixlat. Facebook copy (facebook.com/planetadelibrosmx/videos/1786883696207004, added to data.json this run) kept as the primary row since its page carries a confirmed visible dateline (Wednesday, September 9, 2026 at 6:26 PM) that this IG post does not surface (WebFetch and Tavily Extract both blocked by Instagram login wall, no caption/date rendered). Rule I second address, same org cross-platform repost.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T06:07:55Z",
+          "method": "WebFetch/Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14016",
+          "note": "Instagram cross-post of the already-tracked Planeta de Libros Mexico FB video (same caption, @netflixlat credit). FB copy kept as primary (confirmed dateline); this IG address is a second address, Rule I."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-05T02:04:11Z"
+  "lastUpdated": "2026-11-05T06:07:55Z"
 }
