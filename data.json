@@ -3794,5 +3794,31 @@
     "type": "Social",
     "excerpt": "Official Netflix Latinoamérica Instagram reel asks \"¿Se prendió el chismecito en el set o qué?\" (Did some gossip break out on set or what?), promoting the premiere of 'El Círculo,' now streaming only on Netflix.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Planeta de Libros México (Facebook)",
+    "headline": "Poder, periodismo y secretos inconfesables: la historia de Los corruptores llega a Netflix como El círculo",
+    "url": "https://facebook.com/planetadelibrosmx/videos/1786883696207004",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Publisher Planeta de Libros México (official Mexican imprint behind Jorge Zepeda Patterson's source novel) posts a pre-premiere promotional video crediting Netflix Latinoamérica, highlighting that \"Los corruptores\" is becoming the Netflix series \"El círculo\" on October 7 and asking readers if they have already read the book.",
+    "storyGroup": "planeta-de-libros-promo-20260909"
+  },
+  {
+    "outlet": "Elliott Velazquez (Facebook)",
+    "headline": "El círculo en Netflix, una serie floja con buen tema central",
+    "url": "https://facebook.com/groups/elhogardelcine/posts/2141367456747476",
+    "date": "Nov 3, 2026",
+    "ts": 20261103,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Review",
+    "excerpt": "Individual post in the \"El Hogar Del Cine\" Facebook film-discussion group gives El Círculo a personal 2-star rating: praises the central theme (corruption/blackmail) but criticizes execution (\"escenas de sexo sin sentido, adolescentes superhéroes\"), judging only the final two episodes redeemable. Rule B independent-public-role signal could not be confirmed (profile login-walled); included per the Rule B amendment's include-and-escalate default when the profile does not settle the ambiguity (LEMA-12887/12888).",
+    "storyGroup": null
   }
 ]
