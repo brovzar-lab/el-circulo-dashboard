@@ -13114,7 +13114,49 @@
           "note": "Weekly Netflix Top 10 global chart page; Inside The Circle appears only as a bare rank/views chart row, no written analysis. Rule F, new host."
         }
       ]
+    },
+    {
+      "url": "https://intelimedios.com/columnas/10-7-2026/f6c74918-a0b0-406f-9f96-62e64f224d93",
+      "firstSeen": "2026-11-05T14:04:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-05T14:04:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Intelimedios.com 'Ranking de Columnas' page: an AI-generated summary/analysis ('Analisis con IA') of Alvaro Cueva's Milenio opinion column dated 7 de Octubre del 2026, explicitly linking 'Ver el texto original' to https://www.milenio.com/opinion/alvaro-cueva/el-pozo-de-los-deseos-reprimidos/el-circulo-y-carrie -- the same column already tracked in data.json as 'Milenio (Alvaro Cueva)' at the AMP address (https://amp.milenio.com/opinion/alvaro-cueva/el-pozo-de-los-deseos-reprimidos/el-circulo-y-carrie). No original reporting; this page is a third-party AI reproduction of a document already in data.json. Rule I second address, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T14:04:37Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-14025",
+          "note": "AI-generated summary of Alvaro Cueva's Milenio column (already tracked), links to original. Rule I second address."
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/hours/netflix/2026-041/slovakia/titles-in-english/",
+      "firstSeen": "2026-11-05T14:04:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-05T14:04:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FlixPatrol weekly per-country Hours chart page (Week 41, 2026, Slovakia, titles in English). Confirmed via Firecrawl body fetch: Inside The Circle appears only as a bare chart row (rank 4), no written analysis anywhere on the page. Same editorial_listing_or_database family as the already-ledgered flixpatrol.com/title/inside-the-circle/ sibling pages -- new path shape (/hours/netflix/{week}/{country}/titles-in-english/) within the same already-ruled host family. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-05T14:04:37Z",
+          "method": "Firecrawl",
+          "status": 200,
+          "issue": "LEMA-14025",
+          "note": "Per-country weekly chart row only, no written analysis. Same FlixPatrol Rule F family."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-05T10:02:34Z"
+  "lastUpdated": "2026-11-05T14:04:37Z"
 }
