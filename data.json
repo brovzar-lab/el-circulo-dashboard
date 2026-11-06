@@ -3846,5 +3846,44 @@
     "type": "Entertainment",
     "excerpt": "Spanish sports daily Marca (Tiramillas entertainment section) covers the Oct 7 premiere of El Círculo with cast rundown (Benavides, Brown, Vega, Briones), the Los corruptores source-novel credit, writer/director credits, and Netflix comparisons to Medusa, El problema final and Túnel de corrupción.",
     "storyGroup": "premiere-day-coverage-20261007"
+  },
+  {
+    "outlet": "Netflixmania.pl",
+    "headline": "Wyciek nagrania niszczy przyjaźń. Meksykański thriller Netflixa (Polish title: Skorumpowani)",
+    "url": "https://netflixmania.pl/netflix-meksykanski-thriller-polityczny-wyciek-nagrania-tajemnice-przyjaciol/",
+    "date": "Oct 30, 2026",
+    "ts": 20261030,
+    "dateSource": "visible_dateline",
+    "lang": "PL",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Polish-language overview piece under the local title \"Skorumpowani\": premise, full cast and credits (Michel Brown, Zuria Vega, Raúl Briones, Osvaldo Benavides), based on Jorge Zepeda Patterson's \"Los corruptores\". Visible dateline 30/10/2026 14:00 on page.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "ComicBasics",
+    "headline": "15 Gripping Mystery Thrillers to Watch If You Enjoy 'Inside the Circle'",
+    "url": "https://www.comicbasics.com/15-gripping-mystery-thrillers-to-watch-if-you-enjoy-inside-the-circle",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "dateSource": "article_published_time",
+    "lang": "EN",
+    "market": "International",
+    "type": "Feature",
+    "excerpt": "Recommendation listicle anchored explicitly on 'Inside the Circle', including Lemon Studios' own 'Control Z' among the 15 similar-thriller picks.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "My Simple Explanation (WordPress)",
+    "headline": "🔥 Inside the Circle 2026 series Review — Netflix Thriller",
+    "url": "https://findmysimpleexplanation.wordpress.com/2026/10/07/%F0%9F%94%A5-inside-the-circle-2026-series-review-netflix-thriller",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "dateSource": "article_published_time",
+    "lang": "EN",
+    "market": "International",
+    "type": "Review",
+    "excerpt": "Short independent-blog review: praises the tension and gradual reveal, calls the friendship-vs-conspiracy dynamic the strongest element; no numeric score given.",
+    "storyGroup": "premiere-reviews-20261007"
   }
 ]
