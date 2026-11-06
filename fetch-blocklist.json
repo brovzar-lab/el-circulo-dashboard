@@ -13456,7 +13456,28 @@
           "note": "Confirmed same Rule F family as existing 4 RT rows."
         }
       ]
+    },
+    {
+      "url": "https://www.filmaffinity.com/ec/film805649.html",
+      "firstSeen": "2026-11-06T10:04:32Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T10:04:32Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "FilmAffinity title record page for El círculo: cast/crew database listing plus a user vote-average tally (5.4 from 58 votos) and explicitly \"0 críticas - títulos\" (zero aggregated critic reviews). No staff-written prose or analysis about the show, same listing/database surface family as the already-ledgered FlixPatrol and Tudum Top 10 pages (Rule F). Per this routine, a real critic-aggregate score page (RT/Metacritic-style) would be a normal new row, but this page carries zero critic reviews and only a database/vote-tally structure.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-06T10:04:32Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14071",
+          "note": "FilmAffinity title record page: cast/crew listing + user vote tally, 0 critic reviews. Rule F listing/database gate, same family as FlixPatrol/Tudum Top 10."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-06T06:07:30Z"
+  "lastUpdated": "2026-11-06T10:04:32Z"
 }
