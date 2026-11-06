@@ -3885,5 +3885,18 @@
     "type": "Review",
     "excerpt": "Short independent-blog review: praises the tension and gradual reveal, calls the friendship-vs-conspiracy dynamic the strongest element; no numeric score given.",
     "storyGroup": "premiere-reviews-20261007"
+  },
+  {
+    "outlet": "Noir Magazine",
+    "headline": "\"El círculo\" en Netflix: de qué trata, elenco, fecha de estreno y dónde verla",
+    "url": "https://noirmagazine.mx/arte-y-cultura/el-circulo-netflix-2",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "Explicador de estreno: trama, elenco (Michel Brown, Zuria Vega, Osvaldo Benavides, Raúl Briones) y por qué la serie resuena con la realidad política mexicana sobre el poder y la impunidad.",
+    "storyGroup": null
   }
 ]
