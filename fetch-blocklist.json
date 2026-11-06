@@ -13346,7 +13346,117 @@
           "note": "Full caption and comment thread recovered (confirms on-topic cast tagging), but no date field recoverable by any method tried."
         }
       ]
+    },
+    {
+      "url": "https://www.sensacine.com.mx/noticias/noticia-1000230045/",
+      "firstSeen": "2026-11-06T06:07:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T06:07:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Confirmed via Tavily Extract body fetch: SensaCine México piece about a DIFFERENT, unrelated Netflix show -- a DC Vertigo graphic-novel adaptation (created by Paul Tomalin, based on Si Spencer's 'The Body', cast includes Shira Haas, Stephen Graham) about a body found across four different historical eras ('cierra el círculo temporal'). Matched only on the generic Spanish phrase 'cierra el círculo' ('closes the circle'), not the show. Surfaced via broad 'reacciones redes sociales'/novel-angle queries, same Rule G noise shape as the already-ledgered ecartelera.com/eltiempomx.com off-topic rows.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-06T06:07:30Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14029",
+          "note": "Body fetch confirmed different show entirely; Rule G off-topic false positive."
+        }
+      ]
+    },
+    {
+      "url": "https://macronews.mx/informacion/nacional/cartelera-y-estrenos-destacados-en-netflix-para-el-cierre-de-octubre/",
+      "firstSeen": "2026-11-06T06:07:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T06:07:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Macronews.mx multi-title Netflix late-October 2026 premieres roundup page (article:published_time 2026-10-29T20:56:53-05:00): El Círculo gets one short templated synopsis bullet (\"El círculo (07/10/2026): serie mexicana basada en la novela Los corruptores...\") among dozens of unrelated titles. Same genus as the already-ledgered cinepremiere.com.mx/tvguide.com/metacritic.com/decine21.com multi-title Netflix release-calendar rows -- Rule F listing/database, not a distinct document about the show. Confirmed via direct body fetch, not URL-slug guess.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-06T06:07:30Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14029",
+          "note": "Body fetch confirmed multi-title premieres-calendar surface family, Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://costume.no/kultur/film-serier/netflix",
+      "firstSeen": "2026-11-06T06:07:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T06:07:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Costume.no (Norwegian) \"Nyheter på Netflix i november\" multi-title Netflix release-calendar page (article:published_time 2026-11-02T10:16:21Z): El Círculo (\"Inside the Circle\") gets one short templated synopsis entry among dozens of October/November premieres. Same genus as the already-ledgered cinepremiere.com.mx/tvguide.com/metacritic.com multi-title Netflix release-calendar rows -- Rule F listing/database, not a distinct document about the show. Confirmed via direct body fetch.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-06T06:07:30Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14029",
+          "note": "Body fetch confirmed multi-title premieres-calendar surface family, Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.threads.com/@dmtalkies/post/DePwevymmSL/inside-the-circle-netflix-review-an-intriguing-political-thriller-weighed-down",
+      "firstSeen": "2026-11-06T06:07:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T06:07:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "DMTalkies' own Threads post re-announcing their own already-tracked review (data.json dmtalkies.com row, ts 20261008), reproducing that review's exact headline verbatim ('Inside The Circle Netflix Review: An Intriguing Political Thriller Weighed Down By Too Many Subplots'). Direct body fetch (curl) returned the platform JS shell with no extractable article:published_time or body text, consistent with the documented x.com/Threads profile-fetch dead end; classification made on the title-match test against the search-indexed snippet, which quotes the post content verbatim against the already-tracked article. Second address / self-promotion of an already-tracked document, Rule I, not independent new commentary.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-06T06:07:30Z",
+          "method": "curl + Tavily snippet",
+          "status": 200,
+          "issue": "LEMA-14029",
+          "note": "Platform fetch dead end; title-match against already-tracked dmtalkies.com row confirms second address."
+        }
+      ]
+    },
+    {
+      "url": "https://www.rottentomatoes.com/tv/inside_the_circle/s01/e02/cast-and-crew",
+      "firstSeen": "2026-11-06T06:07:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T06:07:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "RT episode cast-and-crew page (S1E2): pure cast/crew metadata table, no original editorial content, no critic excerpts. Same site family as the four already-ledgered RT rows (show page, season page, reviews page, episode-reviews page) -- Rule F.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-06T06:07:30Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14029",
+          "note": "Confirmed same Rule F family as existing 4 RT rows."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-05T22:05:41Z"
+  "lastUpdated": "2026-11-06T06:07:30Z"
 }
