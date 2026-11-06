@@ -13498,7 +13498,49 @@
           "note": "What's on Netflix daily Top 10 dashboard, dateselect=11/06/2026 snapshot -- auto-generated chart data only, Inside The Circle is a single unremarked #10 row. Rule F."
         }
       ]
+    },
+    {
+      "url": "https://www.decine21.com/peliculas/el-circulo-53002",
+      "firstSeen": "2026-11-06T22:05:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T22:05:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Decine21 series page mixes a listing/database header (runtime, genre, cast, JustWatch availability, synopsis) with a genuine authored critic review (\"Crítica El Círculo (2026)\", 6/10, byline Juan Luis Sánchez) underneath -- stripping the metadata leaves a full review, so not Rule F. No recoverable real publish date for the review itself: no article:published_time meta tag, the page's only JSON-LD block is a Movie/Series schema with datePublished=\"-0001-11-30\" (an invalid placeholder, not usable), no visible dateline on the review, and the critic's own author archive page (/firmante/juan-luis-sanchez-2) lists the title only under a Películas/ratings section by release year (2026), with no dated article/review entry. Both WebFetch and a Firecrawl scrape (metadata + markdown) were exhausted with no date found.",
+      "history": [
+        {
+          "attempt": "2026-11-06T22:05:15Z",
+          "method": "WebFetch+Firecrawl",
+          "status": 200,
+          "issue": "LEMA-14112",
+          "note": "Genuine editorial review (6/10, Juan Luis Sánchez) but undateable: no article:published_time, JSON-LD datePublished is an invalid placeholder (-0001-11-30), no visible dateline, author archive page shows no dated entry for this title. Rule A editorial_undateable."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://a-suivre.org/annuseries/encyclopedie/series.php?series=16105",
+      "firstSeen": "2026-11-06T22:05:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T22:05:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "AnnuSéries (French TV encyclopedia) database entry for El Círculo: metadata table (type, genre, network, country, runtime, episode count), cast list with run-date ranges, broadcast dates (FR premiere 07/10/2026), and a short sourced synopsis identifying the source novel \"Les corrupteurs\" (Jorge Zepeda Patterson). No review, commentary, or analysis prose; visitor-rating section shows no ratings yet. Stripping the metadata/cast table leaves only sourced descriptive synopsis text, nothing original written about the show. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-06T22:05:15Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14112",
+          "note": "Pure encyclopedia/database surface (AnnuSéries): metadata + cast + sourced synopsis only, no original editorial prose. Rule F listing/database gate."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-06T18:02:54Z"
+  "lastUpdated": "2026-11-06T22:05:15Z"
 }
