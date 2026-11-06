@@ -13477,7 +13477,28 @@
           "note": "FilmAffinity title record page: cast/crew listing + user vote tally, 0 critic reviews. Rule F listing/database gate, same family as FlixPatrol/Tudum Top 10."
         }
       ]
+    },
+    {
+      "url": "https://www.whats-on-netflix.com/most-popular/?dateselect=11%2F06%2F2026",
+      "firstSeen": "2026-11-06T18:02:54Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-06T18:02:54Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "What's on Netflix daily Top 10 dashboard page (dateselect=11/06/2026 snapshot). Confirmed via WebFetch: auto-generated global/per-country chart tables (points, rank-change arrows) sourced from FlixPatrol, brief generic intro text explaining the UI, no original written analysis. Inside The Circle appears once as a #10 row in the Mexico TV series table, not discussed in prose. Same editorial_listing_or_database family as the already-ledgered whats-on-netflix.com/top-10-title-search and /most-popular/ pages for this show -- a new per-date query-string variant of an already-classified surface. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-06T18:02:54Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14111",
+          "note": "What's on Netflix daily Top 10 dashboard, dateselect=11/06/2026 snapshot -- auto-generated chart data only, Inside The Circle is a single unremarked #10 row. Rule F."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-06T10:04:32Z"
+  "lastUpdated": "2026-11-06T18:02:54Z"
 }
