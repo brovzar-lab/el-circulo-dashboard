@@ -13605,7 +13605,161 @@
           "note": "TikTok /discover/ hashtag index page, same surface family as existing ledgered siblings. Rule F listing/database gate."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/Dfa6A8BFZlw",
+      "firstSeen": "2026-11-07T06:05:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T06:05:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "@univisionfamosos Instagram reel surfaced by an \"El Círculo\" search query, but the fetched body is pure celebrity-gossip content unrelated to the show: Zuria Vega's engagement news with Alberto Guerra (\"Zuria Vega confiesa que creyó que Alberto Guerra iba a terminar su noviazgo, pero la sorprendió con su propuesta de matrimonio\"). No mention of El Círculo, the novel, or any cast interview content anywhere in the caption or comments. Confirmed via Tavily Extract full-body fetch. Same generic-word/broad-query noise pattern already documented for this show (Rule G).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T06:05:46Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14119",
+          "note": "Off-topic Zuria Vega personal-life gossip post surfaced by broad query; no El Círculo content on the page at all. Rule G."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://www.instagram.com/p/DfXYNJVg4dO",
+      "firstSeen": "2026-11-07T06:05:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T06:05:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "@lawikiseries (\"Series hispanoamericanas\"), a general multi-show fan-repost account with no independent public identity as a commentator or entertainment brand. Confirmed via Tavily Extract full-body fetch: the post carries no caption text at all, only four hashtags (#ElCirculo #MichelBrown #ZuriaVega #RaulBriones #OsvaldoBenavides) over a poster image, and the account's other recent posts cycle through unrelated shows daily. No original commentary. Rule B account-type gate: fan-repost account, relevance fails regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T06:05:46Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14119",
+          "note": "Multi-show fan-repost account, hashtags only, no original commentary. Rule B."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://www.facebook.com/HazCasting/posts/hoy-te-mostramos-el-casting-de-osvaldo-benavides-en-el-c%C3%ADrculo-la-serie-original/1748889503907542",
+      "firstSeen": "2026-11-07T06:05:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T06:05:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_vendor_promo",
+      "skipNote": "Morán Casting (the casting agency/vendor that cast Osvaldo Benavides as \"Jaime\") Facebook post, cross-posted verbatim from the same org's Instagram reel (already ledgered, instagram.com/reel/DfVqFecqlmx, this run) promoting its own casting process and work on El Círculo. Confirmed via Tavily Extract full-body fetch: identical caption text. Rule B vendor/supplier exclusion, same disposition and same org as the IG sibling -- not coverage at all, dateability irrelevant.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T06:05:46Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14119",
+          "note": "Same Morán Casting vendor-promo content as the already-ledgered IG reel sibling, cross-posted to Facebook. Rule B."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://www.imdb.com/it/news/ni66048861",
+      "firstSeen": "2026-11-07T06:05:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T06:05:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb News IT-locale teaser page for \"Where is Netflix's Inside the Circle Filmed?\", syndicating the already-tracked Moviedelic article (data.json: moviedelic.com/where-netflix-inside-the-circle-filmed/, ts 20261006). Page itself links out: \"Vedi l'articolo completo su Moviedelic\" with byline \"06/10/2026, di Naman Shrestha, Moviedelic\" matching the tracked row's date. Same locale-mirror/syndication pattern as the other already-ledgered IMDb news locale siblings for this show. Second address, not a distinct document. Rule I.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T06:05:46Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14119",
+          "note": "IMDb IT-locale news mirror of the already-tracked Moviedelic \"Where filmed\" article. Rule I."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://www.instagram.com/p/DfSJ0YrlNug",
+      "firstSeen": "2026-11-07T06:05:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T06:05:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "@thefashiongroupeditorial Instagram post promoting Michel Brown's Esquire Colombia interview covering El Círculo and La Ley de Alicia (\"En conversación con Esquire Colombia... Lee la entrevista completa en Esquire Colombia\"). The primary document is Esquire Colombia's own article, now tracked in data.json this run: esquirecolombia.com/michel-brown-serie-el-circulo (\"Michel Brown y el desafío de interpretar a un periodista en El Círculo\", byline Emilio Gala, \"Last updated: noviembre 2, 2026 1:21 pm\"), confirmed via direct fetch as the interview this and several other reposts (Michel Brown's own IG reel DER97QIITOD, IG reel DfQcfrvNKgL, Facebook esquire.co post, IG post DfPVy4zICBQ) all point back to. This Instagram post is a second address for that already-tracked article, not a distinct piece. Rule I.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T06:05:46Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14119",
+          "note": "Repost promoting the Esquire Colombia Michel Brown interview, now tracked at its primary URL this run. Rule I."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-inside-the-circle",
+      "firstSeen": "2026-11-07T06:05:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T06:05:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page (\"Serie inside The Circle\"), same established surface family as the other already-ledgered /discover/ pages for this show: an aggregation of many creators' videos under the topic tag, not a distinct document of its own. Classified on URL-family pattern plus Tavily's indexed snippet. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T06:05:46Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14119",
+          "note": "TikTok /discover/ hashtag index page, same surface family as existing ledgered siblings. Rule F."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://www.tiktok.com/@netflixlat/video/7696248200042237236",
+      "firstSeen": "2026-11-07T06:05:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T06:05:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official Netflix Latinoamérica TikTok video (surfaced via an English-language Netflix Top 10/Tudum query, title snippet \"El chismecito se puso bueno\"). Full fetch fallback chain exhausted: WebFetch returned only the generic \"TikTok - Make Your Day\" page shell with no caption/date; Tavily Extract returned an unrelated TikTok Hong Kong service-discontinuation notice, not this video's content; Firecrawl explicitly returned \"we do not support this site\" for tiktok.com. No recoverable real publish date or body content via any available method this run. Rule A: no proxy/inferred date, stays undateable rather than guessed. reviewable=true in case a future run or different tool can recover it.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T06:05:46Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14119",
+          "note": "Fetch fallback chain exhausted (WebFetch/Tavily/Firecrawl all failed to surface real content). editorial_undateable."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-11-07T02:05:00Z"
+  "lastUpdated": "2026-11-07T06:05:46Z"
 }
