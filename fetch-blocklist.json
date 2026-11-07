@@ -13540,7 +13540,72 @@
           "note": "Pure encyclopedia/database surface (AnnuSéries): metadata + cast + sourced synopsis only, no original editorial prose. Rule F listing/database gate."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DfXc4ysoKXu",
+      "firstSeen": "2026-11-07T02:05:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T02:05:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "@royaldeluxmx (Royal Delux, the entertainment-content brand account already recognized in-scope under Rule B via the sibling instagram.com/p/DfPau7yD9p7 entry) Instagram post profiling Zuria Vega's career (\"Belleza, talento y una carrera en constante ascenso\"), mentioning her El Círculo role as part of that profile. Tavily Extract full-body fetch returned the full caption and no comments; the only date signal present anywhere on the page is the carousel image's accessibility alt-text (\"Photo by Royal Delux on November 05, 2026\"), which does not satisfy Rule A (not a visible dateline, JSON-LD datePublished, or article:published_time -- same precedent as the already-ledgered netflixlat IG posts and sibling DfPau7yD9p7). No companion royaldelux.mx article found for this specific post (checked the site's Musas celebrity-profile category; no Zuria Vega entry). No recoverable real publish date.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T02:05:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14118",
+          "note": "Royal Delux IG post, on-topic Zuria Vega/El Círculo mention, Rule B clears (publisher account) but Rule A fails: only alt-text date available, not a valid source. editorial_undateable."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://www.instagram.com/reel/DfVqFecqlmx",
+      "firstSeen": "2026-11-07T02:05:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T02:05:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_vendor_promo",
+      "skipNote": "@morancasting (Morán Casting) Instagram reel: the casting agency/vendor that cast Osvaldo Benavides as \"Jaime\" promoting its own casting process and work on El Círculo (\"Hoy te mostramos el casting de @osvaldobenavides en 'El Círculo'... Nuestro trabajo es encontrar a la persona correcta... Estamos muy felices y orgullosos de haber trabajado con Osvaldo Benavides en este proyecto\"). Confirmed via Tavily Extract full-body fetch: a production-vendor company account promoting its own supplier work on the show, not an outlet or independent public figure. Rule B vendor/supplier exclusion -- not coverage at all, dateability irrelevant.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T02:05:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14118",
+          "note": "Casting-agency vendor account promoting own work on the show. Rule B vendor/supplier gate, editorial_vendor_promo."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://www.tiktok.com/discover/presidenta-de-serie-el-circulo-y-zuria-vega",
+      "firstSeen": "2026-11-07T02:05:00Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T02:05:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the other already-ledgered /discover/ pages for this show (e.g. miniserie-el-circulo, inside-the-circle-on-netflix-review, como-se-llama-la-actris-del-el-circulo-netflix): an aggregation of many videos under the topic tag, not a distinct document. Tavily Extract returned only the generic logged-out JS-shell page, no extractable per-video body. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T02:05:00Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14118",
+          "note": "TikTok /discover/ hashtag index page, same surface family as existing ledgered siblings. Rule F listing/database gate."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-06T22:05:15Z"
+  "lastUpdated": "2026-11-07T02:05:00Z"
 }
