@@ -3924,5 +3924,31 @@
     "type": "Feature",
     "excerpt": "Plot explainer by Arlette Valencia: four childhood friends are endangered after a leaked video exposes a blackmail network across the series' eight episodes; notes the adaptation is based on Jorge Zepeda Patterson's novel Los Corruptores.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Chic Magazine (Milenio)",
+    "headline": "“El círculo”, final explicado de la serie: ¿quién mató a Pamela y qué pasó con Jaime y sus amigos?",
+    "url": "https://www.chicmagazine.com.mx/personajes/el-circulo-final-explicado-serie-netflix-quien-mato-a-pamela",
+    "date": "Oct 11, 2026",
+    "ts": 20261011,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Ending-explained piece by Andrea Bouchot: Jaime orchestrated the Pamela Dosantos case as a political tool to direct suspicion toward General Salazar; Los Azules' trust fractures amid new threats including the kidnapping of Jimena and Viridiana, and Salazar's suicide instructions leave the conspiracy open.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Bernardo De la Rosa (LinkedIn)",
+    "headline": "Ya salió “El Círculo”⭕️ por Netflix. Quedó brutal!",
+    "url": "https://es.linkedin.com/posts/bernardo-de-la-rosa-979922430_ya-sali%C3%B3-el-c%C3%ADrculo-por-netflix-qued%C3%B3-activity-7513965404214575105-W8ua",
+    "date": "Oct 8, 2026",
+    "ts": 20261008,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Personal LinkedIn reaction post (111 followers, 3 total posts): 'Ya salió El Círculo por Netflix. Quedó brutal!' -- included per the Rule B amendment (LEMA-12887/12888): profile is sign-in-walled and does not settle the affirmative-signal commentator test, so Rule C's 'include and escalate' applies rather than a default skip; flagged on the sweep evidence line for review rather than silently excluded.",
+    "storyGroup": null
   }
 ]
