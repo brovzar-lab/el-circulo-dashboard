@@ -13759,7 +13759,29 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://www.tiktok.com/@netflixlat/video/7693738522678938901",
+      "firstSeen": "2026-11-07T10:02:36Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T10:02:36Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Official Netflix Latinoamerica TikTok video (surfaced via a Spanish-language social-chatter query, no caption/title visible in search snippet). Full fetch fallback chain exhausted: WebFetch returned only the generic \"TikTok - Make Your Day\" page shell with no caption/date; Tavily Extract returned no content; Firecrawl explicitly returned \"we do not support this site\" for tiktok.com; TikTok public oEmbed endpoint returned only player iframe metadata, no title/author_name/date fields. Same exhausted-chain shape as the sibling @netflixlat video ledgered earlier this same day (LEMA-14119). No recoverable real publish date or body content via any available method this run. Rule A: no proxy/inferred date, stays undateable rather than guessed.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T10:02:36Z",
+          "method": "oEmbed",
+          "status": 200,
+          "issue": "LEMA-14128",
+          "note": "Fetch fallback chain exhausted (WebFetch/Tavily/Firecrawl/oEmbed all failed to surface real content or a date). editorial_undateable."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-11-07T06:05:46Z"
+  "lastUpdated": "2026-11-07T10:02:36Z"
 }
