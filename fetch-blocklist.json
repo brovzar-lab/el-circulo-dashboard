@@ -13847,7 +13847,28 @@
         }
       ],
       "reviewable": false
+    },
+    {
+      "url": "https://www.tiktok.com/discover/a-quien-hace-referencia-la-serie-el-circulo",
+      "firstSeen": "2026-11-07T18:04:40Z",
+      "failCount": 0,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-07T18:04:40Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same established surface family as the already-ledgered sibling /discover/ pages for this show (miniserie-el-circulo, netflix-inside-the-circle-reviews). Tavily Extract returned the full rendered page this run: a 'Discover videos related to...' aggregation of 15+ unrelated creator videos under the topic tag (Ruben Saucedo, LadeProdu, CineMasNews, Netflix Latinoamerica, etc.), confirming this is an index/aggregation surface, not a distinct document of its own. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T18:04:40Z",
+          "method": "Tavily Extract",
+          "status": 0,
+          "issue": "LEMA-14143",
+          "note": "TikTok discover/hashtag index page, full render confirms video-aggregation surface; classified Rule F by URL-family pattern + body fetch."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-07T14:06:15Z"
+  "lastUpdated": "2026-11-07T18:04:40Z"
 }
