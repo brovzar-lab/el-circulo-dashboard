@@ -13781,7 +13781,73 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://instagram.com/reel/Deb4DszgrbE",
+      "firstSeen": "2026-11-07T14:06:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T14:06:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_personal_repost",
+      "skipNote": "@theindiancinephile7 Instagram reel: a personal movie-fan account (self-identified as a cinephile handle) with no independent public identity beyond entertainment fandom, posting a bare reel captioned only 'Inside the Circle Spanish Series' plus generic #Netflix hashtags. No original commentary, no comments on the post. Confirmed via Tavily Extract full-body fetch. Rule B account-type gate: fan-repost account, relevance fails regardless of dateability.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T14:06:15Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14141",
+          "note": "Fan-repost account, no original commentary. Rule B."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://kultura.onet.pl/telewizja/seriale-zagraniczne/netflix-ma-nowy-globalny-przeboj-krytycy-sa-bardzo-sceptyczni/kpfxn5j",
+      "firstSeen": "2026-11-07T14:06:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T14:06:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Onet.pl (Polish portal) article headlined 'Netflix ma nowy globalny przebój. Krytycy są bardzo sceptyczni' ('Netflix has a new global hit. Critics are very skeptical') surfaced by an Exa semantic query for El Círculo social chatter, but the full body is about a completely different Netflix title, the Spanish heist thriller 'Kurs kolizyjny' (Daniel Sánchez Arévalo), with zero mention of El Círculo/Inside the Circle, Zuria Vega, Michel Brown, or Jorge Zepeda Patterson anywhere in the article body (confirmed by direct grep of the fetched HTML; the only 'circle' string matches are SVG icon markup, not article text). Same off-topic false-positive shape already documented for this show under Rule G, here from semantic/topical query drift rather than the generic-word collision.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T14:06:15Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14141",
+          "note": "Article is about an unrelated Netflix title ('Kurs kolizyjny'); no El Círculo content anywhere in the body. Rule G."
+        }
+      ],
+      "reviewable": false
+    },
+    {
+      "url": "https://filmaffinity.com/uy/moviereviews.php",
+      "firstSeen": "2026-11-07T14:06:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-07T14:06:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Filmaffinity's 'Críticas profesionales de El círculo' page (moviereviews.php?id=805649) is a structured professional-review citation table (same listing/database family as abandomoviez.net's equivalent page, already ledgered), not original editorial prose. Mined per Rule H scope limit (1): the page lists exactly 4 citations (Decider/Joel Keller, Heaven of Horror/Karina Adelgaard, Diario Milenio/Álvaro Cueva, EscribiendoCine/Juan Pablo Russo) and all 4 are already tracked in data.json under their own primary URLs/dates. No new rows from this page this run.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-07T14:06:15Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14141",
+          "note": "Rule H mining: all 4 citations already tracked under primary outlet URLs. Rule F listing/database page, not a standalone row."
+        }
+      ],
+      "reviewable": false
     }
   ],
-  "lastUpdated": "2026-11-07T10:02:36Z"
+  "lastUpdated": "2026-11-07T14:06:15Z"
 }
