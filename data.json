@@ -3950,5 +3950,18 @@
     "type": "Social",
     "excerpt": "Personal LinkedIn reaction post (111 followers, 3 total posts): 'Ya salió El Círculo por Netflix. Quedó brutal!' -- included per the Rule B amendment (LEMA-12887/12888): profile is sign-in-walled and does not settle the affirmative-signal commentator test, so Rule C's 'include and escalate' applies rather than a default skip; flagged on the sweep evidence line for review rather than silently excluded.",
     "storyGroup": null
+  },
+  {
+    "outlet": "El Horizonte",
+    "headline": "Zuria Vega y Osvaldo Benavides protagonizan 'El Círculo'",
+    "url": "https://elhorizonte.mx/escena/zuria-vega-y-osvaldo-benavides-protagonizan-el-circulo/5345822995",
+    "date": "Sep 9, 2026",
+    "ts": 20260909,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Entertainment",
+    "excerpt": "El Horizonte reports (byline Angeles Nunez) that Netflix's Mexican thriller El Circulo, adapted from Jorge Zepeda Patterson's novel Los Corruptores, follows a decades-long friendship tested after a video leak tied to the death of actress Pamela Dosantos. Names the four leads, Zuria Vega, Michel Brown, Raul Briones and Osvaldo Benavides, director Alejandro Lozano, and the then-upcoming October 7 premiere. Part of the same Sep 9, 2026 press-kit trailer-reveal wave as El Universal, SensaCine Mexico, and others.",
+    "storyGroup": "trailer-reveal-20260909"
   }
 ]
