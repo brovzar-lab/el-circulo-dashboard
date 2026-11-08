@@ -14096,7 +14096,112 @@
           "note": "Confirmed bare link-post pointing to the already-tracked forounivers.com article; no original text of its own. Rule I."
         }
       ]
+    },
+    {
+      "url": "https://www.elheraldo.co/entretenimiento/2026/11/02/estrenos-de-noviembre-de-2026-en-netflix-disney-prime-video-paramount-y-apple-tv",
+      "firstSeen": "2026-11-08T18:05:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T18:05:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "November streaming-releases roundup. Its 'El círculo – 17 de noviembre' line is listed under the Disney+ section, a different, unrelated title premiering on Disney+ on Nov 17, not the Netflix Mexican thriller 'El Círculo'/'Inside the Circle' (premiered Oct 7). Surfaced only via the generic title collision.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-08T18:05:07Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14155",
+          "note": "Confirmed via body fetch: 'El círculo' Nov 17 title appears under the article's Disney+ section, not Netflix. Different title, different platform. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/lopezmixteco/status/2119138820373287257",
+      "firstSeen": "2026-11-08T18:05:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T18:05:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "One-line reply tweet asking '¿Es sobre el @INEMexico?!?' (Mexico's electoral institute) in response to a thread that references a NetflixLAT promo tweet for El Círculo. The reply's own text makes no on-topic statement about the show; it is about INE Mexico, an unrelated topic, surfaced only via the parent thread's keyword match.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-08T18:05:07Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14155",
+          "note": "Confirmed via body fetch: tweet's own text asks whether the subject is Mexico's electoral institute (INE), not El Círculo. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/d_s_iglesias/status/2119025715072909556",
+      "firstSeen": "2026-11-08T18:05:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T18:05:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Reply tweet ('Clara respuesta se cierne.') in a Spanish political conversation about choosing between watching a Santiago Abascal (Vox) event or 'Netflix' in general on a Monday; no reference to El Círculo anywhere in the thread. Surfaced only via a generic 'círculo'/Netflix keyword match.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-08T18:05:07Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14155",
+          "note": "Confirmed via body fetch: thread is about Spanish domestic politics (Santiago Abascal) vs. generic Netflix-watching, not El Círculo. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/diegodeaduriz/status/2118030280854266304",
+      "firstSeen": "2026-11-08T18:05:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T18:05:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Review of a different, unrelated title: the 2023 film 'Past Lives' on Netflix, not the 2026 Mexican series 'El Círculo'/'Inside the Circle'. A reply in the thread happens to use the generic phrase 'cierran el círculo' (they close the circle), which is the only reason this surfaced.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-08T18:05:07Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14155",
+          "note": "Confirmed via body fetch: tweet and thread are about the 2023 film 'Past Lives', surfaced only via the generic word 'círculo' in a reply. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DfSzTcSl1X1",
+      "firstSeen": "2026-11-08T18:05:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T18:05:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Generic 'what's new this month on Netflix' (Noviembre 2026) teaser post by account 'telered'. Caption names no specific title at all, El Círculo included. Surfaced only via a broad 'Netflix noviembre' query.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-08T18:05:07Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14155",
+          "note": "Confirmed via body fetch: caption is a generic monthly-lineup teaser naming no specific title. Rule G."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-08T14:06:10Z"
+  "lastUpdated": "2026-11-08T18:06:15Z"
 }
