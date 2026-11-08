@@ -13902,7 +13902,135 @@
           "note": "WebFetch returned only the generic Open Graph page title (\"Colisión es una película con una estructura única...\"), no real video caption/body -- Facebook bot-gates non-authenticated fetches. Firecrawl scrape: HTTP 403, site unsupported. Full fallback chain exhausted this attempt. Candidate surfaced via Tavily snippet quoting \"Platicamos con el elenco de El Círculo, la impactante serie de Netflix que está basada\" as apparent video description text, but this was never independently confirmed against the real page body, so relevance to El Círculo (vs. being an unrelated Netflix España video about Colisión that just name-checks El Círculo in a caption) is undetermined. failCount=1, no cooldown yet (needs 3 consecutive)."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/final-serie-el-c%C3%ADrculo-explicado",
+      "firstSeen": "2026-11-08T10:07:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T10:07:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page ('final serie El Círculo explicado'), same established Rule F surface family as the other tiktok.com/discover/ pages ledgered for this show this run (miniserie-el-circulo, el-círculo-netflix, osvaldo-benavides-el-circulo, presidenta-de-serie-el-circulo-y-zuria-vega): an aggregation of many creators' videos under a topic/search slug, not a distinct document. Classified on URL-family pattern consistent with this run's confirmed Tavily Extract fetches of sibling /discover/ URLs; not separately re-fetched given the identical confirmed shell-page behavior across this family.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-08T10:07:10Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14148",
+          "note": "TikTok /discover/<slug> hashtag/topic index page ('final serie El Círculo explicado'), same established Rule F surface family as the other tiktok.com/discover/ pages ledgered for this show this run (miniserie-el-circulo, el-círculo-netflix, osvaldo-benavides-el-circulo, presidenta-de-serie-el-circulo-y-zuria-vega): an aggregation of many creators' videos under a topic/search slug, not a distinct document. Classified on URL-family pattern consistent with this run's confirmed Tavily Extract fetches of sibling /discover/ URLs; not separately re-fetched given the identical confirmed shell-page behavior across this family."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/af-en/title/80217807",
+      "firstSeen": "2026-11-08T10:07:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T10:07:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix's own official title page for the show: hero art, trailer, per-episode synopsis list, 'More Details' metadata block, and subscription-plan pricing only. Confirmed via Tavily Extract full-body fetch: no staff-written editorial prose or critical analysis anywhere on the page, same platform-catalog shape as the already-established cross-platform Rule F precedent for Apple TV+ show pages. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-08T10:07:10Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14148",
+          "note": "Netflix's own official title page for the show: hero art, trailer, per-episode synopsis list, 'More Details' metadata block, and subscription-plan pricing only. Confirmed via Tavily Extract full-body fetch: no staff-written editorial prose or critical analysis anywhere on the page, same platform-catalog shape as the already-established cross-platform Rule F precedent for Apple TV+ show pages. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/ph-en/title/80217807",
+      "firstSeen": "2026-11-08T10:07:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T10:07:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix's own official title page, same title ID (80217807) and surface family as the af-en locale sibling confirmed via Tavily Extract this run (hero art, trailer, per-episode synopses, pricing plans, no editorial prose). Locale mirror of the same platform-catalog document. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-08T10:07:10Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14148",
+          "note": "Netflix's own official title page, same title ID (80217807) and surface family as the af-en locale sibling confirmed via Tavily Extract this run (hero art, trailer, per-episode synopses, pricing plans, no editorial prose). Locale mirror of the same platform-catalog document. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "http://www.netflix.com/um/title/80217807",
+      "firstSeen": "2026-11-08T10:07:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T10:07:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Netflix's own official title page, same title ID (80217807) and surface family as the af-en locale sibling confirmed via Tavily Extract this run (hero art, trailer, per-episode synopses, pricing plans, no editorial prose). Locale mirror of the same platform-catalog document. Rule F.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-08T10:07:10Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14148",
+          "note": "Netflix's own official title page, same title ID (80217807) and surface family as the af-en locale sibling confirmed via Tavily Extract this run (hero art, trailer, per-episode synopses, pricing plans, no editorial prose). Locale mirror of the same platform-catalog document. Rule F."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/61586122918236/videos/de-verdad-hay-cosas-que-pueden-quedarse-entre-amigos-amelia-parece-tener-muy-cla/871378562699930",
+      "firstSeen": "2026-11-08T10:07:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T10:07:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "\"Cine en corto 24/7\" Facebook video post promoting El Círculo (\"¿De verdad hay cosas que pueden quedarse entre amigos?... El círculo, ya disponible en Netflix\", #ElCírculo #Netflix #CineEnCorto). Confirmed via WebFetch and direct curl of raw HTML (og:title present): no article:published_time meta tag, no JSON-LD datePublished, and no visible on-page dateline recoverable without an authenticated session. No recoverable real publish date. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-08T10:07:10Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14148",
+          "note": "\"Cine en corto 24/7\" Facebook video post promoting El Círculo (\"¿De verdad hay cosas que pueden quedarse entre amigos?... El círculo, ya disponible en Netflix\", #ElCírculo #Netflix #CineEnCorto). Confirmed via WebFetch and direct curl of raw HTML (og:title present): no article:published_time meta tag, no JSON-LD datePublished, and no visible on-page dateline recoverable without an authenticated session. No recoverable real publish date. Not guessed per Rule A."
+        }
+      ],
+      "reviewable": true
+    },
+    {
+      "url": "https://www.facebook.com/sev.lewkowicz/posts/very-good-political-thriller-from-mexico-on-netflix-well-worth-watching/10244995785739340",
+      "firstSeen": "2026-11-08T10:07:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T10:07:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Personal Facebook post (Sev Lewkowicz): \"Very good political thriller from Mexico on Netflix. Well worth watching.\" Individual commentator account, in scope under Rule B by default. Confirmed via WebFetch and direct curl of raw HTML: page returns only a truncated, logged-out preview with no og:title or date meta tags recoverable, consistent with Facebook's private/login-walled post rendering. No recoverable real publish date. Not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-08T10:07:10Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14148",
+          "note": "Personal Facebook post (Sev Lewkowicz): \"Very good political thriller from Mexico on Netflix. Well worth watching.\" Individual commentator account, in scope under Rule B by default. Confirmed via WebFetch and direct curl of raw HTML: page returns only a truncated, logged-out preview with no og:title or date meta tags recoverable, consistent with Facebook's private/login-walled post rendering. No recoverable real publish date. Not guessed per Rule A."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-11-08T02:04:18Z"
+  "lastUpdated": "2026-11-08T10:07:10Z"
 }
