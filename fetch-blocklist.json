@@ -13868,7 +13868,41 @@
           "note": "TikTok discover/hashtag index page, full render confirms video-aggregation surface; classified Rule F by URL-family pattern + body fetch."
         }
       ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Netflixwatch/comments/1xoa3k0/anaesthesia_2026_netflix_series_review_the_fine",
+      "firstSeen": "2026-11-08T02:04:18Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-08T02:04:18Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-11-08T02:04:18Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-14145",
+          "note": "WebFetch declined to fetch www.reddit.com (tool-level host restriction, no content returned). Firecrawl scrape: HTTP 403, site unsupported (\"we do not support this site\"). Full fallback chain exhausted this attempt. Candidate surfaced via Tavily search snippet listing an Inside The Circle review alongside an unrelated Anaesthesia (2026) review thread; body never actually read, so relevance/Rule classification is undetermined, not just dateability. failCount=1, no cooldown yet (needs 3 consecutive)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/netflixespana/videos/colisi%C3%B3n-es-una-pel%C3%ADcula-con-una-estructura-%C3%BAnica-y-su-director-es-el-mejor-para/1660508958884230",
+      "firstSeen": "2026-11-08T02:04:18Z",
+      "failCount": 1,
+      "lastStatus": 0,
+      "lastAttempt": "2026-11-08T02:04:18Z",
+      "cooldownUntil": null,
+      "history": [
+        {
+          "attempt": "2026-11-08T02:04:18Z",
+          "method": "WebFetch",
+          "status": 0,
+          "issue": "LEMA-14145",
+          "note": "WebFetch returned only the generic Open Graph page title (\"Colisión es una película con una estructura única...\"), no real video caption/body -- Facebook bot-gates non-authenticated fetches. Firecrawl scrape: HTTP 403, site unsupported. Full fallback chain exhausted this attempt. Candidate surfaced via Tavily snippet quoting \"Platicamos con el elenco de El Círculo, la impactante serie de Netflix que está basada\" as apparent video description text, but this was never independently confirmed against the real page body, so relevance to El Círculo (vs. being an unrelated Netflix España video about Colisión that just name-checks El Círculo in a caption) is undetermined. failCount=1, no cooldown yet (needs 3 consecutive)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-07T18:04:40Z"
+  "lastUpdated": "2026-11-08T02:04:18Z"
 }
