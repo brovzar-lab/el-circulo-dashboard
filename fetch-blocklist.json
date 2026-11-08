@@ -14030,7 +14030,73 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://imdb.com/fr/title/tt36743307",
+      "firstSeen": "2026-11-08T14:06:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T14:06:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "IMDb title page (fr locale) for El Círculo/Inside the Circle. Same imdb.com/*/title/<id> shape already established as Rule F by family regardless of locale (see already-ledgered imdb.com/title/tt36743307, /es-es/, /es/, /pt/ sibling rows) -- cast/episode/rating metadata only, no written editorial content about the show.",
+      "skipMethod": "title_snippet_only",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-08T14:06:10Z",
+          "method": "search-result-title",
+          "status": 200,
+          "issue": "LEMA-14153",
+          "note": "FR-locale sibling of the already-ledgered imdb.com/*/title/tt36743307 Rule F family; classified by established family precedent from the search-result URL/title alone, no body fetch needed."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/es-es/news/ni66048861",
+      "firstSeen": "2026-11-08T14:06:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T14:06:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "IMDb News ES-ES-locale teaser page for \"Where is Netflix's Inside the Circle Filmed?\", syndicating the already-tracked Moviedelic article (data.json: moviedelic.com/where-netflix-inside-the-circle-filmed/, ts 20261006). Page itself links out: \"Ver el articulo completo en Moviedelic\" with byline \"6/10/2026, por Naman Shrestha, Moviedelic\" matching the tracked row's date. Same locale-mirror/syndication pattern as the already-ledgered IMDb news locale siblings for this show (/es/, /it/). Second address, not a distinct document. Rule I.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-08T14:06:10Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14153",
+          "note": "Confirmed ES-ES-locale IMDb news mirror of the already-tracked Moviedelic \"Where filmed\" article. Rule I."
+        }
+      ]
+    },
+    {
+      "url": "https://x.com/UniversLA/status/2097858439791755272",
+      "firstSeen": "2026-11-08T14:06:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-08T14:06:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Bare X/Twitter link-post by outlet account UNIVERS (@UniversLA): \"Zuria Vega, Osvaldo Benavides, Raúl Briones y Michel Brown ponen a prueba la amistad en 'El Círculo' de Netflix. Los detalles aquí\", linking out to forounivers.com/index.php?/entry/1366-... which is already tracked in data.json. No text of its own beyond the promotional caption/link. Second address, not a distinct document. Rule I.",
+      "skipMethod": "body_fetch",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-08T14:06:10Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14153",
+          "note": "Confirmed bare link-post pointing to the already-tracked forounivers.com article; no original text of its own. Rule I."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-08T10:07:10Z"
+  "lastUpdated": "2026-11-08T14:06:10Z"
 }
