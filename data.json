@@ -3976,5 +3976,31 @@
     "type": "Feature",
     "excerpt": "Argentine outlet Ciudad Magazine (Artear) frames El Círculo as worth watching, centered on Buenos Aires-born actor Michel Brown's role as Tomás (career since his 1991 debut on Jugate conmigo). Covers the political-thriller premise: the murder of actress Pamela Dosantos and a leaked video that threatens four lifelong friends across the show's eight episodes.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Netflix Latinoamérica (X)",
+    "headline": "¿Ya vieron 'El círculo'? 👀",
+    "url": "https://x.com/NetflixLAT/status/2109709683854627190",
+    "date": "Oct 12, 2026",
+    "ts": 20261012,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "Official Netflix Latinoamérica X/Twitter post asking followers whether they've watched 'El Círculo' yet, five days after the Oct 7 premiere.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Planeta de Libros México (YouTube)",
+    "headline": "'Sobre los corruptores...' Jorge Zepeda Patterson",
+    "url": "https://www.youtube.com/watch?v=912Zc0V-U_I",
+    "date": "Sep 19, 2013",
+    "ts": 20130919,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Pre-identity-era publisher interview: Jorge Zepeda Patterson discusses his then-new 2013 novel 'Los Corruptores' (the source material for Netflix's 'El Círculo'/'Inside the Circle'), published by Editorial Planeta on its own YouTube channel years before the Netflix adaptation existed.",
+    "storyGroup": null
   }
 ]
