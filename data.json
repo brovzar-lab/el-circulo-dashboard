@@ -4015,5 +4015,31 @@
     "type": "Entertainment",
     "excerpt": "EFE wire trailer-drop announcement piece (Dominican outlet pickup): a years-long friendship is tested by the murder of famous actress Pamela Dosantos in El Círculo, based on Jorge Zepeda Patterson's novel Los Corruptores, premiering on Netflix October 7.",
     "storyGroup": "trailer-reveal-20260909"
+  },
+  {
+    "outlet": "El Debate",
+    "headline": "Andrés Revo: de 'Hombres íntegros' a la serie 'El círculo' de Netflix",
+    "url": "https://www.debate.com.mx/tendencias/andres-revo-de-hombres-integros-a-la-serie-el-circulo-de-netflix-20261107-0189.html",
+    "date": "Nov 8, 2026",
+    "ts": 20261108,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Sinaloa daily profiles actor Andrés Revo (young Jaime in El Círculo), who praises Lemon Studios' production values, visual identity and a raw, realistic Mexico City, and says he read the source novel Los Corruptores to build the character.",
+    "storyGroup": null
+  },
+  {
+    "outlet": "Royal Delux",
+    "headline": "Zuria Vega: belleza, carácter y una carrera que sigue sorprendiendo",
+    "url": "https://royaldelux.mx/2026/11/05/zuria-vega-belleza-caracter-y-una-carrera-que-sigue-sorprendiendo",
+    "date": "Nov 5, 2026",
+    "ts": 20261105,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Royal Delux names Zuria Vega its Musa of the month, profiling her career and her role as Amelia in the Netflix series El Círculo, and linking back to its earlier novel-versus-series comparison.",
+    "storyGroup": null
   }
 ]
