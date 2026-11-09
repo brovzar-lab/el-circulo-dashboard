@@ -14501,7 +14501,139 @@
           "note": "Body fetched: article is about the Timbiriche bio-series; El Circulo mentioned in two incidental sentences. Rule G."
         }
       ]
+    },
+    {
+      "url": "https://www.sensacine.com.mx/series/serie-1000003700/secretos-rodaje",
+      "firstSeen": "2026-11-09T14:02:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T14:02:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "SensaCine Mexico 'El Círculo: anecdotas' tab, body fetched via Tavily Extract: a database/trivia tab with one stub line ('Serie basada en el libro Los corruptores') plus a sitewide news sidebar and no dated editorial piece. Same Rule F AlloCiné/SensaCine database family as the already-ledgered ficha pages.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-09T14:02:10Z",
+          "method": "Tavily Extract/WebFetch",
+          "status": 200,
+          "issue": "LEMA-14240",
+          "note": "SensaCine Mexico 'El Círculo: anecdotas' tab, body fetched via Tavily Extract: a database/trivia tab with one stub line ('Serie basada en el libro Los corruptores') plus a sitewide news sidebar and no dated editorial piece. Same Rule F AlloCiné/SensaCine database family as the already-ledgered ficha pages."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DfQv5CjgNkN",
+      "firstSeen": "2026-11-09T14:02:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T14:02:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post surfaced by Tavily search with the snippet 'Platicamos con Zuria Vega, Osvaldo Benavides, Michel Brown y Raúl Briones...'. WebFetch of the post returned only the string 'Instagram' (no author, caption or timestamp), so no real publish date is recoverable. Rule A: undateable, not a guessed date. Reviewable if a dated mirror appears.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-09T14:02:10Z",
+          "method": "Tavily Extract/WebFetch",
+          "status": 200,
+          "issue": "LEMA-14240",
+          "note": "Instagram post surfaced by Tavily search with the snippet 'Platicamos con Zuria Vega, Osvaldo Benavides, Michel Brown y Raúl Briones...'. WebFetch of the post returned only the string 'Instagram' (no author, caption or timestamp), so no real publish date is recoverable. Rule A: undateable, not a guessed date. Reviewable if a dated mirror appears."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/cuentmeloyaoficial/videos/los-amigos-en-el-cine-y-la-televisi%C3%B3n-oscar-uriel-las-estrellas-cu%C3%A9ntameloya/2511550329326462",
+      "firstSeen": "2026-11-09T14:02:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T14:02:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Facebook video 'Los amigos en el cine y la television' (Oscar Uriel, Las Estrellas, Cuentamelo Ya). Body fetched via WebFetch: description is only '#cuentameloya' and no mention of El Circulo, Inside the Circle or its cast. Rule G off-topic false positive from the cast-interview query; no date given either.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-09T14:02:10Z",
+          "method": "Tavily Extract/WebFetch",
+          "status": 200,
+          "issue": "LEMA-14240",
+          "note": "Facebook video 'Los amigos en el cine y la television' (Oscar Uriel, Las Estrellas, Cuentamelo Ya). Body fetched via WebFetch: description is only '#cuentameloya' and no mention of El Circulo, Inside the Circle or its cast. Rule G off-topic false positive from the cast-interview query; no date given either."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/articles/top-10-october-26-2026",
+      "firstSeen": "2026-11-09T14:02:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T14:02:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Netflix Tudum weekly Top 10 chart page (week of 2026-10-26), same Rule F Tudum Top 10 family already ledgered for this show. Surfaced by the Top 10 query; snippet shows only auto-generated chart text for other titles. Not separately body-fetched, classified by surface family.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-09T14:02:10Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-14240",
+          "note": "Netflix Tudum weekly Top 10 chart page (week of 2026-10-26), same Rule F Tudum Top 10 family already ledgered for this show. Surfaced by the Top 10 query; snippet shows only auto-generated chart text for other titles. Not separately body-fetched, classified by surface family."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/personajes-en-la-vida-real-de-la-serie-el-circulo",
+      "firstSeen": "2026-11-09T14:02:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T14:02:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same established Rule F surface family as the other tiktok.com/discover pages ledgered for this show: aggregation of many creators' videos under a search slug, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-09T14:02:10Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-14240",
+          "note": "TikTok /discover/<slug> topic index page, same established Rule F surface family as the other tiktok.com/discover pages ledgered for this show: aggregation of many creators' videos under a search slug, not a distinct document."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/de-que-actriz-se-refieren-en-la-vida-real-en-la-pel%C3%ADcula-el-circulo-de-netflix",
+      "firstSeen": "2026-11-09T14:02:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T14:02:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same established Rule F surface family as the other tiktok.com/discover pages ledgered for this show: aggregation of many creators' videos under a search slug, not a distinct document.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-09T14:02:10Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-14240",
+          "note": "TikTok /discover/<slug> topic index page, same established Rule F surface family as the other tiktok.com/discover pages ledgered for this show: aggregation of many creators' videos under a search slug, not a distinct document."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-09T06:01:25Z"
+  "lastUpdated": "2026-11-09T14:02:10Z"
 }
