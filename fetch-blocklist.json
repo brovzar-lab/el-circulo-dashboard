@@ -14633,7 +14633,29 @@
           "note": "TikTok /discover/<slug> topic index page, same established Rule F surface family as the other tiktok.com/discover pages ledgered for this show: aggregation of many creators' videos under a search slug, not a distinct document."
         }
       ]
+    },
+    {
+      "url": "https://www.netflix.com/tudum/articles/what-to-watch-on-netflix-november-6-2026",
+      "firstSeen": "2026-11-09T18:01:20Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T18:01:20Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Netflix Tudum 'What to Watch on Netflix: November 6, 2026' weekly release calendar. Body fetched via Tavily Extract with query 'El Círculo Inside the Circle': lists only new/upcoming titles for Nov 6-12 (The Good Lawyer, Alicia's Law, Allen, Bros, etc.); no mention of El Círculo / Inside the Circle anywhere in the extracted body. Off-topic for this show, Rule G (matched on generic Netflix/Mexico terms).",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-09T18:01:20Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14244",
+          "note": "Netflix Tudum 'What to Watch on Netflix: November 6, 2026' weekly release calendar. Body fetched via Tavily Extract with query 'El Círculo Inside the Circle': lists only new/upcoming titles for Nov 6-12 (The Good Lawyer, Alicia's Law, Allen, Bros, etc.); no mention of El Círculo / Inside the Circle anywhere in the extracted body. Off-topic for this show, Rule G (matched on generic Netflix/Mexico terms)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-09T14:02:10Z"
+  "lastUpdated": "2026-11-09T18:01:20Z"
 }
