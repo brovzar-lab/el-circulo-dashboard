@@ -4145,5 +4145,18 @@
     "type": "News",
     "excerpt": "Global Netflix series ranking listicle; Inside the Circle: Season 1 listed at #6 with 2.0 million weekly views.",
     "storyGroup": "eibnews-netflix-top20-20261024"
+  },
+  {
+    "outlet": "El Cultura",
+    "headline": "„Skorumpowani” na Netflix. Data premiery i obsada",
+    "url": "https://elcultura.pl/2026/09/skorumpowani-netflix-data-premiery-obsada/",
+    "date": "Sep 10, 2026",
+    "ts": 20260910,
+    "dateSource": "jsonld_datepublished",
+    "lang": "PL",
+    "market": "International",
+    "type": "News",
+    "excerpt": "Polish Ibero-American culture site El Cultura reports Netflix has set the Oct 7, 2026 premiere (190+ countries) for the Mexican thriller \"El círculo / Skorumpowani\", adapted from Jorge Zepeda Patterson's novel Los corruptores (the author is a consulting producer) and produced by Lemon Studios. Outlines the four-friends premise sparked by a leaked video and the cast led by Zuria Vega, Michel Brown and Osvaldo Benavides.",
+    "storyGroup": null
   }
 ]
