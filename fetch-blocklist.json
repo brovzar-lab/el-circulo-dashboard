@@ -14201,7 +14201,279 @@
           "note": "Confirmed via body fetch: caption is a generic monthly-lineup teaser naming no specific title. Rule G."
         }
       ]
+    },
+    {
+      "url": "https://www.infobae.com/mexico/2026/11/08/roberto-palazuelos-recuerda-su-amistad-con-luis-miguel-y-cuenta-como-la-serie-de-netflix-lo-puso-en-medio-de-las-criticas-se-les-fue-la-mano/",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Infobae Mexico (published 2026-11-08): Roberto Palazuelos recalls his friendship with Luis Miguel and the Netflix Luis Miguel biopic series. The only 'circulo' occurrences are the generic Spanish word (social circle). El Círculo is not mentioned.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Confirmed via body fetch: about the Luis Miguel series, generic 'circulo' only. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://interactpostnews.com/noticia/roberto-palazuelos-recuerda-su-amistad-con-luis-miguel-y-cuenta-como-la-serie-de-netflix-lo-puso-en-medio-de-las-criticas-se-les-fue-la-mano",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "InteractPost News republication of the Infobae Palazuelos / Luis Miguel piece (same headline). Off-topic for El Círculo: about Roberto Palazuelos and the Luis Miguel Netflix series. Ledgered on the same evidence as the Infobae original, whose body was fetched this run.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "search-result title/snippet",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Same headline as the fetched Infobae original naming a different subject (Luis Miguel, Palazuelos). Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://laexpresion.com.mx/2026/11/07/producciones-mexicanas-netflix-fin-de-semana/",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "La Expresion (published 2026-11-07): roundup of five Mexican Netflix productions for the weekend. Its only 'El circulo' reference describes a reality show about social strategy and alliances, i.e. the unrelated Netflix reality format The Circle, not the Lozano thriller.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Confirmed via body fetch: the 'El circulo' mention is the reality format. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://www.vanguardia.com/entretenimiento/tendencias/2026/10/30/series-de-noviembre-de-2026-blade-runner-2099-y-el-senor-de-los-anillos/",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Vanguardia (MX, published 2026-10-30): November 2026 series roundup (Blade Runner 2099, The Lord of the Rings, All's Fair). The only reference to El Circulo is a 'Tenga en cuenta' related-article link teaser to the already-tracked 2026-09-17 Vanguardia article; the page's own prose does not cover the show. Flagged on LEMA-14171 as a borderline call (Rule C): if ruled that a related-link teaser counts as a mention, restore as a row.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Confirmed via body fetch: sole mention is a related-link teaser. Rule G, flagged."
+        }
+      ]
+    },
+    {
+      "url": "https://kinotico.es/industria/2026-11-05/entrevista-diego-luna-en-la-caja-negra-urge-replantear-como-se-produce-en-mexico-hay-una-deuda-grande-con-el-publico",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Kinotico (published 2026-11-05): Diego Luna interview about his film La caja negra and Mexican production. The only 'circulo' occurrence is an idiom ('que el circulo sea redondo'). El Círculo is not mentioned.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Confirmed via body fetch: idiom only. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://lacallelibre.com.mx/2026/11/03/opinion-la-asquerosa-corrupcion-empresarial/",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "La Calle Libre opinion column (2026-11-03) on Mexican business corruption. A body fetch finds no mention of El Círculo or Los Corruptores. Surfaced only via a broad corruption/Zepeda Patterson query.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Confirmed via body fetch: no mention of the show. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://www.vogue.mx/articulo/la-ley-de-alicia-netflix-reparto",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Vogue Mexico cast guide for the Netflix series La ley de Alicia (Alicia's Law, Mexican adaptation of The Good Wife). Names a different title; no connection to El Círculo.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "search-result title/snippet",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Title names a different series (La ley de Alicia). Rule G carve-out."
+        }
+      ]
+    },
+    {
+      "url": "https://www.partitureletterarie.it/partiture-da-ascoltare/3441011_crimson-and-clover-la-vibrazione-del-desiderio",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Partiture Letterarie (Italian) music piece titled 'Crimson and Clover: la vibrazione del desiderio'. Names a different subject (a song); no connection to El Círculo.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "search-result title/snippet",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Title names a different subject (Crimson and Clover). Rule G carve-out."
+        }
+      ]
+    },
+    {
+      "url": "http://lacasadelautor.blogspot.com/2014/11/zepeda-patterson-somos-corresponsables.html",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "La Casa del Autor blog (datePublished 2014-11-06): interview/review about Jorge Zepeda Patterson's later Planeta-winning novel about a trafficking network (protagonist Milena). Los Corruptores is named once in passing as the author's previous novel. About a different book; not coverage of the El Círculo project. Flagged on LEMA-14171 as borderline under the pre-identity lineage guard (Rule C): if ruled in scope it is dateable (2014-11-06, JSON-LD datePublished).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Confirmed via body fetch: different novel, one passing reference to Los Corruptores. Rule G, flagged."
+        }
+      ]
+    },
+    {
+      "url": "https://returnofrock.com/joe-sparks-lets-curiosity-run-wild-on-regina-in-her-purple-coveralls-inside-the-circle/",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Return of Rock music piece on Joe Sparks and his 'Regina In Her Purple Coveralls Inside The Circle' release. Names a different subject; unrelated to the Netflix series.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "search-result title/snippet",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Title names a different subject (Joe Sparks album). Rule G carve-out."
+        }
+      ]
+    },
+    {
+      "url": "https://yoursay.suara.com/amp/entertainment/2026/11/02/065000/alicias-law-tayang-11-november-di-netflix-adaptasi-serial-the-good-wife",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Suara.com (Indonesian) piece on Alicia's Law (The Good Wife adaptation) airing 11 November on Netflix. Names a different series; no connection to El Círculo.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "search-result title/snippet",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Title names a different series (Alicia's Law). Rule G carve-out."
+        }
+      ]
+    },
+    {
+      "url": "https://correcamara.com/critica-ceniza-en-la-boca-una-familia-fracturada-entre-mexico-y-madrid/",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Correcamara review of the film Ceniza en la boca. Names a different title; no connection to El Círculo.",
+      "skipMethod": "title_snippet_only",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "search-result title/snippet",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Title names a different film (Ceniza en la boca). Rule G carve-out."
+        }
+      ]
+    },
+    {
+      "url": "https://moviesfera.com/fr/inside-the-circle-de-netflix-le-succes-a-la-stephen-king-de-la-semaine",
+      "firstSeen": "2026-11-09T02:02:26Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T02:02:26Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipNote": "Moviesfera French edition (published 2026-10-12, 'Image generee par IA') of the already-tracked English article https://moviesfera.com/en/netflixs-inside-the-circle-could-be-this-weeks-stephen-king-esque-hit (ts 20261012). Rule I cross-language test: slug is French (limb 2 clears) but the headline is a near-literal rendering of the English one and the body is the same article structure in translation (limb 1 fails), so a second address, not a distinct edition. Flagged on LEMA-14171 as a borderline limb-1 call: if ruled a distinct edition, restore with the English row's storyGroup.",
+      "history": [
+        {
+          "attempt": "2026-11-09T02:02:26Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14171",
+          "note": "Body fetched: French translation of the tracked English article. Rule I second address."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-08T18:06:15Z"
+  "lastUpdated": "2026-11-09T02:02:26Z"
 }
