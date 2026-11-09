@@ -14655,7 +14655,343 @@
           "note": "Netflix Tudum 'What to Watch on Netflix: November 6, 2026' weekly release calendar. Body fetched via Tavily Extract with query 'El Círculo Inside the Circle': lists only new/upcoming titles for Nov 6-12 (The Good Lawyer, Alicia's Law, Allen, Bros, etc.); no mention of El Círculo / Inside the Circle anywhere in the extracted body. Off-topic for this show, Rule G (matched on generic Netflix/Mexico terms)."
         }
       ]
+    },
+    {
+      "url": "http://viviendoentrelibrosyletrass.blogspot.com/2020/01/novedades-editoriales-de-enero-2020.html",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Blog post \"Novedades editoriales de enero 2020\" (Jan 2020 book releases roundup). Body fetch (200): zero occurrences of \"El Círculo\" or \"Inside the Circle\". Exa surfaced it on a generic Los Corruptores / Zepeda Patterson query; it names no El Círculo content.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://api.theediture.com/blog/life-8/what-im-watching-101",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "The Editure \"What I'm Watching\" by Cordelia Garza: a rolling personal watchlist of many series/films with one-line blurbs; \"Inside the Circle\" is one entry (one-sentence plot blurb, no analysis). Page states only \"Updated November 1, 2026\", a rolling-list update stamp with no per-entry publish date and no datePublished metadata, so no real publish date for the El Círculo mention is recoverable (Rule A). Not guessed.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://cambiodigitalnoticias.com/roberto-palazuelos-recuerda-su-amistad-con-luis-miguel-y-cuenta-como-la-serie-de-netflix-lo-puso-en-medio-de-las-criticas-se-les-fue-la-mano/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Cambio Digital: Roberto Palazuelos on his friendship with Luis Miguel and the Netflix Luis Miguel series. Body fetch (200): the only \"círculo\" hit is the phrase \"el círculo de Federico y Miguel Alemán\" (social circle). El Círculo the series is not mentioned.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://elcoahuilense.com/la-asquerosa-corrupcion-empresarial/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "El Coahuilense reprint of Álvaro Delgado opinion column \"La asquerosa corrupción empresarial\" (2026-11-03), same column as the already-ledgered lacallelibre.com.mx copy. Body fetch (200): zero occurrences of \"El Círculo\" or \"Inside the Circle\". Political corruption op-ed surfaced via the \"Los Corruptores\" query.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://elcultura.pl/tag/lemon-studios/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "El Cultura (Polish) tag archive page for \"Lemon Studios\": an auto-generated list of article teasers across many Lemon Studios items. Rule F listing family. The one on-topic article it links (elcultura.pl/2026/09/skorumpowani-netflix-data-premiery-obsada/) was evaluated separately and added to data.json this run.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_Netflix_original_programming",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Wikipedia list of Netflix original programming: a database/listing table; \"Inside the Circle\" appears as one row (Crime drama, Oct 7, 2026, 8 episodes) among thousands. Rule F.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://justpaste.in/movies/netflix-october-2026-new-releases-movies-tv/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "justpaste.in \"Netflix's New Releases Coming in October 2026\": a bulk release-calendar paste; \"Inside The Circle (MX)\" appears as a single line item on Oct. 7 among dozens. Rule F listing, no editorial content about the show, no real publish date.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://linkedin.com/in/alejandro-lozano-58959016",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "LinkedIn profile of Alejandro Lozano (Director, Showrunner, Writer; Control Z, El Círculo (Netflix); co-founder Lemon Studios). A personal profile page, not a dated coverage item: no publish date exists. Body fetch (200) returned a login-gated shell with no El Círculo text; the mention was seen only in the Exa snippet.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://martapost.com/inversion/hipocresia-rapero-xamuel-acusa-a-felca-de-bullying-y-critica-video-por-fobia-social-video/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Marta Post: rapper Xamuel accuses Felca of bullying. Body fetch (200): only \"círculo vicioso\" (vicious circle idiom). El Círculo is not mentioned.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://mx.headtopics.com/news/en-solo-8-episodios-el-retorcido-enigma-en-netflix-sobre-89441066",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "HeadTopics MX piece about \"Cadáveres\" (Bodies), the British Netflix miniseries (8 episodes, one body found in four eras, DC Vertigo graphic novel). Body fetch (200): only \"cierra el círculo temporal\" (idiom). Different show.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://primerofueelsonido.com/2026/11/05/entrevista-a-eloy-dominguez-seren/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Primero fue el sonido: interview with sound designer Eloy Domínguez Serén. Body fetch (200): only \"Círculo Polar Ártico\" (Arctic Circle). El Círculo is not mentioned.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.altantoguerrero.com/aldea-maritima/los-corruptores-de-taddei-vienen-del-cisen-de-salinas-sus-promotores-estan-en-somos/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Al Tanto Guerrero political column \"Los corruptores de Taddei vienen del CISEN de Salinas\" (2026-11-05): Guerrero state politics, \"corruptores\" used as a political noun. Body fetch (200): zero occurrences of \"El Círculo\" or \"Inside the Circle\"; unrelated to the novel Los Corruptores.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.comicbasics.com/tag/netflix/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Comic Basics \"Netflix\" tag archive: auto-generated teaser list. Rule F listing family. All seven Inside the Circle articles it links are already tracked in data.json (verified by lookup this run, inDataJson=true for each).",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.melty.fr/actu/top/page/14475",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Melty (FR) \"Top actu\" most-read articles archive page 14475: a rotating popularity list of unrelated French entertainment/people stories. Direct curl failed (000); Firecrawl scrape fallback (200, 16k chars markdown) contained zero occurrences of \"El Círculo\" or \"Inside the Circle\".",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl then Firecrawl scrape",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.movieversalfilm.online/trailer-drop-focker-in-law-a-look-inside-featurette/",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Movieversalfilm: Focker In-Law featurette \"A Look Inside the Circle of Trust\" (Stiller, De Niro, Grande). Body fetch (200): the Meet the Parents franchise phrase \"Circle of Trust\" only. Different film.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.radioformula.com.mx/espectaculos/sasha-sokol-alza-la-voz-contra-revictimizadores-y-defiende-a-sus-padres-por-que-la-gente-juzga-a-la-victima-20261108-0036.html",
+      "firstSeen": "2026-11-09T22:03:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T22:03:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Radio Fórmula: Sasha Sokol on revictimization (Luis de Llano case). Direct curl returned 403; Firecrawl fallback (200, 18k chars markdown): the only \"círculo\" hit is a photo caption (\"en el círculo, la imagen del productor Luis de Llano\"). El Círculo the series is not mentioned.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T22:03:06Z",
+          "method": "curl then Firecrawl scrape",
+          "status": 200,
+          "issue": "LEMA-14246",
+          "note": "Disposition confirmed by body fetch this sweep."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-09T18:01:20Z"
+  "lastUpdated": "2026-11-09T22:03:06Z"
 }
