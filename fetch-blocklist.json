@@ -4166,11 +4166,11 @@
       "firstSeen": "2026-10-14T22:40:00Z",
       "failCount": 0,
       "lastStatus": 200,
-      "lastAttempt": "2026-11-02T06:10:00Z",
+      "lastAttempt": "2026-11-09T06:01:25Z",
       "cooldownUntil": null,
       "permanentSkip": true,
       "skipReason": "editorial_user_review_aggregate",
-      "skipNote": "AlloCiné critiques presse tab (press-critic aggregator, distinct from the critiques spectateurs tab) for El Círculo: https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/. Fetched live 2026-10-14 to discharge Rule H scope limit 1's mining duty. Zero-yield negative result, per Rule A (never assumed): the press-reviews section renders no content and no empty-state placeholder -- the only review content on this URL is the same 'Critiques Spectateurs' (audience) section already ledgered at https://www.allocine.fr/series/ficheserie-1000003700/critiques/ (2 spectator ratings, patrick torres 2.5/5 Oct 12 and Laurent B. 3.5/5 Oct 10). No press outlets, bylines, or scores to mine as of this check. El Círculo premiered 2026-10-07; French press coverage may still be forthcoming. Ledgered under Rule H per scope limit 1: the aggregation page itself gets no row, with or without press content, but the sweep must keep checking it. A weekly Pass 0b re-mine step naming this exact URL is added to the El Círculo Media Sweep routine in this same commit, bounded through 2026-12-16 (LEMA-12653). Re-checked 2026-10-19 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13052): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-10-26 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13609): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-11-02 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13893): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet.",
+      "skipNote": "AlloCiné critiques presse tab (press-critic aggregator, distinct from the critiques spectateurs tab) for El Círculo: https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/. Fetched live 2026-10-14 to discharge Rule H scope limit 1's mining duty. Zero-yield negative result, per Rule A (never assumed): the press-reviews section renders no content and no empty-state placeholder -- the only review content on this URL is the same 'Critiques Spectateurs' (audience) section already ledgered at https://www.allocine.fr/series/ficheserie-1000003700/critiques/ (2 spectator ratings, patrick torres 2.5/5 Oct 12 and Laurent B. 3.5/5 Oct 10). No press outlets, bylines, or scores to mine as of this check. El Círculo premiered 2026-10-07; French press coverage may still be forthcoming. Ledgered under Rule H per scope limit 1: the aggregation page itself gets no row, with or without press content, but the sweep must keep checking it. A weekly Pass 0b re-mine step naming this exact URL is added to the El Círculo Media Sweep routine in this same commit, bounded through 2026-12-16 (LEMA-12653). Re-checked 2026-10-19 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13052): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-10-26 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13609): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-11-02 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13893): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-11-09 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-14176): still zero-yield; curl fetch (HTTP 200) renders only the Critiques Spectateurs section (patrick torres, 11 notes / 2 critiques, unchanged). No professional critic reviews to mine yet.",
       "skipMethod": "body_fetch",
       "history": [
         {
@@ -4199,6 +4199,13 @@
           "method": "WebFetch",
           "status": 200,
           "issue": "LEMA-13893",
+          "note": "Weekly cadence re-check: press tab still empty, zero-yield negative result, audience-ratings content unchanged from prior checks."
+        },
+        {
+          "attempt": "2026-11-09T06:01:25Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14176",
           "note": "Weekly cadence re-check: press tab still empty, zero-yield negative result, audience-ratings content unchanged from prior checks."
         }
       ]
@@ -14473,7 +14480,28 @@
           "note": "Body fetched: French translation of the tracked English article. Rule I second address."
         }
       ]
+    },
+    {
+      "url": "https://www.droidetv.com/post/entrevista-cecilia-carbonell-da-vida-a-yolanda-miranda-madre-de-thalia-en-la-bio-serie-timbiriche",
+      "firstSeen": "2026-11-09T06:01:25Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-09T06:01:25Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "DroideTV interview (2026-11-02) with actress Cecilia Carbonell about playing Yolanda Miranda in the Timbiriche bio-series. Body fetched: the only El Circulo content is two incidental sentences near the end (she says she loved her small part in El circulo on Netflix, and the closing line says the Timbiriche series is on VIX and El Circulo on Netflix). Concrete alternative subject: the Timbiriche bio-series interview. Not coverage of El Circulo. Borderline: flagged on LEMA-14176 in case a cast-comment mention is ruled coverage.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-09T06:01:25Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14176",
+          "note": "Body fetched: article is about the Timbiriche bio-series; El Circulo mentioned in two incidental sentences. Rule G."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-09T02:02:26Z"
+  "lastUpdated": "2026-11-09T06:01:25Z"
 }
