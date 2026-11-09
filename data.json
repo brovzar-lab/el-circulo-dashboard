@@ -3975,7 +3975,7 @@
     "market": "Latin America",
     "type": "Feature",
     "excerpt": "Argentine outlet Ciudad Magazine (Artear) frames El Círculo as worth watching, centered on Buenos Aires-born actor Michel Brown's role as Tomás (career since his 1991 debut on Jugate conmigo). Covers the political-thriller premise: the murder of actress Pamela Dosantos and a leaked video that threatens four lifelong friends across the show's eight episodes.",
-    "storyGroup": null
+    "storyGroup": "ciudad-ar-el-circulo-20261108"
   },
   {
     "outlet": "Netflix Latinoamérica (X)",
@@ -4041,5 +4041,18 @@
     "type": "Feature",
     "excerpt": "Royal Delux names Zuria Vega its Musa of the month, profiling her career and her role as Amelia in the Netflix series El Círculo, and linking back to its earlier novel-versus-series comparison.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Ciudad Magazine",
+    "headline": "El tráiler oficial de El Círculo",
+    "url": "https://www.ciudad.com.ar/videos/cine-y-series/2026/11/08/el-trailer-oficial-de-el-circulo/",
+    "date": "Nov 8, 2026",
+    "ts": 20261108,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Entertainment",
+    "excerpt": "Video piece on Argentine outlet Ciudad Magazine (Artear): the official trailer of the Netflix series El Círculo. Separate video artifact from the same outlet's written Michel Brown feature of the same day, grouped with it under one storyGroup.",
+    "storyGroup": "ciudad-ar-el-circulo-20261108"
   }
 ]
