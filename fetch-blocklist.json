@@ -15761,7 +15761,91 @@
           "note": "Disposition set this sweep."
         }
       ]
+    },
+    {
+      "url": "https://cms.protestantedigital.com/cultural/68890/Romper_el_circulo_la_verdad_desnuda",
+      "firstSeen": "2026-11-10T10:01:50Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T10:01:50Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Protestante Digital cultural column 'Romper el circulo: la verdad desnuda' (2026-11-10 page header only): generic Spanish phrase 'romper el circulo' on a religious/cultural site, body fetch returned only site navigation shell. No mention of Netflix, Zuria Vega, Michel Brown or the series. Surfaced via the generic 'El circulo' title collision.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-10T10:01:50Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14249",
+          "note": "Protestante Digital cultural column 'Romper el circulo: la verdad desnuda' (2026-11-10 pag"
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/ie/title/80217807",
+      "firstSeen": "2026-11-10T10:01:50Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T10:01:50Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "Irish-locale sibling of the already-ledgered Netflix title page netflix.com/title/80217807 (official watch page: catalog metadata only, no reviews or analysis). Same Rule F surface family; locale wrapper, not a distinct document.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-10T10:01:50Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14249",
+          "note": "Irish-locale sibling of the already-ledgered Netflix title page netflix.com/title/80217807"
+        }
+      ]
+    },
+    {
+      "url": "https://www.yourlittleblackbook.me/en/nieuw-op-netflix-2026/",
+      "firstSeen": "2026-11-10T10:01:50Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T10:01:50Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipNote": "'New on Netflix November 2026: 40 tips' monthly catalog list (datePublished 2026-11-08). Inside The Circle appears only as one list entry ('Genre: Mexican, To see: New series') with no prose about the show; listing/database family, strip test leaves only a title and genre tag.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-10T10:01:50Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14249",
+          "note": "'New on Netflix November 2026: 40 tips' monthly catalog list (datePublished 2026-11-08). I"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@netflixlat/video/7706237516654906644",
+      "firstSeen": "2026-11-10T10:01:50Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T10:01:50Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipNote": "Netflix Latinoamerica TikTok video promoting 'La ley de Alicia' (Fernanda Castillo, arrives Nov 11), a different Netflix series. Body fetch shows no mention of El Circulo; createTime 2026-11-09T18:17:26Z read from the platform payload. Surfaced by the generic query noise.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-10T10:01:50Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14249",
+          "note": "Netflix Latinoamerica TikTok video promoting 'La ley de Alicia' (Fernanda Castillo, arrive"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-10T06:01:28Z"
+  "lastUpdated": "2026-11-10T10:01:50Z"
 }
