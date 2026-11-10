@@ -4171,5 +4171,31 @@
     "type": "Feature",
     "excerpt": "Mexico City outlet El Capitalino interviews supporting cast member Diego Sandoval, who plays Nico, a 17-year-old programming whiz who helps investigate the murder of actress Pamela Dos Santos. He describes his at-home audition, the callback with the directors and the challenge of portraying a teenage hacker; notes the series is fiction based on the novel Los corruptores.",
     "storyGroup": null
+  },
+  {
+    "outlet": "ElRionegrino",
+    "headline": "Por qué ver El Círculo en Netflix: el thriller mexicano que destaca un actor argentino",
+    "url": "https://elrionegrino.com/por-que-ver-el-circulo-en-netflix-el-thriller-mexicano-que-destaca-un-actor-argentino/",
+    "date": "Nov 9, 2026",
+    "ts": 20261109,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Feature",
+    "excerpt": "Argentine regional outlet ElRionegrino (Río Negro) runs its own pickup of the 'why watch El Círculo' piece: eight episodes of up to 50 minutes, the murder of actress Pamela Dosantos, a compromising video threatening four friends (Jaime, Tomás, Amelia, Mario), based on Los corruptores by Jorge Zepeda Patterson, with Buenos Aires-born Michel Brown (Tomás) as the hook. Distinct page from the Ciudad Magazine feature of the same story, grouped with it.",
+    "storyGroup": "ciudad-ar-el-circulo-20261108"
+  },
+  {
+    "outlet": "Spoiler.mx",
+    "headline": "Spoiler Show 30: Diego Luna, Mabel Cadena y Fernando Rovzar",
+    "url": "https://spoiler.mx/spoiler-show-30-diego-luna-mabel-cadena-fernando-rovzar/",
+    "date": "Nov 10, 2026",
+    "ts": 20261110,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Mexican entertainment outlet Spoiler recaps episode 30 of its Spoiler Show with Rana Fonk, with producer Fernando Rovzar alongside Diego Luna and Mabel Cadena. The Rovzar segment argues Mexican productions no longer get dismissed as 'looking Mexican', crediting Señor Ávila's International Emmy win with opening the door to productions such as Las Azules (Apple TV) and El Círculo (Netflix). El Círculo is a named mention inside a broader interview recap (Rule F embedded-mention amendment).",
+    "storyGroup": null
   }
 ]
