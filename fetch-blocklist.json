@@ -15867,7 +15867,176 @@
           "note": "Instagram post by 2rampage_mx (series-recommendation account) recommending El circulo; caption 'El circulo: cuando los secretos ponen a prueba una amistad'. WebFetch returned author and caption; the o"
         }
       ]
+    },
+    {
+      "url": "https://lado.mx/noticia/22277210/",
+      "firstSeen": "2026-11-10T22:01:57Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T22:01:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Netflix apology over Lesslie Polinesia dubbing voice (datePublished 2026-11-10). El circulo appears only inside 'Kingsman: El circulo dorado' in an actress filmography; no mention of the series. Generic query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-10T22:01:57Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14258",
+          "note": "Netflix apology over Lesslie Polinesia dubbing voice (datePublished 2026-11-10). El circulo appears only inside 'Kingsma"
+        }
+      ]
+    },
+    {
+      "url": "https://www.elfinanciero.com.mx/entretenimiento/2026/11/10/netflix-se-disculpa-tras-promocionar-a-lesslie-polinesia-con-la-voz-de-otra-actriz/",
+      "firstSeen": "2026-11-10T22:01:57Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T22:01:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Same Lesslie Polinesia dubbing story as lado.mx (datePublished 2026-11-10T20:36Z). El circulo only inside 'Kingsman: El circulo dorado' filmography line; unrelated to the series.",
+      "history": [
+        {
+          "attempt": "2026-11-10T22:01:57Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14258",
+          "note": "Same Lesslie Polinesia dubbing story as lado.mx (datePublished 2026-11-10T20:36Z). El circulo only inside 'Kingsman: El "
+        }
+      ]
+    },
+    {
+      "url": "https://www.espinof.com/criticas/dos-parejas-dos-casas-cadaver-serie-netflix-intercambio-convierte-inocente-acuerdo-vacacional-inquietante-juego-manipulacion",
+      "firstSeen": "2026-11-10T22:01:57Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T22:01:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Espinof review of a different Netflix series, 'El intercambio' (datePublished 2026-11-10). Body has no mention of El Circulo / Inside the Circle.",
+      "history": [
+        {
+          "attempt": "2026-11-10T22:01:57Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14258",
+          "note": "Espinof review of a different Netflix series, 'El intercambio' (datePublished 2026-11-10). Body has no mention of El Cir"
+        }
+      ]
+    },
+    {
+      "url": "https://www.filmweb.pl/person/Bernardo+De+la+Rosa+Villarreal-2775774/online",
+      "firstSeen": "2026-11-10T22:01:57Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T22:01:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Filmweb.pl person filmography/streaming-availability page for cast member Bernardo De la Rosa Villarreal; Inside the Circle appears only as a credit row with a one-line synopsis. Database family (Rule F), no staff-written prose.",
+      "history": [
+        {
+          "attempt": "2026-11-10T22:01:57Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14258",
+          "note": "Filmweb.pl person filmography/streaming-availability page for cast member Bernardo De la Rosa Villarreal; Inside the Cir"
+        }
+      ]
+    },
+    {
+      "url": "https://www.serienjunkies.de/video/inside-the-circle-season-1-trailer_en-34613.html",
+      "firstSeen": "2026-11-10T22:01:57Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T22:01:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Serienjunkies.de trailer video page ('Im Kreis der Korruption: Trailer zum Serienstart'). Only machine date is uploadDate 2026-11-10T22:01:31+00:00, equal to this run's own fetch time, i.e. a render-time proxy, not a real publish date (Rule A). Undateable, not guessed. Reviewable if a real dated mirror appears.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-10T22:01:57Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14258",
+          "note": "Serienjunkies.de trailer video page ('Im Kreis der Korruption: Trailer zum Serienstart'). Only machine date is uploadDat"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@davidrrubi/video/7706213360311815444",
+      "firstSeen": "2026-11-10T22:01:57Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T22:01:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video about Premios Heat / La Arrolladora Banda El Limon (desc read from page payload); no mention of El Circulo. Generic query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-10T22:01:57Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14258",
+          "note": "TikTok video about Premios Heat / La Arrolladora Banda El Limon (desc read from page payload); no mention of El Circulo."
+        }
+      ]
+    },
+    {
+      "url": "http://www.thefutoncritic.com/guide/when-does-insert-show-name-here-come-back/",
+      "firstSeen": "2026-11-10T22:01:57Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T22:01:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TheFutonCritic renewal/hiatus status guide listing hundreds of shows; 'INSIDE THE CIRCLE NETFLIX none scheduled 0 on hiatus/fate TBD' is one table row, no prose. Listing family (Rule F).",
+      "history": [
+        {
+          "attempt": "2026-11-10T22:01:57Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14258",
+          "note": "TheFutonCritic renewal/hiatus status guide listing hundreds of shows; 'INSIDE THE CIRCLE NETFLIX none scheduled 0 on hia"
+        }
+      ]
+    },
+    {
+      "url": "https://flixpatrol.com/top10/netflix/mexico/2026-11-09/",
+      "firstSeen": "2026-11-10T22:01:57Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-11-10T22:01:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "FlixPatrol Netflix Top 10 Mexico daily chart page (2026-11-09). Body fetch returned 403 Cloudflare; classified on established FlixPatrol Rule F surface-family pattern (23 sibling rows already ledgered), not on page content.",
+      "history": [
+        {
+          "attempt": "2026-11-10T22:01:57Z",
+          "method": "curl",
+          "status": 403,
+          "issue": "LEMA-14258",
+          "note": "FlixPatrol Netflix Top 10 Mexico daily chart page (2026-11-09). Body fetch returned 403 Cloudflare; classified on establ"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-10T14:01:31Z"
+  "lastUpdated": "2026-11-10T22:01:57Z"
 }
