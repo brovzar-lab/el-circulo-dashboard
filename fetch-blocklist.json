@@ -14991,7 +14991,601 @@
           "note": "Disposition confirmed by body fetch this sweep."
         }
       ]
+    },
+    {
+      "url": "http://benclaudio.blogspot.com/2018/07/lo-tributario-n-445-la-aplicacion-de.html",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Spanish blog on tax law (El hecho imponible, 2018). Only hit is the word 'corruptores' in a devotional line; not the series or the novel.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "http://solidaridadpanama.blogspot.com/2014/10/panama-investigaran-al-tio-pipo.html",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "2014 Panama politics blog. 'Circulo Cero de Martinelli' is a Panamanian political circle; unrelated to El Circulo the series.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "http://solidaridadpanama.blogspot.com/2014/11/panama-fraudulentas-elecciones.html",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "2014 Panama elections blog; generic word 'corruptores' only. Unrelated to the series or the novel.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "http://spinningpins.blogspot.com/2008/06/sacred-and-profane-hunter-painted-her.html",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "2008 art blog about a painter (tondo/circular painting); 'inside the circle' is a generic phrase.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://arihirvonen.com/the-bell-that-cannot-be-unrung-on-there-is-motion-at-your-front-door/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Essay on a video-art piece, 'inside the circle' used as a framing metaphor. Unrelated to the series.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://blogs.ethnos360.org/david-watters/2026/11/08/staying-inside-the-circle-of-safety/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Title-only evidence (body fetch returned a Cloudflare 403): missionary blog post 'Staying Inside the Circle of Safety' by David and Robin Watters (Ethnos360), a religious/personal-safety post, not about the Netflix series.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "title/snippet",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://brillantessensaciones.net/queer-as-cinema-ruega-por-nosotras/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Spanish cinema magazine post on the film 'Ruega por nosotras'; 'cierra el circulo' is a figure of speech. No mention of the series.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://brucedalzell.com/article/jon-hamm-s-new-adult-animation-series-a-must-watch",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Content-farm article on a Jon Hamm adult animation series; no mention of El Circulo / Inside the Circle in the body.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://businessmirror.com.ph/2021/09/07/the-passion-pacio-all-pumped-up-vs-the-ninja/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Title-only evidence (body fetch 403): 2021 Philippine boxing piece, 'The Passion' Pacquiao vs 'The Ninja'. Unrelated to the series.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "title/snippet",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://datv.co.uk/hustle-2004/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Retrospective on the 2004 BBC drama Hustle; 'inside the circle' is a generic phrase about con-artist crews.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://elsorfesdelsenyorboix.blogspot.com/2015/08/el-circulo-dave-eggers.html",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "2015 Catalan book blog on Dave Eggers' novel The Circle ('El Circulo'), unrelated to Zepeda Patterson's Los Corruptores or the Netflix series.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://musael.com/es/blog/story-circle",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Product blog on Dan Harmon's story circle (narrative structure); unrelated to the series.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://tgregister.com/channel/AlvaroyAlejandro",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Telegram channel directory page for @AlvaroyAlejandro (Los Periodistas); body fetch found no mention of the series.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://zetatijuana.com/2026/11/la-fuerza-del-hombre/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Semanario ZETA column 'La fuerza del hombre' (published 2026-11-09). Body fetch found no mention of El Circulo, Los Corruptores or Zepeda Patterson.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.claquetaacida.com/final-explicado/the-cycle-la-burocracia-de-la-venganza",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Claqueta Acida ending-explained for the film 'The Cycle' (2026). Only hit is 'cierra el circulo narrativo', a figure of speech.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://hispanicpost.com/2026/11/08/roberto-palazuelos-recuerda-su-amistad-con-luis-miguel-y-cuenta-como-la-serie-de-netflix-lo-puso-en-medio-de-las-criticas-se-les-fue-la-mano/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Syndicated copy of the Roberto Palazuelos / Luis Miguel series story already ledgered as off-topic (infobae sibling). 'circulo' there refers to Luis Miguel's social circle.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://rpp.pe/famosos/celebridades/alfonso-herrera-voz-de-el-gato-con-sombrero-estamos-un-poco-perdidos-entre-las-redes-y-los-aparatos-electronicos-entrevista-noticia-1715928",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "RPP interview with Alfonso Herrera on voicing The Cat in the Hat; 'se cierra el circulo' is a figure of speech.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://escuadrongeek.com/2026/11/07/nobody-wants-this/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Escuadron Geek piece on Nobody Wants This season 4; 'circulo familiar/cercano' is generic wording.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflixturk.com/netflixte-2026-ve-2027de-yayinlanacak-ispanyol-dizileri-yeni-money-heist-spin-offlari-galicia-ceteleri-3-sezon-ve-daha-fazlasi/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Turkish list of upcoming Spanish Netflix series; the only 'El Circulo' hit is 'En El Circulo Del Asesino', a different Spanish show (Sergio G. Sanchez), not the Mexican thriller.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.newsdigitales.com/nota/306900/prime-video-hbo-max-y-netflix-lideradas-por-producciones-argentinas/",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Argentine streaming-ranking news item; body fetch found no mention of El Circulo / Inside the Circle.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://parasocial.fm/podcast/238433/los-streameadores",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Podcast show index page (Los Streameadores): episode list where one episode title (Oct 24) names El Circulo among a dozen titles; no prose about the show on this page. Rule F embedded-list mention without original coverage on the page.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://bbqnique.com/article/what-to-watch-tonight-best-new-shows-movies-on-netflix-prime-video-hulu-oct-7",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Content-farm 'what to watch tonight (Oct 7)' streaming guide (republished copies across many domains). 'Inside The Circle' is one list item with a generic one-line blurb; platform-wide guide, no prose about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://namiddlesexnj.org/article/what-to-watch-tonight-best-new-shows-movies-on-netflix-prime-video-hulu-oct-7",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Content-farm 'what to watch tonight (Oct 7)' streaming guide (republished copies across many domains). 'Inside The Circle' is one list item with a generic one-line blurb; platform-wide guide, no prose about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://p4rsiso.com/article/what-to-watch-tonight-best-new-shows-movies-on-netflix-prime-video-hulu-oct-7",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Content-farm 'what to watch tonight (Oct 7)' streaming guide (republished copies across many domains). 'Inside The Circle' is one list item with a generic one-line blurb; platform-wide guide, no prose about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://vancouvermedicalenglish.com/article/what-to-watch-tonight-best-new-shows-movies-on-netflix-prime-video-hulu-oct-7",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Content-farm 'what to watch tonight (Oct 7)' streaming guide (republished copies across many domains). 'Inside The Circle' is one list item with a generic one-line blurb; platform-wide guide, no prose about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://gigisdailycompanion.com/article/top-3-new-shows-movies-to-stream-tonight-oct-7-netflix-prime-video-hulu-more",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Content-farm 'what to watch tonight (Oct 7)' streaming guide (republished copies across many domains). 'Inside The Circle' is one list item with a generic one-line blurb; platform-wide guide, no prose about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://saltlinelawncare.com/article/top-3-new-shows-movies-to-stream-tonight-oct-7-netflix-prime-video-hulu-more",
+      "firstSeen": "2026-11-10T02:03:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T02:03:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Content-farm 'what to watch tonight (Oct 7)' streaming guide (republished copies across many domains). 'Inside The Circle' is one list item with a generic one-line blurb; platform-wide guide, no prose about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T02:03:08Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14247",
+          "note": "Disposition confirmed this sweep."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-09T22:03:06Z"
+  "lastUpdated": "2026-11-10T02:03:08Z"
 }
