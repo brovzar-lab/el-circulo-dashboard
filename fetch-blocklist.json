@@ -15585,7 +15585,183 @@
           "note": "Disposition confirmed this sweep."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-amelia-e-tomas",
+      "firstSeen": "2026-11-10T06:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T06:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same Rule F surface family as other already-ledgered /discover/ pages for this title: aggregation of videos under a topic tag, not a distinct document. Generic JS-shell; classified on URL-family pattern plus Exa snippet.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T06:01:28Z",
+          "method": "url-family + snippet",
+          "status": 200,
+          "issue": "LEMA-14248",
+          "note": "Disposition set this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/inside-the-circle-netflix",
+      "firstSeen": "2026-11-10T06:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T06:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same Rule F surface family as other already-ledgered /discover/ pages for this title: aggregation of videos under a topic tag, not a distinct document. Generic JS-shell; classified on URL-family pattern plus Exa snippet.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T06:01:28Z",
+          "method": "url-family + snippet",
+          "status": 200,
+          "issue": "LEMA-14248",
+          "note": "Disposition set this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/inside-the-circle-on-netflix-triller",
+      "firstSeen": "2026-11-10T06:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T06:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same Rule F surface family as other already-ledgered /discover/ pages for this title: aggregation of videos under a topic tag, not a distinct document. Generic JS-shell; classified on URL-family pattern plus Exa snippet.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T06:01:28Z",
+          "method": "url-family + snippet",
+          "status": 200,
+          "issue": "LEMA-14248",
+          "note": "Disposition set this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/tom%C3%A1s-arismendi-serie-el-circulo",
+      "firstSeen": "2026-11-10T06:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T06:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> hashtag/topic index page, same Rule F surface family as other already-ledgered /discover/ pages for this title: aggregation of videos under a topic tag, not a distinct document. Generic JS-shell; classified on URL-family pattern plus Exa snippet.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T06:01:28Z",
+          "method": "url-family + snippet",
+          "status": 200,
+          "issue": "LEMA-14248",
+          "note": "Disposition set this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.escribiendocine.com/columnistas/80-juan-pablo--russo",
+      "firstSeen": "2026-11-10T06:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T06:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "EscribiendoCine columnist index page (Juan Pablo Russo): list of headlines for many unrelated titles, no El Circulo / Inside the Circle item visible in body fetch. Rule F listing, off-topic for the show.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T06:01:28Z",
+          "method": "tavily extract",
+          "status": 200,
+          "issue": "LEMA-14248",
+          "note": "Disposition set this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://www.filmstarts.de/kritiken/1000051909.html",
+      "firstSeen": "2026-11-10T06:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T06:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "FILMSTARTS.de database title record 'Im Kreis der Korruption' (German title of the series): synopsis, cast list and images only, no critic text, no editor review, no publish date. Rule F database family (same as IMDb title records).",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T06:01:28Z",
+          "method": "tavily extract",
+          "status": 200,
+          "issue": "LEMA-14248",
+          "note": "Disposition set this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://mibtonix.com/article/what-to-watch-tonight-best-new-shows-movies-on-netflix-prime-video-hulu-oct-7",
+      "firstSeen": "2026-11-10T06:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T06:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Content-farm 'what to watch tonight (Oct 7)' streaming guide, another republished copy of the already-ledgered guide. 'Inside The Circle' is one list item; no prose about the show. Rule F.",
+      "reviewable": false,
+      "history": [
+        {
+          "attempt": "2026-11-10T06:01:28Z",
+          "method": "tavily extract",
+          "status": 200,
+          "issue": "LEMA-14248",
+          "note": "Disposition set this sweep."
+        }
+      ]
+    },
+    {
+      "url": "https://revistazocalo.com/la-ia-la-academia-y-mi-amiga-profesora/",
+      "firstSeen": "2026-11-10T06:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T06:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Revista Zocalo column by Mario A. Medina on AI, academia and reading habits; El Circulo / Los Corruptores appears only in the opening anecdote (friend asks if he has seen it). No JSON-LD datePublished, no article:published_time, no byline dateline in body fetch (dates in page are sidebar items for other articles). Rule A: no recoverable real publish date. Subject is also mostly off-topic.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-10T06:01:28Z",
+          "method": "tavily extract",
+          "status": 200,
+          "issue": "LEMA-14248",
+          "note": "Disposition set this sweep."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-10T02:03:08Z"
+  "lastUpdated": "2026-11-10T06:01:28Z"
 }
