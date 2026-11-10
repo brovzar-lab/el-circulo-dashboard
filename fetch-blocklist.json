@@ -15845,7 +15845,29 @@
           "note": "Netflix Latinoamerica TikTok video promoting 'La ley de Alicia' (Fernanda Castillo, arrive"
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DfirQvAiffq",
+      "firstSeen": "2026-11-10T14:01:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-10T14:01:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post by 2rampage_mx (series-recommendation account) recommending El circulo; caption 'El circulo: cuando los secretos ponen a prueba una amistad'. WebFetch returned author and caption; the only date available is a relative '13h' stamp and image alt text, neither a Rule A source (no JSON-LD, article:published_time, visible dateline, dated URL path or platform API timestamp). Undateable, not a guessed date. Reviewable if a dated mirror or platform timestamp appears.",
+      "reviewable": true,
+      "history": [
+        {
+          "attempt": "2026-11-10T14:01:31Z",
+          "method": "WebFetch",
+          "status": 200,
+          "issue": "LEMA-14255",
+          "note": "Instagram post by 2rampage_mx (series-recommendation account) recommending El circulo; caption 'El circulo: cuando los secretos ponen a prueba una amistad'. WebFetch returned author and caption; the o"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-10T10:01:50Z"
+  "lastUpdated": "2026-11-10T14:01:31Z"
 }
