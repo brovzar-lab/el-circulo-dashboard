@@ -16078,7 +16078,91 @@
           "note": "Télé 7 Jours (programme-television.org) series season page for Inside The Circle: synopsis, episode list, cast and where"
         }
       ]
+    },
+    {
+      "url": "https://abcentertainment.co.in/category/tv-show-review/",
+      "firstSeen": "2026-11-11T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "abcentertainment.co.in category archive (TV-Show reviews): a rolling index of many unrelated reviews, one tile for Inside the Circle. Body fetched via curl. The tile's article (...-online-2/) is already ledgered editorial_redundant_syndication; sibling ...-online/ is the same review slug family, also skipped.",
+      "history": [
+        {
+          "attempt": "2026-11-11T06:01:30Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14260",
+          "note": "abcentertainment.co.in category archive (TV-Show reviews): a rolling index of many unrelated reviews, one tile for Inside the Circle. Body fetched via curl. The"
+        }
+      ]
+    },
+    {
+      "url": "https://abcentertainment.co.in/inside-the-circle-review-2026-tv-show-series-cast-crew-online/",
+      "firstSeen": "2026-11-11T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "abcentertainment.co.in sibling slug of the already-ledgered ...-online-2/ Inside the Circle review (same title, JSON-LD datePublished 2026-10-27 on the -2 page); same content-farm document, Rule I second address. Not fetched separately (title and slug identical to ledgered sibling).",
+      "history": [
+        {
+          "attempt": "2026-11-11T06:01:30Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14260",
+          "note": "abcentertainment.co.in sibling slug of the already-ledgered ...-online-2/ Inside the Circle review (same title, JSON-LD datePublished 2026-10-27 on the -2 page)"
+        }
+      ]
+    },
+    {
+      "url": "https://t.me/s/NetflixLAT?before=13045",
+      "firstSeen": "2026-11-11T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Telegram public channel feed page for Netflix Latinoamerica (t.me/s/NetflixLAT?before=13045): a paginated multi-post stream, no El Círculo/Inside the Circle text found in the fetched body, no single dateable post. Body fetched via curl.",
+      "history": [
+        {
+          "attempt": "2026-11-11T06:01:30Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14260",
+          "note": "Telegram public channel feed page for Netflix Latinoamerica (t.me/s/NetflixLAT?before=13045): a paginated multi-post stream, no El Círculo/Inside the Circle tex"
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/de/news/ni66050434/",
+      "firstSeen": "2026-11-11T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "title_snippet_only",
+      "skipNote": "IMDb /de/ locale wrapper of news item ni66050434, whose canonical /news/ form is already ledgered editorial_redundant_syndication. Same document, locale rendering of the same English text (Rule I locale wrapper limb); not a distinct-language edition.",
+      "history": [
+        {
+          "attempt": "2026-11-11T06:01:30Z",
+          "method": "curl",
+          "status": 200,
+          "issue": "LEMA-14260",
+          "note": "IMDb /de/ locale wrapper of news item ni66050434, whose canonical /news/ form is already ledgered editorial_redundant_syndication. Same document, locale renderi"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-11T02:01:27Z"
+  "lastUpdated": "2026-11-11T06:01:30Z"
 }
