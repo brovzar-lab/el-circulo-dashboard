@@ -16514,7 +16514,29 @@
           "note": "TikTok /discover/<slug> topic index page, same surface family as the 10+ already-ledgered sibling /discover/ pages for this show. Aggregates many videos under a"
         }
       ]
+    },
+    {
+      "url": "https://www.filmovenovinky.sk/netflix-novinky/netflix-serialy-2026",
+      "firstSeen": "2026-11-11T18:01:03Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T18:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Slovak platform-wide 'Netflix seriály 2026' release-calendar listing (hundreds of titles). 'V kruhu (Season 1) / Inside The Circle' appears as a single entry with the platform's syndicated synopsis and release date 7 October 2026, no original prose or analysis about the show. Stripping the listing leaves nothing written about the show. Rule F listing/database gate. Body fetched via curl.",
+      "history": [
+        {
+          "attempt": "2026-11-11T18:01:03Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14268",
+          "note": "Slovak platform-wide 'Netflix seriály 2026' release-calendar listing (hundreds of titles). 'V kruhu (Season 1) / Inside The Circle' appears as a single entry wi"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-11T14:02:06Z"
+  "lastUpdated": "2026-11-11T18:01:03Z"
 }
