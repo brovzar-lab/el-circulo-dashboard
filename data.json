@@ -4223,5 +4223,18 @@
     "type": "Feature",
     "excerpt": "Milenio interview with actress Cecilia Carbonell (Timbiriche, Un buen divorcio). Alternative headline names El Círculo; a section covers her role in the Netflix series based on Los corruptores by Jorge Zepeda Patterson, appearing in a flashback of Jaime (Osvaldo Benavides) and how she prepared for the scene. Embedded mention in an outlet article (Rule F embedded-mention amendment).",
     "storyGroup": null
+  },
+  {
+    "outlet": "La Razón de México",
+    "headline": "Ramón Medina: Hoy se cuentan mejores historias",
+    "url": "https://www.razon.com.mx/entretenimiento/2026/11/11/ramon-medina-hoy-se-cuentan-mejores-historias/",
+    "date": "Nov 11, 2026",
+    "ts": 20261111,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "La Razón interview (by Carlos Aguillón) with actor and director Ramón Medina on his three current projects: El Círculo (Netflix political thriller), Prefiero la muerte (Prime Video) and season 5 of La Lotería del Crimen. El Círculo is named as one of his current roles; the rest of the piece covers his screenwriting and directing. Embedded mention in an outlet article (Rule F embedded-mention amendment).",
+    "storyGroup": null
   }
 ]
