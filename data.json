@@ -4197,5 +4197,18 @@
     "type": "Feature",
     "excerpt": "Mexican entertainment outlet Spoiler recaps episode 30 of its Spoiler Show with Rana Fonk, with producer Fernando Rovzar alongside Diego Luna and Mabel Cadena. The Rovzar segment argues Mexican productions no longer get dismissed as 'looking Mexican', crediting Señor Ávila's International Emmy win with opening the door to productions such as Las Azules (Apple TV) and El Círculo (Netflix). El Círculo is a named mention inside a broader interview recap (Rule F embedded-mention amendment).",
     "storyGroup": null
+  },
+  {
+    "outlet": "Pelis y Más MX (Instagram)",
+    "headline": "Reseña de la serie El círculo: \"Nadie pidió mi opinión, peeeerooooooo\"",
+    "url": "https://www.instagram.com/reel/Dfkle57MQ-Y",
+    "date": "Nov 10, 2026",
+    "ts": 20261110,
+    "dateSource": "visible_dateline",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Review",
+    "excerpt": "Instagram reel from the @pelisymasmx film/TV commentary account reviewing El Círculo (\"Reseña de la serie El círculo. Es un thriller mexicano de ocho episodios dirigido por Alejandro Lozano. Cuatro amigos, el fallecimiento de una actriz y una...\", #elcirculo #netflix #thrillerpolítico). Dated from the post's own rendered date (\"November 10, 2026\") in the page og:description; no separate datePublished metadata exposed. Rule B: original commentary by a commentator account.",
+    "storyGroup": null
   }
 ]
