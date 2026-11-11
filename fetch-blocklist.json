@@ -16162,7 +16162,95 @@
           "note": "IMDb /de/ locale wrapper of news item ni66050434, whose canonical /news/ form is already ledgered editorial_redundant_syndication. Same document, locale renderi"
         }
       ]
+    },
+    {
+      "url": "https://www.netflix.com/ne/title/80217807",
+      "firstSeen": "2026-11-11T10:01:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T10:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Netflix official title page, Nepal (ne) locale of netflix.com/title/80217807: synopsis, episode guide, cast metadata only (confirmed via search snippet showing the catalog layout). Same Rule F family as the already-ledgered netflix.com/<locale>/title/80217807 siblings; locale wrapper, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-11-11T10:01:21Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-14261",
+          "note": "Netflix official title page, Nepal (ne) locale of netflix.com/title/80217807: synopsis, episode guide, cast metadata only (confirmed via search snippet showing "
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/pl/serial/los-corruptores/sezon-1",
+      "firstSeen": "2026-11-11T10:01:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T10:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch Polish-locale season page for Inside The Circle (Los Corruptores): streaming-availability database listing, no written editorial content. Same Rule F family as the already-ledgered justwatch.com/us and /uk show pages for this show.",
+      "history": [
+        {
+          "attempt": "2026-11-11T10:01:21Z",
+          "method": "Tavily search snippet",
+          "status": 200,
+          "issue": "LEMA-14261",
+          "note": "JustWatch Polish-locale season page for Inside The Circle (Los Corruptores): streaming-availability database listing, no written editorial content. Same Rule F "
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/comandante-lara-serie-el-circulo",
+      "firstSeen": "2026-11-11T10:01:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T10:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page, same surface family as the 8+ already-ledgered sibling /discover/ pages for this show. Fetched via curl: only a topic-level createTime is present (a keyword-page creation stamp, not a post publish date), and the page aggregates many videos. Rule F; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-11T10:01:21Z",
+          "method": "Tavily Extract/curl",
+          "status": 200,
+          "issue": "LEMA-14261",
+          "note": "TikTok /discover/<slug> topic index page, same surface family as the 8+ already-ledgered sibling /discover/ pages for this show. Fetched via curl: only a topic-"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ranker.com/list/best-netflix-spanish-shows/ranker-streaming",
+      "firstSeen": "2026-11-11T10:01:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T10:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Ranker user-voted list of 100+ Spanish-language Netflix shows (platform-wide ranking). Tavily Extract of the page returned the ranking entries (The Eternaut, The Asunta Case, A Perfect Story, Wrong Side of the Tracks) with no El Circulo / Inside the Circle entry visible; the page is a vote-driven listing, not coverage of the show. Rule F listing/database gate (and off-topic under Rule G for this show).",
+      "history": [
+        {
+          "attempt": "2026-11-11T10:01:21Z",
+          "method": "Tavily Extract/curl",
+          "status": 200,
+          "issue": "LEMA-14261",
+          "note": "Ranker user-voted list of 100+ Spanish-language Netflix shows (platform-wide ranking). Tavily Extract of the page returned the ranking entries (The Eternaut, Th"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-11T06:01:30Z"
+  "lastUpdated": "2026-11-11T10:01:21Z"
 }
