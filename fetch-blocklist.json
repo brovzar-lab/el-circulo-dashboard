@@ -16536,7 +16536,73 @@
           "note": "Slovak platform-wide 'Netflix seriály 2026' release-calendar listing (hundreds of titles). 'V kruhu (Season 1) / Inside The Circle' appears as a single entry wi"
         }
       ]
+    },
+    {
+      "url": "https://da.martincid.com/tv-shows-da/alicias-lov-pa-netflix-mexicos-the-good-wife-med-en-hojesteretsdommer-bag-tremmer/",
+      "firstSeen": "2026-11-11T22:01:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T22:01:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Magazine DA (Danish edition) article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (The Good Wife remake), a different series. Body fetch: the only mention of Inside the Circle is a single cast-bio credit for another actor in the announcement; no coverage of El Circulo itself. Rule G off-topic, eighth locale edition of the same article family already ledgered (martincid.com siblings, LEMA-14266).",
+      "history": [
+        {
+          "attempt": "2026-11-11T22:01:09Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14269",
+          "note": "Martin Cid Magazine DA (Danish edition) article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (The Good Wife remake), a different series. Body fetch: the onl"
+        }
+      ]
+    },
+    {
+      "url": "https://krilliongame.com/krillion-answers/2026-11-11/",
+      "firstSeen": "2026-11-11T22:01:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T22:01:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Krillion Game Guide 'Answers 2026-11-11 Dive #119' word-puzzle answer page; 'Inside the Circle' appears only as one possible answer to the prompt 'Name an original movie or show from Netflix, Prime Video, Apple TV, or Disney+'. No coverage of the show. Rule G off-topic, same puzzle family as the already-ledgered wordhint.net Krillion page.",
+      "history": [
+        {
+          "attempt": "2026-11-11T22:01:09Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14269",
+          "note": "Krillion Game Guide 'Answers 2026-11-11 Dive #119' word-puzzle answer page; 'Inside the Circle' appears only as one possible answer to the prompt 'Name an origi"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@davidrrubi/video/7706208893432597781",
+      "firstSeen": "2026-11-11T22:01:09Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-11T22:01:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok video titled 'Artista Oro Premios Heat Gloria Trevi - Pelosuelto' (Exa result, no text returned, body not retrievable). Title names a concrete alternative subject (Gloria Trevi at the Premios Heat awards), unrelated to the show. Rule G off-topic generic-word noise; also undateable (no recoverable post date).",
+      "history": [
+        {
+          "attempt": "2026-11-11T22:01:09Z",
+          "method": "Exa result title (no body)",
+          "status": null,
+          "issue": "LEMA-14269",
+          "note": "TikTok video titled 'Artista Oro Premios Heat Gloria Trevi - Pelosuelto' (Exa result, no text returned, body not retrievable). Title names a concrete alternativ"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-11T18:01:03Z"
+  "lastUpdated": "2026-11-11T22:01:09Z"
 }
