@@ -16250,7 +16250,271 @@
           "note": "Ranker user-voted list of 100+ Spanish-language Netflix shows (platform-wide ranking). Tavily Extract of the page returned the ranking entries (The Eternaut, Th"
         }
       ]
+    },
+    {
+      "url": "https://www.martincid.com/tv-shows/alicia-s-law/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only mention of Inside the Circle is a single cast-bio credit for another actor in a different show's announcement; no coverage of El Circulo itself. Rule G off-topic, one of seven locale editions of the same article.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only "
+        }
+      ]
+    },
+    {
+      "url": "https://es.martincid.com/television/la-ley-de-alicia-netflix-convierte-the-good-wife-en-un-escandalo-del-supremo-mexicano/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only mention of Inside the Circle is a single cast-bio credit for another actor in a different show's announcement; no coverage of El Circulo itself. Rule G off-topic, one of seven locale editions of the same article.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only "
+        }
+      ]
+    },
+    {
+      "url": "https://latam.martincid.com/tv-latam/la-ley-de-alicia-de-netflix-fernanda-castillo-vuelve-a-litigar-tras-20-anos-fuera/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only mention of Inside the Circle is a single cast-bio credit for another actor in a different show's announcement; no coverage of El Circulo itself. Rule G off-topic, one of seven locale editions of the same article.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only "
+        }
+      ]
+    },
+    {
+      "url": "https://it.martincid.com/televisione/i-casi-di-alicia-su-netflix-e-the-good-wife-in-messico-il-marito-giudice-finisce-in-carcere/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only mention of Inside the Circle is a single cast-bio credit for another actor in a different show's announcement; no coverage of El Circulo itself. Rule G off-topic, one of seven locale editions of the same article.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only "
+        }
+      ]
+    },
+    {
+      "url": "https://fr.martincid.com/television-2/la-loi-dalicia-sur-netflix-lepouse-dun-juge-supreme-dechu-reprend-la-robe-apres-20-ans/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only mention of Inside the Circle is a single cast-bio credit for another actor in a different show's announcement; no coverage of El Circulo itself. Rule G off-topic, one of seven locale editions of the same article.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only "
+        }
+      ]
+    },
+    {
+      "url": "https://pt-br.martincid.com/tv-shows-pt-br/a-lei-de-alicia-netflix-leva-the-good-wife-ao-mexico-com-um-ministro-do-supremo-preso/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only mention of Inside the Circle is a single cast-bio credit for another actor in a different show's announcement; no coverage of El Circulo itself. Rule G off-topic, one of seven locale editions of the same article.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only "
+        }
+      ]
+    },
+    {
+      "url": "https://de.martincid.com/fernsehen/alicias-recht-bei-netflix-nach-20-jahren-zuruck-in-die-kanzlei-der-mann-sitzt-in-haft/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only mention of Inside the Circle is a single cast-bio credit for another actor in a different show's announcement; no coverage of El Circulo itself. Rule G off-topic, one of seven locale editions of the same article.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "Martin Cid Digital article on Netflix's 'La ley de Alicia' / 'Alicia's Law' (Fernanda Castillo, The Good Wife remake), a different series. Body fetch: the only "
+        }
+      ]
+    },
+    {
+      "url": "https://www.banijay.com/blog/2026/11/11/hulu-debuts-trailer-key-art-for-the-circle/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Banijay blog post on Hulu's trailer and key art for 'The Circle', the unrelated reality format. Body fetch: no mention of El Circulo / Inside the Circle / Los Corruptores. Rule G off-topic (known 'The Circle' noise).",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "Banijay blog post on Hulu's trailer and key art for 'The Circle', the unrelated reality format. Body fetch: no mention of El Circulo / Inside the Circle / Los C"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wordhint.net/krillion-answers-today/",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "WordHint 'Krillion Answers Today #119' word-puzzle answers page, unrelated to the show (body fetch returned 403). Title names a concrete alternative subject (a daily word puzzle). Rule G off-topic, generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "Exa result title/snippet (fetch 403)",
+          "status": 403,
+          "issue": "LEMA-14266",
+          "note": "WordHint 'Krillion Answers Today #119' word-puzzle answers page, unrelated to the show (body fetch returned 403). Title names a concrete alternative subject (a "
+        }
+      ]
+    },
+    {
+      "url": "https://www.radioformula.com.mx/espectaculos/macarena-garcia-natalia-tellez-y-javier-ibarreche-quedan-fuera-de-wilwood-productora-anuncia-su-redoblaje-tras-duras-criticas-20261110-0063.html",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Radio Formula article on Wilwood re-dubbing Macarena Garcia, Natalia Tellez and Javier Ibarreche after criticism (body fetch returned 403). Title names a concrete alternative subject (a dubbing controversy), no El Circulo reference. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "Exa result title/snippet (fetch 403)",
+          "status": 403,
+          "issue": "LEMA-14266",
+          "note": "Radio Formula article on Wilwood re-dubbing Macarena Garcia, Natalia Tellez and Javier Ibarreche after criticism (body fetch returned 403). Title names a concre"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/presidenta-aparece-en-la-serie-el-circulo",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page, same surface family as the 10+ already-ledgered sibling /discover/ pages for this show. Aggregates many videos under a search keyword, no single post or publish date. Rule F; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "TikTok /discover/<slug> topic index page, same surface family as the 10+ already-ledgered sibling /discover/ pages for this show. Aggregates many videos under a"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/cortos-de-el-c%C3%ADrculo-amelia-con-su-amigo",
+      "firstSeen": "2026-11-11T14:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T14:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page, same surface family as the 10+ already-ledgered sibling /discover/ pages for this show. Aggregates many videos under a search keyword, no single post or publish date. Rule F; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-11T14:02:06Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14266",
+          "note": "TikTok /discover/<slug> topic index page, same surface family as the 10+ already-ledgered sibling /discover/ pages for this show. Aggregates many videos under a"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-11T10:01:21Z"
+  "lastUpdated": "2026-11-11T14:02:06Z"
 }
