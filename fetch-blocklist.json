@@ -16036,7 +16036,49 @@
           "note": "FlixPatrol Netflix Top 10 Mexico daily chart page (2026-11-09). Body fetch returned 403 Cloudflare; classified on establ"
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/esto-no-no-es-de-primerizos-son-trans-de-la-serie-de-netflix-el-c%C3%ADrculo",
+      "firstSeen": "2026-11-11T02:01:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T02:01:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page (same surface family as already-ledgered TikTok discover pages). Fetched via curl (200): the only timestamp present is the topic word's createTime (2026-11-08T16:34:46Z), which is when the keyword page was created, not a post publish date, and the page aggregates many videos under the phrase rather than being one distinct document. Rule F; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-11T02:01:27Z",
+          "method": "tavily_extract",
+          "status": 200,
+          "issue": "LEMA-14259",
+          "note": "TikTok /discover/<slug> topic index page (same surface family as already-ledgered TikTok discover pages). Fetched via cu"
+        }
+      ]
+    },
+    {
+      "url": "https://www.programme-television.org/type/series/dramatiques/inside-the-circle-444032650/saison-446673241",
+      "firstSeen": "2026-11-11T02:01:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-11T02:01:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "Télé 7 Jours (programme-television.org) series season page for Inside The Circle: synopsis, episode list, cast and where-to-watch widgets. Body fetched via Tavily Extract: no staff-written review or analysis, no dateline; a TV-guide database record, same Rule F listing/database family as other TV guide and catalog pages.",
+      "history": [
+        {
+          "attempt": "2026-11-11T02:01:27Z",
+          "method": "tavily_extract",
+          "status": 200,
+          "issue": "LEMA-14259",
+          "note": "Télé 7 Jours (programme-television.org) series season page for Inside The Circle: synopsis, episode list, cast and where"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-10T22:01:57Z"
+  "lastUpdated": "2026-11-11T02:01:27Z"
 }
