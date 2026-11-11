@@ -4210,5 +4210,18 @@
     "type": "Review",
     "excerpt": "Instagram reel from the @pelisymasmx film/TV commentary account reviewing El Círculo (\"Reseña de la serie El círculo. Es un thriller mexicano de ocho episodios dirigido por Alejandro Lozano. Cuatro amigos, el fallecimiento de una actriz y una...\", #elcirculo #netflix #thrillerpolítico). Dated from the post's own rendered date (\"November 10, 2026\") in the page og:description; no separate datePublished metadata exposed. Rule B: original commentary by a commentator account.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Milenio",
+    "headline": "Cecilia Carbonell, actriz que hace el papel de mamá de Thalía en 'Timbiriche', defiende la serie de ViX (also covers her El Círculo role)",
+    "url": "https://www.milenio.com/espectaculos/television/cecilia-carbonell-mama-thalia-timbiriche-defiende-serie-vix-entrevista",
+    "date": "Nov 10, 2026",
+    "ts": 20261110,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Milenio interview with actress Cecilia Carbonell (Timbiriche, Un buen divorcio). Alternative headline names El Círculo; a section covers her role in the Netflix series based on Los corruptores by Jorge Zepeda Patterson, appearing in a flashback of Jaime (Osvaldo Benavides) and how she prepared for the scene. Embedded mention in an outlet article (Rule F embedded-mention amendment).",
+    "storyGroup": null
   }
 ]
