@@ -16668,7 +16668,271 @@
           "note": "Exa result titled 'Tom Bateman y Daisy Ridley, de nuestras relaciones ...' (YouTube short, no body, no date). Names a concrete alternative subject (Tom Bateman "
         }
       ]
+    },
+    {
+      "url": "https://www.yourlittleblackbook.me/nieuw-op-netflix-2026/",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Dutch 'Nieuw op Netflix november 2026' (40 titles) monthly release roundup. 'Inside The Circle' is a single bare entry (genre 'Mexicaans', 'Nieuwe serie'), no prose about the show. Stripping the listing leaves nothing written about the show. Rule F listing/database gate. Body fetched via curl.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14272",
+          "note": "Dutch 'Nieuw op Netflix november 2026' (40 titles) monthly release roundup. 'Inside The Circle' is a single bare entry (genre 'Mexicaans', 'Nieuwe serie'), no p"
+        }
+      ]
+    },
+    {
+      "url": "https://gomiso.com/shows-like-slow-horses",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "'10 Shows Like Slow Horses' list; only match is the phrase 'inside the circle of an arms dealer' describing a different show (the Night Manager). Concrete alternative subject: Slow Horses recommendations. Rule G generic-word noise. Body fetched via curl.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14272",
+          "note": "'10 Shows Like Slow Horses' list; only match is the phrase 'inside the circle of an arms dealer' describing a different show (the Night Manager). Concrete alter"
+        }
+      ]
+    },
+    {
+      "url": "https://foro3d.com/2026/noviembre/el-circulo-rojo-el-manual-de-precision-que-melville-dejo-al-cine-de-at.html",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Exa result titled 'El circulo rojo: el manual de precision que Melville dejo al cine de atracos' (Melville 1970 heist film essay). Names a concrete alternative subject unrelated to the show. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14272",
+          "note": "Exa result titled 'El circulo rojo: el manual de precision que Melville dejo al cine de atracos' (Melville 1970 heist film essay). Names a concrete alternative "
+        }
+      ]
+    },
+    {
+      "url": "https://zh-hans.martincid.com/tv-shows-zh-hans/%e3%80%8a%e7%bf%bb%e6%a1%88%e4%ba%ba%e7%94%9f%e3%80%8b%e7%99%bb%e9%99%86netflix%ef%bc%9a%e5%a2%a8%e8%a5%bf%e5%93%a5%e7%89%88/",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Martin Cid zh-hans edition of the 'La ley de Alicia' (Alicia's Law) Netflix article; alternative subject is a different Netflix series, same family as already-ledgered es/latam/en editions. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14272",
+          "note": "Martin Cid zh-hans edition of the 'La ley de Alicia' (Alicia's Law) Netflix article; alternative subject is a different Netflix series, same family as already-l"
+        }
+      ]
+    },
+    {
+      "url": "https://zh-hant.martincid.com/tv-shows-zh-hant/%e3%80%8a%e7%bf%bb%e6%a1%88%e4%ba%ba%e7%94%9f%e3%80%8bnetflix%e4%b8%8a%e7%b7%9a%ef%bc%9a%e4%ba%8c%e5%8d%81%e5%b9%b4%e6%b2%92/",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Martin Cid zh-hant edition of the 'La ley de Alicia' (Alicia's Law) Netflix article; different Netflix series, same family as already-ledgered sibling editions. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14272",
+          "note": "Martin Cid zh-hant edition of the 'La ley de Alicia' (Alicia's Law) Netflix article; different Netflix series, same family as already-ledgered sibling editions."
+        }
+      ]
+    },
+    {
+      "url": "https://pt-pt.martincid.com/tv-shows-pt-pt/a-lei-de-alicia-na-netflix-20-anos-fora-da-advocacia-e-o-marido-juiz-na-prisao/",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Martin Cid pt-pt edition of the 'La ley de Alicia' (A Lei de Alicia) Netflix article; different Netflix series, same family as already-ledgered sibling editions. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14272",
+          "note": "Martin Cid pt-pt edition of the 'La ley de Alicia' (A Lei de Alicia) Netflix article; different Netflix series, same family as already-ledgered sibling editions"
+        }
+      ]
+    },
+    {
+      "url": "https://www.vitalthrills.com/the-circle-trailer-and-key-art-revealed-by-hulu/",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Exa result titled 'The Circle Trailer and Key Art Revealed by Hulu'. Concrete alternative subject: Hulu's unrelated 'The Circle' reality format. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14272",
+          "note": "Exa result titled 'The Circle Trailer and Key Art Revealed by Hulu'. Concrete alternative subject: Hulu's unrelated 'The Circle' reality format. Rule G generic-"
+        }
+      ]
+    },
+    {
+      "url": "https://whatsondisneyplus.com/hulus-the-circle-trailer-released/",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Exa result titled 'Hulu's The Circle Trailer Released'. Concrete alternative subject: Hulu's unrelated 'The Circle' reality format. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14272",
+          "note": "Exa result titled 'Hulu's The Circle Trailer Released'. Concrete alternative subject: Hulu's unrelated 'The Circle' reality format. Rule G generic-word noise."
+        }
+      ]
+    },
+    {
+      "url": "http://macroup.blogspot.com/2017/02/corrupcion-neoliberalismo-y.html",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Exa result titled 'AMUP: Corrupcion, neoliberalismo y asociaciones publico privadas' (2017 blog post on public-private partnerships). Concrete alternative subject unrelated to the show. Rule G noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14272",
+          "note": "Exa result titled 'AMUP: Corrupcion, neoliberalismo y asociaciones publico privadas' (2017 blog post on public-private partnerships). Concrete alternative subje"
+        }
+      ]
+    },
+    {
+      "url": "https://exa.ai/library/podcast/0lmrppfs05k",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Exa result titled 'Inside the Circle with Coach Pat' (sports coaching podcast). Concrete alternative subject unrelated to the show. Rule G generic-phrase noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14272",
+          "note": "Exa result titled 'Inside the Circle with Coach Pat' (sports coaching podcast). Concrete alternative subject unrelated to the show. Rule G generic-phrase noise."
+        }
+      ]
+    },
+    {
+      "url": "http://www.cevex.cn/news/01f40499594.html",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Scraped copy of an article about Netflix reality format 'The Circle' ('Messaging inside the Circle'). Concrete alternative subject: The Circle reality show. Rule G generic-phrase noise. Body fetched via curl.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14272",
+          "note": "Scraped copy of an article about Netflix reality format 'The Circle' ('Messaging inside the Circle'). Concrete alternative subject: The Circle reality show. Rul"
+        }
+      ]
+    },
+    {
+      "url": "https://fictionhorizon.com/reviews/",
+      "firstSeen": "2026-11-12T06:01:21Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-12T06:01:21Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Fiction Horizon site-wide 'Reviews' index hub; body fetched via curl contains no mention of El Circulo / Inside the Circle. Rule F listing/database gate (index page, not a review); the show's actual Fiction Horizon review is tracked separately.",
+      "history": [
+        {
+          "attempt": "2026-11-12T06:01:21Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14272",
+          "note": "Fiction Horizon site-wide 'Reviews' index hub; body fetched via curl contains no mention of El Circulo / Inside the Circle. Rule F listing/database gate (index "
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-12T02:01:16Z"
+  "lastUpdated": "2026-11-12T06:01:21Z"
 }
