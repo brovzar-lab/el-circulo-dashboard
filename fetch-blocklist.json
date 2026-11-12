@@ -16932,7 +16932,95 @@
           "note": "Fiction Horizon site-wide 'Reviews' index hub; body fetched via curl contains no mention of El Circulo / Inside the Circle. Rule F listing/database gate (index "
         }
       ]
+    },
+    {
+      "url": "https://pelis24.sbs/series/el-circulo-2026",
+      "firstSeen": "2026-11-12T10:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T10:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_piracy_or_unauthorized_distribution",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Pelis24 streaming-link site: title \"El circulo Serie Completa - Pelis24\", snippet is only the SEO synopsis wrapper; direct fetch returned 403. Rule E piracy/unauthorized distribution gate (on-topic, primary function is supplying the series, not reporting on it). Classified on title/snippet because the body is blocked.",
+      "history": [
+        {
+          "attempt": "2026-11-12T10:01:16Z",
+          "method": "Tavily search snippet (direct fetch 403)",
+          "status": null,
+          "issue": "LEMA-14273",
+          "note": "Pelis24 streaming-link site: title \"El circulo Serie Completa - Pelis24\", snippet is only the SEO synopsis wrapper; direct fetch returned 403. Rule E piracy/una"
+        }
+      ]
+    },
+    {
+      "url": "https://cuevana3ai.lat/series/el-circulo-2026",
+      "firstSeen": "2026-11-12T10:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T10:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_piracy_or_unauthorized_distribution",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Cuevana 3 clone: title \"El circulo Online en Espanol - Cuevana 3\", snippet is only the SEO synopsis wrapper; direct fetch returned 403. Rule E piracy/unauthorized distribution gate (on-topic, primary function is supplying the series). Classified on title/snippet because the body is blocked.",
+      "history": [
+        {
+          "attempt": "2026-11-12T10:01:16Z",
+          "method": "Tavily search snippet (direct fetch 403)",
+          "status": null,
+          "issue": "LEMA-14273",
+          "note": "Cuevana 3 clone: title \"El circulo Online en Espanol - Cuevana 3\", snippet is only the SEO synopsis wrapper; direct fetch returned 403. Rule E piracy/unauthoriz"
+        }
+      ]
+    },
+    {
+      "url": "https://moviesr.net/str-Inside%20the%20Circle",
+      "firstSeen": "2026-11-12T10:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T10:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "MoviesR streaming-platform search page for \"Inside The Circle\" (body fetched, 200): JS stream-lookup shell plus a generic sidebar of unrelated review headlines, no written content about the show. Rule F listing/database gate, same family as the already-ledgered moviesr.net/str-Zuria%20Vega.",
+      "history": [
+        {
+          "attempt": "2026-11-12T10:01:16Z",
+          "method": "curl body fetch",
+          "status": null,
+          "issue": "LEMA-14273",
+          "note": "MoviesR streaming-platform search page for \"Inside The Circle\" (body fetched, 200): JS stream-lookup shell plus a generic sidebar of unrelated review headlines,"
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DfiDMc9hXH3",
+      "firstSeen": "2026-11-12T10:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T10:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_vendor_promo",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram reel from account charlyzepco (alt text credits Quihubo): titled \"EL CIRCULO\" with a generic series pitch, ending \"Activa tu TV\" plus a phone number, i.e. an unofficial TV/IPTV access sales pitch using the title as a hook; never names Netflix. Rule B vendor/supplier promo, not coverage. Publish date also unconfirmed (relative \"2d\" only).",
+      "history": [
+        {
+          "attempt": "2026-11-12T10:01:16Z",
+          "method": "WebFetch body fetch",
+          "status": null,
+          "issue": "LEMA-14273",
+          "note": "Instagram reel from account charlyzepco (alt text credits Quihubo): titled \"EL CIRCULO\" with a generic series pitch, ending \"Activa tu TV\" plus a phone number, "
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-12T06:01:21Z"
+  "lastUpdated": "2026-11-12T10:01:16Z"
 }
