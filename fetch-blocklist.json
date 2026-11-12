@@ -16602,7 +16602,73 @@
           "note": "TikTok video titled 'Artista Oro Premios Heat Gloria Trevi - Pelosuelto' (Exa result, no text returned, body not retrievable). Title names a concrete alternativ"
         }
       ]
+    },
+    {
+      "url": "https://podcasts.apple.com/mx/podcast/hazme-tuya-cada-martes/id1469100249",
+      "firstSeen": "2026-11-12T02:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T02:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Apple Podcasts show page for 'Hazme tuya cada martes': channel listing of many episodes, not a distinct document. The one relevant episode (08.35, El círculo) was mined as its own data.json row from its own episode URL (Rule H mining, Rule F listing).",
+      "history": [
+        {
+          "attempt": "2026-11-12T02:01:16Z",
+          "method": "curl body fetch",
+          "status": null,
+          "issue": "LEMA-14271",
+          "note": "Apple Podcasts show page for 'Hazme tuya cada martes': channel listing of many episodes, not a distinct document. The one relevant episode (08.35, El círculo) w"
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/Dfa0Wb_OIGV",
+      "firstSeen": "2026-11-12T02:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T02:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Tavily snippet: Instagram reel with comments about singer Guitarricadelafuente and the film 'La Bola Negra' (Silvana Effio interview, Nov 2025). Names a concrete alternative subject, unrelated to the show. Rule G generic-word noise; also predates the show.",
+      "history": [
+        {
+          "attempt": "2026-11-12T02:01:16Z",
+          "method": "Tavily search snippet",
+          "status": null,
+          "issue": "LEMA-14271",
+          "note": "Tavily snippet: Instagram reel with comments about singer Guitarricadelafuente and the film 'La Bola Negra' (Silvana Effio interview, Nov 2025). Names a concret"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/5hM2JKI3GHc",
+      "firstSeen": "2026-11-12T02:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T02:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Exa result titled 'Tom Bateman y Daisy Ridley, de nuestras relaciones ...' (YouTube short, no body, no date). Names a concrete alternative subject (Tom Bateman and Daisy Ridley interview), unrelated to the show. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T02:01:16Z",
+          "method": "Exa result title",
+          "status": null,
+          "issue": "LEMA-14271",
+          "note": "Exa result titled 'Tom Bateman y Daisy Ridley, de nuestras relaciones ...' (YouTube short, no body, no date). Names a concrete alternative subject (Tom Bateman "
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-11T22:01:09Z"
+  "lastUpdated": "2026-11-12T02:01:16Z"
 }
