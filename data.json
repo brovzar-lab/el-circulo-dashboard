@@ -4236,5 +4236,18 @@
     "type": "Feature",
     "excerpt": "La Razón interview (by Carlos Aguillón) with actor and director Ramón Medina on his three current projects: El Círculo (Netflix political thriller), Prefiero la muerte (Prime Video) and season 5 of La Lotería del Crimen. El Círculo is named as one of his current roles; the rest of the piece covers his screenwriting and directing. Embedded mention in an outlet article (Rule F embedded-mention amendment).",
     "storyGroup": null
+  },
+  {
+    "outlet": "Hazme tuya cada martes (podcast)",
+    "headline": "08.35 Amor sincero (Animales, Paul, El círculo)",
+    "url": "https://podcasts.apple.com/mx/podcast/08-35-amor-sincero-animales-paul-el-c%C3%ADrculo/id1469100249?i=1000797298005",
+    "date": "Oct 20, 2026",
+    "ts": 20261020,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Apple Podcasts episode page (1h26m, released 2026-10-20) of the Mexican pop-culture podcast Hazme tuya cada martes, hosted by Rogelio Lobatón Cuéllar and Vladimir. El círculo is named in the episode title; the episode blurb describes 'thrillers de Netflix que no convencieron' alongside telenovela ballads, French humor and a live Paris report. Individual episode document (not the show page); the episode's verdict on El Círculo is inside the audio and was not verified.",
+    "storyGroup": null
   }
 ]
