@@ -17108,7 +17108,29 @@
           "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/inside-the-circle-netflix: aggregation of videos under a "
         }
       ]
+    },
+    {
+      "url": "https://www.facebook.com/groups/1523571357966551/preview/1435796077971335",
+      "firstSeen": "2026-11-12T18:01:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-12T18:01:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipNote": "Facebook group post preview (\"Inside the Circle - a new series on Netflix is a binge\" / \"The Circle on Netflix is a must-watch\"), indexed by Tavily snippet only. Tavily Extract of the URL returned empty content (login-walled group preview): no og:title, no publish date recoverable. Individual commentator account in scope under Rule B by default, but no real publish date; not guessed per Rule A.",
+      "skipMethod": "body_fetch",
+      "history": [
+        {
+          "attempt": "2026-11-12T18:01:14Z",
+          "method": "Tavily Extract",
+          "status": 200,
+          "issue": "LEMA-14282",
+          "note": "Facebook group post preview (\"Inside the Circle - a new series on Netflix is a binge\" / \"The Circle on Netflix is a must-watch\"), indexed by Tavily snippet only. Tavily Extract of the URL returned empty content (login-walled group preview): no og:title, no publish date recoverable. Individual commentator account in scope under Rule B by default, but no real publish date; not guessed per Rule A."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-11-12T14:00:57Z"
+  "lastUpdated": "2026-11-12T18:01:14Z"
 }
