@@ -17020,7 +17020,95 @@
           "note": "Instagram reel from account charlyzepco (alt text credits Quihubo): titled \"EL CIRCULO\" with a generic series pitch, ending \"Activa tu TV\" plus a phone number, "
         }
       ]
+    },
+    {
+      "url": "https://amp.milenio.com/espectaculos/television/cecilia-carbonell-mama-thalia-timbiriche-defiende-serie-vix-entrevista",
+      "firstSeen": "2026-11-12T14:00:57Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T14:00:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "amp.milenio.com second address of the already-tracked www.milenio.com Cecilia Carbonell interview (same slug, AMP host variant). Same document, not distinct.",
+      "history": [
+        {
+          "attempt": "2026-11-12T14:00:57Z",
+          "method": "Exa metadata + data.json cross-check",
+          "status": null,
+          "issue": "LEMA-14278",
+          "note": "amp.milenio.com second address of the already-tracked www.milenio.com Cecilia Carbonell interview (same slug, AMP host variant). Same document, not distinct."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@comboamigues/video/7707102288166391048",
+      "firstSeen": "2026-11-12T14:00:57Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T14:00:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video whose caption reads \"Nunca me gustó WandaVision.\", about a different title (WandaVision), not El Círculo / Inside the Circle. Surfaced via broad query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-12T14:00:57Z",
+          "method": "WebFetch-equivalent HTTP body fetch (curl)",
+          "status": null,
+          "issue": "LEMA-14278",
+          "note": "TikTok video whose caption reads \"Nunca me gustó WandaVision.\", about a different title (WandaVision), not El Círculo / Inside the Circle. Surfaced via broad qu"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@adepa88/video/7707005267963104519",
+      "firstSeen": "2026-11-12T14:00:57Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T14:00:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok video titled \"Anaesthesia\" a new Netflix series, a different series (Anaesthesia), not El Círculo / Inside the Circle. Page body fetch returned an empty caption; classified on the Exa title naming the alternative subject.",
+      "history": [
+        {
+          "attempt": "2026-11-12T14:00:57Z",
+          "method": "Exa snippet; curl body empty caption",
+          "status": null,
+          "issue": "LEMA-14278",
+          "note": "TikTok video titled \"Anaesthesia\" a new Netflix series, a different series (Anaesthesia), not El Círculo / Inside the Circle. Page body fetch returned an empty "
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/reparto-de-la-pel%C3%ADcula-el-c%C3%ADrculo-netflix",
+      "firstSeen": "2026-11-12T14:00:57Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T14:00:57Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/inside-the-circle-netflix: aggregation of videos under a topic tag, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-11-12T14:00:57Z",
+          "method": "Exa snippet, URL-family pattern",
+          "status": null,
+          "issue": "LEMA-14278",
+          "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/inside-the-circle-netflix: aggregation of videos under a "
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-12T10:01:16Z"
+  "lastUpdated": "2026-11-12T14:00:57Z"
 }
