@@ -17130,7 +17130,73 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://www.tiktok.com/discover/restaurante-de-el-circulo-serie",
+      "firstSeen": "2026-11-12T22:01:05Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T22:01:05Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/inside-the-circle-netflix: aggregation of videos under a topic tag, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-11-12T22:01:05Z",
+          "method": "Exa snippet, URL-family pattern",
+          "status": null,
+          "issue": "LEMA-14283",
+          "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/inside-the-circle-netflix: aggregation of videos under a "
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/us/tv-show/unspeakable-sins",
+      "firstSeen": "2026-11-12T22:01:05Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T22:01:05Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "JustWatch page for 'Unspeakable Sins', a different series, not El Círculo / Inside the Circle. Body fetch confirmed the page concerns Unspeakable Sins and mentions Netflix only as a streaming provider; no El Círculo content.",
+      "history": [
+        {
+          "attempt": "2026-11-12T22:01:05Z",
+          "method": "Exa snippet; body check",
+          "status": null,
+          "issue": "LEMA-14283",
+          "note": "JustWatch page for 'Unspeakable Sins', a different series, not El Círculo / Inside the Circle. Body fetch confirmed the page concerns Unspeakable Sins and menti"
+        }
+      ]
+    },
+    {
+      "url": "https://www.linkedinpinpointanswer.today/krillion-answers/2026-11-11/name-an-original-movie-or-show-from-netflix-prime-video-apple-tv-or-disney",
+      "firstSeen": "2026-11-12T22:01:05Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-12T22:01:05Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Daily trivia-game answer page ('Name an original movie or show from Netflix, Prime Video, Apple TV or Disney'), sibling of krilliongame.com/krillion-answers/2026-11-11 whose body fetch showed 'Inside the Circle' only as one scored answer in a long list of titles. Not editorial coverage of the series.",
+      "history": [
+        {
+          "attempt": "2026-11-12T22:01:05Z",
+          "method": "Exa snippet, URL-family pattern",
+          "status": null,
+          "issue": "LEMA-14283",
+          "note": "Daily trivia-game answer page ('Name an original movie or show from Netflix, Prime Video, Apple TV or Disney'), sibling of krilliongame.com/krillion-answers/202"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-12T18:01:14Z"
+  "lastUpdated": "2026-11-12T22:01:05Z"
 }
