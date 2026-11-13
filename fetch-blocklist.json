@@ -17196,7 +17196,161 @@
           "note": "Daily trivia-game answer page ('Name an original movie or show from Netflix, Prime Video, Apple TV or Disney'), sibling of krilliongame.com/krillion-answers/202"
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/@yisasvillegas/video/7707319304945012001",
+      "firstSeen": "2026-11-13T02:01:39Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T02:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok video surfaced by the Spanish 'El Círculo' Netflix reseña query; Tavily snippet ('nunca nadie golpeó una mesa y generó eso #netflix') describes a documentary-toned format questioning social platforms' influence, a different subject than El Círculo (Rule G alternative subject named). Tavily Extract returned only TikTok's regional notice, no body.",
+      "history": [
+        {
+          "attempt": "2026-11-13T02:01:39Z",
+          "method": "Tavily snippet",
+          "status": null,
+          "issue": "LEMA-14284",
+          "note": "TikTok video surfaced by the Spanish 'El Círculo' Netflix reseña query; Tavily snippet ('nunca nadie golpeó una mesa y generó eso #netflix') describes a documentary-toned format questioning social pla"
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/Dfi1oAaig6M",
+      "firstSeen": "2026-11-13T02:01:39Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T02:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram reel by paramountvideolatam promoting 'Cuestión de confianza' (digital release on Prime Video/Apple TV/Claro Video); Tavily Extract body shows no El Círculo content. Search snippet only matched it via a related-posts blurb. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-13T02:01:39Z",
+          "method": "Tavily Extract",
+          "status": null,
+          "issue": "LEMA-14284",
+          "note": "Instagram reel by paramountvideolatam promoting 'Cuestión de confianza' (digital release on Prime Video/Apple TV/Claro Video); Tavily Extract body shows no El Círculo content. Search snippet only matc"
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/Dfm-VfNFvVE",
+      "firstSeen": "2026-11-13T02:01:39Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T02:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post ('UN VIDEO, CUATRO AMIGOS Y SECRETOS CAPACES...') promoting El Círculo; Tavily Extract returned no content (login wall), no recoverable publish date, not guessed per Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-13T02:01:39Z",
+          "method": "Tavily Extract",
+          "status": null,
+          "issue": "LEMA-14284",
+          "note": "Instagram post ('UN VIDEO, CUATRO AMIGOS Y SECRETOS CAPACES...') promoting El Círculo; Tavily Extract returned no content (login wall), no recoverable publish date, not guessed per Rule A."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/JoeAndJada/posts/new-kiss-and-crack-netflix-episode-joined-by-angelo-baque-and-sole-street-tap-in/122211039332774669",
+      "firstSeen": "2026-11-13T02:01:39Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T02:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Facebook post for a Joe and Jada podcast episode that mentions El círculo only as a passing item; Tavily Extract returned no content, no recoverable publish date, not guessed per Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-13T02:01:39Z",
+          "method": "Tavily Extract",
+          "status": null,
+          "issue": "LEMA-14284",
+          "note": "Facebook post for a Joe and Jada podcast episode that mentions El círculo only as a passing item; Tavily Extract returned no content, no recoverable publish date, not guessed per Rule A."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/100083002797453/posts/-el-querido-actor-alejandro-ruiz-quien-conquist%C3%B3-la-pantalla-chica-en-cl%C3%A1sicos-d/1146705441439538",
+      "firstSeen": "2026-11-13T02:01:39Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T02:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Facebook page post about actor Alejandro Ruiz that names El Círculo in passing; Tavily Extract returned no content, no recoverable publish date, not guessed per Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-13T02:01:39Z",
+          "method": "Tavily Extract",
+          "status": null,
+          "issue": "LEMA-14284",
+          "note": "Facebook page post about actor Alejandro Ruiz that names El Círculo in passing; Tavily Extract returned no content, no recoverable publish date, not guessed per Rule A."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-c%C3%ADrculo-netflix-reparto",
+      "firstSeen": "2026-11-13T02:01:39Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T02:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/reparto-de-la-pel%C3%ADcula-el-c%C3%ADrculo-netflix: aggregation of videos under a topic tag, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-11-13T02:01:39Z",
+          "method": "Tavily snippet",
+          "status": null,
+          "issue": "LEMA-14284",
+          "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/reparto-de-la-pel%C3%ADcula-el-c%C3%ADrculo-netflix: aggregation of videos under a topic tag, not"
+        }
+      ]
+    },
+    {
+      "url": "https://oem.com.mx/elsoldemexico/tags/temas/netflix/archive-75?page=0",
+      "firstSeen": "2026-11-13T02:01:39Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T02:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "El Sol de México tag archive page (Netflix, page 0 of archive-75): rolling list of headlines, one teaser mentioning El círculo; Rule F listing/index surface, individual El Sol article not surfaced.",
+      "history": [
+        {
+          "attempt": "2026-11-13T02:01:39Z",
+          "method": "Tavily snippet",
+          "status": null,
+          "issue": "LEMA-14284",
+          "note": "El Sol de México tag archive page (Netflix, page 0 of archive-75): rolling list of headlines, one teaser mentioning El círculo; Rule F listing/index surface, individual El Sol article not surfaced."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-12T22:01:05Z"
+  "lastUpdated": "2026-11-13T02:01:39Z"
 }
