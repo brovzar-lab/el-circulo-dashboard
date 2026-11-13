@@ -17504,7 +17504,183 @@
           "note": "El Mediatico article on Spanish thriller 'Perfect Liars' on Prime Video, a different title, not El Círculo. Title evidence only."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/jaime-el-circulo",
+      "firstSeen": "2026-11-13T10:01:08Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T10:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/inside-the-circle-netflix: aggregation of videos under a topic tag, not a distinct document. Body fetch returns only a TikTok shell page.",
+      "history": [
+        {
+          "attempt": "2026-11-13T10:01:08Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14305",
+          "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered /discover/inside-the-circle-netflix: aggregation of videos under a topic tag, not a distinct document. Body fetch returns only a TikTok shell page."
+        }
+      ]
+    },
+    {
+      "url": "https://rastrosdecarminradio.blogspot.com/2008/04/da-8-estado-de-tensin.html",
+      "firstSeen": "2026-11-13T10:01:08Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T10:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "2008 Spanish radio blog post \"Dia #8 - Estado de tension\", an unrelated subject published 18 years before El Circulo existed; surfaced via broad query noise. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T10:01:08Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14305",
+          "note": "2008 Spanish radio blog post \"Dia #8 - Estado de tension\", an unrelated subject published 18 years before El Circulo existed; surfaced via broad query noise. Title evidence only."
+        }
+      ]
+    },
+    {
+      "url": "https://es.martincid.com/television/llorar-reir-ganar-4-netflix-resucita-su-concurso-de-comicos-tras-darlo-por-terminado/",
+      "firstSeen": "2026-11-13T10:01:08Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T10:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Martin Cid article on Netflix reviving comedy contest \"Llorar, reir, ganar\" season 4, a different title, not El Circulo. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T10:01:08Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14305",
+          "note": "Martin Cid article on Netflix reviving comedy contest \"Llorar, reir, ganar\" season 4, a different title, not El Circulo. Title evidence only."
+        }
+      ]
+    },
+    {
+      "url": "http://lasnoviasdegwangi.blogspot.com/2016/10/black-mirror-temporada-3.html",
+      "firstSeen": "2026-11-13T10:01:08Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T10:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "2016 blog post on Black Mirror season 3, a different series, not El Circulo. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T10:01:08Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14305",
+          "note": "2016 blog post on Black Mirror season 3, a different series, not El Circulo. Title evidence only."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/welcome-to-the-circle-movie-trailer",
+      "firstSeen": "2026-11-13T10:01:08Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T10:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok topic page for the unrelated \"Welcome to The Circle\" movie trailer, not El Circulo / Inside the Circle. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T10:01:08Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14305",
+          "note": "TikTok topic page for the unrelated \"Welcome to The Circle\" movie trailer, not El Circulo / Inside the Circle. Title evidence only."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/us/tv-show/prefiero-la-muerte/season-1",
+      "firstSeen": "2026-11-13T10:01:08Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T10:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch streaming-availability page for the unrelated series \"I Would Rather Die\" (Prefiero la muerte), a different title, not El Circulo. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T10:01:08Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14305",
+          "note": "JustWatch streaming-availability page for the unrelated series \"I Would Rather Die\" (Prefiero la muerte), a different title, not El Circulo. Title evidence only."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/tag/%E1%8B%A8%E1%8A%A2%E1%89%B5%E1%8B%AE%E1%8C%B2%E1%8B%AD%E1%8B%8D",
+      "firstSeen": "2026-11-13T10:01:08Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T10:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok hashtag page for an Amharic-language Ethiopian tag, unrelated to El Circulo. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T10:01:08Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14305",
+          "note": "TikTok hashtag page for an Amharic-language Ethiopian tag, unrelated to El Circulo. Title evidence only."
+        }
+      ]
+    },
+    {
+      "url": "https://www.que.es/2026/11/10/abascal-revuelta-broncano-entrevistas-incomodas/2/",
+      "firstSeen": "2026-11-13T10:01:08Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T10:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Que.es article on Broncano's uncomfortable interviews on La Revuelta (Abascal), a different subject, not El Circulo. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T10:01:08Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14305",
+          "note": "Que.es article on Broncano's uncomfortable interviews on La Revuelta (Abascal), a different subject, not El Circulo. Title evidence only."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-13T06:01:03Z"
+  "lastUpdated": "2026-11-13T10:01:08Z"
 }
