@@ -17746,7 +17746,117 @@
           "note": "JustWatch (Philippines) page for Unspeakable Sins, a different series, not El Círculo / Inside the Circle. Body fetch: Inside The Circle appears only as a relat"
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-netflix-quien-es-salazar",
+      "firstSeen": "2026-11-13T18:01:42Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T18:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered sibling /discover/ pages for this show: aggregation of videos under a topic tag, no single post or publish date.",
+      "history": [
+        {
+          "attempt": "2026-11-13T18:01:42Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14339",
+          "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered sibling /discover/ pages for this show: aggregation of videos under"
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/in/tv-show/the-five-juanas/season-1",
+      "firstSeen": "2026-11-13T18:01:42Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T18:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch (India) page for 'The Five Juanas' Season 1 (2021), a different series, not El Círculo / Inside the Circle. Title evidence names the alternative subject; same JustWatch page family as already-ledgered unspeakable-sins siblings (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-13T18:01:42Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14339",
+          "note": "JustWatch (India) page for 'The Five Juanas' Season 1 (2021), a different series, not El Círculo / Inside the Circle. Title evidence names the alternative subje"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCk7iHRizjbrcpVdHpCJ5sew/about",
+      "firstSeen": "2026-11-13T18:01:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-13T18:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "YouTube channel About page for 'Drama Diaries', a channel profile, not a distinct document about El Círculo. Body fetch (1.2MB) contained no mention of El Círculo or Inside the Circle; Exa hit is a broad-query false positive (Rule G). No post date (Rule A).",
+      "history": [
+        {
+          "attempt": "2026-11-13T18:01:42Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14339",
+          "note": "YouTube channel About page for 'Drama Diaries', a channel profile, not a distinct document about El Círculo. Body fetch (1.2MB) contained no mention of El Círcu"
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/it/news/ni65213111/",
+      "firstSeen": "2026-11-13T18:01:42Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T18:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "IMDb news item titled 'Until You Burn Netflix Cast: All Actors & Characters', about a different Netflix series, not El Círculo / Inside the Circle. Direct fetch returned an empty body (curl 0 bytes, Tavily Extract empty), so skipped on title evidence naming the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-13T18:01:42Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14339",
+          "note": "IMDb news item titled 'Until You Burn Netflix Cast: All Actors & Characters', about a different Netflix series, not El Círculo / Inside the Circle. Direct fetch"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ncrvgids.nl/informatief/kijk-digitaal-gone-en-below/",
+      "firstSeen": "2026-11-13T18:01:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-13T18:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "NCRV-gids Dutch TV guide 'Kijk Digitaal: Gone en Below': a viewing-guide listing of many titles; El círculo appears once as a one-line catalogue blurb (Netflix, 7 oktober). No JSON-LD datePublished or article:published_time found. Rule F listing, also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-13T18:01:42Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14339",
+          "note": "NCRV-gids Dutch TV guide 'Kijk Digitaal: Gone en Below': a viewing-guide listing of many titles; El círculo appears once as a one-line catalogue blurb (Netflix,"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-13T14:01:39Z"
+  "lastUpdated": "2026-11-13T18:01:42Z"
 }
