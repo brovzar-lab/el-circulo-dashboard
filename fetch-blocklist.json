@@ -17680,7 +17680,73 @@
           "note": "Que.es article on Broncano's uncomfortable interviews on La Revuelta (Abascal), a different subject, not El Circulo. Title evidence only."
         }
       ]
+    },
+    {
+      "url": "https://criteriohidalgo.com/ticket/timbiriche-yolanda-no-solo-cuidaba-a-thalia-sino-al-resto-de-las-ninas-cecilia-carbonell",
+      "firstSeen": "2026-11-13T14:01:39Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-13T14:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Criterio Hidalgo (article:published_time 2026-11-13): interview with Cecilia Carbonell about her role as Thalia's mother in the ViX Timbiriche series. Body fetch confirmed El Círculo appears only once, as a credit in the dek (actriz de El Círculo); the body never discusses the Netflix series. Rule G incidental credit mention. The sibling Milenio interview is tracked in data.json because it has a dedicated El Círculo section.",
+      "history": [
+        {
+          "attempt": "2026-11-13T14:01:39Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14336",
+          "note": "Criterio Hidalgo (article:published_time 2026-11-13): interview with Cecilia Carbonell about her role as Thalia's mother in the ViX Timbiriche series. Body fetc"
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/natalia-coronado-el-circulo-netflix",
+      "firstSeen": "2026-11-13T14:01:39Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T14:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered sibling /discover/ pages for this show: aggregation of videos under a topic tag, no single post or publish date.",
+      "history": [
+        {
+          "attempt": "2026-11-13T14:01:39Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14336",
+          "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered sibling /discover/ pages for this show: aggregation of videos under"
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/ph/tv-show/unspeakable-sins",
+      "firstSeen": "2026-11-13T14:01:39Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-13T14:01:39Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "JustWatch (Philippines) page for Unspeakable Sins, a different series, not El Círculo / Inside the Circle. Body fetch: Inside The Circle appears only as a related-title mention; same page family as the already-ledgered us and ca siblings.",
+      "history": [
+        {
+          "attempt": "2026-11-13T14:01:39Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14336",
+          "note": "JustWatch (Philippines) page for Unspeakable Sins, a different series, not El Círculo / Inside the Circle. Body fetch: Inside The Circle appears only as a relat"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-13T10:01:08Z"
+  "lastUpdated": "2026-11-13T14:01:39Z"
 }
