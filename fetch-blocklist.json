@@ -17350,7 +17350,161 @@
           "note": "El Sol de México tag archive page (Netflix, page 0 of archive-75): rolling list of headlines, one teaser mentioning El círculo; Rule F listing/index surface, individual El Sol article not surfaced."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/es-es/title/tt39390491/",
+      "firstSeen": "2026-11-13T06:01:03Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T06:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "IMDb title record for La Ley de Alicia (Netflix remake of The Good Wife), a different series, not El Círculo / Inside the Circle. Title-level judgment on search title; surfaced via broad query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-13T06:01:03Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14285",
+          "note": "IMDb title record for La Ley de Alicia (Netflix remake of The Good Wife), a different series, not El Círculo / Inside the Circle. Title-level judgment on search title; surfaced via broad query noise."
+        }
+      ]
+    },
+    {
+      "url": "https://www.informador.mx/entretenimiento/netflix-se-disculpa-y-se-corrige-por-promocionar-a-lesslie-polinesia-con-la-voz-de-otra-actriz-20261111-0077.html",
+      "firstSeen": "2026-11-13T06:01:03Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T06:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Informador article about Netflix apologizing for promoting Lesslie Polinesia with another actress's voice, a different title and story, not El Círculo. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T06:01:03Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14285",
+          "note": "Informador article about Netflix apologizing for promoting Lesslie Polinesia with another actress's voice, a different title and story, not El Círculo. Title evidence only."
+        }
+      ]
+    },
+    {
+      "url": "https://primerafuentenoticias.com/?p=23189",
+      "firstSeen": "2026-11-13T06:01:03Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T06:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Primera Fuente article 'Netflix admite error y se disculpa tras usar voz de actriz de doblaje', same Lesslie Polinesia dubbing story as the sibling Informador row, not El Círculo. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T06:01:03Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14285",
+          "note": "Primera Fuente article 'Netflix admite error y se disculpa tras usar voz de actriz de doblaje', same Lesslie Polinesia dubbing story as the sibling Informador row, not El Círculo. Title evidence only."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/ca/tv-show/unspeakable-sins",
+      "firstSeen": "2026-11-13T06:01:03Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T06:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch streaming-availability page for the unrelated series 'Unspeakable Sins'; database surface and different subject, not El Círculo.",
+      "history": [
+        {
+          "attempt": "2026-11-13T06:01:03Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14285",
+          "note": "JustWatch streaming-availability page for the unrelated series 'Unspeakable Sins'; database surface and different subject, not El Círculo."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/us/tv-show/sr-avila/season-1",
+      "firstSeen": "2026-11-13T06:01:03Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T06:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch streaming-availability page for the unrelated series 'Sr. Avila' season 1; database surface and different subject, not El Círculo.",
+      "history": [
+        {
+          "attempt": "2026-11-13T06:01:03Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14285",
+          "note": "JustWatch streaming-availability page for the unrelated series 'Sr. Avila' season 1; database surface and different subject, not El Círculo."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/us/tv-show/the-five-juanas",
+      "firstSeen": "2026-11-13T06:01:03Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T06:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch streaming-availability page for the unrelated series 'The Five Juanas'; database surface and different subject, not El Círculo.",
+      "history": [
+        {
+          "attempt": "2026-11-13T06:01:03Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14285",
+          "note": "JustWatch streaming-availability page for the unrelated series 'The Five Juanas'; database surface and different subject, not El Círculo."
+        }
+      ]
+    },
+    {
+      "url": "https://www.elmediatico.com/en/entertainment/spanish-thriller-perfect-liars-hits-prime-video-nov-20",
+      "firstSeen": "2026-11-13T06:01:03Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-13T06:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "El Mediatico article on Spanish thriller 'Perfect Liars' on Prime Video, a different title, not El Círculo. Title evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-13T06:01:03Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14285",
+          "note": "El Mediatico article on Spanish thriller 'Perfect Liars' on Prime Video, a different title, not El Círculo. Title evidence only."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-13T02:01:39Z"
+  "lastUpdated": "2026-11-13T06:01:03Z"
 }
