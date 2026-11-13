@@ -4262,5 +4262,18 @@
     "type": "Feature",
     "excerpt": "Celebrity-profile piece on Saúl Lisazo (visible dateline 12 nov 2026, 15:01) with a dedicated section on his Netflix debut in El círculo: he plays Carlos Lemus, father of Jaime (Osvaldo Benavides); names the Zepeda Patterson novel Los corruptores and director Alejandro Lozano, and quotes his La Razón interview on the role. Rest covers his career and a Miami Ibero-American Film Festival tribute. Embedded mention in an outlet article (Rule F embedded-mention amendment); outlet is a Spain-domain site writing for a Latin American audience.",
     "storyGroup": null
+  },
+  {
+    "outlet": "ContraRéplica",
+    "headline": "Diego Sandoval, descubre el lado humano de un niño prodigio en la serie “El Círculo”",
+    "url": "https://www.contrareplica.mx/nota--Diego-Sandoval-descubre-el-lado-humano-de-un-nino-prodigio-en-la-serie--El-Circulo---2026131112",
+    "date": "Nov 13, 2026",
+    "ts": 20261113,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Exclusive interview with Diego Sandoval on playing Nico, a 17-year-old prodigy and best friend of journalist Tomás Arismendi's daughter, in El Círculo. He discusses balancing the character's extraordinary intelligence with teenage immaturity and the technical and emotional challenges of the role, within the series' story of political conspiracy, narcotrafficking and violence. JSON-LD datePublished 2026-11-13.",
+    "storyGroup": null
   }
 ]
