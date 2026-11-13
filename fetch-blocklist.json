@@ -17856,7 +17856,95 @@
           "note": "NCRV-gids Dutch TV guide 'Kijk Digitaal: Gone en Below': a viewing-guide listing of many titles; El círculo appears once as a one-line catalogue blurb (Netflix,"
         }
       ]
+    },
+    {
+      "url": "https://pl.martincid.com/tv-shows-pl/prawo-alicii-na-netflix-meksykanska-zona-idealna-z-sedzia-sadu-najwyzszego-za-kratami/",
+      "firstSeen": "2026-11-13T22:01:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-13T22:01:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Polish edition of martincid.com piece titled 'Prawo Alicii na Netflix' (Alicia's Law, Mexican remake of The Good Wife), a different Netflix series, not El Círculo / Inside the Circle. Title evidence names the alternative subject (Rule G); sibling-language editions already ledgered under the same grounds.",
+      "history": [
+        {
+          "attempt": "2026-11-13T22:01:37Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14340",
+          "note": "Polish edition of martincid.com piece titled 'Prawo Alicii na Netflix' (Alicia's Law, Mexican remake of The Good Wife), a different Netflix series, not El Círcu"
+        }
+      ]
+    },
+    {
+      "url": "https://cinexcepcion.com/noticias/it-ends-with-us-o-como-dicen-por-aca-romper-el-circulo-a-pesar-de-todos-los",
+      "firstSeen": "2026-11-13T22:01:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-13T22:01:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Cinexcepcion article about the film It Ends With Us (Spanish release title 'Romper el Círculo'), a 2024 box-office piece; no El Círculo / Inside the Circle series content found in body (Rule G, generic-word collision).",
+      "history": [
+        {
+          "attempt": "2026-11-13T22:01:37Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14340",
+          "note": "Cinexcepcion article about the film It Ends With Us (Spanish release title 'Romper el Círculo'), a 2024 box-office piece; no El Círculo / Inside the Circle seri"
+        }
+      ]
+    },
+    {
+      "url": "https://es.wikipedia.org/wiki/Jorge_Zepeda_Patterson",
+      "firstSeen": "2026-11-13T22:01:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-13T22:01:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Spanish Wikipedia biography of Jorge Zepeda Patterson; mentions the novel Los Corruptores (2013) only, no mention of the Netflix series. Encyclopedic reference page, Rule F listing/database family, no staff-written coverage of the show.",
+      "history": [
+        {
+          "attempt": "2026-11-13T22:01:37Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14340",
+          "note": "Spanish Wikipedia biography of Jorge Zepeda Patterson; mentions the novel Los Corruptores (2013) only, no mention of the Netflix series. Encyclopedic reference "
+        }
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Yadira_Pascault_Orozco",
+      "firstSeen": "2026-11-13T22:01:37Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-13T22:01:37Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "English Wikipedia biography of producer Yadira Pascault Orozco; lists 'Inside The Circle' (S1E1) among credits in a filmography. Encyclopedic reference page with a one-line credit, Rule F listing/database family, not coverage of the show.",
+      "history": [
+        {
+          "attempt": "2026-11-13T22:01:37Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14340",
+          "note": "English Wikipedia biography of producer Yadira Pascault Orozco; lists 'Inside The Circle' (S1E1) among credits in a filmography. Encyclopedic reference page wit"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-13T18:01:42Z"
+  "lastUpdated": "2026-11-13T22:01:37Z"
 }
