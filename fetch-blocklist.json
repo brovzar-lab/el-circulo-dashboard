@@ -17944,7 +17944,183 @@
           "note": "English Wikipedia biography of producer Yadira Pascault Orozco; lists 'Inside The Circle' (S1E1) among credits in a filmography. Encyclopedic reference page wit"
         }
       ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Circle_(franchise)",
+      "firstSeen": "2026-11-14T02:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T02:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Wikipedia page for The Circle, the unrelated reality TV franchise (not El Círculo / Inside the Circle). Title evidence names the alternative subject (Rule G); generic-word collision.",
+      "history": [
+        {
+          "attempt": "2026-11-14T02:01:33Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14344",
+          "note": "Wikipedia page for The Circle, the unrelated reality TV franchise (not El Círculo / Inside the Circle). Title evidence names the alternative subject (Rule G); g"
+        }
+      ]
+    },
+    {
+      "url": "https://news.europawire.eu/the-circle-returns-on-hulu-with-interactive-fan-voting-and-a-five-week-release-schedule/eu-press-release/2026/11/12/16/49/06/187372/",
+      "firstSeen": "2026-11-14T02:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T02:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Press release 'The Circle Returns on Hulu', about the unrelated reality format The Circle on Hulu, not El Círculo. Title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T02:01:33Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14344",
+          "note": "Press release 'The Circle Returns on Hulu', about the unrelated reality format The Circle on Hulu, not El Círculo. Title evidence names the alternative subject "
+        }
+      ]
+    },
+    {
+      "url": "https://www.reporteaguila.mx/n/netflix-causa-caos-con-doblaje-voz-equivocada-en-promocional",
+      "firstSeen": "2026-11-14T02:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T02:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Article about a Netflix dubbing error in a promo (Lesslie Polinesia wrong-voice controversy), not El Círculo. Title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T02:01:33Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14344",
+          "note": "Article about a Netflix dubbing error in a promo (Lesslie Polinesia wrong-voice controversy), not El Círculo. Title evidence names the alternative subject (Rule"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ahoranoticiasmx.com/articulo.php?id=6808",
+      "firstSeen": "2026-11-14T02:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T02:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Article titled 'Netflix se disculpa con Lesslie Polinesia por error en promocional', a Netflix dubbing controversy, not El Círculo. Title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T02:01:33Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14344",
+          "note": "Article titled 'Netflix se disculpa con Lesslie Polinesia por error en promocional', a Netflix dubbing controversy, not El Círculo. Title evidence names the alt"
+        }
+      ]
+    },
+    {
+      "url": "https://www.rtve.es/play/universoplay/",
+      "firstSeen": "2026-11-14T02:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T02:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "RTVE Play 'Universo Play' generic catalogue landing page, no El Círculo content evident from title/snippet (Rule G, generic-word collision).",
+      "history": [
+        {
+          "attempt": "2026-11-14T02:01:33Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14344",
+          "note": "RTVE Play 'Universo Play' generic catalogue landing page, no El Círculo content evident from title/snippet (Rule G, generic-word collision)."
+        }
+      ]
+    },
+    {
+      "url": "https://ticketelhamster.mx/serie-valentin-elizalde-hbo-max/",
+      "firstSeen": "2026-11-14T02:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T02:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Article on the Valentín Elizalde series ('La muerte del Gallo de Oro') on HBO Max, a different series, not El Círculo. Title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T02:01:33Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14344",
+          "note": "Article on the Valentín Elizalde series ('La muerte del Gallo de Oro') on HBO Max, a different series, not El Círculo. Title evidence names the alternative subj"
+        }
+      ]
+    },
+    {
+      "url": "https://www.unotv.com/entretenimiento/director-de-valentin-la-muerte-del-gallo-de-oro-si-busco-a-la-familia-del-cantante-hubo-quien-no-quiso-participar/",
+      "firstSeen": "2026-11-14T02:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T02:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Interview with the director of 'Valentín: La muerte del gallo de oro', a different series, not El Círculo. Title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T02:01:33Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14344",
+          "note": "Interview with the director of 'Valentín: La muerte del gallo de oro', a different series, not El Círculo. Title evidence names the alternative subject (Rule G)"
+        }
+      ]
+    },
+    {
+      "url": "https://elcultura.pl/tag/manolo-caro/",
+      "firstSeen": "2026-11-14T02:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T02:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Tag listing page for director Manolo Caro on a Polish culture site, no El Círculo content evident from title/snippet (Rule G, off-topic collision via Exa broad query).",
+      "history": [
+        {
+          "attempt": "2026-11-14T02:01:33Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14344",
+          "note": "Tag listing page for director Manolo Caro on a Polish culture site, no El Círculo content evident from title/snippet (Rule G, off-topic collision via Exa broad "
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-13T22:01:37Z"
+  "lastUpdated": "2026-11-14T02:01:33Z"
 }
