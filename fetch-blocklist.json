@@ -18802,7 +18802,73 @@
           "note": "JustWatch UK page for Destined with You, a different series; title evidence names the alternative subject (Rule G)."
         }
       ]
+    },
+    {
+      "url": "https://www.justwatch.com/us/tv-show/unspeakable-sins/season-1",
+      "firstSeen": "2026-11-14T22:01:42Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T22:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch US page for Unspeakable Sins Season 1, a different series; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T22:01:42Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14352",
+          "note": "JustWatch US page for Unspeakable Sins Season 1, a different series; title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/ph/tv-show/cathedrals/season-1",
+      "firstSeen": "2026-11-14T22:01:42Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T22:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch PH page for Cathedrals Season 1, a different series; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T22:01:42Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14352",
+          "note": "JustWatch PH page for Cathedrals Season 1, a different series; title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@adepa88/video/7707008136510541064",
+      "firstSeen": "2026-11-14T22:01:42Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T22:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok post by @adepa88 promoting Not a Stranger, a Turkish Netflix drama; body fetch (page desc) names the alternative subject, no El Circulo mention (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T22:01:42Z",
+          "method": "curl page fetch",
+          "status": null,
+          "issue": "LEMA-14352",
+          "note": "TikTok post by @adepa88 promoting Not a Stranger, a Turkish Netflix drama; body fetch (page desc) names the alternative subject, no El Circulo mention (Rule G)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-14T18:01:29Z"
+  "lastUpdated": "2026-11-14T22:01:42Z"
 }
