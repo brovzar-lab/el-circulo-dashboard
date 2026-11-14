@@ -18340,7 +18340,139 @@
           "note": "RTVE news item on Ada Colau and corruption; body fetched, no mention of El Circulo or the series (Rule G)."
         }
       ]
+    },
+    {
+      "url": "https://www.directv.com/insider/tv-premiere-dates/",
+      "firstSeen": "2026-11-14T10:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T10:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "DirecTV Insider TV premiere-dates listing page; Inside the Circle appears only as one bullet (Netflix, new foreign drama series) in a calendar of 100s of titles. No staff-written prose about the show (Rule F).",
+      "history": [
+        {
+          "attempt": "2026-11-14T10:01:30Z",
+          "method": "Exa contents/curl body",
+          "status": null,
+          "issue": "LEMA-14346",
+          "note": "DirecTV Insider TV premiere-dates listing page; Inside the Circle appears only as one bullet (Netflix, new foreign drama series) in a calendar of 100s of titles. No staff-written prose about the show (Rule F)."
+        }
+      ]
+    },
+    {
+      "url": "https://elpais.com/cultura/elemental/2026-11-13/once-novelas-negras-perfectas-para-el-frio-y-la-lluvia.html",
+      "firstSeen": "2026-11-14T10:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T10:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "El Pais list of eleven crime novels; body fetched, only 'circulo' hit is the idiom 'cerrar el circulo' in a Scottish detective novel entry. El Circulo series and Los Corruptores not mentioned (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T10:01:30Z",
+          "method": "Exa contents/curl body",
+          "status": null,
+          "issue": "LEMA-14346",
+          "note": "El Pais list of eleven crime novels; body fetched, only 'circulo' hit is the idiom 'cerrar el circulo' in a Scottish detective novel entry. El Circulo series and Los Corruptores not mentioned (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://mastodon.world/@Yonomeaburro/117596596252899446",
+      "firstSeen": "2026-11-14T10:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T10:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Mastodon post about Netflix programs moving to Hulu and Disney+ (season 8 of another show); short body (387 chars) read, no mention of El Circulo or Inside the Circle (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T10:01:30Z",
+          "method": "Exa contents/curl body",
+          "status": null,
+          "issue": "LEMA-14346",
+          "note": "Mastodon post about Netflix programs moving to Hulu and Disney+ (season 8 of another show); short body (387 chars) read, no mention of El Circulo or Inside the Circle (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.cynopsis.com/cynopsis-trailerpark/the-circle/",
+      "firstSeen": "2026-11-14T10:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T10:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Cynopsis item on the Hulu reality competition The Circle (trailer, Nov 10 2026); body fetched, no mention of El Circulo or Inside the Circle (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T10:01:30Z",
+          "method": "Exa contents/curl body",
+          "status": null,
+          "issue": "LEMA-14346",
+          "note": "Cynopsis item on the Hulu reality competition The Circle (trailer, Nov 10 2026); body fetched, no mention of El Circulo or Inside the Circle (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sensacine.com/noticias/series/noticia-1000230926/",
+      "firstSeen": "2026-11-14T10:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T10:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "SensaCine news item on a 2023 six-episode miniseries; body fetched, no mention of El Circulo or Inside the Circle (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T10:01:30Z",
+          "method": "Exa contents/curl body",
+          "status": null,
+          "issue": "LEMA-14346",
+          "note": "SensaCine news item on a 2023 six-episode miniseries; body fetched, no mention of El Circulo or Inside the Circle (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://cinexcepcion.com/noticias/sabes-que-una-pelicula-es-realmente-interesante-cuando-en-el-sub-reddit-don",
+      "firstSeen": "2026-11-14T10:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T10:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Cinexcepcion film news item about a subreddit and a film; title plus 801-char extracted body (site boilerplate), no mention of El Circulo or the series. Evidence is title/snippet only and the alternative subject is not named; flagged chain-limited for Pass 0c titleOnlySkipSuspects triage (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T10:01:30Z",
+          "method": "Exa contents/curl body",
+          "status": null,
+          "issue": "LEMA-14346",
+          "note": "Cinexcepcion film news item about a subreddit and a film; title plus 801-char extracted body (site boilerplate), no mention of El Circulo or the series. Evidence is title/snippet only and the alternative subject is not named; flagged chain-limited for Pass 0c titleOnlySkipSuspects triage (Rule G)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-14T06:01:30Z"
+  "lastUpdated": "2026-11-14T10:01:30Z"
 }
