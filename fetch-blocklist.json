@@ -18120,7 +18120,227 @@
           "note": "Tag listing page for director Manolo Caro on a Polish culture site, no El Círculo content evident from title/snippet (Rule G, off-topic collision via Exa broad "
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/@cinemasnews/video/7707407566875200774",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video from @cinemasnews about 'Yo soy Rocky' (Stallone); body fetched, no mention of El Circulo, Inside the Circle or its cast. Rule G off-topic collision via Exa broad query.",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "WebFetch/curl body",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "TikTok video from @cinemasnews about 'Yo soy Rocky' (Stallone); body fetched, no mention of El Circulo, Inside the Circle or its cast. Rule G off-topic collision via Exa broad query."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@cinemasnews/video/7707346011512917249",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video from @cinemasnews about 'The Body' (Catholic school possession series, tagged @netflixlat); body fetched, no mention of El Circulo. Different series (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "WebFetch/curl body",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "TikTok video from @cinemasnews about 'The Body' (Catholic school possession series, tagged @netflixlat); body fetched, no mention of El Circulo. Different series (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://cineuropa.org/es/newsdetail/497322/",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Cineuropa review of 'El confidente', a different film; direct fetch returned 403. Title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "Cineuropa review of 'El confidente', a different film; direct fetch returned 403. Title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://urbanidadnativa.blogspot.com/2020/05/el-documental-colombiano.html",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "2020 blog post on Colombian documentary; body fetched, only hit is 'Circulo bogotano de criticos de cine', unrelated (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "WebFetch/curl body",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "2020 blog post on Colombian documentary; body fetched, only hit is 'Circulo bogotano de criticos de cine', unrelated (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://urbanidadnativa.blogspot.com/2020/05/batalla-naval.html",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "2020 blog post on the film 'Batalla naval'; body fetched, only hit is the phrase 'cerrado el circulo' in a WWII context, unrelated (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "WebFetch/curl body",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "2020 blog post on the film 'Batalla naval'; body fetched, only hit is the phrase 'cerrado el circulo' in a WWII context, unrelated (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/au/tv-show/los-corruptores/season-1",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch AU-locale season page for Inside The Circle (Los Corruptores): streaming-availability database listing, no written editorial content. Same Rule F family as the already-ledgered justwatch uk/us/pl pages for this show.",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "JustWatch AU-locale season page for Inside The Circle (Los Corruptores): streaming-availability database listing, no written editorial content. Same Rule F family as the already-ledgered justwatch uk/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/ca/tv-show/atypical",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch CA page for Atypical, a different series; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "JustWatch CA page for Atypical, a different series; title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://tienelore.com/virales/jordi-wild-pedro-sanchez-no-eres-persona-conflictiva-criticas-entrevista-masaje/",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Article on Jordi Wild interviewing Pedro Sanchez; body fetched, only hit is a photo caption 'en el circulo', unrelated (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "WebFetch/curl body",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "Article on Jordi Wild interviewing Pedro Sanchez; body fetched, only hit is a photo caption 'en el circulo', unrelated (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://detodounpocotv.com/el-saber/biografias/antonio-grimau/",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Biography page for actor Antonio Grimau; body fetched, no mention of El Circulo, Inside the Circle or Netflix (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "WebFetch/curl body",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "Biography page for actor Antonio Grimau; body fetched, no mention of El Circulo, Inside the Circle or Netflix (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.rtve.es/noticias/20261113/colau-consiera-corrupcion-principales-amenazas-democracia/17312469.shtml",
+      "firstSeen": "2026-11-14T06:01:30Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-14T06:01:30Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "RTVE news item on Ada Colau and corruption; body fetched, no mention of El Circulo or the series (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T06:01:30Z",
+          "method": "WebFetch/curl body",
+          "status": null,
+          "issue": "LEMA-14345",
+          "note": "RTVE news item on Ada Colau and corruption; body fetched, no mention of El Circulo or the series (Rule G)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-14T02:01:33Z"
+  "lastUpdated": "2026-11-14T06:01:30Z"
 }
