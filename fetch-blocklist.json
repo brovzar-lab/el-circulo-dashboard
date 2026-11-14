@@ -18472,7 +18472,183 @@
           "note": "Cinexcepcion film news item about a subreddit and a film; title plus 801-char extracted body (site boilerplate), no mention of El Circulo or the series. Evidence is title/snippet only and the alternative subject is not named; flagged chain-limited for Pass 0c titleOnlySkipSuspects triage (Rule G)."
         }
       ]
+    },
+    {
+      "url": "https://gnula.surf/series/el-circulo-2026",
+      "firstSeen": "2026-11-14T14:02:00Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T14:02:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_piracy_or_unauthorized_distribution",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Gnula streaming-link site: title \"Ver El circulo Online - Gnula\", snippet is only the SEO synopsis wrapper; direct fetch returned 403. Rule E piracy/unauthorized distribution gate (on-topic, primary function is supplying the series). Classified on title/snippet because the body is blocked.",
+      "history": [
+        {
+          "attempt": "2026-11-14T14:02:00Z",
+          "method": "Exa snippet (direct fetch blocked)",
+          "status": null,
+          "issue": "LEMA-14349",
+          "note": "Gnula streaming-link site: title \"Ver El circulo Online - Gnula\", snippet is only the SEO synopsis wrapper; direct fetch returned 403. Rule E piracy/unauthorized distribution gate (on-topic, primary function is supplying the series). Classified on title/snippet because the body is blocked."
+        }
+      ]
+    },
+    {
+      "url": "https://awwrated.com/en/netflix/82013594",
+      "firstSeen": "2026-11-14T14:02:00Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T14:02:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "awwrated listing for a different Netflix series, \"Alicia's Law\" (Fernanda Castillo); body fetched, JSON-LD names Alicia's Law, no mention of El Circulo. Rule G off-topic collision via Exa broad query.",
+      "history": [
+        {
+          "attempt": "2026-11-14T14:02:00Z",
+          "method": "curl body",
+          "status": null,
+          "issue": "LEMA-14349",
+          "note": "awwrated listing for a different Netflix series, \"Alicia's Law\" (Fernanda Castillo); body fetched, JSON-LD names Alicia's Law, no mention of El Circulo. Rule G off-topic collision via Exa broad query."
+        }
+      ]
+    },
+    {
+      "url": "https://www.filmaffinity.com/py/user/rating/114634/607991.html",
+      "firstSeen": "2026-11-14T14:02:00Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T14:02:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_user_review_aggregate",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "FilmAffinity per-user rating page (user/rating/<userId>/<filmId>), a single member rating, not editorial coverage; body fetch returned an empty JS shell (~1000 chars). Rule H user-review surface. Title/snippet evidence only, chain-limited.",
+      "history": [
+        {
+          "attempt": "2026-11-14T14:02:00Z",
+          "method": "Exa snippet (direct fetch blocked)",
+          "status": null,
+          "issue": "LEMA-14349",
+          "note": "FilmAffinity per-user rating page (user/rating/<userId>/<filmId>), a single member rating, not editorial coverage; body fetch returned an empty JS shell (~1000 chars). Rule H user-review surface. Title/snippet evidence only, chain-limited."
+        }
+      ]
+    },
+    {
+      "url": "https://risbelmagazine.es/series/los-altruistas-netflix-serie-ftx-sam-bankman-fried/",
+      "firstSeen": "2026-11-14T14:02:00Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T14:02:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Risbel Magazine article on \"Los altruistas\" (Netflix FTX/Sam Bankman-Fried series); body fetched, only the generic phrase \"circulo de confianza\", no mention of the El Circulo series. Rule G.",
+      "history": [
+        {
+          "attempt": "2026-11-14T14:02:00Z",
+          "method": "curl body",
+          "status": null,
+          "issue": "LEMA-14349",
+          "note": "Risbel Magazine article on \"Los altruistas\" (Netflix FTX/Sam Bankman-Fried series); body fetched, only the generic phrase \"circulo de confianza\", no mention of the El Circulo series. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://www.larevistaactual.com/category/top-actual/",
+      "firstSeen": "2026-11-14T14:02:00Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T14:02:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "La Revista Actual category archive page (/category/top-actual/), a rolling index of posts, not a distinct document; body fetch returned an empty JS shell (~1000 chars), no El Circulo mention extractable. Rule F listing. Title/snippet evidence only, chain-limited.",
+      "history": [
+        {
+          "attempt": "2026-11-14T14:02:00Z",
+          "method": "Exa snippet (direct fetch blocked)",
+          "status": null,
+          "issue": "LEMA-14349",
+          "note": "La Revista Actual category archive page (/category/top-actual/), a rolling index of posts, not a distinct document; body fetch returned an empty JS shell (~1000 chars), no El Circulo mention extractable. Rule F listing. Title/snippet evidence only, chain-limited."
+        }
+      ]
+    },
+    {
+      "url": "https://lamanzanamordida.net/noticias/recomendaciones/serie-muhammad-ali-prime-video/",
+      "firstSeen": "2026-11-14T14:02:00Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T14:02:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "La Manzana Mordida article on the Muhammad Ali Prime Video series; body fetched, only the generic phrase \"circulo familiar y profesional\", no mention of the El Circulo series. Rule G.",
+      "history": [
+        {
+          "attempt": "2026-11-14T14:02:00Z",
+          "method": "curl body",
+          "status": null,
+          "issue": "LEMA-14349",
+          "note": "La Manzana Mordida article on the Muhammad Ali Prime Video series; body fetched, only the generic phrase \"circulo familiar y profesional\", no mention of the El Circulo series. Rule G."
+        }
+      ]
+    },
+    {
+      "url": "https://us.latteluxurynews.com/2026/11/13/inside-the-circle-what-recognition-looks-like-at-the-top-of-luxury-travel/",
+      "firstSeen": "2026-11-14T14:02:00Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T14:02:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Latte Luxury News partner post \"Inside The Circle: what recognition looks like at the top of luxury travel\"; body fetched, a luxury-travel recognition programme, unrelated to the Netflix series. Rule G collision on the English title.",
+      "history": [
+        {
+          "attempt": "2026-11-14T14:02:00Z",
+          "method": "curl body",
+          "status": null,
+          "issue": "LEMA-14349",
+          "note": "Latte Luxury News partner post \"Inside The Circle: what recognition looks like at the top of luxury travel\"; body fetched, a luxury-travel recognition programme, unrelated to the Netflix series. Rule G collision on the English title."
+        }
+      ]
+    },
+    {
+      "url": "https://nuevobloffgsss.blogspot.com/2012/09/viene-destapar-las-ollas-de-los.html",
+      "firstSeen": "2026-11-14T14:02:00Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T14:02:00Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Blogspot post dated 2012/09 by URL path (\"Viene a destapar las ollas de los...\"), pre-dates the 2026 series by 14 years; body fetch returned no extractable text matching the title. Alternative subject not named; chain-limited, flagged for Pass 0c titleOnlySkipSuspects triage. Rule G.",
+      "history": [
+        {
+          "attempt": "2026-11-14T14:02:00Z",
+          "method": "Exa snippet (direct fetch blocked)",
+          "status": null,
+          "issue": "LEMA-14349",
+          "note": "Blogspot post dated 2012/09 by URL path (\"Viene a destapar las ollas de los...\"), pre-dates the 2026 series by 14 years; body fetch returned no extractable text matching the title. Alternative subject not named; chain-limited, flagged for Pass 0c titleOnlySkipSuspects triage. Rule G."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-14T10:01:30Z"
+  "lastUpdated": "2026-11-14T14:02:00Z"
 }
