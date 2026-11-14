@@ -18648,7 +18648,161 @@
           "note": "Blogspot post dated 2012/09 by URL path (\"Viene a destapar las ollas de los...\"), pre-dates the 2026 series by 14 years; body fetch returned no extractable text matching the title. Alternative subject not named; chain-limited, flagged for Pass 0c titleOnlySkipSuspects triage. Rule G."
         }
       ]
+    },
+    {
+      "url": "https://krilliongame.com/es/krillion-answers/2026-11-11/",
+      "firstSeen": "2026-11-14T18:01:29Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T18:01:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Krillion puzzle-game answers page (Dive #119), a mobile game answer key, not El Circulo; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T18:01:29Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14351",
+          "note": "Krillion puzzle-game answers page (Dive #119), a mobile game answer key, not El Circulo; title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/IsbUzWaVh7w",
+      "firstSeen": "2026-11-14T18:01:29Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T18:01:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "YouTube Short titled \"Monster House TikTok October\", a different subject, not El Circulo; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T18:01:29Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14351",
+          "note": "YouTube Short titled \"Monster House TikTok October\", a different subject, not El Circulo; title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/ca/tv-show/jury-duty/season-2",
+      "firstSeen": "2026-11-14T18:01:29Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T18:01:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch CA page for Jury Duty Presents Season 2, a different series; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T18:01:29Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14351",
+          "note": "JustWatch CA page for Jury Duty Presents Season 2, a different series; title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://stanzacal.com/prime-video-la-oficina/69af13c134b1c3f512b1d66f",
+      "firstSeen": "2026-11-14T18:01:29Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T18:01:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Stanza schedule page for La Oficina on Prime Video, a different series; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T18:01:29Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14351",
+          "note": "Stanza schedule page for La Oficina on Prime Video, a different series; title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://decider.com/2026/11/13/murder-in-galicia-netflix-review/",
+      "firstSeen": "2026-11-14T18:01:29Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T18:01:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Decider review of the Netflix series Murder In Galicia, a different series; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T18:01:29Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14351",
+          "note": "Decider review of the Netflix series Murder In Galicia, a different series; title evidence names the alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.feyno.com/en/series/2026/page/11",
+      "firstSeen": "2026-11-14T18:01:29Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T18:01:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Feyno \"Series from 2026 - page 11\", a paginated database listing of 2026 series, not a distinct document about El Circulo. Rule F listing. Title/snippet evidence only.",
+      "history": [
+        {
+          "attempt": "2026-11-14T18:01:29Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14351",
+          "note": "Feyno \"Series from 2026 - page 11\", a paginated database listing of 2026 series, not a distinct document about El Circulo. Rule F listing. Title/snippet evidence only."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/uk/tv-series/destined-with-you",
+      "firstSeen": "2026-11-14T18:01:29Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-14T18:01:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "JustWatch UK page for Destined with You, a different series; title evidence names the alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-14T18:01:29Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14351",
+          "note": "JustWatch UK page for Destined with You, a different series; title evidence names the alternative subject (Rule G)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-14T14:02:00Z"
+  "lastUpdated": "2026-11-14T18:01:29Z"
 }
