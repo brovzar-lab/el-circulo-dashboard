@@ -19066,7 +19066,117 @@
           "note": "Costa Noroeste TV interview with Antonio Reyes of the Circulo de Artesanos, a local association, not the Netflix series; generic-word collision on Circulo (Rule G)."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/@netflixlat/video/7706977787051085076",
+      "firstSeen": "2026-11-15T14:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T14:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Official Netflix Latinoamerica TikTok fetched via curl+UA: caption is about the series El cuerpo (\"Ni rezando todos los dias se van a borrar los secretos de este colegio\"), a different Netflix title, not El Circulo; broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T14:01:16Z",
+          "method": "curl+UA",
+          "status": null,
+          "issue": "LEMA-14360",
+          "note": "Official Netflix Latinoamerica TikTok fetched via curl+UA: caption is about the series El cuerpo (\"Ni rezando todos los dias se van a borrar los secretos de este colegio\"), a different Netflix title, not El Circulo; broad-query noise (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-de-netflix-con-zuria-vega",
+      "firstSeen": "2026-11-15T14:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T14:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok discover/search aggregation page (Serie De Netflix Con Zuria Vega), not a single post; createTime on discover pages is not a post publish date. Same shape as prior ledgered TikTok discover pages. Rule A: no recoverable real publish date, no proxy date.",
+      "history": [
+        {
+          "attempt": "2026-11-15T14:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14360",
+          "note": "TikTok discover/search aggregation page (Serie De Netflix Con Zuria Vega), not a single post; createTime on discover pages is not a post publish date. Same shape as prior ledgered TikTok discover pages. Rule A: no recoverable real publish date, no proxy date."
+        }
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/title/tt39390491/",
+      "firstSeen": "2026-11-15T14:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T14:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "IMDb title record for Alicia's Law (TV Series 2026), a different Netflix Mexican series, not El Circulo (Rule G; also Rule F database family).",
+      "history": [
+        {
+          "attempt": "2026-11-15T14:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14360",
+          "note": "IMDb title record for Alicia's Law (TV Series 2026), a different Netflix Mexican series, not El Circulo (Rule G; also Rule F database family)."
+        }
+      ]
+    },
+    {
+      "url": "https://es.wikipedia.org/wiki/Michel_Brown",
+      "firstSeen": "2026-11-15T14:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T14:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Spanish Wikipedia biography of cast member Michel Brown, an encyclopedia reference page, not coverage of the series (Rule F/G, cast-bio family).",
+      "history": [
+        {
+          "attempt": "2026-11-15T14:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14360",
+          "note": "Spanish Wikipedia biography of cast member Michel Brown, an encyclopedia reference page, not coverage of the series (Rule F/G, cast-bio family)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@gta6center0/video/7708175213736856864",
+      "firstSeen": "2026-11-15T14:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T14:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok video from a GTA 6 updates account (Daily gta6 updates), unrelated to El Circulo; broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T14:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14360",
+          "note": "TikTok video from a GTA 6 updates account (Daily gta6 updates), unrelated to El Circulo; broad-query noise (Rule G)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-15T06:01:16Z"
+  "lastUpdated": "2026-11-15T14:01:16Z"
 }
