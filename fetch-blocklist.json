@@ -18868,7 +18868,29 @@
           "note": "TikTok post by @adepa88 promoting Not a Stranger, a Turkish Netflix drama; body fetch (page desc) names the alternative subject, no El Circulo mention (Rule G)."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-el-circulo-netflix-quien-es-el-malo",
+      "firstSeen": "2026-11-15T02:01:06Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T02:01:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered sibling /discover/ pages for this show: aggregation of videos under a topic tag, no single post or publish date.",
+      "history": [
+        {
+          "attempt": "2026-11-15T02:01:06Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14353",
+          "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered sibling /discover/ pages for this show: aggregation of videos under a topic tag, no single post or publish date."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-14T22:01:42Z"
+  "lastUpdated": "2026-11-15T02:01:06Z"
 }
