@@ -19197,7 +19197,49 @@
           "note": "Body fetch of TikTok page: desc and createTime read from page data layer; caption matches the tracked Instagram reel."
         }
       ]
+    },
+    {
+      "url": "http://www.orizabaenred.com.mx/cgi-bin/web2?b=VERNOTICIA&p=orizabaenred&{num}=18377",
+      "firstSeen": "2026-11-15T22:01:24Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-15T22:01:24Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Orizaba en Red note dated 03/02/04 (Nota 18377) about singer Miguel Islas leaving the Mexican pop group 'El Círculo' for a solo album. Unrelated 2004 band, not the 2026 Netflix series. Confirmed via body fetch: no mention of Netflix or the cast. Surfaced only via the generic 'El Círculo' title collision.",
+      "history": [
+        {
+          "attempt": "2026-11-15T22:01:24Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14368",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://es.wikipedia.org/wiki/Michel_Brown",
+      "firstSeen": "2026-11-15T22:01:24Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-15T22:01:24Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Spanish Wikipedia biography of actor Michel Brown. Body fetch found no mention of 'El Círculo' or 'Inside the Circle' anywhere on the page, so it carries no coverage of the series. Reference page, not an article about the show.",
+      "history": [
+        {
+          "attempt": "2026-11-15T22:01:24Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14368",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-15T18:01:07Z"
+  "lastUpdated": "2026-11-15T22:01:24Z"
 }
