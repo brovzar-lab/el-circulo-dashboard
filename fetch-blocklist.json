@@ -19176,7 +19176,28 @@
           "note": "TikTok video from a GTA 6 updates account (Daily gta6 updates), unrelated to El Circulo; broad-query noise (Rule G)."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/@pelisymasmx/video/7706613005206834484",
+      "firstSeen": "2026-11-15T18:01:07Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-15T18:01:07Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_redundant_syndication",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video by account 'pelisymasmx' (Pelis y Mas MX) with caption 'Nadie pidio mi opinion, peeeerooooo #elcirculo #netflix #thrillerpolitico #serie #pelisymasmx', createTime 2026-11-10T18:34:37Z. Same creator, same review caption and same date as the already-tracked Instagram reel in data.json (instagram.com/reel/Dfkle57MQ-Y, 'Pelis y Mas MX (Instagram)', Nov 10, 2026). Same creator, same review text, second platform: Rule I second address, not a new row.",
+      "history": [
+        {
+          "attempt": "2026-11-15T18:01:07Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14362",
+          "note": "Body fetch of TikTok page: desc and createTime read from page data layer; caption matches the tracked Instagram reel."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-15T14:01:16Z"
+  "lastUpdated": "2026-11-15T18:01:07Z"
 }
