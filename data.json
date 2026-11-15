@@ -4288,5 +4288,18 @@
     "type": "Feature",
     "excerpt": "Lado.mx feature on El Círculo, Netflix's Mexican series based on Jorge Zepeda Patterson's novel Los Corruptores, framing the show around friendship, secrets and truth under pressure. It follows four friends (Amelia/Zuria Vega, Jaime/Osvaldo Benavides and others) pulled into a journalistic and political investigation triggered by a femicide video. JSON-LD datePublished 2026-10-13.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Opinión Pública",
+    "headline": "Video: El círculo | Tráiler oficial | Estreno Netflix",
+    "url": "https://www.opinionpublica.tv/portada/el-circulo-trailer-oficial-netflix/",
+    "date": "Nov 15, 2026",
+    "ts": 20261115,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "News",
+    "excerpt": "Opinión Pública post embedding the official trailer for El Círculo, describing it as a series about four lifelong friends trapped by a leaked video in a corruption network. article:published_time 2026-11-15.",
+    "storyGroup": null
   }
 ]
