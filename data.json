@@ -4275,5 +4275,18 @@
     "type": "Feature",
     "excerpt": "Exclusive interview with Diego Sandoval on playing Nico, a 17-year-old prodigy and best friend of journalist Tomás Arismendi's daughter, in El Círculo. He discusses balancing the character's extraordinary intelligence with teenage immaturity and the technical and emotional challenges of the role, within the series' story of political conspiracy, narcotrafficking and violence. JSON-LD datePublished 2026-11-13.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Lado.mx",
+    "headline": "‘El Círculo’ de Netflix: Cuando la amistad se enfrenta a la verdad",
+    "url": "https://lado.mx/noticia/22050681/",
+    "date": "Oct 13, 2026",
+    "ts": 20261013,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Lado.mx feature on El Círculo, Netflix's Mexican series based on Jorge Zepeda Patterson's novel Los Corruptores, framing the show around friendship, secrets and truth under pressure. It follows four friends (Amelia/Zuria Vega, Jaime/Osvaldo Benavides and others) pulled into a journalistic and political investigation triggered by a femicide video. JSON-LD datePublished 2026-10-13.",
+    "storyGroup": null
   }
 ]
