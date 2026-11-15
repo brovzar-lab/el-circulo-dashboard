@@ -18890,7 +18890,183 @@
           "note": "TikTok /discover/<slug> topic index page, same Rule F surface family as the already-ledgered sibling /discover/ pages for this show: aggregation of videos under a topic tag, no single post or publish date."
         }
       ]
+    },
+    {
+      "url": "https://www.comicbasics.com/reviews/",
+      "firstSeen": "2026-11-15T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-15T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Comic Basics site-wide Reviews index hub; body fetch shows only a thumbnail link to the Inside the Circle Season 1 review, which is already tracked as its own document. Rule F listing gate (index page, same family as fictionhorizon.com/reviews).",
+      "history": [
+        {
+          "attempt": "2026-11-15T06:01:16Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14354",
+          "note": "Comic Basics site-wide Reviews index hub; body fetch shows only a thumbnail link to the Inside the Circle Season 1 review, which is already tracked as its own document. Rule F listing gate (index page, same family as fictionhorizon.com/reviews)."
+        }
+      ]
+    },
+    {
+      "url": "https://www.marca.com/radio/2026/11/12/ninos-estrena-bravos-alternativa-disco-oportunidad-tomarse-demasiado-serio.html",
+      "firstSeen": "2026-11-15T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-15T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Marca Radio piece on the band Ninos releasing Bravos; body fetch: only hit is the venue name Circulo de Arte de Toledo, no mention of the Netflix series (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T06:01:16Z",
+          "method": "curl body fetch",
+          "status": 200,
+          "issue": "LEMA-14354",
+          "note": "Marca Radio piece on the band Ninos releasing Bravos; body fetch: only hit is the venue name Circulo de Arte de Toledo, no mention of the Netflix series (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://revistalared.blogspot.com/2013/02/el-cipec-efectuo-conversatorio-con.html",
+      "firstSeen": "2026-11-15T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "2013 blog post about a CIPEC journalists forum (Dia del Periodista), a different subject from the 2026 Netflix series; surfaced via broad query noise. Title-level judgment, names alternative subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T06:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14354",
+          "note": "2013 blog post about a CIPEC journalists forum (Dia del Periodista), a different subject from the 2026 Netflix series; surfaced via broad query noise. Title-level judgment, names alternative subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "http://elencoelemu.blogspot.com/2011/06/entrevista-en-lvdiez.html",
+      "firstSeen": "2026-11-15T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "2011 blog post of the Elenco Teatral El Emu theatre group titled Entrevista en LVDiez, unrelated to the 2026 Netflix series; surfaced via broad query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T06:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14354",
+          "note": "2011 blog post of the Elenco Teatral El Emu theatre group titled Entrevista en LVDiez, unrelated to the 2026 Netflix series; surfaced via broad query noise (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "http://lacasadelautor.blogspot.com/2014/03/",
+      "firstSeen": "2026-11-15T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "La Casa del Autor March 2014 monthly blog archive page, pre-dates the 2026 series by 12 years; unrelated literary blog (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T06:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14354",
+          "note": "La Casa del Autor March 2014 monthly blog archive page, pre-dates the 2026 series by 12 years; unrelated literary blog (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "http://lacasadelautor.blogspot.com/2015/04/ellroy-me-da-igual-la-gran-novela.html",
+      "firstSeen": "2026-11-15T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "2015 La Casa del Autor post quoting author James Ellroy; pre-dates the series, unrelated subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T06:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14354",
+          "note": "2015 La Casa del Autor post quoting author James Ellroy; pre-dates the series, unrelated subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "http://lacasadelautor.blogspot.com/2011/04/el-amor-es-una-rifa-javier-marias.html",
+      "firstSeen": "2026-11-15T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "2011 La Casa del Autor post on Javier Marias, El amor es una rifa; pre-dates the series, unrelated literary subject (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T06:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14354",
+          "note": "2011 La Casa del Autor post on Javier Marias, El amor es una rifa; pre-dates the series, unrelated literary subject (Rule G)."
+        }
+      ]
+    },
+    {
+      "url": "https://costanoroestetv.net/a-la-carta/contigo/entrevista-con-antonio-reyes-circulo-de-artesanos",
+      "firstSeen": "2026-11-15T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-15T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Costa Noroeste TV interview with Antonio Reyes of the Circulo de Artesanos, a local association, not the Netflix series; generic-word collision on Circulo (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-15T06:01:16Z",
+          "method": "Exa snippet",
+          "status": null,
+          "issue": "LEMA-14354",
+          "note": "Costa Noroeste TV interview with Antonio Reyes of the Circulo de Artesanos, a local association, not the Netflix series; generic-word collision on Circulo (Rule G)."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-15T02:01:06Z"
+  "lastUpdated": "2026-11-15T06:01:16Z"
 }
