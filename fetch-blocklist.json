@@ -19478,7 +19478,73 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://zbuu.com/116523.html",
+      "firstSeen": "2026-11-16T14:02:19Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T14:02:19Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_piracy_or_unauthorized_distribution",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Chinese-language resource-sharing page (zbuu) for the series ('致命权力圈 / Inside The Circle / Los corruptores', 8 episodes) whose body is a metadata block with no synopsis ('暂无简介') plus a cloud-drive (Quark pan) resource download section; no editorial content. Rule E piracy/unauthorized distribution gate (on-topic, primary function is supplying the series).",
+      "history": [
+        {
+          "attempt": "2026-11-16T14:02:19Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14449",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@comboamigues/video/7708615310466665746",
+      "firstSeen": "2026-11-16T14:02:19Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T14:02:19Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video by @comboamigues, caption 'Yo ya estaba rehaciendo mi vida y vienen a recordarme esto' with hashtags #TeAmoOdioHBOMax #HBOMax @hbomaxmx @hbomaxlat: a promo/reaction clip for the HBO Max series Te Amo Odio, not El Circulo. Broad-query noise; body fetch (HTTP 200, curl+UA) read the caption directly.",
+      "history": [
+        {
+          "attempt": "2026-11-16T14:02:19Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14449",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@efrestico3/video/7708093195430661397",
+      "firstSeen": "2026-11-16T14:02:19Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T14:02:19Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video by @efrestico3, caption 'La nueva serie de misterio de Netflix esta perturbadora' with hashtags #netflix #seriesnetflix #thebody #suspenso #dobledeentretenimiento. Body fetch (HTTP 200, curl+UA) read the caption: it never names El Circulo or Inside the Circle, and the only title-like hashtag is #thebody. Relevance to El Circulo unconfirmed (no video transcript available), so not added as a row; createTime 1794680307 (2026-11-14) is on record if a reviewer confirms the show.",
+      "history": [
+        {
+          "attempt": "2026-11-16T14:02:19Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14449",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-16T10:01:28Z"
+  "lastUpdated": "2026-11-16T14:02:19Z"
 }
