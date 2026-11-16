@@ -19544,7 +19544,29 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://entresemana.mx/divertido-espectaculo/",
+      "firstSeen": "2026-11-16T18:01:14Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T18:01:14Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Entresemana.mx \"Divertido espectaculo\" page. Body fetch (HTTP 200, curl+UA, ~81KB) found no mention of El Circulo, Inside the Circle, Netflix cast or Los Corruptores; the page is an unrelated entertainment item surfaced by the broad \"Los Corruptores ... El Circulo\" Exa query. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-16T18:01:14Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14459",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-16T14:02:19Z"
+  "lastUpdated": "2026-11-16T18:01:14Z"
 }
