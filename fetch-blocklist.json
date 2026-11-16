@@ -4165,12 +4165,12 @@
       "url": "https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/",
       "firstSeen": "2026-10-14T22:40:00Z",
       "failCount": 0,
-      "lastStatus": 200,
-      "lastAttempt": "2026-11-09T06:01:25Z",
+      "lastStatus": 301,
+      "lastAttempt": "2026-11-16T06:01:58Z",
       "cooldownUntil": null,
       "permanentSkip": true,
       "skipReason": "editorial_user_review_aggregate",
-      "skipNote": "AlloCiné critiques presse tab (press-critic aggregator, distinct from the critiques spectateurs tab) for El Círculo: https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/. Fetched live 2026-10-14 to discharge Rule H scope limit 1's mining duty. Zero-yield negative result, per Rule A (never assumed): the press-reviews section renders no content and no empty-state placeholder -- the only review content on this URL is the same 'Critiques Spectateurs' (audience) section already ledgered at https://www.allocine.fr/series/ficheserie-1000003700/critiques/ (2 spectator ratings, patrick torres 2.5/5 Oct 12 and Laurent B. 3.5/5 Oct 10). No press outlets, bylines, or scores to mine as of this check. El Círculo premiered 2026-10-07; French press coverage may still be forthcoming. Ledgered under Rule H per scope limit 1: the aggregation page itself gets no row, with or without press content, but the sweep must keep checking it. A weekly Pass 0b re-mine step naming this exact URL is added to the El Círculo Media Sweep routine in this same commit, bounded through 2026-12-16 (LEMA-12653). Re-checked 2026-10-19 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13052): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-10-26 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13609): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-11-02 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13893): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-11-09 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-14176): still zero-yield; curl fetch (HTTP 200) renders only the Critiques Spectateurs section (patrick torres, 11 notes / 2 critiques, unchanged). No professional critic reviews to mine yet.",
+      "skipNote": "AlloCiné critiques presse tab (press-critic aggregator, distinct from the critiques spectateurs tab) for El Círculo: https://www.allocine.fr/series/ficheserie-1000003700/critiques/presse/. Fetched live 2026-10-14 to discharge Rule H scope limit 1's mining duty. Zero-yield negative result, per Rule A (never assumed): the press-reviews section renders no content and no empty-state placeholder -- the only review content on this URL is the same 'Critiques Spectateurs' (audience) section already ledgered at https://www.allocine.fr/series/ficheserie-1000003700/critiques/ (2 spectator ratings, patrick torres 2.5/5 Oct 12 and Laurent B. 3.5/5 Oct 10). No press outlets, bylines, or scores to mine as of this check. El Círculo premiered 2026-10-07; French press coverage may still be forthcoming. Ledgered under Rule H per scope limit 1: the aggregation page itself gets no row, with or without press content, but the sweep must keep checking it. A weekly Pass 0b re-mine step naming this exact URL is added to the El Círculo Media Sweep routine in this same commit, bounded through 2026-12-16 (LEMA-12653). Re-checked 2026-10-19 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13052): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-10-26 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13609): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-11-02 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-13893): still zero-yield, press tab renders no content beyond the same critiques spectateurs section (patrick torres 2.5/5 Oct 12, Laurent B. 3.5/5 Oct 10, unchanged). No new professional critic reviews to mine yet. Re-checked 2026-11-09 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-14176): still zero-yield; curl fetch (HTTP 200) renders only the Critiques Spectateurs section (patrick torres, 11 notes / 2 critiques, unchanged). No professional critic reviews to mine yet. Re-checked 2026-11-16 (weekly cadence, Monday 00:00 Mexico City fire, LEMA-14393): the presse URL now answers HTTP 301 to https://www.allocine.fr/series/ficheserie_gen_cserie=1000003700.html (the main series page); the separate press tab no longer exists at this address. The series page shows only the Spectateurs block (15 notes, 3 critiques, three named viewer reviews) and no professional press critics, so still zero-yield. No professional critic reviews to mine yet.",
       "skipMethod": "body_fetch",
       "history": [
         {
@@ -4207,6 +4207,13 @@
           "status": 200,
           "issue": "LEMA-14176",
           "note": "Weekly cadence re-check: press tab still empty, zero-yield negative result, audience-ratings content unchanged from prior checks."
+        },
+        {
+          "attempt": "2026-11-16T06:01:58Z",
+          "method": "curl body fetch",
+          "status": 301,
+          "issue": "LEMA-14393",
+          "note": "Weekly cadence re-check: URL now 301s to main series page; no press critics rendered, zero-yield negative result."
         }
       ]
     },
@@ -19303,7 +19310,154 @@
         }
       ],
       "reviewable": true
+    },
+    {
+      "url": "https://www.tiktok.com/@adepa88/video/7708482417044049170",
+      "firstSeen": "2026-11-16T06:01:58Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T06:01:58Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video whose description (read from the page payload) promotes a Japanese drama about a woman with a cancer diagnosis (#oneyeartolivebuyaman #jdrama #netflix). No mention of El Círculo, Inside the Circle, or its cast. Broad-query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-16T06:01:58Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14393",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@_roamingwithrobyn_/video/7708563591389105421",
+      "firstSeen": "2026-11-16T06:01:58Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T06:01:58Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video whose description is about a Demo Days event at Texas Motor Speedway (electric vehicles, e-bikes, go-karts). Unrelated to El Círculo. Broad-query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-16T06:01:58Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14393",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@netflixchile/video/7707378107740687637",
+      "firstSeen": "2026-11-16T06:01:58Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T06:01:58Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Netflix Chile TikTok whose description is a generic weekend memes post ('Un poquito de luchitas y memes para terminar bien la semana'). No mention of El Círculo or its cast in the description. Broad-query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-16T06:01:58Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14393",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/como-se-llaman-los-actores-de-la-pelicula-el-circulo",
+      "firstSeen": "2026-11-16T06:01:58Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T06:01:58Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page generated from the search phrase 'como se llaman los actores de la pelicula el circulo' (a film, not the 2026 Netflix series); auto-generated query landing page with no post-level content or publish date. Off-topic by title collision.",
+      "history": [
+        {
+          "attempt": "2026-11-16T06:01:58Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14393",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://mascultura.mx/lecciones-de-quimica-una-historia-entranable-ahora-en-apple-tv/",
+      "firstSeen": "2026-11-16T06:01:58Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T06:01:58Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Mas Cultura article on the Apple TV+ series Lecciones de quimica (Lessons in Chemistry). Body fetch (HTTP 200) found no on-topic coverage of El Círculo, Inside the Circle, or its cast. Broad-query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-16T06:01:58Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14393",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://awwrated.com/en/netflix/82023389",
+      "firstSeen": "2026-11-16T06:01:58Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T06:01:58Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "awwrated rating page for the Netflix title 'Murder in Galicia' (6.4/10). Body fetch (HTTP 200) found no mention of El Círculo or Inside the Circle. Unrelated title, broad-query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-16T06:01:58Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14393",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.contrareplica.mx/nota-Avril-Lavigne-comparte-la-llegada-de-su-primera-hija-a-los-42-anos--20261311",
+      "firstSeen": "2026-11-16T06:01:58Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T06:01:58Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "ContraRéplica entertainment note about Avril Lavigne's first child. Body fetch (HTTP 200) found no mention of El Círculo, Inside the Circle, or its cast. Unrelated subject, broad-query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-16T06:01:58Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14393",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-16T02:02:17Z"
+  "lastUpdated": "2026-11-16T06:01:58Z"
 }
