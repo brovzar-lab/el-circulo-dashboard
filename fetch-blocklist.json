@@ -19457,7 +19457,28 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/nombre-de-actores-que-participan-en-la-serie-de-netflix-el-c%C3%ADrculo",
+      "firstSeen": "2026-11-16T10:01:28Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T10:01:28Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page (same Rule F surface family as the other already-ledgered tiktok.com/discover/ rows for this show). Body fetch via curl+UA (HTTP 200) read the page's seo payload: canonical self-URL plus a bare list of 3 video IDs, no staff-written prose, no post-level content, no publish date. Auto-generated topic feed, not a distinct document.",
+      "history": [
+        {
+          "attempt": "2026-11-16T10:01:28Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14423",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-16T06:01:58Z"
+  "lastUpdated": "2026-11-16T10:01:28Z"
 }
