@@ -4301,5 +4301,18 @@
     "type": "News",
     "excerpt": "Opinión Pública post embedding the official trailer for El Círculo, describing it as a series about four lifelong friends trapped by a leaked video in a corruption network. article:published_time 2026-11-15.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Excelsior",
+    "headline": "¿Quién es Natalia Coronado, hija de Aleks Syntek que participa en 'El Círculo' de Netflix?",
+    "url": "https://www.excelsior.com.mx/espectaculos/quien-es-natalia-coronado-hija-aleks-syntek-que-participa-circulo-netflix",
+    "date": "Oct 7, 2026",
+    "ts": 20261007,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Excelsior profile of cast member Natalia Coronado (daughter of Aleks Syntek, niece of Ingrid Coronado), who plays Jimena in Netflix's El Círculo; covers her acting career in films, telenovelas and series. article:published_time 2026-10-07.",
+    "storyGroup": null
   }
 ]
