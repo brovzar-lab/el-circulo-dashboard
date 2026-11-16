@@ -19239,7 +19239,71 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.radioformula.com.mx/espectaculos/la-ley-de-alicia-netflix-las-historias-reales-detras-de-la-nueva-serie-mexicana-basada-en-the-good-wife-20261115-0015.html",
+      "firstSeen": "2026-11-16T02:02:17Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T02:02:17Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "Radio Formula article on the Netflix series 'La ley de Alicia' (Mexican adaptation of The Good Wife). Body fetch (Tavily extract; curl returned 403) found no discussion of 'El Círculo' or 'Inside the Circle'; the only mentions are in sidebar related-article teasers for other, separate articles. Michel Brown appears only as a cast member of the other series.",
+      "history": [
+        {
+          "attempt": "2026-11-16T02:02:17Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14378",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://elfolio.es/the-body-netflix-98-por-ciento-apoyo-publico/",
+      "firstSeen": "2026-11-16T02:02:17Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T02:02:17Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "skipMethod": "body_fetch",
+      "skipNote": "elfolio.es article on the Netflix title 'The Body' and its audience score. Body fetch (HTTP 200, 336 KB) found no mention of 'El Círculo', 'Inside the Circle', or its cast or director anywhere on the page. Broad-query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-16T02:02:17Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14378",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.radioformula.com.mx/espectaculos/netflix-quien-es-natalia-coronado-la-hija-de-aleks-syntek-y-sobrina-de-ingrid-coronado-que-aparece-en-el-circulo-20261008-0119.html",
+      "firstSeen": "2026-11-16T02:02:17Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T02:02:17Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "skipMethod": "body_fetch",
+      "skipNote": "On-topic cast profile (Natalia Coronado in El Círculo, by Alejandra Reyes). Page blocks curl (403); Tavily text extract returned the body but no JSON-LD, article:published_time, or visible dateline. The only date signal is a '20261008' token in the URL slug, which is a slug fragment rather than a dated path with day components, and the outlet has no other dated-path rows to corroborate the pattern, so Rule A's dated-URL-path clause is not met. Not guessed. Re-check with a rendered fetch (Playwright) for a visible dateline.",
+      "history": [
+        {
+          "attempt": "2026-11-16T02:02:17Z",
+          "method": "Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14378",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ],
+      "reviewable": true
     }
   ],
-  "lastUpdated": "2026-11-15T22:01:24Z"
+  "lastUpdated": "2026-11-16T02:02:17Z"
 }
