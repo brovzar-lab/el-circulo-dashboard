@@ -19566,7 +19566,73 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://bbs.dyyjv.com/d/101051",
+      "firstSeen": "2026-11-16T22:01:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T22:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_piracy_or_unauthorized_distribution",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Chinese-language resource-sharing forum thread (bbs.dyyjv.com) for the series (致命权力圈 / Inside The Circle / Los corruptores, 8 episodes) whose body is a metadata block plus a Quark cloud-drive free-download link (pan.quark.cn), with a boilerplate synopsis and no editorial content. Rule E piracy/unauthorized distribution gate (on-topic, primary function is supplying the series). Sibling of zbuu.com/116523.html.",
+      "history": [
+        {
+          "attempt": "2026-11-16T22:01:42Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14461",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/que-es-pamela-de-los-4-amigos-en-la-serie-el-circulo",
+      "firstSeen": "2026-11-16T22:01:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T22:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page auto-generated from the search phrase 'que es pamela de los 4 amigos en la serie el circulo'; curl+UA body fetch returned HTTP 200 with only the empty app shell (title 'TikTok - Make Your Day'), no post-level content, author, or publish date. Rule F listing/database family (TikTok discover landing page), same family as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-16T22:01:42Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14461",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-c%C3%ADrculo-nueva-serie-en-netflix",
+      "firstSeen": "2026-11-16T22:01:42Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-16T22:01:42Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page auto-generated from the search phrase 'el circulo nueva serie en netflix'; curl+UA body fetch returned HTTP 200 with only the empty app shell (title 'TikTok - Make Your Day'), no post-level content, author, or publish date. Rule F listing/database family (TikTok discover landing page), same family as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-16T22:01:42Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14461",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-16T18:01:14Z"
+  "lastUpdated": "2026-11-16T22:01:42Z"
 }
