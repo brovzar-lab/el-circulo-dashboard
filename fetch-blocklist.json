@@ -19742,7 +19742,95 @@
           "note": "Title names a concrete different subject. Rule G carve-out."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/@dr.tonni/video/7706801203824381202",
+      "firstSeen": "2026-11-17T10:01:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T10:01:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video by @dr.tonni, caption only \"#livehighlights #tiktoklive\"; Exa title \"¿Qué dijo el círculo? Resumen del live y frases virales\" is a live-stream recap about a different \"círculo\" (a live-stream group), not the Netflix series. Curl+UA body fetch HTTP 200 read the caption directly. Rule G generic-word noise.",
+      "history": [
+        {
+          "attempt": "2026-11-17T10:01:27Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14474",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@adepa88/video/7708486585557208338",
+      "firstSeen": "2026-11-17T10:01:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T10:01:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok video by @adepa88, caption \"An action movie full of suspense and surprises. My rating: 9/10 Would you watch it?\" with generic #netflix hashtags; an unnamed action film, not El Círculo / Inside the Circle. Curl+UA body fetch HTTP 200 read the caption directly. Broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-17T10:01:27Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14474",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/s%C3%A9rie-dentro-do-c%C3%ADrculo",
+      "firstSeen": "2026-11-17T10:01:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T10:01:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page auto-generated from the search phrase 'série dentro do círculo'; curl+UA body fetch returned HTTP 200 with only the empty app shell (title 'TikTok - Make Your Day'), no post-level content, author, or publish date. Rule F listing/database family (TikTok discover landing page), same family as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-17T10:01:27Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14474",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/playlist?list=PLco-coEYzv6tbsnE7DcbASeNWvfLahgz2",
+      "firstSeen": "2026-11-17T10:01:27Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T10:01:27Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "YouTube playlist titled 'Netflix Web Series Hot Scenes Details': a multi-video playlist listing, not a distinct document, with no El Círculo-specific content or playlist publish date. Rule F listing family and off-topic under Rule G title evidence.",
+      "history": [
+        {
+          "attempt": "2026-11-17T10:01:27Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14474",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-17T06:01:47Z"
+  "lastUpdated": "2026-11-17T10:01:27Z"
 }
