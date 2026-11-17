@@ -19632,7 +19632,51 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.kla.tv/43285",
+      "firstSeen": "2026-11-17T02:01:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T02:01:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "kla.tv (Medien-Klagemauer) video page 'Netflix: Peligro de manipulacion' on media-manipulation themes. Body fetch (HTTP 200) found zero mentions of 'El Circulo', 'Inside the Circle', 'Los Corruptores', or its cast anywhere on the page. Broad-query noise.",
+      "history": [
+        {
+          "attempt": "2026-11-17T02:01:31Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14466",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/uk/tv-series/unspeakable-sins",
+      "firstSeen": "2026-11-17T02:01:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T02:01:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "JustWatch UK page for the unrelated Netflix series 'Unspeakable Sins'. Body fetch (HTTP 200) mentions 'Inside The Circle' only as a similar-titles recommendation tile; the page's subject is a different show. Would in any case be a Rule F streaming-availability database listing.",
+      "history": [
+        {
+          "attempt": "2026-11-17T02:01:31Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14466",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-16T22:01:42Z"
+  "lastUpdated": "2026-11-17T02:01:31Z"
 }
