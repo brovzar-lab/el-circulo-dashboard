@@ -20006,7 +20006,29 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-viral-de-netflix-del-c%C3%ADrculo-de-amigos-c%C3%B3mo-se-llama",
+      "firstSeen": "2026-11-17T22:00:59Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T22:00:59Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page auto-generated from the search phrase 'serie viral de netflix del círculo de amigos cómo se llama' (about a friend-circle series, not El Círculo); curl+UA body fetch returned HTTP 200 with only the empty app shell (title 'TikTok - Make Your Day'), no post-level content, author, or publish date. Rule F listing/database family (TikTok discover landing page), same family as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-17T22:00:59Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14485",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-17T18:01:45Z"
+  "lastUpdated": "2026-11-17T22:00:59Z"
 }
