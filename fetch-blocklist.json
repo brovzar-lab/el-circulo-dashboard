@@ -19676,7 +19676,73 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.colectivoburbuja.org/cb/lo-que-el-fascismo-deja-en-los-vivos/",
+      "firstSeen": "2026-11-17T06:01:47Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T06:01:47Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Colectivo Burbuja essay titled \"Lo que el fascismo deja en los vivos\" (on fascism's legacy). Body fetch (HTTP 200, 78KB): no mention of El Circulo, Inside the Circle, Netflix, or any cast member. Surfaced only via broad Exa query noise. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-17T06:01:47Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14467",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://sv.martincid.com/tv-sv/alicias-lag-pa-netflix-efter-20-ar-tillbaka-som-advokat-nar-maken-doms-for-korruption/",
+      "firstSeen": "2026-11-17T06:01:47Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T06:01:47Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Martin Cid Magazine Swedish edition on Netflix's \"La ley de Alicia\" / \"Alicia's Law\" (Fernanda Castillo, The Good Wife remake), a different series. Body fetch (HTTP 200): Michel Brown appears only as a cast credit in that show; no coverage of El Circulo. Rule G off-topic, another locale edition of the already-ledgered martincid.com/tv-shows/alicia-s-law article family.",
+      "history": [
+        {
+          "attempt": "2026-11-17T06:01:47Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14467",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://tvdispatch.com/the-circle-season-8-shubham-goel-exclusive/",
+      "firstSeen": "2026-11-17T06:01:47Z",
+      "failCount": 0,
+      "lastStatus": 406,
+      "lastAttempt": "2026-11-17T06:01:47Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "TV Dispatch exclusive titled \"Will The Circle Season 8 Change The Game? Shubham Goel Weighs In\": the unrelated Hulu/Banijay reality format The Circle, not the Netflix Mexican series. Names a concrete alternative subject in the title; direct fetch returned HTTP 406 so this is title evidence only (Rule G no-fetch carve-out). Known generic-title noise.",
+      "history": [
+        {
+          "attempt": "2026-11-17T06:01:47Z",
+          "method": "search-result title/snippet",
+          "status": 406,
+          "issue": "LEMA-14467",
+          "note": "Title names a concrete different subject. Rule G carve-out."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-17T02:01:31Z"
+  "lastUpdated": "2026-11-17T06:01:47Z"
 }
