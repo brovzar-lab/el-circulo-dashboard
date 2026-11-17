@@ -19830,7 +19830,29 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://bibliofortexnvilas.blogspot.com/2015/01/premio-planeta.html",
+      "firstSeen": "2026-11-17T14:00:51Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T14:00:51Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Body fetch (curl+UA, HTTP 200) of a 2015 school-library blog post titled 'Premio Planeta' (Biblioteca Xose Neira Vilas, CPI Antonio Orza Couto); no mention of El Circulo, Inside the Circle, or Netflix anywhere in the page text. Surfaced by the Los Corruptores / Zepeda Patterson query via the author's Premio Planeta tangent only. Rule G off-topic false positive; also a 2015 post, not coverage of the 2026 series.",
+      "history": [
+        {
+          "attempt": "2026-11-17T14:00:51Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14480",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-17T10:01:27Z"
+  "lastUpdated": "2026-11-17T14:00:51Z"
 }
