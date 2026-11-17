@@ -19852,7 +19852,161 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.elsaltodiario.com/colectivo-burbuja/lo-fascismo-deja-vivos",
+      "firstSeen": "2026-11-17T18:01:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T18:01:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "El Salto opinion piece 'Lo que el fascismo deja en los vivos'; body fetch (curl+UA, HTTP 200) shows 'el círculo' only as a generic phrase ('entrar en el círculo de los que merecen ser aceptados'); no mention of Netflix, El Círculo series, Inside the Circle, or any cast. Broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-17T18:01:45Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14482",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://tiktoknewshub.com/tv/the-circle-on-hulu-tiktok-fan-voting/",
+      "firstSeen": "2026-11-17T18:01:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T18:01:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Article about the unrelated reality format The Circle (Hulu, TikTok fan voting, season 8); body fetch (curl+UA, HTTP 200) has no mention of El Círculo / Inside the Circle. Known 'The Circle' noise source. Broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-17T18:01:45Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14482",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.yumiza.ph/articles/d780c8aabb",
+      "firstSeen": "2026-11-17T18:01:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T18:01:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Article about The Circle Season 8 (reality format moving from Netflix to Hulu); body fetch (curl+UA, HTTP 200) has no mention of El Círculo / Inside the Circle. Known 'The Circle' noise source. Broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-17T18:01:45Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14482",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://elhype.com/oasis-jannis-lenz-entrevista/",
+      "firstSeen": "2026-11-17T18:01:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T18:01:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Interview with Jannis Lenz about the film 'Oasis'; body fetch (curl+UA, HTTP 200) uses 'el círculo de la violencia' as a generic phrase; no mention of Netflix or the El Círculo series. Broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-17T18:01:45Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14482",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.proceso.com.mx/cultura/2026/11/16/la-comuna-de-las-mujeres-el-teatro-como-refugio-frente-a-la-violencia-de-genero-383799.html",
+      "firstSeen": "2026-11-17T18:01:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T18:01:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Proceso piece on the theatre work 'La comuna de las mujeres'; body fetch (curl+UA) has no mention of El Círculo, Inside the Circle, Netflix, or cast. Surfaced by the cast interview query only. Broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-17T18:01:45Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14482",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.mex4you.net/articulo.php?n=32729",
+      "firstSeen": "2026-11-17T18:01:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T18:01:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Mex4you article 'Palabras rendidas honra el talento de las creadoras escénicas en México'; body fetch (curl+UA, HTTP 200) has no mention of El Círculo, Inside the Circle, Netflix, or cast. Broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-17T18:01:45Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14482",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.mex4you.biz/articulo.php?n=32729",
+      "firstSeen": "2026-11-17T18:01:45Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-17T18:01:45Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Same article id (n=32729) as the mex4you.net address, 'Palabras rendidas honra el talento de las creadoras escénicas en México'; body fetch (curl+UA with browser headers, HTTP 200; first plain-UA attempt returned 406) has no mention of El Círculo, Inside the Circle, Netflix, or cast. Broad-query noise (Rule G).",
+      "history": [
+        {
+          "attempt": "2026-11-17T18:01:45Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14482",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-17T14:00:51Z"
+  "lastUpdated": "2026-11-17T18:01:45Z"
 }
