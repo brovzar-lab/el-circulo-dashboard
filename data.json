@@ -4327,5 +4327,18 @@
     "type": "Feature",
     "excerpt": "Diario El Oriental (Monagas, Venezuela) explainer by Freddy Vasquez on the Netflix series: four childhood friends (Zuria Vega, Michel Brown, Osvaldo Benavides, Raul Briones) pulled into a web of blackmail and corruption after a clandestine video tied to the murder of actress Pamela Dosantos goes online; covers plot, cast and source. JSON-LD datePublished 2026-11-13.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Portavoz (Chiapas)",
+    "headline": "El círculo",
+    "url": "https://portavozchiapas.com.mx/2026/11/15/el-circulo/",
+    "date": "Nov 15, 2026",
+    "ts": 20261115,
+    "dateSource": "article_published_time",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Feature",
+    "excerpt": "Portavoz (Chiapas, Mexico) LUCES section piece by staff on the Netflix series based on Jorge Zepeda Patterson's novel Los corruptores: four decades-long friends (Tomas, Amelia, Mario, Jaime) are caught up in blackmail, persecution and an investigation after a leaked video of a famous actress's last moments; plot summary. article:published_time 2026-11-15.",
+    "storyGroup": null
   }
 ]
