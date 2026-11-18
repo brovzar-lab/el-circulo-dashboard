@@ -4379,5 +4379,18 @@
     "type": "Feature",
     "excerpt": "Italian Netflix-guide feature on the Mexican political thriller (Italian title \"Dentro il cerchio\"): eight episodes of 42-50 minutes released 2026-10-07, created by Alejandro Lozano from Jorge Zepeda Patterson's novel Los corruptores (\"I corruttori\" in Italy). Summarizes the premise (journalist Tomas, played by Michel Brown, publishes the last video of an actress and is pulled into a political game that tests his friendships with Amelia, Jaime and Mario). Date from JSON-LD datePublished (2026-11-18T08:32:38+01:00).",
     "storyGroup": null
+  },
+  {
+    "outlet": "Hablemos De Series RD (TikTok)",
+    "headline": "El Círculo, el thriller mexicano de Netflix: ¿vale la pena verla? (TikTok)",
+    "url": "https://www.tiktok.com/@hablemosdeseriesrd/video/7708475649802947861",
+    "date": "Nov 15, 2026",
+    "ts": 20261115,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "TikTok account @hablemosdeseriesrd (entertainment/series channel, not official Netflix or studio) posts an original-caption pitch for El Círculo: a group of friends, secrets from the past and a dangerous web of lies, asking whether the Mexican Netflix thriller is worth watching and summarizing its premise. Date read from the TikTok page payload createTime for this exact post (2026-11-15T19:02:38Z).",
+    "storyGroup": null
   }
 ]
