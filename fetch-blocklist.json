@@ -20182,7 +20182,117 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/explicaci%C3%B3n-de-final-serie-el-c%C3%ADrculo",
+      "firstSeen": "2026-11-18T14:01:23Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T14:01:23Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase; curl+UA body fetch returned HTTP 200 with only the empty app shell (title \"TikTok - Make Your Day\"), no post-level content, no publish date. Rule F listing/database family, same as the other ledgered tiktok.com/discover rows; also undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-18T14:01:23Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14501",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/dentro-circulo-serie",
+      "firstSeen": "2026-11-18T14:01:23Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T14:01:23Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase; curl+UA body fetch returned HTTP 200 with only the empty app shell (title \"TikTok - Make Your Day\"), no post-level content, no publish date. Rule F listing/database family, same as the other ledgered tiktok.com/discover rows; also undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-18T14:01:23Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14501",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sensacine.com/peliculas/pelicula-275673/noticias/",
+      "firstSeen": "2026-11-18T14:01:23Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T14:01:23Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "SensaCine news tab for the film \"Romper el circulo\" (It Ends With Us), a different title; body fetch (curl+UA, HTTP 200) shows no mention of El Circulo the Netflix series, Inside the Circle, Zuria Vega or Zepeda Patterson. Rule G off-topic false positive from the generic word \"circulo\".",
+      "history": [
+        {
+          "attempt": "2026-11-18T14:01:23Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14501",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://guides.justwatch.com/es/earien-anillos-de-poder-muerte-explicada-temporada-3",
+      "firstSeen": "2026-11-18T14:01:23Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T14:01:23Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "JustWatch guide on Earien in \"The Rings of Power\" season 3; the only \"el circulo\" match is the figure of speech \"el circulo de confianza de Pharazon\". Body fetch (curl+UA, HTTP 200): no mention of the Netflix series El Circulo / Inside the Circle. Rule G off-topic false positive.",
+      "history": [
+        {
+          "attempt": "2026-11-18T14:01:23Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14501",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://repelisplus.xin/series/el-circulo-2026",
+      "firstSeen": "2026-11-18T14:01:23Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-11-18T14:01:23Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_piracy_or_unauthorized_distribution",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "repelisplus.xin free-streaming site page \"El circulo Serie Online Gratis - Repelisplus\" for the series (2026). Body fetch blocked (HTTP 403); classified on the indexed title/snippet plus the domain's function as an unauthorized free-streaming index (primary function is supplying the series, no editorial content). Rule E piracy/unauthorized distribution gate.",
+      "history": [
+        {
+          "attempt": "2026-11-18T14:01:23Z",
+          "method": "title_snippet",
+          "status": 403,
+          "issue": "LEMA-14501",
+          "note": "Fetch blocked (HTTP 403); classified on title/snippet evidence; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-18T10:01:10Z"
+  "lastUpdated": "2026-11-18T14:01:23Z"
 }
