@@ -20292,7 +20292,29 @@
           "note": "Fetch blocked (HTTP 403); classified on title/snippet evidence; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/a-quien-se-refieren-los-personajes-de-la-serie-el-circulo-netflix",
+      "firstSeen": "2026-11-18T22:01:11Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T22:01:11Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase; curl+UA body fetch returned HTTP 200 with only the empty app shell (title \"TikTok - Make Your Day\"), no post-level content, no publish date. Rule F listing/database family, same as the other ledgered tiktok.com/discover rows; also undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-18T22:01:11Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14516",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-18T14:01:23Z"
+  "lastUpdated": "2026-11-18T22:01:11Z"
 }
