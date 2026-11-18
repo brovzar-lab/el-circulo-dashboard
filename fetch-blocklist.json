@@ -20138,7 +20138,51 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.milenio.com/opinion/daniela-nuno/permanencia-voluntaria-pero-con-nrda/el-ultimo-capitulo-del-jefe-de-jefes",
+      "firstSeen": "2026-11-18T10:01:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T10:01:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Milenio opinion column on the death of Felix Gallardo ('El ultimo capitulo del Jefe de Jefes'). Body fetch (curl+UA, HTTP 200): the only matches are 'El circulo se cerro' as a figure of speech and a Narcos: Mexico reference; no mention of El Circulo the Netflix series, Inside the Circle, Zuria Vega or Zepeda Patterson. Rule G off-topic false positive.",
+      "history": [
+        {
+          "attempt": "2026-11-18T10:01:10Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14495",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/best-action-movie",
+      "firstSeen": "2026-11-18T10:01:10Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T10:01:10Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page auto-generated from the search phrase 'best action movie'; curl+UA body fetch returned HTTP 200 with only the empty app shell (title 'TikTok - Make Your Day'), no post-level content, no mention of El Circulo or Inside the Circle, no publish date. Rule F listing/database family (TikTok discover landing page), same family as the other ledgered tiktok.com/discover rows; also off-topic and undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-18T10:01:10Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14495",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-18T06:01:29Z"
+  "lastUpdated": "2026-11-18T10:01:10Z"
 }
