@@ -20116,7 +20116,29 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://revistakinemabooks.com/2026/11/14/el-circulo-de-los-mentirosos-2026/",
+      "firstSeen": "2026-11-18T06:01:29Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T06:01:29Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Revista Kinema article on 'El círculo de los mentirosos' (2026), a different film at the Festival Gran Fiesta de Cine Mexicano. Body fetch (curl+UA, HTTP 200): no mention of El Círculo the Netflix series, Inside the Circle, Zuria Vega or Zepeda Patterson; the only 'netflix' string is a site tag-cloud link. Rule G off-topic false positive.",
+      "history": [
+        {
+          "attempt": "2026-11-18T06:01:29Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14487",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-18T02:01:43Z"
+  "lastUpdated": "2026-11-18T06:01:29Z"
 }
