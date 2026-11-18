@@ -20028,7 +20028,95 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/serie-el-c%C3%ADrculo-va-a-tener-segunda-temporada",
+      "firstSeen": "2026-11-18T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page auto-generated from the search phrase 'serie el círculo va a tener segunda temporada' (second-season speculation query); curl+UA body fetch returned HTTP 200 with only the empty app shell (title 'TikTok - Make Your Day'), no post-level content, author, or publish date. Rule F listing/database family (TikTok discover landing page), same family as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-18T02:01:43Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14486",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/habr%C3%A1-segunda-temporada-de-el-circulo-en-netflix",
+      "firstSeen": "2026-11-18T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page auto-generated from the search phrase 'habrá segunda temporada de el circulo en netflix' (second-season speculation query); curl+UA body fetch returned HTTP 200 with only the empty app shell (title 'TikTok - Make Your Day'), no post-level content, author, or publish date. Rule F listing/database family (TikTok discover landing page), same family as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-18T02:01:43Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14486",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/el-circulo-netflix-habr%C3%A1-temporada-2",
+      "firstSeen": "2026-11-18T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok discover page auto-generated from the search phrase 'el circulo netflix habrá temporada 2' (second-season speculation query); curl+UA body fetch returned HTTP 200 with only the empty app shell (title 'TikTok - Make Your Day'), no post-level content, author, or publish date. Rule F listing/database family (TikTok discover landing page), same family as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-18T02:01:43Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14486",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.netflix.com/be-fr/title/82023389",
+      "firstSeen": "2026-11-18T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-18T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Netflix be-fr title page surfaced by the English 'Netflix Top 10 OR ranking' style query; Exa title reads 'Watch El crimen de Pazos | Netflix Official Site', a different series. Body fetch (curl+UA, HTTP 200) returned a generic Netflix shell with no mention of El Círculo or Inside the Circle. Rule G off-topic false positive.",
+      "history": [
+        {
+          "attempt": "2026-11-18T02:01:43Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14486",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-17T22:00:59Z"
+  "lastUpdated": "2026-11-18T02:01:43Z"
 }
