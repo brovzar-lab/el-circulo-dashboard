@@ -4340,5 +4340,31 @@
     "type": "Feature",
     "excerpt": "Portavoz (Chiapas, Mexico) LUCES section piece by staff on the Netflix series based on Jorge Zepeda Patterson's novel Los corruptores: four decades-long friends (Tomas, Amelia, Mario, Jaime) are caught up in blackmail, persecution and an investigation after a leaked video of a famous actress's last moments; plot summary. article:published_time 2026-11-15.",
     "storyGroup": null
+  },
+  {
+    "outlet": "Osvaldo Benavides (TikTok)",
+    "headline": "#ElCirculo en Netflix ya (TikTok, cast member)",
+    "url": "https://www.tiktok.com/@osvaldobenavidesoficial/video/7694840526553484550",
+    "date": "Oct 10, 2026",
+    "ts": 20261010,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "Social",
+    "excerpt": "Official TikTok account of lead cast member Osvaldo Benavides (Jaime) announcing the series is live: caption \"#ElCirculo en @Netflix yaaaaaaaaa.\" Date read from the TikTok page payload createTime for this exact post (2026-10-10T01:11:21Z).",
+    "storyGroup": null
+  },
+  {
+    "outlet": "merakisyf24 (TikTok)",
+    "headline": "El Círculo: Michel es Tomás, un periodista involucrado en un caso de asesinato (TikTok)",
+    "url": "https://www.tiktok.com/@merakisyf24/video/7698078422240693512",
+    "date": "Oct 18, 2026",
+    "ts": 20261018,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "TikTok creator @merakisyf24 posts an original-caption synopsis of El Círculo (Michel Brown as Tomás, a journalist drawn into the murder case of a famous actress after publishing a compromising video of a powerful politician; the trust among his three friends dissolves). Date read from the TikTok page payload createTime for this exact post (2026-10-18T18:36:07Z).",
+    "storyGroup": null
   }
 ]
