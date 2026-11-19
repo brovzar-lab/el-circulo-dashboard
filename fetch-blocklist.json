@@ -20446,7 +20446,95 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.mindies.es/pelicula/el-tren-fluvial-critica-de-la-pelicula-de-lorenzo-ferro/",
+      "firstSeen": "2026-11-19T22:01:22Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T22:01:22Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Mindies review of the film \"El tren fluvial\" (Lorenzo Ferro). curl+UA body fetch (HTTP 200, 61 KB): no mention of Inside the Circle, El Circulo Netflix series, or its cast. Surfaced via the generic \"el\" / title collision. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-19T22:01:22Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14588",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://cineconn.es/critica-de-que-cojones-es-un-hombre-el-bipedo-implume/",
+      "firstSeen": "2026-11-19T22:01:22Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T22:01:22Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Cineconn review of the film \"Que cojones es un hombre? El bipedo implume\". curl+UA body fetch (HTTP 200, 151 KB): no mention of the Netflix series El Circulo / Inside the Circle or its cast. Broad-query noise. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-19T22:01:22Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14588",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://bun-cho.work/en/media/drama-vshort-dailyhorror20261029g-ep01-v1",
+      "firstSeen": "2026-11-19T22:01:22Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T22:01:22Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "BunCho recap of a Japanese vertical short horror drama (\"My Sister Told Me to Close the Salt Circle\"). curl+UA body fetch (HTTP 200, 60 KB): the only match is the phrase \"inside the circle\" within the plot summary (a salt circle). No mention of Netflix El Circulo / Inside the Circle. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-19T22:01:22Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14588",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.featureweekly.com/the-circle-season-8-release-schedule-episode-dates-times-and-where-to-watch/",
+      "firstSeen": "2026-11-19T22:01:22Z",
+      "failCount": 0,
+      "lastStatus": 403,
+      "lastAttempt": "2026-11-19T22:01:22Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": true,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Feature Weekly article \"The Circle Season 8 Release Schedule: Episode Dates, Times and Where to Watch\". Direct fetch returned 403; title evidence names the alternative subject, the unrelated long-running reality format The Circle (Rule G, same shape as the known \"The Circle\" noise source).",
+      "history": [
+        {
+          "attempt": "2026-11-19T22:01:22Z",
+          "method": "curl+UA",
+          "status": 403,
+          "issue": "LEMA-14588",
+          "note": "Direct fetch blocked; title evidence names alternative subject."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-19T14:01:02Z"
+  "lastUpdated": "2026-11-19T22:01:22Z"
 }
