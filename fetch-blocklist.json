@@ -20314,7 +20314,29 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.thewatmag.com/en-otros-medios/can-yaman-trabajar-turquia-muy-diferente-alli-se-rueda-durante-16-17-horas-al-dia-trabajamos-tambien-domingos-europa-eso-imposible-porque-derechos-humanos-no-permiten",
+      "firstSeen": "2026-11-19T02:00:53Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T02:00:53Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "The WAT Mag interview \"Can Yaman: Trabajar en Turquia es muy diferente...\" surfaced by a broad query; curl+UA body fetch (HTTP 200) shows the only match is the generic phrase \"circulo cercano\" (\"inner circle\") inside a quote. Subject is Turkish actor Can Yaman and his working conditions, no mention of the Netflix series El Circulo / Inside the Circle. Rule G off-topic false positive.",
+      "history": [
+        {
+          "attempt": "2026-11-19T02:00:53Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14519",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-18T22:01:11Z"
+  "lastUpdated": "2026-11-19T02:00:53Z"
 }
