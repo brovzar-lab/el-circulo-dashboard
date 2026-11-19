@@ -20380,7 +20380,51 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/final-explicado-de-el-circulo-serie-turca",
+      "firstSeen": "2026-11-19T10:01:03Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T10:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase (query is about a Turkish series, not the Netflix show); curl+UA body fetch returned HTTP 200 with only the empty app shell (title \"TikTok - Make Your Day\"), no post-level content, no publish date. Rule F listing/database family, same as the other ledgered tiktok.com/discover rows; also undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-19T10:01:03Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14538",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://viralshooter.com/v/wpnZt-dyLc8",
+      "firstSeen": "2026-11-19T10:01:03Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T10:01:03Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "viralshooter.com prank/family clip page titled \"Quería caer de pie en el círculo...\"; curl+UA body fetch (HTTP 200) shows only the generic word \"círculo\" (a circle drawn in a viral video) plus a feed of unrelated clips. No mention of the Netflix series El Circulo / Inside the Circle. Rule G off-topic false positive.",
+      "history": [
+        {
+          "attempt": "2026-11-19T10:01:03Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14538",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-19T06:01:16Z"
+  "lastUpdated": "2026-11-19T10:01:03Z"
 }
