@@ -20424,7 +20424,29 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.esdiario.com/chismografo/tendencias/261119/203092/ley-alicia.html",
+      "firstSeen": "2026-11-19T14:01:02Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T14:01:02Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "esdiario.com article \"De qué trata La ley de Alicia, la nueva versión de la famosa The Good Wife en Netflix\" (2026-11-19). curl+UA body fetch (HTTP 200, 143 KB): subject is a different Netflix series (La ley de Alicia); the only El Círculo reference is a single related-link teaser to an esdiario Oct 12 article. Not coverage of the show itself. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-19T14:01:02Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14544",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-19T10:01:03Z"
+  "lastUpdated": "2026-11-19T14:01:02Z"
 }
