@@ -20336,7 +20336,51 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://adn21.net/the-altruists-llega-a-netflix-la-miniserie-sobre-el-mayor-fraude-cripto-de-la-historia/",
+      "firstSeen": "2026-11-19T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "adn21.net article on the Netflix miniseries The Altruists (crypto fraud); curl+UA body fetch (HTTP 200) shows the only match is the generic phrase \"El circulo intimo y familiar\" (inner circle) in the cast paragraph. No mention of the Netflix series El Circulo / Inside the Circle. Rule G off-topic false positive.",
+      "history": [
+        {
+          "attempt": "2026-11-19T06:01:16Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14531",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://elclosetlgbt.com/closetnews/cristianos-piden-cancelar-serie-lesbica-the-body/",
+      "firstSeen": "2026-11-19T06:01:16Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-19T06:01:16Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "elclosetlgbt.com article about the series The Body; curl+UA body fetch (HTTP 200) shows the only match is the title of an unrelated show, \"El Circulo de los Mentirosos\". No mention of the Netflix series El Circulo / Inside the Circle. Rule G off-topic false positive.",
+      "history": [
+        {
+          "attempt": "2026-11-19T06:01:16Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14531",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-19T02:00:53Z"
+  "lastUpdated": "2026-11-19T06:01:16Z"
 }
