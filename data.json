@@ -4392,5 +4392,18 @@
     "type": "Social",
     "excerpt": "TikTok account @hablemosdeseriesrd (entertainment/series channel, not official Netflix or studio) posts an original-caption pitch for El Círculo: a group of friends, secrets from the past and a dangerous web of lies, asking whether the Mexican Netflix thriller is worth watching and summarizing its premise. Date read from the TikTok page payload createTime for this exact post (2026-11-15T19:02:38Z).",
     "storyGroup": null
+  },
+  {
+    "outlet": "Estanislao Marín (TikTok)",
+    "headline": "El Círculo: Estanislao Marín presenta a Beltrán, el hombre que limpia cualquier rastro (TikTok)",
+    "url": "https://www.tiktok.com/@estanislao_marin/video/7709555427587181844",
+    "date": "Nov 18, 2026",
+    "ts": 20261118,
+    "dateSource": "platform_api_timestamp",
+    "lang": "ES",
+    "market": "Latin America",
+    "type": "Social",
+    "excerpt": "TikTok account @estanislao_marin (actor Estanislao Marín, a cast member, not an official Netflix or studio account) posts an original-caption note on El Círculo, the Netflix series in which he plays Beltrán, a man who has to clean up any trace that endangers him or his own. Date read from the TikTok page payload createTime for this exact post (2026-11-18T16:52:41Z).",
+    "storyGroup": null
   }
 ]
