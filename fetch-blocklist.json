@@ -20820,7 +20820,29 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.imdb.com/news/ni66118655/",
+      "firstSeen": "2026-11-20T06:01:33Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T06:01:33Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "IMDb news item on the IDFA documentary 'Boys by the River'; no mention of El Circulo / Inside the Circle in the fetched body (body fetch, grep for circle/circulo returned nothing). Surfaced by the Top 10/Tudum Exa query. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T06:01:33Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14609",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-20T02:01:46Z"
+  "lastUpdated": "2026-11-20T06:01:33Z"
 }
