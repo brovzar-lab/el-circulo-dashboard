@@ -21084,7 +21084,315 @@
           "note": "Classified on title/snippet evidence; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.instagram.com/p/Dfz8d9GsZQH",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post (zuriavvega tag) about Zuria Vega ELLE cover; snippet shows only \"October 14\" with no year; login-walled page returns no machine-readable or visible publish date to an unauthenticated fetch (no taken_at/uploadDate/article:published_time). Rule A: no recoverable real publish date, not guessed.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14674",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/DfxeXQeBuFW",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram reel announcing El Circulo Netflix 7 Oct 2026; login-walled page returns no machine-readable or visible publish date to an unauthenticated fetch (no taken_at/uploadDate/article:published_time). Rule A: no recoverable real publish date, not guessed.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14674",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/Df2vAB9lMPv",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post by pgiunti, location-shoot backstage for Los Corruptores / El Circulo; login-walled page returns no machine-readable or visible publish date to an unauthenticated fetch (no taken_at/uploadDate/article:published_time). Rule A: no recoverable real publish date, not guessed.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14674",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/ZuriaVegaOficial/videos/1463644019084348",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Facebook reel on Zuria Vega official page; login-walled page returns no machine-readable or visible publish date to an unauthenticated fetch (no taken_at/uploadDate/article:published_time). Rule A: no recoverable real publish date, not guessed.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14674",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/HablemosDeSeriesRD/videos/un-grupo-de-amigos-secretos-del-pasado-y-una-peligrosa-red-de-mentiras-el-c%C3%ADrcul/2676671279416363",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Facebook video by HablemosDeSeriesRD about El Circulo; login-walled page returns no machine-readable or visible publish date to an unauthenticated fetch (no taken_at/uploadDate/article:published_time). Rule A: no recoverable real publish date, not guessed.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14674",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.allocine.fr/series/ficheserie-1000003700/casting/saison-1000006247",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "AlloCine El Circulo S01 cast/crew listing page (og:title \"Casting El Circulo S01\"); auto-generated database page, no editorial prose. Rule F, same family as the ledgered sensacine.com reparto page.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14674",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://ticketelhamster.mx/perfectos-mentirosos-estreno/",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Ticket El Hamster piece on \"Perfectos mentirosos\" (Prime Video) (alternative subject named by title); no El Circulo / Inside the Circle subject. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14674",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://gridgrab.com/people-get-wrong-altruists-netflix",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Gridgrab piece on \"The Altruists\" (Netflix) (alternative subject named by title); no El Circulo / Inside the Circle subject. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14674",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.larazon.es/television/series/perfectos-mentirosos-saber-mentir-tambien-arte_202611206afb8bb1ea8d897997878a97.html",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "La Razon piece on \"Perfectos mentirosos\" (alternative subject named by title); no El Circulo / Inside the Circle subject. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14674",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://es.martincid.com/cine/perfectos-mentirosos-perfect-liars-jesus-colmenar-estrena-en-prime-video-su-primera-pelicula/",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Martin Cid piece on \"Perfectos mentirosos (Perfect Liars)\" (alternative subject named by title); no El Circulo / Inside the Circle subject. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14674",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.elperiodico.com/es/ocio-y-cultura/20261119/critica-juegos-hambre-amanecer-cosecha-pelicula-estreno-cine-136611548",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "El Periodico review of \"Los juegos del hambre: Amanecer en la cosecha\" (alternative subject named by title); no El Circulo / Inside the Circle subject. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14674",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://legalunitedstates.com/the-circle-on-hulu/",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Piece on \"The Circle\" season 8 on Hulu (unrelated reality format) (alternative subject named by title); no El Circulo / Inside the Circle subject. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14674",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://usahousinginformation.com/the-circle-on-hulu/",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Piece on \"The Circle\" season 8 on Hulu (unrelated reality format) (alternative subject named by title); no El Circulo / Inside the Circle subject. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14674",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "http://www.krlzqv.cn/html/56c95998984.html",
+      "firstSeen": "2026-11-20T18:02:06Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T18:02:06Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Chinese-language page (title \"有聲有色網\"); body fetch grep for El Circulo / Inside the Circle / Netflix returned nothing. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T18:02:06Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14674",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-20T14:01:49Z"
+  "lastUpdated": "2026-11-20T18:02:06Z"
 }
