@@ -20534,7 +20534,293 @@
           "note": "Direct fetch blocked; title evidence names alternative subject."
         }
       ]
+    },
+    {
+      "url": "https://instyle.mx/entretenimiento/quien-es-quien-en-la-ley-de-alicia-de-netflix/",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "InStyle Mexico guide \"Quien es quien en La ley de Alicia de Netflix\": subject is a different Netflix series (La ley de Alicia); Michel Brown appears only as a cast member of that show. No mention of El Circulo / Inside the Circle. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.ellitoral.com/informacion-general/premiosrosarigasinos-teatroelcirculo-rosario-cultura-artistas-escandalo-paso-video-viral_0_zDloomsffM.html",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "El Litoral (Argentina) story on the Premios Rosarigasinos awards held at Teatro El Circulo in Rosario: a theater venue named El Circulo, not the Netflix series. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.20minutos.es/mujer/estar-bien/begona-campo-psicologa-sobre-los-pensamientos-recurrentes-cerebro-es-como-algoritmo-las-redes-sociales_7045149_0.html",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "20minutos interview with psychologist Begona del Campo; \"El Circulo Podcast\" is an unrelated Spanish podcast. No mention of the Netflix series. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.aztecapuebla.com/noticias/se-viraliza-video-de-maestra-bailando-de-manera-provocativa-con-alumnos-video/",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Azteca Puebla viral-video story about a teacher dancing with students; body contains no mention of El Circulo or Inside the Circle. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.examedia.com.ar/portada/post/88261720",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Examedia/Pagina12 item on Intersex / \"El circulo violeta\", an Argentine feature film awarded at the Festival de Cine Social de Rio Negro: unrelated film title collision. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://amomama.es/802166-filtran-una-imagen-actual-de-pablo-lyle.html",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Amomama Spain gossip item on Pablo Lyle in prison; body contains no mention of El Circulo or Inside the Circle. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/uk/tv-series/medusa/season-2",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "JustWatch UK page for Medusa Season 2; Inside The Circle appears only as an embedded recommendation link. Not coverage, and a Rule F listing surface. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://elpais.com/television/series/2026-11-19/el-triple-salto-mortal-hacia-atras-de-celeste-es-un-ejercicio-de-riesgo-total.html",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "El Pais article on the series Celeste season 2; \"circulo\" is used only as a generic word. No mention of the Netflix series. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.zendalibros.com/reyes-vargas-el-mal-esta-en-nuestros-genes/",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Zenda interview with author Reyes Vargas; the only match is an incidental phrase. No mention of the Netflix series. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.telva.com/cultura/2026/11/18/6afc5b3d02136ea7448b457b.html",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Telva interview with writer Carmen Posadas; no mention of El Circulo or Inside the Circle. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://los40.com/2026/11/18/marlena-sobre-la-polarizacion-social-ahora-hay-mas-odio-y-rechazo-que-antes-parece-que-no-se-puede-decir-nada/",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "LOS40 interview with Marlena on social polarization; \"circulo\" appears only generically. No mention of the Netflix series. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "http://www.lacalderadeldiablo.net/2025/11/dia-del-periodista-deportivo.html",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "2025 La Caldera del Diablo post on Dia del Periodista Deportivo; \"El Circulo\" is the Circulo de Periodistas Deportivos de Argentina. Unrelated, and predates the show. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.threads.com/@unicorniodescontrolado/post/Df5Ae1wFLQz/hermosa-serie/",
+      "firstSeen": "2026-11-20T02:01:46Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T02:01:46Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Threads post \"Hermosa serie!\" (3 words) by @unicorniodescontrolado; curl+UA body fetch (HTTP 200) shows no show title, cast, or Netflix reference and no recoverable publish date, so relevance cannot be established. Rules A and G.",
+      "history": [
+        {
+          "attempt": "2026-11-20T02:01:46Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14589",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-19T22:01:22Z"
+  "lastUpdated": "2026-11-20T02:01:46Z"
 }
