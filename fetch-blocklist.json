@@ -20886,7 +20886,205 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://kinotico.mx/industria/2026-11-19/entrevista-tania-delgado-directora-del-festival-de-la-habana-ni-en-las-mas-dificiles-circunstancias-se-ha-dejado-de-hacer-este-festival",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Kinotico interview with Havana Film Festival director Tania Delgado; body fetch grep for El Circulo found only the unrelated Mexican film \"El circulo de los mentirosos\" (Nancy Cruz Orozco) in an opera prima list. No mention of the Netflix series. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14666",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://exa.ai/library/podcast/fpcbjrbnt8x/episode/wpt3hn8pnhk",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Exa podcast library entry \"Part 2 - TUMBBAD Movie Reaction!\" (CineDesi podcast, Indian film Tumbbad). Alternative subject named by title; nothing about El Circulo / Inside the Circle. Rule G off-topic, surfaced by the English reaction query.",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14666",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.el-balad.com/17067812",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "El-Balad article \"Tinx steers The Circle (hulu) into audience voting and celebrity players\" about the unrelated reality format The Circle; body fetch shows only \"inside The Circle\" as game-phrase, no mention of El Circulo / Inside the Circle series. Rule G off-topic (known noise: The Circle reality format).",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14666",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://filmvivo.com/the-circle-season-8-hulu-premiere-live-fan-voting-cast/",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "FilmVivo \"The Circle Season 8 Moves to Hulu With Live Fan Voting and a New Cast\": unrelated reality format The Circle (alternative subject named by title). Rule G off-topic (known noise).",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14666",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://intactsummary.com/the-road-back-to-you-book-review/",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Intactsummary book summary of \"The Road Back to You\" (Enneagram); body fetch shows only the phrase \"lines inside the circle\" describing the Enneagram diagram. No mention of the series. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14666",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.yumiza.ph/articles/e3f51e0fa5",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Yumiza \"The Circle Season 8: Hulu Reboot and Live Voting\": unrelated reality format The Circle (alternative subject named by title). Rule G off-topic (known noise).",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14666",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://pekw.cn/43838.html",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_piracy_or_unauthorized_distribution",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "pekw.cn Chinese-language cloud-drive resource page for the series (listed as \"致命权力圈 (2026)\", 8 episodes, cast Michel Brown / Zuria Vega); body fetch shows Quark cloud-drive free-download links and no editorial content. Primary function is supplying the series. Rule E piracy/unauthorized distribution gate.",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14666",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.islamweb.net/es/article/232018/La-hipocres%C3%ADa-es-destrucci%C3%B3n-interna",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Islamweb Spanish-language religious article \"La hipocresia es destruccion interna\" (hypocrisy); body fetch grep for El Circulo / Inside the Circle returned nothing. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14666",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.mindies.es/pelicula/celeste-critica-de-la-segunda-temporada-estrenada-en-movistar-plus/",
+      "firstSeen": "2026-11-20T14:01:49Z",
+      "failCount": 0,
+      "lastStatus": null,
+      "lastAttempt": "2026-11-20T14:01:49Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Mindies review of \"Celeste\" season 2 (Movistar Plus+, alternative subject named by title); no El Circulo / Inside the Circle subject. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-20T14:01:49Z",
+          "method": "title_snippet",
+          "status": null,
+          "issue": "LEMA-14666",
+          "note": "Classified on title/snippet evidence; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-20T10:01:15Z"
+  "lastUpdated": "2026-11-20T14:01:49Z"
 }
