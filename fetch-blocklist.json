@@ -20842,7 +20842,51 @@
           "note": "Body fetch confirmed; see skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/quien-es-qu%C3%A9-en-enla-serie-el-c%C3%ADrculo",
+      "firstSeen": "2026-11-20T10:01:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T10:01:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase about the series; curl+UA body fetch returned HTTP 200 with only the empty app shell (title \"TikTok - Make Your Day\"), no post-level content, author, or per-post publish date. Rule F listing/database family, same as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-20T10:01:15Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14630",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/de-quienes-hablan-en-la-vida-real-en-la-serie-el-circulo",
+      "firstSeen": "2026-11-20T10:01:15Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-20T10:01:15Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase about the series; curl+UA body fetch returned HTTP 200 with only the empty app shell (title \"TikTok - Make Your Day\"), no post-level content, author, or per-post publish date. Rule F listing/database family, same as the other ledgered tiktok.com/discover rows; also undateable under Rule A.",
+      "history": [
+        {
+          "attempt": "2026-11-20T10:01:15Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14630",
+          "note": "Body fetch confirmed; see skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-20T06:01:33Z"
+  "lastUpdated": "2026-11-20T10:01:15Z"
 }
