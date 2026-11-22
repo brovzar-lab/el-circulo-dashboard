@@ -4418,5 +4418,18 @@
     "type": "Social",
     "excerpt": "Instagram reel by an actor/performer account (estanislao_marin, 0 likes at fetch): behind-the-scenes of recreating one of the most impactful scenes of the Netflix series \"El círculo\", joking while staying focused on safety. Tags #elcirculo, Netflix, Lemon Films. Date from og:description (\"on November 18, 2026\").",
     "storyGroup": null
+  },
+  {
+    "outlet": "El Mediático",
+    "headline": "Netflix estrena El Círculo el 7 de octubre con Zuria Vega",
+    "url": "https://www.elmediatico.com/medios/netflix-estrena-el-circulo-el-7-de-octubre-con-zuria-vega",
+    "date": "Oct 2, 2026",
+    "ts": 20261002,
+    "dateSource": "jsonld_datepublished",
+    "lang": "ES",
+    "market": "Mexico",
+    "type": "News",
+    "excerpt": "Pre-premiere announcement piece: Lemon Studios' Mexican suspense series arrives on Netflix October 7 in 190+ countries, adapting Jorge Zepeda Patterson's Los corruptores. Names the four leads (Zuria Vega, Michel Brown, Raúl Briones, Osvaldo Benavides) and director Alejandro Lozano; sourced from Infobae, PRODU and Sopitas. JSON-LD datePublished 2026-10-02T19:53:56Z.",
+    "storyGroup": null
   }
 ]
