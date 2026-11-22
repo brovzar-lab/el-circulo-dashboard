@@ -10026,9 +10026,9 @@
     {
       "url": "https://microescenas.com/videos/7672-el-circulo-trailer-oficial-netflix",
       "firstSeen": "2026-10-28T10:08:29Z",
-      "failCount": 1,
-      "lastStatus": 0,
-      "lastAttempt": "2026-10-28T10:08:29Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-22T02:01:51Z",
       "cooldownUntil": null,
       "history": [
         {
@@ -10037,8 +10037,20 @@
           "status": 0,
           "issue": "LEMA-13693",
           "note": "WebFetch failed (connection error); Firecrawl scrape failed (HTTP 500). Full fallback chain exhausted once; not yet 3 consecutive failures, no cooldown set."
+        },
+        {
+          "attempt": "2026-11-22T02:01:51Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14694",
+          "note": "See skipNote."
         }
-      ]
+      ],
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Micro Escenas video-embed page for the official El Circulo Netflix trailer (curl+UA fetch 200 this run, retry of the LEMA-13693 failure). Only machine date is JSON-LD uploadDate 2026-09-09, which is the embedded video upload not an article publish date, and the page has no article:published_time or visible dateline. Rule A: no recoverable page publish date, not guessed."
     },
     {
       "url": "https://tiktok.com/discover/para-cu%C3%A1ndo-sacar-la-segunda-temporada-de-el-circulo",
@@ -21428,7 +21440,12 @@
   {"url":"https://www.reforma.com/exigen-ruffalo-y-swinton-liberacion-de-cineasta-jafar-panahi/ar3316896","firstSeen":"2026-11-21T14:01:26Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-21T14:01:26Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"body_fetch","skipNote":"Reforma news item on Ruffalo and Swinton demanding the release of filmmaker Jafar Panahi; curl+UA body fetch shows no El Circulo / Inside the Circle mention. Rule G off-topic.","history":[{"attempt":"2026-11-21T14:01:26Z","method":"curl+UA","status":200,"issue":"LEMA-14689","note":"See skipNote."}]},{"url":"https://www.allocine.fr/series/ficheserie-1000003700/streaming/","firstSeen":"2026-11-21T18:01:46Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-21T18:01:46Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_listing_or_database","reviewable":false,"skipMethod":"body_fetch","skipNote":"AlloCine El Circulo streaming-availability tab (og:title \"El Circulo en streaming\"); curl+UA body fetch shows only a where-to-watch panel (Netflix, par abonnement) plus the site-wide news rail; no editorial prose about the show. Rule F, same family as the ledgered AlloCine casting and critiques tabs.","history":[{"attempt":"2026-11-21T18:01:46Z","method":"curl+UA","status":200,"issue":"LEMA-14691","note":"See skipNote."}]},{"url":"https://www.tiktok.com/discover/cortos-del-la-pel%C3%ADcula-el-circulo-cuando-se-estrena","firstSeen":"2026-11-21T18:01:46Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-21T18:01:46Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_listing_or_database","reviewable":false,"skipMethod":"body_fetch","skipNote":"TikTok /discover/<slug> topic index page (curl+UA fetch returns the generic TikTok shell, title \"TikTok - Make Your Day\"); no single post or publish date. Rule F, same family as the ledgered sibling /discover/ pages.","history":[{"attempt":"2026-11-21T18:01:46Z","method":"curl+UA","status":200,"issue":"LEMA-14691","note":"See skipNote."}]},
   {"url":"https://snitt.hu/filmek/a-belso-kor","firstSeen":"2026-11-21T22:01:44Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-21T22:01:44Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_listing_or_database","reviewable":false,"skipMethod":"body_fetch","skipNote":"Snitt.hu (Hungarian film database) title page for 'A belso kor' (Inside The Circle / El circulo): metadata block, user ratings (63%, 3 stars) and synopsis only; no staff-written review or analysis. Rule F listing/database.","history":[{"attempt":"2026-11-21T22:01:44Z","method":"curl+UA","status":200,"issue":"LEMA-14693","note":"See skipNote."}]},
   {"url":"https://cveintiuno.com/se-ve-mexicano/","firstSeen":"2026-11-21T22:01:44Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-21T22:01:44Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"body_fetch","skipNote":"Cveintiuno 'Se ve mexicano' industry piece (published 2026-11-10); curl+UA body fetch shows no El Circulo / Inside the Circle mention. Rule G off-topic.","history":[{"attempt":"2026-11-21T22:01:44Z","method":"curl+UA","status":200,"issue":"LEMA-14693","note":"See skipNote."}]},
-  {"url":"https://www.tiktok.com/discover/circle-movie-ending-explanation","firstSeen":"2026-11-21T22:01:44Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-21T22:01:44Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_listing_or_database","reviewable":false,"skipMethod":"body_fetch","skipNote":"TikTok /discover/<slug> topic index page (curl+UA fetch returns the generic TikTok shell, title \"TikTok - Make Your Day\"); no single post or publish date. Rule F, same family as the ledgered sibling /discover/ pages.","history":[{"attempt":"2026-11-21T22:01:44Z","method":"curl+UA","status":200,"issue":"LEMA-14693","note":"See skipNote."}]}
+  {"url":"https://www.tiktok.com/discover/circle-movie-ending-explanation","firstSeen":"2026-11-21T22:01:44Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-21T22:01:44Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_listing_or_database","reviewable":false,"skipMethod":"body_fetch","skipNote":"TikTok /discover/<slug> topic index page (curl+UA fetch returns the generic TikTok shell, title \"TikTok - Make Your Day\"); no single post or publish date. Rule F, same family as the ledgered sibling /discover/ pages.","history":[{"attempt":"2026-11-21T22:01:44Z","method":"curl+UA","status":200,"issue":"LEMA-14693","note":"See skipNote."}]},
+  {"url":"https://www.sensacine.com/series/serie-1000003700/","firstSeen":"2026-11-22T02:01:51Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-22T02:01:51Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_listing_or_database","reviewable":false,"skipMethod":"body_fetch","skipNote":"SensaCine series database page for El Circulo (curl+UA fetch: cast/metadata/ratings tabs, no dated staff prose, no JSON-LD datePublished). Rule F, same AlloCine-family show page as the ledgered allocine.fr ficheserie rows.","history":[{"attempt":"2026-11-22T02:01:51Z","method":"curl+UA/Firecrawl","status":200,"issue":"LEMA-14694","note":"See skipNote."}]},
+  {"url":"https://cinesum.com/tv/inside-the-circle-2026","firstSeen":"2026-11-22T02:01:51Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-22T02:01:51Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_listing_or_database","reviewable":false,"skipMethod":"body_fetch","skipNote":"CineSum title statistics page (Firecrawl scrape; curl returned 520): auto-generated Netflix Top 10 hours/views figures for Inside the Circle, no staff-written prose. Rule F, same family as the ledgered FlixPatrol and Tudum Top 10 pages.","history":[{"attempt":"2026-11-22T02:01:51Z","method":"curl+UA/Firecrawl","status":200,"issue":"LEMA-14694","note":"See skipNote."}]},
+  {"url":"https://cinesum.com/tv/netflix-top-10/2026-10-18","firstSeen":"2026-11-22T02:01:51Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-22T02:01:51Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_listing_or_database","reviewable":false,"skipMethod":"body_fetch","skipNote":"CineSum weekly Netflix Top 10 TV chart (Oct 12-18, 2026), Firecrawl scrape: auto-generated ranking table, no editorial prose about the show. Rule F listing/database.","history":[{"attempt":"2026-11-22T02:01:51Z","method":"curl+UA/Firecrawl","status":200,"issue":"LEMA-14694","note":"See skipNote."}]},
+  {"url":"https://www.xataka.com.mx/cine-y-tv/mejor-serie-netflix-anos-96-ciento-espectadores-recomienda-este-nuevo-thriller-misterio-suspenso","firstSeen":"2026-11-22T02:01:51Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-22T02:01:51Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"body_fetch","skipNote":"Xataka Mexico piece (published 2026-11-20) about a different Netflix mystery thriller recommended by 96 percent of viewers; curl+UA body fetch shows no El Circulo / Inside the Circle mention. Rule G off-topic.","history":[{"attempt":"2026-11-22T02:01:51Z","method":"curl+UA/Firecrawl","status":200,"issue":"LEMA-14694","note":"See skipNote."}]},
+  {"url":"https://www.elmanana.com/escena/cine/no-te-dejara-cerrar-los-ojos-miniserie-en-netflix-/5728099","firstSeen":"2026-11-22T02:01:51Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-22T02:01:51Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"title_snippet_only","skipNote":"El Manana article dated 2023-06-29 about the miniserie \"No te dejara cerrar los ojos\" on Netflix, a different title that predates El Circulo (premiered 2026-10-07) by over three years; title and Exa snippet name that alternative subject. Rule G off-topic (no-fetch carve-out).","history":[{"attempt":"2026-11-22T02:01:51Z","method":"none","status":200,"issue":"LEMA-14694","note":"See skipNote."}]}
   ],
-  "lastUpdated": "2026-11-21T22:01:44Z"
+  "lastUpdated": "2026-11-22T02:01:51Z"
 }
