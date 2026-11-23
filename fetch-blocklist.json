@@ -21469,7 +21469,29 @@
     {"url":"https://www.jornada.com.mx/2026/11/20/cultura/a04n1cul","firstSeen":"2026-11-22T22:01:13Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-22T22:01:13Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"body_fetch","skipNote":"La Jornada culture piece on Estela Lenero and the play La comuna de las mujeres at El Circulo Teatral (a Condesa venue); body fetch confirms the only match is the theatre name. Rule G off-topic, generic Spanish phrase collision.","history":[{"attempt":"2026-11-22T22:01:13Z","method":"none","status":200,"issue":"LEMA-14720","note":"See skipNote."}]},
     {"url":"https://www.eluniversal.com.mx/espectaculos/el-circulo-pelicula-irani-reconocida-mundialmente-pero-prohibida-en-su-pais/","firstSeen":"2026-11-23T10:01:12Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-23T10:01:12Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"body_fetch","skipNote":"El Universal piece on Jafar Panahi's Iranian film The Circle (\"El circulo\"); body fetch finds only Panahi and no Netflix, Zuria Vega, or Los Corruptores. Rule G off-topic, title collision.","history":[{"attempt":"2026-11-23T10:01:12Z","method":"none","status":200,"issue":"LEMA-14759","note":"See skipNote."}]},
     {"url":"https://resenasliterarias.com/romper-el-circulo-de-colleen-hoover-resena-y-analisis-de-la-novela/","firstSeen":"2026-11-23T10:01:12Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-23T10:01:12Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"body_fetch","skipNote":"Review of Colleen Hoover novel Romper el circulo (It Ends With Us); body fetch finds no Netflix, Zuria Vega, or Los Corruptores. Rule G off-topic, generic Spanish phrase collision.","history":[{"attempt":"2026-11-23T10:01:12Z","method":"none","status":200,"issue":"LEMA-14759","note":"See skipNote."}]},
-    {"url":"https://nexorial.com/maihoang/sv-netflix-sensation-bbcs-six-part-irish-crime-thriller-will-keep-you-hooked-one-brutal/","firstSeen":"2026-11-23T10:01:12Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-23T10:01:12Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"body_fetch","skipNote":"Nexorial content-farm piece on a BBC six-part Irish crime thriller on Netflix; body fetch finds no mention of El Circulo or Inside the Circle. Rule G off-topic.","history":[{"attempt":"2026-11-23T10:01:12Z","method":"none","status":200,"issue":"LEMA-14759","note":"See skipNote."}]}
+    {"url":"https://nexorial.com/maihoang/sv-netflix-sensation-bbcs-six-part-irish-crime-thriller-will-keep-you-hooked-one-brutal/","firstSeen":"2026-11-23T10:01:12Z","failCount":0,"lastStatus":200,"lastAttempt":"2026-11-23T10:01:12Z","cooldownUntil":null,"permanentSkip":true,"skipReason":"editorial_off_topic_false_positive","reviewable":false,"skipMethod":"body_fetch","skipNote":"Nexorial content-farm piece on a BBC six-part Irish crime thriller on Netflix; body fetch finds no mention of El Circulo or Inside the Circle. Rule G off-topic.","history":[{"attempt":"2026-11-23T10:01:12Z","method":"none","status":200,"issue":"LEMA-14759","note":"See skipNote."}]},
+    {
+      "url": "https://www.threads.com/@pablo_pol_61/post/DgEKqpaEb13/muy-muy-buena-serie/",
+      "firstSeen": "2026-11-23T14:01:31Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-23T14:01:31Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Threads post 'Muy muy buena serie !!' by pablo_pol_61; fetched og:description is only that text, never names the series, and no real publish date is available (same Threads reply shape as rosalba9669, grinacc and lr_filo). Rule A undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-23T14:01:31Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14777",
+          "note": "See skipNote."
+        }
+      ]
+    }
   ],
-  "lastUpdated": "2026-11-23T10:01:19Z"
+  "lastUpdated": "2026-11-23T14:01:31Z"
 }
