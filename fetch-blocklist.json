@@ -21513,7 +21513,29 @@
           "note": "See skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/villanueva-el-circulo-serie",
+      "firstSeen": "2026-11-23T22:01:08Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-23T22:01:08Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase; curl+UA body fetch returns HTTP 200 with only the empty app shell (title \"TikTok - Make Your Day\"), no post-level content or per-post date. Rule F listing/database family, same as the other ledgered tiktok.com/discover pages.",
+      "history": [
+        {
+          "attempt": "2026-11-23T22:01:08Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14781",
+          "note": "See skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-23T18:01:43Z"
+  "lastUpdated": "2026-11-23T22:01:08Z"
 }
