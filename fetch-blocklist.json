@@ -21491,7 +21491,29 @@
           "note": "See skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.threads.com/@lidiazb_94/post/Df_zslFCAi-/me-gusto-como-mini-serie-me-parecio-original/",
+      "firstSeen": "2026-11-23T18:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-23T18:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Threads post 'Me gustó como mini serie, me pareció original.' by lidiazb_94; curl+UA and Tavily extract returned only the generic Threads shell (no og:description, no series name, no timestamp), so neither subject nor a real publish date is recoverable (same Threads reply shape as pablo_pol_61, rosalba9669, grinacc and lr_filo). Rule A undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-23T18:01:43Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14780",
+          "note": "See skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-23T14:01:31Z"
+  "lastUpdated": "2026-11-23T18:01:43Z"
 }
