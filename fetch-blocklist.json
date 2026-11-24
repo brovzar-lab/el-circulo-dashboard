@@ -21887,7 +21887,95 @@
           "note": "See skipNote."
         }
       ]
-    }
+    },
+  {
+    "url": "https://linkedin.com/in/erika-s-1598099a",
+    "firstSeen": "2026-11-24T10:01:00Z",
+    "failCount": 0,
+    "lastStatus": null,
+    "lastAttempt": "2026-11-24T10:01:00Z",
+    "cooldownUntil": null,
+    "permanentSkip": true,
+    "skipReason": "editorial_listing_or_database",
+    "reviewable": false,
+    "skipMethod": "title_snippet_only",
+    "skipNote": "LinkedIn personal profile page (Erika S.) surfaced by Exa: a person profile, not a dated post or article about the series. Rule F profile surface by URL family (same as the ledgered linkedin.com/in/ row, LEMA-14686). Classified on URL family plus Exa title, no body fetch.",
+    "history": [
+      {
+        "attempt": "2026-11-24T10:01:00Z",
+        "method": "Exa search metadata only (no body fetch)",
+        "status": null,
+        "issue": "LEMA-14791",
+        "note": "See skipNote."
+      }
+    ]
+  },
+  {
+    "url": "https://linkedin.com/in/ruth-mill%C3%A1n-reguera-b1134bb7",
+    "firstSeen": "2026-11-24T10:01:00Z",
+    "failCount": 0,
+    "lastStatus": null,
+    "lastAttempt": "2026-11-24T10:01:00Z",
+    "cooldownUntil": null,
+    "permanentSkip": true,
+    "skipReason": "editorial_listing_or_database",
+    "reviewable": false,
+    "skipMethod": "title_snippet_only",
+    "skipNote": "LinkedIn personal profile page (Ruth Millan Reguera) surfaced by Exa: a person profile, not a dated post or article about the series. Rule F profile surface by URL family (same as the ledgered linkedin.com/in/ row, LEMA-14686). Classified on URL family plus Exa title, no body fetch.",
+    "history": [
+      {
+        "attempt": "2026-11-24T10:01:00Z",
+        "method": "Exa search metadata only (no body fetch)",
+        "status": null,
+        "issue": "LEMA-14791",
+        "note": "See skipNote."
+      }
+    ]
+  },
+  {
+    "url": "https://linkedin.com/in/luc%C3%ADa-vallejo-sierra-b52a7b191",
+    "firstSeen": "2026-11-24T10:01:00Z",
+    "failCount": 0,
+    "lastStatus": null,
+    "lastAttempt": "2026-11-24T10:01:00Z",
+    "cooldownUntil": null,
+    "permanentSkip": true,
+    "skipReason": "editorial_listing_or_database",
+    "reviewable": false,
+    "skipMethod": "title_snippet_only",
+    "skipNote": "LinkedIn personal profile page (Lucia Vallejo Sierra) surfaced by Exa: a person profile, not a dated post or article about the series. Rule F profile surface by URL family (same as the ledgered linkedin.com/in/ row, LEMA-14686). Classified on URL family plus Exa title, no body fetch.",
+    "history": [
+      {
+        "attempt": "2026-11-24T10:01:00Z",
+        "method": "Exa search metadata only (no body fetch)",
+        "status": null,
+        "issue": "LEMA-14791",
+        "note": "See skipNote."
+      }
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/discover/serie-el-circulo-netflix-actrices",
+    "firstSeen": "2026-11-24T10:01:00Z",
+    "failCount": 0,
+    "lastStatus": null,
+    "lastAttempt": "2026-11-24T10:01:00Z",
+    "cooldownUntil": null,
+    "permanentSkip": true,
+    "skipReason": "editorial_listing_or_database",
+    "reviewable": false,
+    "skipMethod": "title_snippet_only",
+    "skipNote": "TikTok /discover/<slug> topic index page (Serie El Circulo Netflix Actrices), auto-generated aggregation with no single per-post date. Rule F listing/database family, same as the other ledgered tiktok.com/discover pages. Classified on URL family plus Exa title, no body fetch.",
+    "history": [
+      {
+        "attempt": "2026-11-24T10:01:00Z",
+        "method": "Exa search metadata only (no body fetch)",
+        "status": null,
+        "issue": "LEMA-14791",
+        "note": "See skipNote."
+      }
+    ]
+  }
   ],
-  "lastUpdated": "2026-11-24T06:01:09Z"
+  "lastUpdated": "2026-11-24T10:01:00Z"
 }
