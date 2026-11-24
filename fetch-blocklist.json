@@ -21777,7 +21777,117 @@
           "note": "See skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/novela-turca-el-circulo-en-espa%C3%B1ol",
+      "firstSeen": "2026-11-24T06:01:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T06:01:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase (Turkish novela \"El Circulo\"), no single per-post date, no show-specific subject. Rule F listing/database family, same as the other ledgered tiktok.com/discover pages.",
+      "history": [
+        {
+          "attempt": "2026-11-24T06:01:09Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14785",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://puntosciegos.com/entretenimiento/el-circulo-pelicula-irani-reconocida-mundialmente-pero-prohibida-en-su-pais/",
+      "firstSeen": "2026-11-24T06:01:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T06:01:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "title_snippet_only",
+      "skipNote": "Puntos Ciegos syndication of the same piece on Jafar Panahi's Iranian film The Circle (\"El circulo\") already ledgered at eluniversal.com.mx (Rule G off-topic, title collision). Not the 2026 Netflix series; matched by title and the identical ledgered sibling, no body fetch needed under the Rule G carve-out.",
+      "history": [
+        {
+          "attempt": "2026-11-24T06:01:09Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14785",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.justwatch.com/au/tv-show/unspeakable-sins",
+      "firstSeen": "2026-11-24T06:01:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T06:01:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "JustWatch AU page for Unspeakable Sins; Zuria Vega and Los Corruptores appear only as embedded \"Other Zuria Vega TV shows\" links. Not coverage, and a Rule F listing surface. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-24T06:01:09Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14785",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.threads.com/@maricarmen.floressantos/post/DgGLGcdGyUP/jajaja-jajaja-excelente-serie/",
+      "firstSeen": "2026-11-24T06:01:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T06:01:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Threads post \"Jajaja jajaja excelente serie\" by maricarmen.floressantos; fetched page is a JS shell with no recoverable post timestamp and no named show. Same Threads reply shape as the other ledgered threads.com rows. Rule A undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-24T06:01:09Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14785",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "http://vidasdemercurio.blogspot.com/2026/11/recomendaciones-sui-generis-de-la-semana_01170144782.html",
+      "firstSeen": "2026-11-24T06:01:09Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T06:01:09Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Personal blog weekly recommendations post (vidas de mercurio); body fetch finds no mention of El Circulo, Inside the Circle, Zuria Vega, Michel Brown or Los Corruptores. Surfaced only by the generic query. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-24T06:01:09Z",
+          "method": "curl+UA",
+          "status": 200,
+          "issue": "LEMA-14785",
+          "note": "See skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-24T02:01:43Z"
+  "lastUpdated": "2026-11-24T06:01:09Z"
 }
