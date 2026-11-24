@@ -21535,7 +21535,249 @@
           "note": "See skipNote."
         }
       ]
+    },
+    {
+      "url": "https://www.tiktok.com/@memoriasdeoz/video/7709594653720366357",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok by memoriasdeoz, caption is only '#recuerdos'; curl+UA body fetch (createTime 2026-11-18) shows no mention of El Círculo anywhere in caption or page payload; the search snippet's 'EL CÍRCULO. Serie Netflix. Reseña.' text is not in the page. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DgD7UC8DNYs",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post by ecodelamontana1: '\"El círculo\" ganó el León de Oro en Venecia y fue prohibida en Irán' (Tavily extract). This is Jafar Panahi's 2000 film The Circle, not the Netflix series. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/Df-vfoajvdo",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post by talent agency zumatalent_ promoting Saúl Lisazo as 'Carlos Lemus' in El Círculo (on-topic). Tavily extract returned the logged-out shell with caption and comments but no timestamp or date anywhere; no Rule A dateSource recoverable. Undateable, reviewable if a dated surface appears.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@shaunidi3iu/photo/7709808488876199220",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok photo post; curl+UA returned the page with no createTime or desc; search snippet content is garbled and unrelated to a recoverable El Círculo subject. No date, no verified subject. Rule A undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCd3fTM5jfYlKZGY-X21XLsA/videos",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "YouTube channel video index (Muchas Pelis), a rolling listing page, not a single document; individual videos would be evaluated by their own watch URLs. Rule F listing family.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/reel/Df8X6KDiQQK",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram reel by todociroylospersas; Tavily extract returned only commenter chatter on a music-themed reel, no caption naming El Círculo and no timestamp. Search snippet mentions El Círculo/Los Corruptores as a recommended book but the date and caption are not verifiable from the page. Rule A undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/p/DgBcj6AMaw9",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": true,
+      "skipMethod": "body_fetch",
+      "skipNote": "Instagram post by michymargapolonia: caption '\"EL CÍRCULO\" - Tomás & Amelia' with hashtags (fan edit, 25 likes). Tavily extract shows no timestamp; no Rule A dateSource recoverable. Undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/@comboamigues/video/7710429613314428168",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_off_topic_false_positive",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok by comboamigues: curl+UA body fetch (createTime 2026-11-21) shows caption is about a Hunger Games: Catching Fire deleted scene; El Círculo appears only in the search snippet's auto-summary. Same account/shape as the already-ledgered comboamigues video 7709626046152314120. Rule G off-topic.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.threads.com/@crisstelbhbook/post/DgC7AQ_Fknp/es-una-excelente-serie",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Threads post 'Es una excelente serie' by crisstelbhbook; Tavily extract returned generic Threads shell (26 views), no series name, no timestamp. Same Threads reply shape as the other ledgered threads.com rows. Rule A undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.threads.com/@darkgory/post/Df6LlyyFU_z/excelente-serie",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_undateable",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "Threads post 'Excelente serie...' by darkgory; shell only (search snippet quotes an unrelated linked article about El Círculo vs the novel), no timestamp. Same Threads reply shape as the other ledgered threads.com rows. Rule A undateable.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
+    },
+    {
+      "url": "https://www.tiktok.com/discover/cuando-sale-la-segunda-temporada-de-el-circulo",
+      "firstSeen": "2026-11-24T02:01:43Z",
+      "failCount": 0,
+      "lastStatus": 200,
+      "lastAttempt": "2026-11-24T02:01:43Z",
+      "cooldownUntil": null,
+      "permanentSkip": true,
+      "skipReason": "editorial_listing_or_database",
+      "reviewable": false,
+      "skipMethod": "body_fetch",
+      "skipNote": "TikTok /discover/<slug> topic index page auto-generated from a search phrase, aggregating many posts with no single per-post date. Rule F listing/database family, same as the other ledgered tiktok.com/discover pages.",
+      "history": [
+        {
+          "attempt": "2026-11-24T02:01:43Z",
+          "method": "curl+UA/Tavily extract",
+          "status": 200,
+          "issue": "LEMA-14783",
+          "note": "See skipNote."
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-23T22:01:08Z"
+  "lastUpdated": "2026-11-24T02:01:43Z"
 }
